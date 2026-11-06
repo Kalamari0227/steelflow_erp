@@ -5,6 +5,7 @@ import { resolve, join, relative, isAbsolute } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { choosePorts, createOwnedEvidenceDirectory } from './ownership.mjs';
 import { workspace, json, appendLog, hash, snapshot, processOwner, startServices, hostMetadata } from './runtime.mjs';
+import { createStorage } from '../../scripts/storage.mjs';
 
 const started = Date.now();
 let evidence;
@@ -45,6 +46,9 @@ try {
   const candidateEvidence = resolve(values.evidence);
   const evidenceRelative = relative(join(workspace, '.omo/evidence'), candidateEvidence);
   if (!evidenceRelative || evidenceRelative.startsWith('..') || isAbsolute(evidenceRelative)) throw new Error('Evidence must be a new directory below .omo/evidence');
+  const storage = await createStorage(workspace, JSON.parse(readFileSync(join(workspace, 'storage-policy.json'), 'utf8')));
+  const storageErrors = storage.violations(await storage.report(), 0, { includeLegacy: true });
+  if (storageErrors.length) throw new Error(`Storage preflight failed: ${storageErrors.join('; ')}`);
   const evidenceToken = createOwnedEvidenceDirectory(candidateEvidence);
   evidence = candidateEvidence;
   appendLog(join(evidence, 'command.log'), `${JSON.stringify({ argv: process.argv, cwd: process.cwd(), started_at: new Date(started).toISOString() })}\n`);

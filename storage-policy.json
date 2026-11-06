@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "maxRunBytes": 1073741824,
+  "maxManagedBytes": 5368709120,
+  "minFreeBytes": 10737418240,
+  "legacyEvidenceMaxBytes": 32212254720,
+  "retainSuccessDays": 7,
+  "retainSuccessCount": 3,
+  "pollIntervalMs": 250,
+  "shutdownGraceMs": 2000
+}

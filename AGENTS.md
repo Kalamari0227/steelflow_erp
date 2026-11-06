@@ -6,6 +6,10 @@
 
 파일 정리와 커밋에는 `docs/REPOSITORY_HYGIENE.md`를 따른다. QA 사본에 `.omo`·`.git`·과거 증거를 재귀 복사하지 않는다. 실행 중인 서버·DB·원본 자산과 유일한 검증 증거는 보존한다. Git에서 제외한 로컬 증거를 push로 백업했다고 간주하지 않는다.
 
+- 용량 기준은 `storage-policy.json`이다. 단위 테스트는 관리 wrapper가 연결된 `npm test`로 실행하고, 새 출력은 `.artifacts/runs/`에 둔다.
+- 새 브라우저 QA 전에는 `node scripts/storage.mjs check --include-legacy`를 통과해야 한다. `.omo/evidence/`가 30GiB를 초과하면 생성 작업을 멈추고 기존 증거의 보존·아카이브를 먼저 정리한다. 한도를 올리거나 직접 runner를 실행해 검사를 우회하지 않는다.
+- 정리는 먼저 `npm run storage:clean`으로 대상을 확인하고 `-- --apply`로 적용한다. 최소 7일이 지난 성공 실행 중 같은 명령의 최신 3회 밖에 있는 것만 자동 삭제하며, 실패·실행 중·`.keep`·불명확한 소유권은 보존한다.
+
 ## 작업별 모델 선택
 
 | 작업 범위 | 사용할 모델 및 추론 수준 |
