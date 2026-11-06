@@ -27,6 +27,7 @@ playwright-report/
 /.playwright-mcp/
 /.cleanup/
 /.artifacts/
+/.archives/
 
 # Test outputs accidentally written at the repository root.
 /mutants/
