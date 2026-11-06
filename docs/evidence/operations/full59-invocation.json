@@ -1,0 +1,20 @@
+{
+  "cwd": "/Users/ethanlee/Desktop/ERP",
+  "argv": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "--headed",
+    "--workers=1",
+    "--retries=0"
+  ],
+  "env": {
+    "STEELFLOW_E2E_PREVIEW": "1",
+    "STEELFLOW_E2E_RUN_DIR": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/run",
+    "STEELFLOW_EVIDENCE_DIR": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "started": 1792861988.551283,
+  "sourceFileCount": 644
+}

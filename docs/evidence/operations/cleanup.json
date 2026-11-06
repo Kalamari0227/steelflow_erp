@@ -1,0 +1,24 @@
+{
+  "remainingOwnedProcesses": [],
+  "profiles": [
+    {
+      "path": "/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/playwright_chromiumdev_profile-t1hHh5",
+      "exists": false
+    }
+  ],
+  "originalProcessesAfter": {
+    "37085": {
+      "pid": 37085,
+      "ppid": 61715,
+      "start": "Sat Oct 24 18:35:43 2026",
+      "command": "/Users/ethanlee/Desktop/ERP/backend/.venv/bin/python .venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --no-access-log"
+    },
+    "57570": {
+      "pid": 57570,
+      "ppid": 57541,
+      "start": "Sat Oct 24 14:53:40 2026",
+      "command": "node /Users/ethanlee/Desktop/ERP/node_modules/.bin/vite preview --host 127.0.0.1"
+    }
+  },
+  "portsAfter": "COMMAND     PID     USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\npython3.1 37085 ethanlee    7u  IPv4 0x3a39ec7f1a640b23      0t0  TCP 127.0.0.1:8000 (LISTEN)\nnode      57570 ethanlee   16u  IPv4 0xb8db4ed6ddc18aa1      0t0  TCP 127.0.0.1:4173 (LISTEN)\n"
+}

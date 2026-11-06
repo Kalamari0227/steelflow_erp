@@ -1,0 +1,790 @@
+{
+  "status": "PASS",
+  "source": {
+    "manifestSha256": "53d0d46617d0e43b877255894d52af9c24f599a03047d6d6aaf53502355f5631",
+    "policySha256": "0ca48cc4e3e28501fa2f5050a015531cb24d474055730818a5956eac1f182abc",
+    "registrySha256": "ce9a7afd183f3561fc3e9fa871fbb05c422eacabc50326fb864136562e25c728"
+  },
+  "lods": [
+    {
+      "level": 0,
+      "nodes": 41,
+      "triangles": 3186,
+      "animations": [
+        {
+          "part": "roughing_roll",
+          "clip": "miniature.roughing_roll",
+          "node": 14,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            1.8,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_1",
+          "clip": "miniature.roughing_roll",
+          "node": 20,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            0.95,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_2",
+          "clip": "miniature.roughing_roll",
+          "node": 26,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            0.1,
+            1.4,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_3",
+          "clip": "miniature.roughing_roll",
+          "node": 32,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            2.3,
+            1.4,
+            0
+          ]
+        }
+      ],
+      "fixed_states": [],
+      "sockets": [
+        {
+          "id": "support",
+          "world_position_m": [
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577,
+            1
+          ]
+        },
+        {
+          "id": "entry",
+          "world_position_m": [
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321,
+            1
+          ]
+        },
+        {
+          "id": "work",
+          "world_position_m": [
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415894288e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692,
+            1
+          ]
+        },
+        {
+          "id": "exit",
+          "world_position_m": [
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415893585e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949,
+            1
+          ]
+        },
+        {
+          "id": "service_support",
+          "world_position_m": [
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007
+          ],
+          "world_normal": [
+            1.570126681502503e-8,
+            0.8960524269348729,
+            0.44394824944369843
+          ],
+          "surface_distance_m": 1.788139140599105e-9,
+          "normal_alignment": 0.9999999999999992,
+          "matrix": [
+            0.9427546351824131,
+            0.14805103080711834,
+            -0.29882202030121663,
+            0,
+            1.5701266953271897e-8,
+            0.8960524348244555,
+            0.44394825335258403,
+            0,
+            0.333487192467643,
+            -0.4185342804738461,
+            0.8447575834686187,
+            0,
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007,
+            1
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "id": "body",
+          "purpose": "body",
+          "actual_vertex_samples": 6016,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 19992,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_1_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 19992,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_2_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 19992,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_3_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 19992,
+          "contained": true
+        }
+      ],
+      "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+    },
+    {
+      "level": 1,
+      "nodes": 41,
+      "triangles": 1922,
+      "animations": [
+        {
+          "part": "roughing_roll",
+          "clip": "miniature.roughing_roll",
+          "node": 14,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            1.8,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_1",
+          "clip": "miniature.roughing_roll",
+          "node": 20,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            0.95,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_2",
+          "clip": "miniature.roughing_roll",
+          "node": 26,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            0.1,
+            1.4,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_3",
+          "clip": "miniature.roughing_roll",
+          "node": 32,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            2.3,
+            1.4,
+            0
+          ]
+        }
+      ],
+      "fixed_states": [],
+      "sockets": [
+        {
+          "id": "support",
+          "world_position_m": [
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577,
+            1
+          ]
+        },
+        {
+          "id": "entry",
+          "world_position_m": [
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321,
+            1
+          ]
+        },
+        {
+          "id": "work",
+          "world_position_m": [
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415894288e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692,
+            1
+          ]
+        },
+        {
+          "id": "exit",
+          "world_position_m": [
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415893585e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949,
+            1
+          ]
+        },
+        {
+          "id": "service_support",
+          "world_position_m": [
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007
+          ],
+          "world_normal": [
+            1.570126681502503e-8,
+            0.8960524269348729,
+            0.44394824944369843
+          ],
+          "surface_distance_m": 1.788139140599105e-9,
+          "normal_alignment": 0.9999999999999992,
+          "matrix": [
+            0.9427546351824131,
+            0.14805103080711834,
+            -0.29882202030121663,
+            0,
+            1.5701266953271897e-8,
+            0.8960524348244555,
+            0.44394825335258403,
+            0,
+            0.333487192467643,
+            -0.4185342804738461,
+            0.8447575834686187,
+            0,
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007,
+            1
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "id": "body",
+          "purpose": "body",
+          "actual_vertex_samples": 3592,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 12936,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_1_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 12936,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_2_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 12936,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_3_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 12936,
+          "contained": true
+        }
+      ],
+      "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+    },
+    {
+      "level": 2,
+      "nodes": 41,
+      "triangles": 962,
+      "animations": [
+        {
+          "part": "roughing_roll",
+          "clip": "miniature.roughing_roll",
+          "node": 14,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            1.8,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_1",
+          "clip": "miniature.roughing_roll",
+          "node": 20,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            -2,
+            0.95,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_2",
+          "clip": "miniature.roughing_roll",
+          "node": 26,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            0.1,
+            1.4,
+            0
+          ]
+        },
+        {
+          "part": "roughing_roll_follower_3",
+          "clip": "miniature.roughing_roll",
+          "node": 32,
+          "path": "rotation",
+          "samples": 49,
+          "seconds": 2,
+          "pivot_m": [
+            2.3,
+            1.4,
+            0
+          ]
+        }
+      ],
+      "fixed_states": [],
+      "sockets": [
+        {
+          "id": "support",
+          "world_position_m": [
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -0.7210609922221702,
+            0.6500000044703483,
+            0.08941833522498577,
+            1
+          ]
+        },
+        {
+          "id": "entry",
+          "world_position_m": [
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415892303e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            -2.3789707835864946,
+            0.6500000044703483,
+            0.7903713600876321,
+            1
+          ]
+        },
+        {
+          "id": "work",
+          "world_position_m": [
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415894288e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            0.844742699621914,
+            0.6500000044703483,
+            -0.5725928549230692,
+            1
+          ]
+        },
+        {
+          "id": "exit",
+          "world_position_m": [
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949
+          ],
+          "world_normal": [
+            0,
+            1,
+            0
+          ],
+          "surface_distance_m": 1.4901161415893585e-9,
+          "normal_alignment": 0.9999999999999991,
+          "matrix": [
+            0.9210609952024025,
+            0,
+            -0.3894183471459147,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.3894183471459147,
+            0,
+            0.9210609952024025,
+            0,
+            2.778970789546959,
+            0.6500000044703483,
+            -1.39037138392949,
+            1
+          ]
+        },
+        {
+          "id": "service_support",
+          "world_position_m": [
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007
+          ],
+          "world_normal": [
+            1.570126681502503e-8,
+            0.8960524269348729,
+            0.44394824944369843
+          ],
+          "surface_distance_m": 1.788139140599105e-9,
+          "normal_alignment": 0.9999999999999992,
+          "matrix": [
+            0.9427546351824131,
+            0.14805103080711834,
+            -0.29882202030121663,
+            0,
+            1.5701266953271897e-8,
+            0.8960524348244555,
+            0.44394825335258403,
+            0,
+            0.333487192467643,
+            -0.4185342804738461,
+            0.8447575834686187,
+            0,
+            -1.360190409612661,
+            1.6559676729138677,
+            -1.1327622513607007,
+            1
+          ]
+        }
+      ],
+      "collisions": [
+        {
+          "id": "body",
+          "purpose": "body",
+          "actual_vertex_samples": 1888,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 8232,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_1_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 8232,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_2_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 8232,
+          "contained": true
+        },
+        {
+          "id": "roughing_roll_follower_3_sweep",
+          "purpose": "moving_sweep",
+          "actual_vertex_samples": 8232,
+          "contained": true
+        }
+      ],
+      "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+    }
+  ]
+}

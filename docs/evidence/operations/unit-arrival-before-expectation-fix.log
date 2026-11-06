@@ -1,0 +1,246 @@
+
+> steelflow-3d@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /Users/ethanlee/Desktop/ERP
+
+ ❯ src/Inspector.test.tsx (2 tests | 1 failed) 340ms
+   ❯ linked canonical material inspection (2)
+     × follows material to shipment dates and manifest and back through customer order 196ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/Inspector.test.tsx > linked canonical material inspection > follows material to shipment dates and manifest and back through customer order
+TestingLibraryElementError: Unable to find an element with the text: 출발 2026-10-30T00:06:00Z · 도착 2026-10-30T00:10:00Z · UTC. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"ops-workspace"[39m
+      [33mdata-testid[39m=[32m"operations-workspace"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"ops-heading"[39m
+      [36m>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"eyebrow"[39m
+          [36m>[39m
+            [0mORDER TO DELIVERY[0m
+          [36m</span>[39m
+          [36m<h1>[39m
+            [0m통합 운영[0m
+          [36m</h1>[39m
+          [36m<p>[39m
+            [0m주문에서 배송까지, 같은 소재의 흐름을 추적합니다.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"ops-run"[39m
+        [36m>[39m
+          [36m<span>[39m
+            [0m일시 정지[0m
+          [36m</span>[39m
+          [36m<time>[39m
+            [0m2026-10-30 00:00:00[0m
+            [0m UTC[0m
+          [36m</time>[39m
+          [36m<details>[39m
+            [36m<summary>[39m
+              [0m실행 정보[0m
+            [36m</summary>[39m
+            [36m<small[39m
+              [33mdata-testid[39m=[32m"current-run"[39m
+            [36m>[39m
+              [0mrun-test[0m
+              [0m · rev [0m
+              [0m0[0m
+            [36m</small>[39m
+          [36m</details>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<section[39m
+        [33maria-label[39m=[32m"전체 운영 지표"[39m
+        [33mclass[39m=[32m"ops-kpis"[39m
+      [36m>[39m
+        [36m<div>[39m
+          [36m<span>[39m
+            [0m진행 주문[0m
+          [36m</span>[39m
+          [36m<strong>[39m
+            [0m1[0m
+            [0m [0m
+            [36m<small>[39m
+              [0m건[0m
+            [36m</small>[39m
+          [36m</strong>[39m
+        [36m</div>[39m
+        [36m<div>[39m
+          [36m<span>[39m
+            [0m생산 완료[0m
+          [36m</span>[39m
+          [36m<strong>[39m
+            [0m0[0m
+            [0m [0m
+            [36m<small>[39m
+              [0mkg[0m
+            [36m</small>[39m
+          [36m</strong>[39m
+        [36m</div>[39m
+        [36m<div>[39m
+          [36m<span>[39m
+            [0m출고 완료[0m
+          [36m</span>[39m
+          [36m<strong>[39m
+            [0m0[0m
+            [0m [0m
+            [36m<small>[39m
+              [0mkg[0m
+            [36m</small>[39m
+          [36m</strong>[39m
+        [36m</div>[39m
+        [36m<div>[39m
+          [36m<span>[39m
+            [0m배송 완료[0m
+          [36m</span>[39m
+          [36m<strong>[39m
+            [0m0[0m
+            [0m [0m
+            [36m<small>[39m
+              [0mkg[0m
+            [36m</small>[39m
+          [36m</strong>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+      [36m<div[39m
+        [33maria-label[39m=[32m"공통 실행 제어"[39m
+        [33mclass[39m=[32m"ops-controls"[39m
+      [36m>[39m
+        [36m<button[39m
+          [33mdata-testid[39m=[32m"simulation-play-pause"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33mclass[39m=[32m"lucide lucide-play"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<polygon[39m
+              [33mpoints[39m=[32m"6 3 20 12 6 21 6 3"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m재생[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mdata-testid[39m=[32m"simulation-step"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33mclass[39m=[32m"lucide lucide-skip-forward"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<polygon[39m
+              [33mpoints[39m=[32m"5 4 15 12 5 20 5 4"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"19"[39m
+              [33mx2[39m=[32m"19"[39m
+              [33my1[39m=[32m"5"[39m
+              [33my2[39m=[32m"19"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m한 단계[0m
+        [36m</button>[39m
+        [36m<button[39m
+          [33mdata-testid[39m=[32m"simulation-reset"[39m
+          [33mtitle[39m=[32m"새 실행으로 초기화"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33mclass[39m=[32m"lucide lucide-rotate-ccw"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"16"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"16"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M3 3v5h5"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0m초기화[0m
+        [36m</button>[39m
+        [36m<label>[39m
+          [0m속도 [0m
+          [36m<select[39m
+            [33maria-label[39m=[32m"실행 속도"[39m
+          [36m>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"1"[39m
+            [36m>[39m
+              [0m1×[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"2"[39m
+            [36m>[39m
+              [0m2×[0m
+            [36m</option>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"4"[39m
+            [36m>[39m
+              [0m4×[0m
+            [36m</option>[39m
+          [36m</select>[39m
+        [36m</label>[39m
+        [36m<label>[39m
+          [0m시나리오 [0m
+          [36m<select[39m
+            [33maria-label[39m=[32m"시나리오"[39m
+            [33mdata-testid[39m=[32m"simulation-scenario"[39m
+          [36m>[39m
+            [36m<option[39m
+              [33mvalue[39m=[32m"NORMAL"[39m
+            [36m>[39m
+              [0m정상 운영[0m
+     ...
+ ❯ Object.getElementError node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ src/Inspector.test.tsx:35:19
+     33|     await user.click(within(inspector).getByRole('button', { name: /SH…
+     34|     expect(screen.getByRole('heading', { name: 'SHIP-ga 적재 명세' })).toB…
+     35|     expect(screen.getByText('출발 2026-10-30T00:06:00Z · 도착 2026-10-30T0…
+       |                   ^
+     36|     await user.click(screen.getByRole('button', { name: 'MAT-ga · 적재 대…
+     37|     expect(useNavigationStore.getState().selection).toMatchObject({ ma…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 18 passed (19)
+      Tests  1 failed | 192 passed (193)
+   Start at  02:32:42
+   Duration  1.44s (environment 57%, import 17%, tests 14%, setup 9%, transform 3%, worker 1%)
+

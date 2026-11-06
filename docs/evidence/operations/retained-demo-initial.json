@@ -1,0 +1,106 @@
+{
+  "status": "runtime_healthy_manual_pending",
+  "intentionalRetained": true,
+  "url": "http://127.0.0.1:4175",
+  "fallbackUrl": "http://127.0.0.1:4175/?view=2d",
+  "root": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified",
+  "database": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/state/steelflow.sqlite",
+  "build": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/dist",
+  "processes": [
+    {
+      "role": "backend",
+      "pid": 78616,
+      "argv": [
+        "/Users/ethanlee/Desktop/ERP/backend/.venv/bin/python",
+        "-m",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8002"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend",
+      "startedAt": "2026-10-24T17:41:18.253039+00:00",
+      "identity": "78616 Sun Oct 25 02:41:18 2026     /Users/ethanlee/Desktop/ERP/backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8002",
+      "listeningPorts": {
+        "8002": [
+          78616
+        ],
+        "4175": [
+          78711
+        ]
+      }
+    },
+    {
+      "role": "preview",
+      "pid": 78711,
+      "argv": [
+        "/Users/ethanlee/.local/share/mise/installs/node/lts/bin/node",
+        "--input-type=module",
+        "-e",
+        "import { preview } from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified",
+      "startedAt": "2026-10-24T17:41:38.381967+00:00",
+      "identity": "78711 Sun Oct 25 02:41:38 2026     /Users/ethanlee/.local/share/mise/installs/node/lts/bin/node --input-type=module -e import { preview } from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});",
+      "listeningPorts": {
+        "8002": [
+          78616
+        ],
+        "4175": [
+          78711
+        ]
+      }
+    }
+  ],
+  "backendHealth": {
+    "url": "http://127.0.0.1:8002/health",
+    "httpStatus": 200,
+    "body": {
+      "status": "ok",
+      "data": "synthetic"
+    },
+    "capturedAt": "2026-10-24T17:41:38.379354+00:00",
+    "waitSeconds": 20.125540167093277
+  },
+  "previewHealth": {
+    "url": "http://127.0.0.1:4175/health",
+    "httpStatus": 200,
+    "body": {
+      "status": "ok",
+      "data": "synthetic"
+    },
+    "capturedAt": "2026-10-24T17:41:39.393114+00:00",
+    "waitSeconds": 1.0107096249703318
+  },
+  "run": {
+    "id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "NORMAL",
+    "elapsed_ms": 0,
+    "duration_ms": 491000,
+    "revision": 0,
+    "event_sequence": 0,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T17:41:37.613903Z",
+    "plan_revision": 0
+  },
+  "orders": 20,
+  "activeMaterials": 22,
+  "gaQuantityKg": 60300,
+  "ai": {
+    "enabled": false,
+    "available": false,
+    "provider": "none"
+  },
+  "originalProcessesUnchanged": true,
+  "defaultDistUnchanged": true,
+  "sourceUnchanged": true,
+  "capturedAt": "2026-10-24T17:41:39.748167+00:00",
+  "manualQA": "PENDING: root CUA browser verification required",
+  "readmeCommandVerification": "Use final preview QA receipts; this retained snapshot is an additional immutable demo"
+}

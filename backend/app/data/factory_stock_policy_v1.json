@@ -1,0 +1,6911 @@
+{
+  "format": "factory-stock-policy-v1",
+  "version": 1,
+  "basis": "approved_synthetic",
+  "sources": [
+    {
+      "path": "backend/app/data/operations_routes.json",
+      "sha256": "b8b4c2db7b2961d672c9917c77fa485bad9114aaf71d0e285c31f47d904ebb6c"
+    },
+    {
+      "path": "backend/app/data/journey_products.json",
+      "sha256": "1488bcbc21f77e87a9febf9592373aa4fdc3f71ca08c61144cb25fdec03ebb9f"
+    },
+    {
+      "path": "shared/factory-layout.json",
+      "sha256": "6f399dba3052095d78ac6a9c458f0c8cb5790b413a868892a99ccbe8a5d3dc01"
+    },
+    {
+      "path": "shared/coverage-registry.json",
+      "sha256": "83cb5b211fd283858a7d5908e206ad4146ab7b1867366ec714fe0d81f435dc87"
+    }
+  ],
+  "forms": [
+    {
+      "form": "ORE",
+      "grade": "SYNTHETIC-CS",
+      "shape": "bulk"
+    },
+    {
+      "form": "SCRAP",
+      "grade": "SYNTHETIC-STS",
+      "shape": "bulk"
+    },
+    {
+      "form": "TI_INGOT",
+      "grade": "SYNTHETIC-TI",
+      "shape": "block"
+    },
+    {
+      "form": "SLAB",
+      "grade": "SYNTHETIC-CS",
+      "shape": "block"
+    },
+    {
+      "form": "BLOOM",
+      "grade": "SYNTHETIC-CS",
+      "shape": "block"
+    },
+    {
+      "form": "BILLET",
+      "grade": "SYNTHETIC-CS",
+      "shape": "block"
+    },
+    {
+      "form": "HR_COIL",
+      "grade": "SYNTHETIC-CS",
+      "shape": "coil"
+    },
+    {
+      "form": "CR_COIL",
+      "grade": "SYNTHETIC-CS",
+      "shape": "coil"
+    },
+    {
+      "form": "STS_HR_COIL",
+      "grade": "SYNTHETIC-STS",
+      "shape": "coil"
+    },
+    {
+      "form": "TI_HR_COIL",
+      "grade": "SYNTHETIC-TI",
+      "shape": "coil"
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "ROUTE-slab",
+      "route_version": 1,
+      "product": "slab",
+      "input_form": "ORE",
+      "output_form": "SLAB",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "slab:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "slab:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "slab:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "slab:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "slab:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "slab:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "slab:final-inspection",
+          "ordinal": 6,
+          "source_step_id": "final-inspection",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "slab:final-packaging",
+          "ordinal": 7,
+          "source_step_id": "final-packaging",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-bloom",
+      "route_version": 1,
+      "product": "bloom",
+      "input_form": "ORE",
+      "output_form": "BLOOM",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "bloom:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "bloom:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "bloom:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "bloom:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "bloom:cs-cast-bloom",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-bloom",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "BLOOM",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-BLOOM"
+        },
+        {
+          "key": "bloom:cs-cut-bloom",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-bloom",
+          "input_form": "BLOOM",
+          "output_form": "BLOOM",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-BLOOM"
+        },
+        {
+          "key": "bloom:final-inspection",
+          "ordinal": 6,
+          "source_step_id": "final-inspection",
+          "input_form": "BLOOM",
+          "output_form": "BLOOM",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "bloom:final-packaging",
+          "ordinal": 7,
+          "source_step_id": "final-packaging",
+          "input_form": "BLOOM",
+          "output_form": "BLOOM",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-billet",
+      "route_version": 1,
+      "product": "billet",
+      "input_form": "ORE",
+      "output_form": "BILLET",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "billet:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "billet:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "billet:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "billet:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "billet:cs-cast-billet",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-billet",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "BILLET",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-BILLET"
+        },
+        {
+          "key": "billet:cs-cut-billet",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-billet",
+          "input_form": "BILLET",
+          "output_form": "BILLET",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-BILLET"
+        },
+        {
+          "key": "billet:final-inspection",
+          "ordinal": 6,
+          "source_step_id": "final-inspection",
+          "input_form": "BILLET",
+          "output_form": "BILLET",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "billet:final-packaging",
+          "ordinal": 7,
+          "source_step_id": "final-packaging",
+          "input_form": "BILLET",
+          "output_form": "BILLET",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-hr",
+      "route_version": 1,
+      "product": "hr",
+      "input_form": "ORE",
+      "output_form": "HR_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "hr:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "hr:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "hr:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "hr:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "hr:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "hr:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "hr:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "hr:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "hr:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "hr:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "hr:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "hr:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "hr:final-inspection",
+          "ordinal": 12,
+          "source_step_id": "final-inspection",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "hr:final-packaging",
+          "ordinal": 13,
+          "source_step_id": "final-packaging",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-plate",
+      "route_version": 1,
+      "product": "plate",
+      "input_form": "ORE",
+      "output_form": "PLATE",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "plate:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "plate:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "plate:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "plate:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "plate:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "plate:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "plate:plate-02",
+          "ordinal": 6,
+          "source_step_id": "plate-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-02"
+        },
+        {
+          "key": "plate:plate-03",
+          "ordinal": 7,
+          "source_step_id": "plate-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-03"
+        },
+        {
+          "key": "plate:plate-04",
+          "ordinal": 8,
+          "source_step_id": "plate-04",
+          "input_form": "HOT_PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-04"
+        },
+        {
+          "key": "plate:plate-05",
+          "ordinal": 9,
+          "source_step_id": "plate-05",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-05"
+        },
+        {
+          "key": "plate:plate-06",
+          "ordinal": 10,
+          "source_step_id": "plate-06",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 2,
+          "equipment_id": "CS-PLATE-06"
+        },
+        {
+          "key": "plate:plate-07",
+          "ordinal": 11,
+          "source_step_id": "plate-07",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-07"
+        },
+        {
+          "key": "plate:plate-08",
+          "ordinal": 12,
+          "source_step_id": "plate-08",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-PLATE-08"
+        },
+        {
+          "key": "plate:final-inspection",
+          "ordinal": 13,
+          "source_step_id": "final-inspection",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "plate:final-packaging",
+          "ordinal": 14,
+          "source_step_id": "final-packaging",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-wire",
+      "route_version": 1,
+      "product": "wire",
+      "input_form": "ORE",
+      "output_form": "WIRE_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "wire:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "wire:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "wire:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "wire:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "wire:cs-cast-bloom",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-bloom",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "BLOOM",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-BLOOM"
+        },
+        {
+          "key": "wire:cs-cut-bloom",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-bloom",
+          "input_form": "BLOOM",
+          "output_form": "BLOOM",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-BLOOM"
+        },
+        {
+          "key": "wire:wire-02",
+          "ordinal": 6,
+          "source_step_id": "wire-02",
+          "input_form": "BLOOM",
+          "output_form": "HOT_BLOOM",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-02"
+        },
+        {
+          "key": "wire:wire-03",
+          "ordinal": 7,
+          "source_step_id": "wire-03",
+          "input_form": "HOT_BLOOM",
+          "output_form": "HOT_BILLET",
+          "role": "manufacturing",
+          "duration_ms": 5600,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-03"
+        },
+        {
+          "key": "wire:wire-04",
+          "ordinal": 8,
+          "source_step_id": "wire-04",
+          "input_form": "HOT_BILLET",
+          "output_form": "BILLET",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-04"
+        },
+        {
+          "key": "wire:wire-05",
+          "ordinal": 9,
+          "source_step_id": "wire-05",
+          "input_form": "BILLET",
+          "output_form": "BILLET",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-05"
+        },
+        {
+          "key": "wire:wire-06",
+          "ordinal": 10,
+          "source_step_id": "wire-06",
+          "input_form": "BILLET",
+          "output_form": "HOT_BILLET",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-06"
+        },
+        {
+          "key": "wire:wire-07",
+          "ordinal": 11,
+          "source_step_id": "wire-07",
+          "input_form": "HOT_BILLET",
+          "output_form": "WIRE",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-07"
+        },
+        {
+          "key": "wire:wire-08",
+          "ordinal": 12,
+          "source_step_id": "wire-08",
+          "input_form": "WIRE",
+          "output_form": "WIRE_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-WIRE-08"
+        },
+        {
+          "key": "wire:final-inspection",
+          "ordinal": 13,
+          "source_step_id": "final-inspection",
+          "input_form": "WIRE_COIL",
+          "output_form": "WIRE_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "wire:final-packaging",
+          "ordinal": 14,
+          "source_step_id": "final-packaging",
+          "input_form": "WIRE_COIL",
+          "output_form": "WIRE_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-cr",
+      "route_version": 1,
+      "product": "cr",
+      "input_form": "ORE",
+      "output_form": "CR_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "cr:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "cr:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "cr:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "cr:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "cr:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "cr:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "cr:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "cr:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "cr:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "cr:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "cr:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "cr:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "cr:cr-02",
+          "ordinal": 12,
+          "source_step_id": "cr-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-02"
+        },
+        {
+          "key": "cr:cr-03",
+          "ordinal": 13,
+          "source_step_id": "cr-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-03"
+        },
+        {
+          "key": "cr:cr-04",
+          "ordinal": 14,
+          "source_step_id": "cr-04",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-04"
+        },
+        {
+          "key": "cr:cr-05",
+          "ordinal": 15,
+          "source_step_id": "cr-05",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-05"
+        },
+        {
+          "key": "cr:cr-06",
+          "ordinal": 16,
+          "source_step_id": "cr-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-06"
+        },
+        {
+          "key": "cr:cr-07",
+          "ordinal": 17,
+          "source_step_id": "cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-CR-07"
+        },
+        {
+          "key": "cr:cr-08",
+          "ordinal": 18,
+          "source_step_id": "cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-08"
+        },
+        {
+          "key": "cr:cr-09",
+          "ordinal": 19,
+          "source_step_id": "cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-09"
+        },
+        {
+          "key": "cr:final-inspection",
+          "ordinal": 20,
+          "source_step_id": "final-inspection",
+          "input_form": "CR_COIL",
+          "output_form": "CR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "cr:final-packaging",
+          "ordinal": 21,
+          "source_step_id": "final-packaging",
+          "input_form": "CR_COIL",
+          "output_form": "CR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-gi",
+      "route_version": 1,
+      "product": "gi",
+      "input_form": "ORE",
+      "output_form": "GI_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "gi:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "gi:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "gi:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "gi:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "gi:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "gi:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "gi:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "gi:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "gi:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "gi:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "gi:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "gi:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "gi:cr-02",
+          "ordinal": 12,
+          "source_step_id": "cr-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-02"
+        },
+        {
+          "key": "gi:cr-03",
+          "ordinal": 13,
+          "source_step_id": "cr-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-03"
+        },
+        {
+          "key": "gi:cr-04",
+          "ordinal": 14,
+          "source_step_id": "cr-04",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-04"
+        },
+        {
+          "key": "gi:cr-05",
+          "ordinal": 15,
+          "source_step_id": "cr-05",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-05"
+        },
+        {
+          "key": "gi:cr-06",
+          "ordinal": 16,
+          "source_step_id": "cr-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-06"
+        },
+        {
+          "key": "gi:cr-07",
+          "ordinal": 17,
+          "source_step_id": "cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-07"
+        },
+        {
+          "key": "gi:cr-08",
+          "ordinal": 18,
+          "source_step_id": "cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-08"
+        },
+        {
+          "key": "gi:cr-09",
+          "ordinal": 19,
+          "source_step_id": "cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-09"
+        },
+        {
+          "key": "gi:gi-02",
+          "ordinal": 20,
+          "source_step_id": "gi-02",
+          "input_form": "CR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-02"
+        },
+        {
+          "key": "gi:gi-03",
+          "ordinal": 21,
+          "source_step_id": "gi-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-03"
+        },
+        {
+          "key": "gi:gi-04",
+          "ordinal": 22,
+          "source_step_id": "gi-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-04"
+        },
+        {
+          "key": "gi:gi-05",
+          "ordinal": 23,
+          "source_step_id": "gi-05",
+          "input_form": "STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 200,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-05"
+        },
+        {
+          "key": "gi:gi-06",
+          "ordinal": 24,
+          "source_step_id": "gi-06",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-GI-06"
+        },
+        {
+          "key": "gi:gi-07",
+          "ordinal": 25,
+          "source_step_id": "gi-07",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-07"
+        },
+        {
+          "key": "gi:gi-08",
+          "ordinal": 26,
+          "source_step_id": "gi-08",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-08"
+        },
+        {
+          "key": "gi:gi-09",
+          "ordinal": 27,
+          "source_step_id": "gi-09",
+          "input_form": "COATED_STRIP",
+          "output_form": "GI_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GI-09"
+        },
+        {
+          "key": "gi:final-inspection",
+          "ordinal": 28,
+          "source_step_id": "final-inspection",
+          "input_form": "GI_COIL",
+          "output_form": "GI_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "gi:final-packaging",
+          "ordinal": 29,
+          "source_step_id": "final-packaging",
+          "input_form": "GI_COIL",
+          "output_form": "GI_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ga",
+      "route_version": 1,
+      "product": "ga",
+      "input_form": "ORE",
+      "output_form": "GA_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "ga:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "ga:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "ga:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "ga:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "ga:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "ga:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "ga:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "ga:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "ga:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "ga:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "ga:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "ga:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "ga:cr-02",
+          "ordinal": 12,
+          "source_step_id": "cr-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-02"
+        },
+        {
+          "key": "ga:cr-03",
+          "ordinal": 13,
+          "source_step_id": "cr-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-03"
+        },
+        {
+          "key": "ga:cr-04",
+          "ordinal": 14,
+          "source_step_id": "cr-04",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-04"
+        },
+        {
+          "key": "ga:cr-05",
+          "ordinal": 15,
+          "source_step_id": "cr-05",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-05"
+        },
+        {
+          "key": "ga:cr-06",
+          "ordinal": 16,
+          "source_step_id": "cr-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-06"
+        },
+        {
+          "key": "ga:cr-07",
+          "ordinal": 17,
+          "source_step_id": "cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-07"
+        },
+        {
+          "key": "ga:cr-08",
+          "ordinal": 18,
+          "source_step_id": "cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-08"
+        },
+        {
+          "key": "ga:cr-09",
+          "ordinal": 19,
+          "source_step_id": "cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-09"
+        },
+        {
+          "key": "ga:ga-02",
+          "ordinal": 20,
+          "source_step_id": "ga-02",
+          "input_form": "CR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-02"
+        },
+        {
+          "key": "ga:ga-03",
+          "ordinal": 21,
+          "source_step_id": "ga-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-03"
+        },
+        {
+          "key": "ga:ga-04",
+          "ordinal": 22,
+          "source_step_id": "ga-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-04"
+        },
+        {
+          "key": "ga:ga-05",
+          "ordinal": 23,
+          "source_step_id": "ga-05",
+          "input_form": "STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 200,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-05"
+        },
+        {
+          "key": "ga:ga-06",
+          "ordinal": 24,
+          "source_step_id": "ga-06",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-06"
+        },
+        {
+          "key": "ga:ga-07",
+          "ordinal": 25,
+          "source_step_id": "ga-07",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-GA-07"
+        },
+        {
+          "key": "ga:ga-08",
+          "ordinal": 26,
+          "source_step_id": "ga-08",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-08"
+        },
+        {
+          "key": "ga:ga-09",
+          "ordinal": 27,
+          "source_step_id": "ga-09",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-09"
+        },
+        {
+          "key": "ga:ga-10",
+          "ordinal": 28,
+          "source_step_id": "ga-10",
+          "input_form": "COATED_STRIP",
+          "output_form": "GA_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GA-10"
+        },
+        {
+          "key": "ga:final-inspection",
+          "ordinal": 29,
+          "source_step_id": "final-inspection",
+          "input_form": "GA_COIL",
+          "output_form": "GA_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ga:final-packaging",
+          "ordinal": 30,
+          "source_step_id": "final-packaging",
+          "input_form": "GA_COIL",
+          "output_form": "GA_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-hgi",
+      "route_version": 1,
+      "product": "hgi",
+      "input_form": "ORE",
+      "output_form": "HGI_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "hgi:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "hgi:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "hgi:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "hgi:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "hgi:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "hgi:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "hgi:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "hgi:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "hgi:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "hgi:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "hgi:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "hgi:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "hgi:hgi-02",
+          "ordinal": 12,
+          "source_step_id": "hgi-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-02"
+        },
+        {
+          "key": "hgi:hgi-03",
+          "ordinal": 13,
+          "source_step_id": "hgi-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-03"
+        },
+        {
+          "key": "hgi:hgi-04",
+          "ordinal": 14,
+          "source_step_id": "hgi-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-04"
+        },
+        {
+          "key": "hgi:hgi-05",
+          "ordinal": 15,
+          "source_step_id": "hgi-05",
+          "input_form": "STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 200,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-05"
+        },
+        {
+          "key": "hgi:hgi-06",
+          "ordinal": 16,
+          "source_step_id": "hgi-06",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-06"
+        },
+        {
+          "key": "hgi:hgi-07",
+          "ordinal": 17,
+          "source_step_id": "hgi-07",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-07"
+        },
+        {
+          "key": "hgi:hgi-08",
+          "ordinal": 18,
+          "source_step_id": "hgi-08",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-08"
+        },
+        {
+          "key": "hgi:hgi-09",
+          "ordinal": 19,
+          "source_step_id": "hgi-09",
+          "input_form": "COATED_STRIP",
+          "output_form": "HGI_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HGI-09"
+        },
+        {
+          "key": "hgi:final-inspection",
+          "ordinal": 20,
+          "source_step_id": "final-inspection",
+          "input_form": "HGI_COIL",
+          "output_form": "HGI_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "hgi:final-packaging",
+          "ordinal": 21,
+          "source_step_id": "final-packaging",
+          "input_form": "HGI_COIL",
+          "output_form": "HGI_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-eg",
+      "route_version": 1,
+      "product": "eg",
+      "input_form": "ORE",
+      "output_form": "EG_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "eg:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "eg:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "eg:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "eg:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "eg:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "eg:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "eg:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "eg:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "eg:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "eg:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "eg:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "eg:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "eg:cr-02",
+          "ordinal": 12,
+          "source_step_id": "cr-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-02"
+        },
+        {
+          "key": "eg:cr-03",
+          "ordinal": 13,
+          "source_step_id": "cr-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-03"
+        },
+        {
+          "key": "eg:cr-04",
+          "ordinal": 14,
+          "source_step_id": "cr-04",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-04"
+        },
+        {
+          "key": "eg:cr-05",
+          "ordinal": 15,
+          "source_step_id": "cr-05",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-05"
+        },
+        {
+          "key": "eg:cr-06",
+          "ordinal": 16,
+          "source_step_id": "cr-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-06"
+        },
+        {
+          "key": "eg:cr-07",
+          "ordinal": 17,
+          "source_step_id": "cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-07"
+        },
+        {
+          "key": "eg:cr-08",
+          "ordinal": 18,
+          "source_step_id": "cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-08"
+        },
+        {
+          "key": "eg:cr-09",
+          "ordinal": 19,
+          "source_step_id": "cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-CR-09"
+        },
+        {
+          "key": "eg:eg-02",
+          "ordinal": 20,
+          "source_step_id": "eg-02",
+          "input_form": "CR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-02"
+        },
+        {
+          "key": "eg:eg-03",
+          "ordinal": 21,
+          "source_step_id": "eg-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-EG-03"
+        },
+        {
+          "key": "eg:eg-04",
+          "ordinal": 22,
+          "source_step_id": "eg-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-04"
+        },
+        {
+          "key": "eg:eg-05",
+          "ordinal": 23,
+          "source_step_id": "eg-05",
+          "input_form": "STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 200,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-05"
+        },
+        {
+          "key": "eg:eg-06",
+          "ordinal": 24,
+          "source_step_id": "eg-06",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-06"
+        },
+        {
+          "key": "eg:eg-07",
+          "ordinal": 25,
+          "source_step_id": "eg-07",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-07"
+        },
+        {
+          "key": "eg:eg-08",
+          "ordinal": 26,
+          "source_step_id": "eg-08",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-08"
+        },
+        {
+          "key": "eg:eg-09",
+          "ordinal": 27,
+          "source_step_id": "eg-09",
+          "input_form": "COATED_STRIP",
+          "output_form": "EG_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-EG-09"
+        },
+        {
+          "key": "eg:final-inspection",
+          "ordinal": 28,
+          "source_step_id": "final-inspection",
+          "input_form": "EG_COIL",
+          "output_form": "EG_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "eg:final-packaging",
+          "ordinal": 29,
+          "source_step_id": "final-packaging",
+          "input_form": "EG_COIL",
+          "output_form": "EG_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-go",
+      "route_version": 1,
+      "product": "go",
+      "input_form": "ORE",
+      "output_form": "GO_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "go:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "go:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "go:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "go:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "go:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "go:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "go:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "go:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "go:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "go:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "go:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "go:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "go:go-02",
+          "ordinal": 12,
+          "source_step_id": "go-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-02"
+        },
+        {
+          "key": "go:go-03",
+          "ordinal": 13,
+          "source_step_id": "go-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-03"
+        },
+        {
+          "key": "go:go-04",
+          "ordinal": 14,
+          "source_step_id": "go-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-04"
+        },
+        {
+          "key": "go:go-05",
+          "ordinal": 15,
+          "source_step_id": "go-05",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-GO-05"
+        },
+        {
+          "key": "go:go-06",
+          "ordinal": 16,
+          "source_step_id": "go-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-06"
+        },
+        {
+          "key": "go:go-07",
+          "ordinal": 17,
+          "source_step_id": "go-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-07"
+        },
+        {
+          "key": "go:go-08",
+          "ordinal": 18,
+          "source_step_id": "go-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-08"
+        },
+        {
+          "key": "go:go-09",
+          "ordinal": 19,
+          "source_step_id": "go-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-09"
+        },
+        {
+          "key": "go:go-10",
+          "ordinal": 20,
+          "source_step_id": "go-10",
+          "input_form": "COATED_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "intermediate_inspection",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-10"
+        },
+        {
+          "key": "go:go-11",
+          "ordinal": 21,
+          "source_step_id": "go-11",
+          "input_form": "COATED_STRIP",
+          "output_form": "GO_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-GO-11"
+        },
+        {
+          "key": "go:final-inspection",
+          "ordinal": 22,
+          "source_step_id": "final-inspection",
+          "input_form": "GO_COIL",
+          "output_form": "GO_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "go:final-packaging",
+          "ordinal": 23,
+          "source_step_id": "final-packaging",
+          "input_form": "GO_COIL",
+          "output_form": "GO_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ngo",
+      "route_version": 1,
+      "product": "ngo",
+      "input_form": "ORE",
+      "output_form": "NGO_COIL",
+      "grade": "SYNTHETIC-CS",
+      "steps": [
+        {
+          "key": "ngo:cs-charge",
+          "ordinal": 0,
+          "source_step_id": "cs-charge",
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CHARGE-A"
+        },
+        {
+          "key": "ngo:cs-bf",
+          "ordinal": 1,
+          "source_step_id": "cs-bf",
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BF-A"
+        },
+        {
+          "key": "ngo:cs-bof",
+          "ordinal": 2,
+          "source_step_id": "cs-bof",
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "BOF-A"
+        },
+        {
+          "key": "ngo:cs-lf",
+          "ordinal": 3,
+          "source_step_id": "cs-lf",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 4000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "LF-A"
+        },
+        {
+          "key": "ngo:cs-cast-slab",
+          "ordinal": 4,
+          "source_step_id": "cs-cast-slab",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CAST-SLAB"
+        },
+        {
+          "key": "ngo:cs-cut-slab",
+          "ordinal": 5,
+          "source_step_id": "cs-cut-slab",
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CUT-SLAB"
+        },
+        {
+          "key": "ngo:hr-02",
+          "ordinal": 6,
+          "source_step_id": "hr-02",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-02"
+        },
+        {
+          "key": "ngo:hr-03",
+          "ordinal": 7,
+          "source_step_id": "hr-03",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-03"
+        },
+        {
+          "key": "ngo:hr-04",
+          "ordinal": 8,
+          "source_step_id": "hr-04",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "HSM-A"
+        },
+        {
+          "key": "ngo:hr-05",
+          "ordinal": 9,
+          "source_step_id": "hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-05"
+        },
+        {
+          "key": "ngo:hr-06",
+          "ordinal": 10,
+          "source_step_id": "hr-06",
+          "input_form": "STRIP",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-06"
+        },
+        {
+          "key": "ngo:hr-07",
+          "ordinal": 11,
+          "source_step_id": "hr-07",
+          "input_form": "HR_COIL",
+          "output_form": "HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-HR-07"
+        },
+        {
+          "key": "ngo:ngo-02",
+          "ordinal": 12,
+          "source_step_id": "ngo-02",
+          "input_form": "HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-02"
+        },
+        {
+          "key": "ngo:ngo-03",
+          "ordinal": 13,
+          "source_step_id": "ngo-03",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-03"
+        },
+        {
+          "key": "ngo:ngo-04",
+          "ordinal": 14,
+          "source_step_id": "ngo-04",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-04"
+        },
+        {
+          "key": "ngo:ngo-05",
+          "ordinal": 15,
+          "source_step_id": "ngo-05",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-05"
+        },
+        {
+          "key": "ngo:ngo-06",
+          "ordinal": 16,
+          "source_step_id": "ngo-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-06"
+        },
+        {
+          "key": "ngo:ngo-07",
+          "ordinal": 17,
+          "source_step_id": "ngo-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "COATED_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-07"
+        },
+        {
+          "key": "ngo:ngo-08",
+          "ordinal": 18,
+          "source_step_id": "ngo-08",
+          "input_form": "COATED_STRIP",
+          "output_form": "NGO_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "CS-NGO-08"
+        },
+        {
+          "key": "ngo:final-inspection",
+          "ordinal": 19,
+          "source_step_id": "final-inspection",
+          "input_form": "NGO_COIL",
+          "output_form": "NGO_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ngo:final-packaging",
+          "ordinal": 20,
+          "source_step_id": "final-packaging",
+          "input_form": "NGO_COIL",
+          "output_form": "NGO_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-sts-hr",
+      "route_version": 1,
+      "product": "sts-hr",
+      "input_form": "SCRAP",
+      "output_form": "STS_HR_COIL",
+      "grade": "SYNTHETIC-STS",
+      "steps": [
+        {
+          "key": "sts-hr:sts-hr-02",
+          "ordinal": 0,
+          "source_step_id": "sts-hr-02",
+          "input_form": "SCRAP",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-02"
+        },
+        {
+          "key": "sts-hr:sts-hr-03",
+          "ordinal": 1,
+          "source_step_id": "sts-hr-03",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-03"
+        },
+        {
+          "key": "sts-hr:sts-hr-04",
+          "ordinal": 2,
+          "source_step_id": "sts-hr-04",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-04"
+        },
+        {
+          "key": "sts-hr:sts-hr-05",
+          "ordinal": 3,
+          "source_step_id": "sts-hr-05",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-05"
+        },
+        {
+          "key": "sts-hr:sts-hr-06",
+          "ordinal": 4,
+          "source_step_id": "sts-hr-06",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-06"
+        },
+        {
+          "key": "sts-hr:sts-hr-07",
+          "ordinal": 5,
+          "source_step_id": "sts-hr-07",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "STS-HR-07"
+        },
+        {
+          "key": "sts-hr:sts-hr-08",
+          "ordinal": 6,
+          "source_step_id": "sts-hr-08",
+          "input_form": "HOT_STRIP",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-08"
+        },
+        {
+          "key": "sts-hr:sts-hr-09",
+          "ordinal": 7,
+          "source_step_id": "sts-hr-09",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-09"
+        },
+        {
+          "key": "sts-hr:sts-hr-10",
+          "ordinal": 8,
+          "source_step_id": "sts-hr-10",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-10"
+        },
+        {
+          "key": "sts-hr:sts-hr-11",
+          "ordinal": 9,
+          "source_step_id": "sts-hr-11",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-11"
+        },
+        {
+          "key": "sts-hr:sts-hr-12",
+          "ordinal": 10,
+          "source_step_id": "sts-hr-12",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-12"
+        },
+        {
+          "key": "sts-hr:sts-hr-13",
+          "ordinal": 11,
+          "source_step_id": "sts-hr-13",
+          "input_form": "STRIP",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-13"
+        },
+        {
+          "key": "sts-hr:final-inspection",
+          "ordinal": 12,
+          "source_step_id": "final-inspection",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STS_HR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "sts-hr:final-packaging",
+          "ordinal": 13,
+          "source_step_id": "final-packaging",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STS_HR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-sts-cr",
+      "route_version": 1,
+      "product": "sts-cr",
+      "input_form": "SCRAP",
+      "output_form": "STS_CR_COIL",
+      "grade": "SYNTHETIC-STS",
+      "steps": [
+        {
+          "key": "sts-cr:sts-hr-02",
+          "ordinal": 0,
+          "source_step_id": "sts-hr-02",
+          "input_form": "SCRAP",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-02"
+        },
+        {
+          "key": "sts-cr:sts-hr-03",
+          "ordinal": 1,
+          "source_step_id": "sts-hr-03",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-03"
+        },
+        {
+          "key": "sts-cr:sts-hr-04",
+          "ordinal": 2,
+          "source_step_id": "sts-hr-04",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-04"
+        },
+        {
+          "key": "sts-cr:sts-hr-05",
+          "ordinal": 3,
+          "source_step_id": "sts-hr-05",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-05"
+        },
+        {
+          "key": "sts-cr:sts-hr-06",
+          "ordinal": 4,
+          "source_step_id": "sts-hr-06",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-06"
+        },
+        {
+          "key": "sts-cr:sts-hr-07",
+          "ordinal": 5,
+          "source_step_id": "sts-hr-07",
+          "input_form": "HOT_STRIP",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-07"
+        },
+        {
+          "key": "sts-cr:sts-hr-08",
+          "ordinal": 6,
+          "source_step_id": "sts-hr-08",
+          "input_form": "HOT_STRIP",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-08"
+        },
+        {
+          "key": "sts-cr:sts-hr-09",
+          "ordinal": 7,
+          "source_step_id": "sts-hr-09",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-09"
+        },
+        {
+          "key": "sts-cr:sts-hr-10",
+          "ordinal": 8,
+          "source_step_id": "sts-hr-10",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-10"
+        },
+        {
+          "key": "sts-cr:sts-hr-11",
+          "ordinal": 9,
+          "source_step_id": "sts-hr-11",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-11"
+        },
+        {
+          "key": "sts-cr:sts-hr-12",
+          "ordinal": 10,
+          "source_step_id": "sts-hr-12",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-12"
+        },
+        {
+          "key": "sts-cr:sts-hr-13",
+          "ordinal": 11,
+          "source_step_id": "sts-hr-13",
+          "input_form": "STRIP",
+          "output_form": "STS_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-HR-13"
+        },
+        {
+          "key": "sts-cr:sts-cr-02",
+          "ordinal": 12,
+          "source_step_id": "sts-cr-02",
+          "input_form": "STS_HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-02"
+        },
+        {
+          "key": "sts-cr:sts-cr-03",
+          "ordinal": 13,
+          "source_step_id": "sts-cr-03",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-03"
+        },
+        {
+          "key": "sts-cr:sts-cr-04",
+          "ordinal": 14,
+          "source_step_id": "sts-cr-04",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-04"
+        },
+        {
+          "key": "sts-cr:sts-cr-05",
+          "ordinal": 15,
+          "source_step_id": "sts-cr-05",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-05"
+        },
+        {
+          "key": "sts-cr:sts-cr-06",
+          "ordinal": 16,
+          "source_step_id": "sts-cr-06",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-06"
+        },
+        {
+          "key": "sts-cr:sts-cr-07",
+          "ordinal": 17,
+          "source_step_id": "sts-cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-07"
+        },
+        {
+          "key": "sts-cr:sts-cr-08",
+          "ordinal": 18,
+          "source_step_id": "sts-cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "STS-CR-08"
+        },
+        {
+          "key": "sts-cr:sts-cr-09",
+          "ordinal": 19,
+          "source_step_id": "sts-cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "STS_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-CR-09"
+        },
+        {
+          "key": "sts-cr:final-inspection",
+          "ordinal": 20,
+          "source_step_id": "final-inspection",
+          "input_form": "STS_CR_COIL",
+          "output_form": "STS_CR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "sts-cr:final-packaging",
+          "ordinal": 21,
+          "source_step_id": "final-packaging",
+          "input_form": "STS_CR_COIL",
+          "output_form": "STS_CR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-sts-plate",
+      "route_version": 1,
+      "product": "sts-plate",
+      "input_form": "SCRAP",
+      "output_form": "STS_PLATE",
+      "grade": "SYNTHETIC-STS",
+      "steps": [
+        {
+          "key": "sts-plate:sts-plate-02",
+          "ordinal": 0,
+          "source_step_id": "sts-plate-02",
+          "input_form": "SCRAP",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-02"
+        },
+        {
+          "key": "sts-plate:sts-plate-03",
+          "ordinal": 1,
+          "source_step_id": "sts-plate-03",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-03"
+        },
+        {
+          "key": "sts-plate:sts-plate-04",
+          "ordinal": 2,
+          "source_step_id": "sts-plate-04",
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "role": "manufacturing",
+          "duration_ms": 7200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-04"
+        },
+        {
+          "key": "sts-plate:sts-plate-05",
+          "ordinal": 3,
+          "source_step_id": "sts-plate-05",
+          "input_form": "SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-05"
+        },
+        {
+          "key": "sts-plate:sts-plate-06",
+          "ordinal": 4,
+          "source_step_id": "sts-plate-06",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-06"
+        },
+        {
+          "key": "sts-plate:sts-plate-07",
+          "ordinal": 5,
+          "source_step_id": "sts-plate-07",
+          "input_form": "HOT_PLATE",
+          "output_form": "HOT_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-07"
+        },
+        {
+          "key": "sts-plate:sts-plate-08",
+          "ordinal": 6,
+          "source_step_id": "sts-plate-08",
+          "input_form": "HOT_PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-08"
+        },
+        {
+          "key": "sts-plate:sts-plate-09",
+          "ordinal": 7,
+          "source_step_id": "sts-plate-09",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-09"
+        },
+        {
+          "key": "sts-plate:sts-plate-10",
+          "ordinal": 8,
+          "source_step_id": "sts-plate-10",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-10"
+        },
+        {
+          "key": "sts-plate:sts-plate-11",
+          "ordinal": 9,
+          "source_step_id": "sts-plate-11",
+          "input_form": "PLATE",
+          "output_form": "STS_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "STS-PLATE-11"
+        },
+        {
+          "key": "sts-plate:final-inspection",
+          "ordinal": 10,
+          "source_step_id": "final-inspection",
+          "input_form": "STS_PLATE",
+          "output_form": "STS_PLATE",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "sts-plate:final-packaging",
+          "ordinal": 11,
+          "source_step_id": "final-packaging",
+          "input_form": "STS_PLATE",
+          "output_form": "STS_PLATE",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ti-hr",
+      "route_version": 1,
+      "product": "ti-hr",
+      "input_form": "TI_INGOT",
+      "output_form": "TI_HR_COIL",
+      "grade": "SYNTHETIC-TI",
+      "steps": [
+        {
+          "key": "ti-hr:ti-hr-02",
+          "ordinal": 0,
+          "source_step_id": "ti-hr-02",
+          "input_form": "TI_INGOT",
+          "output_form": "TI_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-02"
+        },
+        {
+          "key": "ti-hr:ti-hr-03",
+          "ordinal": 1,
+          "source_step_id": "ti-hr-03",
+          "input_form": "TI_SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-03"
+        },
+        {
+          "key": "ti-hr:ti-hr-04",
+          "ordinal": 2,
+          "source_step_id": "ti-hr-04",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-04"
+        },
+        {
+          "key": "ti-hr:ti-hr-05",
+          "ordinal": 3,
+          "source_step_id": "ti-hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "TI-HR-05"
+        },
+        {
+          "key": "ti-hr:ti-hr-06",
+          "ordinal": 4,
+          "source_step_id": "ti-hr-06",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-06"
+        },
+        {
+          "key": "ti-hr:ti-hr-07",
+          "ordinal": 5,
+          "source_step_id": "ti-hr-07",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-07"
+        },
+        {
+          "key": "ti-hr:ti-hr-08",
+          "ordinal": 6,
+          "source_step_id": "ti-hr-08",
+          "input_form": "STRIP",
+          "output_form": "TI_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-08"
+        },
+        {
+          "key": "ti-hr:final-inspection",
+          "ordinal": 7,
+          "source_step_id": "final-inspection",
+          "input_form": "TI_HR_COIL",
+          "output_form": "TI_HR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ti-hr:final-packaging",
+          "ordinal": 8,
+          "source_step_id": "final-packaging",
+          "input_form": "TI_HR_COIL",
+          "output_form": "TI_HR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ti-cr",
+      "route_version": 1,
+      "product": "ti-cr",
+      "input_form": "TI_INGOT",
+      "output_form": "TI_CR_COIL",
+      "grade": "SYNTHETIC-TI",
+      "steps": [
+        {
+          "key": "ti-cr:ti-hr-02",
+          "ordinal": 0,
+          "source_step_id": "ti-hr-02",
+          "input_form": "TI_INGOT",
+          "output_form": "TI_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-02"
+        },
+        {
+          "key": "ti-cr:ti-hr-03",
+          "ordinal": 1,
+          "source_step_id": "ti-hr-03",
+          "input_form": "TI_SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-03"
+        },
+        {
+          "key": "ti-cr:ti-hr-04",
+          "ordinal": 2,
+          "source_step_id": "ti-hr-04",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-04"
+        },
+        {
+          "key": "ti-cr:ti-hr-05",
+          "ordinal": 3,
+          "source_step_id": "ti-hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-05"
+        },
+        {
+          "key": "ti-cr:ti-hr-06",
+          "ordinal": 4,
+          "source_step_id": "ti-hr-06",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-06"
+        },
+        {
+          "key": "ti-cr:ti-hr-07",
+          "ordinal": 5,
+          "source_step_id": "ti-hr-07",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-07"
+        },
+        {
+          "key": "ti-cr:ti-hr-08",
+          "ordinal": 6,
+          "source_step_id": "ti-hr-08",
+          "input_form": "STRIP",
+          "output_form": "TI_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-08"
+        },
+        {
+          "key": "ti-cr:ti-cr-02",
+          "ordinal": 7,
+          "source_step_id": "ti-cr-02",
+          "input_form": "TI_HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-02"
+        },
+        {
+          "key": "ti-cr:ti-cr-03",
+          "ordinal": 8,
+          "source_step_id": "ti-cr-03",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-03"
+        },
+        {
+          "key": "ti-cr:ti-cr-04",
+          "ordinal": 9,
+          "source_step_id": "ti-cr-04",
+          "input_form": "THIN_STRIP",
+          "output_form": "TI_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-04"
+        },
+        {
+          "key": "ti-cr:ti-cr-05",
+          "ordinal": 10,
+          "source_step_id": "ti-cr-05",
+          "input_form": "TI_CR_COIL",
+          "output_form": "TI_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-05"
+        },
+        {
+          "key": "ti-cr:ti-cr-06",
+          "ordinal": 11,
+          "source_step_id": "ti-cr-06",
+          "input_form": "TI_CR_COIL",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-06"
+        },
+        {
+          "key": "ti-cr:ti-cr-07",
+          "ordinal": 12,
+          "source_step_id": "ti-cr-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-07"
+        },
+        {
+          "key": "ti-cr:ti-cr-08",
+          "ordinal": 13,
+          "source_step_id": "ti-cr-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "TI-CR-08"
+        },
+        {
+          "key": "ti-cr:ti-cr-09",
+          "ordinal": 14,
+          "source_step_id": "ti-cr-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "TI_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-CR-09"
+        },
+        {
+          "key": "ti-cr:final-inspection",
+          "ordinal": 15,
+          "source_step_id": "final-inspection",
+          "input_form": "TI_CR_COIL",
+          "output_form": "TI_CR_COIL",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ti-cr:final-packaging",
+          "ordinal": 16,
+          "source_step_id": "final-packaging",
+          "input_form": "TI_CR_COIL",
+          "output_form": "TI_CR_COIL",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ti-sheet",
+      "route_version": 1,
+      "product": "ti-sheet",
+      "input_form": "TI_INGOT",
+      "output_form": "TI_SHEET",
+      "grade": "SYNTHETIC-TI",
+      "steps": [
+        {
+          "key": "ti-sheet:ti-hr-02",
+          "ordinal": 0,
+          "source_step_id": "ti-hr-02",
+          "input_form": "TI_INGOT",
+          "output_form": "TI_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-02"
+        },
+        {
+          "key": "ti-sheet:ti-hr-03",
+          "ordinal": 1,
+          "source_step_id": "ti-hr-03",
+          "input_form": "TI_SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-03"
+        },
+        {
+          "key": "ti-sheet:ti-hr-04",
+          "ordinal": 2,
+          "source_step_id": "ti-hr-04",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-04"
+        },
+        {
+          "key": "ti-sheet:ti-hr-05",
+          "ordinal": 3,
+          "source_step_id": "ti-hr-05",
+          "input_form": "HOT_STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-05"
+        },
+        {
+          "key": "ti-sheet:ti-hr-06",
+          "ordinal": 4,
+          "source_step_id": "ti-hr-06",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-06"
+        },
+        {
+          "key": "ti-sheet:ti-hr-07",
+          "ordinal": 5,
+          "source_step_id": "ti-hr-07",
+          "input_form": "STRIP",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-07"
+        },
+        {
+          "key": "ti-sheet:ti-hr-08",
+          "ordinal": 6,
+          "source_step_id": "ti-hr-08",
+          "input_form": "STRIP",
+          "output_form": "TI_HR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 5400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-HR-08"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-02",
+          "ordinal": 7,
+          "source_step_id": "ti-sheet-02",
+          "input_form": "TI_HR_COIL",
+          "output_form": "STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-02"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-03",
+          "ordinal": 8,
+          "source_step_id": "ti-sheet-03",
+          "input_form": "STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-03"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-04",
+          "ordinal": 9,
+          "source_step_id": "ti-sheet-04",
+          "input_form": "THIN_STRIP",
+          "output_form": "TI_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-04"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-05",
+          "ordinal": 10,
+          "source_step_id": "ti-sheet-05",
+          "input_form": "TI_CR_COIL",
+          "output_form": "TI_CR_COIL",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-05"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-06",
+          "ordinal": 11,
+          "source_step_id": "ti-sheet-06",
+          "input_form": "TI_CR_COIL",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-06"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-07",
+          "ordinal": 12,
+          "source_step_id": "ti-sheet-07",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-07"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-08",
+          "ordinal": 13,
+          "source_step_id": "ti-sheet-08",
+          "input_form": "THIN_STRIP",
+          "output_form": "THIN_STRIP",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-SHEET-08"
+        },
+        {
+          "key": "ti-sheet:ti-sheet-09",
+          "ordinal": 14,
+          "source_step_id": "ti-sheet-09",
+          "input_form": "THIN_STRIP",
+          "output_form": "TI_SHEET",
+          "role": "manufacturing",
+          "duration_ms": 5000,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 2,
+          "equipment_id": "TI-SHEET-09"
+        },
+        {
+          "key": "ti-sheet:final-inspection",
+          "ordinal": 15,
+          "source_step_id": "final-inspection",
+          "input_form": "TI_SHEET",
+          "output_form": "TI_SHEET",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ti-sheet:final-packaging",
+          "ordinal": 16,
+          "source_step_id": "final-packaging",
+          "input_form": "TI_SHEET",
+          "output_form": "TI_SHEET",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    },
+    {
+      "route_id": "ROUTE-ti-plate",
+      "route_version": 1,
+      "product": "ti-plate",
+      "input_form": "TI_INGOT",
+      "output_form": "TI_PLATE",
+      "grade": "SYNTHETIC-TI",
+      "steps": [
+        {
+          "key": "ti-plate:ti-plate-02",
+          "ordinal": 0,
+          "source_step_id": "ti-plate-02",
+          "input_form": "TI_INGOT",
+          "output_form": "TI_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6400,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-02"
+        },
+        {
+          "key": "ti-plate:ti-plate-03",
+          "ordinal": 1,
+          "source_step_id": "ti-plate-03",
+          "input_form": "TI_SLAB",
+          "output_form": "HOT_SLAB",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-03"
+        },
+        {
+          "key": "ti-plate:ti-plate-04",
+          "ordinal": 2,
+          "source_step_id": "ti-plate-04",
+          "input_form": "HOT_SLAB",
+          "output_form": "HOT_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6800,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-04"
+        },
+        {
+          "key": "ti-plate:ti-plate-05",
+          "ordinal": 3,
+          "source_step_id": "ti-plate-05",
+          "input_form": "HOT_PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 6000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-05"
+        },
+        {
+          "key": "ti-plate:ti-plate-06",
+          "ordinal": 4,
+          "source_step_id": "ti-plate-06",
+          "input_form": "PLATE",
+          "output_form": "PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-06"
+        },
+        {
+          "key": "ti-plate:ti-plate-07",
+          "ordinal": 5,
+          "source_step_id": "ti-plate-07",
+          "input_form": "PLATE",
+          "output_form": "TI_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-07"
+        },
+        {
+          "key": "ti-plate:ti-plate-08",
+          "ordinal": 6,
+          "source_step_id": "ti-plate-08",
+          "input_form": "TI_PLATE",
+          "output_form": "TI_PLATE",
+          "role": "manufacturing",
+          "duration_ms": 4200,
+          "additions_kg": 0,
+          "loss_kg": 100,
+          "split_count": 1,
+          "equipment_id": "TI-PLATE-08"
+        },
+        {
+          "key": "ti-plate:final-inspection",
+          "ordinal": 7,
+          "source_step_id": "final-inspection",
+          "input_form": "TI_PLATE",
+          "output_form": "TI_PLATE",
+          "role": "final_inspection",
+          "duration_ms": 2000,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "FINAL-INSPECTION"
+        },
+        {
+          "key": "ti-plate:final-packaging",
+          "ordinal": 8,
+          "source_step_id": "final-packaging",
+          "input_form": "TI_PLATE",
+          "output_form": "TI_PLATE",
+          "role": "packaging",
+          "duration_ms": 1500,
+          "additions_kg": 0,
+          "loss_kg": 0,
+          "split_count": 1,
+          "equipment_id": "PACKAGING"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "input_form": "ORE",
+      "target_product": "slab",
+      "mode": "processing",
+      "entry_step_key": "slab:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "bloom",
+      "mode": "processing",
+      "entry_step_key": "bloom:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "billet",
+      "mode": "processing",
+      "entry_step_key": "billet:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "hr",
+      "mode": "processing",
+      "entry_step_key": "hr:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "plate",
+      "mode": "processing",
+      "entry_step_key": "plate:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "wire",
+      "mode": "processing",
+      "entry_step_key": "wire:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "cr",
+      "mode": "processing",
+      "entry_step_key": "cr:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "gi",
+      "mode": "processing",
+      "entry_step_key": "gi:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "ga",
+      "mode": "processing",
+      "entry_step_key": "ga:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "hgi",
+      "mode": "processing",
+      "entry_step_key": "hgi:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "eg",
+      "mode": "processing",
+      "entry_step_key": "eg:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "go",
+      "mode": "processing",
+      "entry_step_key": "go:cs-charge"
+    },
+    {
+      "input_form": "ORE",
+      "target_product": "ngo",
+      "mode": "processing",
+      "entry_step_key": "ngo:cs-charge"
+    },
+    {
+      "input_form": "SCRAP",
+      "target_product": "sts-hr",
+      "mode": "processing",
+      "entry_step_key": "sts-hr:sts-hr-02"
+    },
+    {
+      "input_form": "SCRAP",
+      "target_product": "sts-cr",
+      "mode": "processing",
+      "entry_step_key": "sts-cr:sts-hr-02"
+    },
+    {
+      "input_form": "SCRAP",
+      "target_product": "sts-plate",
+      "mode": "processing",
+      "entry_step_key": "sts-plate:sts-plate-02"
+    },
+    {
+      "input_form": "TI_INGOT",
+      "target_product": "ti-hr",
+      "mode": "processing",
+      "entry_step_key": "ti-hr:ti-hr-02"
+    },
+    {
+      "input_form": "TI_INGOT",
+      "target_product": "ti-cr",
+      "mode": "processing",
+      "entry_step_key": "ti-cr:ti-hr-02"
+    },
+    {
+      "input_form": "TI_INGOT",
+      "target_product": "ti-sheet",
+      "mode": "processing",
+      "entry_step_key": "ti-sheet:ti-hr-02"
+    },
+    {
+      "input_form": "TI_INGOT",
+      "target_product": "ti-plate",
+      "mode": "processing",
+      "entry_step_key": "ti-plate:ti-plate-02"
+    },
+    {
+      "input_form": "SLAB",
+      "target_product": "hr",
+      "mode": "processing",
+      "entry_step_key": "hr:hr-02"
+    },
+    {
+      "input_form": "SLAB",
+      "target_product": "plate",
+      "mode": "processing",
+      "entry_step_key": "plate:plate-02"
+    },
+    {
+      "input_form": "BLOOM",
+      "target_product": "wire",
+      "mode": "processing",
+      "entry_step_key": "wire:wire-02"
+    },
+    {
+      "input_form": "BILLET",
+      "target_product": "wire",
+      "mode": "processing",
+      "entry_step_key": "wire:wire-06"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "cr",
+      "mode": "processing",
+      "entry_step_key": "cr:cr-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "gi",
+      "mode": "processing",
+      "entry_step_key": "gi:cr-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "ga",
+      "mode": "processing",
+      "entry_step_key": "ga:cr-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "eg",
+      "mode": "processing",
+      "entry_step_key": "eg:cr-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "hgi",
+      "mode": "processing",
+      "entry_step_key": "hgi:hgi-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "go",
+      "mode": "processing",
+      "entry_step_key": "go:go-02"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "ngo",
+      "mode": "processing",
+      "entry_step_key": "ngo:ngo-02"
+    },
+    {
+      "input_form": "CR_COIL",
+      "target_product": "gi",
+      "mode": "processing",
+      "entry_step_key": "gi:gi-02"
+    },
+    {
+      "input_form": "CR_COIL",
+      "target_product": "ga",
+      "mode": "processing",
+      "entry_step_key": "ga:ga-02"
+    },
+    {
+      "input_form": "CR_COIL",
+      "target_product": "eg",
+      "mode": "processing",
+      "entry_step_key": "eg:eg-02"
+    },
+    {
+      "input_form": "STS_HR_COIL",
+      "target_product": "sts-cr",
+      "mode": "processing",
+      "entry_step_key": "sts-cr:sts-cr-02"
+    },
+    {
+      "input_form": "TI_HR_COIL",
+      "target_product": "ti-cr",
+      "mode": "processing",
+      "entry_step_key": "ti-cr:ti-cr-02"
+    },
+    {
+      "input_form": "TI_HR_COIL",
+      "target_product": "ti-sheet",
+      "mode": "processing",
+      "entry_step_key": "ti-sheet:ti-sheet-02"
+    },
+    {
+      "input_form": "SLAB",
+      "target_product": "slab",
+      "mode": "direct_sale",
+      "entry_step_key": "slab:final-inspection"
+    },
+    {
+      "input_form": "BLOOM",
+      "target_product": "bloom",
+      "mode": "direct_sale",
+      "entry_step_key": "bloom:final-inspection"
+    },
+    {
+      "input_form": "BILLET",
+      "target_product": "billet",
+      "mode": "direct_sale",
+      "entry_step_key": "billet:final-inspection"
+    },
+    {
+      "input_form": "HR_COIL",
+      "target_product": "hr",
+      "mode": "direct_sale",
+      "entry_step_key": "hr:final-inspection"
+    },
+    {
+      "input_form": "CR_COIL",
+      "target_product": "cr",
+      "mode": "direct_sale",
+      "entry_step_key": "cr:final-inspection"
+    },
+    {
+      "input_form": "STS_HR_COIL",
+      "target_product": "sts-hr",
+      "mode": "direct_sale",
+      "entry_step_key": "sts-hr:final-inspection"
+    },
+    {
+      "input_form": "TI_HR_COIL",
+      "target_product": "ti-hr",
+      "mode": "direct_sale",
+      "entry_step_key": "ti-hr:final-inspection"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHARGE-A",
+      "forms": [
+        "ORE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "BF-A",
+      "forms": [
+        "ORE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "BOF-A",
+      "forms": [
+        "HOT_METAL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "LF-A",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CAST-SLAB",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CUT-SLAB",
+      "forms": [
+        "SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CAST-BLOOM",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CUT-BLOOM",
+      "forms": [
+        "BLOOM"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CAST-BILLET",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CUT-BILLET",
+      "forms": [
+        "BILLET"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HR-02",
+      "forms": [
+        "SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HR-03",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "HSM-A",
+      "forms": [
+        "HOT_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HR-05",
+      "forms": [
+        "HOT_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HR-06",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HR-07",
+      "forms": [
+        "HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-02",
+      "forms": [
+        "SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-03",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-04",
+      "forms": [
+        "HOT_PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-05",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-06",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-07",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-PLATE-08",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-02",
+      "forms": [
+        "BLOOM"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-03",
+      "forms": [
+        "HOT_BLOOM"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-04",
+      "forms": [
+        "HOT_BILLET"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-05",
+      "forms": [
+        "BILLET"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-06",
+      "forms": [
+        "BILLET"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-07",
+      "forms": [
+        "HOT_BILLET"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-WIRE-08",
+      "forms": [
+        "WIRE"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-02",
+      "forms": [
+        "HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-05",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-06",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-08",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-CR-09",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-02",
+      "forms": [
+        "CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-06",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-07",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-08",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GI-09",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-02",
+      "forms": [
+        "CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-06",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-07",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-08",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-09",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GA-10",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-02",
+      "forms": [
+        "HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-06",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-07",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-08",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-HGI-09",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-02",
+      "forms": [
+        "CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-06",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-07",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-08",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-EG-09",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-02",
+      "forms": [
+        "HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-06",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-08",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-09",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-10",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-GO-11",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-02",
+      "forms": [
+        "HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-04",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-05",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-06",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "CS-NGO-08",
+      "forms": [
+        "COATED_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-CS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-02",
+      "forms": [
+        "SCRAP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-03",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-04",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-05",
+      "forms": [
+        "SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-06",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-07",
+      "forms": [
+        "HOT_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-08",
+      "forms": [
+        "HOT_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-09",
+      "forms": [
+        "STS_HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-10",
+      "forms": [
+        "STS_HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-11",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-12",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-HR-13",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-02",
+      "forms": [
+        "STS_HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-04",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-05",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-06",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-08",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-CR-09",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-02",
+      "forms": [
+        "SCRAP"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-03",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-04",
+      "forms": [
+        "LIQUID_STEEL"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-05",
+      "forms": [
+        "SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-06",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-07",
+      "forms": [
+        "HOT_PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-08",
+      "forms": [
+        "HOT_PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-09",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-10",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "STS-PLATE-11",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-STS"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-02",
+      "forms": [
+        "TI_INGOT"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-03",
+      "forms": [
+        "TI_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-04",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-05",
+      "forms": [
+        "HOT_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-06",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-07",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-HR-08",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-02",
+      "forms": [
+        "TI_HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-04",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-05",
+      "forms": [
+        "TI_CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-06",
+      "forms": [
+        "TI_CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-08",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-CR-09",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-02",
+      "forms": [
+        "TI_HR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-03",
+      "forms": [
+        "STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-04",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-05",
+      "forms": [
+        "TI_CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-06",
+      "forms": [
+        "TI_CR_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-07",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-08",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-SHEET-09",
+      "forms": [
+        "THIN_STRIP"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-02",
+      "forms": [
+        "TI_INGOT"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-03",
+      "forms": [
+        "TI_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-04",
+      "forms": [
+        "HOT_SLAB"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-05",
+      "forms": [
+        "HOT_PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-06",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-07",
+      "forms": [
+        "PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "TI-PLATE-08",
+      "forms": [
+        "TI_PLATE"
+      ],
+      "grades": [
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "FINAL-INSPECTION",
+      "forms": [
+        "BILLET",
+        "BLOOM",
+        "CR_COIL",
+        "EG_COIL",
+        "GA_COIL",
+        "GI_COIL",
+        "GO_COIL",
+        "HGI_COIL",
+        "HR_COIL",
+        "NGO_COIL",
+        "PLATE",
+        "SLAB",
+        "STS_CR_COIL",
+        "STS_HR_COIL",
+        "STS_PLATE",
+        "TI_CR_COIL",
+        "TI_HR_COIL",
+        "TI_PLATE",
+        "TI_SHEET",
+        "WIRE_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS",
+        "SYNTHETIC-STS",
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    },
+    {
+      "id": "PACKAGING",
+      "forms": [
+        "BILLET",
+        "BLOOM",
+        "CR_COIL",
+        "EG_COIL",
+        "GA_COIL",
+        "GI_COIL",
+        "GO_COIL",
+        "HGI_COIL",
+        "HR_COIL",
+        "NGO_COIL",
+        "PLATE",
+        "SLAB",
+        "STS_CR_COIL",
+        "STS_HR_COIL",
+        "STS_PLATE",
+        "TI_CR_COIL",
+        "TI_HR_COIL",
+        "TI_PLATE",
+        "TI_SHEET",
+        "WIRE_COIL"
+      ],
+      "grades": [
+        "SYNTHETIC-CS",
+        "SYNTHETIC-STS",
+        "SYNTHETIC-TI"
+      ],
+      "capacity_kg": 25000,
+      "min_width_mm": 0.0,
+      "max_width_mm": 2500.0
+    }
+  ]
+}

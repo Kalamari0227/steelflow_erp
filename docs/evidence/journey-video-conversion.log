@@ -1,0 +1,57 @@
+ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.0.13.3)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, matroska,webm, from 'docs/evidence/journey-demo.webm':
+  Metadata:
+    creation_time   : 2026-10-24T09:54:53.374000Z
+    ENCODER         : Lavf61.1.100
+  Duration: 00:00:18.36, start: 0.000000, bitrate: 1487 kb/s
+  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, progressive), 1440x1000, SAR 1:1 DAR 36:25, 25 fps, 25 tbr, 1k tbn (default)
+      Metadata:
+        ENCODER         : Lavc61.3.100 libvpx-vp9
+        DURATION        : 00:00:18.360000000
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x89ccaca80] using SAR=1/1
+[libx264 @ 0x89ccaca80] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x89ccaca80] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x89ccaca80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=21 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'docs/evidence/journey-demo.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1440x1000 [SAR 1:1 DAR 36:25], q=2-31, 25 fps, 12800 tbn (default)
+      Metadata:
+        DURATION        : 00:00:18.360000000
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=  282 fps=0.0 q=25.0 size=     512KiB time=00:00:11.20 bitrate= 374.5kbits/s speed=  22x    [mp4 @ 0x89cc74280] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x89cc3cf00] video:1100KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.551240%
+frame=  459 fps=0.0 q=-1.0 Lsize=    1106KiB time=00:00:18.28 bitrate= 495.7kbits/s speed=25.6x    
+[libx264 @ 0x89ccaca80] frame I:10    Avg QP:10.79  size: 59297
+[libx264 @ 0x89ccaca80] frame P:142   Avg QP:16.06  size:  3169
+[libx264 @ 0x89ccaca80] frame B:307   Avg QP:16.45  size:   269
+[libx264 @ 0x89ccaca80] consecutive B-frames:  7.4%  7.4%  8.5% 76.7%
+[libx264 @ 0x89ccaca80] mb I  I16..4: 57.5% 28.6% 13.8%
+[libx264 @ 0x89ccaca80] mb P  I16..4:  2.5%  3.7%  0.6%  P16..4:  2.5%  0.2%  0.2%  0.0%  0.0%    skip:90.2%
+[libx264 @ 0x89ccaca80] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  1.3%  0.1%  0.0%  direct: 0.1%  skip:98.4%  L0:47.4% L1:51.3% BI: 1.3%
+[libx264 @ 0x89ccaca80] 8x8 transform intra:41.2% inter:47.2%
+[libx264 @ 0x89ccaca80] coded y,uvDC,uvAC intra: 11.9% 14.3% 9.6% inter: 0.2% 0.5% 0.1%
+[libx264 @ 0x89ccaca80] i16 v,h,dc,p: 83% 16%  2%  0%
+[libx264 @ 0x89ccaca80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 19% 44%  1%  0%  0%  2%  1%  1%
+[libx264 @ 0x89ccaca80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 26% 19%  7%  3%  3% 10%  5%  4%
+[libx264 @ 0x89ccaca80] i8c dc,h,v,p: 80% 13%  7%  1%
+[libx264 @ 0x89ccaca80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x89ccaca80] ref P L0: 55.1%  2.5% 36.0%  6.4%
+[libx264 @ 0x89ccaca80] ref B L0: 70.5% 25.9%  3.6%
+[libx264 @ 0x89ccaca80] ref B L1: 96.9%  3.1%
+[libx264 @ 0x89ccaca80] kb/s:490.49

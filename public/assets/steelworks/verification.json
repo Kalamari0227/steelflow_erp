@@ -1,0 +1,1280 @@
+{
+  "status": "PASS",
+  "toolchain": {
+    "version": "4.5.15",
+    "architecture": "arm64",
+    "executable_sha256": "d85bac46c9cc9ae7e64ecdc5a647db28af60959eb7df65e030657ff9e0ed8299"
+  },
+  "external_asset_count": 0,
+  "assets": [
+    {
+      "id": "steelflow:shear:CUT-SLAB",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "lods": [
+        {
+          "level": 0,
+          "artifact": "public/assets/steelworks/shear-lod0.glb",
+          "semantic_geometry_sha256": "4f1ddebf21e109192879cd4a235681f98834debe434bfcecd6c0bb17fd87b2df",
+          "nodes": 31,
+          "triangles": 2970,
+          "animations": [
+            {
+              "part": "cutting_tool",
+              "clip": "shear.cutting_tool",
+              "node": 7,
+              "path": "translation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                1.8,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                -1.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535738e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535557e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 6064,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 20400,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        },
+        {
+          "level": 1,
+          "artifact": "public/assets/steelworks/shear-lod1.glb",
+          "semantic_geometry_sha256": "00e81f76e23b53b8e9695a44612a8c8ab676448bd439de770eff255d0aa10872",
+          "nodes": 31,
+          "triangles": 1770,
+          "animations": [
+            {
+              "part": "cutting_tool",
+              "clip": "shear.cutting_tool",
+              "node": 7,
+              "path": "translation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                1.8,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                -1.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535738e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535557e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 3544,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 12000,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        },
+        {
+          "level": 2,
+          "artifact": "public/assets/steelworks/shear-lod2.glb",
+          "semantic_geometry_sha256": "0835cd9eced7f8ac442fd77ce9e1e612a5a86a518ee0139ca15181c1c252c318",
+          "nodes": 31,
+          "triangles": 810,
+          "animations": [
+            {
+              "part": "cutting_tool",
+              "clip": "shear.cutting_tool",
+              "node": 7,
+              "path": "translation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                1.8,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                -1.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535738e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0.3,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535557e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.3,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.4,
+                1.0499999976158143,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 5.960465454535428e-10,
+              "normal_alignment": 0.9999999999999989,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.4,
+                1.0499999976158143,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 1744,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 6000,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        }
+      ]
+    },
+    {
+      "id": "steelflow:galvanizing:CS-GI-05",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GI-05",
+      "lods": [
+        {
+          "level": 0,
+          "artifact": "public/assets/steelworks/galvanizing-lod0.glb",
+          "semantic_geometry_sha256": "5b0b5c798cbfb02e52f78910796a34a4568b174c0b9a6e94ff7ce8c6546ddb33",
+          "nodes": 40,
+          "triangles": 3242,
+          "animations": [
+            {
+              "part": "sink_roll",
+              "clip": "galvanizing.sink_roll",
+              "node": 35,
+              "path": "rotation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                0.85,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [
+            {
+              "id": "air_knife",
+              "state_id": "galvanizing.gas_wiping",
+              "physical_motion": false,
+              "runtime_integration": "pending T6/T13"
+            }
+          ],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 6424,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 15000,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        },
+        {
+          "level": 1,
+          "artifact": "public/assets/steelworks/galvanizing-lod1.glb",
+          "semantic_geometry_sha256": "0a5d676d5646f54681ed83ccb6158eb711b5d510d2caff15b46c4ebae748782c",
+          "nodes": 40,
+          "triangles": 1930,
+          "animations": [
+            {
+              "part": "sink_roll",
+              "clip": "galvanizing.sink_roll",
+              "node": 35,
+              "path": "rotation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                0.85,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [
+            {
+              "id": "air_knife",
+              "state_id": "galvanizing.gas_wiping",
+              "physical_motion": false,
+              "runtime_integration": "pending T6/T13"
+            }
+          ],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 3784,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 7800,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        },
+        {
+          "level": 2,
+          "artifact": "public/assets/steelworks/galvanizing-lod2.glb",
+          "semantic_geometry_sha256": "b2250eb319dce5e0ae318637b8bae296c8efc9f7041d7b7a1a99eca5bb06f8af",
+          "nodes": 40,
+          "triangles": 938,
+          "animations": [
+            {
+              "part": "sink_roll",
+              "clip": "galvanizing.sink_roll",
+              "node": 35,
+              "path": "rotation",
+              "samples": 25,
+              "seconds": 1,
+              "pivot_m": [
+                0,
+                0.85,
+                0
+              ]
+            }
+          ],
+          "fixed_states": [
+            {
+              "id": "air_knife",
+              "state_id": "galvanizing.gas_wiping",
+              "physical_motion": false,
+              "runtime_integration": "pending T6/T13"
+            }
+          ],
+          "sockets": [
+            {
+              "id": "support",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "entry",
+              "world_position_m": [
+                -1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "work",
+              "world_position_m": [
+                0,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.341104560736998e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "exit",
+              "world_position_m": [
+                1.399999976158142,
+                1.7600000476837159,
+                0
+              ],
+              "world_normal": [
+                0,
+                1,
+                0
+              ],
+              "surface_distance_m": 1.3411045607369955e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.399999976158142,
+                1.7600000476837159,
+                0,
+                1
+              ]
+            },
+            {
+              "id": "service_support",
+              "world_position_m": [
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007
+              ],
+              "world_normal": [
+                1.570126681502503e-8,
+                0.8960524269348729,
+                0.44394824944369843
+              ],
+              "surface_distance_m": 1.788139140599105e-9,
+              "normal_alignment": 0.9999999999999992,
+              "matrix": [
+                0.9427546351824131,
+                0.14805103080711834,
+                -0.29882202030121663,
+                0,
+                1.5701266953271897e-8,
+                0.8960524348244555,
+                0.44394825335258403,
+                0,
+                0.333487192467643,
+                -0.4185342804738461,
+                0.8447575834686187,
+                0,
+                -1.360190409612661,
+                1.6559676729138677,
+                -1.1327622513607007,
+                1
+              ]
+            }
+          ],
+          "collisions": [
+            {
+              "id": "body",
+              "purpose": "body",
+              "actual_vertex_samples": 1960,
+              "contained": true
+            },
+            {
+              "id": "tool_sweep",
+              "purpose": "moving_sweep",
+              "actual_vertex_samples": 4200,
+              "contained": true
+            }
+          ],
+          "axis_markers": "actual transformed asymmetric mesh + 1m baselines"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "T6 operational runtime and T13 loader integration are pending",
+    "Representative pipeline proof only; no family-wide visual approval"
+  ]
+}

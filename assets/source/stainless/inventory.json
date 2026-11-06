@@ -1,0 +1,126 @@
+{
+  "external_asset_count": 0,
+  "license": {
+    "status": "built",
+    "path": "assets/source/stainless/LICENSE.txt",
+    "sha256": "1833489e63c80a9899c68bfb88e5f1a268d8e41d18f1521683f40a55e50f01d3"
+  },
+  "inputs": [
+    {
+      "status": "built",
+      "path": "assets/source/stainless/build.py",
+      "sha256": "d5709da8680e24263932fddffa9609aab551823169c4908a2fd716abf5d889ff"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/recipe.json",
+      "sha256": "61722adcc16787ee91428ea563be345568e338b23ead805f2cecd01964f5cdbe"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/LICENSE.txt",
+      "sha256": "1833489e63c80a9899c68bfb88e5f1a268d8e41d18f1521683f40a55e50f01d3"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/build.py",
+      "sha256": "d5cef6d77bb1e91330af359773e41507def39d667388d33ba349059f18207987"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/manifest.py",
+      "sha256": "ee0da4fa866bc18380b4882edc5493ce3754882bf8b0b9eeede8791cb1695fdc"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/render.py",
+      "sha256": "357bd79911f3c64065dd01ed020a6560fdcb02c3c0ae2d23e0c11d2dbfab0f2b"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/reopen.py",
+      "sha256": "c848d68538b283703c5bb6476785fccf8b3034cfdc844345cbfb3305d7236949"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/recipe.json",
+      "sha256": "ec4b81a55baf0df34361ffed324a64079a72a37b2372c6a387509c62b3e28479"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/verify.mjs",
+      "sha256": "4be334eee502a5b4ef9681792e583fbc1a91d2867b26cd004a1408afadd6fea1"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/casting.py",
+      "sha256": "3307456aa0b9b9fa7bab784364844774142dc28f75b27be9abf7ba50ff4a32cd"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/details.py",
+      "sha256": "d026a37123715e839407b4ab41903ae19d8f3be133d2ccb5d439cbfe28020aa6"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/transmission.py",
+      "sha256": "a57468886040ea450afee75e030df1967e55136f5a6606a43a7352215f92725d"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/vessels.py",
+      "sha256": "3c5a56edf8369bb6282132cfb225013605477b9270f90559d7552f6da666beb7"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/geometry.py",
+      "sha256": "9bbf8ffe9550f3bf4c39ca1d1d6e92fd86a8296e9724c7fc3ae75eb2813b0d77"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/upstream.py",
+      "sha256": "537474577cae5788c83f07f0e761c5b50dc358e4386ff7e3fd52f4af39a494b4"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/steelmaking/LICENSE.txt",
+      "sha256": "1833489e63c80a9899c68bfb88e5f1a268d8e41d18f1521683f40a55e50f01d3"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/contracts/source-contracts.json",
+      "sha256": "d070f564d5fc590224efd93b124fe69a54a8b1bff84179c251484a58ab5981ac"
+    }
+  ],
+  "authored_assets": [
+    {
+      "status": "built",
+      "path": "assets/source/stainless/STS-HR-02.blend",
+      "sha256": "2c5d9a756591a09af729995d89c0987a436fdef8b3c053d9d920294126aad62e"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/STS-HR-03.blend",
+      "sha256": "327fe2b39206d0dbcd48b55e541ce64d0cf9665924ac1f99637fcd756fe5ef79"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/STS-PLATE-02.blend",
+      "sha256": "45dc34ffc7b1523f251d6a7fbe81881d41139e61835f96337c2cb7e11affc620"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/stainless/STS-PLATE-03.blend",
+      "sha256": "f76318abb34103df6086536940669737e29da17e54ad7b40961d725320274751"
+    }
+  ],
+  "textures": [],
+  "tool_license": {
+    "path": "/Users/ethanlee/Library/Application Support/SteelFlow/tools/blender/4.5.15-macos-arm64/Blender.app/Contents/Resources/text/license/license.md",
+    "sha256": "bbbae8a955a571bbd30e91c579f6f1633ec921f6317cfac9074338dfba33a7b8"
+  },
+  "limitations": [
+    "Explicit synthetic contracts, not T31/T32 production scheduler. Transport custody is a separate fixture subject; T28 remains future.",
+    "T19 creates 10 steelmaking and 4 semantic stainless EAF/AOD; remaining stainless 26 belong to T26."
+  ]
+}

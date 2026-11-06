@@ -1,0 +1,43 @@
+{
+  "capturedAt": 1792861983.307447,
+  "commands": [
+    {
+      "argv": [
+        "sw_vers"
+      ],
+      "result": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83"
+    },
+    {
+      "argv": [
+        "uname",
+        "-m"
+      ],
+      "result": "arm64"
+    },
+    {
+      "argv": [
+        "sysctl",
+        "-n",
+        "hw.model"
+      ],
+      "result": "Mac16,5"
+    },
+    {
+      "argv": [
+        "sysctl",
+        "-n",
+        "machdep.cpu.brand_string"
+      ],
+      "result": "Apple M4 Max"
+    },
+    {
+      "argv": [
+        "sysctl",
+        "-n",
+        "hw.memsize"
+      ],
+      "result": "38654705664"
+    }
+  ],
+  "actualChromeVersion": "155.0.8059.86"
+}

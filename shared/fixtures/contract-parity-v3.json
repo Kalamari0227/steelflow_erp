@@ -1,0 +1,1797 @@
+{
+  "contract": "schema3-decisions-D1-D3",
+  "cases": [
+    {
+      "name": "context-empty",
+      "kind": "context",
+      "input": {},
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-partial",
+      "kind": "context",
+      "input": {
+        "reason": "audit"
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": "audit",
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-full",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-reason_code",
+      "kind": "context",
+      "input": {
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-reason",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-order_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-work_order_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-process_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-batch_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-job_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-shipment_leg_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-resource_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-from_attachment_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-to_attachment_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-from_owner_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-to_owner_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-omit-material_ids",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      },
+      "accepted": true,
+      "output": {
+        "reason_code": null,
+        "reason": null,
+        "material_ids": [],
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null
+      }
+    },
+    {
+      "name": "context-wrong-reason_code",
+      "kind": "context",
+      "input": {
+        "reason_code": 7,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-reason",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": 7,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-order_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": 7,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-work_order_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": 7,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-process_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": 7,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-batch_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": 7,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-job_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": 7,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-shipment_leg_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": 7,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-resource_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": 7,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-from_attachment_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": 7,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-to_attachment_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": 7,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-from_owner_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": 7,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-wrong-to_owner_id",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": 7,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-unknown",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": [],
+        "unknown": true
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-material-null",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": null
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-material-string",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": "x"
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-material-number-element",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": null,
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": [
+          7
+        ]
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-reason-empty",
+      "kind": "context",
+      "input": {
+        "reason_code": null,
+        "reason": "",
+        "order_id": null,
+        "work_order_id": null,
+        "process_id": null,
+        "batch_id": null,
+        "job_id": null,
+        "shipment_leg_id": null,
+        "resource_id": null,
+        "from_attachment_id": null,
+        "to_attachment_id": null,
+        "from_owner_id": null,
+        "to_owner_id": null,
+        "material_ids": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-null",
+      "kind": "context",
+      "input": null,
+      "accepted": false
+    },
+    {
+      "name": "context-array",
+      "kind": "context",
+      "input": [],
+      "accepted": false
+    },
+    {
+      "name": "event-omitted-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit"
+      },
+      "accepted": true,
+      "output": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "material_ids": [],
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null
+        }
+      }
+    },
+    {
+      "name": "event-empty-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {}
+      },
+      "accepted": true,
+      "output": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "material_ids": [],
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null
+        }
+      }
+    },
+    {
+      "name": "event-partial-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason": "audit"
+        }
+      },
+      "accepted": true,
+      "output": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": "audit",
+          "material_ids": [],
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null
+        }
+      }
+    },
+    {
+      "name": "event-full-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null,
+          "material_ids": []
+        }
+      },
+      "accepted": true,
+      "output": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "material_ids": [],
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null
+        }
+      }
+    },
+    {
+      "name": "event-null-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": null
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-unknown-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null,
+          "material_ids": [],
+          "unknown": true
+        }
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-unknown-root",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null,
+          "material_ids": []
+        },
+        "unknown": true
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-bool-sequence",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": true,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null,
+          "material_ids": []
+        }
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-string-sequence",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": "1",
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": {
+          "reason_code": null,
+          "reason": null,
+          "order_id": null,
+          "work_order_id": null,
+          "process_id": null,
+          "batch_id": null,
+          "job_id": null,
+          "shipment_leg_id": null,
+          "resource_id": null,
+          "from_attachment_id": null,
+          "to_attachment_id": null,
+          "from_owner_id": null,
+          "to_owner_id": null,
+          "material_ids": []
+        }
+      },
+      "accepted": false
+    },
+    {
+      "name": "utc-00",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.000Z"
+    },
+    {
+      "name": "utc-01",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.0Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.000Z"
+    },
+    {
+      "name": "utc-02",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.12Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.120Z"
+    },
+    {
+      "name": "utc-03",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.123Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.123Z"
+    },
+    {
+      "name": "utc-04",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.1230Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.123Z"
+    },
+    {
+      "name": "utc-05",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.123000Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.123Z"
+    },
+    {
+      "name": "utc-06",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.1230000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-07",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.1230001Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-08",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.123456Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-09",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.1234Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-10",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00+00:00",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.000Z"
+    },
+    {
+      "name": "utc-11",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.123+00:00",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.123Z"
+    },
+    {
+      "name": "utc-12",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00-00:00",
+      "accepted": false
+    },
+    {
+      "name": "utc-13",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00+09:00",
+      "accepted": false
+    },
+    {
+      "name": "utc-14",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00-01:00",
+      "accepted": false
+    },
+    {
+      "name": "utc-15",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00",
+      "accepted": false
+    },
+    {
+      "name": "utc-16",
+      "kind": "utc",
+      "input": "2026-10-30",
+      "accepted": false
+    },
+    {
+      "name": "utc-17",
+      "kind": "utc",
+      "input": "2026-10-30t00:00:00z",
+      "accepted": false
+    },
+    {
+      "name": "utc-18",
+      "kind": "utc",
+      "input": "2026-10-30 00:00:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-19",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00,123Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-20",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00+0000",
+      "accepted": false
+    },
+    {
+      "name": "utc-21",
+      "kind": "utc",
+      "input": "2026-10-30T00:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-22",
+      "kind": "utc",
+      "input": "0001-01-01T00:00:00.000Z",
+      "accepted": true,
+      "output": "0001-01-01T00:00:00.000Z"
+    },
+    {
+      "name": "utc-23",
+      "kind": "utc",
+      "input": "0099-12-31T23:59:59.999Z",
+      "accepted": true,
+      "output": "0099-12-31T23:59:59.999Z"
+    },
+    {
+      "name": "utc-24",
+      "kind": "utc",
+      "input": "9999-12-31T23:59:59.999Z",
+      "accepted": true,
+      "output": "9999-12-31T23:59:59.999Z"
+    },
+    {
+      "name": "utc-25",
+      "kind": "utc",
+      "input": "0000-01-01T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-26",
+      "kind": "utc",
+      "input": "10000-01-01T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-27",
+      "kind": "utc",
+      "input": "-0001-01-01T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-28",
+      "kind": "utc",
+      "input": "2024-02-29T00:00:00.000Z",
+      "accepted": true,
+      "output": "2024-02-29T00:00:00.000Z"
+    },
+    {
+      "name": "utc-29",
+      "kind": "utc",
+      "input": "2000-02-29T00:00:00.000Z",
+      "accepted": true,
+      "output": "2000-02-29T00:00:00.000Z"
+    },
+    {
+      "name": "utc-30",
+      "kind": "utc",
+      "input": "1900-02-29T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-31",
+      "kind": "utc",
+      "input": "2026-02-29T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-32",
+      "kind": "utc",
+      "input": "2026-02-30T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-33",
+      "kind": "utc",
+      "input": "2026-13-01T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-34",
+      "kind": "utc",
+      "input": "2026-01-00T00:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-35",
+      "kind": "utc",
+      "input": "2026-10-30T24:00:00.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-36",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:60.000Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-37",
+      "kind": "utc",
+      "input": 0,
+      "accepted": false
+    },
+    {
+      "name": "utc-38",
+      "kind": "utc",
+      "input": 1793318400,
+      "accepted": false
+    },
+    {
+      "name": "utc-39",
+      "kind": "utc",
+      "input": 1793318400000,
+      "accepted": false
+    },
+    {
+      "name": "utc-40",
+      "kind": "utc",
+      "input": 1793318400.123,
+      "accepted": false
+    },
+    {
+      "name": "utc-41",
+      "kind": "utc",
+      "input": "1793318400",
+      "accepted": false
+    },
+    {
+      "name": "utc-42",
+      "kind": "utc",
+      "input": true,
+      "accepted": false
+    },
+    {
+      "name": "utc-43",
+      "kind": "utc",
+      "input": null,
+      "accepted": false
+    },
+    {
+      "name": "utc-44",
+      "kind": "utc",
+      "input": {},
+      "accepted": false
+    },
+    {
+      "name": "utc-45",
+      "kind": "utc",
+      "input": [],
+      "accepted": false
+    },
+    {
+      "name": "utc-46",
+      "kind": "utc",
+      "input": "",
+      "accepted": false
+    },
+    {
+      "name": "utc-submillisecond",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.000001Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-empty-fraction",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-minute-overflow",
+      "kind": "utc",
+      "input": "2026-10-30T00:60:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-leading-space",
+      "kind": "utc",
+      "input": " 2026-10-30T00:00:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-trailing-space",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00Z ",
+      "accepted": false
+    },
+    {
+      "name": "utc-trailing-newline",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00Z\n",
+      "accepted": false
+    },
+    {
+      "name": "utc-leading-newline",
+      "kind": "utc",
+      "input": "\n2026-10-30T00:00:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-unicode-digits",
+      "kind": "utc",
+      "input": "２０２６-10-30T00:00:00Z",
+      "accepted": false
+    },
+    {
+      "name": "utc-one-digit-ms",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.1Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.100Z"
+    },
+    {
+      "name": "utc-zero-padding",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.000000Z",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.000Z"
+    },
+    {
+      "name": "utc-offset-padding",
+      "kind": "utc",
+      "input": "2026-10-30T00:00:00.001000+00:00",
+      "accepted": true,
+      "output": "2026-10-30T00:00:00.001Z"
+    },
+    {
+      "name": "utc-year-0100",
+      "kind": "utc",
+      "input": "0100-01-01T00:00:00Z",
+      "accepted": true,
+      "output": "0100-01-01T00:00:00.000Z"
+    },
+    {
+      "name": "utc-year-0001-alias",
+      "kind": "utc",
+      "input": "0001-01-01T00:00:00+00:00",
+      "accepted": true,
+      "output": "0001-01-01T00:00:00.000Z"
+    },
+    {
+      "name": "context-material-empty-id",
+      "kind": "context",
+      "input": {
+        "material_ids": [
+          ""
+        ]
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-material-null-id",
+      "kind": "context",
+      "input": {
+        "material_ids": [
+          null
+        ]
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-bool",
+      "kind": "context",
+      "input": {
+        "reason": true
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-object",
+      "kind": "context",
+      "input": {
+        "reason": {}
+      },
+      "accepted": false
+    },
+    {
+      "name": "context-array-field",
+      "kind": "context",
+      "input": {
+        "order_id": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-array-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": []
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-string-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": ""
+      },
+      "accepted": false
+    },
+    {
+      "name": "event-number-payload",
+      "kind": "event",
+      "input": {
+        "run_id": "run-audit",
+        "id": "event-audit",
+        "sequence": 1,
+        "event_type": "RUN_CREATED",
+        "entity_type": "run",
+        "entity_id": "run-audit",
+        "at_ms": 0,
+        "occurred_at": "2026-10-26T00:00:00.000Z",
+        "source_id": "audit",
+        "payload": 0
+      },
+      "accepted": false
+    }
+  ]
+}

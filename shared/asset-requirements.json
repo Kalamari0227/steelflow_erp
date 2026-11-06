@@ -1,0 +1,7449 @@
+{
+  "schema_version": 1,
+  "status": "requirements_registered_implementation_pending",
+  "authority": "Reviewed T4 function admission policy; independent of submitted manifests. Adding any category/kind requires explicit policy review; observed inventory never creates a policy automatically.",
+  "verification_boundary": "T4 checks metadata only. T12 verifies source/export bytes, actual nodes/transforms/clips/textures/mechanics. No model completion or geometry fidelity is asserted.",
+  "coordinate_boundary": "Internal local poses are normalized XYZW quaternions. FactoryWorld root placement is position+yaw; compose its Y-axis quaternion with the full internal hierarchy for socket/normal/contact comparisons. Reject tilted root placement; never reduce internal pitch/roll to yaw.",
+  "semantic_invariants": [
+    "unique_asset_and_semantic_ids",
+    "declared_acyclic_single_root_hierarchy",
+    "unit_quaternions_axes_normals",
+    "positive_motion_range_with_rest_inside",
+    "rotation_rad_translation_m",
+    "operational_functions_cannot_be_decorative",
+    "all_operational_parts_server_phase_bound",
+    "moving_parts_have_collision_sweeps",
+    "all_material_texture_provenance",
+    "lod0_required_and_identical_semantic_transforms_ids_hierarchy",
+    "variant_semantic_ids_stable_for_same_category_kind",
+    "production_requires_built_artifacts_and_geometry_hashes",
+    "coverage_identity_correlated_not_caller_asserted",
+    "canonical_policy_part_node_socket_anchor_ids",
+    "state_bound_fixed_functions_require_operational_state_not_fake_movement",
+    "existing_variant_placement_family_bound_to_reviewed_stage_policy",
+    "explicit_policy_group_for_existing_and_planned_bindings"
+  ],
+  "policies": [
+    {
+      "category": "equipment",
+      "kind": "alloying",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "induction_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:alloying"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:alloying"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:annealing"
+    },
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "families": [
+        "stainless"
+      ],
+      "required_functions": [
+        "vessel_tilt"
+      ],
+      "fixed_functions": [
+        "gas_tuyere"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:aod"
+      ],
+      "state_bound_fixed_functions": [
+        "gas_tuyere"
+      ],
+      "id": "policy:equipment:aod",
+      "relative_fixed_parts": [
+        {
+          "fixed_part_id": "gas_tuyere",
+          "parent_part_id": "vessel_tilt"
+        }
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "blast_furnace",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "charge_gate",
+        "tap_control"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:blast_furnace"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:blast_furnace"
+    },
+    {
+      "category": "equipment",
+      "kind": "bloom_mill",
+      "families": [
+        "hot-rolling"
+      ],
+      "required_functions": [
+        "bloom_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:bloom_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:bloom_mill"
+    },
+    {
+      "category": "equipment",
+      "kind": "bof",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "vessel_tilt",
+        "oxygen_lance"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:bof"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:bof"
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "families": [
+        "steelmaking",
+        "stainless"
+      ],
+      "required_functions": [
+        "withdrawal_roll",
+        "mold_oscillation"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:caster"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:caster"
+    },
+    {
+      "category": "equipment",
+      "kind": "charge",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "charge_feed"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:charge"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:charge"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:coating"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:coiler"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cold_reduction_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cold_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:cold_mill"
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling",
+      "families": [
+        "hot-rolling"
+      ],
+      "required_functions": [
+        "cooling_feed",
+        "coolant_valve"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cooling"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:cooling"
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling_bed",
+      "families": [
+        "hot-rolling",
+        "stainless"
+      ],
+      "required_functions": [
+        "bed_transfer"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cooling_bed"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:cooling_bed"
+    },
+    {
+      "category": "equipment",
+      "kind": "decarburizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "decarb_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:decarburizing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:decarburizing"
+    },
+    {
+      "category": "equipment",
+      "kind": "delivery",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "customer_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:delivery"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:delivery"
+    },
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "families": [
+        "stainless"
+      ],
+      "required_functions": [
+        "electrode_lift",
+        "vessel_tilt",
+        "roof_swing"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:eaf"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:eaf"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "cleaning_brush",
+        "strip_feed"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:electrocleaning"
+    },
+    {
+      "category": "equipment",
+      "kind": "electroplating",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "plating_feed"
+      ],
+      "fixed_functions": [
+        "electrode_bank"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:electroplating"
+      ],
+      "state_bound_fixed_functions": [
+        "electrode_bank"
+      ],
+      "id": "policy:equipment:electroplating"
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "families": [
+        "hot-rolling",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "finishing_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing_mill"
+    },
+    {
+      "category": "equipment",
+      "kind": "forging",
+      "families": [
+        "titanium"
+      ],
+      "required_functions": [
+        "press_ram"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:forging"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:forging"
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "families": [
+        "hot-rolling",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "furnace_door",
+        "furnace_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:furnace"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:furnace"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "sink_roll"
+      ],
+      "fixed_functions": [
+        "air_knife"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:galvanizing"
+      ],
+      "state_bound_fixed_functions": [
+        "air_knife"
+      ],
+      "id": "policy:equipment:galvanizing"
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "treatment_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:heat_treatment"
+    },
+    {
+      "category": "equipment",
+      "kind": "inspection",
+      "families": [
+        "finishing",
+        "campus"
+      ],
+      "required_functions": [
+        "inspection_scan"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:inspection"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:inspection"
+    },
+    {
+      "category": "equipment",
+      "kind": "ladle_furnace",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "electrode_lift"
+      ],
+      "fixed_functions": [
+        "ladle_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:ladle_furnace"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:ladle_furnace"
+    },
+    {
+      "category": "equipment",
+      "kind": "laying_head",
+      "families": [
+        "hot-rolling"
+      ],
+      "required_functions": [
+        "laying_rotation"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:laying_head"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:laying_head"
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "leveling_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:leveler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:leveler"
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "oiling_feed"
+      ],
+      "fixed_functions": [
+        "spray_header"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:oiling"
+      ],
+      "state_bound_fixed_functions": [
+        "spray_header"
+      ],
+      "id": "policy:equipment:oiling"
+    },
+    {
+      "category": "equipment",
+      "kind": "packaging",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [
+        "strapping_head"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:packaging"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:packaging"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "pickling_feed"
+      ],
+      "fixed_functions": [
+        "acid_tank"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:pickling"
+      ],
+      "state_bound_fixed_functions": [
+        "acid_tank"
+      ],
+      "id": "policy:equipment:pickling"
+    },
+    {
+      "category": "equipment",
+      "kind": "port",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "berth_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:port"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:port"
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "families": [
+        "hot-rolling",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "roughing_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:roughing"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:roughing"
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "families": [
+        "steelmaking",
+        "hot-rolling",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cutting_tool"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:shear"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:shear"
+    },
+    {
+      "category": "equipment",
+      "kind": "ship",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "propulsion",
+        "rudder"
+      ],
+      "fixed_functions": [
+        "cargo_hold"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:ship"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:ship"
+    },
+    {
+      "category": "equipment",
+      "kind": "slitter",
+      "families": [
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "slitting_blade"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:slitter"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:slitter"
+    },
+    {
+      "category": "equipment",
+      "kind": "stock",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "storage_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:stock"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:stock"
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "temper_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:temper"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:temper"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:uncoiler"
+    },
+    {
+      "category": "equipment",
+      "kind": "vacuum_annealing",
+      "families": [
+        "titanium"
+      ],
+      "required_functions": [
+        "vacuum_door"
+      ],
+      "fixed_functions": [
+        "vacuum_chamber",
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:vacuum_annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:vacuum_annealing"
+    },
+    {
+      "category": "equipment",
+      "kind": "wire_mill",
+      "families": [
+        "hot-rolling"
+      ],
+      "required_functions": [
+        "wire_reduction_roll"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:wire_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:wire_mill"
+    },
+    {
+      "category": "fleet",
+      "kind": "truck",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "wheel_rotation",
+        "steering"
+      ],
+      "fixed_functions": [
+        "load_bed"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:truck"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:truck"
+    },
+    {
+      "category": "fleet",
+      "kind": "slab-carrier",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "wheel_rotation",
+        "steering",
+        "deck_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:slab-carrier"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:slab-carrier"
+    },
+    {
+      "category": "fleet",
+      "kind": "coil-carrier",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "wheel_rotation",
+        "steering",
+        "saddle_lift"
+      ],
+      "fixed_functions": [
+        "coil_saddle"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:coil-carrier"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:coil-carrier"
+    },
+    {
+      "category": "fleet",
+      "kind": "forklift",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "wheel_rotation",
+        "steering",
+        "fork_lift",
+        "mast_tilt"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "grip"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:forklift"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:forklift"
+    },
+    {
+      "category": "fleet",
+      "kind": "torpedo",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bogie_rotation",
+        "vessel_tilt"
+      ],
+      "fixed_functions": [
+        "hot_metal_vessel"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load",
+        "coupler"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:torpedo"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:torpedo"
+    },
+    {
+      "category": "fleet",
+      "kind": "ladle-car",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bogie_rotation"
+      ],
+      "fixed_functions": [
+        "ladle_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load",
+        "coupler"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:ladle-car"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:ladle-car"
+    },
+    {
+      "category": "fleet",
+      "kind": "locomotive",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bogie_rotation"
+      ],
+      "fixed_functions": [
+        "coupler"
+      ],
+      "required_socket_roles": [
+        "support",
+        "coupler"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:locomotive"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:locomotive"
+    },
+    {
+      "category": "fleet",
+      "kind": "railcar",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bogie_rotation"
+      ],
+      "fixed_functions": [
+        "load_deck",
+        "coupler"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load",
+        "coupler"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:railcar"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:railcar"
+    },
+    {
+      "category": "fleet",
+      "kind": "ship",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "propulsion",
+        "rudder"
+      ],
+      "fixed_functions": [
+        "cargo_hold"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:ship"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:ship"
+    },
+    {
+      "category": "fleet",
+      "kind": "crane",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bridge_travel",
+        "trolley_travel",
+        "hoist"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "grip"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:crane"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:crane"
+    },
+    {
+      "category": "fleet",
+      "kind": "unloader",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "boom_slew",
+        "grab_hoist",
+        "grab_open"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "grip",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:unloader"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:unloader"
+    },
+    {
+      "category": "fleet",
+      "kind": "stacker",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "boom_slew",
+        "belt_feed"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:stacker"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:stacker"
+    },
+    {
+      "category": "fleet",
+      "kind": "reclaimer",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bucket_wheel",
+        "boom_slew",
+        "belt_feed"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:reclaimer"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:reclaimer"
+    },
+    {
+      "category": "fleet",
+      "kind": "conveyor",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "belt_feed"
+      ],
+      "fixed_functions": [
+        "belt_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:conveyor"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:fleet:conveyor"
+    },
+    {
+      "category": "campus",
+      "kind": "hall",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "structural_support"
+      ],
+      "required_socket_roles": [
+        "support"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:uniform-fidelity"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:hall"
+    },
+    {
+      "category": "campus",
+      "kind": "receiving-inspection",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [
+        "inspection_scan"
+      ],
+      "fixed_functions": [
+        "receiving_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:receiving:inspection"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:receiving-inspection"
+    },
+    {
+      "category": "campus",
+      "kind": "weighbridge",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "weigh_platform"
+      ],
+      "required_socket_roles": [
+        "support",
+        "work"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:receiving:weigh"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:weighbridge"
+    },
+    {
+      "category": "campus",
+      "kind": "gate",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [
+        "barrier_lift"
+      ],
+      "fixed_functions": [
+        "gate_base"
+      ],
+      "required_socket_roles": [
+        "support"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:receiving:arrival"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:gate"
+    },
+    {
+      "category": "campus",
+      "kind": "raw-yard",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "stockpile_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:receiving:store"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:raw-yard"
+    },
+    {
+      "category": "campus",
+      "kind": "warehouse",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "rack_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:warehouse"
+    },
+    {
+      "category": "campus",
+      "kind": "berth",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "berth_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:berth"
+    },
+    {
+      "category": "campus",
+      "kind": "customer-dock",
+      "families": [
+        "campus"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "customer_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:campus:customer-dock"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-CR-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "pickling_feed",
+        "scale_breaker_roll"
+      ],
+      "fixed_functions": [
+        "acid_tank"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:pickling"
+      ],
+      "state_bound_fixed_functions": [
+        "acid_tank"
+      ],
+      "id": "policy:equipment:finishing:CS-CR-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cold_reduction_roll",
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cold_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-CR-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "cleaning_brush",
+        "strip_feed",
+        "line_unwinding_mandrel",
+        "line_feed_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-CR-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-CR-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-CR-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-EG-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "cleaning_brush",
+        "strip_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-EG-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll",
+        "exit_looper_lift",
+        "oven_feed"
+      ],
+      "fixed_functions": [
+        "cooling_header",
+        "curing_oven"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [
+        "cooling_header",
+        "curing_oven"
+      ],
+      "id": "policy:equipment:finishing:CS-EG-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-EG-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-GA-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GA-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "sink_roll"
+      ],
+      "fixed_functions": [
+        "air_knife"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:galvanizing"
+      ],
+      "state_bound_fixed_functions": [
+        "air_knife"
+      ],
+      "id": "policy:equipment:finishing:CS-GA-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "alloying",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "induction_feed"
+      ],
+      "fixed_functions": [
+        "thermal_chamber",
+        "coating_cooling"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:alloying"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber",
+        "coating_cooling"
+      ],
+      "id": "policy:equipment:finishing:CS-GA-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GA-08:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GA-10:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-GI-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GI-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "sink_roll"
+      ],
+      "fixed_functions": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:galvanizing"
+      ],
+      "state_bound_fixed_functions": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "id": "policy:equipment:finishing:CS-GI-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GI-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GI-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "pickling_feed",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "fixed_functions": [
+        "acid_tank"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:pickling"
+      ],
+      "state_bound_fixed_functions": [
+        "acid_tank"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cold_reduction_roll",
+        "line_unwinding_mandrel",
+        "line_strip_feed",
+        "line_feed_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cold_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GO-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "decarburizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "decarb_feed",
+        "base_coating_roll",
+        "entry_looper_lift",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:decarburizing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "treatment_feed",
+        "bell_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "line_unwinding_mandrel",
+        "line_feed_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-08:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "inspection",
+      "families": [
+        "finishing",
+        "campus"
+      ],
+      "required_functions": [
+        "inspection_scan"
+      ],
+      "fixed_functions": [
+        "domain_laser"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:inspection"
+      ],
+      "state_bound_fixed_functions": [
+        "domain_laser"
+      ],
+      "id": "policy:equipment:finishing:CS-GO-10:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-GO-11:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-HGI-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-HGI-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "families": [
+        "finishing"
+      ],
+      "required_functions": [
+        "sink_roll"
+      ],
+      "fixed_functions": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:galvanizing"
+      ],
+      "state_bound_fixed_functions": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "id": "policy:equipment:finishing:CS-HGI-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-HGI-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-HGI-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "fixed_functions": [
+        "weld_power"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:uncoiler"
+      ],
+      "state_bound_fixed_functions": [
+        "weld_power"
+      ],
+      "id": "policy:equipment:finishing:CS-NGO-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber"
+      ],
+      "id": "policy:equipment:finishing:CS-NGO-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "pickling_feed",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "fixed_functions": [
+        "acid_tank"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:pickling"
+      ],
+      "state_bound_fixed_functions": [
+        "acid_tank"
+      ],
+      "id": "policy:equipment:finishing:CS-NGO-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cold_reduction_roll",
+        "line_unwinding_mandrel",
+        "line_strip_feed",
+        "line_feed_lift"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:cold_mill"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-NGO-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "families": [
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "anneal_feed",
+        "cleaning_brush",
+        "cleaning_strip_feed",
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "fixed_functions": [
+        "thermal_chamber",
+        "cleaning_electrodes"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": true,
+      "requirement_ids": [
+        "scope:asset-family:annealing"
+      ],
+      "state_bound_fixed_functions": [
+        "thermal_chamber",
+        "cleaning_electrodes"
+      ],
+      "id": "policy:equipment:finishing:CS-NGO-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "families": [
+        "finishing",
+        "stainless"
+      ],
+      "required_functions": [
+        "coating_roll"
+      ],
+      "fixed_functions": [
+        "drying_header"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coating"
+      ],
+      "state_bound_fixed_functions": [
+        "drying_header"
+      ],
+      "id": "policy:equipment:finishing:CS-NGO-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "families": [
+        "hot-rolling",
+        "finishing",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:coiler"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:finishing:CS-NGO-08:v1"
+    },
+    {
+      "id": "policy:fleet:dump-truck",
+      "category": "fleet",
+      "kind": "dump-truck",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "wheel_rotation",
+        "steering",
+        "tipper_lift"
+      ],
+      "fixed_functions": [],
+      "state_bound_fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:truck",
+        "scope:fleet:dump-truck"
+      ]
+    },
+    {
+      "id": "policy:fleet:overhead-crane",
+      "category": "fleet",
+      "kind": "overhead-crane",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "bridge_travel",
+        "trolley_travel",
+        "hoist"
+      ],
+      "fixed_functions": [],
+      "state_bound_fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "grip"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:crane",
+        "scope:fleet:overhead-crane"
+      ]
+    },
+    {
+      "id": "policy:fleet:port-crane",
+      "category": "fleet",
+      "kind": "port-crane",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [
+        "boom_slew",
+        "hoist"
+      ],
+      "fixed_functions": [],
+      "state_bound_fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "grip"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:fleet:crane",
+        "scope:fleet:port-crane"
+      ]
+    },
+    {
+      "id": "policy:campus:receiving-cradle:coil-v1",
+      "category": "campus",
+      "kind": "receiving-cradle",
+      "families": [
+        "transport"
+      ],
+      "required_functions": [],
+      "fixed_functions": [
+        "coil_saddle"
+      ],
+      "state_bound_fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "load"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:handling:receiving-cradle"
+      ]
+    }
+  ],
+  "planned_bindings": [
+    {
+      "category": "fleet",
+      "kind": "truck",
+      "family": "transport",
+      "variant": "variant:fleet:truck:standard",
+      "placement_ids": [
+        "planned:scope:fleet:truck"
+      ],
+      "requirement_ids": [
+        "scope:fleet:truck"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:truck"
+      ],
+      "policy_group_id": "policy:fleet:truck"
+    },
+    {
+      "category": "fleet",
+      "kind": "slab-carrier",
+      "family": "transport",
+      "variant": "variant:fleet:slab-carrier:standard",
+      "placement_ids": [
+        "planned:scope:fleet:slab-carrier"
+      ],
+      "requirement_ids": [
+        "scope:fleet:slab-carrier"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:slab-carrier"
+      ],
+      "policy_group_id": "policy:fleet:slab-carrier"
+    },
+    {
+      "category": "fleet",
+      "kind": "coil-carrier",
+      "family": "transport",
+      "variant": "variant:fleet:coil-carrier:standard",
+      "placement_ids": [
+        "planned:scope:fleet:coil-carrier"
+      ],
+      "requirement_ids": [
+        "scope:fleet:coil-carrier"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:coil-carrier"
+      ],
+      "policy_group_id": "policy:fleet:coil-carrier"
+    },
+    {
+      "category": "fleet",
+      "kind": "forklift",
+      "family": "transport",
+      "variant": "variant:fleet:forklift:standard",
+      "placement_ids": [
+        "planned:scope:fleet:forklift"
+      ],
+      "requirement_ids": [
+        "scope:fleet:forklift"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:forklift"
+      ],
+      "policy_group_id": "policy:fleet:forklift"
+    },
+    {
+      "category": "fleet",
+      "kind": "torpedo",
+      "family": "transport",
+      "variant": "variant:fleet:torpedo:standard",
+      "placement_ids": [
+        "planned:scope:fleet:torpedo"
+      ],
+      "requirement_ids": [
+        "scope:fleet:torpedo"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:torpedo"
+      ],
+      "policy_group_id": "policy:fleet:torpedo"
+    },
+    {
+      "category": "fleet",
+      "kind": "ladle-car",
+      "family": "transport",
+      "variant": "variant:fleet:ladle-car:standard",
+      "placement_ids": [
+        "planned:scope:fleet:ladle-car"
+      ],
+      "requirement_ids": [
+        "scope:fleet:ladle-car"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:ladle-car"
+      ],
+      "policy_group_id": "policy:fleet:ladle-car"
+    },
+    {
+      "category": "fleet",
+      "kind": "locomotive",
+      "family": "transport",
+      "variant": "variant:fleet:locomotive:standard",
+      "placement_ids": [
+        "planned:scope:fleet:locomotive"
+      ],
+      "requirement_ids": [
+        "scope:fleet:locomotive"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:locomotive"
+      ],
+      "policy_group_id": "policy:fleet:locomotive"
+    },
+    {
+      "category": "fleet",
+      "kind": "railcar",
+      "family": "transport",
+      "variant": "variant:fleet:railcar:standard",
+      "placement_ids": [
+        "planned:scope:fleet:railcar"
+      ],
+      "requirement_ids": [
+        "scope:fleet:railcar"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:railcar"
+      ],
+      "policy_group_id": "policy:fleet:railcar"
+    },
+    {
+      "category": "fleet",
+      "kind": "ship",
+      "family": "transport",
+      "variant": "variant:fleet:ship:standard",
+      "placement_ids": [
+        "planned:scope:fleet:ship"
+      ],
+      "requirement_ids": [
+        "scope:fleet:ship"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:ship"
+      ],
+      "policy_group_id": "policy:fleet:ship"
+    },
+    {
+      "category": "fleet",
+      "kind": "crane",
+      "family": "transport",
+      "variant": "variant:fleet:crane:standard",
+      "placement_ids": [
+        "planned:scope:fleet:crane"
+      ],
+      "requirement_ids": [
+        "scope:fleet:crane"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:crane"
+      ],
+      "policy_group_id": "policy:fleet:crane"
+    },
+    {
+      "category": "fleet",
+      "kind": "unloader",
+      "family": "transport",
+      "variant": "variant:fleet:unloader:standard",
+      "placement_ids": [
+        "planned:scope:fleet:unloader"
+      ],
+      "requirement_ids": [
+        "scope:fleet:unloader"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:unloader"
+      ],
+      "policy_group_id": "policy:fleet:unloader"
+    },
+    {
+      "category": "fleet",
+      "kind": "stacker",
+      "family": "transport",
+      "variant": "variant:fleet:stacker:standard",
+      "placement_ids": [
+        "planned:scope:fleet:stacker"
+      ],
+      "requirement_ids": [
+        "scope:fleet:stacker"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:stacker"
+      ],
+      "policy_group_id": "policy:fleet:stacker"
+    },
+    {
+      "category": "fleet",
+      "kind": "reclaimer",
+      "family": "transport",
+      "variant": "variant:fleet:reclaimer:standard",
+      "placement_ids": [
+        "planned:scope:fleet:reclaimer"
+      ],
+      "requirement_ids": [
+        "scope:fleet:reclaimer"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:reclaimer"
+      ],
+      "policy_group_id": "policy:fleet:reclaimer"
+    },
+    {
+      "category": "fleet",
+      "kind": "conveyor",
+      "family": "transport",
+      "variant": "variant:fleet:conveyor:standard",
+      "placement_ids": [
+        "planned:scope:fleet:conveyor"
+      ],
+      "requirement_ids": [
+        "scope:fleet:conveyor"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:conveyor"
+      ],
+      "policy_group_id": "policy:fleet:conveyor"
+    },
+    {
+      "category": "campus",
+      "kind": "hall",
+      "family": "campus",
+      "variant": "variant:campus:hall:standard",
+      "placement_ids": [
+        "planned:asset:campus:hall"
+      ],
+      "requirement_ids": [
+        "scope:uniform-fidelity"
+      ],
+      "qa_row_ids": [
+        "qa:scope:uniform-fidelity"
+      ],
+      "policy_group_id": "policy:campus:hall"
+    },
+    {
+      "category": "campus",
+      "kind": "receiving-inspection",
+      "family": "campus",
+      "variant": "variant:campus:receiving-inspection:standard",
+      "placement_ids": [
+        "planned:asset:campus:receiving-inspection"
+      ],
+      "requirement_ids": [
+        "scope:receiving:inspection"
+      ],
+      "qa_row_ids": [
+        "qa:scope:receiving:inspection"
+      ],
+      "policy_group_id": "policy:campus:receiving-inspection"
+    },
+    {
+      "category": "campus",
+      "kind": "weighbridge",
+      "family": "campus",
+      "variant": "variant:campus:weighbridge:standard",
+      "placement_ids": [
+        "planned:asset:campus:weighbridge"
+      ],
+      "requirement_ids": [
+        "scope:receiving:weigh"
+      ],
+      "qa_row_ids": [
+        "qa:scope:receiving:weigh"
+      ],
+      "policy_group_id": "policy:campus:weighbridge"
+    },
+    {
+      "category": "campus",
+      "kind": "gate",
+      "family": "campus",
+      "variant": "variant:campus:gate:standard",
+      "placement_ids": [
+        "planned:asset:campus:gate"
+      ],
+      "requirement_ids": [
+        "scope:receiving:arrival"
+      ],
+      "qa_row_ids": [
+        "qa:scope:receiving:arrival"
+      ],
+      "policy_group_id": "policy:campus:gate"
+    },
+    {
+      "category": "campus",
+      "kind": "raw-yard",
+      "family": "campus",
+      "variant": "variant:campus:raw-yard:standard",
+      "placement_ids": [
+        "planned:asset:campus:raw-yard"
+      ],
+      "requirement_ids": [
+        "scope:receiving:store"
+      ],
+      "qa_row_ids": [
+        "qa:scope:receiving:store"
+      ],
+      "policy_group_id": "policy:campus:raw-yard"
+    },
+    {
+      "category": "campus",
+      "kind": "warehouse",
+      "family": "campus",
+      "variant": "variant:campus:warehouse:standard",
+      "placement_ids": [
+        "planned:asset:campus:warehouse"
+      ],
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "qa_row_ids": [
+        "qa:scope:dispatch"
+      ],
+      "policy_group_id": "policy:campus:warehouse"
+    },
+    {
+      "category": "campus",
+      "kind": "berth",
+      "family": "campus",
+      "variant": "variant:campus:berth:standard",
+      "placement_ids": [
+        "planned:asset:campus:berth"
+      ],
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "qa_row_ids": [
+        "qa:scope:dispatch"
+      ],
+      "policy_group_id": "policy:campus:berth"
+    },
+    {
+      "category": "campus",
+      "kind": "customer-dock",
+      "family": "campus",
+      "variant": "variant:campus:customer-dock:standard",
+      "placement_ids": [
+        "planned:asset:campus:customer-dock"
+      ],
+      "requirement_ids": [
+        "scope:dispatch"
+      ],
+      "qa_row_ids": [
+        "qa:scope:dispatch"
+      ],
+      "policy_group_id": "policy:campus:customer-dock"
+    },
+    {
+      "category": "fleet",
+      "kind": "dump-truck",
+      "family": "transport",
+      "variant": "variant:fleet:truck:dump",
+      "policy_group_id": "policy:fleet:dump-truck",
+      "placement_ids": [
+        "planned:scope:fleet:dump-truck"
+      ],
+      "requirement_ids": [
+        "scope:fleet:truck",
+        "scope:fleet:dump-truck"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:truck",
+        "qa:scope:fleet:dump-truck"
+      ]
+    },
+    {
+      "category": "fleet",
+      "kind": "ship",
+      "family": "transport",
+      "variant": "variant:fleet:ship:bulk",
+      "policy_group_id": "policy:fleet:ship",
+      "placement_ids": [
+        "planned:scope:fleet:ship-bulk"
+      ],
+      "requirement_ids": [
+        "scope:fleet:ship",
+        "scope:fleet:ship-bulk"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:ship",
+        "qa:scope:fleet:ship-bulk"
+      ]
+    },
+    {
+      "category": "fleet",
+      "kind": "overhead-crane",
+      "family": "transport",
+      "variant": "variant:fleet:crane:overhead",
+      "policy_group_id": "policy:fleet:overhead-crane",
+      "placement_ids": [
+        "planned:scope:fleet:overhead-crane"
+      ],
+      "requirement_ids": [
+        "scope:fleet:crane",
+        "scope:fleet:overhead-crane"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:crane",
+        "qa:scope:fleet:overhead-crane"
+      ]
+    },
+    {
+      "category": "fleet",
+      "kind": "port-crane",
+      "family": "transport",
+      "variant": "variant:fleet:crane:port",
+      "policy_group_id": "policy:fleet:port-crane",
+      "placement_ids": [
+        "planned:scope:fleet:port-crane"
+      ],
+      "requirement_ids": [
+        "scope:fleet:crane",
+        "scope:fleet:port-crane"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:crane",
+        "qa:scope:fleet:port-crane"
+      ]
+    },
+    {
+      "category": "fleet",
+      "kind": "railcar",
+      "family": "transport",
+      "variant": "variant:fleet:railcar:coil",
+      "policy_group_id": "policy:fleet:railcar",
+      "placement_ids": [
+        "planned:scope:fleet:railcar-coil"
+      ],
+      "requirement_ids": [
+        "scope:fleet:railcar",
+        "scope:fleet:railcar-coil"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:railcar",
+        "qa:scope:fleet:railcar-coil"
+      ]
+    },
+    {
+      "category": "fleet",
+      "kind": "railcar",
+      "family": "transport",
+      "variant": "variant:fleet:railcar:bulk",
+      "policy_group_id": "policy:fleet:railcar",
+      "placement_ids": [
+        "planned:scope:fleet:railcar-bulk"
+      ],
+      "requirement_ids": [
+        "scope:fleet:railcar",
+        "scope:fleet:railcar-bulk"
+      ],
+      "qa_row_ids": [
+        "qa:scope:fleet:railcar",
+        "qa:scope:fleet:railcar-bulk"
+      ]
+    },
+    {
+      "category": "campus",
+      "kind": "receiving-cradle",
+      "family": "transport",
+      "variant": "variant:campus:receiving-cradle:coil",
+      "policy_group_id": "policy:campus:receiving-cradle:coil-v1",
+      "placement_ids": [
+        "planned:scope:handling:receiving-cradle"
+      ],
+      "requirement_ids": [
+        "scope:handling:receiving-cradle"
+      ],
+      "qa_row_ids": [
+        "qa:scope:handling:receiving-cradle"
+      ]
+    }
+  ],
+  "canonical_anchors": {
+    "moving_parts": "For every required_functions token, moving part id and node_id must equal that token. Additional detail parts allowed but cannot replace required anchors.",
+    "fixed_parts": "For every fixed_functions token, fixed part id and node_id must equal that token. state_bound_fixed_functions is a subset requiring operational_state binding; other fixed support functions may bind null.",
+    "sockets": "For every required_socket_roles role, a socket with id equal to role and matching role is mandatory. Additional explicit sockets allowed."
+  },
+  "mechanical_basis": [
+    {
+      "functions": [
+        "gas_tuyere"
+      ],
+      "url": "https://www.primetals.com/en/portfolio/solutions/steelmaking/aod-converter/",
+      "interpretation": "AOD gas delivery through tuyeres is operational without mandatory translating gas lance; optional genuine variant-specific mechanisms require separate detail references."
+    },
+    {
+      "functions": [
+        "air_knife"
+      ],
+      "url": "https://www.jstage.jst.go.jp/article/isijinternational/60/5/60_ISIJINT-2019-548/_html/-char/ja",
+      "interpretation": "Gas jets wipe coating on moving strip. Fixed nozzle process state satisfies wiping; movement of the air knife itself is not mandatory."
+    },
+    {
+      "functions": [
+        "thermal_chamber"
+      ],
+      "url": "https://live.cdn.cms.sms-group.com/SMS_group_website/DataStorage/02_Downloads/2022/2022_Q2/X-346E_BRS.pdf",
+      "interpretation": "Heating by direct firing/radiant tubes is state-dependent thermal duty. Required feed or doors describe genuine handling, never a perpetual movement substituting for heating."
+    }
+  ],
+  "stage_family_policy": [
+    {
+      "stage_id": "carbon-upstream",
+      "family": "steelmaking"
+    },
+    {
+      "stage_id": "casting-slab",
+      "family": "steelmaking"
+    },
+    {
+      "stage_id": "casting-bloom",
+      "family": "steelmaking"
+    },
+    {
+      "stage_id": "casting-billet",
+      "family": "steelmaking"
+    },
+    {
+      "stage_id": "hr",
+      "family": "hot-rolling"
+    },
+    {
+      "stage_id": "plate",
+      "family": "hot-rolling"
+    },
+    {
+      "stage_id": "wire",
+      "family": "hot-rolling"
+    },
+    {
+      "stage_id": "cr",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "gi",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "ga",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "hgi",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "eg",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "go",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "ngo",
+      "family": "finishing"
+    },
+    {
+      "stage_id": "sts-hr",
+      "family": "stainless"
+    },
+    {
+      "stage_id": "sts-cr",
+      "family": "stainless"
+    },
+    {
+      "stage_id": "sts-plate",
+      "family": "stainless"
+    },
+    {
+      "stage_id": "ti-hr",
+      "family": "titanium"
+    },
+    {
+      "stage_id": "ti-cr",
+      "family": "titanium"
+    },
+    {
+      "stage_id": "ti-sheet",
+      "family": "titanium"
+    },
+    {
+      "stage_id": "ti-plate",
+      "family": "titanium"
+    },
+    {
+      "stage_id": "hot-rolling-reserve",
+      "family": "hot-rolling"
+    },
+    {
+      "stage_id": "logistics",
+      "family": "campus"
+    },
+    {
+      "stage_id": "sources",
+      "family": "campus"
+    }
+  ],
+  "placement_family_overrides": [
+    {
+      "placement_id": "equipment:SHIP",
+      "variant": "variant:ship:SHIP",
+      "stage_id": "logistics",
+      "family": "transport",
+      "reason": "The persistent ship is transport equipment within the logistics stage; this is not a mesh-reuse or caller-controlled exemption."
+    }
+  ],
+  "shared_mesh_exceptions": [],
+  "family_binding_policy": "Existing equipment family is bound to explicit variant/placement registration below, derived from the reviewed stage-family table and named placement overrides. Broad kind eligibility is necessary but never sufficient. Mesh reuse changes geometry ownership only, never the semantic family of a placement. No cross-family shared-mesh admission exceptions are approved; any future exception requires explicit variant/placement/family/policy and QA review.",
+  "existing_bindings": [
+    {
+      "category": "equipment",
+      "kind": "charge",
+      "variant": "variant:charge:CHARGE-A",
+      "policy_group_id": "policy:equipment:charge",
+      "placement_ids": [
+        "equipment:CHARGE-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:charge",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:charge:CHARGE-A",
+        "qa:equipment:CHARGE-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "blast_furnace",
+      "variant": "variant:blast_furnace:BF-A",
+      "policy_group_id": "policy:equipment:blast_furnace",
+      "placement_ids": [
+        "equipment:BF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:blast_furnace",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:blast_furnace:BF-A",
+        "qa:equipment:BF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "bof",
+      "variant": "variant:bof:BOF-A",
+      "policy_group_id": "policy:equipment:bof",
+      "placement_ids": [
+        "equipment:BOF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:bof",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:bof:BOF-A",
+        "qa:equipment:BOF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "ladle_furnace",
+      "variant": "variant:ladle_furnace:LF-A",
+      "policy_group_id": "policy:equipment:ladle_furnace",
+      "placement_ids": [
+        "equipment:LF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:ladle_furnace",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:ladle_furnace:LF-A",
+        "qa:equipment:LF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-SLAB",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-SLAB"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-slab"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-SLAB",
+        "qa:equipment:CAST-SLAB"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-SLAB"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-slab"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-SLAB",
+        "qa:equipment:CUT-SLAB"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BLOOM",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-BLOOM"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-bloom"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-BLOOM",
+        "qa:equipment:CAST-BLOOM"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BLOOM",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-BLOOM"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-bloom"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-BLOOM",
+        "qa:equipment:CUT-BLOOM"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BILLET",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-BILLET"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-billet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-BILLET",
+        "qa:equipment:CAST-BILLET"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BILLET",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-BILLET"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-billet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-BILLET",
+        "qa:equipment:CUT-BILLET"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-HR-02",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:CS-HR-02"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:hr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:CS-HR-02",
+        "qa:equipment:CS-HR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:CS-HR-03",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:CS-HR-03"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:hr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:CS-HR-03",
+        "qa:equipment:CS-HR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:HSM-A",
+      "policy_group_id": "policy:equipment:finishing_mill",
+      "placement_ids": [
+        "equipment:HSM-A"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill",
+        "src:hr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:finishing_mill:HSM-A",
+        "qa:equipment:HSM-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling",
+      "variant": "variant:cooling:CS-HR-05",
+      "policy_group_id": "policy:equipment:cooling",
+      "placement_ids": [
+        "equipment:CS-HR-05"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cooling",
+        "src:hr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cooling:CS-HR-05",
+        "qa:equipment:CS-HR-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-HR-06",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-HR-06"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:hr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-HR-06",
+        "qa:equipment:CS-HR-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-HR-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:CS-HR-07"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:hr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:CS-HR-07",
+        "qa:equipment:CS-HR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-PLATE-02",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:CS-PLATE-02"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:plate-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:CS-PLATE-02",
+        "qa:equipment:CS-PLATE-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:CS-PLATE-03",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:CS-PLATE-03"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:plate-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:CS-PLATE-03",
+        "qa:equipment:CS-PLATE-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling",
+      "variant": "variant:cooling:CS-PLATE-04",
+      "policy_group_id": "policy:equipment:cooling",
+      "placement_ids": [
+        "equipment:CS-PLATE-04"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cooling",
+        "src:plate-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cooling:CS-PLATE-04",
+        "qa:equipment:CS-PLATE-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling_bed",
+      "variant": "variant:cooling_bed:CS-PLATE-05",
+      "policy_group_id": "policy:equipment:cooling_bed",
+      "placement_ids": [
+        "equipment:CS-PLATE-05"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cooling_bed",
+        "src:plate-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cooling_bed:CS-PLATE-05",
+        "qa:equipment:CS-PLATE-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CS-PLATE-06",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CS-PLATE-06"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "src:plate-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CS-PLATE-06",
+        "qa:equipment:CS-PLATE-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:CS-PLATE-07",
+      "policy_group_id": "policy:equipment:heat_treatment",
+      "placement_ids": [
+        "equipment:CS-PLATE-07"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment",
+        "src:plate-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:heat_treatment:CS-PLATE-07",
+        "qa:equipment:CS-PLATE-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-PLATE-08",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:CS-PLATE-08"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:plate-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:CS-PLATE-08",
+        "qa:equipment:CS-PLATE-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-WIRE-02",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:CS-WIRE-02"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:wire-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:CS-WIRE-02",
+        "qa:equipment:CS-WIRE-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "bloom_mill",
+      "variant": "variant:bloom_mill:CS-WIRE-03",
+      "policy_group_id": "policy:equipment:bloom_mill",
+      "placement_ids": [
+        "equipment:CS-WIRE-03"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:bloom_mill",
+        "src:wire-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:bloom_mill:CS-WIRE-03",
+        "qa:equipment:CS-WIRE-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:CS-WIRE-04",
+      "policy_group_id": "policy:equipment:finishing_mill",
+      "placement_ids": [
+        "equipment:CS-WIRE-04"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill",
+        "src:wire-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:finishing_mill:CS-WIRE-04",
+        "qa:equipment:CS-WIRE-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CS-WIRE-05",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CS-WIRE-05"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "src:wire-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CS-WIRE-05",
+        "qa:equipment:CS-WIRE-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-WIRE-06",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:CS-WIRE-06"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:wire-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:CS-WIRE-06",
+        "qa:equipment:CS-WIRE-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "wire_mill",
+      "variant": "variant:wire_mill:CS-WIRE-07",
+      "policy_group_id": "policy:equipment:wire_mill",
+      "placement_ids": [
+        "equipment:CS-WIRE-07"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:wire_mill",
+        "src:wire-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:wire_mill:CS-WIRE-07",
+        "qa:equipment:CS-WIRE-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "laying_head",
+      "variant": "variant:laying_head:CS-WIRE-08",
+      "policy_group_id": "policy:equipment:laying_head",
+      "placement_ids": [
+        "equipment:CS-WIRE-08"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "wire"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:laying_head",
+        "src:wire-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:laying_head:CS-WIRE-08",
+        "qa:equipment:CS-WIRE-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-CR-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-CR-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:cr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-CR-02",
+        "qa:equipment:CS-CR-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-CR-03",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:CS-CR-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:cr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:CS-CR-03",
+        "qa:equipment:CS-CR-03"
+      ],
+      "additional_functions": {
+        "moving": [
+          "scale_breaker_roll"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-CR-04",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:CS-CR-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:cr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:CS-CR-04",
+        "qa:equipment:CS-CR-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "intermediate_winding_mandrel",
+          "output_cutter"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-CR-05",
+      "policy_group_id": "policy:equipment:electrocleaning",
+      "placement_ids": [
+        "equipment:CS-CR-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning",
+        "src:cr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:electrocleaning:CS-CR-05",
+        "qa:equipment:CS-CR-05"
+      ],
+      "additional_functions": {
+        "moving": [
+          "line_unwinding_mandrel",
+          "line_feed_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-CR-06",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-CR-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:cr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-CR-06",
+        "qa:equipment:CS-CR-06"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift",
+          "exit_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "variant": "variant:temper:CS-CR-07",
+      "policy_group_id": "policy:equipment:temper",
+      "placement_ids": [
+        "equipment:CS-CR-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:temper",
+        "src:cr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:temper:CS-CR-07",
+        "qa:equipment:CS-CR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-CR-08",
+      "policy_group_id": "policy:equipment:oiling",
+      "placement_ids": [
+        "equipment:CS-CR-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:oiling",
+        "src:cr-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:oiling:CS-CR-08",
+        "qa:equipment:CS-CR-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-CR-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-CR-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:cr-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-CR-09",
+        "qa:equipment:CS-CR-09"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-CR-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GI-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-GI-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:gi-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-GI-02",
+        "qa:equipment:CS-GI-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GI-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-GI-03",
+      "policy_group_id": "policy:equipment:electrocleaning",
+      "placement_ids": [
+        "equipment:CS-GI-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning",
+        "src:gi-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:electrocleaning:CS-GI-03",
+        "qa:equipment:CS-GI-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GI-04",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-GI-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:gi-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-GI-04",
+        "qa:equipment:CS-GI-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GI-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GI-05",
+      "policy_group_id": "policy:equipment:galvanizing",
+      "placement_ids": [
+        "equipment:CS-GI-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:galvanizing",
+        "src:gi-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:galvanizing:CS-GI-05",
+        "qa:equipment:CS-GI-05"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": [
+          "coating_cooling"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GI-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "variant": "variant:temper:CS-GI-06",
+      "policy_group_id": "policy:equipment:temper",
+      "placement_ids": [
+        "equipment:CS-GI-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:temper",
+        "src:gi-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:temper:CS-GI-06",
+        "qa:equipment:CS-GI-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GI-07",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-GI-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:gi-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-GI-07",
+        "qa:equipment:CS-GI-07"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GI-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-GI-08",
+      "policy_group_id": "policy:equipment:oiling",
+      "placement_ids": [
+        "equipment:CS-GI-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:oiling",
+        "src:gi-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:oiling:CS-GI-08",
+        "qa:equipment:CS-GI-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GI-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-GI-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "gi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:gi-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-GI-09",
+        "qa:equipment:CS-GI-09"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter",
+          "surface_scan"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GI-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GA-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-GA-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ga-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-GA-02",
+        "qa:equipment:CS-GA-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-GA-03",
+      "policy_group_id": "policy:equipment:electrocleaning",
+      "placement_ids": [
+        "equipment:CS-GA-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning",
+        "src:ga-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:electrocleaning:CS-GA-03",
+        "qa:equipment:CS-GA-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GA-04",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-GA-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:ga-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-GA-04",
+        "qa:equipment:CS-GA-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GA-05",
+      "policy_group_id": "policy:equipment:galvanizing",
+      "placement_ids": [
+        "equipment:CS-GA-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:galvanizing",
+        "src:ga-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:galvanizing:CS-GA-05",
+        "qa:equipment:CS-GA-05"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "alloying",
+      "variant": "variant:alloying:CS-GA-06",
+      "policy_group_id": "policy:equipment:alloying",
+      "placement_ids": [
+        "equipment:CS-GA-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:alloying",
+        "src:ga-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:alloying:CS-GA-06",
+        "qa:equipment:CS-GA-06"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": [
+          "coating_cooling"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "variant": "variant:temper:CS-GA-07",
+      "policy_group_id": "policy:equipment:temper",
+      "placement_ids": [
+        "equipment:CS-GA-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:temper",
+        "src:ga-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:temper:CS-GA-07",
+        "qa:equipment:CS-GA-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GA-08",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-GA-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:ga-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-GA-08",
+        "qa:equipment:CS-GA-08"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-08:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-GA-09",
+      "policy_group_id": "policy:equipment:oiling",
+      "placement_ids": [
+        "equipment:CS-GA-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:oiling",
+        "src:ga-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:oiling:CS-GA-09",
+        "qa:equipment:CS-GA-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GA-10",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-GA-10"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ga"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ga-10"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-GA-10",
+        "qa:equipment:CS-GA-10"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter",
+          "surface_scan"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GA-10:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-HGI-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-HGI-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:hgi-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-HGI-02",
+        "qa:equipment:CS-HGI-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-HGI-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-HGI-03",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:CS-HGI-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:hgi-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:CS-HGI-03",
+        "qa:equipment:CS-HGI-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-HGI-04",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-HGI-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:hgi-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-HGI-04",
+        "qa:equipment:CS-HGI-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-HGI-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-HGI-05",
+      "policy_group_id": "policy:equipment:galvanizing",
+      "placement_ids": [
+        "equipment:CS-HGI-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:galvanizing",
+        "src:hgi-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:galvanizing:CS-HGI-05",
+        "qa:equipment:CS-HGI-05"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": [
+          "coating_cooling"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-HGI-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "variant": "variant:temper:CS-HGI-06",
+      "policy_group_id": "policy:equipment:temper",
+      "placement_ids": [
+        "equipment:CS-HGI-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:temper",
+        "src:hgi-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:temper:CS-HGI-06",
+        "qa:equipment:CS-HGI-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-HGI-07",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-HGI-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:hgi-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-HGI-07",
+        "qa:equipment:CS-HGI-07"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-HGI-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-HGI-08",
+      "policy_group_id": "policy:equipment:oiling",
+      "placement_ids": [
+        "equipment:CS-HGI-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:oiling",
+        "src:hgi-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:oiling:CS-HGI-08",
+        "qa:equipment:CS-HGI-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-HGI-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-HGI-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "hgi"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:hgi-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-HGI-09",
+        "qa:equipment:CS-HGI-09"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter",
+          "surface_scan"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-HGI-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-EG-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-EG-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:eg-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-EG-02",
+        "qa:equipment:CS-EG-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-EG-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-EG-03",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:CS-EG-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:eg-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:CS-EG-03",
+        "qa:equipment:CS-EG-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-EG-04",
+      "policy_group_id": "policy:equipment:electrocleaning",
+      "placement_ids": [
+        "equipment:CS-EG-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:electrocleaning",
+        "src:eg-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:electrocleaning:CS-EG-04",
+        "qa:equipment:CS-EG-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-EG-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "electroplating",
+      "variant": "variant:electroplating:CS-EG-05",
+      "policy_group_id": "policy:equipment:electroplating",
+      "placement_ids": [
+        "equipment:CS-EG-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:electroplating",
+        "src:eg-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:electroplating:CS-EG-05",
+        "qa:equipment:CS-EG-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-EG-06",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-EG-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:eg-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-EG-06",
+        "qa:equipment:CS-EG-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-EG-07",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-EG-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:eg-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-EG-07",
+        "qa:equipment:CS-EG-07"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift",
+          "oven_feed"
+        ],
+        "state": [
+          "cooling_header",
+          "curing_oven"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-EG-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-EG-08",
+      "policy_group_id": "policy:equipment:oiling",
+      "placement_ids": [
+        "equipment:CS-EG-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:oiling",
+        "src:eg-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:oiling:CS-EG-08",
+        "qa:equipment:CS-EG-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-EG-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-EG-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "eg"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:eg-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-EG-09",
+        "qa:equipment:CS-EG-09"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter",
+          "surface_scan"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-EG-09:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GO-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-GO-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:go-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-GO-02",
+        "qa:equipment:CS-GO-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GO-03",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-GO-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:go-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-GO-03",
+        "qa:equipment:CS-GO-03"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-GO-04",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:CS-GO-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:go-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:CS-GO-04",
+        "qa:equipment:CS-GO-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift",
+          "intermediate_winding_mandrel",
+          "output_cutter",
+          "shot_wheel"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-GO-05",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:CS-GO-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:go-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:CS-GO-05",
+        "qa:equipment:CS-GO-05"
+      ],
+      "additional_functions": {
+        "moving": [
+          "line_unwinding_mandrel",
+          "line_strip_feed",
+          "line_feed_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "decarburizing",
+      "variant": "variant:decarburizing:CS-GO-06",
+      "policy_group_id": "policy:equipment:decarburizing",
+      "placement_ids": [
+        "equipment:CS-GO-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:decarburizing",
+        "src:go-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:decarburizing:CS-GO-06",
+        "qa:equipment:CS-GO-06"
+      ],
+      "additional_functions": {
+        "moving": [
+          "base_coating_roll",
+          "entry_looper_lift",
+          "exit_looper_lift",
+          "intermediate_winding_mandrel",
+          "output_cutter"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:CS-GO-07",
+      "policy_group_id": "policy:equipment:heat_treatment",
+      "placement_ids": [
+        "equipment:CS-GO-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment",
+        "src:go-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:heat_treatment:CS-GO-07",
+        "qa:equipment:CS-GO-07"
+      ],
+      "additional_functions": {
+        "moving": [
+          "bell_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GO-08",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-GO-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:go-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-GO-08",
+        "qa:equipment:CS-GO-08"
+      ],
+      "additional_functions": {
+        "moving": [
+          "line_unwinding_mandrel",
+          "line_feed_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-08:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GO-09",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-GO-09"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:go-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-GO-09",
+        "qa:equipment:CS-GO-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "inspection",
+      "variant": "variant:inspection:CS-GO-10",
+      "policy_group_id": "policy:equipment:inspection",
+      "placement_ids": [
+        "equipment:CS-GO-10"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:inspection",
+        "src:go-10"
+      ],
+      "qa_row_ids": [
+        "qa:variant:inspection:CS-GO-10",
+        "qa:equipment:CS-GO-10"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": [
+          "domain_laser"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-10:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GO-11",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-GO-11"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "go"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:go-11"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-GO-11",
+        "qa:equipment:CS-GO-11"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-GO-11:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-NGO-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:CS-NGO-02"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ngo-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:CS-NGO-02",
+        "qa:equipment:CS-NGO-02"
+      ],
+      "additional_functions": {
+        "moving": [
+          "strip_clamp",
+          "weld_head"
+        ],
+        "state": [
+          "weld_power"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-02:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-NGO-03",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-NGO-03"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:ngo-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-NGO-03",
+        "qa:equipment:CS-NGO-03"
+      ],
+      "additional_functions": {
+        "moving": [
+          "entry_looper_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-03:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-NGO-04",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:CS-NGO-04"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:ngo-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:CS-NGO-04",
+        "qa:equipment:CS-NGO-04"
+      ],
+      "additional_functions": {
+        "moving": [
+          "exit_looper_lift",
+          "intermediate_winding_mandrel",
+          "output_cutter",
+          "shot_wheel"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-04:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-NGO-05",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:CS-NGO-05"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:ngo-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:CS-NGO-05",
+        "qa:equipment:CS-NGO-05"
+      ],
+      "additional_functions": {
+        "moving": [
+          "line_unwinding_mandrel",
+          "line_strip_feed",
+          "line_feed_lift"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-05:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-NGO-06",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:CS-NGO-06"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:ngo-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:CS-NGO-06",
+        "qa:equipment:CS-NGO-06"
+      ],
+      "additional_functions": {
+        "moving": [
+          "cleaning_brush",
+          "cleaning_strip_feed",
+          "entry_looper_lift",
+          "exit_looper_lift"
+        ],
+        "state": [
+          "cleaning_electrodes"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-06:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coating",
+      "variant": "variant:coating:CS-NGO-07",
+      "policy_group_id": "policy:equipment:coating",
+      "placement_ids": [
+        "equipment:CS-NGO-07"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coating",
+        "src:ngo-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coating:CS-NGO-07",
+        "qa:equipment:CS-NGO-07"
+      ],
+      "additional_functions": {
+        "moving": [],
+        "state": [
+          "drying_header"
+        ]
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-07:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-NGO-08",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:CS-NGO-08"
+      ],
+      "allowed_families": [
+        "finishing"
+      ],
+      "stage_ids": [
+        "ngo"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ngo-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:CS-NGO-08",
+        "qa:equipment:CS-NGO-08"
+      ],
+      "additional_functions": {
+        "moving": [
+          "output_cutter"
+        ],
+        "state": []
+      },
+      "extension_policy_id": "policy:equipment:finishing:CS-NGO-08:v1"
+    },
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-HR-02",
+      "policy_group_id": "policy:equipment:eaf",
+      "placement_ids": [
+        "equipment:STS-HR-02"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:eaf",
+        "src:sts-hr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:eaf:STS-HR-02",
+        "qa:equipment:STS-HR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "variant": "variant:aod:STS-HR-03",
+      "policy_group_id": "policy:equipment:aod",
+      "placement_ids": [
+        "equipment:STS-HR-03"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:aod",
+        "src:sts-hr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:aod:STS-HR-03",
+        "qa:equipment:STS-HR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:STS-HR-04",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:STS-HR-04"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "src:sts-hr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:STS-HR-04",
+        "qa:equipment:STS-HR-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:STS-HR-05",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:STS-HR-05"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:sts-hr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:STS-HR-05",
+        "qa:equipment:STS-HR-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:STS-HR-06",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:STS-HR-06"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:sts-hr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:STS-HR-06",
+        "qa:equipment:STS-HR-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:STS-HR-07",
+      "policy_group_id": "policy:equipment:finishing_mill",
+      "placement_ids": [
+        "equipment:STS-HR-07"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill",
+        "src:sts-hr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:finishing_mill:STS-HR-07",
+        "qa:equipment:STS-HR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:STS-HR-08",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:STS-HR-08"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:sts-hr-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:STS-HR-08",
+        "qa:equipment:STS-HR-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:STS-HR-09",
+      "policy_group_id": "policy:equipment:heat_treatment",
+      "placement_ids": [
+        "equipment:STS-HR-09"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment",
+        "src:sts-hr-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:heat_treatment:STS-HR-09",
+        "qa:equipment:STS-HR-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:STS-HR-10",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:STS-HR-10"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:sts-hr-10"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:STS-HR-10",
+        "qa:equipment:STS-HR-10"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:STS-HR-11",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:STS-HR-11"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:sts-hr-11"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:STS-HR-11",
+        "qa:equipment:STS-HR-11"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:STS-HR-12",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:STS-HR-12"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:sts-hr-12"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:STS-HR-12",
+        "qa:equipment:STS-HR-12"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:STS-HR-13",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:STS-HR-13"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:sts-hr-13"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:STS-HR-13",
+        "qa:equipment:STS-HR-13"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:STS-CR-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:STS-CR-02"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:sts-cr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:STS-CR-02",
+        "qa:equipment:STS-CR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:STS-CR-03",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:STS-CR-03"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:sts-cr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:STS-CR-03",
+        "qa:equipment:STS-CR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:STS-CR-04",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:STS-CR-04"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:sts-cr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:STS-CR-04",
+        "qa:equipment:STS-CR-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:STS-CR-05",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:STS-CR-05"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:sts-cr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:STS-CR-05",
+        "qa:equipment:STS-CR-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "temper",
+      "variant": "variant:temper:STS-CR-06",
+      "policy_group_id": "policy:equipment:temper",
+      "placement_ids": [
+        "equipment:STS-CR-06"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:temper",
+        "src:sts-cr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:temper:STS-CR-06",
+        "qa:equipment:STS-CR-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:STS-CR-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:STS-CR-07"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:sts-cr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:STS-CR-07",
+        "qa:equipment:STS-CR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "slitter",
+      "variant": "variant:slitter:STS-CR-08",
+      "policy_group_id": "policy:equipment:slitter",
+      "placement_ids": [
+        "equipment:STS-CR-08"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:slitter",
+        "src:sts-cr-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:slitter:STS-CR-08",
+        "qa:equipment:STS-CR-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:STS-CR-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:STS-CR-09"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:sts-cr-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:STS-CR-09",
+        "qa:equipment:STS-CR-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-PLATE-02",
+      "policy_group_id": "policy:equipment:eaf",
+      "placement_ids": [
+        "equipment:STS-PLATE-02"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:eaf",
+        "src:sts-plate-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:eaf:STS-PLATE-02",
+        "qa:equipment:STS-PLATE-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "variant": "variant:aod:STS-PLATE-03",
+      "policy_group_id": "policy:equipment:aod",
+      "placement_ids": [
+        "equipment:STS-PLATE-03"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:aod",
+        "src:sts-plate-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:aod:STS-PLATE-03",
+        "qa:equipment:STS-PLATE-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:STS-PLATE-04",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:STS-PLATE-04"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "src:sts-plate-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:STS-PLATE-04",
+        "qa:equipment:STS-PLATE-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:STS-PLATE-05",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:STS-PLATE-05"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:sts-plate-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:STS-PLATE-05",
+        "qa:equipment:STS-PLATE-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:STS-PLATE-06",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:STS-PLATE-06"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:sts-plate-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:STS-PLATE-06",
+        "qa:equipment:STS-PLATE-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:STS-PLATE-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:STS-PLATE-07"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:sts-plate-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:STS-PLATE-07",
+        "qa:equipment:STS-PLATE-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cooling_bed",
+      "variant": "variant:cooling_bed:STS-PLATE-08",
+      "policy_group_id": "policy:equipment:cooling_bed",
+      "placement_ids": [
+        "equipment:STS-PLATE-08"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cooling_bed",
+        "src:sts-plate-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cooling_bed:STS-PLATE-08",
+        "qa:equipment:STS-PLATE-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:STS-PLATE-09",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:STS-PLATE-09"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "src:sts-plate-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:STS-PLATE-09",
+        "qa:equipment:STS-PLATE-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:STS-PLATE-10",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:STS-PLATE-10"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:sts-plate-10"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:STS-PLATE-10",
+        "qa:equipment:STS-PLATE-10"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:STS-PLATE-11",
+      "policy_group_id": "policy:equipment:heat_treatment",
+      "placement_ids": [
+        "equipment:STS-PLATE-11"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:heat_treatment",
+        "src:sts-plate-11"
+      ],
+      "qa_row_ids": [
+        "qa:variant:heat_treatment:STS-PLATE-11",
+        "qa:equipment:STS-PLATE-11"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "forging",
+      "variant": "variant:forging:TI-HR-02",
+      "policy_group_id": "policy:equipment:forging",
+      "placement_ids": [
+        "equipment:TI-HR-02"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:forging",
+        "src:ti-hr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:forging:TI-HR-02",
+        "qa:equipment:TI-HR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:TI-HR-03",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:TI-HR-03"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:ti-hr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:TI-HR-03",
+        "qa:equipment:TI-HR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:TI-HR-04",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:TI-HR-04"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:ti-hr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:TI-HR-04",
+        "qa:equipment:TI-HR-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:TI-HR-05",
+      "policy_group_id": "policy:equipment:finishing_mill",
+      "placement_ids": [
+        "equipment:TI-HR-05"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill",
+        "src:ti-hr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:finishing_mill:TI-HR-05",
+        "qa:equipment:TI-HR-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:TI-HR-06",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:TI-HR-06"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:ti-hr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:TI-HR-06",
+        "qa:equipment:TI-HR-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:TI-HR-07",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:TI-HR-07"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:ti-hr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:TI-HR-07",
+        "qa:equipment:TI-HR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:TI-HR-08",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:TI-HR-08"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ti-hr-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:TI-HR-08",
+        "qa:equipment:TI-HR-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:TI-CR-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:TI-CR-02"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ti-cr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:TI-CR-02",
+        "qa:equipment:TI-CR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:TI-CR-03",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:TI-CR-03"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:ti-cr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:TI-CR-03",
+        "qa:equipment:TI-CR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:TI-CR-04",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:TI-CR-04"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ti-cr-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:TI-CR-04",
+        "qa:equipment:TI-CR-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "vacuum_annealing",
+      "variant": "variant:vacuum_annealing:TI-CR-05",
+      "policy_group_id": "policy:equipment:vacuum_annealing",
+      "placement_ids": [
+        "equipment:TI-CR-05"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:vacuum_annealing",
+        "src:ti-cr-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:vacuum_annealing:TI-CR-05",
+        "qa:equipment:TI-CR-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:TI-CR-06",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:TI-CR-06"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ti-cr-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:TI-CR-06",
+        "qa:equipment:TI-CR-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:TI-CR-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:TI-CR-07"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:ti-cr-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:TI-CR-07",
+        "qa:equipment:TI-CR-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "slitter",
+      "variant": "variant:slitter:TI-CR-08",
+      "policy_group_id": "policy:equipment:slitter",
+      "placement_ids": [
+        "equipment:TI-CR-08"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:slitter",
+        "src:ti-cr-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:slitter:TI-CR-08",
+        "qa:equipment:TI-CR-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:TI-CR-09",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:TI-CR-09"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-cr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ti-cr-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:TI-CR-09",
+        "qa:equipment:TI-CR-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:TI-SHEET-02",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:TI-SHEET-02"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ti-sheet-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:TI-SHEET-02",
+        "qa:equipment:TI-SHEET-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:TI-SHEET-03",
+      "policy_group_id": "policy:equipment:cold_mill",
+      "placement_ids": [
+        "equipment:TI-SHEET-03"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:cold_mill",
+        "src:ti-sheet-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:cold_mill:TI-SHEET-03",
+        "qa:equipment:TI-SHEET-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "coiler",
+      "variant": "variant:coiler:TI-SHEET-04",
+      "policy_group_id": "policy:equipment:coiler",
+      "placement_ids": [
+        "equipment:TI-SHEET-04"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:coiler",
+        "src:ti-sheet-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:coiler:TI-SHEET-04",
+        "qa:equipment:TI-SHEET-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "vacuum_annealing",
+      "variant": "variant:vacuum_annealing:TI-SHEET-05",
+      "policy_group_id": "policy:equipment:vacuum_annealing",
+      "placement_ids": [
+        "equipment:TI-SHEET-05"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:vacuum_annealing",
+        "src:ti-sheet-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:vacuum_annealing:TI-SHEET-05",
+        "qa:equipment:TI-SHEET-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:TI-SHEET-06",
+      "policy_group_id": "policy:equipment:uncoiler",
+      "placement_ids": [
+        "equipment:TI-SHEET-06"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:uncoiler",
+        "src:ti-sheet-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:uncoiler:TI-SHEET-06",
+        "qa:equipment:TI-SHEET-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:TI-SHEET-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:TI-SHEET-07"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:ti-sheet-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:TI-SHEET-07",
+        "qa:equipment:TI-SHEET-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "slitter",
+      "variant": "variant:slitter:TI-SHEET-08",
+      "policy_group_id": "policy:equipment:slitter",
+      "placement_ids": [
+        "equipment:TI-SHEET-08"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:slitter",
+        "src:ti-sheet-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:slitter:TI-SHEET-08",
+        "qa:equipment:TI-SHEET-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:TI-SHEET-09",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:TI-SHEET-09"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-sheet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "src:ti-sheet-09"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:TI-SHEET-09",
+        "qa:equipment:TI-SHEET-09"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "forging",
+      "variant": "variant:forging:TI-PLATE-02",
+      "policy_group_id": "policy:equipment:forging",
+      "placement_ids": [
+        "equipment:TI-PLATE-02"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:forging",
+        "src:ti-plate-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:forging:TI-PLATE-02",
+        "qa:equipment:TI-PLATE-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "furnace",
+      "variant": "variant:furnace:TI-PLATE-03",
+      "policy_group_id": "policy:equipment:furnace",
+      "placement_ids": [
+        "equipment:TI-PLATE-03"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:furnace",
+        "src:ti-plate-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:furnace:TI-PLATE-03",
+        "qa:equipment:TI-PLATE-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:TI-PLATE-04",
+      "policy_group_id": "policy:equipment:roughing",
+      "placement_ids": [
+        "equipment:TI-PLATE-04"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:ti-plate-04"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:TI-PLATE-04",
+        "qa:equipment:TI-PLATE-04"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "annealing",
+      "variant": "variant:annealing:TI-PLATE-05",
+      "policy_group_id": "policy:equipment:annealing",
+      "placement_ids": [
+        "equipment:TI-PLATE-05"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:annealing",
+        "src:ti-plate-05"
+      ],
+      "qa_row_ids": [
+        "qa:variant:annealing:TI-PLATE-05",
+        "qa:equipment:TI-PLATE-05"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "pickling",
+      "variant": "variant:pickling:TI-PLATE-06",
+      "policy_group_id": "policy:equipment:pickling",
+      "placement_ids": [
+        "equipment:TI-PLATE-06"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:pickling",
+        "src:ti-plate-06"
+      ],
+      "qa_row_ids": [
+        "qa:variant:pickling:TI-PLATE-06",
+        "qa:equipment:TI-PLATE-06"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "leveler",
+      "variant": "variant:leveler:TI-PLATE-07",
+      "policy_group_id": "policy:equipment:leveler",
+      "placement_ids": [
+        "equipment:TI-PLATE-07"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:leveler",
+        "src:ti-plate-07"
+      ],
+      "qa_row_ids": [
+        "qa:variant:leveler:TI-PLATE-07",
+        "qa:equipment:TI-PLATE-07"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:TI-PLATE-08",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:TI-PLATE-08"
+      ],
+      "allowed_families": [
+        "titanium"
+      ],
+      "stage_ids": [
+        "ti-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "src:ti-plate-08"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:TI-PLATE-08",
+        "qa:equipment:TI-PLATE-08"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:HSM-B",
+      "policy_group_id": "policy:equipment:finishing_mill",
+      "placement_ids": [
+        "equipment:HSM-B"
+      ],
+      "allowed_families": [
+        "hot-rolling"
+      ],
+      "stage_ids": [
+        "hot-rolling-reserve"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:finishing_mill"
+      ],
+      "qa_row_ids": [
+        "qa:variant:finishing_mill:HSM-B",
+        "qa:equipment:HSM-B"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "inspection",
+      "variant": "variant:inspection:FINAL-INSPECTION",
+      "policy_group_id": "policy:equipment:inspection",
+      "placement_ids": [
+        "equipment:FINAL-INSPECTION"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:inspection"
+      ],
+      "qa_row_ids": [
+        "qa:variant:inspection:FINAL-INSPECTION",
+        "qa:equipment:FINAL-INSPECTION"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "packaging",
+      "variant": "variant:packaging:PACKAGING",
+      "policy_group_id": "policy:equipment:packaging",
+      "placement_ids": [
+        "equipment:PACKAGING"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:packaging"
+      ],
+      "qa_row_ids": [
+        "qa:variant:packaging:PACKAGING",
+        "qa:equipment:PACKAGING"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "stock",
+      "variant": "variant:stock:WAREHOUSE",
+      "policy_group_id": "policy:equipment:stock",
+      "placement_ids": [
+        "equipment:WAREHOUSE"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:stock"
+      ],
+      "qa_row_ids": [
+        "qa:variant:stock:WAREHOUSE",
+        "qa:equipment:WAREHOUSE"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "port",
+      "variant": "variant:port:PORT",
+      "policy_group_id": "policy:equipment:port",
+      "placement_ids": [
+        "equipment:PORT"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:port"
+      ],
+      "qa_row_ids": [
+        "qa:variant:port:PORT",
+        "qa:equipment:PORT"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "ship",
+      "variant": "variant:ship:SHIP",
+      "policy_group_id": "policy:equipment:ship",
+      "placement_ids": [
+        "equipment:SHIP"
+      ],
+      "allowed_families": [
+        "transport"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:ship"
+      ],
+      "qa_row_ids": [
+        "qa:variant:ship:SHIP",
+        "qa:equipment:SHIP"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "delivery",
+      "variant": "variant:delivery:CUSTOMER",
+      "policy_group_id": "policy:equipment:delivery",
+      "placement_ids": [
+        "equipment:CUSTOMER"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "logistics"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:delivery"
+      ],
+      "qa_row_ids": [
+        "qa:variant:delivery:CUSTOMER",
+        "qa:equipment:CUSTOMER"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "stock",
+      "variant": "variant:stock:ORE-SOURCE",
+      "policy_group_id": "policy:equipment:stock",
+      "placement_ids": [
+        "equipment:ORE-SOURCE"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "sources"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:stock"
+      ],
+      "qa_row_ids": [
+        "qa:variant:stock:ORE-SOURCE",
+        "qa:equipment:ORE-SOURCE"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "stock",
+      "variant": "variant:stock:SCRAP-SOURCE",
+      "policy_group_id": "policy:equipment:stock",
+      "placement_ids": [
+        "equipment:SCRAP-SOURCE"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "sources"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:stock"
+      ],
+      "qa_row_ids": [
+        "qa:variant:stock:SCRAP-SOURCE",
+        "qa:equipment:SCRAP-SOURCE"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "stock",
+      "variant": "variant:stock:TI-SOURCE",
+      "policy_group_id": "policy:equipment:stock",
+      "placement_ids": [
+        "equipment:TI-SOURCE"
+      ],
+      "allowed_families": [
+        "campus"
+      ],
+      "stage_ids": [
+        "sources"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:stock"
+      ],
+      "qa_row_ids": [
+        "qa:variant:stock:TI-SOURCE",
+        "qa:equipment:TI-SOURCE"
+      ]
+    }
+  ]
+}

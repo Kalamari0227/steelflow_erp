@@ -1,0 +1,377 @@
+{
+  "orders": [],
+  "work_orders": [],
+  "production_lots": [],
+  "stock_lots": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "stock-coil",
+      "source_kind": "OPENING",
+      "grade": "SYNTHETIC",
+      "form": "HR_COIL",
+      "quantity_kg": 500,
+      "received_at_ms": 0
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "stock-input",
+      "source_kind": "OPENING",
+      "grade": "SYNTHETIC",
+      "form": "SLAB",
+      "quantity_kg": 2000,
+      "received_at_ms": 0
+    }
+  ],
+  "receipts": [],
+  "materials": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "stock-coil",
+      "grade": "SYNTHETIC",
+      "form": "HR_COIL",
+      "dimensions": {
+        "length_mm": null,
+        "width_mm": 1000.0,
+        "thickness_mm": 2.0,
+        "diameter_mm": 1200.0,
+        "inner_diameter_mm": 600.0
+      },
+      "weight_kg": 500,
+      "current_version_id": "stock-coil-v1",
+      "origin_stock_lot_id": "stock-coil",
+      "production_lot_id": null,
+      "quality_status": "PASSED",
+      "availability_status": "AVAILABLE",
+      "active": true
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "in-a",
+      "grade": "SYNTHETIC",
+      "form": "SLAB",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 1000,
+      "current_version_id": "in-a-v1",
+      "origin_stock_lot_id": "stock-input",
+      "production_lot_id": null,
+      "quality_status": "PASSED",
+      "availability_status": "CONSUMED",
+      "active": false
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "in-b",
+      "grade": "SYNTHETIC",
+      "form": "SLAB",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 1000,
+      "current_version_id": "in-b-v1",
+      "origin_stock_lot_id": "stock-input",
+      "production_lot_id": null,
+      "quality_status": "PASSED",
+      "availability_status": "CONSUMED",
+      "active": false
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "out-a",
+      "grade": "SYNTHETIC",
+      "form": "PLATE",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 950,
+      "current_version_id": "out-a-v1",
+      "origin_stock_lot_id": null,
+      "production_lot_id": null,
+      "quality_status": "PASSED",
+      "availability_status": "AVAILABLE",
+      "active": true
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "out-b",
+      "grade": "SYNTHETIC",
+      "form": "PLATE",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 950,
+      "current_version_id": "out-b-v1",
+      "origin_stock_lot_id": null,
+      "production_lot_id": null,
+      "quality_status": "PASSED",
+      "availability_status": "AVAILABLE",
+      "active": true
+    }
+  ],
+  "material_versions": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "stock-coil-v1",
+      "material_id": "stock-coil",
+      "ordinal": 1,
+      "grade": "SYNTHETIC",
+      "form": "HR_COIL",
+      "dimensions": {
+        "length_mm": null,
+        "width_mm": 1000.0,
+        "thickness_mm": 2.0,
+        "diameter_mm": 1200.0,
+        "inner_diameter_mm": 600.0
+      },
+      "weight_kg": 500,
+      "cause_event_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "in-a-v1",
+      "material_id": "in-a",
+      "ordinal": 1,
+      "grade": "SYNTHETIC",
+      "form": "SLAB",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 1000,
+      "cause_event_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "in-b-v1",
+      "material_id": "in-b",
+      "ordinal": 1,
+      "grade": "SYNTHETIC",
+      "form": "SLAB",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 1000,
+      "cause_event_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "out-a-v1",
+      "material_id": "out-a",
+      "ordinal": 1,
+      "grade": "SYNTHETIC",
+      "form": "PLATE",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 950,
+      "cause_event_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "out-b-v1",
+      "material_id": "out-b",
+      "ordinal": 1,
+      "grade": "SYNTHETIC",
+      "form": "PLATE",
+      "dimensions": {
+        "length_mm": 1000.0,
+        "width_mm": 500.0,
+        "thickness_mm": 100.0,
+        "diameter_mm": null,
+        "inner_diameter_mm": null
+      },
+      "weight_kg": 950,
+      "cause_event_id": null
+    }
+  ],
+  "version_edges": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "e-a-a",
+      "batch_id": "batch-merge-split",
+      "input_version_id": "in-a-v1",
+      "output_version_id": "out-a-v1",
+      "transferred_kg": 475
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "e-a-b",
+      "batch_id": "batch-merge-split",
+      "input_version_id": "in-a-v1",
+      "output_version_id": "out-b-v1",
+      "transferred_kg": 475
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "e-b-a",
+      "batch_id": "batch-merge-split",
+      "input_version_id": "in-b-v1",
+      "output_version_id": "out-a-v1",
+      "transferred_kg": 475
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "e-b-b",
+      "batch_id": "batch-merge-split",
+      "input_version_id": "in-b-v1",
+      "output_version_id": "out-b-v1",
+      "transferred_kg": 475
+    }
+  ],
+  "allocations": [],
+  "process_batches": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "batch-merge-split",
+      "process_id": null,
+      "recipe_id": "contract-only-mass-example",
+      "status": "COMPLETED",
+      "start_ms": 0,
+      "end_ms": 1000
+    }
+  ],
+  "batch_io": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "io-in-a",
+      "batch_id": "batch-merge-split",
+      "role": "INPUT",
+      "material_version_id": "in-a-v1",
+      "quantity_kg": 1000,
+      "source_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "io-in-b",
+      "batch_id": "batch-merge-split",
+      "role": "INPUT",
+      "material_version_id": "in-b-v1",
+      "quantity_kg": 1000,
+      "source_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "io-out-a",
+      "batch_id": "batch-merge-split",
+      "role": "OUTPUT",
+      "material_version_id": "out-a-v1",
+      "quantity_kg": 950,
+      "source_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "io-out-b",
+      "batch_id": "batch-merge-split",
+      "role": "OUTPUT",
+      "material_version_id": "out-b-v1",
+      "quantity_kg": 950,
+      "source_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "io-loss",
+      "batch_id": "batch-merge-split",
+      "role": "LOSS",
+      "material_version_id": null,
+      "quantity_kg": 100,
+      "source_id": "synthetic-loss-1"
+    }
+  ],
+  "processes": [],
+  "fleet": [],
+  "vehicle_states": [],
+  "transport_jobs": [],
+  "movement_segments": [],
+  "reservations": [],
+  "consists": [],
+  "consist_members": [],
+  "attachments": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "custody-stock-coil",
+      "material_id": "stock-coil",
+      "kind": "slot",
+      "owner_id": "v2:road-slot",
+      "socket_id": "road-a",
+      "acquired_at_ms": 1000,
+      "released_at_ms": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "custody-out-a",
+      "material_id": "out-a",
+      "kind": "slot",
+      "owner_id": "v2:rail-slot",
+      "socket_id": "rail-a",
+      "acquired_at_ms": 1000,
+      "released_at_ms": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "custody-out-b",
+      "material_id": "out-b",
+      "kind": "slot",
+      "owner_id": "v2:roller-slot",
+      "socket_id": "roller-a",
+      "acquired_at_ms": 1000,
+      "released_at_ms": null
+    }
+  ],
+  "shipments": [],
+  "shipment_legs": [],
+  "shipment_materials": [],
+  "quality": [],
+  "events": [],
+  "mass_ledger": [
+    {
+      "run_id": "factory-contract-run",
+      "id": "mass-opening",
+      "source_id": "synthetic-opening-1",
+      "kind": "OPENING_STOCK",
+      "quantity_kg": 2500,
+      "at_ms": 0,
+      "material_id": null,
+      "batch_id": null,
+      "event_id": null
+    },
+    {
+      "run_id": "factory-contract-run",
+      "id": "mass-loss",
+      "source_id": "synthetic-loss-1",
+      "kind": "IRRECOVERABLE_LOSS",
+      "quantity_kg": 100,
+      "at_ms": 1000,
+      "material_id": null,
+      "batch_id": "batch-merge-split",
+      "event_id": null
+    }
+  ]
+}

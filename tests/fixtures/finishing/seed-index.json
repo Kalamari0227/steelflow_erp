@@ -1,0 +1,294 @@
+{
+  "continuity_cases": [
+    {
+      "name": "CS-CR-05-feed-0",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-CR-05-feed-0.5",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-CR-05-feed-1",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-CR-05-clamp-to-feed",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-05-feed-0",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-05-feed-0.5",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-05-feed-1",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-05-clamp-to-feed",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-05-feed-to-cold",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-NGO-05-feed-0",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-NGO-05-feed-0.5",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-NGO-05-feed-1",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-NGO-05-clamp-to-feed",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-NGO-05-feed-to-cold",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-08-feed-0",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-08-feed-0.5",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-08-feed-1",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-08-clamp-to-feed",
+      "progress": 0.2
+    }
+  ],
+  "sequence_cases": [
+    {
+      "name": "CS-CR-05-wound",
+      "progress": 0
+    },
+    {
+      "name": "CS-CR-05-unwind-half",
+      "progress": 0.05
+    },
+    {
+      "name": "CS-CR-05-unwound-before",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-CR-05-unwound-after",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-CR-05-lift-mid",
+      "progress": 0.15
+    },
+    {
+      "name": "CS-CR-05-feed-before",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-CR-05-feed-after",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-CR-05-feed-mid",
+      "progress": 0.25
+    },
+    {
+      "name": "CS-CR-05-feed-end-before",
+      "progress": 0.3
+    },
+    {
+      "name": "CS-GO-05-wound",
+      "progress": 0
+    },
+    {
+      "name": "CS-GO-05-unwind-half",
+      "progress": 0.05
+    },
+    {
+      "name": "CS-GO-05-unwound-before",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-05-unwound-after",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-05-lift-mid",
+      "progress": 0.15
+    },
+    {
+      "name": "CS-GO-05-feed-before",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-05-feed-after",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-05-feed-mid",
+      "progress": 0.25
+    },
+    {
+      "name": "CS-GO-05-feed-end-before",
+      "progress": 0.3
+    },
+    {
+      "name": "CS-GO-05-main-after",
+      "progress": 0.3
+    },
+    {
+      "name": "CS-GO-05-cold-half",
+      "progress": 0.65
+    },
+    {
+      "name": "CS-GO-05-cold-entry-before",
+      "progress": 0.9969
+    },
+    {
+      "name": "CS-GO-05-cold-entry-after",
+      "progress": 0.9969
+    },
+    {
+      "name": "CS-GO-05-cold-rotating-mid",
+      "progress": 0.9981
+    },
+    {
+      "name": "CS-GO-05-cold-nip-before",
+      "progress": 0.9992
+    },
+    {
+      "name": "CS-GO-05-cold-nip-after",
+      "progress": 0.9992
+    },
+    {
+      "name": "CS-GO-05-cold-complete-before",
+      "progress": 1
+    },
+    {
+      "name": "CS-GO-05-cold-complete-after",
+      "progress": 1
+    },
+    {
+      "name": "CS-NGO-05-wound",
+      "progress": 0
+    },
+    {
+      "name": "CS-NGO-05-unwind-half",
+      "progress": 0.05
+    },
+    {
+      "name": "CS-NGO-05-unwound-before",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-NGO-05-unwound-after",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-NGO-05-lift-mid",
+      "progress": 0.15
+    },
+    {
+      "name": "CS-NGO-05-feed-before",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-NGO-05-feed-after",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-NGO-05-feed-mid",
+      "progress": 0.25
+    },
+    {
+      "name": "CS-NGO-05-feed-end-before",
+      "progress": 0.3
+    },
+    {
+      "name": "CS-NGO-05-main-after",
+      "progress": 0.3
+    },
+    {
+      "name": "CS-NGO-05-cold-half",
+      "progress": 0.65
+    },
+    {
+      "name": "CS-NGO-05-cold-entry-before",
+      "progress": 0.9969
+    },
+    {
+      "name": "CS-NGO-05-cold-entry-after",
+      "progress": 0.9969
+    },
+    {
+      "name": "CS-NGO-05-cold-rotating-mid",
+      "progress": 0.9981
+    },
+    {
+      "name": "CS-NGO-05-cold-nip-before",
+      "progress": 0.9992
+    },
+    {
+      "name": "CS-NGO-05-cold-nip-after",
+      "progress": 0.9992
+    },
+    {
+      "name": "CS-NGO-05-cold-complete-before",
+      "progress": 1
+    },
+    {
+      "name": "CS-NGO-05-cold-complete-after",
+      "progress": 1
+    },
+    {
+      "name": "CS-GO-08-wound",
+      "progress": 0
+    },
+    {
+      "name": "CS-GO-08-unwind-half",
+      "progress": 0.05
+    },
+    {
+      "name": "CS-GO-08-unwound-before",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-08-unwound-after",
+      "progress": 0.1
+    },
+    {
+      "name": "CS-GO-08-lift-mid",
+      "progress": 0.15
+    },
+    {
+      "name": "CS-GO-08-feed-before",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-08-feed-after",
+      "progress": 0.2
+    },
+    {
+      "name": "CS-GO-08-feed-mid",
+      "progress": 0.25
+    },
+    {
+      "name": "CS-GO-08-feed-end-before",
+      "progress": 0.3
+    }
+  ]
+}

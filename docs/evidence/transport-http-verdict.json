@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "departure": {
+    "tick": 6,
+    "vehicle": "VEHICLE-GI-flatbed_truck",
+    "mass": 23000
+  },
+  "arrival": {
+    "tick": 7,
+    "equipment": "PICKLE-01"
+  },
+  "resetExact": true
+}

@@ -1,0 +1,3 @@
+SteelFlow original editable procedural assets.
+Copyright 2026 SteelFlow project contributors.
+Project-owned; project-local distribution and modification permitted. No third-party geometry, images, textures or paid inputs. Blender is GPL software; the original output assets are authored project content. Public process references support function concepts, not imported geometry or measured plant engineering.

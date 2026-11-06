@@ -1,0 +1,13 @@
+{
+  "author": "SteelFlow T61 original fixture",
+  "seed": 61,
+  "lod_cylinder_segments": [32, 20, 12],
+  "lod_bevel_segments": [3, 2, 1],
+  "external_asset_count": 0,
+  "axis_markers": {"axis_origin": [0, 0, 0], "axis_front": [1, 0, 0], "axis_up": [0, 1, 0], "axis_side": [0, 0, -1]},
+  "mechanical_basis": "Synthetic stationary-frame independent rolls: canonical roughing_roll and three subordinate rotation pivots with signed ratios -1, +0.5, -0.5. Nonzero rest and 0..4pi canonical scalar. Not measured factory geometry or a production scheduler.",
+  "eaf_basis": [
+    {"url": "https://constructalia.arcelormittal.com/en/sica-steel-academy/properties-of-steel/manufacturing-and-forming-processes", "supports": "Roof/electrodes clear bucket charging; function evidence only."},
+    {"url": "https://www.tatasteeluk.com/eshot/how-will-our-consteel-eaf-work", "supports": "Conventional EAF roof swings aside; no measured dimensions or SOP asserted."}
+  ]
+}

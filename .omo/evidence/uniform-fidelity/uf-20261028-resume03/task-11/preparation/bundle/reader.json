@@ -1,0 +1,6 @@
+{
+  "format": "factory-contract-test-reader-v1",
+  "schema_version": 3,
+  "reader": "app.operations.contracts_v3.FactorySnapshot",
+  "purpose": "DI contract test only; identifier is not executable code"
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "owner": "CS-CR-09",
+    "status": "ACTUAL_CURRENT_BINDING_ADMITTED",
+    "binding": {
+      "owner_id": "CS-CR-09",
+      "policy_id": "policy:equipment:coiler",
+      "sockets": [
+        {
+          "socket_id": "work",
+          "family": "COIL",
+          "position_m": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "orientation_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "motion_function_ids": [
+            "winding_mandrel"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "winding_mandrel",
+          "node_id": "winding_mandrel",
+          "kind": "rotation",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "pivot_m": [
+            0.0,
+            1.56,
+            0.0
+          ],
+          "min_value": 0.0,
+          "max_value": 9.037865009051153
+        }
+      ]
+    },
+    "scope": "Metadata/mechanics admission only; not GLB or complete new bell extra-functions acceptance"
+  },
+  {
+    "owner": "CS-GO-07",
+    "status": "ACTUAL_CURRENT_BINDING_ADMITTED",
+    "binding": {
+      "owner_id": "CS-GO-07",
+      "policy_id": "policy:equipment:heat_treatment",
+      "sockets": [
+        {
+          "socket_id": "work",
+          "family": "COIL",
+          "position_m": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "orientation_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "motion_function_ids": [
+            "treatment_feed"
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "treatment_feed",
+          "node_id": "treatment_feed",
+          "kind": "translation",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "min_value": -2.0,
+          "max_value": 0.0
+        },
+        {
+          "function_id": "thermal_chamber",
+          "node_id": "thermal_chamber",
+          "kind": "state",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min_value": 0.0,
+          "max_value": 1.0
+        }
+      ]
+    },
+    "scope": "Metadata/mechanics admission only; not GLB or complete new bell extra-functions acceptance"
+  }
+]

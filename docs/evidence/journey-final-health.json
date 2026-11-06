@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "startTime": "2026-10-24T09:53:30.170Z",
+    "duration": 167508.92299999998,
+    "expected": 28,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "journey": [
+    {
+      "title": "all 17 routes complete their exact forms with one stable lineage and no early transformations",
+      "status": "passed",
+      "duration_ms": 18981,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-all-17-routes-comp-82d8d-nd-no-early-transformations/trace.zip"
+    },
+    {
+      "title": "all eight product families render distinct selectable 3D miniatures",
+      "status": "passed",
+      "duration_ms": 6766,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-all-eight-product--f09d3-ct-selectable-3D-miniatures/trace.zip"
+    },
+    {
+      "title": "real material and equipment meshes select and motion freezes, resumes at speed and resets",
+      "status": "passed",
+      "duration_ms": 17651,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-real-material-and--7574e-resumes-at-speed-and-resets/trace.zip"
+    },
+    {
+      "title": "390px keyboard controls and WebGL loss preserve complete 2D tracking",
+      "status": "passed",
+      "duration_ms": 1903,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/trace.zip"
+    },
+    {
+      "title": "connection failure freezes the actual scene and retry restores authoritative state",
+      "status": "passed",
+      "duration_ms": 3494,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-connection-failure-3bbc6-estores-authoritative-state/trace.zip"
+    },
+    {
+      "title": "reduced motion does not interpolate while real snapshot reads are delayed",
+      "status": "passed",
+      "duration_ms": 7497,
+      "errors": [],
+      "external": [],
+      "trace": "docs/evidence/journey-final-run/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/trace.zip"
+    }
+  ]
+}

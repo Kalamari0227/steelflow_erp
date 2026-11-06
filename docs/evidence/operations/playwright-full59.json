@@ -1,0 +1,3567 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test",
+      "--headed",
+      "--workers=1",
+      "--retries=0"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:4175",
+          "trace": "on",
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1440,
+              "height": 1000
+            }
+          },
+          "screenshot": "only-on-failure",
+          "headless": false
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo.spec.ts",
+      "file": "demo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "3D factory renders and orbit and zoom respond without changing selected material",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:13:33.957Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-3D-factory-renders-an-bed03--changing-selected-material/attachments/browser-failures-ed7e4cc85f453fa32ea22d59e28f44e8d68fe545.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-3D-factory-renders-an-bed03--changing-selected-material/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-3D-factory-renders-an-bed03--changing-selected-material/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-0ef1947887dc5e74dc11",
+          "file": "demo.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "search finds the actual customer and empty search is explained",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:13:37.219Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-search-finds-the-actu-ecf82-d-empty-search-is-explained/attachments/browser-failures-504eaf312012bbd642ed974954d832feed0759ea.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-search-finds-the-actu-ecf82-d-empty-search-is-explained/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-search-finds-the-actu-ecf82-d-empty-search-is-explained/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-32718abe162b5eefa98c",
+          "file": "demo.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "accessible material selection exposes exact order lot location and shipment relationships",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1896,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:13:39.009Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "material-relationships",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-accessible-material-s-fedfe--and-shipment-relationships/attachments/material-relationships-255c5dc0e50390f831136e96d6803aba0a00fa19.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-accessible-material-s-fedfe--and-shipment-relationships/attachments/browser-failures-0572218de7284fe6eaf7f0ea776402d33acd6f4d.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-accessible-material-s-fedfe--and-shipment-relationships/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-accessible-material-s-fedfe--and-shipment-relationships/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-2a557d5281c2d6ca9054",
+          "file": "demo.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "three scenarios preserve baseline and due dates and reset replays actual business state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31824,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:13:40.999Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "deterministic-scenarios",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-three-scenarios-prese-3511f-plays-actual-business-state/attachments/deterministic-scenarios-9457ced21de0b1c75dfa727c3144204f75f5a901.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-three-scenarios-prese-3511f-plays-actual-business-state/attachments/browser-failures-c0744ecf875b70101aa690cf9af35e1673e48bdc.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-three-scenarios-prese-3511f-plays-actual-business-state/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-three-scenarios-prese-3511f-plays-actual-business-state/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-605f6f292f7917813ef1",
+          "file": "demo.spec.ts",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "play speed and pause are backend owned and continue without a page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:13.592Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "backend-clock",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-play-speed-and-pause--4cdd0-and-continue-without-a-page/attachments/backend-clock-ef7b0963817fef2645ba75f81253c1412473af7c.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-play-speed-and-pause--4cdd0-and-continue-without-a-page/attachments/browser-failures-fae30a00e6690f8a2a2aad0cd67bb33fc35d078c.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-play-speed-and-pause--4cdd0-and-continue-without-a-page/video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-play-speed-and-pause--4cdd0-and-continue-without-a-page/video-1.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-play-speed-and-pause--4cdd0-and-continue-without-a-page/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-f299c34ce0c238fcd267",
+          "file": "demo.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "390px 2D selection remains navigable without horizontal document overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:18.307Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-layout",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-390px-2D-selection-re-a89e3-orizontal-document-overflow/attachments/mobile-layout-3b8d3aa489b2c9046d60792bb2420ca601ef91a5.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-390px-2D-selection-re-a89e3-orizontal-document-overflow/attachments/browser-failures-57edb0e10facf640eb723f764c6fc1b9f5235149.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-390px-2D-selection-re-a89e3-orizontal-document-overflow/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-390px-2D-selection-re-a89e3-orizontal-document-overflow/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-6a21079a6b60b1cef3d2",
+          "file": "demo.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "backend unavailable initial state is explicit and retry restores operations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:20.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "intentional-offline-recovery",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-backend-unavailable-i-3a756-d-retry-restores-operations/attachments/intentional-offline-recovery-1fcbe5aa099201099363362fd6aea38d59a3f500.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-backend-unavailable-i-3a756-d-retry-restores-operations/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-backend-unavailable-i-3a756-d-retry-restores-operations/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-1e1ff72683daee666b6f",
+          "file": "demo.spec.ts",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "disabled AI needs no provider and recovery remains a local operational scenario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:22.834Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "ai-off-recovery",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-disabled-AI-needs-no--c8f42--local-operational-scenario/attachments/ai-off-recovery-9c42456ba10529af462b03005c70badf6dc57446.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-disabled-AI-needs-no--c8f42--local-operational-scenario/attachments/browser-failures-4add0215aa329e25ef766f62b58f13b3bdc35b83.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-disabled-AI-needs-no--c8f42--local-operational-scenario/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-disabled-AI-needs-no--c8f42--local-operational-scenario/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-d3a955476bbe45b8c12c",
+          "file": "demo.spec.ts",
+          "line": 131,
+          "column": 1
+        },
+        {
+          "title": "WebGL context loss preserves selection and common controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2109,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:25.516Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-WebGL-context-loss-pr-52c6b-lection-and-common-controls/attachments/browser-failures-c548a191979ee3cfe2d405d3d53cb5244cb7e13e.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-WebGL-context-loss-pr-52c6b-lection-and-common-controls/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-WebGL-context-loss-pr-52c6b-lection-and-common-controls/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-e0445095b8da6b997031",
+          "file": "demo.spec.ts",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "operator recording follows order through delay recovery playback events and reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5129,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:27.749Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-operator-recording-fo-c3829-y-playback-events-and-reset/attachments/browser-failures-e35fb8e4f081b21a9cffd5b0d4ba8365f8702055.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-operator-recording-fo-c3829-y-playback-events-and-reset/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/demo-operator-recording-fo-c3829-y-playback-events-and-reset/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-3d9f264e79c4ac520bda",
+          "file": "demo.spec.ts",
+          "line": 153,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "journey.spec.ts",
+      "file": "journey.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all twenty routes finish exact forms in the shared ERP with no early transformation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:33.142Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-twenty-routes",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-all-twenty-routes--76c60-ith-no-early-transformation/attachments/journey-twenty-routes-f3e56dd97565d2c6e8582d499752ff361ab3f031.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-all-twenty-routes--76c60-ith-no-early-transformation/attachments/browser-failures-d9571781a62b088e1c8246d361eb3cdb5cbec77e.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-all-twenty-routes--76c60-ith-no-early-transformation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-all-twenty-routes--76c60-ith-no-early-transformation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-c80e6220ccccc5e12675",
+          "file": "journey.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "eight product families expose their distinct selectable production equipment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6109,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:14:54.924Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-family-equipment",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-eight-product-fami-5f0c9-ctable-production-equipment/attachments/journey-family-equipment-73c7614002e93831c2aa16b7ff27ddf6942c60a7.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-eight-product-fami-5f0c9-ctable-production-equipment/attachments/browser-failures-b0bafa41fcdeb0cceeec2e21ea727702f46c876b.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-eight-product-fami-5f0c9-ctable-production-equipment/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-eight-product-fami-5f0c9-ctable-production-equipment/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-88c3f57ec2d4feb15c7e",
+          "file": "journey.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "real material selection moves with its carrier and freezes resumes at speed and resets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:01.776Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-motion",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-real-material-sele-b86ff-resumes-at-speed-and-resets/attachments/journey-motion-4ab2f3e32ac4cb6225b82fdf011c41a9b9b44f55.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-real-material-sele-b86ff-resumes-at-speed-and-resets/attachments/browser-failures-4b3b047a96a11fd2e0a519443bcf79e2b2cd795b.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-real-material-sele-b86ff-resumes-at-speed-and-resets/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-real-material-sele-b86ff-resumes-at-speed-and-resets/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-01fd0ff509b4d35a6995",
+          "file": "journey.spec.ts",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "390px keyboard and WebGL loss preserve the same material and process tracking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:14.420Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-mobile",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-390px-keyboard-and-fc9bc-terial-and-process-tracking/attachments/journey-mobile-02f469a19451328be1a321a764feae9a4447291a.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-390px-keyboard-and-fc9bc-terial-and-process-tracking/attachments/browser-failures-1abb84dba52ac7f7f14d5fe62cbfe86d57cc6a93.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-390px-keyboard-and-fc9bc-terial-and-process-tracking/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-390px-keyboard-and-fc9bc-terial-and-process-tracking/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-8eb1a3cf9bd854986eac",
+          "file": "journey.spec.ts",
+          "line": 117,
+          "column": 1
+        },
+        {
+          "title": "connection failure freezes the actual scene and retry restores backend authority",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4424,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:16.899Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-connection",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-connection-failure-95f14--restores-backend-authority/attachments/journey-connection-bf78e6fa07166d5167fab89f7a8e7039e5919d8b.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-connection-failure-95f14--restores-backend-authority/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-connection-failure-95f14--restores-backend-authority/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-8ade537c61845659cb58",
+          "file": "journey.spec.ts",
+          "line": 136,
+          "column": 1
+        },
+        {
+          "title": "reduced motion stays at confirmed positions while snapshots are delayed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:21.531Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-reduced-motion",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-reduced-motion-sta-6f869-while-snapshots-are-delayed/attachments/journey-reduced-motion-e0f85181c2f1988ea03e7e0ca630bfe3fd49f43a.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-reduced-motion-sta-6f869-while-snapshots-are-delayed/attachments/browser-failures-0ee0b86fced58dbd29b26c62393614b7b4a09dbd.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-reduced-motion-sta-6f869-while-snapshots-are-delayed/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/journey-reduced-motion-sta-6f869-while-snapshots-are-delayed/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-8e0e655c578012e15fde",
+          "file": "journey.spec.ts",
+          "line": 175,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-context-lifecycle.spec.ts",
+      "file": "operations-context-lifecycle.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "context loss at first connected canvas preserves identity and recreated 3D remains usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:24.535Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "early-context-loss",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-context-lifecyc-b2337-recreated-3D-remains-usable/attachments/early-context-loss-1bdf2b1faa8bc0c498b8a5ee351cedf69975f2ec.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-context-lifecyc-b2337-recreated-3D-remains-usable/attachments/browser-failures-bc34579ef26f5d9e3c7cca20db7b1123efde34e9.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-context-lifecyc-b2337-recreated-3D-remains-usable/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-context-lifecyc-b2337-recreated-3D-remains-usable/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "111a623dfdcf0ecaf2b4-05a1f9cd756a633ac077",
+          "file": "operations-context-lifecycle.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-demo.spec.ts",
+      "file": "operations-demo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T20 GA continuous 4x manufacturing to two deliveries, then truthful delay and recovery demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 420000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 147895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:15:28.126Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T20-continuous-normal",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/attachments/T20-continuous-normal-07b39b63fbe5306e2a55ce2fce56940fa7ea8234.json"
+                    },
+                    {
+                      "name": "T20-comparison",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/attachments/T20-comparison-c8c29f6199f5e772c5c1d5ed2f9b17a6638e5f97.json"
+                    },
+                    {
+                      "name": "T20-plate-lineage",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/attachments/T20-plate-lineage-363959f1b3f07c174d8d6a8f6dca9652c91b3c32.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/attachments/browser-failures-48b5f1a731c8865beb372adc4888458445510e7a.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3544e510e2f12e9c427d-82f9115d386441336e8e",
+          "file": "operations-demo.spec.ts",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "T20 API outage preserves the last GA snapshot in 2D and reconnects with AI off",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:18:03.527Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T20-fallback",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/attachments/T20-fallback-48ee72841ba3a204b832e84745222fdd4306a7db.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3544e510e2f12e9c427d-7734bbc1e730769be144",
+          "file": "operations-demo.spec.ts",
+          "line": 115,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-fulfillment.spec.ts",
+      "file": "operations-fulfillment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GA first two coils deliver 40200 kg and the order finishes only after the third 20100 kg",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:18:12.133Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T18-GA-fulfillment",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/attachments/T18-GA-fulfillment-d3c28e2543de0aedfff964a6a8ffec40050317e5.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/attachments/browser-failures-2f412bdefcf2a52c8eef6a4820e906001650e4e9.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9772611bf7e243ab986-1e37a8d1535eb7def841",
+          "file": "operations-fulfillment.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "PLATE split keeps a consumed parent traceable and sends only the two inspected children",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:18:44.950Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T18-PLATE-fulfillment",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-PLA-7f070--the-two-inspected-children/attachments/T18-PLATE-fulfillment-93613bb83399903a5dd7f286a7d60872e8bcbe11.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-PLA-7f070--the-two-inspected-children/attachments/browser-failures-277421f4679900529720a1d30b3f557af277dc92.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-PLA-7f070--the-two-inspected-children/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-fulfillment-PLA-7f070--the-two-inspected-children/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9772611bf7e243ab986-5f30d1ca3c11be206b92",
+          "file": "operations-fulfillment.spec.ts",
+          "line": 63,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-harness.spec.ts",
+      "file": "operations-harness.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "isolated database persists steps without mutating a second fresh database",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 83229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:19:01.700Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T05-database-isolation",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/attachments/T05-database-isolation-229f3e64061825e64e0135059a16e71a2bf44eb5.json"
+                    },
+                    {
+                      "name": "T05-ready-world",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/attachments/T05-ready-world-7f30fe564aa8ec951ffd5e226fe65828dc1e6e84.json"
+                    },
+                    {
+                      "name": "T05-ready",
+                      "contentType": "image/png",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/attachments/T05-ready-dfd790f7a5e57c473ce986ebef05d7a6f5e5c4e6.png"
+                    },
+                    {
+                      "name": "T05-owned-temp-cleanup",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/attachments/T05-owned-temp-cleanup-68d1dd2a9c9306546ac656c8fa8f937250cf74b0.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/attachments/browser-failures-18b10f915bc87881a1a51581ce800e7b3d1309b1.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-isolate-38815-ing-a-second-fresh-database/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f61c9cb155cded4fd607-9daf2d802f1b5f97b7aa",
+          "file": "operations-harness.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "captures browser failures and refuses API failures",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:20:23.393Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T05-error-capture",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-capture-b25bf-es-and-refuses-API-failures/attachments/T05-error-capture-a34b2d2477e2ec2e4cac1c0ad70f36897f895ec3.json"
+                    },
+                    {
+                      "name": "T05-unavailable",
+                      "contentType": "image/png",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-capture-b25bf-es-and-refuses-API-failures/attachments/T05-unavailable-00c0515b591c4a6b4dba0cd5cacbcf60683139e5.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-capture-b25bf-es-and-refuses-API-failures/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-harness-capture-b25bf-es-and-refuses-API-failures/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f61c9cb155cded4fd607-7db06dfad13cfe630353",
+          "file": "operations-harness.spec.ts",
+          "line": 49,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-navigation.spec.ts",
+      "file": "operations-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "order and material survive equipment, overview and 2D navigation without server mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:20:35.350Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T13-real-pick-setup",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/attachments/T13-real-pick-setup-bae4cf87d9a1bdf73df3693e6b72c92e9b62bb86.json"
+                    },
+                    {
+                      "name": "T13-real-material-pick",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/attachments/T13-real-material-pick-b605bde7b98c33ce8e1fb220423a87d8003911ce.json"
+                    },
+                    {
+                      "name": "T13-navigation-identity",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/attachments/T13-navigation-identity-7ff944a0a31a29393fb2612f9528cbacd6091e49.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/attachments/browser-failures-85b7793b8d69f858e569cf85a2d771b9e12d7916.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-orde-4375d-ion-without-server-mutation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "50bedb1fa36cd586274e-cc93a52bc21826e80e24",
+          "file": "operations-navigation.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "empty search, missing identity and archived events remain local navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3020,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:20:43.354Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T13-navigation-errors",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-empt-8c58c-nts-remain-local-navigation/attachments/T13-navigation-errors-52ec813fd01b8f024974953de63e766f792e6527.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-empt-8c58c-nts-remain-local-navigation/attachments/browser-failures-382e690ffa8b09999a78f6688a30f0979f2996bc.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-empt-8c58c-nts-remain-local-navigation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-empt-8c58c-nts-remain-local-navigation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "50bedb1fa36cd586274e-9106a4d9e2939f5bc817",
+          "file": "operations-navigation.spec.ts",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "playing runs reset and change scenario through the real controls without revision races",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4334,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:20:46.596Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T14-playing-reset-scenario",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-play-99044-rols-without-revision-races/attachments/T14-playing-reset-scenario-09338ca5efac16773a9da96211c46d0a2b34c93c.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-play-99044-rols-without-revision-races/attachments/browser-failures-0b2e7f479b735b078d4d10d8b128b1a7485495b8.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-play-99044-rols-without-revision-races/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-navigation-play-99044-rols-without-revision-races/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "50bedb1fa36cd586274e-2e7746a7918f524337ce",
+          "file": "operations-navigation.spec.ts",
+          "line": 95,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-process.spec.ts",
+      "file": "operations-process.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight real processing contacts retain mesh identity and confirmed form",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 47482,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:20:51.224Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T14-real-schedule-discovery",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T14-real-schedule-discovery-4f0fca3f893fce05db9ab7788269af4a0e00f0b3.json"
+                    },
+                    {
+                      "name": "T14-camera-continuity",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T14-camera-continuity-34f4caee20effaedddd0566537c72237107d593c.json"
+                    },
+                    {
+                      "name": "T19-coiler-entry",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-coiler-entry-e8f15f699ba8c1f8de2b748b2fee17afc4ac8c92.json"
+                    },
+                    {
+                      "name": "T19-coiler-exit",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-coiler-exit-35187fbb6bddecc5579c1d43ea0e49dbba74e933.json"
+                    },
+                    {
+                      "name": "T19-uncoiler-entry",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-uncoiler-entry-9b566ec68b9ce7c5901b82c46c8036f03f7131b4.json"
+                    },
+                    {
+                      "name": "T19-uncoiler-exit",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-uncoiler-exit-36262534941de32813298332130bd09578d687c7.json"
+                    },
+                    {
+                      "name": "T19-annealing-entry",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-annealing-entry-629f97b0c2686823e0704f9fb0ea5ccfdbac1a1c.json"
+                    },
+                    {
+                      "name": "T19-annealing-exit",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T19-annealing-exit-e5ce64a298b8e0d6d1754ddb2bb26565a5b5c418.json"
+                    },
+                    {
+                      "name": "T14-process-contact",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/T14-process-contact-fb959ca0104eb8ac6add89e74e1b57a5bf794f6e.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/attachments/browser-failures-b680f9b1d3a2e9ce80c1d217682fb4742a1167b2.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-eight-r-c26fc-identity-and-confirmed-form/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c421a7494389f7f10bd5-9492bd5f831acd5d5b42",
+          "file": "operations-process.spec.ts",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "pause, stale, reduced motion and server form boundary remain authoritative",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:21:40.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T14-boundaries",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-pause-s-d39d3-undary-remain-authoritative/attachments/T14-boundaries-21814718ad53719e8f4400863a33814340d2690b.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-pause-s-d39d3-undary-remain-authoritative/attachments/browser-failures-a80e7b66c3c441b0e3c95f4f66d7dd28e7d499dc.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-pause-s-d39d3-undary-remain-authoritative/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-pause-s-d39d3-undary-remain-authoritative/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c421a7494389f7f10bd5-afd7885e7a3c7da452f5",
+          "file": "operations-process.spec.ts",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "material forms and poses share the committed world during play and run replacement",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18898,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:21:53.849Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-committed-material-cohorts",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-materia-9faa4-ng-play-and-run-replacement/attachments/T19-committed-material-cohorts-32d124fd99c41a67b290077b56e4e7203c66a979.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-materia-9faa4-ng-play-and-run-replacement/attachments/browser-failures-807e1e34ad7b9b263b42ed10ab0543d06e526707.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-materia-9faa4-ng-play-and-run-replacement/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-process-materia-9faa4-ng-play-and-run-replacement/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c421a7494389f7f10bd5-d611049f597aaffadda6",
+          "file": "operations-process.spec.ts",
+          "line": 184,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-resilience.spec.ts",
+      "file": "operations-resilience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "keyboard follows order material inspection shipment with no mutation and mobile has no page overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:14.452Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T17-keyboard",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-keyb-2204a-mobile-has-no-page-overflow/attachments/T17-keyboard-2143d5538fa609ddf0cad5d5b4ff913acbaec865.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-keyb-2204a-mobile-has-no-page-overflow/attachments/browser-failures-c68f8152dce95a37dce5a95f614a93bd0bfbea98.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-keyb-2204a-mobile-has-no-page-overflow/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-keyb-2204a-mobile-has-no-page-overflow/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eb73c5f34623dfdec767-56c1e4e2a50f310ac198",
+          "file": "operations-resilience.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "real WebGL context loss automatically preserves identity in 2D and AI is disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:30.665Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T17-webgl-loss",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-real-25fd3-ty-in-2D-and-AI-is-disabled/attachments/T17-webgl-loss-17374b2a3a3feac9b7c0260a8a113e02b76e89db.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-real-25fd3-ty-in-2D-and-AI-is-disabled/attachments/browser-failures-211468cf6b3728112c9a855d7807822f0098b7b5.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-real-25fd3-ty-in-2D-and-AI-is-disabled/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-real-25fd3-ty-in-2D-and-AI-is-disabled/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eb73c5f34623dfdec767-e704852a7409fb864211",
+          "file": "operations-resilience.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "actual WebGL2 capability denial automatically selects 2D without losing the requested material",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:34.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T17-no-webgl",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-actu-450c9-sing-the-requested-material/attachments/T17-no-webgl-f39089306302a0e35a1bf7fbb31e13de50033e9b.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-actu-450c9-sing-the-requested-material/attachments/browser-failures-f1860ac935d41c6e0c1c267744e514a5ee152d4e.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-actu-450c9-sing-the-requested-material/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-actu-450c9-sing-the-requested-material/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eb73c5f34623dfdec767-0505286127800ea5b85d",
+          "file": "operations-resilience.spec.ts",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "HTTP 500 and real timeout retain last snapshot then reconnect; old reply cannot roll back a command",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13510,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:37.473Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T17-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-HTTP-a6c84--cannot-roll-back-a-command/attachments/T17-failures-f49750ab5aac1858a45da593bcd53ee18005d70a.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-HTTP-a6c84--cannot-roll-back-a-command/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-HTTP-a6c84--cannot-roll-back-a-command/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eb73c5f34623dfdec767-69e96b4fff5d21366e4c",
+          "file": "operations-resilience.spec.ts",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "reduced motion uses confirmed positions while business time continues",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3372,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:51.185Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T17-reduced-motion",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-redu-c2983-ile-business-time-continues/attachments/T17-reduced-motion-d9ba320b50e7cc5fa8fc8c4789449fa14ceb9a34.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-redu-c2983-ile-business-time-continues/attachments/browser-failures-6f7b190092eae238063130340ff0056d1a8b582d.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-redu-c2983-ile-business-time-continues/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-resilience-redu-c2983-ile-business-time-continues/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "eb73c5f34623dfdec767-11d1ce2ac077a0047817",
+          "file": "operations-resilience.spec.ts",
+          "line": 162,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-scenarios.spec.ts",
+      "file": "operations-scenarios.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NORMAL uses actual scheduler ETA and truthful recovery comparison",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:22:54.678Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T16-NORMAL-comparison",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-NORMA-a7aa9-ruthful-recovery-comparison/attachments/T16-NORMAL-comparison-0616d416ca7ebf72165565f5ac0fa5a940f6ba55.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-NORMA-a7aa9-ruthful-recovery-comparison/attachments/browser-failures-1d31d8513ffeca44b6c99d2458a2406474ad9333.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-NORMA-a7aa9-ruthful-recovery-comparison/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-NORMA-a7aa9-ruthful-recovery-comparison/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dacad0e2083423a6ad30-dcfcbe2a2d7915403739",
+          "file": "operations-scenarios.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "DELAY uses actual scheduler ETA and truthful recovery comparison",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:23:10.800Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T16-DELAY-comparison",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-DELAY-38123-ruthful-recovery-comparison/attachments/T16-DELAY-comparison-4488a0775f5e1bcd35cc738547f5fcc279b42002.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-DELAY-38123-ruthful-recovery-comparison/attachments/browser-failures-96e39aeba3a9fbfa2006d2c5905c15530bce6a7d.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-DELAY-38123-ruthful-recovery-comparison/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-DELAY-38123-ruthful-recovery-comparison/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dacad0e2083423a6ad30-9f56455673bea5882db6",
+          "file": "operations-scenarios.spec.ts",
+          "line": 6,
+          "column": 3
+        },
+        {
+          "title": "RECOVERY uses actual scheduler ETA and truthful recovery comparison",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16708,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:23:27.233Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T16-RECOVERY-comparison",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-RECOV-48240-ruthful-recovery-comparison/attachments/T16-RECOVERY-comparison-01bcf363c2ca7c9ada8d4eb35aa7ba567b8d6494.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-RECOV-48240-ruthful-recovery-comparison/attachments/browser-failures-a653c04c6c0fa91402db6e08f46e8d8de5f3dca7.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-RECOV-48240-ruthful-recovery-comparison/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-scenarios-RECOV-48240-ruthful-recovery-comparison/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "dacad0e2083423a6ad30-b14f771eef806b01b0c7",
+          "file": "operations-scenarios.spec.ts",
+          "line": 6,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "operations-transfers.spec.ts",
+      "file": "operations-transfers.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real scene preserves one canonical material across crane cargo and destination",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11791,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:23:44.450Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T15-real-handoffs",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-real--9cb16-crane-cargo-and-destination/attachments/T15-real-handoffs-bc721ec74be2fa02a798442f8b36527eb8d11615.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-real--9cb16-crane-cargo-and-destination/attachments/browser-failures-7644168baa7799356e1c6b941bed0b1b0d0a0ed5.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-real--9cb16-crane-cargo-and-destination/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-real--9cb16-crane-cargo-and-destination/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "449e18031880f7f7ed32-f2750f0d731e245dbd58",
+          "file": "operations-transfers.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "loaded material freezes on pause and a hung world request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5546,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:23:56.892Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T15-stops",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-loade-1b81f-se-and-a-hung-world-request/attachments/T15-stops-395731e45a71425e7efa608132f468d597b5354b.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-loade-1b81f-se-and-a-hung-world-request/attachments/browser-failures-3ff5f7847cce151c860e7c91150aa4481fc04d37.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-loade-1b81f-se-and-a-hung-world-request/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-loade-1b81f-se-and-a-hung-world-request/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "449e18031880f7f7ed32-972fafd110e89de0596a",
+          "file": "operations-transfers.spec.ts",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "partial GA shipment members follow their own hook truck ship and customer custody",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 57860,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:24:02.752Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T15-GA-actual-seek",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-parti-5b849-k-ship-and-customer-custody/attachments/T15-GA-actual-seek-787874341749c8da6702bc63d2c756473550eb69.json"
+                    },
+                    {
+                      "name": "T15-partial-outbound",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-parti-5b849-k-ship-and-customer-custody/attachments/T15-partial-outbound-5e783915ecc8878d5a6d364af5767a444ab3ec86.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-parti-5b849-k-ship-and-customer-custody/attachments/browser-failures-1e15ffba3ca679bbaeef2469fba29fc107cee626.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-parti-5b849-k-ship-and-customer-custody/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-parti-5b849-k-ship-and-customer-custody/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "449e18031880f7f7ed32-ac242273bd7ad019ed66",
+          "file": "operations-transfers.spec.ts",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "injected oversized waiting response shows a blocked reason and retains the source mesh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4605,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:25:03.134Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T15-oversize-injected-response",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-injec-68826-and-retains-the-source-mesh/attachments/T15-oversize-injected-response-359030a80b24aced13f7fcd7a32afbb456ce080d.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-injec-68826-and-retains-the-source-mesh/attachments/browser-failures-11a8bacad1834cb683e1abb1ceaa8eac95d3360c.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-injec-68826-and-retains-the-source-mesh/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-transfers-injec-68826-and-retains-the-source-mesh/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "449e18031880f7f7ed32-cefa0749e1db94be8946",
+          "file": "operations-transfers.spec.ts",
+          "line": 153,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "operations-visual.spec.ts",
+      "file": "operations-visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T19 actual 24 active materials render within budget and paused scene rests for 60 seconds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 99081,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:25:07.931Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-active-world",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/attachments/T19-active-world-579096cf33b9edcee333deab9500d3c2ba38c492.json"
+                    },
+                    {
+                      "name": "T19-performance",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/attachments/T19-performance-ad6d7d55a8e7434df900ca71c396fa76052e849d.json"
+                    },
+                    {
+                      "name": "T19-idle-60s",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/attachments/T19-idle-60s-a85e9d31120361df48029b1ff2a7162e1cc965a5.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/attachments/browser-failures-85b2f07b861e43bd4b91db8cbdcdd97471a53280.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-e1b7d03650814789364d",
+          "file": "operations-visual.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "T19 campus and functional districts fit desktop and mobile viewports",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:26:48.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-viewports",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports/attachments/T19-viewports-d266ff3c28bb27ccd6ec13542e936303aa045c89.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports/attachments/browser-failures-fcdffe1dafff96390d32a5c013abbb212a643187.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-95565a0c291b046f3328",
+          "file": "operations-visual.spec.ts",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "T19 actual coil and split plate body bounds remain separate on carriers and in storage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33979,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:27:03.520Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-body-schedule-discovery",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-39b11--on-carriers-and-in-storage/attachments/T19-body-schedule-discovery-69819cd1ad2c7baac7b65e5bed1164740826cbc8.json"
+                    },
+                    {
+                      "name": "T19-actual-body-bounds",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-39b11--on-carriers-and-in-storage/attachments/T19-actual-body-bounds-6ad648e7f7414ee9e0c71e0bcd980c5a1836826e.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-39b11--on-carriers-and-in-storage/attachments/browser-failures-313cfb7f1e4a9c61ff93b2038c8706a4a32bb9bc.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-39b11--on-carriers-and-in-storage/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-39b11--on-carriers-and-in-storage/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-588520ee868770df94a7",
+          "file": "operations-visual.spec.ts",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "T19 follow changes detailed district with the same actual material",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:27:38.491Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-follow-scope",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-foll-8d406-th-the-same-actual-material/attachments/T19-follow-scope-c9f232c7df14c303790b1b91569d8ce950ca0df0.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-foll-8d406-th-the-same-actual-material/attachments/browser-failures-4c4f53678bc5b72ebd493594ae0be19fe8b5a4e4.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-foll-8d406-th-the-same-actual-material/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-foll-8d406-th-the-same-actual-material/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-0ce1eb9c3793f3f19f4e",
+          "file": "operations-visual.spec.ts",
+          "line": 131,
+          "column": 1
+        },
+        {
+          "title": "T19 actual material hover highlights without changing selection or world",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2546,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:27:49.145Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-hover-preserves-state",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-d9999-changing-selection-or-world/attachments/T19-hover-preserves-state-1bdcb088393d1c9a36cf37f62147d57ac6111ce4.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-d9999-changing-selection-or-world/attachments/browser-failures-9276dac37f038c8e7ccce4743b21834259e89fa0.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-d9999-changing-selection-or-world/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-actu-d9999-changing-selection-or-world/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-1742213b2e135059df4c",
+          "file": "operations-visual.spec.ts",
+          "line": 146,
+          "column": 1
+        },
+        {
+          "title": "T19 completed material keeps operations reachable and all transport history keyboard accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:27:51.785Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-completed-inspector-1440",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-comp-4db28-history-keyboard-accessible/attachments/T19-completed-inspector-1440-d0d3ed91d568d642d55c88fc1b3d5af96390a969.json"
+                    },
+                    {
+                      "name": "T19-completed-inspector-390",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-comp-4db28-history-keyboard-accessible/attachments/T19-completed-inspector-390-cdf42e25ce81cd5093ea4c65e72d4b7a510cb53c.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-comp-4db28-history-keyboard-accessible/attachments/browser-failures-d3255893398c113031fdd91b820035124ea75102.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-comp-4db28-history-keyboard-accessible/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/operations-visual-T19-comp-4db28-history-keyboard-accessible/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-b1b6c83d8ee3fcbd126a",
+          "file": "operations-visual.spec.ts",
+          "line": 173,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "production.spec.ts",
+      "file": "production.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "every canonical stage exposes its actual work and returns to overview without mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:28:09.233Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "stage-navigation",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-every-canonical-79230-o-overview-without-mutation/attachments/stage-navigation-a527e6cf7a2bbd33797211b99e11d094941bc6a8.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-every-canonical-79230-o-overview-without-mutation/attachments/browser-failures-1502273ff36889d4969e485a5a22b7f1dffffe68.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-every-canonical-79230-o-overview-without-mutation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-every-canonical-79230-o-overview-without-mutation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-edaab068462bdc02fb1c",
+          "file": "production.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "all twenty routes retain casting branches and HGI bypasses the cold rolling route",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:28:14.327Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "routes",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-all-twenty-rout-220ae-sses-the-cold-rolling-route/attachments/routes-5736f90bd315f68a2554aa5dcaf78c64ee1947a7.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-all-twenty-rout-220ae-sses-the-cold-rolling-route/attachments/browser-failures-5056f35102390c7d47cf6fdea67691ef69156e5a.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-all-twenty-rout-220ae-sses-the-cold-rolling-route/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-all-twenty-rout-220ae-sses-the-cold-rolling-route/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-97027744b31c9f2690e6",
+          "file": "production.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "HR material role follows the order and every shown version retains its actual genealogy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:28:18.048Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "genealogy-observed-targets",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/genealogy-observed-targets-7dc8e2447aaa1df14c6cbdfd4706139772c2fdfd.json"
+                    },
+                    {
+                      "name": "genealogy-cr-HR_COIL",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/genealogy-cr-HR-COIL-9b35a8d31d939ce61379dd3cdf76b98dc508dc30.json"
+                    },
+                    {
+                      "name": "genealogy-cr-CR_COIL",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/genealogy-cr-CR-COIL-a5c79f407b6c347d377b4a61e6f4004ce8a9e106.json"
+                    },
+                    {
+                      "name": "genealogy-hr-HR_COIL",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/genealogy-hr-HR-COIL-fceb87ca8a0e4a7f0ae77bc7e4d29bcc528695e6.json"
+                    },
+                    {
+                      "name": "genealogy-gi-CR_COIL",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/genealogy-gi-CR-COIL-294d9d16a02c5f973c770bcc13e1303781200259.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/attachments/browser-failures-a479f80152ec579d8179dbc728b44203f76992b1.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-HR-material-rol-4b714-etains-its-actual-genealogy/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-3d6de438fc6040561f09",
+          "file": "production.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "scenario changes alter work and deterministic reset replays at the same elapsed time",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:28:49.447Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scenario-work",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-scenario-change-02957-ys-at-the-same-elapsed-time/attachments/scenario-work-0a0edc27d6589c69a0826d092811c54cdb0f4b3d.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-scenario-change-02957-ys-at-the-same-elapsed-time/attachments/browser-failures-98b2aec34e2860e2663ae6a556b40b23ab89e0e5.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-scenario-change-02957-ys-at-the-same-elapsed-time/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-scenario-change-02957-ys-at-the-same-elapsed-time/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-c60d3d48223d19705ee2",
+          "file": "production.spec.ts",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "390px process navigation pause and step retain backend authority",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3251,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:29:23.225Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-process",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-390px-process-n-81726-ep-retain-backend-authority/attachments/mobile-process-75088c06cc174c939cb5954cd2e1af453c142d31.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-390px-process-n-81726-ep-retain-backend-authority/attachments/browser-failures-b030d29763210b0290c122a72f308c9e0dc94379.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-390px-process-n-81726-ep-retain-backend-authority/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-390px-process-n-81726-ep-retain-backend-authority/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-a5735640bc55cbae8dfa",
+          "file": "production.spec.ts",
+          "line": 119,
+          "column": 1
+        },
+        {
+          "title": "WebGL loss restores usable stage and material selection in the same run",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2002,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:29:26.622Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-WebGL-loss-rest-dcfac-l-selection-in-the-same-run/attachments/browser-failures-a84a4bbb4b91d5f9cd9e8c5d349bfcb6b27631a1.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-WebGL-loss-rest-dcfac-l-selection-in-the-same-run/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-WebGL-loss-rest-dcfac-l-selection-in-the-same-run/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-e7aec90d61b7688140be",
+          "file": "production.spec.ts",
+          "line": 137,
+          "column": 1
+        },
+        {
+          "title": "3D detail and overview switches retain camera interaction and remain local",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2426,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:29:28.715Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "view-switches",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-3D-detail-and-o-103dd-nteraction-and-remain-local/attachments/view-switches-6bde220bd9a8c29cb7ed17a0f353db31dd3367ee.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-3D-detail-and-o-103dd-nteraction-and-remain-local/attachments/browser-failures-09e08936938e5612780417104792d132398a96e8.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-3D-detail-and-o-103dd-nteraction-and-remain-local/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-3D-detail-and-o-103dd-nteraction-and-remain-local/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-72da8c79b94dd0dcabe2",
+          "file": "production.spec.ts",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "GA EG and HGI equipment navigation selects the matching actual operation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:29:31.290Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-GA-EG-and-HGI-e-3a8d6-e-matching-actual-operation/attachments/browser-failures-320e5c4ea5c4d7391e9c943c71b6ea2923391aee.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-GA-EG-and-HGI-e-3a8d6-e-matching-actual-operation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/production-GA-EG-and-HGI-e-3a8d6-e-matching-actual-operation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-9e7c2d922f47616b8bae",
+          "file": "production.spec.ts",
+          "line": 164,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "transport.spec.ts",
+      "file": "transport.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport arrival gates processing with one material location and deterministic replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23969,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:29:34.674Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "transport-custody-replay",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-transport-arriva-df21c-on-and-deterministic-replay/attachments/transport-custody-replay-7af04a69db6dc914face760cb49da00751240c1c.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-transport-arriva-df21c-on-and-deterministic-replay/attachments/browser-failures-c9fe8218cbed45b9e839f593e65044de6f9b0ed7.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-transport-arriva-df21c-on-and-deterministic-replay/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-transport-arriva-df21c-on-and-deterministic-replay/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-3f99d45bd424ff7cfb12",
+          "file": "transport.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "loaded carrier moves, freezes on pause, resumes and resets the same authoritative flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7083,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:30:00.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "transport-motion",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow/attachments/transport-motion-163391b8717ffe715b448bb43be02bf6f8ba2b64.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow/attachments/browser-failures-7f692aa00aa96a389cc030fa6c4050f027620222.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-08d2360d84eadecc2437",
+          "file": "transport.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "390px transport tracking survives WebGL loss and arrival navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:30:07.777Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "transport-mobile",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-390px-transport--35efe-loss-and-arrival-navigation/attachments/transport-mobile-0c01d1aedd55a61ed01715746aaf38c3dea2f7ae.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-390px-transport--35efe-loss-and-arrival-navigation/attachments/browser-failures-fd59a18d46bc8f6dcc285b4dfaef7b24e5a047e5.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-390px-transport--35efe-loss-and-arrival-navigation/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-390px-transport--35efe-loss-and-arrival-navigation/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-bd9da4f0eadca71db70d",
+          "file": "transport.spec.ts",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "reduced motion retains static transport between confirmed snapshots and changes after a step",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T17:30:11.893Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "reduced-motion",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-reduced-motion-r-8adfa-ts-and-changes-after-a-step/attachments/reduced-motion-7090d4f9b4dd3cf6b9a1b58a64a2e255ce7d4faa.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-reduced-motion-r-8adfa-ts-and-changes-after-a-step/attachments/browser-failures-0a434c25aac2d92a1ccabded0f5ccbad5a368288.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-reduced-motion-r-8adfa-ts-and-changes-after-a-step/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-preview2-9uhbv9_m/evidence/test-results/transport-reduced-motion-r-8adfa-ts-and-changes-after-a-step/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-6a26176cc3e586f32731",
+          "file": "transport.spec.ts",
+          "line": 94,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T17:13:08.882Z",
+    "duration": 1030295.303,
+    "expected": 59,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

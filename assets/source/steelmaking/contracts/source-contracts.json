@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "requirements_source_sha256": "dd4960d0df6d9eb5256af37ce4b3e7b6e8e7e558f7b37e135c2741c3d08d8097",
+  "motion_source_sha256": "ce9a7afd183f3561fc3e9fa871fbb05c422eacabc50326fb864136562e25c728",
+  "bindings": [
+    {
+      "category": "equipment",
+      "kind": "charge",
+      "variant": "variant:charge:CHARGE-A",
+      "policy_group_id": "policy:equipment:charge",
+      "placement_ids": [
+        "equipment:CHARGE-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:charge",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:charge:CHARGE-A",
+        "qa:equipment:CHARGE-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "blast_furnace",
+      "variant": "variant:blast_furnace:BF-A",
+      "policy_group_id": "policy:equipment:blast_furnace",
+      "placement_ids": [
+        "equipment:BF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:blast_furnace",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:blast_furnace:BF-A",
+        "qa:equipment:BF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "bof",
+      "variant": "variant:bof:BOF-A",
+      "policy_group_id": "policy:equipment:bof",
+      "placement_ids": [
+        "equipment:BOF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:bof",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:bof:BOF-A",
+        "qa:equipment:BOF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "ladle_furnace",
+      "variant": "variant:ladle_furnace:LF-A",
+      "policy_group_id": "policy:equipment:ladle_furnace",
+      "placement_ids": [
+        "equipment:LF-A"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "carbon-upstream"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:ladle_furnace",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:ladle_furnace:LF-A",
+        "qa:equipment:LF-A"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-SLAB",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-SLAB"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-slab"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-SLAB",
+        "qa:equipment:CAST-SLAB"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-SLAB"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-slab"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-SLAB",
+        "qa:equipment:CUT-SLAB"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BLOOM",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-BLOOM"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-bloom"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-BLOOM",
+        "qa:equipment:CAST-BLOOM"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BLOOM",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-BLOOM"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-bloom"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-BLOOM",
+        "qa:equipment:CUT-BLOOM"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BILLET",
+      "policy_group_id": "policy:equipment:caster",
+      "placement_ids": [
+        "equipment:CAST-BILLET"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-billet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:caster:CAST-BILLET",
+        "qa:equipment:CAST-BILLET"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BILLET",
+      "policy_group_id": "policy:equipment:shear",
+      "placement_ids": [
+        "equipment:CUT-BILLET"
+      ],
+      "allowed_families": [
+        "steelmaking"
+      ],
+      "stage_ids": [
+        "casting-billet"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:variant:shear:CUT-BILLET",
+        "qa:equipment:CUT-BILLET"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "category": "equipment",
+      "kind": "blast_furnace",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "charge_gate",
+        "tap_control"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:blast_furnace"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:blast_furnace"
+    },
+    {
+      "category": "equipment",
+      "kind": "bof",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "vessel_tilt",
+        "oxygen_lance"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:bof"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:bof"
+    },
+    {
+      "category": "equipment",
+      "kind": "caster",
+      "families": [
+        "steelmaking",
+        "stainless"
+      ],
+      "required_functions": [
+        "withdrawal_roll",
+        "mold_oscillation"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:caster"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:caster"
+    },
+    {
+      "category": "equipment",
+      "kind": "charge",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "charge_feed"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:charge"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:charge"
+    },
+    {
+      "category": "equipment",
+      "kind": "ladle_furnace",
+      "families": [
+        "steelmaking"
+      ],
+      "required_functions": [
+        "electrode_lift"
+      ],
+      "fixed_functions": [
+        "ladle_support"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:ladle_furnace"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:ladle_furnace"
+    },
+    {
+      "category": "equipment",
+      "kind": "shear",
+      "families": [
+        "steelmaking",
+        "hot-rolling",
+        "stainless",
+        "titanium"
+      ],
+      "required_functions": [
+        "cutting_tool"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:shear"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:shear"
+    }
+  ],
+  "motion_recipes": [
+    {
+      "id": "motion:source:cs-bf",
+      "semantic_id": "source:cs-bf",
+      "execution_kind": "process",
+      "meaning": "출선 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-bf"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-bf",
+        "step:bloom:cs-bf",
+        "step:billet:cs-bf",
+        "step:hr:cs-bf",
+        "step:plate:cs-bf",
+        "step:wire:cs-bf",
+        "step:cr:cs-bf",
+        "step:gi:cs-bf",
+        "step:ga:cs-bf",
+        "step:hgi:cs-bf",
+        "step:eg:cs-bf",
+        "step:go:cs-bf",
+        "step:ngo:cs-bf"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "charge_gate",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:blast_furnace",
+          "semantic_need": "출선: charge_gate"
+        },
+        {
+          "function_id": "tap_control",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:blast_furnace",
+          "semantic_need": "출선: tap_control"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:blast_furnace"
+      ]
+    },
+    {
+      "id": "motion:source:cs-bof",
+      "semantic_id": "source:cs-bof",
+      "execution_kind": "process",
+      "meaning": "전로 출강 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-bof"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-bof",
+        "step:bloom:cs-bof",
+        "step:billet:cs-bof",
+        "step:hr:cs-bof",
+        "step:plate:cs-bof",
+        "step:wire:cs-bof",
+        "step:cr:cs-bof",
+        "step:gi:cs-bof",
+        "step:ga:cs-bof",
+        "step:hgi:cs-bof",
+        "step:eg:cs-bof",
+        "step:go:cs-bof",
+        "step:ngo:cs-bof"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "vessel_tilt",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:bof",
+          "semantic_need": "전로 출강: vessel_tilt"
+        },
+        {
+          "function_id": "oxygen_lance",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:bof",
+          "semantic_need": "전로 출강: oxygen_lance"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:bof"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cast-billet",
+      "semantic_id": "source:cs-cast-billet",
+      "execution_kind": "process",
+      "meaning": "연속 주조 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cast-billet"
+      ],
+      "compiled_step_ids": [
+        "step:billet:cs-cast-billet"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "withdrawal_roll",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: withdrawal_roll"
+        },
+        {
+          "function_id": "mold_oscillation",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: mold_oscillation"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:caster"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cast-bloom",
+      "semantic_id": "source:cs-cast-bloom",
+      "execution_kind": "process",
+      "meaning": "연속 주조 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cast-bloom"
+      ],
+      "compiled_step_ids": [
+        "step:bloom:cs-cast-bloom",
+        "step:wire:cs-cast-bloom"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "withdrawal_roll",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: withdrawal_roll"
+        },
+        {
+          "function_id": "mold_oscillation",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: mold_oscillation"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:caster"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cast-slab",
+      "semantic_id": "source:cs-cast-slab",
+      "execution_kind": "process",
+      "meaning": "연속 주조 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cast-slab"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-cast-slab",
+        "step:hr:cs-cast-slab",
+        "step:plate:cs-cast-slab",
+        "step:cr:cs-cast-slab",
+        "step:gi:cs-cast-slab",
+        "step:ga:cs-cast-slab",
+        "step:hgi:cs-cast-slab",
+        "step:eg:cs-cast-slab",
+        "step:go:cs-cast-slab",
+        "step:ngo:cs-cast-slab"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "withdrawal_roll",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: withdrawal_roll"
+        },
+        {
+          "function_id": "mold_oscillation",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:caster",
+          "semantic_need": "연속 주조: mold_oscillation"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:caster"
+      ]
+    },
+    {
+      "id": "motion:source:cs-charge",
+      "semantic_id": "source:cs-charge",
+      "execution_kind": "process",
+      "meaning": "원료 장입 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-charge"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-charge",
+        "step:bloom:cs-charge",
+        "step:billet:cs-charge",
+        "step:hr:cs-charge",
+        "step:plate:cs-charge",
+        "step:wire:cs-charge",
+        "step:cr:cs-charge",
+        "step:gi:cs-charge",
+        "step:ga:cs-charge",
+        "step:hgi:cs-charge",
+        "step:eg:cs-charge",
+        "step:go:cs-charge",
+        "step:ngo:cs-charge"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "charge_feed",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:charge",
+          "semantic_need": "원료 장입: charge_feed"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:charge"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cut-billet",
+      "semantic_id": "source:cs-cut-billet",
+      "execution_kind": "process",
+      "meaning": "절단 및 냉각 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cut-billet"
+      ],
+      "compiled_step_ids": [
+        "step:billet:cs-cut-billet"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "cutting_tool",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:shear",
+          "semantic_need": "절단 및 냉각: cutting_tool"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:shear"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cut-bloom",
+      "semantic_id": "source:cs-cut-bloom",
+      "execution_kind": "process",
+      "meaning": "절단 및 냉각 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cut-bloom"
+      ],
+      "compiled_step_ids": [
+        "step:bloom:cs-cut-bloom",
+        "step:wire:cs-cut-bloom"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "cutting_tool",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:shear",
+          "semantic_need": "절단 및 냉각: cutting_tool"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:shear"
+      ]
+    },
+    {
+      "id": "motion:source:cs-cut-slab",
+      "semantic_id": "source:cs-cut-slab",
+      "execution_kind": "process",
+      "meaning": "절단 및 냉각 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-cut-slab"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-cut-slab",
+        "step:hr:cs-cut-slab",
+        "step:plate:cs-cut-slab",
+        "step:cr:cs-cut-slab",
+        "step:gi:cs-cut-slab",
+        "step:ga:cs-cut-slab",
+        "step:hgi:cs-cut-slab",
+        "step:eg:cs-cut-slab",
+        "step:go:cs-cut-slab",
+        "step:ngo:cs-cut-slab"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "cutting_tool",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:shear",
+          "semantic_need": "절단 및 냉각: cutting_tool"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:shear"
+      ]
+    },
+    {
+      "id": "motion:source:cs-lf",
+      "semantic_id": "source:cs-lf",
+      "execution_kind": "process",
+      "meaning": "2차 정련 — 합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다.",
+      "requirement_ids": [
+        "scope:carbon-upstream"
+      ],
+      "source_step_ids": [
+        "cs-lf"
+      ],
+      "compiled_step_ids": [
+        "step:slab:cs-lf",
+        "step:bloom:cs-lf",
+        "step:billet:cs-lf",
+        "step:hr:cs-lf",
+        "step:plate:cs-lf",
+        "step:wire:cs-lf",
+        "step:cr:cs-lf",
+        "step:gi:cs-lf",
+        "step:ga:cs-lf",
+        "step:hgi:cs-lf",
+        "step:eg:cs-lf",
+        "step:go:cs-lf",
+        "step:ngo:cs-lf"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "electrode_lift",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:ladle_furnace",
+          "semantic_need": "2차 정련: electrode_lift"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:ladle_furnace"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2082 @@
+{
+  "schema_version": 1,
+  "seed": 2026103021,
+  "author": "SteelFlow original procedural authorship",
+  "license": "project-owned",
+  "external_asset_count": 0,
+  "dimension_basis": "Original synthetic miniature; not measured industrial specifications.",
+  "lod_cylinder_segments": [
+    48,
+    32,
+    16
+  ],
+  "axis_markers": {
+    "axis_origin": [
+      0,
+      0,
+      0
+    ],
+    "axis_front": [
+      1,
+      0,
+      0
+    ],
+    "axis_up": [
+      0,
+      1,
+      0
+    ],
+    "axis_side": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "models": [
+    {
+      "key": "CS-CR-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-CR-02",
+      "stage": "cr",
+      "source_step_id": "cr-02",
+      "input_form": "HR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:cold-welder",
+          "owner_id": "CS-CR-02",
+          "section": "outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-CR-02:cold-welder:outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-CR-03",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-CR-03",
+      "stage": "cr",
+      "source_step_id": "cr-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "pickling_feed",
+        "scale_breaker_roll"
+      ],
+      "states": [
+        "acid_tank"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-03:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:cold-scale-breaker",
+          "owner_id": "CS-CR-03",
+          "section": "inlet",
+          "moving_functions": [
+            "scale_breaker_roll"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "scale_breaker_roll"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-CR-03:cold-scale-breaker:inlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-CR-04",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-CR-04",
+      "stage": "cr",
+      "source_step_id": "cr-04",
+      "input_form": "STRIP",
+      "output_form": "CR_COIL",
+      "moving": [
+        "cold_reduction_roll",
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:cr-cold-mill-output-cutter",
+          "owner_id": "CS-CR-04",
+          "section": "after-reduction",
+          "moving_functions": [
+            "output_cutter",
+            "intermediate_winding_mandrel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "intermediate_winding_mandrel",
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-CR-04:cr-cold-mill-output-cutter:after-reduction"
+        }
+      ],
+      "cold_reduction": {
+        "maximum_rad": 22.32152017305749,
+        "bite_m": 0.026814175355583798,
+        "bite_angle_rad": 0.07455286365336057,
+        "bite_area_coordinate_m": 0.03574726230069509,
+        "entry_handoff_rad": 22.22222222222222,
+        "nip_handoff_rad": 22.29677508587558,
+        "nip_x_m": -2.475,
+        "radius_m": 0.36,
+        "input_length_m": 4,
+        "output_length_m": 8,
+        "width_m": 1.2,
+        "inlet_thickness_m": 0.004,
+        "outlet_thickness_m": 0.002,
+        "constant_volume_m3": 0.0192
+      }
+    },
+    {
+      "key": "CS-CR-05",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-CR-05",
+      "stage": "cr",
+      "source_step_id": "cr-05",
+      "input_form": "CR_COIL",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "cleaning_brush",
+        "strip_feed",
+        "line_unwinding_mandrel",
+        "line_feed_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-05:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [],
+      "source_internal_sequence": {
+        "thickness_m": 0.002,
+        "driver": "strip_feed",
+        "driver_radius_m": 0.2,
+        "clamp_x_m": -4,
+        "feed_plane_m": 2,
+        "stroke_m": 4,
+        "roller_count": 22,
+        "lift_m": -0.02
+      }
+    },
+    {
+      "key": "CS-CR-06",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-CR-06",
+      "stage": "cr",
+      "source_step_id": "cr-06",
+      "input_form": "THIN_STRIP",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-06:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:cold-looper",
+          "owner_id": "CS-CR-06",
+          "section": "entry-and-exit",
+          "moving_functions": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-CR-06:cold-looper:entry-and-exit"
+        }
+      ]
+    },
+    {
+      "key": "CS-CR-07",
+      "kind": "temper",
+      "variant": "variant:temper:CS-CR-07",
+      "stage": "cr",
+      "source_step_id": "cr-07",
+      "input_form": "THIN_STRIP",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "temper_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-CR-08",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-CR-08",
+      "stage": "cr",
+      "source_step_id": "cr-08",
+      "input_form": "THIN_STRIP",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "oiling_feed"
+      ],
+      "states": [
+        "spray_header"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-CR-09",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-CR-09",
+      "stage": "cr",
+      "source_step_id": "cr-09",
+      "input_form": "THIN_STRIP",
+      "output_form": "CR_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-CR-09:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:cr-finished-output-cutter",
+          "owner_id": "CS-CR-09",
+          "section": "before-final-winding",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-CR-09:cr-finished-output-cutter:before-final-winding"
+        }
+      ]
+    },
+    {
+      "key": "CS-GI-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GI-02",
+      "stage": "gi",
+      "source_step_id": "gi-02",
+      "input_form": "CR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GI-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-welder",
+          "owner_id": "CS-GI-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-GI-02:coating-welder:uncoiler-outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-GI-03",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-GI-03",
+      "stage": "gi",
+      "source_step_id": "gi-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "cleaning_brush",
+        "strip_feed"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": []
+    },
+    {
+      "key": "CS-GI-04",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GI-04",
+      "stage": "gi",
+      "source_step_id": "gi-04",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GI-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-GI-04",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GI-04:coating-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-GI-05",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GI-05",
+      "stage": "gi",
+      "source_step_id": "gi-05",
+      "input_form": "STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "sink_roll"
+      ],
+      "states": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GI-05:v1",
+      "datum_m": 1.76,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-air-knife",
+          "owner_id": "CS-GI-05",
+          "section": "after-sink-roll",
+          "moving_functions": [],
+          "state_functions": [
+            "air_knife"
+          ],
+          "new_moving": [],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GI-05:coating-air-knife:after-sink-roll"
+        },
+        {
+          "requirement_id": "src:gi-coating-cooling",
+          "owner_id": "CS-GI-05",
+          "section": "after-air-knife",
+          "moving_functions": [],
+          "state_functions": [
+            "coating_cooling"
+          ],
+          "new_moving": [],
+          "new_state": [
+            "coating_cooling"
+          ],
+          "stable_subassembly_id": "CS-GI-05:gi-coating-cooling:after-air-knife"
+        }
+      ]
+    },
+    {
+      "key": "CS-GI-06",
+      "kind": "temper",
+      "variant": "variant:temper:CS-GI-06",
+      "stage": "gi",
+      "source_step_id": "gi-06",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "temper_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GI-07",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GI-07",
+      "stage": "gi",
+      "source_step_id": "gi-07",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GI-07:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-GI-07",
+          "section": "exit-section",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GI-07:coating-looper:exit-section"
+        }
+      ]
+    },
+    {
+      "key": "CS-GI-08",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-GI-08",
+      "stage": "gi",
+      "source_step_id": "gi-08",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "oiling_feed"
+      ],
+      "states": [
+        "spray_header"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GI-09",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GI-09",
+      "stage": "gi",
+      "source_step_id": "gi-09",
+      "input_form": "COATED_STRIP",
+      "output_form": "GI_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GI-09:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-inspection",
+          "owner_id": "CS-GI-09",
+          "section": "before-final-winding",
+          "moving_functions": [
+            "surface_scan"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "surface_scan"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GI-09:coating-inspection:before-final-winding"
+        },
+        {
+          "requirement_id": "src:hotdip-output-cutter",
+          "owner_id": "CS-GI-09",
+          "section": "after-oiling-before-final-winding",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GI-09:hotdip-output-cutter:after-oiling-before-final-winding"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GA-02",
+      "stage": "ga",
+      "source_step_id": "ga-02",
+      "input_form": "CR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-welder",
+          "owner_id": "CS-GA-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-GA-02:coating-welder:uncoiler-outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-03",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-GA-03",
+      "stage": "ga",
+      "source_step_id": "ga-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "cleaning_brush",
+        "strip_feed"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": []
+    },
+    {
+      "key": "CS-GA-04",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GA-04",
+      "stage": "ga",
+      "source_step_id": "ga-04",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-GA-04",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GA-04:coating-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-05",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GA-05",
+      "stage": "ga",
+      "source_step_id": "ga-05",
+      "input_form": "STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "sink_roll"
+      ],
+      "states": [
+        "air_knife"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-05:v1",
+      "datum_m": 1.76,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-air-knife",
+          "owner_id": "CS-GA-05",
+          "section": "after-sink-roll",
+          "moving_functions": [],
+          "state_functions": [
+            "air_knife"
+          ],
+          "new_moving": [],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GA-05:coating-air-knife:after-sink-roll"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-06",
+      "kind": "alloying",
+      "variant": "variant:alloying:CS-GA-06",
+      "stage": "ga",
+      "source_step_id": "ga-06",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "induction_feed"
+      ],
+      "states": [
+        "thermal_chamber",
+        "coating_cooling"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-06:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:ga-coating-cooling",
+          "owner_id": "CS-GA-06",
+          "section": "after-alloying",
+          "moving_functions": [],
+          "state_functions": [
+            "coating_cooling"
+          ],
+          "new_moving": [],
+          "new_state": [
+            "coating_cooling"
+          ],
+          "stable_subassembly_id": "CS-GA-06:ga-coating-cooling:after-alloying"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-07",
+      "kind": "temper",
+      "variant": "variant:temper:CS-GA-07",
+      "stage": "ga",
+      "source_step_id": "ga-07",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "temper_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GA-08",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GA-08",
+      "stage": "ga",
+      "source_step_id": "ga-08",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-08:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-GA-08",
+          "section": "exit-section",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GA-08:coating-looper:exit-section"
+        }
+      ]
+    },
+    {
+      "key": "CS-GA-09",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-GA-09",
+      "stage": "ga",
+      "source_step_id": "ga-09",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "oiling_feed"
+      ],
+      "states": [
+        "spray_header"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GA-10",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GA-10",
+      "stage": "ga",
+      "source_step_id": "ga-10",
+      "input_form": "COATED_STRIP",
+      "output_form": "GA_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GA-10:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-inspection",
+          "owner_id": "CS-GA-10",
+          "section": "before-final-winding",
+          "moving_functions": [
+            "surface_scan"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "surface_scan"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GA-10:coating-inspection:before-final-winding"
+        },
+        {
+          "requirement_id": "src:hotdip-output-cutter",
+          "owner_id": "CS-GA-10",
+          "section": "after-oiling-before-final-winding",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GA-10:hotdip-output-cutter:after-oiling-before-final-winding"
+        }
+      ]
+    },
+    {
+      "key": "CS-HGI-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-HGI-02",
+      "stage": "hgi",
+      "source_step_id": "hgi-02",
+      "input_form": "HR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-HGI-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-welder",
+          "owner_id": "CS-HGI-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-HGI-02:coating-welder:uncoiler-outlet"
+        },
+        {
+          "requirement_id": "src:hgi-hr-feed",
+          "owner_id": "CS-HGI-02",
+          "section": "HR-input-no-required-CR",
+          "moving_functions": [],
+          "state_functions": [],
+          "new_moving": [],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-02:hgi-hr-feed:HR-input-no-required-CR"
+        }
+      ]
+    },
+    {
+      "key": "CS-HGI-03",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-HGI-03",
+      "stage": "hgi",
+      "source_step_id": "hgi-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "pickling_feed"
+      ],
+      "states": [
+        "acid_tank"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": []
+    },
+    {
+      "key": "CS-HGI-04",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-HGI-04",
+      "stage": "hgi",
+      "source_step_id": "hgi-04",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-HGI-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-HGI-04",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-04:coating-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-HGI-05",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-HGI-05",
+      "stage": "hgi",
+      "source_step_id": "hgi-05",
+      "input_form": "STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "sink_roll"
+      ],
+      "states": [
+        "air_knife",
+        "coating_cooling"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-HGI-05:v1",
+      "datum_m": 1.76,
+      "thickness_m": 0.006,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-air-knife",
+          "owner_id": "CS-HGI-05",
+          "section": "after-sink-roll",
+          "moving_functions": [],
+          "state_functions": [
+            "air_knife"
+          ],
+          "new_moving": [],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-05:coating-air-knife:after-sink-roll"
+        },
+        {
+          "requirement_id": "src:hgi-coating-cooling",
+          "owner_id": "CS-HGI-05",
+          "section": "after-air-knife",
+          "moving_functions": [],
+          "state_functions": [
+            "coating_cooling"
+          ],
+          "new_moving": [],
+          "new_state": [
+            "coating_cooling"
+          ],
+          "stable_subassembly_id": "CS-HGI-05:hgi-coating-cooling:after-air-knife"
+        }
+      ]
+    },
+    {
+      "key": "CS-HGI-06",
+      "kind": "temper",
+      "variant": "variant:temper:CS-HGI-06",
+      "stage": "hgi",
+      "source_step_id": "hgi-06",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "temper_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": []
+    },
+    {
+      "key": "CS-HGI-07",
+      "kind": "coating",
+      "variant": "variant:coating:CS-HGI-07",
+      "stage": "hgi",
+      "source_step_id": "hgi-07",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll",
+        "exit_looper_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-HGI-07:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-HGI-07",
+          "section": "exit-section",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-07:coating-looper:exit-section"
+        }
+      ]
+    },
+    {
+      "key": "CS-HGI-08",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-HGI-08",
+      "stage": "hgi",
+      "source_step_id": "hgi-08",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "oiling_feed"
+      ],
+      "states": [
+        "spray_header"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": []
+    },
+    {
+      "key": "CS-HGI-09",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-HGI-09",
+      "stage": "hgi",
+      "source_step_id": "hgi-09",
+      "input_form": "COATED_STRIP",
+      "output_form": "HGI_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-HGI-09:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.006,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-inspection",
+          "owner_id": "CS-HGI-09",
+          "section": "before-final-winding",
+          "moving_functions": [
+            "surface_scan"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "surface_scan"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-09:coating-inspection:before-final-winding"
+        },
+        {
+          "requirement_id": "src:hgi-output-cutter",
+          "owner_id": "CS-HGI-09",
+          "section": "after-oiling-before-final-winding",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-HGI-09:hgi-output-cutter:after-oiling-before-final-winding"
+        }
+      ]
+    },
+    {
+      "key": "CS-EG-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-EG-02",
+      "stage": "eg",
+      "source_step_id": "eg-02",
+      "input_form": "CR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-EG-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-welder",
+          "owner_id": "CS-EG-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-EG-02:coating-welder:uncoiler-outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-EG-03",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-EG-03",
+      "stage": "eg",
+      "source_step_id": "eg-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "leveling_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": []
+    },
+    {
+      "key": "CS-EG-04",
+      "kind": "electrocleaning",
+      "variant": "variant:electrocleaning:CS-EG-04",
+      "stage": "eg",
+      "source_step_id": "eg-04",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "cleaning_brush",
+        "strip_feed",
+        "entry_looper_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-EG-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-EG-04",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-EG-04:coating-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-EG-05",
+      "kind": "electroplating",
+      "variant": "variant:electroplating:CS-EG-05",
+      "stage": "eg",
+      "source_step_id": "eg-05",
+      "input_form": "STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "plating_feed"
+      ],
+      "states": [
+        "electrode_bank"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": []
+    },
+    {
+      "key": "CS-EG-06",
+      "kind": "coating",
+      "variant": "variant:coating:CS-EG-06",
+      "stage": "eg",
+      "source_step_id": "eg-06",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-EG-07",
+      "kind": "coating",
+      "variant": "variant:coating:CS-EG-07",
+      "stage": "eg",
+      "source_step_id": "eg-07",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll",
+        "exit_looper_lift",
+        "oven_feed"
+      ],
+      "states": [
+        "cooling_header",
+        "curing_oven"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-EG-07:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-looper",
+          "owner_id": "CS-EG-07",
+          "section": "exit-section",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-EG-07:coating-looper:exit-section"
+        },
+        {
+          "requirement_id": "src:eg-oven-cooler",
+          "owner_id": "CS-EG-07",
+          "section": "after-treatment-before-oiling",
+          "moving_functions": [
+            "oven_feed"
+          ],
+          "state_functions": [
+            "curing_oven",
+            "cooling_header"
+          ],
+          "new_moving": [
+            "oven_feed"
+          ],
+          "new_state": [
+            "cooling_header",
+            "curing_oven"
+          ],
+          "stable_subassembly_id": "CS-EG-07:eg-oven-cooler:after-treatment-before-oiling"
+        }
+      ]
+    },
+    {
+      "key": "CS-EG-08",
+      "kind": "oiling",
+      "variant": "variant:oiling:CS-EG-08",
+      "stage": "eg",
+      "source_step_id": "eg-08",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "oiling_feed"
+      ],
+      "states": [
+        "spray_header"
+      ],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-EG-09",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-EG-09",
+      "stage": "eg",
+      "source_step_id": "eg-09",
+      "input_form": "COATED_STRIP",
+      "output_form": "EG_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter",
+        "surface_scan"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-EG-09:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:coating-inspection",
+          "owner_id": "CS-EG-09",
+          "section": "before-final-winding",
+          "moving_functions": [
+            "surface_scan"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "surface_scan"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-EG-09:coating-inspection:before-final-winding"
+        },
+        {
+          "requirement_id": "src:eg-output-cutter",
+          "owner_id": "CS-EG-09",
+          "section": "after-oiling-before-final-winding",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-EG-09:eg-output-cutter:after-oiling-before-final-winding"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-GO-02",
+      "stage": "go",
+      "source_step_id": "go-02",
+      "input_form": "HR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-welder",
+          "owner_id": "CS-GO-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-GO-02:electrical-welder:uncoiler-outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-03",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GO-03",
+      "stage": "go",
+      "source_step_id": "go-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-03:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-GO-03",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-03:electrical-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-04",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-GO-04",
+      "stage": "go",
+      "source_step_id": "go-04",
+      "input_form": "STRIP",
+      "output_form": "HR_COIL",
+      "moving": [
+        "pickling_feed",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "states": [
+        "acid_tank"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-shot-blasting",
+          "owner_id": "CS-GO-04",
+          "section": "before-pickling",
+          "moving_functions": [
+            "shot_wheel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "shot_wheel"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-04:electrical-shot-blasting:before-pickling"
+        },
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-GO-04",
+          "section": "exit",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-04:electrical-looper:exit"
+        },
+        {
+          "requirement_id": "src:go-pickling-output-cutter",
+          "owner_id": "CS-GO-04",
+          "section": "after-exit-looper",
+          "moving_functions": [
+            "output_cutter",
+            "intermediate_winding_mandrel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "intermediate_winding_mandrel",
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-04:go-pickling-output-cutter:after-exit-looper"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-05",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-GO-05",
+      "stage": "go",
+      "source_step_id": "go-05",
+      "input_form": "HR_COIL",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "cold_reduction_roll",
+        "line_unwinding_mandrel",
+        "line_strip_feed",
+        "line_feed_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [],
+      "cold_reduction": {
+        "maximum_rad": 22.32152017305749,
+        "bite_m": 0.026814175355583798,
+        "bite_angle_rad": 0.07455286365336057,
+        "bite_area_coordinate_m": 0.03574726230069509,
+        "entry_handoff_rad": 22.22222222222222,
+        "nip_handoff_rad": 22.29677508587558,
+        "nip_x_m": -0.825,
+        "radius_m": 0.36,
+        "input_length_m": 4,
+        "output_length_m": 8,
+        "width_m": 1.2,
+        "inlet_thickness_m": 0.004,
+        "outlet_thickness_m": 0.002,
+        "constant_volume_m3": 0.0192
+      },
+      "source_internal_sequence": {
+        "thickness_m": 0.004,
+        "driver": "line_strip_feed",
+        "driver_radius_m": 0.2,
+        "clamp_x_m": -5.8518141753555835,
+        "feed_plane_m": 1.999,
+        "stroke_m": 1,
+        "roller_count": 12,
+        "lift_m": -0.02
+      }
+    },
+    {
+      "key": "CS-GO-06",
+      "kind": "decarburizing",
+      "variant": "variant:decarburizing:CS-GO-06",
+      "stage": "go",
+      "source_step_id": "go-06",
+      "input_form": "THIN_STRIP",
+      "output_form": "CR_COIL",
+      "moving": [
+        "decarb_feed",
+        "base_coating_roll",
+        "entry_looper_lift",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-GO-06",
+          "section": "entry-and-exit",
+          "moving_functions": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-06:electrical-looper:entry-and-exit"
+        },
+        {
+          "requirement_id": "src:go-base-coating",
+          "owner_id": "CS-GO-06",
+          "section": "after-exit-looper",
+          "moving_functions": [
+            "base_coating_roll"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "base_coating_roll"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-06:go-base-coating:after-exit-looper"
+        },
+        {
+          "requirement_id": "src:go-basecoat-output-cutter",
+          "owner_id": "CS-GO-06",
+          "section": "after-base-coating",
+          "moving_functions": [
+            "output_cutter",
+            "intermediate_winding_mandrel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "intermediate_winding_mandrel",
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-06:go-basecoat-output-cutter:after-base-coating"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-07",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:CS-GO-07",
+      "stage": "go",
+      "source_step_id": "go-07",
+      "input_form": "CR_COIL",
+      "output_form": "CR_COIL",
+      "moving": [
+        "treatment_feed",
+        "bell_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-07:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GO-08",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-GO-08",
+      "stage": "go",
+      "source_step_id": "go-08",
+      "input_form": "CR_COIL",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "anneal_feed",
+        "line_unwinding_mandrel",
+        "line_feed_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-08:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [],
+      "source_internal_sequence": {
+        "thickness_m": 0.002,
+        "driver": "anneal_feed",
+        "driver_radius_m": 0.22,
+        "clamp_x_m": -4,
+        "feed_plane_m": 2,
+        "stroke_m": 4,
+        "roller_count": 22,
+        "lift_m": -0.02
+      }
+    },
+    {
+      "key": "CS-GO-09",
+      "kind": "coating",
+      "variant": "variant:coating:CS-GO-09",
+      "stage": "go",
+      "source_step_id": "go-09",
+      "input_form": "THIN_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll"
+      ],
+      "states": [],
+      "motion_policy_id": null,
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": []
+    },
+    {
+      "key": "CS-GO-10",
+      "kind": "inspection",
+      "variant": "variant:inspection:CS-GO-10",
+      "stage": "go",
+      "source_step_id": "go-10",
+      "input_form": "COATED_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "inspection_scan"
+      ],
+      "states": [
+        "domain_laser"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-10:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:go-domain-refinement",
+          "owner_id": "CS-GO-10",
+          "section": "after-insulation",
+          "moving_functions": [
+            "inspection_scan"
+          ],
+          "state_functions": [
+            "domain_laser"
+          ],
+          "new_moving": [],
+          "new_state": [
+            "domain_laser"
+          ],
+          "stable_subassembly_id": "CS-GO-10:go-domain-refinement:after-insulation"
+        }
+      ]
+    },
+    {
+      "key": "CS-GO-11",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-GO-11",
+      "stage": "go",
+      "source_step_id": "go-11",
+      "input_form": "COATED_STRIP",
+      "output_form": "GO_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-GO-11:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:go-finished-output-cutter",
+          "owner_id": "CS-GO-11",
+          "section": "after-domain-refinement",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-GO-11:go-finished-output-cutter:after-domain-refinement"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-02",
+      "kind": "uncoiler",
+      "variant": "variant:uncoiler:CS-NGO-02",
+      "stage": "ngo",
+      "source_step_id": "ngo-02",
+      "input_form": "HR_COIL",
+      "output_form": "STRIP",
+      "moving": [
+        "unwinding_mandrel",
+        "strip_clamp",
+        "weld_head"
+      ],
+      "states": [
+        "weld_power"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-02:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-welder",
+          "owner_id": "CS-NGO-02",
+          "section": "uncoiler-outlet",
+          "moving_functions": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "state_functions": [
+            "weld_power"
+          ],
+          "new_moving": [
+            "strip_clamp",
+            "weld_head"
+          ],
+          "new_state": [
+            "weld_power"
+          ],
+          "stable_subassembly_id": "CS-NGO-02:electrical-welder:uncoiler-outlet"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-03",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-NGO-03",
+      "stage": "ngo",
+      "source_step_id": "ngo-03",
+      "input_form": "STRIP",
+      "output_form": "STRIP",
+      "moving": [
+        "anneal_feed",
+        "entry_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-03:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-NGO-03",
+          "section": "entry",
+          "moving_functions": [
+            "entry_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-03:electrical-looper:entry"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-04",
+      "kind": "pickling",
+      "variant": "variant:pickling:CS-NGO-04",
+      "stage": "ngo",
+      "source_step_id": "ngo-04",
+      "input_form": "STRIP",
+      "output_form": "HR_COIL",
+      "moving": [
+        "pickling_feed",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "states": [
+        "acid_tank"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-shot-blasting",
+          "owner_id": "CS-NGO-04",
+          "section": "before-pickling",
+          "moving_functions": [
+            "shot_wheel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "shot_wheel"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-04:electrical-shot-blasting:before-pickling"
+        },
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-NGO-04",
+          "section": "exit",
+          "moving_functions": [
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-04:electrical-looper:exit"
+        },
+        {
+          "requirement_id": "src:ngo-pickling-output-cutter",
+          "owner_id": "CS-NGO-04",
+          "section": "after-exit-looper",
+          "moving_functions": [
+            "output_cutter",
+            "intermediate_winding_mandrel"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "intermediate_winding_mandrel",
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-04:ngo-pickling-output-cutter:after-exit-looper"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-05",
+      "kind": "cold_mill",
+      "variant": "variant:cold_mill:CS-NGO-05",
+      "stage": "ngo",
+      "source_step_id": "ngo-05",
+      "input_form": "HR_COIL",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "cold_reduction_roll",
+        "line_unwinding_mandrel",
+        "line_strip_feed",
+        "line_feed_lift"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.004,
+      "supplements": [],
+      "cold_reduction": {
+        "maximum_rad": 22.32152017305749,
+        "bite_m": 0.026814175355583798,
+        "bite_angle_rad": 0.07455286365336057,
+        "bite_area_coordinate_m": 0.03574726230069509,
+        "entry_handoff_rad": 22.22222222222222,
+        "nip_handoff_rad": 22.29677508587558,
+        "nip_x_m": -0.825,
+        "radius_m": 0.36,
+        "input_length_m": 4,
+        "output_length_m": 8,
+        "width_m": 1.2,
+        "inlet_thickness_m": 0.004,
+        "outlet_thickness_m": 0.002,
+        "constant_volume_m3": 0.0192
+      },
+      "source_internal_sequence": {
+        "thickness_m": 0.004,
+        "driver": "line_strip_feed",
+        "driver_radius_m": 0.2,
+        "clamp_x_m": -5.8518141753555835,
+        "feed_plane_m": 1.999,
+        "stroke_m": 1,
+        "roller_count": 12,
+        "lift_m": -0.02
+      }
+    },
+    {
+      "key": "CS-NGO-06",
+      "kind": "annealing",
+      "variant": "variant:annealing:CS-NGO-06",
+      "stage": "ngo",
+      "source_step_id": "ngo-06",
+      "input_form": "THIN_STRIP",
+      "output_form": "THIN_STRIP",
+      "moving": [
+        "anneal_feed",
+        "cleaning_brush",
+        "cleaning_strip_feed",
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "states": [
+        "thermal_chamber",
+        "cleaning_electrodes"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-06:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:electrical-looper",
+          "owner_id": "CS-NGO-06",
+          "section": "entry-and-exit",
+          "moving_functions": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "entry_looper_lift",
+            "exit_looper_lift"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-06:electrical-looper:entry-and-exit"
+        },
+        {
+          "requirement_id": "src:ngo-electrocleaning",
+          "owner_id": "CS-NGO-06",
+          "section": "before-final-anneal",
+          "moving_functions": [
+            "cleaning_brush",
+            "cleaning_strip_feed"
+          ],
+          "state_functions": [
+            "cleaning_electrodes"
+          ],
+          "new_moving": [
+            "cleaning_brush",
+            "cleaning_strip_feed"
+          ],
+          "new_state": [
+            "cleaning_electrodes"
+          ],
+          "stable_subassembly_id": "CS-NGO-06:ngo-electrocleaning:before-final-anneal"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-07",
+      "kind": "coating",
+      "variant": "variant:coating:CS-NGO-07",
+      "stage": "ngo",
+      "source_step_id": "ngo-07",
+      "input_form": "THIN_STRIP",
+      "output_form": "COATED_STRIP",
+      "moving": [
+        "coating_roll"
+      ],
+      "states": [
+        "drying_header"
+      ],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-07:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:ngo-drying",
+          "owner_id": "CS-NGO-07",
+          "section": "after-insulation",
+          "moving_functions": [],
+          "state_functions": [
+            "drying_header"
+          ],
+          "new_moving": [],
+          "new_state": [
+            "drying_header"
+          ],
+          "stable_subassembly_id": "CS-NGO-07:ngo-drying:after-insulation"
+        }
+      ]
+    },
+    {
+      "key": "CS-NGO-08",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-NGO-08",
+      "stage": "ngo",
+      "source_step_id": "ngo-08",
+      "input_form": "COATED_STRIP",
+      "output_form": "NGO_COIL",
+      "moving": [
+        "winding_mandrel",
+        "output_cutter"
+      ],
+      "states": [],
+      "motion_policy_id": "policy:equipment:finishing:CS-NGO-08:v1",
+      "datum_m": 2.0,
+      "thickness_m": 0.002,
+      "supplements": [
+        {
+          "requirement_id": "src:ngo-finished-output-cutter",
+          "owner_id": "CS-NGO-08",
+          "section": "after-drying",
+          "moving_functions": [
+            "output_cutter"
+          ],
+          "state_functions": [],
+          "new_moving": [
+            "output_cutter"
+          ],
+          "new_state": [],
+          "stable_subassembly_id": "CS-NGO-08:ngo-finished-output-cutter:after-drying"
+        }
+      ]
+    }
+  ]
+}

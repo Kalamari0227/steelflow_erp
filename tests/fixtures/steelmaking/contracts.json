@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "authority": "Explicit synthetic T58 contract fixture, not T31/T32 production scheduler or T28 fleet completion",
+  "models": [
+    {
+      "key": "CHARGE-A",
+      "variant": "variant:charge:CHARGE-A",
+      "family": "steelmaking",
+      "kind": "charge",
+      "recipeId": "motion:source:cs-charge",
+      "inputForm": "ORE",
+      "outputForm": "ORE"
+    },
+    {
+      "key": "BF-A",
+      "variant": "variant:blast_furnace:BF-A",
+      "family": "steelmaking",
+      "kind": "blast_furnace",
+      "recipeId": "motion:source:cs-bf",
+      "inputForm": "ORE",
+      "outputForm": "HOT_METAL"
+    },
+    {
+      "key": "BOF-A",
+      "variant": "variant:bof:BOF-A",
+      "family": "steelmaking",
+      "kind": "bof",
+      "recipeId": "motion:source:cs-bof",
+      "inputForm": "HOT_METAL",
+      "outputForm": "LIQUID_STEEL"
+    },
+    {
+      "key": "LF-A",
+      "variant": "variant:ladle_furnace:LF-A",
+      "family": "steelmaking",
+      "kind": "ladle_furnace",
+      "recipeId": "motion:source:cs-lf",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "LIQUID_STEEL"
+    },
+    {
+      "key": "CAST-SLAB",
+      "variant": "variant:caster:CAST-SLAB",
+      "family": "steelmaking",
+      "kind": "caster",
+      "recipeId": "motion:source:cs-cast-slab",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "SLAB"
+    },
+    {
+      "key": "CUT-SLAB",
+      "variant": "variant:shear:CUT-SLAB",
+      "family": "steelmaking",
+      "kind": "shear",
+      "recipeId": "motion:source:cs-cut-slab",
+      "inputForm": "SLAB",
+      "outputForm": "SLAB"
+    },
+    {
+      "key": "CAST-BLOOM",
+      "variant": "variant:caster:CAST-BLOOM",
+      "family": "steelmaking",
+      "kind": "caster",
+      "recipeId": "motion:source:cs-cast-bloom",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "BLOOM"
+    },
+    {
+      "key": "CUT-BLOOM",
+      "variant": "variant:shear:CUT-BLOOM",
+      "family": "steelmaking",
+      "kind": "shear",
+      "recipeId": "motion:source:cs-cut-bloom",
+      "inputForm": "BLOOM",
+      "outputForm": "BLOOM"
+    },
+    {
+      "key": "CAST-BILLET",
+      "variant": "variant:caster:CAST-BILLET",
+      "family": "steelmaking",
+      "kind": "caster",
+      "recipeId": "motion:source:cs-cast-billet",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "BILLET"
+    },
+    {
+      "key": "CUT-BILLET",
+      "variant": "variant:shear:CUT-BILLET",
+      "family": "steelmaking",
+      "kind": "shear",
+      "recipeId": "motion:source:cs-cut-billet",
+      "inputForm": "BILLET",
+      "outputForm": "BILLET"
+    },
+    {
+      "key": "STS-HR-02",
+      "variant": "variant:eaf:STS-HR-02",
+      "family": "stainless",
+      "kind": "eaf",
+      "recipeId": "motion:source:sts-hr-02",
+      "inputForm": "SCRAP",
+      "outputForm": "LIQUID_STEEL"
+    },
+    {
+      "key": "STS-HR-03",
+      "variant": "variant:aod:STS-HR-03",
+      "family": "stainless",
+      "kind": "aod",
+      "recipeId": "motion:source:sts-hr-03",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "LIQUID_STEEL"
+    },
+    {
+      "key": "STS-PLATE-02",
+      "variant": "variant:eaf:STS-PLATE-02",
+      "family": "stainless",
+      "kind": "eaf",
+      "recipeId": "motion:source:sts-plate-02",
+      "inputForm": "SCRAP",
+      "outputForm": "LIQUID_STEEL"
+    },
+    {
+      "key": "STS-PLATE-03",
+      "variant": "variant:aod:STS-PLATE-03",
+      "family": "stainless",
+      "kind": "aod",
+      "recipeId": "motion:source:sts-plate-03",
+      "inputForm": "LIQUID_STEEL",
+      "outputForm": "LIQUID_STEEL"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/transport.spec.ts -g 390px
+
+[WebServer] INFO:     Started server process [40780]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:40816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:40818) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/transport.spec.ts:167:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation (12.3s)
+
+
+  1) tests/transport.spec.ts:167:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('complementary', { name: '선택 소재 상세' })
+    Expected substring: "현재 공정 · 열연"
+    Received string:    "소재 추적PROD-GICURRENT MATERIAL용강후공정 소재목표 제품GI · 용융아연배치 질량23 t작업 상태작업 중현재 공정 · 연주다음 공정 · 열연소재 변환 이력 3철원료소재 · 제선·출선MAT-PROD-GI:00용선소재 · 제선·출선MAT-PROD-GI:01용강소재 · 제강·출강MAT-PROD-GI:02형태와 용도는 별개입니다. 같은 열연·냉연 코일도 생산 경로에 따라 판매 제품 또는 다음 공정의 소재가 됩니다."
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('complementary', { name: '선택 소재 상세' }) with timeout 10000ms
+      - waiting for getByRole('complementary', { name: '선택 소재 상세' })
+        24 × locator resolved to <aside aria-label="선택 소재 상세" class="production-inspector panel">…</aside>
+           - unexpected value "소재 추적PROD-GICURRENT MATERIAL용강후공정 소재목표 제품GI · 용융아연배치 질량23 t작업 상태작업 중현재 공정 · 연주다음 공정 · 열연소재 변환 이력 3철원료소재 · 제선·출선MAT-PROD-GI:00용선소재 · 제선·출선MAT-PROD-GI:01용강소재 · 제강·출강MAT-PROD-GI:02형태와 용도는 별개입니다. 같은 열연·냉연 코일도 생산 경로에 따라 판매 제품 또는 다음 공정의 소재가 됩니다."
+
+
+      190 |   await clickCommand(page, 'Advance one step', 'step');
+      191 |   await expect(inspector(page)).not.toContainText('운송 중');
+    > 192 |   await expect(inspector(page)).toContainText('현재 공정 · 열연');
+          |                                 ^
+      193 |   await page.screenshot({ path: `${evidence}/transport-mobile-arrived.png`, fullPage: true });
+      194 |   await writeFile(`${evidence}/transport-mobile-fallback.png`, fallbackScreenshot);
+      195 |   await save('mobile-layout', layout);
+        at /Users/ethanlee/Desktop/ERP/tests/transport.spec.ts:192:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/transport.spec.ts:167:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation 

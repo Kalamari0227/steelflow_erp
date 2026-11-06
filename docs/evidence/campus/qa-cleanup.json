@@ -1,0 +1,36 @@
+{
+  "ownedStopped": [
+    {
+      "pid": 75849,
+      "role": "backend",
+      "identityMatched": true,
+      "command": "/Users/ethanlee/Desktop/ERP/backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8003",
+      "absent": true
+    },
+    {
+      "pid": 76348,
+      "role": "preview",
+      "identityMatched": true,
+      "command": "node --input-type=module -e import {preview} from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\";await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/runtime-verified\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4176, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8003\", \"/health\": \"http://127.0.0.1:8003\"}}});",
+      "absent": true
+    }
+  ],
+  "ownedPortsClosed": {
+    "8003": true,
+    "4176": true
+  },
+  "preservedIdentities": "37085 Sat Oct 24 18:35:43 2026     /Users/ethanlee/Desktop/ERP/backend/.venv/bin/python .venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --no-access-log\n57570 Sat Oct 24 14:53:40 2026     node /Users/ethanlee/Desktop/ERP/node_modules/.bin/vite preview --host 127.0.0.1\n78583 Sun Oct 25 07:49:15 2026     /Users/ethanlee/Desktop/ERP/backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8002\n78584 Sun Oct 25 07:49:15 2026     /Users/ethanlee/.local/share/mise/installs/node/lts/bin/node --input-type=module -e import {preview} from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});\n",
+  "preservedIdentitiesUnchanged": true,
+  "intentionalParentPromotion": {
+    "oldRetainedPids": [
+      78616,
+      78711
+    ],
+    "newRetainedPids": [
+      78583,
+      78584
+    ],
+    "note": "Parent authorized and completed replacement before this cleanup. This cleanup only stopped owned 75849/76348."
+  },
+  "runtimeSnapshotRetained": true
+}

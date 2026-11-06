@@ -1,0 +1,655 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:5174",
+          "trace": "on",
+          "video": "on",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo.spec.ts",
+      "file": "demo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "3D factory renders, orbit and zoom respond, and no browser exception occurs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2755,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:35.491Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-3D-factory-renders-or-58e54-no-browser-exception-occurs/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-3D-factory-renders-or-58e54-no-browser-exception-occurs/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-4fa1bb6a62e394ad8942",
+          "file": "demo.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "search finds a customer order and empty search is explained",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1018,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:42.012Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-search-finds-a-custom-d163c-d-empty-search-is-explained/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-search-finds-a-custom-d163c-d-empty-search-is-explained/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-d93cbce29179adf9b148",
+          "file": "demo.spec.ts",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "accessible inventory selection exposes the exact coil relationships",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:43.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-accessible-inventory--be32b-he-exact-coil-relationships/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-accessible-inventory--be32b-he-exact-coil-relationships/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-7455872989cf0db6338e",
+          "file": "demo.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "three scenarios differ at the same tick and reset reproduces each baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:44.263Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-509828ee2e2aea13d480",
+          "file": "demo.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "play, speed and pause are owned by the backend and continue without a page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:49.307Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-play-speed-and-pause--09334-and-continue-without-a-page/video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-play-speed-and-pause--09334-and-continue-without-a-page/video-1.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-play-speed-and-pause--09334-and-continue-without-a-page/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-9dc8858dd2109f831b7c",
+          "file": "demo.spec.ts",
+          "line": 129,
+          "column": 1
+        },
+        {
+          "title": "mobile 2D fallback remains navigable without horizontal page overflow",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 730,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:153:96",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                      "column": 96,
+                      "line": 153
+                    },
+                    "snippet": "  151 |   await page.getByRole('button', { name: 'C-1001', exact: true }).click();\n  152 |   await expect(page.getByTestId('inspector').getByRole('button', { name: 'LOT-1001', exact: true })).toBeVisible();\n> 153 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);\n      |                                                                                                ^\n  154 |   await page.screenshot({ path: `${evidence}/07-mobile-inventory.png`, fullPage: true });\n  155 | });\n  156 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                        "column": 96,
+                        "line": 153
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  151 |   await page.getByRole('button', { name: 'C-1001', exact: true }).click();\n  152 |   await expect(page.getByTestId('inspector').getByRole('button', { name: 'LOT-1001', exact: true })).toBeVisible();\n> 153 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);\n      |                                                                                                ^\n  154 |   await page.screenshot({ path: `${evidence}/07-mobile-inventory.png`, fullPage: true });\n  155 | });\n  156 |\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:153:96"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:51.544Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/test-failed-1.png"
+                    },
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                    "column": 96,
+                    "line": 153
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-9864fa4fc791fd3c5dbf",
+          "file": "demo.spec.ts",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "backend unavailable state is explicit and retry restores the live demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:52.569Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-backend-unavailable-s-65fd4-etry-restores-the-live-demo/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-backend-unavailable-s-65fd4-etry-restores-the-live-demo/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-7b1be11e8b6336fe1c67",
+          "file": "demo.spec.ts",
+          "line": 157,
+          "column": 1
+        },
+        {
+          "title": "disabled AI requires no provider request and core recovery rules remain available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 871,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:53.976Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-disabled-AI-requires--9e709-very-rules-remain-available/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-disabled-AI-requires--9e709-very-rules-remain-available/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-8759ce6c0eb1dddb5bc6",
+          "file": "demo.spec.ts",
+          "line": 168,
+          "column": 1
+        },
+        {
+          "title": "WebGL context loss leaves core inventory and controls usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1260,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:41:18",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                      "column": 18,
+                      "line": 41
+                    },
+                    "snippet": "  39 |   const errors = browserErrors.get(context) ?? [];\n  40 |   await testInfo.attach('uncaught-browser-errors', { body: JSON.stringify(errors), contentType: 'application/json' });\n> 41 |   expect(errors).toEqual([]);\n     |                  ^\n  42 | });\n  43 |\n  44 | test('3D factory renders, orbit and zoom respond, and no browser exception occurs', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                        "column": 18,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  39 |   const errors = browserErrors.get(context) ?? [];\n  40 |   await testInfo.attach('uncaught-browser-errors', { body: JSON.stringify(errors), contentType: 'application/json' });\n> 41 |   expect(errors).toEqual([]);\n     |                  ^\n  42 | });\n  43 |\n  44 | test('3D factory renders, orbit and zoom respond, and no browser exception occurs', async ({ page }) => {\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:41:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:47:54.871Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "WyJGYWlsZWQgdG8gZXhlY3V0ZSAncmVtb3ZlQ2hpbGQnIG9uICdOb2RlJzogVGhlIG5vZGUgdG8gYmUgcmVtb3ZlZCBpcyBub3QgYSBjaGlsZCBvZiB0aGlzIG5vZGUuIl0="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                    "column": 18,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-383705d441f5c29bf788",
+          "file": "demo.spec.ts",
+          "line": 182,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T05:47:34.034Z",
+    "duration": 22225.974,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

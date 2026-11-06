@@ -1,0 +1,488 @@
+[
+  {
+    "owner_id": "CS-CR-02",
+    "source_recipe_id": "motion:source:cr-02",
+    "policy_id": "policy:equipment:finishing:CS-CR-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-02",
+    "source_recipe_id": "motion:source:cr-02",
+    "policy_id": "policy:equipment:finishing:CS-CR-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-04",
+    "source_recipe_id": "motion:source:cr-04",
+    "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-04",
+    "source_recipe_id": "motion:source:cr-04",
+    "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-06",
+    "source_recipe_id": "motion:source:cr-06",
+    "policy_id": "policy:equipment:finishing:CS-CR-06:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-06",
+    "source_recipe_id": "motion:source:cr-06",
+    "policy_id": "policy:equipment:finishing:CS-CR-06:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-09",
+    "source_recipe_id": "motion:source:cr-09",
+    "policy_id": "policy:equipment:finishing:CS-CR-09:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-CR-09",
+    "source_recipe_id": "motion:source:cr-09",
+    "policy_id": "policy:equipment:finishing:CS-CR-09:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-02",
+    "source_recipe_id": "motion:source:gi-02",
+    "policy_id": "policy:equipment:finishing:CS-GI-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-02",
+    "source_recipe_id": "motion:source:gi-02",
+    "policy_id": "policy:equipment:finishing:CS-GI-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-04",
+    "source_recipe_id": "motion:source:gi-04",
+    "policy_id": "policy:equipment:finishing:CS-GI-04:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-07",
+    "source_recipe_id": "motion:source:gi-07",
+    "policy_id": "policy:equipment:finishing:CS-GI-07:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-09",
+    "source_recipe_id": "motion:source:gi-09",
+    "policy_id": "policy:equipment:finishing:CS-GI-09:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GI-09",
+    "source_recipe_id": "motion:source:gi-09",
+    "policy_id": "policy:equipment:finishing:CS-GI-09:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-02",
+    "source_recipe_id": "motion:source:ga-02",
+    "policy_id": "policy:equipment:finishing:CS-GA-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-02",
+    "source_recipe_id": "motion:source:ga-02",
+    "policy_id": "policy:equipment:finishing:CS-GA-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-04",
+    "source_recipe_id": "motion:source:ga-04",
+    "policy_id": "policy:equipment:finishing:CS-GA-04:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-08",
+    "source_recipe_id": "motion:source:ga-08",
+    "policy_id": "policy:equipment:finishing:CS-GA-08:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-10",
+    "source_recipe_id": "motion:source:ga-10",
+    "policy_id": "policy:equipment:finishing:CS-GA-10:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GA-10",
+    "source_recipe_id": "motion:source:ga-10",
+    "policy_id": "policy:equipment:finishing:CS-GA-10:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-02",
+    "source_recipe_id": "motion:source:hgi-02",
+    "policy_id": "policy:equipment:finishing:CS-HGI-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-02",
+    "source_recipe_id": "motion:source:hgi-02",
+    "policy_id": "policy:equipment:finishing:CS-HGI-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-04",
+    "source_recipe_id": "motion:source:hgi-04",
+    "policy_id": "policy:equipment:finishing:CS-HGI-04:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-07",
+    "source_recipe_id": "motion:source:hgi-07",
+    "policy_id": "policy:equipment:finishing:CS-HGI-07:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-09",
+    "source_recipe_id": "motion:source:hgi-09",
+    "policy_id": "policy:equipment:finishing:CS-HGI-09:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-HGI-09",
+    "source_recipe_id": "motion:source:hgi-09",
+    "policy_id": "policy:equipment:finishing:CS-HGI-09:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-02",
+    "source_recipe_id": "motion:source:eg-02",
+    "policy_id": "policy:equipment:finishing:CS-EG-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-02",
+    "source_recipe_id": "motion:source:eg-02",
+    "policy_id": "policy:equipment:finishing:CS-EG-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-04",
+    "source_recipe_id": "motion:source:eg-04",
+    "policy_id": "policy:equipment:finishing:CS-EG-04:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-07",
+    "source_recipe_id": "motion:source:eg-07",
+    "policy_id": "policy:equipment:finishing:CS-EG-07:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-09",
+    "source_recipe_id": "motion:source:eg-09",
+    "policy_id": "policy:equipment:finishing:CS-EG-09:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-EG-09",
+    "source_recipe_id": "motion:source:eg-09",
+    "policy_id": "policy:equipment:finishing:CS-EG-09:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-02",
+    "source_recipe_id": "motion:source:go-02",
+    "policy_id": "policy:equipment:finishing:CS-GO-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-02",
+    "source_recipe_id": "motion:source:go-02",
+    "policy_id": "policy:equipment:finishing:CS-GO-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-03",
+    "source_recipe_id": "motion:source:go-03",
+    "policy_id": "policy:equipment:finishing:CS-GO-03:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-04",
+    "source_recipe_id": "motion:source:go-04",
+    "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-04",
+    "source_recipe_id": "motion:source:go-04",
+    "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-04",
+    "source_recipe_id": "motion:source:go-04",
+    "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-11",
+    "source_recipe_id": "motion:source:go-11",
+    "policy_id": "policy:equipment:finishing:CS-GO-11:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-GO-11",
+    "source_recipe_id": "motion:source:go-11",
+    "policy_id": "policy:equipment:finishing:CS-GO-11:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-02",
+    "source_recipe_id": "motion:source:ngo-02",
+    "policy_id": "policy:equipment:finishing:CS-NGO-02:v1",
+    "socket_id": "weld_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-02",
+    "source_recipe_id": "motion:source:ngo-02",
+    "policy_id": "policy:equipment:finishing:CS-NGO-02:v1",
+    "socket_id": "weld_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-03",
+    "source_recipe_id": "motion:source:ngo-03",
+    "policy_id": "policy:equipment:finishing:CS-NGO-03:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-04",
+    "source_recipe_id": "motion:source:ngo-04",
+    "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-04",
+    "source_recipe_id": "motion:source:ngo-04",
+    "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-04",
+    "source_recipe_id": "motion:source:ngo-04",
+    "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-06",
+    "source_recipe_id": "motion:source:ngo-06",
+    "policy_id": "policy:equipment:finishing:CS-NGO-06:v1",
+    "socket_id": "entry_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-06",
+    "source_recipe_id": "motion:source:ngo-06",
+    "policy_id": "policy:equipment:finishing:CS-NGO-06:v1",
+    "socket_id": "exit_looper_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-08",
+    "source_recipe_id": "motion:source:ngo-08",
+    "policy_id": "policy:equipment:finishing:CS-NGO-08:v1",
+    "socket_id": "cutter_in_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  },
+  {
+    "owner_id": "CS-NGO-08",
+    "source_recipe_id": "motion:source:ngo-08",
+    "policy_id": "policy:equipment:finishing:CS-NGO-08:v1",
+    "socket_id": "cutter_out_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": []
+  }
+]

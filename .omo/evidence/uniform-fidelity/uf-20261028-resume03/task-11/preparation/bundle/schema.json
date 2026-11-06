@@ -1,0 +1,7 @@
+{
+  "format": "factory-contract-test-schema-v1",
+  "schema_version": 3,
+  "fixture_version": "factory-v2",
+  "profile": "v3_contract_test",
+  "purpose": "typed business fixtures; no canonical assets or motion"
+}

@@ -1,0 +1,437 @@
+Browser tab: 4, Title: "SteelFlow 3D — Operations twin", URL: "http://127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D".
+0 AXWebArea SteelFlow 3D — Operations twin, URL: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D
+	1 container root
+		2 link Description: 운영 화면으로 건너뛰기, Value: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D#main-content
+		3 container
+			4 text SteelFlow  OPERATIONS 합성 운영 데이터 · 로컬 시뮬레이션
+		5 container main-content
+			6 text ORDER TO DELIVERY
+			7 heading 통합 운영, Value: 1
+				8 text 통합 운영
+			9 text 주문에서 배송까지, 같은 소재의 흐름을 추적합니다.
+			10 text 일시 정지
+			11 container
+				12 text 2026-10-30 00:00:00+00:00  UTC
+			13 button (collapsed) 실행 정보, Secondary Actions: Expand
+				14 text 실행 정보
+			15 container 전체 운영 지표
+				16 text 진행 주문
+				17 container
+					18 text 20 건
+				19 text 생산 완료
+				20 container
+					21 text 0 kg
+				22 text 출고 완료
+				23 container
+					24 text 0 kg
+				25 text 배송 완료
+				26 container
+					27 text 0 kg
+			28 container 공통 실행 제어
+				29 button 재생
+					30 image
+					31 text 재생
+				32 button 한 단계
+					33 image
+					34 text 한 단계
+				35 button 초기화, Help: 새 실행으로 초기화
+					36 image
+					37 text 초기화
+				38 container
+					39 text 속도
+					40 pop up button (collapsed, settable) Description: 실행 속도, Value: 4×, Secondary Actions: Expand
+						41 menu
+							42 1×
+							43 2×
+							44 (selected) 4×
+				45 container
+					46 text 시나리오
+					47 pop up button (collapsed, settable) Description: 시나리오, Value: 정상 운영, Secondary Actions: Expand
+						48 menu
+							49 (selected) 정상 운영
+							50 설비 지연
+							51 회복 운영
+				52 text 시나리오 변경·초기화는 새 실행을 시작합니다.
+				53 progress indicator Description: 전체 실행 진행률, Value: 0
+			54 container 주문 탐색
+				55 heading 주문, Value: 2
+					56 text 주문
+				57 text 20 건
+				58 container
+					59 image
+					60 text field (settable) 주문 검색
+				61 container
+					62 checkbox ORD-billet 빌렛 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						63 text ORD-billet
+						64 text 빌렛
+						65 text Synthetic carbon customer
+						66 container
+							67 text 20,000  kg ·  SYNTHETIC-CS
+						68 progress indicator Description: ORD-billet 배송 완료율, Value: 0
+						69 container
+							70 text 0 %
+					71 checkbox ORD-bloom 블룸 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						72 text ORD-bloom
+						73 text 블룸
+						74 text Synthetic carbon customer
+						75 container
+							76 text 20,000  kg ·  SYNTHETIC-CS
+						77 progress indicator Description: ORD-bloom 배송 완료율, Value: 0
+						78 container
+							79 text 0 %
+					80 checkbox ORD-cr 냉연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						81 text ORD-cr
+						82 text 냉연 코일
+						83 text Synthetic carbon customer
+						84 container
+							85 text 19,900  kg ·  SYNTHETIC-CS
+						86 progress indicator Description: ORD-cr 배송 완료율, Value: 0
+						87 container
+							88 text 0 %
+					89 checkbox ORD-eg EG · 전기아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						90 text ORD-eg
+						91 text EG · 전기아연
+						92 text Synthetic carbon customer
+						93 container
+							94 text 20,100  kg ·  SYNTHETIC-CS
+						95 progress indicator Description: ORD-eg 배송 완료율, Value: 0
+						96 container
+							97 text 0 %
+					98 checkbox ORD-ga GA · 합금화아연 Synthetic carbon customer 60,300 kg · SYNTHETIC-CS 0 0%, Value: 1
+						99 text ORD-ga
+						100 text GA · 합금화아연
+						101 text Synthetic carbon customer
+						102 container
+							103 text 60,300  kg ·  SYNTHETIC-CS
+						104 progress indicator Description: ORD-ga 배송 완료율, Value: 0
+						105 container
+							106 text 0 %
+					107 checkbox ORD-gi GI · 용융아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						108 text ORD-gi
+						109 text GI · 용융아연
+						110 text Synthetic carbon customer
+						111 container
+							112 text 20,100  kg ·  SYNTHETIC-CS
+						113 progress indicator Description: ORD-gi 배송 완료율, Value: 0
+						114 container
+							115 text 0 %
+					116 checkbox ORD-go 방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						117 text ORD-go
+						118 text 방향성 전기강판
+						119 text Synthetic carbon customer
+						120 container
+							121 text 19,900  kg ·  SYNTHETIC-CS
+						122 progress indicator Description: ORD-go 배송 완료율, Value: 0
+						123 container
+							124 text 0 %
+					125 checkbox ORD-hgi HGI · 열연도금 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						126 text ORD-hgi
+						127 text HGI · 열연도금
+						128 text Synthetic carbon customer
+						129 container
+							130 text 20,100  kg ·  SYNTHETIC-CS
+						131 progress indicator Description: ORD-hgi 배송 완료율, Value: 0
+						132 container
+							133 text 0 %
+					134 checkbox ORD-hr 열연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						135 text ORD-hr
+						136 text 열연 코일
+						137 text Synthetic carbon customer
+						138 container
+							139 text 19,900  kg ·  SYNTHETIC-CS
+						140 progress indicator Description: ORD-hr 배송 완료율, Value: 0
+						141 container
+							142 text 0 %
+					143 checkbox ORD-ngo 무방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						144 text ORD-ngo
+						145 text 무방향성 전기강판
+						146 text Synthetic carbon customer
+						147 container
+							148 text 19,900  kg ·  SYNTHETIC-CS
+						149 progress indicator Description: ORD-ngo 배송 완료율, Value: 0
+						150 container
+							151 text 0 %
+					152 checkbox ORD-plate 열처리 후판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						153 text ORD-plate
+						154 text 열처리 후판
+						155 text Synthetic carbon customer
+						156 container
+							157 text 19,900  kg ·  SYNTHETIC-CS
+						158 progress indicator Description: ORD-plate 배송 완료율, Value: 0
+						159 container
+							160 text 0 %
+					161 checkbox ORD-slab 슬래브 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						162 text ORD-slab
+						163 text 슬래브
+						164 text Synthetic carbon customer
+						165 container
+							166 text 20,000  kg ·  SYNTHETIC-CS
+						167 progress indicator Description: ORD-slab 배송 완료율, Value: 0
+						168 container
+							169 text 0 %
+					170 checkbox ORD-sts-cr 스테인리스 냉연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						171 text ORD-sts-cr
+						172 text 스테인리스 냉연
+						173 text Synthetic stainless customer
+						174 container
+							175 text 19,900  kg ·  SYNTHETIC-STS
+						176 progress indicator Description: ORD-sts-cr 배송 완료율, Value: 0
+						177 container
+							178 text 0 %
+					179 checkbox ORD-sts-hr 스테인리스 열연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						180 text ORD-sts-hr
+						181 text 스테인리스 열연
+						182 text Synthetic stainless customer
+						183 container
+							184 text 19,900  kg ·  SYNTHETIC-STS
+						185 progress indicator Description: ORD-sts-hr 배송 완료율, Value: 0
+						186 container
+							187 text 0 %
+					188 checkbox ORD-sts-plate 스테인리스 후판 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						189 text ORD-sts-plate
+						190 text 스테인리스 후판
+						191 text Synthetic stainless customer
+						192 container
+							193 text 19,900  kg ·  SYNTHETIC-STS
+						194 progress indicator Description: ORD-sts-plate 배송 완료율, Value: 0
+						195 container
+							196 text 0 %
+					197 checkbox ORD-ti-cr 티타늄 냉연 · 코일 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						198 text ORD-ti-cr
+						199 text 티타늄 냉연 · 코일
+						200 text Synthetic titanium customer
+						201 container
+							202 text 11,900  kg ·  SYNTHETIC-TI
+						203 progress indicator Description: ORD-ti-cr 배송 완료율, Value: 0
+						204 container
+							205 text 0 %
+					206 checkbox ORD-ti-hr 티타늄 열연 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						207 text ORD-ti-hr
+						208 text 티타늄 열연
+						209 text Synthetic titanium customer
+						210 container
+							211 text 11,900  kg ·  SYNTHETIC-TI
+						212 progress indicator Description: ORD-ti-hr 배송 완료율, Value: 0
+						213 container
+							214 text 0 %
+					215 checkbox ORD-ti-plate 티타늄 후판 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						216 text ORD-ti-plate
+						217 text 티타늄 후판
+						218 text Synthetic titanium customer
+						219 container
+							220 text 11,900  kg ·  SYNTHETIC-TI
+						221 progress indicator Description: ORD-ti-plate 배송 완료율, Value: 0
+						222 container
+							223 text 0 %
+					224 checkbox ORD-ti-sheet 티타늄 냉연 · 시트 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						225 text ORD-ti-sheet
+						226 text 티타늄 냉연 · 시트
+						227 text Synthetic titanium customer
+						228 container
+							229 text 11,900  kg ·  SYNTHETIC-TI
+						230 progress indicator Description: ORD-ti-sheet 배송 완료율, Value: 0
+						231 container
+							232 text 0 %
+					233 checkbox ORD-wire 선재 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						234 text ORD-wire
+						235 text 선재
+						236 text Synthetic carbon customer
+						237 container
+							238 text 19,900  kg ·  SYNTHETIC-CS
+						239 progress indicator Description: ORD-wire 배송 완료율, Value: 0
+						240 container
+							241 text 0 %
+			242 container 공장 운영
+				243 heading 생산·물류 미니어처, Value: 2
+					244 image
+					245 text 생산·물류 미니어처
+				246 checkbox 3D, Value: 1
+					247 image
+					248 text 3D
+				249 checkbox 2D, Value: 0
+					250 image
+					251 text 2D
+				252 container 공장 탐색 경로
+					253 button 공장 전경
+					254 checkbox (settable, integer) Description: 소재 따라가기, Value: 1
+				255 container 공정 선택
+					256 checkbox 제선·제강, Value: 0
+					257 checkbox 슬래브 주조, Value: 0
+					258 checkbox 블룸 주조, Value: 0
+					259 checkbox 빌렛 주조, Value: 0
+					260 checkbox 열연, Value: 0
+					261 checkbox 후판, Value: 0
+					262 checkbox 선재, Value: 0
+					263 checkbox 냉연, Value: 0
+					264 checkbox 용융아연, Value: 0
+					265 checkbox 합금화아연, Value: 0
+					266 checkbox 열연도금, Value: 0
+					267 checkbox 전기아연, Value: 0
+					268 checkbox 방향성 전기강판, Value: 0
+					269 checkbox 무방향성 전기강판, Value: 0
+					270 checkbox 스테인리스 열연, Value: 0
+					271 checkbox 스테인리스 냉연, Value: 0
+					272 checkbox 스테인리스 후판, Value: 0
+					273 checkbox 티타늄 열연, Value: 0
+					274 checkbox 티타늄 냉연, Value: 0
+					275 checkbox 티타늄 박판, Value: 0
+					276 checkbox 티타늄 후판, Value: 0
+					277 checkbox 열연 예비 설비, Value: 0
+					278 checkbox 검사·재고·출하, Value: 0
+					279 checkbox 원료 공급, Value: 0
+				716 image 통합 공장 3D 미니어처
+					717 text 3D 표시를 지원하지 않는 브라우저입니다.
+				281 heading ORD-ga 소재, Value: 2
+					282 text ORD-ga  소재
+				283 text 3 개 · 소비 이력 포함
+				718 checkbox MAT-ga-01 ORE OPS-ORE-SOURCE-BUFFER · 20,000 kg, Value: 1
+					719 text MAT-ga-01
+					720 text ORE
+					721 container
+						722 text OPS-ORE-SOURCE-BUFFER  ·  20,000  kg
+				723 checkbox MAT-ga-02 ORE OPS-ORE-SOURCE-BUFFER · 20,000 kg, Value: 0
+					724 text MAT-ga-02
+					725 text ORE
+					726 container
+						727 text OPS-ORE-SOURCE-BUFFER  ·  20,000  kg
+				728 checkbox MAT-ga-03 ORE OPS-ORE-SOURCE-BUFFER · 20,000 kg, Value: 0
+					729 text MAT-ga-03
+					730 text ORE
+					731 container
+						732 text OPS-ORE-SOURCE-BUFFER  ·  20,000  kg
+			395 container 소재 상세
+				396 heading 소재 상세, Value: 2
+					397 text 소재 상세
+				733 text 현재 소재
+				734 button 소재 선택 해제
+				735 text MATERIAL PASSPORT
+				736 heading MAT-ga-01, Value: 3
+					737 text MAT-ga-01
+				738 text 철광석
+				739 container
+					740 text ORE  ·  GA 주문 소재
+				741 container
+					742 text 20,000 kg
+				743 definition list
+					744 container 고객
+						745 text 고객
+					746 text Synthetic carbon customer
+					747 container 주문
+						748 text 주문
+					749 button ORD-ga
+					750 container 작업 지시
+						751 text 작업 지시
+					752 text WO-ga-01
+					753 container 생산 로트
+						754 text 생산 로트
+					755 text LOT-ga-01
+					756 container 현재 위치
+						757 text 현재 위치
+					758 container
+						759 button (collapsed) 철광석 원료장 · 대기장, Secondary Actions: Expand
+						760 text OPS-ORE-SOURCE-BUFFER
+					761 container 품질
+						762 text 품질
+					763 container
+						764 text 검사 대기 ( PENDING )
+					765 container 재고 상태
+						766 text 재고 상태
+					767 container
+						768 text 재공 ( WIP )
+					769 container 현재 공정
+						770 text 현재 공정
+					771 text 공정 대기 / 완료
+					772 container 납기 · UTC
+						773 text 납기 · UTC
+					774 text 2026-10-30 07:55:00
+				775 container
+					776 button (expanded) 소재 운송 · 0건 진행, Secondary Actions: Collapse
+						777 text 소재 운송 · 
+						778 text 0
+						779 text 건 진행
+					780 container 선택 소재 운송
+				781 container
+					782 button (expanded) 변환 이력 · 1, Secondary Actions: Collapse
+						783 text 변환 이력 · 
+						784 text 1
+					785 content list
+						786 container
+							787 text 철광석 ORE  ·  MAT-ga-01:V01 20,000  kg
+				788 container
+					789 button (expanded) 검사 · 0, Secondary Actions: Collapse
+						790 text 검사 · 
+						791 text 0
+					792 text 검사 기록이 아직 없습니다.
+				793 button (expanded) 연결 출하 · 0, Secondary Actions: Collapse
+					794 text 연결 출하 · 
+					795 text 0
+			399 container 납기와 회복 비교
+				400 heading 납기와 회복 비교, Value: 2
+					401 text 납기와 회복 비교
+				402 text AI  미사용  · 실제 공정·물류 계산
+				403 heading 현재 실행 ETA · NORMAL, Value: 3
+					404 text 현재 실행 ETA ·  NORMAL
+				405 content list
+					414 container
+						415 text ORD-ga  ·  납기 내 ETA  2026-10-30 07:53:00 UTC 납기  2026-10-30 07:55:00 UTC
+				446 heading 동일 초기 계획의 새 실행 비교, Value: 3
+					447 text 동일 초기 계획의 새 실행 비교
+				448 text 시나리오 전환은 새 실행을 만듭니다. 납기는 모든 비교에서 동일합니다.
+				449 text HSM-B 우회: 배송 개선 이득 없음
+				450 text HSM-A 12분 중단 · 장애 1분 후 우회 검토 · 롤러 이동 5분과 실제 대기 포함 초기 계획 B 경유:  MAT-ga-01 현재 조건:  형태·강종·폭·용량·예약 조건 충족
+				451 content list
+					468 container
+						469 text ORD-ga DELAY  2026-10-30 07:52:00 UTC RECOVERY  2026-10-30 07:58:00 UTC 6분 더 늦음
+			492 container 주문 이행과 이벤트
+				493 heading 주문 이행 · ORD-ga, Value: 2
+					494 text 주문 이행 ·  ORD-ga
+				495 text 생산 → 품질 → 재고 → 출고 → 배송 주문량
+				796 container
+					797 text 60,300 kg
+				798 text 생산 완료
+				799 container
+					800 text 0 kg
+				801 text 출고 완료
+				802 container
+					803 text 0 kg
+				804 text 배송 완료
+				805 container
+					806 text 0 kg
+				807 text 출고 잔량
+				808 container
+					809 text 60,300 kg
+				810 text 배송 잔량
+				811 container
+					812 text 60,300 kg
+				496 heading 출하 연결, Value: 3
+					497 text 출하 연결
+				538 checkbox SHIP-ga-01 해상 · 계획 (PLANNED) 제품 창고 · 대기장 OPS-WAREHOUSE-BUFFER, Value: 0
+					539 text SHIP-ga-01
+					540 text 해상
+					541 text  · 
+					542 text 계획
+					543 text  (
+					544 text PLANNED
+					545 text )
+					546 text 제품 창고 · 대기장
+					547 text OPS-WAREHOUSE-BUFFER
+				548 checkbox SHIP-ga-02 해상 · 계획 (PLANNED) 제품 창고 · 대기장 OPS-WAREHOUSE-BUFFER, Value: 0
+					549 text SHIP-ga-02
+					550 text 해상
+					551 text  · 
+					552 text 계획
+					553 text  (
+					554 text PLANNED
+					555 text )
+					556 text 제품 창고 · 대기장
+					557 text OPS-WAREHOUSE-BUFFER
+				708 heading 현재 실행 이벤트, Value: 3
+					709 text 현재 실행 이벤트
+				710 text 선택한 소재의 이벤트가 아직 없습니다.
+				711 heading 보관된 실행 이력, Value: 3
+					712 text 보관된 실행 이력
+				713 button 실행 이력 불러오기
+			714 container
+				715 text 하나의 실행 · 서버 기준 시간 · kg / UTC AI  미사용  · 핵심 운영 독립 실행
+
+The focused UI element is 254 checkbox (settable, integer) Description: 소재 따라가기, Value: 1

@@ -1,0 +1,704 @@
+﻿{
+  "version": 2,
+  "units": "m",
+  "up_axis": "Y",
+  "forward_axis": "+X",
+  "yaw_unit": "rad",
+  "nodes": [
+    {
+      "id": "v2:road-a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "modes": [
+        "road"
+      ]
+    },
+    {
+      "id": "v2:road-b",
+      "position": [
+        10,
+        0,
+        0
+      ],
+      "modes": [
+        "road"
+      ]
+    },
+    {
+      "id": "v2:rail-a",
+      "position": [
+        20,
+        0,
+        0
+      ],
+      "modes": [
+        "rail"
+      ]
+    },
+    {
+      "id": "v2:rail-b",
+      "position": [
+        30,
+        0,
+        0
+      ],
+      "modes": [
+        "rail"
+      ]
+    },
+    {
+      "id": "v2:hot_metal-a",
+      "position": [
+        40,
+        0,
+        0
+      ],
+      "modes": [
+        "hot_metal"
+      ]
+    },
+    {
+      "id": "v2:hot_metal-b",
+      "position": [
+        50,
+        0,
+        0
+      ],
+      "modes": [
+        "hot_metal"
+      ]
+    },
+    {
+      "id": "v2:ladle-a",
+      "position": [
+        60,
+        0,
+        0
+      ],
+      "modes": [
+        "ladle"
+      ]
+    },
+    {
+      "id": "v2:ladle-b",
+      "position": [
+        70,
+        0,
+        0
+      ],
+      "modes": [
+        "ladle"
+      ]
+    },
+    {
+      "id": "v2:roller-a",
+      "position": [
+        80,
+        0,
+        0
+      ],
+      "modes": [
+        "roller"
+      ]
+    },
+    {
+      "id": "v2:roller-b",
+      "position": [
+        90,
+        0,
+        0
+      ],
+      "modes": [
+        "roller"
+      ]
+    },
+    {
+      "id": "v2:conveyor-a",
+      "position": [
+        100,
+        0,
+        0
+      ],
+      "modes": [
+        "conveyor"
+      ]
+    },
+    {
+      "id": "v2:conveyor-b",
+      "position": [
+        110,
+        0,
+        0
+      ],
+      "modes": [
+        "conveyor"
+      ]
+    },
+    {
+      "id": "v2:sea-a",
+      "position": [
+        120,
+        0,
+        0
+      ],
+      "modes": [
+        "sea"
+      ]
+    },
+    {
+      "id": "v2:sea-b",
+      "position": [
+        130,
+        0,
+        0
+      ],
+      "modes": [
+        "sea"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "id": "road-segment",
+      "from_node_id": "v2:road-a",
+      "to_node_id": "v2:road-b",
+      "mode": "road",
+      "points": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "road-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "rail-segment",
+      "from_node_id": "v2:rail-a",
+      "to_node_id": "v2:rail-b",
+      "mode": "rail",
+      "points": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "rail-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "hot_metal-segment",
+      "from_node_id": "v2:hot_metal-a",
+      "to_node_id": "v2:hot_metal-b",
+      "mode": "hot_metal",
+      "points": [
+        [
+          40,
+          0,
+          0
+        ],
+        [
+          50,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "hot_metal-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "ladle-segment",
+      "from_node_id": "v2:ladle-a",
+      "to_node_id": "v2:ladle-b",
+      "mode": "ladle",
+      "points": [
+        [
+          60,
+          0,
+          0
+        ],
+        [
+          70,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "ladle-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "roller-segment",
+      "from_node_id": "v2:roller-a",
+      "to_node_id": "v2:roller-b",
+      "mode": "roller",
+      "points": [
+        [
+          80,
+          0,
+          0
+        ],
+        [
+          90,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "roller-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "conveyor-segment",
+      "from_node_id": "v2:conveyor-a",
+      "to_node_id": "v2:conveyor-b",
+      "mode": "conveyor",
+      "points": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          110,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "conveyor-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    },
+    {
+      "id": "sea-segment",
+      "from_node_id": "v2:sea-a",
+      "to_node_id": "v2:sea-b",
+      "mode": "sea",
+      "points": [
+        [
+          120,
+          0,
+          0
+        ],
+        [
+          130,
+          0,
+          0
+        ]
+      ],
+      "conflict_zone_ids": [
+        "sea-zone"
+      ],
+      "speed_m_per_sim_s": 2
+    }
+  ],
+  "conflict_zones": [
+    {
+      "id": "road-zone",
+      "segment_ids": [
+        "road-segment"
+      ]
+    },
+    {
+      "id": "rail-zone",
+      "segment_ids": [
+        "rail-segment"
+      ]
+    },
+    {
+      "id": "hot_metal-zone",
+      "segment_ids": [
+        "hot_metal-segment"
+      ]
+    },
+    {
+      "id": "ladle-zone",
+      "segment_ids": [
+        "ladle-segment"
+      ]
+    },
+    {
+      "id": "roller-zone",
+      "segment_ids": [
+        "roller-segment"
+      ]
+    },
+    {
+      "id": "conveyor-zone",
+      "segment_ids": [
+        "conveyor-segment"
+      ]
+    },
+    {
+      "id": "sea-zone",
+      "segment_ids": [
+        "sea-segment"
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "id": "BF-A",
+      "kind": "equipment",
+      "pose": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "yaw_rad": 0
+      },
+      "sockets": [
+        {
+          "id": "road-a",
+          "pose": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "road-b",
+          "pose": {
+            "position": [
+              10,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "rail-a",
+          "pose": {
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "rail-b",
+          "pose": {
+            "position": [
+              30,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "hot_metal-a",
+          "pose": {
+            "position": [
+              40,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "hot_metal-b",
+          "pose": {
+            "position": [
+              50,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "ladle-a",
+          "pose": {
+            "position": [
+              60,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "ladle-b",
+          "pose": {
+            "position": [
+              70,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "roller-a",
+          "pose": {
+            "position": [
+              80,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "roller-b",
+          "pose": {
+            "position": [
+              90,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "conveyor-a",
+          "pose": {
+            "position": [
+              100,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "conveyor-b",
+          "pose": {
+            "position": [
+              110,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "sea-a",
+          "pose": {
+            "position": [
+              120,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        },
+        {
+          "id": "sea-b",
+          "pose": {
+            "position": [
+              130,
+              0,
+              0
+            ],
+            "yaw_rad": 0
+          }
+        }
+      ],
+      "modes": [
+        "road",
+        "rail",
+        "hot_metal",
+        "ladle",
+        "roller",
+        "conveyor",
+        "sea"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "id": "v2:road-slot",
+      "owner_id": "BF-A",
+      "socket_id": "road-a",
+      "node_id": "v2:road-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:rail-slot",
+      "owner_id": "BF-A",
+      "socket_id": "rail-a",
+      "node_id": "v2:rail-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:hot_metal-slot",
+      "owner_id": "BF-A",
+      "socket_id": "hot_metal-a",
+      "node_id": "v2:hot_metal-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:ladle-slot",
+      "owner_id": "BF-A",
+      "socket_id": "ladle-a",
+      "node_id": "v2:ladle-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:roller-slot",
+      "owner_id": "BF-A",
+      "socket_id": "roller-a",
+      "node_id": "v2:roller-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:conveyor-slot",
+      "owner_id": "BF-A",
+      "socket_id": "conveyor-a",
+      "node_id": "v2:conveyor-a",
+      "capacity_kg": 2000
+    },
+    {
+      "id": "v2:sea-slot",
+      "owner_id": "BF-A",
+      "socket_id": "sea-a",
+      "node_id": "v2:sea-a",
+      "capacity_kg": 2000
+    }
+  ],
+  "ports": [
+    {
+      "id": "v2:road-port",
+      "owner_id": "BF-A",
+      "socket_id": "road-b",
+      "node_id": "v2:road-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "road"
+      ]
+    },
+    {
+      "id": "v2:rail-port",
+      "owner_id": "BF-A",
+      "socket_id": "rail-b",
+      "node_id": "v2:rail-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "rail"
+      ]
+    },
+    {
+      "id": "v2:hot_metal-port",
+      "owner_id": "BF-A",
+      "socket_id": "hot_metal-b",
+      "node_id": "v2:hot_metal-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "hot_metal"
+      ]
+    },
+    {
+      "id": "v2:ladle-port",
+      "owner_id": "BF-A",
+      "socket_id": "ladle-b",
+      "node_id": "v2:ladle-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "ladle"
+      ]
+    },
+    {
+      "id": "v2:roller-port",
+      "owner_id": "BF-A",
+      "socket_id": "roller-b",
+      "node_id": "v2:roller-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "roller"
+      ]
+    },
+    {
+      "id": "v2:conveyor-port",
+      "owner_id": "BF-A",
+      "socket_id": "conveyor-b",
+      "node_id": "v2:conveyor-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "conveyor"
+      ]
+    },
+    {
+      "id": "v2:sea-port",
+      "owner_id": "BF-A",
+      "socket_id": "sea-b",
+      "node_id": "v2:sea-b",
+      "capacity_kg": 2000,
+      "modes": [
+        "sea"
+      ]
+    }
+  ],
+  "footprints": [
+    {
+      "id": "BF-A-body",
+      "owner_id": "BF-A",
+      "pose": {
+        "position": [
+          65,
+          0,
+          0
+        ],
+        "yaw_rad": 0
+      },
+      "size_m": [
+        140,
+        10,
+        10
+      ]
+    }
+  ],
+  "allowed_interiors": [
+    {
+      "id": "BF-A-interior",
+      "owner_id": "BF-A",
+      "footprint_id": "BF-A-body",
+      "pose": {
+        "position": [
+          65,
+          0,
+          0
+        ],
+        "yaw_rad": 0
+      },
+      "size_m": [
+        138,
+        8,
+        8
+      ]
+    }
+  ]
+}

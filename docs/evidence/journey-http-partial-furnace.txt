@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+date: Sat, 24 Oct 2026 09:47:15 GMT
+server: uvicorn
+content-length: 672
+content-type: application/json
+vary: Origin
+
+{"data_scope":"synthetic_product_journey","run_id":"b247bd59-d0d0-4b61-8d02-41c8cf6b2f4f","revision":6,"product_id":"hr","playing":false,"speed":1,"elapsed_ms":4200,"duration_ms":45800,"active_step_id":"hr-02","step_elapsed_ms":200,"step_duration_ms":6000,"completed":false,"material":{"lineage_id":"MATERIAL-hr","version_id":"MATERIAL-hr:1","parent_version_id":"MATERIAL-hr:0","form":"SLAB","role":"feedstock","location_id":"hr-02","mass_kg":20000},"history":[{"version_id":"MATERIAL-hr:0","parent_version_id":null,"form":"SLAB","step_id":"hr-01","at_ms":0},{"version_id":"MATERIAL-hr:1","parent_version_id":"MATERIAL-hr:0","form":"SLAB","step_id":"hr-01","at_ms":4000}]}

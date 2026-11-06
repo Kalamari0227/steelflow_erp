@@ -1,0 +1,289 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "mobile|WebGL"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:5174",
+          "trace": "on",
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1440,
+              "height": 1000
+            }
+          },
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo.spec.ts",
+      "file": "demo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile 2D fallback remains navigable without horizontal page overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1163,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:50:59.784Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "mobile-layout",
+                      "contentType": "application/json",
+                      "body": "ewogICJkb2N1bWVudFdpZHRoIjogMzkwLAogICJ2aWV3cG9ydFdpZHRoIjogMzkwLAogICJvdmVyZmxvd2luZyI6IFsKICAgIHsKICAgICAgInRhZyI6ICJUQUJMRSIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNTQwLjIxODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlRIRUFEIiwKICAgICAgImNsYXNzTmFtZSI6ICIiLAogICAgICAicmlnaHQiOiA1NDAuMjE4NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiVFIiLAogICAgICAiY2xhc3NOYW1lIjogIiIsCiAgICAgICJyaWdodCI6IDU0MC4yMTg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJUSCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNDQzLjg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJUSCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNTQwLjIxODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlRCT0RZIiwKICAgICAgImNsYXNzTmFtZSI6ICIiLAogICAgICAicmlnaHQiOiA1NDAuMjE4NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiVFIiLAogICAgICAiY2xhc3NOYW1lIjogInNlbGVjdGVkLXJvdyIsCiAgICAgICJyaWdodCI6IDU0MC4yMTg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJURCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNDQzLjg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJCVVRUT04iLAogICAgICAiY2xhc3NOYW1lIjogInRleHQtbGluayIsCiAgICAgICJyaWdodCI6IDQyOS4yODEyNQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJURCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNTQwLjIxODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlNQQU4iLAogICAgICAiY2xhc3NOYW1lIjogImJhZGdlIGJhZGdlLWFjdGl2ZSIsCiAgICAgICJyaWdodCI6IDUyMi40Njg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJTUEFOIiwKICAgICAgImNsYXNzTmFtZSI6ICJzdGF0dXMtZG90IiwKICAgICAgInJpZ2h0IjogNDY4Ljg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJUUiIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNTQwLjIxODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlREIiwKICAgICAgImNsYXNzTmFtZSI6ICIiLAogICAgICAicmlnaHQiOiA0NDMuODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIkJVVFRPTiIsCiAgICAgICJjbGFzc05hbWUiOiAidGV4dC1saW5rIiwKICAgICAgInJpZ2h0IjogNDI5LjI4MTI1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlREIiwKICAgICAgImNsYXNzTmFtZSI6ICIiLAogICAgICAicmlnaHQiOiA1NDAuMjE4NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiU1BBTiIsCiAgICAgICJjbGFzc05hbWUiOiAiYmFkZ2UgYmFkZ2UtYWN0aXZlIiwKICAgICAgInJpZ2h0IjogNTIyLjQ2ODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlNQQU4iLAogICAgICAiY2xhc3NOYW1lIjogInN0YXR1cy1kb3QiLAogICAgICAicmlnaHQiOiA0NjguODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlRSIiwKICAgICAgImNsYXNzTmFtZSI6ICIiLAogICAgICAicmlnaHQiOiA1NDAuMjE4NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiVEQiLAogICAgICAiY2xhc3NOYW1lIjogIiIsCiAgICAgICJyaWdodCI6IDQ0My44NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiQlVUVE9OIiwKICAgICAgImNsYXNzTmFtZSI6ICJ0ZXh0LWxpbmsiLAogICAgICAicmlnaHQiOiA0MjkuMjgxMjUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiVEQiLAogICAgICAiY2xhc3NOYW1lIjogIiIsCiAgICAgICJyaWdodCI6IDU0MC4yMTg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJTUEFOIiwKICAgICAgImNsYXNzTmFtZSI6ICJiYWRnZSBiYWRnZS1hY3RpdmUiLAogICAgICAicmlnaHQiOiA1MjIuNDY4NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiU1BBTiIsCiAgICAgICJjbGFzc05hbWUiOiAic3RhdHVzLWRvdCIsCiAgICAgICJyaWdodCI6IDQ2OC44NzUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiVFIiLAogICAgICAiY2xhc3NOYW1lIjogIiIsCiAgICAgICJyaWdodCI6IDU0MC4yMTg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJURCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNDQzLjg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJCVVRUT04iLAogICAgICAiY2xhc3NOYW1lIjogInRleHQtbGluayIsCiAgICAgICJyaWdodCI6IDQyOS4yODEyNQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJURCIsCiAgICAgICJjbGFzc05hbWUiOiAiIiwKICAgICAgInJpZ2h0IjogNTQwLjIxODc1CiAgICB9LAogICAgewogICAgICAidGFnIjogIlNQQU4iLAogICAgICAiY2xhc3NOYW1lIjogImJhZGdlIGJhZGdlLWFjdGl2ZSIsCiAgICAgICJyaWdodCI6IDUyMi40Njg3NQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJTUEFOIiwKICAgICAgImNsYXNzTmFtZSI6ICJzdGF0dXMtZG90IiwKICAgICAgInJpZ2h0IjogNDY4Ljg3NQogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-9864fa4fc791fd3c5dbf",
+          "file": "demo.spec.ts",
+          "line": 169,
+          "column": 1
+        },
+        {
+          "title": "WebGL context loss leaves core inventory and controls usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1400,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:54:18",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                      "column": 18,
+                      "line": 54
+                    },
+                    "snippet": "  52 |   const errors = browserErrors.get(context) ?? [];\n  53 |   await testInfo.attach('uncaught-browser-errors', { body: JSON.stringify(errors), contentType: 'application/json' });\n> 54 |   expect(errors).toEqual([]);\n     |                  ^\n  55 | });\n  56 |\n  57 | test('3D factory renders, orbit and zoom respond, and no browser exception occurs', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                        "column": 18,
+                        "line": 54
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  52 |   const errors = browserErrors.get(context) ?? [];\n  53 |   await testInfo.attach('uncaught-browser-errors', { body: JSON.stringify(errors), contentType: 'application/json' });\n> 54 |   expect(errors).toEqual([]);\n     |                  ^\n  55 | });\n  56 |\n  57 | test('3D factory renders, orbit and zoom respond, and no browser exception occurs', async ({ page }) => {\n    at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:54:18"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:51:01.292Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "remove-child-diagnostics-enabled",
+                      "contentType": "text/plain",
+                      "body": "TG9ncyBtaXNtYXRjaGVzIHdpdGhvdXQgc3VwcHJlc3Npbmcgb3JpZ2luYWwgZXhjZXB0aW9ucy4="
+                    },
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "WyJGYWlsZWQgdG8gZXhlY3V0ZSAncmVtb3ZlQ2hpbGQnIG9uICdOb2RlJzogVGhlIG5vZGUgdG8gYmUgcmVtb3ZlZCBpcyBub3QgYSBjaGlsZCBvZiB0aGlzIG5vZGUuIl0="
+                    },
+                    {
+                      "name": "remove-child-diagnostics",
+                      "contentType": "application/json",
+                      "body": "WwogICJSRU1PVkVfQ0hJTERfTUlTTUFUQ0gge1wicGFyZW50XCI6XCI8ZGl2IHN0eWxlPVxcXCJwb3NpdGlvbjogYWJzb2x1dGU7IHRvcDogMHB4OyBsZWZ0OiAwcHg7IHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoNjg1LjA1NHB4LCAyMjYuOTU4cHgsIDBweCkgc2NhbGUoMSk7IHRyYW5zZm9ybS1vcmlnaW46IDBweCAwcHg7IHotaW5kZXg6IDEwOTQ4MzE5O1xcXCI+PC9kaXY+XCIsXCJjaGlsZFwiOlwiPGRpdiBzdHlsZT1cXFwicG9zaXRpb246IGFic29sdXRlOyB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKC01MCUsIC01MCUsIDBweCk7XFxcIj48YnV0dG9uIHR5cGU9XFxcImJ1dHRvblxcXCIgYXJpYS1sYWJlbD1cXFwiU2VsZWN0IGxvY2F0aW9uIEN1c3RvbWVyIGRlbGl2ZXJ5XFxcIiBhcmlhLXByZXNzZWQ9XFxcImZhbHNlXFxcIiBzdHlsZT1cXFwid2hpdGUtc3BhY2U6IG5vd3JhcDsgYm9yZGVyOiAxcHggc29saWQgcmdiKDIyNywgMjMxLCAyMzUpOyBib3JkZXItcmFkaXVzOiA2cHg7IHBhZGRpbmc6IDRweCA4cHg7IGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45Mik7IGNvbG9yOiByZ2IoMzIsIDQyLCA1Myk7IGZvbnQ6IDYwMCAxMHB4IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJnF1b3Q7U2Vnb2UgVUkmcXVvdDssIHNhbnMtc2VyaWY7IGN1cnNvcjogcG9pbnRlcjtcXFwiPkN1c3RvbWVyIGRlbGl2ZXJ5PC9idXR0b24+PC9kaXY+XCIsXCJzdGFja1wiOlwiRXJyb3JcXG4gICAgYXQgTm9kZS5yZW1vdmVDaGlsZCAoPGFub255bW91cz46NToxOTYpXFxuICAgIGF0IHJlbW92ZUNoaWxkRnJvbUNvbnRhaW5lciAoaHR0cDovLzEyNy4wLjAuMTo1MTc0L25vZGVfbW9kdWxlcy8udml0ZS9kZXBzL2NodW5rLUtTM1dESlVCLmpzP3Y9ZTQ1MWUzOGQ6MTY4MzA6MTI4KVxcbiAgICBhdCBydW5XaXRoRmliZXJJbkRFViAoaHR0cDovLzEyNy4wLjAuMTo1MTc0L25vZGVfbW9kdWxlcy8udml0ZS9kZXBzL2NodW5rLUtTM1dESlVCLmpzP3Y9ZTQ1MWUzOGQ6ODY1OjcyKVxcbiAgICBhdCBjb21taXREZWxldGlvbkVmZmVjdHNPbkZpYmVyIChodHRwOi8vMTI3LjAuMC4xOjUxNzQvbm9kZV9tb2R1bGVzLy52aXRlL2RlcHMvY2h1bmstS1MzV0RKVUIuanM/dj1lNDUxZTM4ZDoxMDc2OToxOSlcXG4gICAgYXQgcmVjdXJzaXZlbHlUcmF2ZXJzZU11dGF0aW9uRWZmZWN0cyAoaHR0cDovLzEyNy4wLjAuMTo1MTc0L25vZGVfbW9kdWxlcy8udml0ZS9kZXBzL2NodW5rLUtTM1dESlVCLmpzP3Y9ZTQ1MWUzOGQ6MTA5OTA6MTMpXFxuICAgIGF0IGNvbW1pdE11dGF0aW9uRWZmZWN0c09uRmliZXIgKGh0dHA6Ly8xMjcuMC4wLjE6NTE3NC9ub2RlX21vZHVsZXMvLnZpdGUvZGVwcy9jaHVuay1LUzNXREpVQi5qcz92PWU0NTFlMzhkOjExMjA2OjEzKVxcbiAgICBhdCBmbHVzaE11dGF0aW9uRWZmZWN0cyAoaHR0cDovLzEyNy4wLjAuMTo1MTc0L25vZGVfbW9kdWxlcy8udml0ZS9kZXBzL2NodW5rLUtTM1dESlVCLmpzP3Y9ZTQ1MWUzOGQ6MTM2OTM6MTUpXFxuICAgIGF0IGNvbW1pdFJvb3QgKGh0dHA6Ly8xMjcuMC4wLjE6NTE3NC9ub2RlX21vZHVsZXMvLnZpdGUvZGVwcy9jaHVuay1LUzNXREpVQi5qcz92PWU0NTFlMzhkOjEzNjQyOjE1KVxcbiAgICBhdCBjb21wbGV0ZVJvb3QgKGh0dHA6Ly8xMjcuMC4wLjE6NTE3NC9ub2RlX21vZHVsZXMvLnZpdGUvZGVwcy9jaHVuay1LUzNXREpVQi5qcz92PWU0NTFlMzhkOjEzNTczOjExKVxcbiAgICBhdCBjb21wbGV0ZVJvb3RXaGVuUmVhZHkgKGh0dHA6Ly8xMjcuMC4wLjE6NTE3NC9ub2RlX21vZHVsZXMvLnZpdGUvZGVwcy9jaHVuay1LUzNXREpVQi5qcz92PWU0NTFlMzhkOjEyNzg4OjkpXCJ9Igpd"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts",
+                    "column": 18,
+                    "line": 54
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-383705d441f5c29bf788",
+          "file": "demo.spec.ts",
+          "line": 210,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T05:50:58.804Z",
+    "duration": 30587.407,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "backend/alembic.ini": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/alembic.ini",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/alembic.ini",
+    "sha256": "9f79a8cb104fc6bee98ca37697e8daa978e93d54a312f0eceb0a704ccc159ed5"
+  },
+  "backend/app/__init__.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/__init__.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "backend/app/ai.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/ai.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/ai.py",
+    "sha256": "fb4aec3abf6acd8f05d2bc821bdae1ecacf9a3bb2b5dc6c3fe06b07d68bf96b9"
+  },
+  "backend/app/data/journey_products.json": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/data/journey_products.json",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/data/journey_products.json",
+    "sha256": "1488bcbc21f77e87a9febf9592373aa4fdc3f71ca08c61144cb25fdec03ebb9f"
+  },
+  "backend/app/data/operations_routes.json": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/data/operations_routes.json",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/data/operations_routes.json",
+    "sha256": "b8b4c2db7b2961d672c9917c77fa485bad9114aaf71d0e285c31f47d904ebb6c"
+  },
+  "backend/app/database.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/database.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/database.py",
+    "sha256": "9316801785113c58f2d94480a51b1a082b5725e139194b4a8b3e9bbc72d1313f"
+  },
+  "backend/app/engine.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/engine.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/engine.py",
+    "sha256": "92339f103f74a6ddb0a8befb102dc152e63664068cec352cac59585d078ca0be"
+  },
+  "backend/app/fixtures.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/fixtures.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/fixtures.py",
+    "sha256": "eefc73ad4ae51fb4498e911b3b82f800f6795a543a86448901fd7b8cf1285d77"
+  },
+  "backend/app/journey.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/journey.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/journey.py",
+    "sha256": "dcea0fdc248baf0617ecb41b7c3a09890aaf510350dc29759dff8f4577e8f3f2"
+  },
+  "backend/app/journey_catalog.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/journey_catalog.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/journey_catalog.py",
+    "sha256": "e388b4d2385eb0b5add30562655f00efe3a57d77dc66474ecd58315bc8773cb6"
+  },
+  "backend/app/journey_routes.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/journey_routes.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/journey_routes.py",
+    "sha256": "7aba1d239f1e5cf4e1861a55f74f095f0cc43722172ae6d059cb8ce251107f9c"
+  },
+  "backend/app/journey_schemas.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/journey_schemas.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/journey_schemas.py",
+    "sha256": "3e7fb935e8d3ba35b6f511a2a03b1bf8ae4f5269963ea0876cb3b24e2a99e970"
+  },
+  "backend/app/main.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/main.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/main.py",
+    "sha256": "5a7fa33f4c412693ba608eced1ca560bbb1c980da4bbe5dde38fc007231b4772"
+  },
+  "backend/app/models.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/models.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/models.py",
+    "sha256": "c38c87c65908855b2e1a53fb450e3ab337fbba7169d160979293d12fdc027aaa"
+  },
+  "backend/app/operations/__init__.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/__init__.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/__init__.py",
+    "sha256": "d90c1039a6468284814a255465c670081f0694842bc271e48e1cb61cc300be1f"
+  },
+  "backend/app/operations/catalog.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/catalog.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/catalog.py",
+    "sha256": "8e42dc0237624cffe2fcc09dbcfdb9a6bfedba5b5284720f56bbcb091341ee49"
+  },
+  "backend/app/operations/contracts.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/contracts.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/contracts.py",
+    "sha256": "5b0a04e82dcfba422139f679ab829bd848d0bae6c2b202ad3ce842c81589b759"
+  },
+  "backend/app/operations/engine.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/engine.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/engine.py",
+    "sha256": "bc7bf612665ee5d005633d7413398dcc19f60c11c9fa63cc7b80de2337b707b9"
+  },
+  "backend/app/operations/events.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/events.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/events.py",
+    "sha256": "1cb24c2a01eaf6c515d4db9ac0ced26708c01ece12a58ee64d0236044cf4d4bf"
+  },
+  "backend/app/operations/fixtures.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/fixtures.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/fixtures.py",
+    "sha256": "cade4b3dcc7e801bf339d7f2fd350fc11f05c37fb4bd4cf960eb983225b4534e"
+  },
+  "backend/app/operations/forecast.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/forecast.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/forecast.py",
+    "sha256": "0d9900ca6a21fa6d0b94d1b07a422e6b0e6791e0305417ca5dc35fdc0db3779f"
+  },
+  "backend/app/operations/fulfillment.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/fulfillment.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/fulfillment.py",
+    "sha256": "83da9be21e9176ece57762e7bfcbe74189b4db72a6da16ec7ae096f05ad72054"
+  },
+  "backend/app/operations/layout.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/layout.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/layout.py",
+    "sha256": "880d50184fb57a732da3f0b59f541a24dbc6c1077f4861461c1c2c5a9bcd8ba0"
+  },
+  "backend/app/operations/lineage.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/lineage.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/lineage.py",
+    "sha256": "bbbf3837f80a8a80c4a24616efeedc567e108786ac8b516a9e89f28bb09d2f5a"
+  },
+  "backend/app/operations/models.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/models.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/models.py",
+    "sha256": "4cf6c9aada0afb65452a622be0df96887dc6dc8616bdba6764d5c5d56439bfc8"
+  },
+  "backend/app/operations/projection.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/projection.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/projection.py",
+    "sha256": "1c69a1ab0b03b6d082e253407a7b4c2797b0a1bb4f770b2fb742325cc72b1863"
+  },
+  "backend/app/operations/resources.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/resources.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/resources.py",
+    "sha256": "84ab4a8af226e7987d02e4938d86d4619351a1679153f4790e9243670450b33d"
+  },
+  "backend/app/operations/scenarios.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/scenarios.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/scenarios.py",
+    "sha256": "8807ca0b1f30fe482a3427c64d6d1b1e3a706f56be5e63937d2abfa648276fdc"
+  },
+  "backend/app/operations/service.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/service.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/service.py",
+    "sha256": "7b9a7c8f1f5914b2898e1c8022b97d63178a0efc938487c6c47d0b9eaad9c733"
+  },
+  "backend/app/operations/transport.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/operations/transport.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/operations/transport.py",
+    "sha256": "71f8aba547fe1ecc7686e14c2103d17ae0252ad3b10bd63746f85de3144c4e33"
+  },
+  "backend/app/production.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/production.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/production.py",
+    "sha256": "3d57804dc55d5b54b20e8b52d145236b865dde197bf80c128c75261d877df000"
+  },
+  "backend/app/production_plans.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/production_plans.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/production_plans.py",
+    "sha256": "9a10fc60f48050a6848b780861716ba2955f38ec65f39a12c5dcea31dd89e343"
+  },
+  "backend/app/production_schemas.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/production_schemas.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/production_schemas.py",
+    "sha256": "e20949bda88a489086ef1a61df1a5a1872d3489c89246e0bfe77fdd8e9e1d659"
+  },
+  "backend/app/rules.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/rules.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/rules.py",
+    "sha256": "194cca4d39072d98be3754c7650a82b4370362ea2b5aa3d73aa1b36af1c2f203"
+  },
+  "backend/app/schemas.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/schemas.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/schemas.py",
+    "sha256": "6cf742982bb8c8509300a1bcd47c3f9ff89559c01fcfadb812b0be43dea04132"
+  },
+  "backend/app/snapshot.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/app/snapshot.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/app/snapshot.py",
+    "sha256": "d1f92c20fe06ea01daa3abe9d6fc074349aba3f000c5f5a143a5986e35f9dbea"
+  },
+  "backend/migrations/env.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/migrations/env.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/migrations/env.py",
+    "sha256": "83361a7e991fdc9e5faa00308ef9ca3cce5f5ceede3c8284acb7d701d6dc23ac"
+  },
+  "backend/migrations/script.py.mako": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/migrations/script.py.mako",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/migrations/script.py.mako",
+    "sha256": "fe14918655340377e439c63ef17173951e82b710745027fa744e63e9aa15504a"
+  },
+  "backend/migrations/versions/34214731143e_initial.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/migrations/versions/34214731143e_initial.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/migrations/versions/34214731143e_initial.py",
+    "sha256": "6b1c9d4555ef9faca4707eb89806ebd1c84b37564f45ab2eb97b7f607d819a9b"
+  },
+  "backend/migrations/versions/9db710a4c201_product_journey.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/migrations/versions/9db710a4c201_product_journey.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/migrations/versions/9db710a4c201_product_journey.py",
+    "sha256": "2537bcd221cf50de3546871896fcd7bc8d8c2db819bfb5c69abf3df8ac223ec0"
+  },
+  "backend/migrations/versions/ops_20261024_unified.py": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/migrations/versions/ops_20261024_unified.py",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/migrations/versions/ops_20261024_unified.py",
+    "sha256": "bee7f990465a8ad63331953be7e5029b3abd009b93df86d016802134ea3979cb"
+  },
+  "backend/pyproject.toml": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/pyproject.toml",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/pyproject.toml",
+    "sha256": "8a66043a6f2848d69a8eeb3e1283452bfa983e7ad98aa49cb708f9b888d76474"
+  },
+  "backend/uv.lock": {
+    "source": "/Users/ethanlee/Desktop/ERP/backend/uv.lock",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend/uv.lock",
+    "sha256": "39f9aec9e0ff00795d67f7f87ad2c92ae6b1362c39d6a5b5b58c23d0827aef34"
+  },
+  "shared/factory-layout.json": {
+    "source": "/Users/ethanlee/Desktop/ERP/shared/factory-layout.json",
+    "copy": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/shared/factory-layout.json",
+    "sha256": "8d2474869c983684ed1ece7e56310a9a200327b8bfc8db8418f791d7cdbfdeea"
+  }
+}

@@ -1,0 +1,1598 @@
+{
+  "schema_version": 1,
+  "source_proposal_sha256": "60087ebb5a1671f550925177055d0284c9ac4dc3406ffa7b7406cdba130b20c4",
+  "source_sha256": {
+    "build.py": "f4f905116308c8d1d976f4af9b6e5686b272bb772e125bb44018b704ec364f20",
+    "handling.py": "99e38831695300ce13eae071c314c26a3af3f57a4482e255c1dc3305486bea0e",
+    "manifest.py": "08ccafa0b78d883570dd4c5a54c9a6f2dac235e999e7ecefeea939d0c84a6404",
+    "render.py": "6a5ac37703964a1164077d9f5817c053da0c21abc0962b9922385c19fb1b3a98",
+    "rail.py": "22b1f4b82a8dae3b0195e110445aa407109234a81a2305bf05ecdb62bba09717",
+    "bulk.py": "2105fabd26dc9f3a67072a5cb0bb9895c62fe8f061024331029561f2ed4ed8c0",
+    "ships.py": "aa4543a3cc2c7d258e69a82058ab53aa54c2c1890fdd6886c937cb97a78c1101",
+    "mechanics.py": "9c3a1d635e0cf44f272cbf75d0d072175addcf13a370f185375258b543cf6019",
+    "transmission.py": "8c7bcb3ccf04d2dc452c7fb626cedcd326578569b748cc67c2fb4579df7c8e19",
+    "geometry.py": "b3e6dfdca5315c0ba157660ce5904e78da4ac856421be50a01e3993ccf48eb9c",
+    "road.py": "e4c85d968a4b4c38a7a8a26f3f592d74df3786be0bebb585d6b0081bf12b50ac"
+  },
+  "registrations": [
+    {
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "variant": "variant:fleet:truck:standard",
+      "category": "fleet",
+      "kind": "truck",
+      "policy_id": "policy:fleet:truck",
+      "required_parts": [
+        {
+          "id": "steering",
+          "function": "steering",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            6.7,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "wheel_rotation",
+          "function": "wheel_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -6.5,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "steering_right",
+          "function": "steering",
+          "driver_id": "steering",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            6.7,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_0_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -6.5,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -4.7,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -4.7,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering_right",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering_right",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "wheel_2_left_roll",
+        "wheel_2_right_roll"
+      ],
+      "relative_fixed_parts": [],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:truck-dump",
+      "variant": "variant:fleet:truck:dump",
+      "category": "fleet",
+      "kind": "dump-truck",
+      "policy_id": "policy:fleet:dump-truck",
+      "required_parts": [
+        {
+          "id": "steering",
+          "function": "steering",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            6.7,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "wheel_rotation",
+          "function": "wheel_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -6.5,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "tipper_lift",
+          "function": "tipper_lift",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -8.0,
+            1.75,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.8,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "steering_right",
+          "function": "steering",
+          "driver_id": "steering",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            6.7,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_0_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -6.5,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -4.7,
+            0.7,
+            -1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -4.7,
+            0.7,
+            1.12
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering_right",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering_right",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "wheel_2_left_roll",
+        "wheel_2_right_roll"
+      ],
+      "relative_fixed_parts": [],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:slab-carrier",
+      "variant": "variant:fleet:slab-carrier:standard",
+      "category": "fleet",
+      "kind": "slab-carrier",
+      "policy_id": "policy:fleet:slab-carrier",
+      "required_parts": [
+        {
+          "id": "steering",
+          "function": "steering",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            5.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "wheel_rotation",
+          "function": "wheel_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -5.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "deck_lift",
+          "function": "deck_lift",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            1.7,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.8,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "translation",
+          "representation": "canonical"
+        },
+        {
+          "id": "steering_right",
+          "function": "steering",
+          "driver_id": "steering",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            5.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_0_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -5.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -2.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -2.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            2.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            2.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_3_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_3_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering_right",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering_right",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "wheel_3_left_roll",
+        "wheel_3_right_roll"
+      ],
+      "relative_fixed_parts": [],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:coil-carrier",
+      "variant": "variant:fleet:coil-carrier:standard",
+      "category": "fleet",
+      "kind": "coil-carrier",
+      "policy_id": "policy:fleet:coil-carrier",
+      "required_parts": [
+        {
+          "id": "steering",
+          "function": "steering",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            5.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "wheel_rotation",
+          "function": "wheel_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -5.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "saddle_lift",
+          "function": "saddle_lift",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            1.7,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.8,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "translation",
+          "representation": "canonical"
+        },
+        {
+          "id": "steering_right",
+          "function": "steering",
+          "driver_id": "steering",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            5.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_0_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -5.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -2.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -2.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            2.0,
+            0.65,
+            -1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_2_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            2.0,
+            0.65,
+            1.58
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_3_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_3_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering_right",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering_right",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "wheel_3_left_roll",
+        "wheel_3_right_roll"
+      ],
+      "relative_fixed_parts": [
+        {
+          "part_id": "coil_saddle",
+          "parent_part_id": "saddle_lift",
+          "parent_id": "saddle_lift",
+          "ancestors": [
+            "saddle_lift",
+            "root"
+          ]
+        }
+      ],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:forklift",
+      "variant": "variant:fleet:forklift:standard",
+      "category": "fleet",
+      "kind": "forklift",
+      "policy_id": "policy:fleet:forklift",
+      "required_parts": [
+        {
+          "id": "steering",
+          "function": "steering",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.8,
+            0.55,
+            -0.95
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "wheel_rotation",
+          "function": "wheel_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -1.6,
+            0.55,
+            -0.95
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "mast_tilt",
+          "function": "mast_tilt",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            1.15,
+            0.6,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.12,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "fork_lift",
+          "function": "fork_lift",
+          "driver_id": null,
+          "parent_id": "mast_tilt",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.15,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 2.0,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "mast_tilt",
+            "root"
+          ],
+          "motion": "translation",
+          "representation": "canonical"
+        },
+        {
+          "id": "steering_right",
+          "function": "steering",
+          "driver_id": "steering",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.8,
+            0.55,
+            0.95
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.25,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_0_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            -1.6,
+            0.55,
+            0.95
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_left_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        },
+        {
+          "id": "wheel_1_right_roll",
+          "function": "wheel_rotation",
+          "driver_id": "wheel_rotation",
+          "ratio": 1.0,
+          "parent_id": "steering_right",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 6.283185307179586,
+            "rest": 0
+          },
+          "ancestors": [
+            "steering_right",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "wheel_1_left_roll",
+        "wheel_1_right_roll"
+      ],
+      "relative_fixed_parts": [],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:torpedo",
+      "variant": "variant:fleet:torpedo:standard",
+      "category": "fleet",
+      "kind": "torpedo",
+      "policy_id": "policy:fleet:torpedo",
+      "required_parts": [
+        {
+          "id": "bogie_rotation",
+          "function": "bogie_rotation",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            -9.9,
+            0.8,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.18,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "vessel_tilt",
+          "function": "vessel_tilt",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            4.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.65,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "rear_bogie",
+          "function": "bogie_rotation",
+          "driver_id": "bogie_rotation",
+          "ratio": -1.0,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            9.9,
+            0.8,
+            0.0
+          ],
+          "range": {
+            "min": -0.18,
+            "max": -0.0,
+            "rest": 0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [],
+      "relative_fixed_parts": [
+        {
+          "part_id": "hot_metal_vessel",
+          "parent_part_id": "vessel_tilt",
+          "parent_id": "vessel_tilt",
+          "ancestors": [
+            "vessel_tilt",
+            "root"
+          ]
+        }
+      ],
+      "follower_socket_descendants": []
+    },
+    {
+      "asset_id": "steelflow:transport:unloader",
+      "variant": "variant:fleet:unloader:standard",
+      "category": "fleet",
+      "kind": "unloader",
+      "policy_id": "policy:fleet:unloader",
+      "required_parts": [
+        {
+          "id": "boom_slew",
+          "function": "boom_slew",
+          "driver_id": null,
+          "parent_id": "root",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.5,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "grab_hoist",
+          "function": "grab_hoist",
+          "driver_id": null,
+          "parent_id": "boom",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "pivot_m": [
+            17.0,
+            -10.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 2.0,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "boom",
+            "boom_slew",
+            "root"
+          ],
+          "motion": "translation",
+          "representation": "canonical"
+        },
+        {
+          "id": "grab_open",
+          "function": "grab_open",
+          "driver_id": null,
+          "parent_id": "grab_hoist",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "pivot_m": [
+            -0.75,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 0.4,
+            "rest": 0.0
+          },
+          "ancestors": [
+            "grab_hoist",
+            "boom",
+            "boom_slew",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "canonical"
+        },
+        {
+          "id": "grab_right",
+          "function": "grab_open",
+          "driver_id": "grab_open",
+          "ratio": -1.0,
+          "parent_id": "grab_hoist",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "pivot_m": [
+            0.75,
+            0.0,
+            0.0
+          ],
+          "range": {
+            "min": -0.4,
+            "max": -0.0,
+            "rest": 0
+          },
+          "ancestors": [
+            "grab_hoist",
+            "boom",
+            "boom_slew",
+            "root"
+          ],
+          "motion": "rotation",
+          "representation": "mechanical_follower"
+        }
+      ],
+      "nested_followers": [
+        "grab_right"
+      ],
+      "relative_fixed_parts": [],
+      "follower_socket_descendants": []
+    }
+  ],
+  "scope": "Closed source-bound admission constraints; no operating geometry certificate, public channel or self-declared manifest exception."
+}

@@ -1,0 +1,5 @@
+SteelFlow original procedural transport assets, 2026.
+Original project-owned geometry and PBR materials; project-local distribution.
+No third-party meshes, photographs, textures or paid assets are included.
+Blender is GPL-3.0-or-later; tool license remains separately pinned in assets/toolchain.json.
+Public references explain equipment function only. All dimensions and capacities are synthetic design assumptions, not measured industrial specifications or certified lifting equipment.

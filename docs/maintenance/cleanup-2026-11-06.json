@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-06",
+  "cloned_files": 9321,
+  "logical_clone_bytes": 41273717436,
+  "duplicate_report_files_removed": 45,
+  "duplicate_report_bytes_removed": 286113897,
+  "free_bytes_before": 24601751552,
+  "free_bytes_after_cleanup": 44256354304,
+  "observed_free_bytes_gain": 19654602752,
+  "measurement_note": "df/statvfs measures the whole APFS volume; concurrent system activity can affect the difference. du includes shared clone blocks.",
+  "unused_git_temporary_bytes_removed": 1202716684
+}

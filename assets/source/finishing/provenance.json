@@ -1,0 +1,37 @@
+{
+  "copied_primitives": [
+    {
+      "source": "assets/source/hot-rolling/geometry.py",
+      "sha256": "8e51bada52fbb03e60270417d15284cfdca4fceb201e531865ce6546734eb752",
+      "destination": "assets/source/finishing/geometry.py"
+    },
+    {
+      "source": "assets/source/hot-rolling/transmission.py",
+      "sha256": "d251d9c7bada91baccc05ae9ddde789a55a03a8ab7463d3b9bf5447e8dc87fdf",
+      "destination": "assets/source/finishing/transmission.py"
+    },
+    {
+      "source": "assets/source/hot-rolling/manifest.py",
+      "sha256": "0aeb786b3cb971bf5724bb4ded013639d6800731cfb311a704f43a6d17a0c349",
+      "destination": "assets/source/finishing/manifest.py"
+    },
+    {
+      "source": "assets/source/hot-rolling/render.py",
+      "sha256": "8b50c5e2c4b30e80e308c5a567b41187f69a276bdc0fde57f2927b3b6e59164a",
+      "destination": "assets/source/finishing/render.py"
+    },
+    {
+      "source": "assets/source/hot-rolling/verify.mjs",
+      "sha256": "e67c67d030677be16e106a6a93bc3d3e88050ac772d1b9a1941eda19b9d83195",
+      "destination": "assets/source/finishing/verify.mjs"
+    },
+    {
+      "source": "scripts/assets/glb.mjs",
+      "sha256": "3d323f30052d2c8cbbc21076fe99dc78945588e29a1780a1cf26d66f2f9020d5",
+      "destination": "assets/source/finishing/oracle.mjs",
+      "adaptation": "Translation expected displacement selects the real negative endpoint for the admitted GO07 car range; all tolerances unchanged."
+    }
+  ],
+  "no_live_source_import": true,
+  "created_at": "2026-10-30T09:51:51.950331+00:00"
+}

@@ -1,0 +1,22 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
+import { build } from 'esbuild';
+import { readGlb, validateAssetGlb } from '../../../scripts/assets/glb.mjs';
+import { productionParser } from '../../../scripts/assets/production-parser.mjs';
+
+const root = resolve(import.meta.dirname, 'generated'), manifestPath = resolve(root, 'public/assets/steelworks/manifest.json');
+const raw = JSON.parse(readFileSync(manifestPath, 'utf8'));
+for (const asset of raw.assets) for (const lod of asset.lods) lod.semantic_geometry_sha256 = readGlb(readFileSync(resolve(root, lod.artifact.path))).semantic;
+writeFileSync(manifestPath, `${JSON.stringify(raw, null, 2)}\n`);
+const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const source = { manifestSha256: hash(readFileSync(manifestPath)), policySha256: hash(readFileSync('shared/asset-requirements.json')), registrySha256: hash(readFileSync('shared/motion-recipes.json')) };
+writeFileSync(resolve(import.meta.dirname, 'identity.json'), `${JSON.stringify({ bundleId: 't61-mechanical-followers-contract-v3', bundleHash: hash(JSON.stringify(source)), ...source }, null, 2)}\n`);
+const parser = await productionParser(), manifest = parser(readFileSync(manifestPath, 'utf8'));
+const module = await build({ entryPoints: [resolve(import.meta.dirname, 'poses.ts')], bundle: true, write: false, platform: 'node', format: 'esm', target: 'node24' });
+const { miniatureRequest } = await import(`data:text/javascript;base64,${Buffer.from(module.outputFiles[0].contents).toString('base64')}`);
+const requests = [0.2, 0.5, 0.8, 0.43].flatMap(progress => ['paused', 'blocked', 'running'].map(clock => ({ progress, clock, ...miniatureRequest(manifest, progress, clock) })));
+writeFileSync(resolve(import.meta.dirname, 'requests.json'), `${JSON.stringify({ source, requests }, null, 2)}\n`);
+const proof = manifest.assets.flatMap(asset => asset.lods.map(lod => ({ level: lod.level, ...validateAssetGlb(asset, readGlb(readFileSync(resolve(root, lod.artifact.path))), { axis_origin: [0, 0, 0], axis_front: [1, 0, 0], axis_up: [0, 1, 0], axis_side: [0, 0, -1] }) })));
+writeFileSync(resolve(root, 'verification.json'), `${JSON.stringify({ status: 'PASS', source, lods: proof }, null, 2)}\n`);
+console.log(JSON.stringify({ source, requests: requests.length, lods: proof.map(row => ({ level: row.level, triangles: row.triangles, animations: row.animations })) }, null, 2));

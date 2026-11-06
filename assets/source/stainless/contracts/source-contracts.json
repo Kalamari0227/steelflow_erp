@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "requirements_source_sha256": "dd4960d0df6d9eb5256af37ce4b3e7b6e8e7e558f7b37e135c2741c3d08d8097",
+  "motion_source_sha256": "ce9a7afd183f3561fc3e9fa871fbb05c422eacabc50326fb864136562e25c728",
+  "bindings": [
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-HR-02",
+      "policy_group_id": "policy:equipment:eaf",
+      "placement_ids": [
+        "equipment:STS-HR-02"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:eaf",
+        "src:sts-hr-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:eaf:STS-HR-02",
+        "qa:equipment:STS-HR-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "variant": "variant:aod:STS-HR-03",
+      "policy_group_id": "policy:equipment:aod",
+      "placement_ids": [
+        "equipment:STS-HR-03"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-hr"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:aod",
+        "src:sts-hr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:aod:STS-HR-03",
+        "qa:equipment:STS-HR-03"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-PLATE-02",
+      "policy_group_id": "policy:equipment:eaf",
+      "placement_ids": [
+        "equipment:STS-PLATE-02"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:eaf",
+        "src:sts-plate-02"
+      ],
+      "qa_row_ids": [
+        "qa:variant:eaf:STS-PLATE-02",
+        "qa:equipment:STS-PLATE-02"
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "variant": "variant:aod:STS-PLATE-03",
+      "policy_group_id": "policy:equipment:aod",
+      "placement_ids": [
+        "equipment:STS-PLATE-03"
+      ],
+      "allowed_families": [
+        "stainless"
+      ],
+      "stage_ids": [
+        "sts-plate"
+      ],
+      "requirement_ids": [
+        "scope:asset-family:aod",
+        "src:sts-plate-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:aod:STS-PLATE-03",
+        "qa:equipment:STS-PLATE-03"
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "category": "equipment",
+      "kind": "aod",
+      "families": [
+        "stainless"
+      ],
+      "required_functions": [
+        "vessel_tilt"
+      ],
+      "fixed_functions": [
+        "gas_tuyere"
+      ],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:aod"
+      ],
+      "state_bound_fixed_functions": [
+        "gas_tuyere"
+      ],
+      "id": "policy:equipment:aod",
+      "relative_fixed_parts": [
+        {
+          "fixed_part_id": "gas_tuyere",
+          "parent_part_id": "vessel_tilt"
+        }
+      ]
+    },
+    {
+      "category": "equipment",
+      "kind": "eaf",
+      "families": [
+        "stainless"
+      ],
+      "required_functions": [
+        "electrode_lift",
+        "vessel_tilt",
+        "roof_swing"
+      ],
+      "fixed_functions": [],
+      "required_socket_roles": [
+        "support",
+        "entry",
+        "work",
+        "exit"
+      ],
+      "roof_required": false,
+      "requirement_ids": [
+        "scope:asset-family:eaf"
+      ],
+      "state_bound_fixed_functions": [],
+      "id": "policy:equipment:eaf"
+    }
+  ],
+  "motion_recipes": [
+    {
+      "id": "motion:source:sts-hr-02",
+      "semantic_id": "source:sts-hr-02",
+      "execution_kind": "process",
+      "meaning": "전기로 — 스테인리스 원료를 용해합니다.",
+      "requirement_ids": [
+        "src:sts-hr-02"
+      ],
+      "source_step_ids": [
+        "sts-hr-02"
+      ],
+      "compiled_step_ids": [
+        "step:sts-hr:sts-hr-02",
+        "step:sts-cr:sts-hr-02"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "electrode_lift",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: electrode_lift"
+        },
+        {
+          "function_id": "vessel_tilt",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: vessel_tilt"
+        },
+        {
+          "function_id": "roof_swing",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: roof_swing"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:eaf"
+      ]
+    },
+    {
+      "id": "motion:source:sts-hr-03",
+      "semantic_id": "source:sts-hr-03",
+      "execution_kind": "process",
+      "meaning": "정련기 — 용강을 정련하는 공정입니다.",
+      "requirement_ids": [
+        "src:sts-hr-03"
+      ],
+      "source_step_ids": [
+        "sts-hr-03"
+      ],
+      "compiled_step_ids": [
+        "step:sts-hr:sts-hr-03",
+        "step:sts-cr:sts-hr-03"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "vessel_tilt",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:aod",
+          "semantic_need": "정련기: vessel_tilt"
+        },
+        {
+          "function_id": "gas_tuyere",
+          "kind": "state",
+          "window_id": "work",
+          "policy_id": "policy:equipment:aod",
+          "semantic_need": "정련기: gas_tuyere"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:aod"
+      ]
+    },
+    {
+      "id": "motion:source:sts-plate-02",
+      "semantic_id": "source:sts-plate-02",
+      "execution_kind": "process",
+      "meaning": "전기로 — 스테인리스 원료를 용해합니다.",
+      "requirement_ids": [
+        "src:sts-plate-02"
+      ],
+      "source_step_ids": [
+        "sts-plate-02"
+      ],
+      "compiled_step_ids": [
+        "step:sts-plate:sts-plate-02"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "electrode_lift",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: electrode_lift"
+        },
+        {
+          "function_id": "vessel_tilt",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: vessel_tilt"
+        },
+        {
+          "function_id": "roof_swing",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:eaf",
+          "semantic_need": "전기로: roof_swing"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:eaf"
+      ]
+    },
+    {
+      "id": "motion:source:sts-plate-03",
+      "semantic_id": "source:sts-plate-03",
+      "execution_kind": "process",
+      "meaning": "정련기 — 용강을 정련하는 공정입니다.",
+      "requirement_ids": [
+        "src:sts-plate-03"
+      ],
+      "source_step_ids": [
+        "sts-plate-03"
+      ],
+      "compiled_step_ids": [
+        "step:sts-plate:sts-plate-03"
+      ],
+      "windows": [
+        {
+          "id": "entry",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "id": "work",
+          "start": 0.2,
+          "end": 0.8
+        },
+        {
+          "id": "exit",
+          "start": 0.8,
+          "end": 1
+        }
+      ],
+      "functions": [
+        {
+          "function_id": "vessel_tilt",
+          "kind": "moving",
+          "window_id": "work",
+          "policy_id": "policy:equipment:aod",
+          "semantic_need": "정련기: vessel_tilt"
+        },
+        {
+          "function_id": "gas_tuyere",
+          "kind": "state",
+          "window_id": "work",
+          "policy_id": "policy:equipment:aod",
+          "semantic_need": "정련기: gas_tuyere"
+        }
+      ],
+      "binding_status": "pending_delivery",
+      "policy_ids": [
+        "policy:equipment:aod"
+      ]
+    }
+  ]
+}

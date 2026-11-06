@@ -1,0 +1,116 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/production.spec.ts
+
+[WebServer] INFO:     Started server process [97724]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:97779) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:97781) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/production.spec.ts:46:1 › all eight stages expose internal work and return to overview in 2D (2.5s)
+  ✓  2 tests/production.spec.ts:58:1 › all nine product routes preserve casting branches and HGI bypasses cold rolling (1.8s)
+  ✓  3 tests/production.spec.ts:84:1 › same HR and CR forms distinguish sale products from feedstock and preserve genealogy (2.2s)
+  ✘  4 tests/production.spec.ts:115:1 › scenario changes alter visible work and reset reproduces production at the same step (14.3s)
+(node:97974) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests/production.spec.ts:142:1 › mobile 2D core actions fit 390px and backend pause and step remain authoritative (2.4s)
+  ✘  6 tests/production.spec.ts:165:1 › production WebGL context loss recovers to fully usable 2D stages and material selection (12.4s)
+(node:98086) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 tests/production.spec.ts:187:1 › 3D renders and camera responds while workspace tabs remain stable and local-only (3.0s)
+
+
+  1) tests/production.spec.ts:115:1 › scenario changes alter visible work and reset reproduces production at the same step 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('region', { name: '공정 내부 작업 흐름' })
+    Expected substring: "HSM-A"
+    Received string:    "공정 내부 흐름PROD-GI01산세PICKLE-01 · 작업 중02냉간압연CRM-01 · 대기03소둔ANNEAL-01 · 대기"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('region', { name: '공정 내부 작업 흐름' }) with timeout 10000ms
+      - waiting for getByRole('region', { name: '공정 내부 작업 흐름' })
+        24 × locator resolved to <section aria-label="공정 내부 작업 흐름" class="production-substeps">…</section>
+           - unexpected value "공정 내부 흐름PROD-GI01산세PICKLE-01 · 작업 중02냉간압연CRM-01 · 대기03소둔ANNEAL-01 · 대기"
+
+
+      128 |     await page.getByLabel('제품 경로', { exact: true }).selectOption('GI');
+      129 |     await inspector(page).getByRole('button', { name: /현재 공정/ }).click();
+    > 130 |     await expect(page.getByRole('region', { name: '공정 내부 작업 흐름' })).toContainText(scenario === 'DELAY' ? 'HSM-A' : scenario === 'RECOVERY' ? 'ANNEAL-01' : 'HDG-01');
+          |                                                                     ^
+      131 |     await shot(page, `scenario-${scenario.toLowerCase()}-tick6`);
+      132 |     await command(page, 'Reset simulation', 'reset');
+      133 |     for (let i = 0; i < 6; i++) state = await step(page);
+        at /Users/ethanlee/Desktop/ERP/tests/production.spec.ts:130:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/production-scenario-change-7d486-production-at-the-same-step/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/production-scenario-change-7d486-production-at-the-same-step/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/production-scenario-change-7d486-production-at-the-same-step/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/production-scenario-change-7d486-production-at-the-same-step/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/production-scenario-change-7d486-production-at-the-same-step/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/production.spec.ts:165:1 › production WebGL context loss recovers to fully usable 2D stages and material selection 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('3D production view unavailable', { exact: true })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('3D production view unavailable', { exact: true }) with timeout 10000ms
+      - waiting for getByText('3D production view unavailable', { exact: true })
+
+
+      174 |   });
+      175 |   expect(supported).toBe(true);
+    > 176 |   await expect(page.getByText('3D production view unavailable', { exact: true })).toBeVisible();
+          |                                                                                   ^
+      177 |   await page.getByRole('button', { name: 'Open production list', exact: true }).click();
+      178 |   await expect(page.getByRole('button', { name: '2D 공정', exact: true })).toHaveAttribute('aria-pressed', 'true');
+      179 |   await page.getByLabel('제품 경로', { exact: true }).selectOption('HGI');
+        at /Users/ethanlee/Desktop/ERP/tests/production.spec.ts:176:83
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/production-production-WebG-9ac75-ages-and-material-selection/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/production-production-WebG-9ac75-ages-and-material-selection/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/production-production-WebG-9ac75-ages-and-material-selection/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/production-production-WebG-9ac75-ages-and-material-selection/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/production-production-WebG-9ac75-ages-and-material-selection/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests/production.spec.ts:115:1 › scenario changes alter visible work and reset reproduces production at the same step 
+    tests/production.spec.ts:165:1 › production WebGL context loss recovers to fully usable 2D stages and material selection 
+  5 passed (42.4s)

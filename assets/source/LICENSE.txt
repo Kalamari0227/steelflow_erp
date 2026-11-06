@@ -1,0 +1,10 @@
+SteelFlow original procedural assets
+
+Models, textures and recipes in this directory are authored directly for this
+project. No external artwork, meshes, textures or AI generation service inputs
+are used. The project owner may use and modify these files within this project.
+No third-party asset license is asserted. Distribution permission: project-local.
+
+Blender is a separate free GPL-licensed tool, not an external asset input. Its
+license remains in the retained official Blender.app bundle. No tool license is
+used to imply third-party artwork ownership. Model dimensions are synthetic.

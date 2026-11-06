@@ -1,0 +1,1906 @@
+[
+  {
+    "id": "hr",
+    "family": "열연",
+    "name": "열연 코일",
+    "description": "슬래브가 가열·압연·냉각·권취를 거쳐 열연 코일이 되는 흐름입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM0zYAE",
+    "source_title": "My POSCO · 열연 제조공정",
+    "input_form": "SLAB",
+    "output_form": "HR_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "hr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "SLAB",
+        "output_form": "SLAB",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "hr-02",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 가열로에 장입하고 압연에 필요한 열을 공급합니다."
+      },
+      {
+        "id": "hr-03",
+        "name": "조압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6000,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_STRIP",
+        "description": "두꺼운 슬래브를 압연해 길게 펼쳐지는 바 형태로 만듭니다."
+      },
+      {
+        "id": "hr-04",
+        "name": "사상압연",
+        "equipment_kind": "finishing_mill",
+        "duration_ms": 7200,
+        "input_form": "HOT_STRIP",
+        "output_form": "HOT_STRIP",
+        "description": "연속 압연 스탠드를 지나며 목표 두께의 스트립으로 가공합니다."
+      },
+      {
+        "id": "hr-05",
+        "name": "냉각",
+        "equipment_kind": "cooling",
+        "duration_ms": 5200,
+        "input_form": "HOT_STRIP",
+        "output_form": "STRIP",
+        "description": "런아웃 테이블의 냉각 구간을 통과합니다. 물 분사는 설명용 표현입니다."
+      },
+      {
+        "id": "hr-06",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "HR_COIL",
+        "description": "길게 이어진 스트립을 감아 하나의 열연 코일을 만듭니다."
+      },
+      {
+        "id": "hr-07",
+        "name": "정정",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "제품의 형상과 마무리 상태를 확인합니다."
+      },
+      {
+        "id": "hr-08",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "hr-09",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "plate",
+    "family": "후판",
+    "name": "열처리 후판",
+    "description": "넓게 압연된 판이 냉각·절단·열처리·검사를 거쳐 후판으로 완성됩니다. 열처리를 포함한 대표 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM10YAE",
+    "source_title": "My POSCO · 후판 제조공정",
+    "input_form": "SLAB",
+    "output_form": "PLATE",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "plate-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "SLAB",
+        "output_form": "SLAB",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "plate-02",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 압연 온도로 가열합니다."
+      },
+      {
+        "id": "plate-03",
+        "name": "압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6800,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_PLATE",
+        "description": "슬래브를 넓고 평평한 후판 형상으로 압연합니다."
+      },
+      {
+        "id": "plate-04",
+        "name": "가속냉각",
+        "equipment_kind": "cooling",
+        "duration_ms": 4200,
+        "input_form": "HOT_PLATE",
+        "output_form": "PLATE",
+        "description": "판이 냉각 헤더 아래를 통과합니다."
+      },
+      {
+        "id": "plate-05",
+        "name": "냉각대",
+        "equipment_kind": "cooling_bed",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "넓은 냉각대에서 판을 이송하며 냉각합니다."
+      },
+      {
+        "id": "plate-06",
+        "name": "절단기",
+        "equipment_kind": "shear",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "판의 가장자리와 길이를 정리합니다."
+      },
+      {
+        "id": "plate-07",
+        "name": "열처리",
+        "equipment_kind": "heat_treatment",
+        "duration_ms": 6000,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "선택한 열처리 제품 경로에 따라 판을 처리합니다."
+      },
+      {
+        "id": "plate-08",
+        "name": "냉간교정",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "판의 평탄도를 정리합니다."
+      },
+      {
+        "id": "plate-09",
+        "name": "초음파검사",
+        "equipment_kind": "inspection",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "검사 포털을 지나며 제품 상태를 확인합니다."
+      },
+      {
+        "id": "plate-10",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "wire",
+    "family": "선재",
+    "name": "선재",
+    "description": "블룸을 빌렛으로 압연한 뒤 선재 라인에서 가늘게 압연하고 코일로 모읍니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM11YAE",
+    "source_title": "My POSCO · 선재 제조공정",
+    "input_form": "BLOOM",
+    "output_form": "WIRE_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "wire-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "BLOOM",
+        "output_form": "BLOOM",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "wire-02",
+        "name": "강편 가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "BLOOM",
+        "output_form": "HOT_BLOOM",
+        "description": "강편 압연에 앞서 블룸을 가열합니다."
+      },
+      {
+        "id": "wire-03",
+        "name": "빌렛 조압연",
+        "equipment_kind": "bloom_mill",
+        "duration_ms": 5600,
+        "input_form": "HOT_BLOOM",
+        "output_form": "HOT_BILLET",
+        "description": "블룸의 단면을 줄이고 길이를 늘립니다."
+      },
+      {
+        "id": "wire-04",
+        "name": "빌렛 사상압연",
+        "equipment_kind": "finishing_mill",
+        "duration_ms": 4200,
+        "input_form": "HOT_BILLET",
+        "output_form": "BILLET",
+        "description": "빌렛 단면을 정리합니다."
+      },
+      {
+        "id": "wire-05",
+        "name": "빌렛 정정",
+        "equipment_kind": "shear",
+        "duration_ms": 4200,
+        "input_form": "BILLET",
+        "output_form": "BILLET",
+        "description": "빌렛을 절단하고 다음 압연 단계로 인계합니다."
+      },
+      {
+        "id": "wire-06",
+        "name": "선재 가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 5200,
+        "input_form": "BILLET",
+        "output_form": "HOT_BILLET",
+        "description": "빌렛을 선재 압연을 위해 재가열합니다."
+      },
+      {
+        "id": "wire-07",
+        "name": "선재압연",
+        "equipment_kind": "wire_mill",
+        "duration_ms": 7200,
+        "input_form": "HOT_BILLET",
+        "output_form": "WIRE",
+        "description": "연속 스탠드에서 가느다란 선재로 압연합니다."
+      },
+      {
+        "id": "wire-08",
+        "name": "권취·냉각대",
+        "equipment_kind": "laying_head",
+        "duration_ms": 6000,
+        "input_form": "WIRE",
+        "output_form": "WIRE_COIL",
+        "description": "선재를 고리 형태로 놓고 냉각해 코일로 모읍니다."
+      },
+      {
+        "id": "wire-09",
+        "name": "검사",
+        "equipment_kind": "inspection",
+        "duration_ms": 4200,
+        "input_form": "WIRE_COIL",
+        "output_form": "WIRE_COIL",
+        "description": "완성된 선재의 상태를 검사합니다."
+      },
+      {
+        "id": "wire-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "WIRE_COIL",
+        "output_form": "WIRE_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "wire-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "WIRE_COIL",
+        "output_form": "WIRE_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "cr",
+    "family": "냉연",
+    "name": "냉연 코일",
+    "description": "열연 코일을 풀어 산세·냉간압연·청정·소둔·조질압연을 연결합니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM12YAE",
+    "source_title": "My POSCO · 냉연 제조공정",
+    "input_form": "HR_COIL",
+    "output_form": "CR_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "cr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "cr-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "HR_COIL",
+        "output_form": "STRIP",
+        "description": "열연 코일을 풀어 연속 스트립으로 공급합니다."
+      },
+      {
+        "id": "cr-03",
+        "name": "산세",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "표면 스케일을 제거하는 산세 구간을 통과합니다."
+      },
+      {
+        "id": "cr-04",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 7200,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "여러 압연 스탠드를 지나며 두께를 줄입니다."
+      },
+      {
+        "id": "cr-05",
+        "name": "전해청정",
+        "equipment_kind": "electrocleaning",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "압연 후 스트립 표면을 세정합니다."
+      },
+      {
+        "id": "cr-06",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "연속 소둔로에서 소재를 열처리합니다."
+      },
+      {
+        "id": "cr-07",
+        "name": "조질압연",
+        "equipment_kind": "temper",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "표면과 형상을 마무리합니다."
+      },
+      {
+        "id": "cr-08",
+        "name": "도유",
+        "equipment_kind": "oiling",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "제품 표면을 보호하는 마무리 작업입니다."
+      },
+      {
+        "id": "cr-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "THIN_STRIP",
+        "output_form": "CR_COIL",
+        "description": "냉연 스트립을 다시 감습니다."
+      },
+      {
+        "id": "cr-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "CR_COIL",
+        "output_form": "CR_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "cr-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "CR_COIL",
+        "output_form": "CR_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "gi",
+    "family": "도금",
+    "name": "GI · 용융아연",
+    "description": "용융도금을 거쳐 아연도금 코일로 완성되는 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM13YAE",
+    "source_title": "My POSCO · 도금 제조공정",
+    "input_form": "CR_COIL",
+    "output_form": "GI_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "gi-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "CR_COIL",
+        "output_form": "CR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "gi-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "CR_COIL",
+        "output_form": "STRIP",
+        "description": "코일을 풀어 도금 라인에 공급합니다."
+      },
+      {
+        "id": "gi-03",
+        "name": "전처리",
+        "equipment_kind": "electrocleaning",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "표면을 세정해 도금 전 상태를 준비합니다."
+      },
+      {
+        "id": "gi-04",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "연속 열처리 구간을 지나 도금을 준비합니다."
+      },
+      {
+        "id": "gi-05",
+        "name": "도금욕",
+        "equipment_kind": "galvanizing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "스트립이 도금욕을 통과하고 에어 나이프로 도금층을 정리합니다."
+      },
+      {
+        "id": "gi-06",
+        "name": "조질압연",
+        "equipment_kind": "temper",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 후 표면과 형상을 정리합니다."
+      },
+      {
+        "id": "gi-07",
+        "name": "후처리",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 표면의 마무리 처리를 진행합니다."
+      },
+      {
+        "id": "gi-08",
+        "name": "도유",
+        "equipment_kind": "oiling",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "표면 보호 작업을 진행합니다."
+      },
+      {
+        "id": "gi-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "GI_COIL",
+        "description": "완성된 도금 스트립을 제품 코일로 감습니다."
+      },
+      {
+        "id": "gi-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "GI_COIL",
+        "output_form": "GI_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "gi-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "GI_COIL",
+        "output_form": "GI_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "ga",
+    "family": "도금",
+    "name": "GA · 합금화아연",
+    "description": "용융도금 후 합금화 열처리를 포함하는 GA 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM13YAE",
+    "source_title": "My POSCO · 도금 제조공정",
+    "input_form": "CR_COIL",
+    "output_form": "GA_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "ga-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "CR_COIL",
+        "output_form": "CR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "ga-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "CR_COIL",
+        "output_form": "STRIP",
+        "description": "코일을 풀어 도금 라인에 공급합니다."
+      },
+      {
+        "id": "ga-03",
+        "name": "전처리",
+        "equipment_kind": "electrocleaning",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "표면을 세정해 도금 전 상태를 준비합니다."
+      },
+      {
+        "id": "ga-04",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "연속 열처리 구간을 지나 도금을 준비합니다."
+      },
+      {
+        "id": "ga-05",
+        "name": "도금욕",
+        "equipment_kind": "galvanizing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "스트립이 도금욕을 통과하고 에어 나이프로 도금층을 정리합니다."
+      },
+      {
+        "id": "ga-06",
+        "name": "합금화처리",
+        "equipment_kind": "alloying",
+        "duration_ms": 5200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 후 가열로 합금화 처리 경로를 거칩니다."
+      },
+      {
+        "id": "ga-07",
+        "name": "조질압연",
+        "equipment_kind": "temper",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 후 표면과 형상을 정리합니다."
+      },
+      {
+        "id": "ga-08",
+        "name": "후처리",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 표면의 마무리 처리를 진행합니다."
+      },
+      {
+        "id": "ga-09",
+        "name": "도유",
+        "equipment_kind": "oiling",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "표면 보호 작업을 진행합니다."
+      },
+      {
+        "id": "ga-10",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "GA_COIL",
+        "description": "완성된 도금 스트립을 제품 코일로 감습니다."
+      },
+      {
+        "id": "ga-11",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "GA_COIL",
+        "output_form": "GA_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "ga-12",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "GA_COIL",
+        "output_form": "GA_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "hgi",
+    "family": "도금",
+    "name": "HGI · 열연도금",
+    "description": "열연 소재를 사용하는 용융도금 설명 경로입니다. 원문의 독립 HGI 모형을 복제한 것은 아닙니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM13YAE",
+    "source_title": "My POSCO · 도금 제조공정",
+    "input_form": "HR_COIL",
+    "output_form": "HGI_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "hgi-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "hgi-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "HR_COIL",
+        "output_form": "STRIP",
+        "description": "코일을 풀어 도금 라인에 공급합니다."
+      },
+      {
+        "id": "hgi-03",
+        "name": "전처리",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "열연 소재의 표면을 준비합니다. HGI는 용융도금 라인의 소재별 설명용 변형 경로입니다."
+      },
+      {
+        "id": "hgi-04",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "연속 열처리 구간을 지나 도금을 준비합니다."
+      },
+      {
+        "id": "hgi-05",
+        "name": "도금욕",
+        "equipment_kind": "galvanizing",
+        "duration_ms": 6000,
+        "input_form": "STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "스트립이 도금욕을 통과하고 에어 나이프로 도금층을 정리합니다."
+      },
+      {
+        "id": "hgi-06",
+        "name": "조질압연",
+        "equipment_kind": "temper",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 후 표면과 형상을 정리합니다."
+      },
+      {
+        "id": "hgi-07",
+        "name": "후처리",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 표면의 마무리 처리를 진행합니다."
+      },
+      {
+        "id": "hgi-08",
+        "name": "도유",
+        "equipment_kind": "oiling",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "표면 보호 작업을 진행합니다."
+      },
+      {
+        "id": "hgi-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "HGI_COIL",
+        "description": "완성된 도금 스트립을 제품 코일로 감습니다."
+      },
+      {
+        "id": "hgi-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "HGI_COIL",
+        "output_form": "HGI_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "hgi-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "HGI_COIL",
+        "output_form": "HGI_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "eg",
+    "family": "도금",
+    "name": "EG · 전기아연",
+    "description": "전기도금·인산염처리·내지문처리로 이어지는 별도 도금 라인입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM13YAE",
+    "source_title": "My POSCO · 도금 제조공정",
+    "input_form": "CR_COIL",
+    "output_form": "EG_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "eg-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "CR_COIL",
+        "output_form": "CR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "eg-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "CR_COIL",
+        "output_form": "STRIP",
+        "description": "냉연 코일을 풀어 전기도금 라인으로 보냅니다."
+      },
+      {
+        "id": "eg-03",
+        "name": "Tension Leveller",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "연속 처리 전에 형상을 정리합니다."
+      },
+      {
+        "id": "eg-04",
+        "name": "전처리",
+        "equipment_kind": "electrocleaning",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "스트립 표면을 세정합니다."
+      },
+      {
+        "id": "eg-05",
+        "name": "전기도금",
+        "equipment_kind": "electroplating",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "전해 도금 셀을 연속 통과합니다."
+      },
+      {
+        "id": "eg-06",
+        "name": "인산염처리",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "도금 이후 표면처리 공정을 통과합니다."
+      },
+      {
+        "id": "eg-07",
+        "name": "내지문처리",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "표면 기능을 위한 후처리를 진행합니다."
+      },
+      {
+        "id": "eg-08",
+        "name": "도유",
+        "equipment_kind": "oiling",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "제품 표면을 보호합니다."
+      },
+      {
+        "id": "eg-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "EG_COIL",
+        "description": "전기아연도금 스트립을 제품으로 감습니다."
+      },
+      {
+        "id": "eg-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "EG_COIL",
+        "output_form": "EG_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "eg-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "EG_COIL",
+        "output_form": "EG_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "go",
+    "family": "전기강판",
+    "name": "방향성 전기강판",
+    "description": "탈탄·고온·평탄화 소둔과 절연 코팅을 포함하는 방향성 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM14YAE",
+    "source_title": "My POSCO · 전기강판 제조공정",
+    "input_form": "HR_COIL",
+    "output_form": "GO_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "go-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "go-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "HR_COIL",
+        "output_form": "STRIP",
+        "description": "열연 소재를 풀어 전기강판 라인에 공급합니다."
+      },
+      {
+        "id": "go-03",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 5200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "열연 소재의 조직을 다음 가공에 맞게 준비합니다."
+      },
+      {
+        "id": "go-04",
+        "name": "산세",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "산세로 표면 상태를 정리합니다."
+      },
+      {
+        "id": "go-05",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "전기강판용 얇은 스트립으로 압연합니다."
+      },
+      {
+        "id": "go-06",
+        "name": "탈탄 소둔",
+        "equipment_kind": "decarburizing",
+        "duration_ms": 6000,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "제품 경로에 맞는 열처리를 진행합니다."
+      },
+      {
+        "id": "go-07",
+        "name": "고온소둔",
+        "equipment_kind": "heat_treatment",
+        "duration_ms": 6000,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "고온소둔 경로를 거칩니다. 실제로는 중간 권취와 배치 처리가 포함되며 이 데모는 소재 흐름을 압축합니다."
+      },
+      {
+        "id": "go-08",
+        "name": "평탄화 소둔",
+        "equipment_kind": "annealing",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "평탄화 열처리 구간을 통과합니다."
+      },
+      {
+        "id": "go-09",
+        "name": "절연 코팅",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "절연 코팅을 적용하는 구간입니다."
+      },
+      {
+        "id": "go-10",
+        "name": "자구 미세화",
+        "equipment_kind": "inspection",
+        "duration_ms": 4200,
+        "input_form": "COATED_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "자구 미세화 처리 위치를 보여줍니다."
+      },
+      {
+        "id": "go-11",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "GO_COIL",
+        "description": "전기강판 제품 코일로 감습니다."
+      },
+      {
+        "id": "go-12",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "GO_COIL",
+        "output_form": "GO_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "go-13",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "GO_COIL",
+        "output_form": "GO_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "ngo",
+    "family": "전기강판",
+    "name": "무방향성 전기강판",
+    "description": "예비 소둔·냉간압연·소둔·절연 코팅을 잇는 무방향성 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM14YAE",
+    "source_title": "My POSCO · 전기강판 제조공정",
+    "input_form": "HR_COIL",
+    "output_form": "NGO_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "ngo-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "HR_COIL",
+        "output_form": "HR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "ngo-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "HR_COIL",
+        "output_form": "STRIP",
+        "description": "열연 소재를 풀어 전기강판 라인에 공급합니다."
+      },
+      {
+        "id": "ngo-03",
+        "name": "예비 소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 5200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "열연 소재의 조직을 다음 가공에 맞게 준비합니다."
+      },
+      {
+        "id": "ngo-04",
+        "name": "산세",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "산세로 표면 상태를 정리합니다."
+      },
+      {
+        "id": "ngo-05",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "전기강판용 얇은 스트립으로 압연합니다."
+      },
+      {
+        "id": "ngo-06",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "제품 경로에 맞는 열처리를 진행합니다."
+      },
+      {
+        "id": "ngo-07",
+        "name": "절연 코팅",
+        "equipment_kind": "coating",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "COATED_STRIP",
+        "description": "절연 코팅을 적용하는 구간입니다."
+      },
+      {
+        "id": "ngo-08",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "COATED_STRIP",
+        "output_form": "NGO_COIL",
+        "description": "전기강판 제품 코일로 감습니다."
+      },
+      {
+        "id": "ngo-09",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "NGO_COIL",
+        "output_form": "NGO_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "ngo-10",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "NGO_COIL",
+        "output_form": "NGO_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "sts-hr",
+    "family": "스테인리스",
+    "name": "스테인리스 열연",
+    "description": "전기로·정련·연주에서 시작해 열연과 HAPL 처리까지 연결합니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM15YAE",
+    "source_title": "My POSCO · 스테인리스 제조공정",
+    "input_form": "SCRAP",
+    "output_form": "STS_HR_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "sts-hr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "SCRAP",
+        "output_form": "SCRAP",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "sts-hr-02",
+        "name": "전기로",
+        "equipment_kind": "eaf",
+        "duration_ms": 6000,
+        "input_form": "SCRAP",
+        "output_form": "LIQUID_STEEL",
+        "description": "스테인리스 원료를 용해합니다."
+      },
+      {
+        "id": "sts-hr-03",
+        "name": "정련기",
+        "equipment_kind": "aod",
+        "duration_ms": 5400,
+        "input_form": "LIQUID_STEEL",
+        "output_form": "LIQUID_STEEL",
+        "description": "용강을 정련하는 공정입니다."
+      },
+      {
+        "id": "sts-hr-04",
+        "name": "연속주조기",
+        "equipment_kind": "caster",
+        "duration_ms": 7200,
+        "input_form": "LIQUID_STEEL",
+        "output_form": "SLAB",
+        "description": "용강을 연속주조해 슬래브로 만듭니다."
+      },
+      {
+        "id": "sts-hr-05",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 압연을 위해 가열합니다."
+      },
+      {
+        "id": "sts-hr-06",
+        "name": "조압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6000,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_STRIP",
+        "description": "슬래브를 열간 압연합니다."
+      },
+      {
+        "id": "sts-hr-07",
+        "name": "사상압연",
+        "equipment_kind": "finishing_mill",
+        "duration_ms": 6800,
+        "input_form": "HOT_STRIP",
+        "output_form": "HOT_STRIP",
+        "description": "연속 스탠드에서 스트립 두께를 정리합니다."
+      },
+      {
+        "id": "sts-hr-08",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "HOT_STRIP",
+        "output_form": "STS_HR_COIL",
+        "description": "열연 스트립을 코일로 감습니다."
+      },
+      {
+        "id": "sts-hr-09",
+        "name": "CAF",
+        "equipment_kind": "heat_treatment",
+        "duration_ms": 5400,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STS_HR_COIL",
+        "description": "중간 코일 소둔 공정입니다."
+      },
+      {
+        "id": "sts-hr-10",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STRIP",
+        "description": "코일을 풀어 HAPL로 공급합니다."
+      },
+      {
+        "id": "sts-hr-11",
+        "name": "HAPL(소둔)",
+        "equipment_kind": "annealing",
+        "duration_ms": 5200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "열연 소재를 연속 소둔합니다."
+      },
+      {
+        "id": "sts-hr-12",
+        "name": "HAPL(산세)",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "소둔 후 표면을 처리합니다."
+      },
+      {
+        "id": "sts-hr-13",
+        "name": "제품 권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STS_HR_COIL",
+        "description": "처리된 제품을 감습니다."
+      },
+      {
+        "id": "sts-hr-14",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STS_HR_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "sts-hr-15",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STS_HR_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "sts-cr",
+    "family": "스테인리스",
+    "name": "스테인리스 냉연",
+    "description": "스테인리스 열연 코일을 냉간압연하고 CAPL·조질압연·TLL·STL로 마무리합니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM15YAE",
+    "source_title": "My POSCO · 스테인리스 제조공정",
+    "input_form": "STS_HR_COIL",
+    "output_form": "STS_CR_COIL",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "sts-cr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STS_HR_COIL",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "sts-cr-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "STS_HR_COIL",
+        "output_form": "STRIP",
+        "description": "열연 소재를 풀어 냉간압연에 공급합니다."
+      },
+      {
+        "id": "sts-cr-03",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "다단 압연기에서 스트립을 얇게 가공합니다."
+      },
+      {
+        "id": "sts-cr-04",
+        "name": "CAPL(소둔)",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "냉연 소재를 소둔합니다."
+      },
+      {
+        "id": "sts-cr-05",
+        "name": "CAPL(산세)",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "소둔 후 표면을 정리합니다."
+      },
+      {
+        "id": "sts-cr-06",
+        "name": "조질압연",
+        "equipment_kind": "temper",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "형상과 표면을 정리합니다."
+      },
+      {
+        "id": "sts-cr-07",
+        "name": "TLL",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "장력을 이용한 레벨링 구간을 통과합니다."
+      },
+      {
+        "id": "sts-cr-08",
+        "name": "STL",
+        "equipment_kind": "slitter",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "제품 마무리 라인에서 폭과 표면 상태를 정리합니다."
+      },
+      {
+        "id": "sts-cr-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "STS_CR_COIL",
+        "description": "스테인리스 냉연 코일로 감습니다."
+      },
+      {
+        "id": "sts-cr-10",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 3200,
+        "input_form": "STS_CR_COIL",
+        "output_form": "STS_CR_COIL",
+        "description": "검사를 마친 제품을 묶고 표식을 붙여 출고를 준비합니다."
+      },
+      {
+        "id": "sts-cr-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "STS_CR_COIL",
+        "output_form": "STS_CR_COIL",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "sts-plate",
+    "family": "스테인리스",
+    "name": "스테인리스 후판",
+    "description": "스테인리스 제강·연주 이후 넓은 판의 압연·교정·냉각·절단·열처리를 보여줍니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM15YAE",
+    "source_title": "My POSCO · 스테인리스 제조공정",
+    "input_form": "SCRAP",
+    "output_form": "STS_PLATE",
+    "mass_kg": 20000,
+    "steps": [
+      {
+        "id": "sts-plate-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "SCRAP",
+        "output_form": "SCRAP",
+        "description": "선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다."
+      },
+      {
+        "id": "sts-plate-02",
+        "name": "전기로",
+        "equipment_kind": "eaf",
+        "duration_ms": 6000,
+        "input_form": "SCRAP",
+        "output_form": "LIQUID_STEEL",
+        "description": "스테인리스 원료를 용해합니다."
+      },
+      {
+        "id": "sts-plate-03",
+        "name": "정련기",
+        "equipment_kind": "aod",
+        "duration_ms": 5400,
+        "input_form": "LIQUID_STEEL",
+        "output_form": "LIQUID_STEEL",
+        "description": "용강을 정련하는 공정입니다."
+      },
+      {
+        "id": "sts-plate-04",
+        "name": "연속주조기",
+        "equipment_kind": "caster",
+        "duration_ms": 7200,
+        "input_form": "LIQUID_STEEL",
+        "output_form": "SLAB",
+        "description": "용강을 연속주조해 슬래브로 만듭니다."
+      },
+      {
+        "id": "sts-plate-05",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 압연을 위해 가열합니다."
+      },
+      {
+        "id": "sts-plate-06",
+        "name": "압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6800,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_PLATE",
+        "description": "슬래브를 넓은 후판으로 압연합니다."
+      },
+      {
+        "id": "sts-plate-07",
+        "name": "열간교정",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "HOT_PLATE",
+        "output_form": "HOT_PLATE",
+        "description": "뜨거운 판의 형상을 정리합니다."
+      },
+      {
+        "id": "sts-plate-08",
+        "name": "냉각대",
+        "equipment_kind": "cooling_bed",
+        "duration_ms": 4200,
+        "input_form": "HOT_PLATE",
+        "output_form": "PLATE",
+        "description": "냉각대에서 판을 이송합니다."
+      },
+      {
+        "id": "sts-plate-09",
+        "name": "절단기",
+        "equipment_kind": "shear",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "제품 치수에 맞게 절단합니다."
+      },
+      {
+        "id": "sts-plate-10",
+        "name": "냉간교정",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "냉각된 판의 평탄도를 정리합니다."
+      },
+      {
+        "id": "sts-plate-11",
+        "name": "열처리",
+        "equipment_kind": "heat_treatment",
+        "duration_ms": 6000,
+        "input_form": "PLATE",
+        "output_form": "STS_PLATE",
+        "description": "제품 경로에 맞는 열처리를 거칩니다."
+      },
+      {
+        "id": "sts-plate-12",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "STS_PLATE",
+        "output_form": "STS_PLATE",
+        "description": "완성된 동일 소재를 출고 차량에 적재합니다. 실제 출하 명령을 실행하지 않는 데모 단계입니다."
+      }
+    ]
+  },
+  {
+    "id": "ti-hr",
+    "family": "티타늄",
+    "name": "티타늄 열연",
+    "description": "티타늄 잉곳의 단조에서 열연·소둔·산세·제품 권취까지 이어집니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM16YAE",
+    "source_title": "My POSCO · 티타늄 제조공정",
+    "input_form": "TI_INGOT",
+    "output_form": "TI_HR_COIL",
+    "mass_kg": 12000,
+    "steps": [
+      {
+        "id": "ti-hr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "TI_INGOT",
+        "output_form": "TI_INGOT",
+        "description": "이 소재의 계보를 유지하며 운반차에서 생산 라인으로 인계합니다. 설명용 데모 운송 단계입니다."
+      },
+      {
+        "id": "ti-hr-02",
+        "name": "단조",
+        "equipment_kind": "forging",
+        "duration_ms": 6400,
+        "input_form": "TI_INGOT",
+        "output_form": "TI_SLAB",
+        "description": "티타늄 잉곳을 단조해 압연용 슬래브로 준비합니다."
+      },
+      {
+        "id": "ti-hr-03",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "TI_SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 압연을 위해 가열합니다."
+      },
+      {
+        "id": "ti-hr-04",
+        "name": "조압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6000,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_STRIP",
+        "description": "슬래브를 길고 얇게 압연합니다."
+      },
+      {
+        "id": "ti-hr-05",
+        "name": "사상압연",
+        "equipment_kind": "finishing_mill",
+        "duration_ms": 6800,
+        "input_form": "HOT_STRIP",
+        "output_form": "STRIP",
+        "description": "연속 스탠드에서 스트립의 두께를 정리합니다."
+      },
+      {
+        "id": "ti-hr-06",
+        "name": "HAPL(소둔)",
+        "equipment_kind": "annealing",
+        "duration_ms": 5400,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "열연 소재의 소둔 구간입니다."
+      },
+      {
+        "id": "ti-hr-07",
+        "name": "HAPL(산세)",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "STRIP",
+        "output_form": "STRIP",
+        "description": "제품 표면을 정리합니다."
+      },
+      {
+        "id": "ti-hr-08",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 5400,
+        "input_form": "STRIP",
+        "output_form": "TI_HR_COIL",
+        "description": "티타늄 열연 코일로 감습니다."
+      },
+      {
+        "id": "ti-hr-09",
+        "name": "포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 4200,
+        "input_form": "TI_HR_COIL",
+        "output_form": "TI_HR_COIL",
+        "description": "제품을 묶고 출고를 준비합니다."
+      },
+      {
+        "id": "ti-hr-10",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "TI_HR_COIL",
+        "output_form": "TI_HR_COIL",
+        "description": "완성된 제품을 출고 차량에 적재합니다. 실제 출하를 실행하지 않습니다."
+      }
+    ]
+  },
+  {
+    "id": "ti-cr",
+    "family": "티타늄",
+    "name": "티타늄 냉연 · 코일",
+    "description": "티타늄 냉연 페이지의 코일 출구 경로입니다. VAF·TLL·STL을 거쳐 코일로 완성합니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM16YAE",
+    "source_title": "My POSCO · 티타늄 제조공정",
+    "input_form": "TI_HR_COIL",
+    "output_form": "TI_CR_COIL",
+    "mass_kg": 12000,
+    "steps": [
+      {
+        "id": "ti-cr-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "TI_HR_COIL",
+        "output_form": "TI_HR_COIL",
+        "description": "이 소재의 계보를 유지하며 운반차에서 생산 라인으로 인계합니다. 설명용 데모 운송 단계입니다."
+      },
+      {
+        "id": "ti-cr-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "TI_HR_COIL",
+        "output_form": "STRIP",
+        "description": "티타늄 열연 코일을 풀어 냉간압연으로 공급합니다."
+      },
+      {
+        "id": "ti-cr-03",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "다단 압연기를 지나며 스트립을 얇게 가공합니다."
+      },
+      {
+        "id": "ti-cr-04",
+        "name": "중간 권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "TI_CR_COIL",
+        "description": "진공소둔에 앞서 중간 코일로 감습니다."
+      },
+      {
+        "id": "ti-cr-05",
+        "name": "VAF",
+        "equipment_kind": "vacuum_annealing",
+        "duration_ms": 6000,
+        "input_form": "TI_CR_COIL",
+        "output_form": "TI_CR_COIL",
+        "description": "진공소둔 설비에서 중간 코일을 열처리합니다."
+      },
+      {
+        "id": "ti-cr-06",
+        "name": "재투입",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "TI_CR_COIL",
+        "output_form": "THIN_STRIP",
+        "description": "소둔한 소재를 풀어 마무리 라인으로 보냅니다."
+      },
+      {
+        "id": "ti-cr-07",
+        "name": "TLL",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "장력 레벨링으로 형상을 정리합니다."
+      },
+      {
+        "id": "ti-cr-08",
+        "name": "STL",
+        "equipment_kind": "slitter",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "슬리팅 라인에서 폭을 정리합니다."
+      },
+      {
+        "id": "ti-cr-09",
+        "name": "권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "TI_CR_COIL",
+        "description": "폭을 정리한 스트립을 제품 코일로 감습니다."
+      },
+      {
+        "id": "ti-cr-10",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "TI_CR_COIL",
+        "output_form": "TI_CR_COIL",
+        "description": "완성된 제품을 출고 차량에 적재합니다. 실제 출하를 실행하지 않습니다."
+      }
+    ]
+  },
+  {
+    "id": "ti-sheet",
+    "family": "티타늄",
+    "name": "티타늄 냉연 · 시트",
+    "description": "티타늄 냉연 페이지의 SHL 시트 분기를 별도의 제품 경로로 보여줍니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM16YAE",
+    "source_title": "My POSCO · 티타늄 제조공정",
+    "input_form": "TI_HR_COIL",
+    "output_form": "TI_SHEET",
+    "mass_kg": 12000,
+    "steps": [
+      {
+        "id": "ti-sheet-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "TI_HR_COIL",
+        "output_form": "TI_HR_COIL",
+        "description": "이 소재의 계보를 유지하며 운반차에서 생산 라인으로 인계합니다. 설명용 데모 운송 단계입니다."
+      },
+      {
+        "id": "ti-sheet-02",
+        "name": "풀기",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "TI_HR_COIL",
+        "output_form": "STRIP",
+        "description": "티타늄 열연 코일을 풀어 냉간압연으로 공급합니다."
+      },
+      {
+        "id": "ti-sheet-03",
+        "name": "냉간압연",
+        "equipment_kind": "cold_mill",
+        "duration_ms": 6800,
+        "input_form": "STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "다단 압연기를 지나며 스트립을 얇게 가공합니다."
+      },
+      {
+        "id": "ti-sheet-04",
+        "name": "중간 권취",
+        "equipment_kind": "coiler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "TI_CR_COIL",
+        "description": "진공소둔에 앞서 중간 코일로 감습니다."
+      },
+      {
+        "id": "ti-sheet-05",
+        "name": "VAF",
+        "equipment_kind": "vacuum_annealing",
+        "duration_ms": 6000,
+        "input_form": "TI_CR_COIL",
+        "output_form": "TI_CR_COIL",
+        "description": "진공소둔 설비에서 중간 코일을 열처리합니다."
+      },
+      {
+        "id": "ti-sheet-06",
+        "name": "재투입",
+        "equipment_kind": "uncoiler",
+        "duration_ms": 4200,
+        "input_form": "TI_CR_COIL",
+        "output_form": "THIN_STRIP",
+        "description": "소둔한 소재를 풀어 마무리 라인으로 보냅니다."
+      },
+      {
+        "id": "ti-sheet-07",
+        "name": "TLL",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "장력 레벨링으로 형상을 정리합니다."
+      },
+      {
+        "id": "ti-sheet-08",
+        "name": "STL",
+        "equipment_kind": "slitter",
+        "duration_ms": 4200,
+        "input_form": "THIN_STRIP",
+        "output_form": "THIN_STRIP",
+        "description": "슬리팅 라인에서 폭을 정리합니다."
+      },
+      {
+        "id": "ti-sheet-09",
+        "name": "SHL",
+        "equipment_kind": "shear",
+        "duration_ms": 5000,
+        "input_form": "THIN_STRIP",
+        "output_form": "TI_SHEET",
+        "description": "시트 출구에서는 스트립을 길이 방향으로 절단합니다."
+      },
+      {
+        "id": "ti-sheet-10",
+        "name": "적재·포장",
+        "equipment_kind": "packaging",
+        "duration_ms": 4200,
+        "input_form": "TI_SHEET",
+        "output_form": "TI_SHEET",
+        "description": "평평한 시트를 쌓아 출고를 준비합니다."
+      },
+      {
+        "id": "ti-sheet-11",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "TI_SHEET",
+        "output_form": "TI_SHEET",
+        "description": "완성된 제품을 출고 차량에 적재합니다. 실제 출하를 실행하지 않습니다."
+      }
+    ]
+  },
+  {
+    "id": "ti-plate",
+    "family": "티타늄",
+    "name": "티타늄 후판",
+    "description": "단조·가열·압연·소둔·산세·형상교정으로 이어지는 티타늄 판재 경로입니다.",
+    "source_url": "https://my.posco.com/s/exshowrmproductmain?lv1=a0uTJ000004pM16YAE",
+    "source_title": "My POSCO · 티타늄 제조공정",
+    "input_form": "TI_INGOT",
+    "output_form": "TI_PLATE",
+    "mass_kg": 12000,
+    "steps": [
+      {
+        "id": "ti-plate-01",
+        "name": "소재 입고",
+        "equipment_kind": "truck_in",
+        "duration_ms": 4000,
+        "input_form": "TI_INGOT",
+        "output_form": "TI_INGOT",
+        "description": "이 소재의 계보를 유지하며 운반차에서 생산 라인으로 인계합니다. 설명용 데모 운송 단계입니다."
+      },
+      {
+        "id": "ti-plate-02",
+        "name": "단조",
+        "equipment_kind": "forging",
+        "duration_ms": 6400,
+        "input_form": "TI_INGOT",
+        "output_form": "TI_SLAB",
+        "description": "티타늄 잉곳을 단조해 압연용 슬래브로 준비합니다."
+      },
+      {
+        "id": "ti-plate-03",
+        "name": "가열로",
+        "equipment_kind": "furnace",
+        "duration_ms": 6000,
+        "input_form": "TI_SLAB",
+        "output_form": "HOT_SLAB",
+        "description": "슬래브를 압연을 위해 가열합니다."
+      },
+      {
+        "id": "ti-plate-04",
+        "name": "압연",
+        "equipment_kind": "roughing",
+        "duration_ms": 6800,
+        "input_form": "HOT_SLAB",
+        "output_form": "HOT_PLATE",
+        "description": "슬래브를 넓은 판재로 압연합니다."
+      },
+      {
+        "id": "ti-plate-05",
+        "name": "소둔로",
+        "equipment_kind": "annealing",
+        "duration_ms": 6000,
+        "input_form": "HOT_PLATE",
+        "output_form": "PLATE",
+        "description": "판재 소둔 구간을 통과합니다."
+      },
+      {
+        "id": "ti-plate-06",
+        "name": "산세",
+        "equipment_kind": "pickling",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "PLATE",
+        "description": "소둔 후 표면을 처리합니다."
+      },
+      {
+        "id": "ti-plate-07",
+        "name": "형상교정",
+        "equipment_kind": "leveler",
+        "duration_ms": 4200,
+        "input_form": "PLATE",
+        "output_form": "TI_PLATE",
+        "description": "제품의 평탄도와 형상을 정리합니다."
+      },
+      {
+        "id": "ti-plate-08",
+        "name": "가스 절단",
+        "equipment_kind": "shear",
+        "duration_ms": 4200,
+        "input_form": "TI_PLATE",
+        "output_form": "TI_PLATE",
+        "description": "판재를 제품 치수로 마무리합니다."
+      },
+      {
+        "id": "ti-plate-09",
+        "name": "제품 출고",
+        "equipment_kind": "truck_out",
+        "duration_ms": 4000,
+        "input_form": "TI_PLATE",
+        "output_form": "TI_PLATE",
+        "description": "완성된 제품을 출고 차량에 적재합니다. 실제 출하를 실행하지 않습니다."
+      }
+    ]
+  }
+]

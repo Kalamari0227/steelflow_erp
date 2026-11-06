@@ -1,0 +1,141 @@
+{
+  "status": "CENTERLINE_FEASIBILITY_ONLY_NOT_TRIANGLE_OR_CONTACT_PASS",
+  "rows": [
+    {
+      "thickness_m": 0.002,
+      "length_m": 4,
+      "core_radius_m": 0.44,
+      "pitch_m": 0.0022,
+      "full_winding_angle_rad": 9.037865009051153,
+      "turns": 1.4384208911877685,
+      "integrated_length_m": 3.999999999999929,
+      "outer_radius_centerline_m": 0.44416452596061307,
+      "end_tail_m": 7.105427357601002e-14,
+      "moving_inner_clamp_point_formula": "coreCenter+Rz(-canonical_angle)*(0,core_radius,0)",
+      "scalar_samples": [
+        {
+          "u": 0,
+          "angle": 0.0,
+          "wound_arc_m": 0.0,
+          "tail_budget_m": 4.0
+        },
+        {
+          "u": 0.25,
+          "angle": 2.259466252262788,
+          "wound_arc_m": 0.9973186984854617,
+          "tail_budget_m": 3.002681301514538
+        },
+        {
+          "u": 0.5,
+          "angle": 4.518932504525576,
+          "wound_arc_m": 1.9964249313126357,
+          "tail_budget_m": 2.0035750686873643
+        },
+        {
+          "u": 0.75,
+          "angle": 6.778398756788365,
+          "wound_arc_m": 2.9973186984834244,
+          "tail_budget_m": 1.0026813015165756
+        },
+        {
+          "u": 1,
+          "angle": 9.037865009051153,
+          "wound_arc_m": 3.999999999999929,
+          "tail_budget_m": 7.105427357601002e-14
+        }
+      ]
+    },
+    {
+      "thickness_m": 0.004,
+      "length_m": 4,
+      "core_radius_m": 0.44,
+      "pitch_m": 0.0042,
+      "full_winding_angle_rad": 8.98866823752605,
+      "turns": 1.4305909818153855,
+      "integrated_length_m": 3.999999999999973,
+      "outer_radius_centerline_m": 0.4480084821236246,
+      "end_tail_m": 2.708944180085382e-14,
+      "moving_inner_clamp_point_formula": "coreCenter+Rz(-canonical_angle)*(0,core_radius,0)",
+      "scalar_samples": [
+        {
+          "u": 0,
+          "angle": 0.0,
+          "wound_arc_m": 0.0,
+          "tail_budget_m": 4.0
+        },
+        {
+          "u": 0.25,
+          "angle": 2.2471670593815123,
+          "wound_arc_m": 0.9949367320609226,
+          "tail_budget_m": 3.0050632679390774
+        },
+        {
+          "u": 0.5,
+          "angle": 4.494334118763025,
+          "wound_arc_m": 1.9932489760640215,
+          "tail_budget_m": 2.0067510239359785
+        },
+        {
+          "u": 0.75,
+          "angle": 6.741501178144537,
+          "wound_arc_m": 2.994936732035186,
+          "tail_budget_m": 1.0050632679648142
+        },
+        {
+          "u": 1,
+          "angle": 8.98866823752605,
+          "wound_arc_m": 3.999999999999973,
+          "tail_budget_m": 2.708944180085382e-14
+        }
+      ]
+    },
+    {
+      "thickness_m": 0.006,
+      "length_m": 4,
+      "core_radius_m": 0.44,
+      "pitch_m": 0.0062,
+      "full_winding_angle_rad": 8.940304411421494,
+      "turns": 1.4228936398240086,
+      "integrated_length_m": 3.9999999999999876,
+      "outer_radius_centerline_m": 0.45182194056690883,
+      "end_tail_m": 1.2434497875801753e-14,
+      "moving_inner_clamp_point_formula": "coreCenter+Rz(-canonical_angle)*(0,core_radius,0)",
+      "scalar_samples": [
+        {
+          "u": 0,
+          "angle": 0.0,
+          "wound_arc_m": 0.0,
+          "tail_budget_m": 4.0
+        },
+        {
+          "u": 0.25,
+          "angle": 2.2350761028553734,
+          "wound_arc_m": 0.9926058773401363,
+          "tail_budget_m": 3.0073941226598637
+        },
+        {
+          "u": 0.5,
+          "angle": 4.470152205710747,
+          "wound_arc_m": 1.9901411697077809,
+          "tail_budget_m": 2.0098588302922193
+        },
+        {
+          "u": 0.75,
+          "angle": 6.70522830856612,
+          "wound_arc_m": 2.9926058772219433,
+          "tail_budget_m": 1.0073941227780567
+        },
+        {
+          "u": 1,
+          "angle": 8.940304411421494,
+          "wound_arc_m": 3.9999999999999876,
+          "tail_budget_m": 1.2434497875801753e-14
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Connector/guide real geometry and actual clamp patch/full stock support must be authored and checked",
+    "No old T20 partial-winding proof reused as full winding pass"
+  ]
+}

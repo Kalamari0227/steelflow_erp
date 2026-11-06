@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "family": "transport",
+  "seed": 2804515,
+  "author": "SteelFlow original procedural authorship",
+  "license": "project-owned",
+  "external_asset_count": 0,
+  "dimension_basis": "Original synthetic miniature, not surveyed or certified engineering dimensions. Public sources establish function only.",
+  "axis_markers": {
+    "axis_origin": [
+      0,
+      0,
+      0
+    ],
+    "axis_front": [
+      1,
+      0,
+      0
+    ],
+    "axis_up": [
+      0,
+      1,
+      0
+    ],
+    "axis_side": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "models": [
+    {
+      "key": "truck-flatbed",
+      "kind": "truck",
+      "variant": "variant:fleet:truck:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "crane-yard",
+      "kind": "crane",
+      "variant": "variant:fleet:crane:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "receiving-cradle",
+      "kind": "receiving-cradle",
+      "variant": "variant:campus:receiving-cradle:coil",
+      "category": "campus",
+      "registered": false
+    },
+    {
+      "key": "truck-dump",
+      "kind": "dump-truck",
+      "variant": "variant:fleet:truck:dump",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "slab-carrier",
+      "kind": "slab-carrier",
+      "variant": "variant:fleet:slab-carrier:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "coil-carrier",
+      "kind": "coil-carrier",
+      "variant": "variant:fleet:coil-carrier:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "forklift",
+      "kind": "forklift",
+      "variant": "variant:fleet:forklift:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "torpedo",
+      "kind": "torpedo",
+      "variant": "variant:fleet:torpedo:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "ladle-car",
+      "kind": "ladle-car",
+      "variant": "variant:fleet:ladle-car:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "locomotive",
+      "kind": "locomotive",
+      "variant": "variant:fleet:locomotive:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "railcar",
+      "kind": "railcar",
+      "variant": "variant:fleet:railcar:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "railcar-coil",
+      "kind": "railcar",
+      "variant": "variant:fleet:railcar:coil",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "railcar-bulk",
+      "kind": "railcar",
+      "variant": "variant:fleet:railcar:bulk",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "ship-product",
+      "kind": "ship",
+      "variant": "variant:fleet:ship:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "ship-existing",
+      "kind": "ship",
+      "variant": "variant:ship:SHIP",
+      "category": "equipment",
+      "registered": true
+    },
+    {
+      "key": "ship-bulk",
+      "kind": "ship",
+      "variant": "variant:fleet:ship:bulk",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "crane-overhead",
+      "kind": "overhead-crane",
+      "variant": "variant:fleet:crane:overhead",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "crane-port",
+      "kind": "port-crane",
+      "variant": "variant:fleet:crane:port",
+      "category": "fleet",
+      "registered": false
+    },
+    {
+      "key": "unloader",
+      "kind": "unloader",
+      "variant": "variant:fleet:unloader:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "stacker",
+      "kind": "stacker",
+      "variant": "variant:fleet:stacker:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "reclaimer",
+      "kind": "reclaimer",
+      "variant": "variant:fleet:reclaimer:standard",
+      "category": "fleet",
+      "registered": true
+    },
+    {
+      "key": "conveyor",
+      "kind": "conveyor",
+      "variant": "variant:fleet:conveyor:standard",
+      "category": "fleet",
+      "registered": true
+    }
+  ],
+  "physical_priority": {
+    "truck_support_datum_m": [
+      0,
+      2,
+      0
+    ],
+    "coil_dimensions_m": {
+      "width": 1,
+      "outer_diameter": 1.2,
+      "inner_diameter": 0.6
+    },
+    "hook_contact_coil_local_m": [
+      0,
+      0.3,
+      0
+    ],
+    "hook_contact_model_m": [
+      0,
+      2.9,
+      0
+    ],
+    "bridge_transfer_m": 6,
+    "hoist_lift_m": 2,
+    "trolley_insertion_m": 1.6,
+    "handling_state": "geometry candidate only; bottom-to-eye datum admission remains explicit prerequisite"
+  }
+}

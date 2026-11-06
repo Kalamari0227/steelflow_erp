@@ -1,0 +1,5694 @@
+{
+  "$defs": {
+    "AllowedInteriorEnvelope": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        },
+        "footprint_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Footprint Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "pose",
+        "size_m",
+        "footprint_id"
+      ],
+      "title": "AllowedInteriorEnvelope",
+      "type": "object"
+    },
+    "Anchor": {
+      "additionalProperties": false,
+      "properties": {
+        "owner_id": {
+          "minLength": 1,
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "minLength": 1,
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "position_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position M",
+          "type": "array"
+        },
+        "orientation_xyzw": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Orientation Xyzw",
+          "type": "array"
+        }
+      },
+      "required": [
+        "owner_id",
+        "socket_id",
+        "position_m",
+        "orientation_xyzw"
+      ],
+      "title": "Anchor",
+      "type": "object"
+    },
+    "AssetBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "owner_id": {
+          "minLength": 1,
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "minLength": 1,
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "sockets": {
+          "items": {
+            "$ref": "#/$defs/BindingSocket"
+          },
+          "title": "Sockets",
+          "type": "array"
+        },
+        "functions": {
+          "items": {
+            "$ref": "#/$defs/BindingFunction"
+          },
+          "title": "Functions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "owner_id",
+        "policy_id",
+        "sockets",
+        "functions"
+      ],
+      "title": "AssetBinding",
+      "type": "object"
+    },
+    "Attachment": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "slot",
+            "equipment",
+            "hook",
+            "vehicle",
+            "railcar",
+            "ship",
+            "customer"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "owner_id": {
+          "minLength": 1,
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "minLength": 1,
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "acquired_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Acquired At Ms",
+          "type": "integer"
+        },
+        "released_at_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Released At Ms"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "material_id",
+        "kind",
+        "owner_id",
+        "socket_id",
+        "acquired_at_ms",
+        "released_at_ms"
+      ],
+      "title": "Attachment",
+      "type": "object"
+    },
+    "BatchIO": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "batch_id": {
+          "minLength": 1,
+          "title": "Batch Id",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "INPUT",
+            "STOCK_ADDITION",
+            "EXTERNAL_ADDITION",
+            "OUTPUT",
+            "BYPRODUCT",
+            "LOSS"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "material_version_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Material Version Id"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "source_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "batch_id",
+        "role",
+        "material_version_id",
+        "quantity_kg",
+        "source_id"
+      ],
+      "title": "BatchIO",
+      "type": "object"
+    },
+    "BathPathAssetBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "owner_id": {
+          "minLength": 1,
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "minLength": 1,
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "sockets": {
+          "items": {
+            "$ref": "#/$defs/BindingSocket"
+          },
+          "title": "Sockets",
+          "type": "array"
+        },
+        "functions": {
+          "items": {
+            "$ref": "#/$defs/BindingFunction"
+          },
+          "title": "Functions",
+          "type": "array"
+        },
+        "bath_paths": {
+          "maxItems": 1,
+          "minItems": 1,
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/BathPathBinding"
+            }
+          ],
+          "title": "Bath Paths",
+          "type": "array"
+        }
+      },
+      "required": [
+        "owner_id",
+        "policy_id",
+        "sockets",
+        "functions",
+        "bath_paths"
+      ],
+      "title": "BathPathAssetBinding",
+      "type": "object"
+    },
+    "BathPathBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "finite_galvanizing_bath",
+          "title": "Kind",
+          "type": "string"
+        },
+        "custody_socket_id": {
+          "minLength": 1,
+          "title": "Custody Socket Id",
+          "type": "string"
+        },
+        "driver_function_id": {
+          "minLength": 1,
+          "title": "Driver Function Id",
+          "type": "string"
+        },
+        "source_asset_id": {
+          "minLength": 1,
+          "title": "Source Asset Id",
+          "type": "string"
+        },
+        "source_manifest_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Manifest Sha256",
+          "type": "string"
+        },
+        "source_recipe_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Source Recipe Sha256",
+          "type": "string"
+        },
+        "glb_sha256_by_lod": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          ],
+          "title": "Glb Sha256 By Lod",
+          "type": "array"
+        },
+        "stock_length_m": {
+          "title": "Stock Length M",
+          "type": "number"
+        },
+        "width_m": {
+          "title": "Width M",
+          "type": "number"
+        },
+        "thickness_m": {
+          "title": "Thickness M",
+          "type": "number"
+        },
+        "required_state_functions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Required State Functions",
+          "type": "array"
+        },
+        "outlet_roller_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Outlet Roller Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "custody_socket_id",
+        "driver_function_id",
+        "source_asset_id",
+        "source_manifest_sha256",
+        "source_recipe_sha256",
+        "glb_sha256_by_lod",
+        "stock_length_m",
+        "width_m",
+        "thickness_m",
+        "required_state_functions",
+        "outlet_roller_ids"
+      ],
+      "title": "BathPathBinding",
+      "type": "object"
+    },
+    "BathPathMaterialSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "material_version_id": {
+          "minLength": 1,
+          "title": "Material Version Id",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/MaterialDimensions"
+        },
+        "support_local_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Support Local Mm",
+          "type": "array"
+        },
+        "orientation_xyzw": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Orientation Xyzw",
+          "type": "array"
+        },
+        "bath_path": {
+          "$ref": "#/$defs/BathPathReference"
+        }
+      },
+      "required": [
+        "material_id",
+        "material_version_id",
+        "form",
+        "dimensions",
+        "support_local_mm",
+        "orientation_xyzw",
+        "bath_path"
+      ],
+      "title": "BathPathMaterialSupport",
+      "type": "object"
+    },
+    "BathPathReference": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "profile_id": {
+          "minLength": 1,
+          "title": "Profile Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "profile_id"
+      ],
+      "title": "BathPathReference",
+      "type": "object"
+    },
+    "BindingFunction": {
+      "additionalProperties": false,
+      "properties": {
+        "function_id": {
+          "minLength": 1,
+          "title": "Function Id",
+          "type": "string"
+        },
+        "node_id": {
+          "minLength": 1,
+          "title": "Node Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "rotation",
+            "translation",
+            "state"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "axis": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Axis",
+          "type": "array"
+        },
+        "pivot_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Pivot M",
+          "type": "array"
+        },
+        "min_value": {
+          "title": "Min Value",
+          "type": "number"
+        },
+        "max_value": {
+          "title": "Max Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "function_id",
+        "node_id",
+        "kind",
+        "axis",
+        "pivot_m",
+        "min_value",
+        "max_value"
+      ],
+      "title": "BindingFunction",
+      "type": "object"
+    },
+    "BindingSocket": {
+      "additionalProperties": false,
+      "properties": {
+        "socket_id": {
+          "minLength": 1,
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "family": {
+          "enum": [
+            "ORE",
+            "SCRAP",
+            "LIQUID_IRON",
+            "LIQUID_STEEL",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "INGOT",
+            "STRIP",
+            "PLATE",
+            "COIL",
+            "WIRE_COIL",
+            "PACKAGED"
+          ],
+          "title": "Family",
+          "type": "string"
+        },
+        "position_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position M",
+          "type": "array"
+        },
+        "orientation_xyzw": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Orientation Xyzw",
+          "type": "array"
+        },
+        "motion_function_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Motion Function Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "socket_id",
+        "family",
+        "position_m",
+        "orientation_xyzw",
+        "motion_function_ids"
+      ],
+      "title": "BindingSocket",
+      "type": "object"
+    },
+    "Boundary": {
+      "additionalProperties": false,
+      "properties": {
+        "released_attachment_id": {
+          "minLength": 1,
+          "title": "Released Attachment Id",
+          "type": "string"
+        },
+        "acquired_attachment_id": {
+          "minLength": 1,
+          "title": "Acquired Attachment Id",
+          "type": "string"
+        },
+        "at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "At Ms",
+          "type": "integer"
+        },
+        "previous_material": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BathPathMaterialSupport"
+            },
+            {
+              "$ref": "#/$defs/InternalFeedMaterialSupport"
+            },
+            {
+              "$ref": "#/$defs/MaterialSupport"
+            }
+          ],
+          "title": "Previous Material"
+        },
+        "previous_anchor": {
+          "$ref": "#/$defs/Anchor"
+        },
+        "previous_channels": {
+          "items": {
+            "$ref": "#/$defs/ChannelValue"
+          },
+          "title": "Previous Channels",
+          "type": "array"
+        }
+      },
+      "required": [
+        "released_attachment_id",
+        "acquired_attachment_id",
+        "at_ms",
+        "previous_material",
+        "previous_anchor",
+        "previous_channels"
+      ],
+      "title": "Boundary",
+      "type": "object"
+    },
+    "ChannelValue": {
+      "additionalProperties": false,
+      "properties": {
+        "function_id": {
+          "minLength": 1,
+          "title": "Function Id",
+          "type": "string"
+        },
+        "node_id": {
+          "minLength": 1,
+          "title": "Node Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "rotation",
+            "translation",
+            "state"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "axis": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Axis",
+          "type": "array"
+        },
+        "pivot_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Pivot M",
+          "type": "array"
+        }
+      },
+      "required": [
+        "function_id",
+        "node_id",
+        "kind",
+        "value",
+        "axis",
+        "pivot_m"
+      ],
+      "title": "ChannelValue",
+      "type": "object"
+    },
+    "ConflictZone": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids"
+      ],
+      "title": "ConflictZone",
+      "type": "object"
+    },
+    "Consist": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "locomotive_id": {
+          "minLength": 1,
+          "title": "Locomotive Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "IDLE",
+            "MOVING",
+            "BLOCKED"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "locomotive_id",
+        "status"
+      ],
+      "title": "Consist",
+      "type": "object"
+    },
+    "ConsistMember": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "consist_id": {
+          "minLength": 1,
+          "title": "Consist Id",
+          "type": "string"
+        },
+        "fleet_id": {
+          "minLength": 1,
+          "title": "Fleet Id",
+          "type": "string"
+        },
+        "ordinal": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "coupler_distance_m": {
+          "minimum": 0,
+          "title": "Coupler Distance M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "consist_id",
+        "fleet_id",
+        "ordinal",
+        "coupler_distance_m"
+      ],
+      "title": "ConsistMember",
+      "type": "object"
+    },
+    "CraneReach": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "pick_port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Pick Port Ids",
+          "type": "array"
+        },
+        "drop_port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Drop Port Ids",
+          "type": "array"
+        },
+        "max_radius_m": {
+          "exclusiveMinimum": 0,
+          "title": "Max Radius M",
+          "type": "number"
+        },
+        "min_height_m": {
+          "title": "Min Height M",
+          "type": "number"
+        },
+        "max_height_m": {
+          "title": "Max Height M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "pick_port_ids",
+        "drop_port_ids",
+        "max_radius_m",
+        "min_height_m",
+        "max_height_m"
+      ],
+      "title": "CraneReach",
+      "type": "object"
+    },
+    "DesignProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "truck",
+            "slab-carrier",
+            "coil-carrier",
+            "forklift",
+            "torpedo",
+            "ladle-car",
+            "locomotive",
+            "railcar",
+            "ship",
+            "conveyor",
+            "roller"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        },
+        "load_size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Load Size M",
+          "type": "array"
+        },
+        "body_offset_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Body Offset M",
+          "type": "array"
+        },
+        "load_offset_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Load Offset M",
+          "type": "array"
+        },
+        "clearance_m": {
+          "minimum": 0,
+          "title": "Clearance M",
+          "type": "number"
+        },
+        "min_turn_radius_m": {
+          "minimum": 0,
+          "title": "Min Turn Radius M",
+          "type": "number"
+        },
+        "consist_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Consist Length M",
+          "type": "number"
+        },
+        "reverse_allowed": {
+          "title": "Reverse Allowed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "mode",
+        "size_m",
+        "load_size_m",
+        "body_offset_m",
+        "load_offset_m",
+        "clearance_m",
+        "min_turn_radius_m",
+        "consist_length_m",
+        "reverse_allowed"
+      ],
+      "title": "DesignProfile",
+      "type": "object"
+    },
+    "EventContext": {
+      "additionalProperties": false,
+      "properties": {
+        "reason_code": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason Code"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "material_ids": {
+          "default": [],
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Material Ids",
+          "type": "array"
+        },
+        "order_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Order Id"
+        },
+        "work_order_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Work Order Id"
+        },
+        "process_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Process Id"
+        },
+        "batch_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Batch Id"
+        },
+        "job_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Job Id"
+        },
+        "shipment_leg_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shipment Leg Id"
+        },
+        "resource_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Resource Id"
+        },
+        "reservation_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reservation Id"
+        },
+        "from_attachment_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Attachment Id"
+        },
+        "to_attachment_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Attachment Id"
+        },
+        "from_owner_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Owner Id"
+        },
+        "to_owner_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Owner Id"
+        }
+      },
+      "title": "EventContext",
+      "type": "object"
+    },
+    "FactoryEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "sequence": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Sequence",
+          "type": "integer"
+        },
+        "event_type": {
+          "enum": [
+            "RUN_CREATED",
+            "CLOCK_ADVANCED",
+            "PLAYING_CHANGED",
+            "SPEED_CHANGED",
+            "STOCK_RECEIVED",
+            "MATERIAL_ALLOCATED",
+            "BATCH_STARTED",
+            "BATCH_COMPLETED",
+            "ATTACHMENT_ACQUIRED",
+            "ATTACHMENT_RELEASED",
+            "JOB_ASSIGNED",
+            "JOB_EMPTY_APPROACH",
+            "JOB_QUEUED",
+            "JOB_LOADING",
+            "JOB_DISPATCHED",
+            "JOB_UNLOADING",
+            "JOB_RETURNING",
+            "JOB_IDLE",
+            "JOB_BLOCKED",
+            "JOB_COMPLETED",
+            "RESERVATION_ACQUIRED",
+            "RESERVATION_RELEASED",
+            "MOTION_PHASE_STARTED",
+            "MOTION_PHASE_COMPLETED",
+            "QUALITY_RECORDED",
+            "PLAN_RELEASED",
+            "WORK_ORDER_RELEASED",
+            "PROCESS_STARTED",
+            "PROCESS_BLOCKED",
+            "PROCESS_COMPLETED",
+            "MATERIAL_TRANSFORMED",
+            "MATERIAL_SPLIT",
+            "MATERIAL_MERGED",
+            "TRANSFER_STARTED",
+            "TRANSFER_LOADING",
+            "TRANSFER_DEPARTED",
+            "TRANSFER_UNLOADING",
+            "TRANSFER_ARRIVED",
+            "INSPECTION_STARTED",
+            "INSPECTION_PASSED",
+            "INSPECTION_HELD",
+            "INSPECTION_FAILED",
+            "PACKAGING_STARTED",
+            "PACKAGING_COMPLETED",
+            "MATERIAL_AVAILABLE",
+            "SHIPMENT_ALLOCATED",
+            "SHIPMENT_LOADING",
+            "MATERIAL_LOADED",
+            "SHIPMENT_LOADED",
+            "SHIPMENT_DISPATCHED",
+            "SHIPMENT_AT_PORT",
+            "SHIPMENT_SAILING",
+            "SHIPMENT_DELIVERED",
+            "ORDER_DELIVERED",
+            "RESOURCE_DOWN",
+            "RESOURCE_RESTORED",
+            "RECOVERY_ROUTED"
+          ],
+          "title": "Event Type",
+          "type": "string"
+        },
+        "entity_type": {
+          "enum": [
+            "run",
+            "order",
+            "work_order",
+            "production_lot",
+            "stock_lot",
+            "receipt",
+            "material",
+            "material_version",
+            "batch",
+            "process",
+            "fleet",
+            "job",
+            "attachment",
+            "shipment",
+            "shipment_leg",
+            "quality"
+          ],
+          "title": "Entity Type",
+          "type": "string"
+        },
+        "entity_id": {
+          "minLength": 1,
+          "title": "Entity Id",
+          "type": "string"
+        },
+        "at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "At Ms",
+          "type": "integer"
+        },
+        "occurred_at": {
+          "format": "date-time",
+          "pattern": "^(?!0000)[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,3}0{0,3})?(?:Z|\\+00:00)(?![\\s\\S])",
+          "title": "Occurred At",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/$defs/EventContext"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "sequence",
+        "event_type",
+        "entity_type",
+        "entity_id",
+        "at_ms",
+        "occurred_at",
+        "source_id"
+      ],
+      "title": "FactoryEvent",
+      "type": "object"
+    },
+    "FactoryOrder": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "customer_id": {
+          "minLength": 1,
+          "title": "Customer Id",
+          "type": "string"
+        },
+        "product_id": {
+          "enum": [
+            "slab",
+            "bloom",
+            "billet",
+            "hr",
+            "plate",
+            "wire",
+            "cr",
+            "gi",
+            "ga",
+            "hgi",
+            "eg",
+            "go",
+            "ngo",
+            "sts-hr",
+            "sts-cr",
+            "sts-plate",
+            "ti-hr",
+            "ti-cr",
+            "ti-sheet",
+            "ti-plate"
+          ],
+          "title": "Product Id",
+          "type": "string"
+        },
+        "grade": {
+          "minLength": 1,
+          "title": "Grade",
+          "type": "string"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "due_at": {
+          "format": "date-time",
+          "pattern": "^(?!0000)[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,3}0{0,3})?(?:Z|\\+00:00)(?![\\s\\S])",
+          "title": "Due At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "customer_id",
+        "product_id",
+        "grade",
+        "quantity_kg",
+        "due_at"
+      ],
+      "title": "FactoryOrder",
+      "type": "object"
+    },
+    "FactoryRun": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "fixture_version": {
+          "const": "factory-v2",
+          "default": "factory-v2",
+          "title": "Fixture Version",
+          "type": "string"
+        },
+        "bundle_id": {
+          "minLength": 1,
+          "title": "Bundle Id",
+          "type": "string"
+        },
+        "bundle_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Bundle Hash",
+          "type": "string"
+        },
+        "profile": {
+          "enum": [
+            "v3_contract_test",
+            "demo",
+            "scale"
+          ],
+          "title": "Profile",
+          "type": "string"
+        },
+        "scenario_id": {
+          "enum": [
+            "NORMAL",
+            "DELAY",
+            "RECOVERY"
+          ],
+          "title": "Scenario Id",
+          "type": "string"
+        },
+        "seed": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        },
+        "elapsed_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Elapsed Ms",
+          "type": "integer"
+        },
+        "duration_ms": {
+          "exclusiveMinimum": 0,
+          "maximum": 4193483039999,
+          "title": "Duration Ms",
+          "type": "integer"
+        },
+        "revision": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Revision",
+          "type": "integer"
+        },
+        "event_sequence": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Event Sequence",
+          "type": "integer"
+        },
+        "playing": {
+          "title": "Playing",
+          "type": "boolean"
+        },
+        "speed": {
+          "title": "Speed",
+          "type": "integer"
+        },
+        "epoch_at": {
+          "format": "date-time",
+          "pattern": "^(?!0000)[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,3}0{0,3})?(?:Z|\\+00:00)(?![\\s\\S])",
+          "title": "Epoch At",
+          "type": "string"
+        },
+        "started_at": {
+          "format": "date-time",
+          "pattern": "^(?!0000)[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,3}0{0,3})?(?:Z|\\+00:00)(?![\\s\\S])",
+          "title": "Started At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "bundle_id",
+        "bundle_hash",
+        "profile",
+        "scenario_id",
+        "seed",
+        "elapsed_ms",
+        "duration_ms",
+        "revision",
+        "event_sequence",
+        "playing",
+        "speed",
+        "epoch_at",
+        "started_at"
+      ],
+      "title": "FactoryRun",
+      "type": "object"
+    },
+    "FactorySnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "orders": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/FactoryOrder"
+          },
+          "title": "Orders",
+          "type": "array"
+        },
+        "work_orders": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/WorkOrder"
+          },
+          "title": "Work Orders",
+          "type": "array"
+        },
+        "production_lots": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ProductionLot"
+          },
+          "title": "Production Lots",
+          "type": "array"
+        },
+        "stock_lots": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/StockLot"
+          },
+          "title": "Stock Lots",
+          "type": "array"
+        },
+        "receipts": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/StockReceipt"
+          },
+          "title": "Receipts",
+          "type": "array"
+        },
+        "materials": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Material"
+          },
+          "title": "Materials",
+          "type": "array"
+        },
+        "material_versions": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MaterialVersion"
+          },
+          "title": "Material Versions",
+          "type": "array"
+        },
+        "version_edges": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/VersionEdge"
+          },
+          "title": "Version Edges",
+          "type": "array"
+        },
+        "allocations": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MaterialAllocation"
+          },
+          "title": "Allocations",
+          "type": "array"
+        },
+        "process_batches": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ProcessBatch"
+          },
+          "title": "Process Batches",
+          "type": "array"
+        },
+        "batch_io": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/BatchIO"
+          },
+          "title": "Batch Io",
+          "type": "array"
+        },
+        "processes": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ProcessExecution"
+          },
+          "title": "Processes",
+          "type": "array"
+        },
+        "fleet": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/FleetAsset"
+          },
+          "title": "Fleet",
+          "type": "array"
+        },
+        "vehicle_states": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/VehicleState"
+          },
+          "title": "Vehicle States",
+          "type": "array"
+        },
+        "transport_jobs": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/TransportJob"
+          },
+          "title": "Transport Jobs",
+          "type": "array"
+        },
+        "movement_segments": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MovementSegment"
+          },
+          "title": "Movement Segments",
+          "type": "array"
+        },
+        "reservations": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ResourceReservation"
+          },
+          "title": "Reservations",
+          "type": "array"
+        },
+        "consists": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Consist"
+          },
+          "title": "Consists",
+          "type": "array"
+        },
+        "consist_members": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ConsistMember"
+          },
+          "title": "Consist Members",
+          "type": "array"
+        },
+        "attachments": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Attachment"
+          },
+          "title": "Attachments",
+          "type": "array"
+        },
+        "shipments": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Shipment"
+          },
+          "title": "Shipments",
+          "type": "array"
+        },
+        "shipment_legs": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ShipmentLeg"
+          },
+          "title": "Shipment Legs",
+          "type": "array"
+        },
+        "shipment_materials": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ShipmentMaterial"
+          },
+          "title": "Shipment Materials",
+          "type": "array"
+        },
+        "quality": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/QualityRecord"
+          },
+          "title": "Quality",
+          "type": "array"
+        },
+        "events": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/FactoryEvent"
+          },
+          "title": "Events",
+          "type": "array"
+        },
+        "mass_ledger": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/MassLedgerEntry"
+          },
+          "title": "Mass Ledger",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": 3,
+          "default": 3,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "run": {
+          "$ref": "#/$defs/FactoryRun"
+        }
+      },
+      "required": [
+        "run"
+      ],
+      "title": "FactorySnapshot",
+      "type": "object"
+    },
+    "FactoryWorld": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 2,
+          "title": "Version",
+          "type": "integer"
+        },
+        "units": {
+          "const": "m",
+          "title": "Units",
+          "type": "string"
+        },
+        "up_axis": {
+          "const": "Y",
+          "title": "Up Axis",
+          "type": "string"
+        },
+        "forward_axis": {
+          "const": "+X",
+          "title": "Forward Axis",
+          "type": "string"
+        },
+        "yaw_unit": {
+          "const": "rad",
+          "title": "Yaw Unit",
+          "type": "string"
+        },
+        "nodes": {
+          "items": {
+            "$ref": "#/$defs/Node"
+          },
+          "minItems": 1,
+          "title": "Nodes",
+          "type": "array"
+        },
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "title": "Segments",
+          "type": "array"
+        },
+        "conflict_zones": {
+          "items": {
+            "$ref": "#/$defs/ConflictZone"
+          },
+          "title": "Conflict Zones",
+          "type": "array"
+        },
+        "owners": {
+          "items": {
+            "$ref": "#/$defs/Owner"
+          },
+          "minItems": 1,
+          "title": "Owners",
+          "type": "array"
+        },
+        "slots": {
+          "items": {
+            "$ref": "#/$defs/Slot"
+          },
+          "title": "Slots",
+          "type": "array"
+        },
+        "ports": {
+          "items": {
+            "$ref": "#/$defs/Port"
+          },
+          "title": "Ports",
+          "type": "array"
+        },
+        "footprints": {
+          "items": {
+            "$ref": "#/$defs/Footprint"
+          },
+          "minItems": 1,
+          "title": "Footprints",
+          "type": "array"
+        },
+        "allowed_interiors": {
+          "items": {
+            "$ref": "#/$defs/AllowedInteriorEnvelope"
+          },
+          "title": "Allowed Interiors",
+          "type": "array"
+        },
+        "spatial": {
+          "$ref": "#/$defs/SpatialRecords",
+          "default": null
+        }
+      },
+      "required": [
+        "version",
+        "units",
+        "up_axis",
+        "forward_axis",
+        "yaw_unit",
+        "nodes",
+        "segments",
+        "conflict_zones",
+        "owners",
+        "slots",
+        "ports",
+        "footprints",
+        "allowed_interiors"
+      ],
+      "title": "FactoryWorld",
+      "type": "object"
+    },
+    "FleetAsset": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "truck",
+            "carrier",
+            "forklift",
+            "torpedo",
+            "ladle",
+            "locomotive",
+            "railcar",
+            "ship"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "variant": {
+          "minLength": 1,
+          "title": "Variant",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        },
+        "length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Length M",
+          "type": "number"
+        },
+        "load_envelope_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Load Envelope M",
+          "type": "array"
+        },
+        "turn_radius_m": {
+          "minimum": 0,
+          "title": "Turn Radius M",
+          "type": "number"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal_rail",
+            "water"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "load_socket_id": {
+          "minLength": 1,
+          "title": "Load Socket Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "kind",
+        "variant",
+        "capacity_kg",
+        "length_m",
+        "load_envelope_m",
+        "turn_radius_m",
+        "mode",
+        "load_socket_id"
+      ],
+      "title": "FleetAsset",
+      "type": "object"
+    },
+    "Footprint": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "pose",
+        "size_m"
+      ],
+      "title": "Footprint",
+      "type": "object"
+    },
+    "InteriorAccess": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "interior_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Interior Id",
+          "type": "string"
+        },
+        "opening_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Opening Ids",
+          "type": "array"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "interior_id",
+        "opening_ids",
+        "segment_ids",
+        "profile_ids",
+        "mode"
+      ],
+      "title": "InteriorAccess",
+      "type": "object"
+    },
+    "InternalFeedAssetBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "owner_id": {
+          "minLength": 1,
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "minLength": 1,
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "sockets": {
+          "items": {
+            "$ref": "#/$defs/BindingSocket"
+          },
+          "title": "Sockets",
+          "type": "array"
+        },
+        "functions": {
+          "items": {
+            "$ref": "#/$defs/BindingFunction"
+          },
+          "title": "Functions",
+          "type": "array"
+        },
+        "internal_feeds": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/LiftedInternalFeedBinding"
+              },
+              {
+                "$ref": "#/$defs/InternalFeedBinding"
+              }
+            ]
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "title": "Internal Feeds",
+          "type": "array"
+        }
+      },
+      "required": [
+        "owner_id",
+        "policy_id",
+        "sockets",
+        "functions",
+        "internal_feeds"
+      ],
+      "title": "InternalFeedAssetBinding",
+      "type": "object"
+    },
+    "InternalFeedBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "linear_roller_feed",
+          "title": "Kind",
+          "type": "string"
+        },
+        "custody_socket_id": {
+          "minLength": 1,
+          "title": "Custody Socket Id",
+          "type": "string"
+        },
+        "driver_function_id": {
+          "minLength": 1,
+          "title": "Driver Function Id",
+          "type": "string"
+        },
+        "start_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Start M",
+          "type": "array"
+        },
+        "end_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "End M",
+          "type": "array"
+        },
+        "rollers": {
+          "items": {
+            "$ref": "#/$defs/InternalFeedRoller"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Rollers",
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "custody_socket_id",
+        "driver_function_id",
+        "start_m",
+        "end_m",
+        "rollers"
+      ],
+      "title": "InternalFeedBinding",
+      "type": "object"
+    },
+    "InternalFeedMaterialSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "material_version_id": {
+          "minLength": 1,
+          "title": "Material Version Id",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/MaterialDimensions"
+        },
+        "support_local_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Support Local Mm",
+          "type": "array"
+        },
+        "orientation_xyzw": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Orientation Xyzw",
+          "type": "array"
+        },
+        "internal_feed": {
+          "$ref": "#/$defs/InternalFeedReference"
+        }
+      },
+      "required": [
+        "material_id",
+        "material_version_id",
+        "form",
+        "dimensions",
+        "support_local_mm",
+        "orientation_xyzw",
+        "internal_feed"
+      ],
+      "title": "InternalFeedMaterialSupport",
+      "type": "object"
+    },
+    "InternalFeedReference": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "feed_id": {
+          "minLength": 1,
+          "title": "Feed Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "feed_id"
+      ],
+      "title": "InternalFeedReference",
+      "type": "object"
+    },
+    "InternalFeedRoller": {
+      "additionalProperties": false,
+      "properties": {
+        "part_id": {
+          "minLength": 1,
+          "title": "Part Id",
+          "type": "string"
+        },
+        "surface_node_id": {
+          "minLength": 1,
+          "title": "Surface Node Id",
+          "type": "string"
+        },
+        "radius_m": {
+          "exclusiveMinimum": 0,
+          "title": "Radius M",
+          "type": "number"
+        },
+        "width_m": {
+          "exclusiveMinimum": 0,
+          "title": "Width M",
+          "type": "number"
+        },
+        "center_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Center M",
+          "type": "array"
+        },
+        "ratio": {
+          "exclusiveMinimum": 0,
+          "title": "Ratio",
+          "type": "number"
+        }
+      },
+      "required": [
+        "part_id",
+        "surface_node_id",
+        "radius_m",
+        "width_m",
+        "center_m",
+        "ratio"
+      ],
+      "title": "InternalFeedRoller",
+      "type": "object"
+    },
+    "LiftedInternalFeedBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "linear_roller_feed",
+          "title": "Kind",
+          "type": "string"
+        },
+        "custody_socket_id": {
+          "minLength": 1,
+          "title": "Custody Socket Id",
+          "type": "string"
+        },
+        "driver_function_id": {
+          "minLength": 1,
+          "title": "Driver Function Id",
+          "type": "string"
+        },
+        "start_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Start M",
+          "type": "array"
+        },
+        "end_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "End M",
+          "type": "array"
+        },
+        "rollers": {
+          "items": {
+            "$ref": "#/$defs/InternalFeedRoller"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Rollers",
+          "type": "array"
+        },
+        "support_lift_function_id": {
+          "minLength": 1,
+          "title": "Support Lift Function Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "custody_socket_id",
+        "driver_function_id",
+        "start_m",
+        "end_m",
+        "rollers",
+        "support_lift_function_id"
+      ],
+      "title": "LiftedInternalFeedBinding",
+      "type": "object"
+    },
+    "MassLedgerEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "OPENING_STOCK",
+            "EXTERNAL_RECEIPT",
+            "EXTERNAL_ADDITION",
+            "BYPRODUCT",
+            "IRRECOVERABLE_LOSS"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "At Ms",
+          "type": "integer"
+        },
+        "material_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Material Id"
+        },
+        "batch_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Batch Id"
+        },
+        "event_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Event Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "source_id",
+        "kind",
+        "quantity_kg",
+        "at_ms",
+        "material_id",
+        "batch_id",
+        "event_id"
+      ],
+      "title": "MassLedgerEntry",
+      "type": "object"
+    },
+    "Material": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "grade": {
+          "minLength": 1,
+          "title": "Grade",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/MaterialDimensions"
+        },
+        "weight_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Weight Kg",
+          "type": "integer"
+        },
+        "current_version_id": {
+          "minLength": 1,
+          "title": "Current Version Id",
+          "type": "string"
+        },
+        "origin_stock_lot_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Origin Stock Lot Id"
+        },
+        "production_lot_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Production Lot Id"
+        },
+        "quality_status": {
+          "enum": [
+            "PENDING",
+            "PASSED",
+            "HOLD",
+            "FAILED"
+          ],
+          "title": "Quality Status",
+          "type": "string"
+        },
+        "availability_status": {
+          "enum": [
+            "WIP",
+            "QUARANTINED",
+            "AVAILABLE",
+            "RESERVED",
+            "SHIPPED",
+            "CONSUMED"
+          ],
+          "title": "Availability Status",
+          "type": "string"
+        },
+        "active": {
+          "title": "Active",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "grade",
+        "form",
+        "dimensions",
+        "weight_kg",
+        "current_version_id",
+        "origin_stock_lot_id",
+        "production_lot_id",
+        "quality_status",
+        "availability_status",
+        "active"
+      ],
+      "title": "Material",
+      "type": "object"
+    },
+    "MaterialAllocation": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "order_id": {
+          "minLength": 1,
+          "title": "Order Id",
+          "type": "string"
+        },
+        "work_order_id": {
+          "minLength": 1,
+          "title": "Work Order Id",
+          "type": "string"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "active": {
+          "title": "Active",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "material_id",
+        "order_id",
+        "work_order_id",
+        "quantity_kg",
+        "active"
+      ],
+      "title": "MaterialAllocation",
+      "type": "object"
+    },
+    "MaterialDimensions": {
+      "additionalProperties": false,
+      "properties": {
+        "length_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Length Mm"
+        },
+        "width_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Width Mm"
+        },
+        "thickness_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Thickness Mm"
+        },
+        "diameter_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Diameter Mm"
+        },
+        "inner_diameter_mm": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inner Diameter Mm"
+        }
+      },
+      "title": "MaterialDimensions",
+      "type": "object"
+    },
+    "MaterialSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "material_version_id": {
+          "minLength": 1,
+          "title": "Material Version Id",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/MaterialDimensions"
+        },
+        "support_local_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Support Local Mm",
+          "type": "array"
+        },
+        "orientation_xyzw": {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Orientation Xyzw",
+          "type": "array"
+        }
+      },
+      "required": [
+        "material_id",
+        "material_version_id",
+        "form",
+        "dimensions",
+        "support_local_mm",
+        "orientation_xyzw"
+      ],
+      "title": "MaterialSupport",
+      "type": "object"
+    },
+    "MaterialVersion": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "ordinal": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "grade": {
+          "minLength": 1,
+          "title": "Grade",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/MaterialDimensions"
+        },
+        "weight_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Weight Kg",
+          "type": "integer"
+        },
+        "cause_event_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Cause Event Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "material_id",
+        "ordinal",
+        "grade",
+        "form",
+        "dimensions",
+        "weight_kg",
+        "cause_event_id"
+      ],
+      "title": "MaterialVersion",
+      "type": "object"
+    },
+    "MechanicalChannel": {
+      "additionalProperties": false,
+      "properties": {
+        "function_id": {
+          "minLength": 1,
+          "title": "Function Id",
+          "type": "string"
+        },
+        "node_id": {
+          "minLength": 1,
+          "title": "Node Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "rotation",
+            "translation",
+            "state"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "window_id": {
+          "enum": [
+            "entry",
+            "work",
+            "exit",
+            "approach",
+            "load",
+            "travel",
+            "unload",
+            "return",
+            "hold"
+          ],
+          "title": "Window Id",
+          "type": "string"
+        },
+        "axis": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Axis",
+          "type": "array"
+        },
+        "pivot_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Pivot M",
+          "type": "array"
+        },
+        "start_value": {
+          "title": "Start Value",
+          "type": "number"
+        },
+        "end_value": {
+          "title": "End Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "function_id",
+        "node_id",
+        "kind",
+        "window_id",
+        "axis",
+        "pivot_m",
+        "start_value",
+        "end_value"
+      ],
+      "title": "MechanicalChannel",
+      "type": "object"
+    },
+    "MotionContext": {
+      "additionalProperties": false,
+      "properties": {
+        "snapshot": {
+          "$ref": "#/$defs/FactorySnapshot"
+        },
+        "world": {
+          "$ref": "#/$defs/FactoryWorld"
+        },
+        "authorizations": {
+          "items": {
+            "$ref": "#/$defs/MotionEnvelope"
+          },
+          "title": "Authorizations",
+          "type": "array"
+        },
+        "asset_bindings": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/BathPathAssetBinding"
+              },
+              {
+                "$ref": "#/$defs/InternalFeedAssetBinding"
+              },
+              {
+                "$ref": "#/$defs/AssetBinding"
+              }
+            ]
+          },
+          "title": "Asset Bindings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "snapshot",
+        "world",
+        "authorizations",
+        "asset_bindings"
+      ],
+      "title": "MotionContext",
+      "type": "object"
+    },
+    "MotionEnvelope": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "bundle_id": {
+          "minLength": 1,
+          "title": "Bundle Id",
+          "type": "string"
+        },
+        "bundle_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Bundle Hash",
+          "type": "string"
+        },
+        "revision": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Revision",
+          "type": "integer"
+        },
+        "confirmed_sim_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Confirmed Sim Ms",
+          "type": "integer"
+        },
+        "execution_id": {
+          "minLength": 1,
+          "title": "Execution Id",
+          "type": "string"
+        },
+        "execution_kind": {
+          "enum": [
+            "process",
+            "transport",
+            "logistics"
+          ],
+          "title": "Execution Kind",
+          "type": "string"
+        },
+        "recipe_id": {
+          "minLength": 1,
+          "title": "Recipe Id",
+          "type": "string"
+        },
+        "phase_start_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Phase Start Ms",
+          "type": "integer"
+        },
+        "phase_end_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Phase End Ms",
+          "type": "integer"
+        },
+        "effective_sim_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Effective Sim Ms",
+          "type": "integer"
+        },
+        "frozen_progress": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Frozen Progress"
+        },
+        "clock_state": {
+          "enum": [
+            "running",
+            "paused",
+            "stale",
+            "blocked"
+          ],
+          "title": "Clock State",
+          "type": "string"
+        },
+        "material": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BathPathMaterialSupport"
+            },
+            {
+              "$ref": "#/$defs/InternalFeedMaterialSupport"
+            },
+            {
+              "$ref": "#/$defs/MaterialSupport"
+            }
+          ],
+          "title": "Material"
+        },
+        "attachment_id": {
+          "minLength": 1,
+          "title": "Attachment Id",
+          "type": "string"
+        },
+        "anchor": {
+          "$ref": "#/$defs/Anchor"
+        },
+        "channels": {
+          "items": {
+            "$ref": "#/$defs/MechanicalChannel"
+          },
+          "title": "Channels",
+          "type": "array"
+        },
+        "boundary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Boundary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "run_id",
+        "bundle_id",
+        "bundle_hash",
+        "revision",
+        "confirmed_sim_ms",
+        "execution_id",
+        "execution_kind",
+        "recipe_id",
+        "phase_start_ms",
+        "phase_end_ms",
+        "effective_sim_ms",
+        "frozen_progress",
+        "clock_state",
+        "material",
+        "attachment_id",
+        "anchor",
+        "channels",
+        "boundary"
+      ],
+      "title": "MotionEnvelope",
+      "type": "object"
+    },
+    "MovementSegment": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "start_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Start Ms",
+          "type": "integer"
+        },
+        "end_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "End Ms",
+          "type": "integer"
+        },
+        "job_id": {
+          "minLength": 1,
+          "title": "Job Id",
+          "type": "string"
+        },
+        "ordinal": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "segment_id": {
+          "minLength": 1,
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "from_position_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "From Position M",
+          "type": "array"
+        },
+        "to_position_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "To Position M",
+          "type": "array"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "start_ms",
+        "end_ms",
+        "job_id",
+        "ordinal",
+        "segment_id",
+        "from_position_m",
+        "to_position_m"
+      ],
+      "title": "MovementSegment",
+      "type": "object"
+    },
+    "Node": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "position": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position",
+          "type": "array"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "position",
+        "modes"
+      ],
+      "title": "Node",
+      "type": "object"
+    },
+    "Owner": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "equipment",
+            "vehicle",
+            "railcar",
+            "ship",
+            "hook",
+            "customer"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "sockets": {
+          "items": {
+            "$ref": "#/$defs/Socket"
+          },
+          "minItems": 1,
+          "title": "Sockets",
+          "type": "array"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "pose",
+        "sockets",
+        "modes"
+      ],
+      "title": "Owner",
+      "type": "object"
+    },
+    "Port": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "node_id",
+        "capacity_kg",
+        "modes"
+      ],
+      "title": "Port",
+      "type": "object"
+    },
+    "Pose": {
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position",
+          "type": "array"
+        },
+        "yaw_rad": {
+          "title": "Yaw Rad",
+          "type": "number"
+        }
+      },
+      "required": [
+        "position",
+        "yaw_rad"
+      ],
+      "title": "Pose",
+      "type": "object"
+    },
+    "ProcessBatch": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "process_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Process Id"
+        },
+        "recipe_id": {
+          "minLength": 1,
+          "title": "Recipe Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "QUEUED",
+            "RUNNING",
+            "BLOCKED",
+            "COMPLETED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "start_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Start Ms"
+        },
+        "end_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "End Ms"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "process_id",
+        "recipe_id",
+        "status",
+        "start_ms",
+        "end_ms"
+      ],
+      "title": "ProcessBatch",
+      "type": "object"
+    },
+    "ProcessExecution": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "work_order_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Work Order Id"
+        },
+        "route_step_id": {
+          "minLength": 1,
+          "title": "Route Step Id",
+          "type": "string"
+        },
+        "equipment_id": {
+          "minLength": 1,
+          "title": "Equipment Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "QUEUED",
+            "RUNNING",
+            "BLOCKED",
+            "COMPLETED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "ready_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Ready At Ms",
+          "type": "integer"
+        },
+        "start_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Start Ms"
+        },
+        "end_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "End Ms"
+        },
+        "planned_duration_ms": {
+          "exclusiveMinimum": 0,
+          "maximum": 4193483039999,
+          "title": "Planned Duration Ms",
+          "type": "integer"
+        },
+        "blocked_reason": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Blocked Reason"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "work_order_id",
+        "route_step_id",
+        "equipment_id",
+        "status",
+        "ready_at_ms",
+        "start_ms",
+        "end_ms",
+        "planned_duration_ms",
+        "blocked_reason"
+      ],
+      "title": "ProcessExecution",
+      "type": "object"
+    },
+    "ProductionLot": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "work_order_id": {
+          "minLength": 1,
+          "title": "Work Order Id",
+          "type": "string"
+        },
+        "planned_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Planned Kg",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "work_order_id",
+        "planned_kg"
+      ],
+      "title": "ProductionLot",
+      "type": "object"
+    },
+    "QualityRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "material_version_id": {
+          "minLength": 1,
+          "title": "Material Version Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PENDING",
+            "PASSED",
+            "HOLD",
+            "FAILED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "At Ms",
+          "type": "integer"
+        },
+        "event_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Event Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "material_id",
+        "material_version_id",
+        "status",
+        "at_ms",
+        "event_id"
+      ],
+      "title": "QualityRecord",
+      "type": "object"
+    },
+    "RailBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "usable_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Usable Length M",
+          "type": "number"
+        },
+        "clearance_m": {
+          "minimum": 0,
+          "title": "Clearance M",
+          "type": "number"
+        },
+        "reverse_allowed": {
+          "title": "Reverse Allowed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids",
+        "usable_length_m",
+        "clearance_m",
+        "reverse_allowed"
+      ],
+      "title": "RailBlock",
+      "type": "object"
+    },
+    "ResourceReservation": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "start_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Start Ms",
+          "type": "integer"
+        },
+        "end_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "End Ms",
+          "type": "integer"
+        },
+        "resource_id": {
+          "minLength": 1,
+          "title": "Resource Id",
+          "type": "string"
+        },
+        "job_id": {
+          "minLength": 1,
+          "title": "Job Id",
+          "type": "string"
+        },
+        "released_at_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Released At Ms"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "start_ms",
+        "end_ms",
+        "resource_id",
+        "job_id"
+      ],
+      "title": "ResourceReservation",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "from_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "maxItems": 3,
+            "minItems": 3,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "minItems": 2,
+          "title": "Points",
+          "type": "array"
+        },
+        "conflict_zone_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Conflict Zone Ids",
+          "type": "array"
+        },
+        "speed_m_per_sim_s": {
+          "exclusiveMinimum": 0,
+          "title": "Speed M Per Sim S",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "from_node_id",
+        "to_node_id",
+        "mode",
+        "points",
+        "conflict_zone_ids",
+        "speed_m_per_sim_s"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "SegmentPolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "width_m": {
+          "exclusiveMinimum": 0,
+          "title": "Width M",
+          "type": "number"
+        },
+        "height_m": {
+          "exclusiveMinimum": 0,
+          "title": "Height M",
+          "type": "number"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        },
+        "stop_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Stop Ids",
+          "type": "array"
+        },
+        "rail_block_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Rail Block Ids",
+          "type": "array"
+        },
+        "berth_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Berth Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "segment_id",
+        "width_m",
+        "height_m",
+        "profile_ids",
+        "stop_ids",
+        "rail_block_ids",
+        "berth_ids"
+      ],
+      "title": "SegmentPolicy",
+      "type": "object"
+    },
+    "Shipment": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "order_id": {
+          "minLength": 1,
+          "title": "Order Id",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "ROAD",
+            "RAIL",
+            "SEA"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PLANNED",
+            "ALLOCATED",
+            "LOADING",
+            "DISPATCHED",
+            "IN_TRANSIT",
+            "DELIVERED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "order_id",
+        "mode",
+        "status",
+        "capacity_kg"
+      ],
+      "title": "Shipment",
+      "type": "object"
+    },
+    "ShipmentLeg": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "shipment_id": {
+          "minLength": 1,
+          "title": "Shipment Id",
+          "type": "string"
+        },
+        "ordinal": {
+          "maximum": 9007199254740991,
+          "minimum": 0,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "mode": {
+          "enum": [
+            "ROAD",
+            "RAIL",
+            "SEA"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "from_node_id": {
+          "minLength": 1,
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "minLength": 1,
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PLANNED",
+            "LOADING",
+            "IN_TRANSIT",
+            "UNLOADING",
+            "DELIVERED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "eta_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Eta Ms"
+        },
+        "start_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Start Ms"
+        },
+        "end_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "End Ms"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "shipment_id",
+        "ordinal",
+        "mode",
+        "from_node_id",
+        "to_node_id",
+        "status",
+        "eta_ms",
+        "start_ms",
+        "end_ms"
+      ],
+      "title": "ShipmentLeg",
+      "type": "object"
+    },
+    "ShipmentMaterial": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "shipment_id": {
+          "minLength": 1,
+          "title": "Shipment Id",
+          "type": "string"
+        },
+        "material_id": {
+          "minLength": 1,
+          "title": "Material Id",
+          "type": "string"
+        },
+        "active": {
+          "title": "Active",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "shipment_id",
+        "material_id",
+        "active"
+      ],
+      "title": "ShipmentMaterial",
+      "type": "object"
+    },
+    "Slot": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "node_id",
+        "capacity_kg"
+      ],
+      "title": "Slot",
+      "type": "object"
+    },
+    "Socket": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        }
+      },
+      "required": [
+        "id",
+        "pose"
+      ],
+      "title": "Socket",
+      "type": "object"
+    },
+    "SpatialBerth": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Port Ids",
+          "type": "array"
+        },
+        "usable_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Usable Length M",
+          "type": "number"
+        },
+        "depth_m": {
+          "exclusiveMinimum": 0,
+          "title": "Depth M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids",
+        "port_ids",
+        "usable_length_m",
+        "depth_m"
+      ],
+      "title": "SpatialBerth",
+      "type": "object"
+    },
+    "SpatialCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "equipment",
+            "stage",
+            "hall",
+            "source_function",
+            "compiled_step",
+            "connection",
+            "asset_kind"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "product_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Product Ids",
+          "type": "array"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Port Ids",
+          "type": "array"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "source_id",
+        "product_ids",
+        "owner_id",
+        "socket_id",
+        "port_ids",
+        "segment_ids"
+      ],
+      "title": "SpatialCoverage",
+      "type": "object"
+    },
+    "SpatialHall": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "zone_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Zone Id",
+          "type": "string"
+        },
+        "footprint_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Footprint Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "zone_id",
+        "footprint_id"
+      ],
+      "title": "SpatialHall",
+      "type": "object"
+    },
+    "SpatialOpening": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "hall_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Hall Id",
+          "type": "string"
+        },
+        "interior_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Interior Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "width_m": {
+          "exclusiveMinimum": 0,
+          "title": "Width M",
+          "type": "number"
+        },
+        "height_m": {
+          "exclusiveMinimum": 0,
+          "title": "Height M",
+          "type": "number"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "hall_id",
+        "interior_id",
+        "node_id",
+        "width_m",
+        "height_m",
+        "mode",
+        "profile_ids"
+      ],
+      "title": "SpatialOpening",
+      "type": "object"
+    },
+    "SpatialParking": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "slot_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Slot Id",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "capacity_positions": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Positions",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "slot_id",
+        "profile_id",
+        "capacity_positions"
+      ],
+      "title": "SpatialParking",
+      "type": "object"
+    },
+    "SpatialRecords": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "zones": {
+          "items": {
+            "$ref": "#/$defs/SpatialZone"
+          },
+          "title": "Zones",
+          "type": "array"
+        },
+        "halls": {
+          "items": {
+            "$ref": "#/$defs/SpatialHall"
+          },
+          "title": "Halls",
+          "type": "array"
+        },
+        "openings": {
+          "items": {
+            "$ref": "#/$defs/SpatialOpening"
+          },
+          "title": "Openings",
+          "type": "array"
+        },
+        "profiles": {
+          "items": {
+            "$ref": "#/$defs/DesignProfile"
+          },
+          "title": "Profiles",
+          "type": "array"
+        },
+        "segment_policies": {
+          "items": {
+            "$ref": "#/$defs/SegmentPolicy"
+          },
+          "title": "Segment Policies",
+          "type": "array"
+        },
+        "interior_access": {
+          "items": {
+            "$ref": "#/$defs/InteriorAccess"
+          },
+          "title": "Interior Access",
+          "type": "array"
+        },
+        "stops": {
+          "items": {
+            "$ref": "#/$defs/SpatialStop"
+          },
+          "title": "Stops",
+          "type": "array"
+        },
+        "rail_blocks": {
+          "items": {
+            "$ref": "#/$defs/RailBlock"
+          },
+          "title": "Rail Blocks",
+          "type": "array"
+        },
+        "berths": {
+          "items": {
+            "$ref": "#/$defs/SpatialBerth"
+          },
+          "title": "Berths",
+          "type": "array"
+        },
+        "crane_reaches": {
+          "items": {
+            "$ref": "#/$defs/CraneReach"
+          },
+          "title": "Crane Reaches",
+          "type": "array"
+        },
+        "parking": {
+          "items": {
+            "$ref": "#/$defs/SpatialParking"
+          },
+          "title": "Parking",
+          "type": "array"
+        },
+        "coverage": {
+          "items": {
+            "$ref": "#/$defs/SpatialCoverage"
+          },
+          "title": "Coverage",
+          "type": "array"
+        },
+        "routes": {
+          "items": {
+            "$ref": "#/$defs/SpatialRoute"
+          },
+          "title": "Routes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "zones",
+        "halls",
+        "openings",
+        "profiles",
+        "segment_policies",
+        "interior_access",
+        "stops",
+        "rail_blocks",
+        "berths",
+        "crane_reaches",
+        "parking",
+        "coverage",
+        "routes"
+      ],
+      "title": "SpatialRecords",
+      "type": "object"
+    },
+    "SpatialRoute": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "loaded",
+            "empty_return",
+            "holding"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "from_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "profile_id",
+        "kind",
+        "from_node_id",
+        "to_node_id",
+        "segment_ids"
+      ],
+      "title": "SpatialRoute",
+      "type": "object"
+    },
+    "SpatialStop": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "stop",
+            "gate",
+            "staging",
+            "holding",
+            "loading",
+            "unloading"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "kind",
+        "profile_ids"
+      ],
+      "title": "SpatialStop",
+      "type": "object"
+    },
+    "SpatialZone": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "owner_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Owner Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "owner_ids"
+      ],
+      "title": "SpatialZone",
+      "type": "object"
+    },
+    "StockLot": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "source_kind": {
+          "enum": [
+            "OPENING",
+            "PURCHASED",
+            "RETURNED"
+          ],
+          "title": "Source Kind",
+          "type": "string"
+        },
+        "grade": {
+          "minLength": 1,
+          "title": "Grade",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "ORE",
+            "HOT_METAL",
+            "LIQUID_STEEL",
+            "SCRAP",
+            "SLAB",
+            "BLOOM",
+            "BILLET",
+            "HOT_SLAB",
+            "HOT_BLOOM",
+            "HOT_BILLET",
+            "HOT_STRIP",
+            "HOT_PLATE",
+            "STRIP",
+            "THIN_STRIP",
+            "COATED_STRIP",
+            "HR_COIL",
+            "CR_COIL",
+            "GI_COIL",
+            "GA_COIL",
+            "HGI_COIL",
+            "EG_COIL",
+            "GO_COIL",
+            "NGO_COIL",
+            "WIRE",
+            "WIRE_COIL",
+            "PLATE",
+            "STS_HR_COIL",
+            "STS_CR_COIL",
+            "STS_PLATE",
+            "TI_INGOT",
+            "TI_SLAB",
+            "TI_HR_COIL",
+            "TI_CR_COIL",
+            "TI_SHEET",
+            "TI_PLATE",
+            "COKE",
+            "COAL",
+            "LIMESTONE",
+            "ALLOY",
+            "SLAG",
+            "BYPRODUCT"
+          ],
+          "title": "Form",
+          "type": "string"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "received_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Received At Ms",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "source_kind",
+        "grade",
+        "form",
+        "quantity_kg",
+        "received_at_ms"
+      ],
+      "title": "StockLot",
+      "type": "object"
+    },
+    "StockReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "stock_lot_id": {
+          "minLength": 1,
+          "title": "Stock Lot Id",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "quantity_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Quantity Kg",
+          "type": "integer"
+        },
+        "received_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Received At Ms",
+          "type": "integer"
+        },
+        "event_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Event Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "stock_lot_id",
+        "source_id",
+        "quantity_kg",
+        "received_at_ms",
+        "event_id"
+      ],
+      "title": "StockReceipt",
+      "type": "object"
+    },
+    "TransportJob": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "fleet_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fleet Id"
+        },
+        "equipment_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Equipment Id"
+        },
+        "material_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Material Id"
+        },
+        "shipment_leg_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shipment Leg Id"
+        },
+        "from_node_id": {
+          "minLength": 1,
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "minLength": 1,
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "IDLE",
+            "ASSIGNED",
+            "EMPTY_APPROACH",
+            "QUEUED",
+            "LOADING",
+            "MOVING",
+            "UNLOADING",
+            "RETURNING",
+            "BLOCKED",
+            "COMPLETED",
+            "STRUCTURAL_BLOCKED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "ready_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Ready At Ms",
+          "type": "integer"
+        },
+        "start_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Start Ms"
+        },
+        "end_ms": {
+          "anyOf": [
+            {
+              "maximum": 4193483039999,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "End Ms"
+        },
+        "blocked_resource_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Blocked Resource Id"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "fleet_id",
+        "equipment_id",
+        "material_id",
+        "shipment_leg_id",
+        "from_node_id",
+        "to_node_id",
+        "status",
+        "ready_at_ms",
+        "start_ms",
+        "end_ms",
+        "blocked_resource_id"
+      ],
+      "title": "TransportJob",
+      "type": "object"
+    },
+    "VehicleState": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "fleet_id": {
+          "minLength": 1,
+          "title": "Fleet Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "IDLE",
+            "ASSIGNED",
+            "EMPTY_APPROACH",
+            "QUEUED",
+            "LOADING",
+            "MOVING",
+            "UNLOADING",
+            "RETURNING",
+            "BLOCKED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "node_id": {
+          "minLength": 1,
+          "title": "Node Id",
+          "type": "string"
+        },
+        "position_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position M",
+          "type": "array"
+        },
+        "yaw_rad": {
+          "title": "Yaw Rad",
+          "type": "number"
+        },
+        "current_job_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Current Job Id"
+        },
+        "available_at_ms": {
+          "maximum": 4193483039999,
+          "minimum": 0,
+          "title": "Available At Ms",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "fleet_id",
+        "status",
+        "node_id",
+        "position_m",
+        "yaw_rad",
+        "current_job_id",
+        "available_at_ms"
+      ],
+      "title": "VehicleState",
+      "type": "object"
+    },
+    "VersionEdge": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "batch_id": {
+          "minLength": 1,
+          "title": "Batch Id",
+          "type": "string"
+        },
+        "input_version_id": {
+          "minLength": 1,
+          "title": "Input Version Id",
+          "type": "string"
+        },
+        "output_version_id": {
+          "minLength": 1,
+          "title": "Output Version Id",
+          "type": "string"
+        },
+        "transferred_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Transferred Kg",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "batch_id",
+        "input_version_id",
+        "output_version_id",
+        "transferred_kg"
+      ],
+      "title": "VersionEdge",
+      "type": "object"
+    },
+    "WorkOrder": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "order_id": {
+          "minLength": 1,
+          "title": "Order Id",
+          "type": "string"
+        },
+        "route_id": {
+          "minLength": 1,
+          "title": "Route Id",
+          "type": "string"
+        },
+        "route_version": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Route Version",
+          "type": "integer"
+        },
+        "planned_kg": {
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991,
+          "title": "Planned Kg",
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "PLANNED",
+            "RELEASED",
+            "COMPLETED"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "run_id",
+        "id",
+        "order_id",
+        "route_id",
+        "route_version",
+        "planned_kg",
+        "status"
+      ],
+      "title": "WorkOrder",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "envelope": {
+      "$ref": "#/$defs/MotionEnvelope"
+    },
+    "context": {
+      "$ref": "#/$defs/MotionContext"
+    }
+  },
+  "required": [
+    "envelope",
+    "context"
+  ],
+  "title": "MotionRequest",
+  "type": "object"
+}

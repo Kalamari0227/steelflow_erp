@@ -1,0 +1,303 @@
+{
+  "scenarios": [
+    {
+      "scenario": "NORMAL",
+      "completion_ms": 1091800,
+      "actual": {
+        "ORD-billet": 297900,
+        "ORD-bloom": 465200,
+        "ORD-ti-hr": 522400,
+        "ORD-ti-plate": 603300,
+        "ORD-ti-cr": 761400,
+        "ORD-sts-hr": 778600,
+        "ORD-sts-plate": 822200,
+        "ORD-slab": 862600,
+        "ORD-ti-sheet": 878700,
+        "ORD-cr": 897600,
+        "ORD-sts-cr": 912700,
+        "ORD-hr": 936600,
+        "ORD-plate": 973500,
+        "ORD-wire": 988600,
+        "ORD-go": 1003700,
+        "ORD-eg": 1018800,
+        "ORD-hgi": 1033400,
+        "ORD-ngo": 1048000,
+        "ORD-ga": 1077200,
+        "ORD-gi": 1091800
+      },
+      "allShipmentsDelivered": 21,
+      "mass": {
+        "initial_kg": 408000,
+        "additions_kg": 1200,
+        "active_kg": 407300,
+        "loss_kg": 1900
+      },
+      "inputUnchanged": true,
+      "forecastEqualsActual": true,
+      "routed": [],
+      "roller_ms": [],
+      "timedRollerTransfers": 290,
+      "outageEvents": 0
+    },
+    {
+      "scenario": "DELAY",
+      "completion_ms": 1091800,
+      "actual": {
+        "ORD-billet": 297900,
+        "ORD-bloom": 465200,
+        "ORD-ti-hr": 522400,
+        "ORD-ti-plate": 605000,
+        "ORD-ti-cr": 742900,
+        "ORD-sts-hr": 778600,
+        "ORD-sts-plate": 828200,
+        "ORD-slab": 862600,
+        "ORD-ti-sheet": 878700,
+        "ORD-cr": 897600,
+        "ORD-sts-cr": 912700,
+        "ORD-hr": 927800,
+        "ORD-plate": 973500,
+        "ORD-wire": 988600,
+        "ORD-go": 1003700,
+        "ORD-eg": 1018800,
+        "ORD-hgi": 1033400,
+        "ORD-ngo": 1048000,
+        "ORD-ga": 1077200,
+        "ORD-gi": 1091800
+      },
+      "allShipmentsDelivered": 21,
+      "mass": {
+        "initial_kg": 408000,
+        "additions_kg": 1200,
+        "active_kg": 407300,
+        "loss_kg": 1900
+      },
+      "inputUnchanged": true,
+      "forecastEqualsActual": true,
+      "routed": [],
+      "roller_ms": [],
+      "timedRollerTransfers": 290,
+      "outageEvents": 1
+    },
+    {
+      "scenario": "RECOVERY",
+      "completion_ms": 1091800,
+      "actual": {
+        "ORD-billet": 297900,
+        "ORD-bloom": 465200,
+        "ORD-ti-hr": 522400,
+        "ORD-ti-plate": 594800,
+        "ORD-ti-cr": 742900,
+        "ORD-sts-hr": 778600,
+        "ORD-sts-plate": 813400,
+        "ORD-slab": 862600,
+        "ORD-ti-sheet": 878700,
+        "ORD-cr": 897600,
+        "ORD-sts-cr": 912700,
+        "ORD-hr": 927800,
+        "ORD-plate": 973500,
+        "ORD-wire": 988600,
+        "ORD-go": 1003700,
+        "ORD-eg": 1018800,
+        "ORD-hgi": 1033400,
+        "ORD-ngo": 1048000,
+        "ORD-ga": 1077200,
+        "ORD-gi": 1091800
+      },
+      "allShipmentsDelivered": 21,
+      "mass": {
+        "initial_kg": 408000,
+        "additions_kg": 1200,
+        "active_kg": 407300,
+        "loss_kg": 1900
+      },
+      "inputUnchanged": true,
+      "forecastEqualsActual": true,
+      "routed": [
+        "MAT-ga-01"
+      ],
+      "roller_ms": [
+        5000
+      ],
+      "timedRollerTransfers": 291,
+      "outageEvents": 1
+    }
+  ],
+  "comparison": {
+    "basis": "INITIAL_PLAN",
+    "horizon_ms": 3600000,
+    "baseline_hash": "8bd2b80231779f54c5693e1fb9167f18bd78f33c62e67eaea1fe54a9dcd9022f",
+    "plan_revision": 0,
+    "orders": [
+      {
+        "order_id": "ORD-slab",
+        "delay_eta_at": "2026-10-30T14:22:36Z",
+        "recovery_eta_at": "2026-10-30T14:22:36Z",
+        "delay_completion_ms": 862600,
+        "recovery_completion_ms": 862600,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-bloom",
+        "delay_eta_at": "2026-10-30T07:45:12Z",
+        "recovery_eta_at": "2026-10-30T07:45:12Z",
+        "delay_completion_ms": 465200,
+        "recovery_completion_ms": 465200,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-billet",
+        "delay_eta_at": "2026-10-30T04:57:54Z",
+        "recovery_eta_at": "2026-10-30T04:57:54Z",
+        "delay_completion_ms": 297900,
+        "recovery_completion_ms": 297900,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-hr",
+        "delay_eta_at": "2026-10-30T15:27:48Z",
+        "recovery_eta_at": "2026-10-30T15:27:48Z",
+        "delay_completion_ms": 927800,
+        "recovery_completion_ms": 927800,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-plate",
+        "delay_eta_at": "2026-10-30T16:13:30Z",
+        "recovery_eta_at": "2026-10-30T16:13:30Z",
+        "delay_completion_ms": 973500,
+        "recovery_completion_ms": 973500,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-wire",
+        "delay_eta_at": "2026-10-30T16:28:36Z",
+        "recovery_eta_at": "2026-10-30T16:28:36Z",
+        "delay_completion_ms": 988600,
+        "recovery_completion_ms": 988600,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-cr",
+        "delay_eta_at": "2026-10-30T14:57:36Z",
+        "recovery_eta_at": "2026-10-30T14:57:36Z",
+        "delay_completion_ms": 897600,
+        "recovery_completion_ms": 897600,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-gi",
+        "delay_eta_at": "2026-10-30T18:11:48Z",
+        "recovery_eta_at": "2026-10-30T18:11:48Z",
+        "delay_completion_ms": 1091800,
+        "recovery_completion_ms": 1091800,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-ga",
+        "delay_eta_at": "2026-10-30T17:57:12Z",
+        "recovery_eta_at": "2026-10-30T17:57:12Z",
+        "delay_completion_ms": 1077200,
+        "recovery_completion_ms": 1077200,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-hgi",
+        "delay_eta_at": "2026-10-30T17:13:24Z",
+        "recovery_eta_at": "2026-10-30T17:13:24Z",
+        "delay_completion_ms": 1033400,
+        "recovery_completion_ms": 1033400,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-eg",
+        "delay_eta_at": "2026-10-30T16:58:48Z",
+        "recovery_eta_at": "2026-10-30T16:58:48Z",
+        "delay_completion_ms": 1018800,
+        "recovery_completion_ms": 1018800,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-go",
+        "delay_eta_at": "2026-10-30T16:43:42Z",
+        "recovery_eta_at": "2026-10-30T16:43:42Z",
+        "delay_completion_ms": 1003700,
+        "recovery_completion_ms": 1003700,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-ngo",
+        "delay_eta_at": "2026-10-30T17:28:00Z",
+        "recovery_eta_at": "2026-10-30T17:28:00Z",
+        "delay_completion_ms": 1048000,
+        "recovery_completion_ms": 1048000,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-sts-hr",
+        "delay_eta_at": "2026-10-30T12:58:36Z",
+        "recovery_eta_at": "2026-10-30T12:58:36Z",
+        "delay_completion_ms": 778600,
+        "recovery_completion_ms": 778600,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-sts-cr",
+        "delay_eta_at": "2026-10-30T15:12:42Z",
+        "recovery_eta_at": "2026-10-30T15:12:42Z",
+        "delay_completion_ms": 912700,
+        "recovery_completion_ms": 912700,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-sts-plate",
+        "delay_eta_at": "2026-10-30T13:48:12Z",
+        "recovery_eta_at": "2026-10-30T13:33:24Z",
+        "delay_completion_ms": 828200,
+        "recovery_completion_ms": 813400,
+        "improvement_ms": 14800
+      },
+      {
+        "order_id": "ORD-ti-hr",
+        "delay_eta_at": "2026-10-30T08:42:24Z",
+        "recovery_eta_at": "2026-10-30T08:42:24Z",
+        "delay_completion_ms": 522400,
+        "recovery_completion_ms": 522400,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-ti-cr",
+        "delay_eta_at": "2026-10-30T12:22:54Z",
+        "recovery_eta_at": "2026-10-30T12:22:54Z",
+        "delay_completion_ms": 742900,
+        "recovery_completion_ms": 742900,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-ti-sheet",
+        "delay_eta_at": "2026-10-30T14:38:42Z",
+        "recovery_eta_at": "2026-10-30T14:38:42Z",
+        "delay_completion_ms": 878700,
+        "recovery_completion_ms": 878700,
+        "improvement_ms": 0
+      },
+      {
+        "order_id": "ORD-ti-plate",
+        "delay_eta_at": "2026-10-30T10:05:00Z",
+        "recovery_eta_at": "2026-10-30T09:54:48Z",
+        "delay_completion_ms": 605000,
+        "recovery_completion_ms": 594800,
+        "improvement_ms": 10200
+      }
+    ],
+    "routed_material_ids": [
+      "MAT-ga-01"
+    ],
+    "outage_ms": 198600,
+    "roller_duration_ms": [
+      5000
+    ],
+    "current_available": true,
+    "current_reason": "compatible_capacity_and_reservation",
+    "recommendation": "REVIEW_BENEFIT"
+  }
+}

@@ -1,0 +1,61 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/journey.spec.ts -g connection failure
+
+[WebServer] INFO:     Started server process [46328]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:46377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:46388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/journey.spec.ts:188:1 › connection failure freezes the actual scene and retry restores authoritative state (13.6s)
+
+
+  1) tests/journey.spec.ts:188:1 › connection failure freezes the actual scene and retry restores authoritative state 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('alert').filter({ hasText: '재생 화면은 멈춰 있습니다' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('alert').filter({ hasText: '재생 화면은 멈춰 있습니다' }) with timeout 10000ms
+      - waiting for getByRole('alert').filter({ hasText: '재생 화면은 멈춰 있습니다' })
+
+
+      202 |   } finally { release?.(); await page.unrouteAll({ behavior: 'wait' }); }
+      203 |   await page.route('**/api/v1/journey', route => route.abort('failed'));
+    > 204 |   await expect(page.getByRole('alert').filter({ hasText: '재생 화면은 멈춰 있습니다' })).toBeVisible();
+          |                                                                               ^
+      205 |   await expect(page.getByRole('button', { name: '일시정지', exact: true })).toBeDisabled();
+      206 |   const first = await capture(page, 'failure-frozen-first'); await page.waitForTimeout(550); const second = await capture(page, 'failure-frozen-second');
+      207 |   const frozen = await diff(page, first, second); expect(frozen.count).toBe(0);
+        at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:204:79
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/journey-connection-failure-3bbc6-estores-authoritative-state/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/journey-connection-failure-3bbc6-estores-authoritative-state/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/journey-connection-failure-3bbc6-estores-authoritative-state/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/journey-connection-failure-3bbc6-estores-authoritative-state/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/journey-connection-failure-3bbc6-estores-authoritative-state/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/journey.spec.ts:188:1 › connection failure freezes the actual scene and retry restores authoritative state 

@@ -1,0 +1,691 @@
+{
+  "version": "erp-v1",
+  "source_sha256": "1488bcbc21f77e87a9febf9592373aa4fdc3f71ca08c61144cb25fdec03ebb9f",
+  "exclusions": [
+    {
+      "product_id": "hr",
+      "source_step_ids": [
+        "hr-01",
+        "hr-08",
+        "hr-09"
+      ]
+    },
+    {
+      "product_id": "plate",
+      "source_step_ids": [
+        "plate-01",
+        "plate-09",
+        "plate-10"
+      ]
+    },
+    {
+      "product_id": "wire",
+      "source_step_ids": [
+        "wire-01",
+        "wire-09",
+        "wire-10",
+        "wire-11"
+      ]
+    },
+    {
+      "product_id": "cr",
+      "source_step_ids": [
+        "cr-01",
+        "cr-10",
+        "cr-11"
+      ]
+    },
+    {
+      "product_id": "gi",
+      "source_step_ids": [
+        "gi-01",
+        "gi-10",
+        "gi-11"
+      ]
+    },
+    {
+      "product_id": "ga",
+      "source_step_ids": [
+        "ga-01",
+        "ga-11",
+        "ga-12"
+      ]
+    },
+    {
+      "product_id": "hgi",
+      "source_step_ids": [
+        "hgi-01",
+        "hgi-10",
+        "hgi-11"
+      ]
+    },
+    {
+      "product_id": "eg",
+      "source_step_ids": [
+        "eg-01",
+        "eg-10",
+        "eg-11"
+      ]
+    },
+    {
+      "product_id": "go",
+      "source_step_ids": [
+        "go-01",
+        "go-12",
+        "go-13"
+      ]
+    },
+    {
+      "product_id": "ngo",
+      "source_step_ids": [
+        "ngo-01",
+        "ngo-09",
+        "ngo-10"
+      ]
+    },
+    {
+      "product_id": "sts-hr",
+      "source_step_ids": [
+        "sts-hr-01",
+        "sts-hr-14",
+        "sts-hr-15"
+      ]
+    },
+    {
+      "product_id": "sts-cr",
+      "source_step_ids": [
+        "sts-cr-01",
+        "sts-cr-10",
+        "sts-cr-11"
+      ]
+    },
+    {
+      "product_id": "sts-plate",
+      "source_step_ids": [
+        "sts-plate-01",
+        "sts-plate-12"
+      ]
+    },
+    {
+      "product_id": "ti-hr",
+      "source_step_ids": [
+        "ti-hr-01",
+        "ti-hr-09",
+        "ti-hr-10"
+      ]
+    },
+    {
+      "product_id": "ti-cr",
+      "source_step_ids": [
+        "ti-cr-01",
+        "ti-cr-10"
+      ]
+    },
+    {
+      "product_id": "ti-sheet",
+      "source_step_ids": [
+        "ti-sheet-01",
+        "ti-sheet-10",
+        "ti-sheet-11"
+      ]
+    },
+    {
+      "product_id": "ti-plate",
+      "source_step_ids": [
+        "ti-plate-01",
+        "ti-plate-09"
+      ]
+    }
+  ],
+  "upstream": [
+    {
+      "id": "CS-SLAB",
+      "steps": [
+        {
+          "id": "cs-charge",
+          "name": "원료 장입",
+          "equipment_kind": "charge",
+          "duration_ms": 2000,
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bf",
+          "name": "출선",
+          "equipment_kind": "blast_furnace",
+          "duration_ms": 6000,
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bof",
+          "name": "전로 출강",
+          "equipment_kind": "bof",
+          "duration_ms": 6000,
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-lf",
+          "name": "2차 정련",
+          "equipment_kind": "ladle_furnace",
+          "duration_ms": 4000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cast-slab",
+          "name": "연속 주조",
+          "equipment_kind": "caster",
+          "duration_ms": 6000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "SLAB",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cut-slab",
+          "name": "절단 및 냉각",
+          "equipment_kind": "shear",
+          "duration_ms": 2000,
+          "input_form": "SLAB",
+          "output_form": "SLAB",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        }
+      ]
+    },
+    {
+      "id": "CS-BLOOM",
+      "steps": [
+        {
+          "id": "cs-charge",
+          "name": "원료 장입",
+          "equipment_kind": "charge",
+          "duration_ms": 2000,
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bf",
+          "name": "출선",
+          "equipment_kind": "blast_furnace",
+          "duration_ms": 6000,
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bof",
+          "name": "전로 출강",
+          "equipment_kind": "bof",
+          "duration_ms": 6000,
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-lf",
+          "name": "2차 정련",
+          "equipment_kind": "ladle_furnace",
+          "duration_ms": 4000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cast-bloom",
+          "name": "연속 주조",
+          "equipment_kind": "caster",
+          "duration_ms": 6000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "BLOOM",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cut-bloom",
+          "name": "절단 및 냉각",
+          "equipment_kind": "shear",
+          "duration_ms": 2000,
+          "input_form": "BLOOM",
+          "output_form": "BLOOM",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        }
+      ]
+    },
+    {
+      "id": "CS-BILLET",
+      "steps": [
+        {
+          "id": "cs-charge",
+          "name": "원료 장입",
+          "equipment_kind": "charge",
+          "duration_ms": 2000,
+          "input_form": "ORE",
+          "output_form": "ORE",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bf",
+          "name": "출선",
+          "equipment_kind": "blast_furnace",
+          "duration_ms": 6000,
+          "input_form": "ORE",
+          "output_form": "HOT_METAL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-bof",
+          "name": "전로 출강",
+          "equipment_kind": "bof",
+          "duration_ms": 6000,
+          "input_form": "HOT_METAL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-lf",
+          "name": "2차 정련",
+          "equipment_kind": "ladle_furnace",
+          "duration_ms": 4000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "LIQUID_STEEL",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cast-billet",
+          "name": "연속 주조",
+          "equipment_kind": "caster",
+          "duration_ms": 6000,
+          "input_form": "LIQUID_STEEL",
+          "output_form": "BILLET",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        },
+        {
+          "id": "cs-cut-billet",
+          "name": "절단 및 냉각",
+          "equipment_kind": "shear",
+          "duration_ms": 2000,
+          "input_form": "BILLET",
+          "output_form": "BILLET",
+          "description": "합성 탄소강 상류 공정. ORE는 광석 전체 무게가 아닌 추적 대상 금속량이며 주조까지 금속 손실은 0kg이다."
+        }
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "product_id": "slab",
+      "blocks": [
+        "CS-SLAB"
+      ],
+      "input_form": "ORE",
+      "output_form": "SLAB",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": null,
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "bloom",
+      "blocks": [
+        "CS-BLOOM"
+      ],
+      "input_form": "ORE",
+      "output_form": "BLOOM",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": null,
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "billet",
+      "blocks": [
+        "CS-BILLET"
+      ],
+      "input_form": "ORE",
+      "output_form": "BILLET",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": null,
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "hr",
+      "blocks": [
+        "CS-SLAB",
+        "hr"
+      ],
+      "input_form": "ORE",
+      "output_form": "HR_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "hr-07",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "plate",
+      "blocks": [
+        "CS-SLAB",
+        "plate"
+      ],
+      "input_form": "ORE",
+      "output_form": "PLATE",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "plate-06",
+      "addition_step_id": null,
+      "split_step_id": "plate-06",
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "wire",
+      "blocks": [
+        "CS-BLOOM",
+        "wire"
+      ],
+      "input_form": "ORE",
+      "output_form": "WIRE_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "wire-05",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "cr",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "cr"
+      ],
+      "input_form": "ORE",
+      "output_form": "CR_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "cr-07",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "gi",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "cr",
+        "gi"
+      ],
+      "input_form": "ORE",
+      "output_form": "GI_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "gi-06",
+      "addition_step_id": "gi-05",
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ga",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "cr",
+        "ga"
+      ],
+      "input_form": "ORE",
+      "output_form": "GA_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "ga-07",
+      "addition_step_id": "ga-05",
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "hgi",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "hgi"
+      ],
+      "input_form": "ORE",
+      "output_form": "HGI_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "hgi-06",
+      "addition_step_id": "hgi-05",
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "eg",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "cr",
+        "eg"
+      ],
+      "input_form": "ORE",
+      "output_form": "EG_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "eg-03",
+      "addition_step_id": "eg-05",
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "go",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "go"
+      ],
+      "input_form": "ORE",
+      "output_form": "GO_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "go-05",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ngo",
+      "blocks": [
+        "CS-SLAB",
+        "hr",
+        "ngo"
+      ],
+      "input_form": "ORE",
+      "output_form": "NGO_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "ORE-SOURCE",
+      "source_description": "합성 원료 입고; ORE는 추적 대상 금속량.",
+      "loss_step_id": "ngo-05",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "sts-hr",
+      "blocks": [
+        "sts-hr"
+      ],
+      "input_form": "SCRAP",
+      "output_form": "STS_HR_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "SCRAP-SOURCE",
+      "source_description": "합성 스크랩 입고.",
+      "loss_step_id": "sts-hr-07",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "sts-cr",
+      "blocks": [
+        "sts-hr",
+        "sts-cr"
+      ],
+      "input_form": "SCRAP",
+      "output_form": "STS_CR_COIL",
+      "initial_kg": 20000,
+      "source_equipment_id": "SCRAP-SOURCE",
+      "source_description": "합성 스크랩 입고.",
+      "loss_step_id": "sts-cr-08",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "sts-plate",
+      "blocks": [
+        "sts-plate"
+      ],
+      "input_form": "SCRAP",
+      "output_form": "STS_PLATE",
+      "initial_kg": 20000,
+      "source_equipment_id": "SCRAP-SOURCE",
+      "source_description": "합성 스크랩 입고.",
+      "loss_step_id": "sts-plate-09",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ti-hr",
+      "blocks": [
+        "ti-hr"
+      ],
+      "input_form": "TI_INGOT",
+      "output_form": "TI_HR_COIL",
+      "initial_kg": 12000,
+      "source_equipment_id": "TI-SOURCE",
+      "source_description": "합성 잉곳 입고; 잉곳 제조 이전은 추적 경계 밖.",
+      "loss_step_id": "ti-hr-05",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ti-cr",
+      "blocks": [
+        "ti-hr",
+        "ti-cr"
+      ],
+      "input_form": "TI_INGOT",
+      "output_form": "TI_CR_COIL",
+      "initial_kg": 12000,
+      "source_equipment_id": "TI-SOURCE",
+      "source_description": "합성 잉곳 입고; 잉곳 제조 이전은 추적 경계 밖.",
+      "loss_step_id": "ti-cr-08",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ti-sheet",
+      "blocks": [
+        "ti-hr",
+        "ti-sheet"
+      ],
+      "input_form": "TI_INGOT",
+      "output_form": "TI_SHEET",
+      "initial_kg": 12000,
+      "source_equipment_id": "TI-SOURCE",
+      "source_description": "합성 잉곳 입고; 잉곳 제조 이전은 추적 경계 밖.",
+      "loss_step_id": "ti-sheet-09",
+      "addition_step_id": null,
+      "split_step_id": "ti-sheet-09",
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    },
+    {
+      "product_id": "ti-plate",
+      "blocks": [
+        "ti-plate"
+      ],
+      "input_form": "TI_INGOT",
+      "output_form": "TI_PLATE",
+      "initial_kg": 12000,
+      "source_equipment_id": "TI-SOURCE",
+      "source_description": "합성 잉곳 입고; 잉곳 제조 이전은 추적 경계 밖.",
+      "loss_step_id": "ti-plate-08",
+      "addition_step_id": null,
+      "split_step_id": null,
+      "mass_note": "최종 판매 경로에서만 정정/절단 또는 압연·조질 스탠드의 합성 가장자리 정정 손실 100kg을 반영한다. 실제 수율을 의미하지 않는다."
+    }
+  ],
+  "form_overrides": [
+    {
+      "source_step_id": "cr-04",
+      "input_form": null,
+      "output_form": "CR_COIL"
+    },
+    {
+      "source_step_id": "cr-05",
+      "input_form": "CR_COIL",
+      "output_form": null
+    },
+    {
+      "source_step_id": "go-04",
+      "input_form": null,
+      "output_form": "HR_COIL"
+    },
+    {
+      "source_step_id": "go-05",
+      "input_form": "HR_COIL",
+      "output_form": null
+    },
+    {
+      "source_step_id": "ngo-04",
+      "input_form": null,
+      "output_form": "HR_COIL"
+    },
+    {
+      "source_step_id": "ngo-05",
+      "input_form": "HR_COIL",
+      "output_form": null
+    },
+    {
+      "source_step_id": "go-06",
+      "input_form": null,
+      "output_form": "CR_COIL"
+    },
+    {
+      "source_step_id": "go-07",
+      "input_form": "CR_COIL",
+      "output_form": "CR_COIL"
+    },
+    {
+      "source_step_id": "go-08",
+      "input_form": "CR_COIL",
+      "output_form": null
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "run": {
+    "id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "RECOVERY",
+    "elapsed_ms": 336000,
+    "duration_ms": 496000,
+    "revision": 7,
+    "event_sequence": 2732,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T17:37:16.971030Z",
+    "plan_revision": 7
+  },
+  "materials": [
+    {
+      "run_id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+      "id": "MAT-plate-01",
+      "lot_id": "LOT-plate-01",
+      "lineage_id": "MAT-plate-01",
+      "current_version_id": "MAT-plate-01:V11",
+      "form": "PLATE",
+      "weight_kg": 20000,
+      "location_id": "OPS-CS-PLATE-06-EXIT",
+      "quality_status": "PENDING",
+      "availability_status": "CONSUMED",
+      "active": false
+    },
+    {
+      "run_id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+      "id": "MAT-plate-01:A",
+      "lot_id": "LOT-plate-01",
+      "lineage_id": "MAT-plate-01",
+      "current_version_id": "MAT-plate-01:A:V03",
+      "form": "PLATE",
+      "weight_kg": 9950,
+      "location_id": "OPS-CS-PLATE-08-BUFFER",
+      "quality_status": "PENDING",
+      "availability_status": "WIP",
+      "active": true
+    },
+    {
+      "run_id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+      "id": "MAT-plate-01:B",
+      "lot_id": "LOT-plate-01",
+      "lineage_id": "MAT-plate-01",
+      "current_version_id": "MAT-plate-01:B:V03",
+      "form": "PLATE",
+      "weight_kg": 9950,
+      "location_id": "OPS-CS-PLATE-08-BUFFER",
+      "quality_status": "PENDING",
+      "availability_status": "WIP",
+      "active": true
+    }
+  ],
+  "lineage": [
+    {
+      "run_id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+      "id": "EDGE-MAT-plate-01:A",
+      "parent_material_id": "MAT-plate-01",
+      "child_material_id": "MAT-plate-01:A",
+      "process_id": "PROC-MAT-plate-01-plate:plate-06",
+      "transferred_kg": 9950
+    },
+    {
+      "run_id": "OPS-RUN-c76e59f0738d4908a138eefa247be426",
+      "id": "EDGE-MAT-plate-01:B",
+      "parent_material_id": "MAT-plate-01",
+      "child_material_id": "MAT-plate-01:B",
+      "process_id": "PROC-MAT-plate-01-plate:plate-06",
+      "transferred_kg": 9950
+    }
+  ]
+}

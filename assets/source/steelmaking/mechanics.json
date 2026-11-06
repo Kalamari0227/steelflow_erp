@@ -1,0 +1,2367 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "variant": "variant:charge:CHARGE-A",
+      "canonical_parts": [
+        "charge_feed"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:blast_furnace:BF-A",
+      "canonical_parts": [
+        "charge_gate",
+        "tap_control"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE",
+            "LIQUID_IRON"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "ORE"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:bof:BOF-A",
+      "canonical_parts": [
+        "vessel_tilt",
+        "oxygen_lance"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:ladle_furnace:LF-A",
+      "canonical_parts": [
+        "electrode_lift"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:caster:CAST-SLAB",
+      "canonical_parts": [
+        "mold_oscillation",
+        "withdrawal_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "arc_roll_0_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.8369624027884477,
+            4.92531632590927,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_0_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.257409561768829,
+            4.948087019049529,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.7311374863668454,
+            4.160225266407733,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.167162932536193,
+            4.295623577444158,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.47808410487082,
+            3.4304806341025333,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.9513610640522727,
+            3.673303281874242,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.087526957837293,
+            2.764126105967656,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.6182971010998233,
+            3.1050415522972905,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.5744749373997906,
+            2.186769312823399,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.1807705049906843,
+            2.612676368296097,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.9586443449808386,
+            1.7205977524448772,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6555951774455884,
+            2.2151290477702505,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.2637012048853222,
+            1.3835261364654128,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0629533117803764,
+            1.9276771113004536,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5163517922585098,
+            1.188507938055157,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.4256198025351759,
+            1.7613671756003373,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_0",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_2",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.8,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_3",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.8,
+            1.14,
+            0
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:shear:CUT-SLAB",
+      "canonical_parts": [
+        "cutting_tool"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:caster:CAST-BLOOM",
+      "canonical_parts": [
+        "mold_oscillation",
+        "withdrawal_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "arc_roll_0_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.976854467862149,
+            5.059819951703001,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_0_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.1175174966951276,
+            5.093583393255799,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.86726927522252,
+            4.2675429154679065,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.031031143680518,
+            4.468305928383986,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.6052241492063315,
+            3.511868270847294,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.824221019716761,
+            3.8719156451294823,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.2007893370497857,
+            2.8218361706467103,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.5050347218873306,
+            3.3273314876182374,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.6695070417744025,
+            2.223964161502404,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0857384006160724,
+            2.8554815196170935,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0317941440410716,
+            1.7412281294353047,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.5824453783853554,
+            2.474498670779824,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.3121575928761713,
+            1.3921793494362655,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0144969237895274,
+            2.1990238983296018,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5382526173641422,
+            1.1902315703718385,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.40371897742954355,
+            2.039643543283657,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_0",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_2",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.8,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_3",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.8,
+            1.14,
+            0
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:shear:CUT-BLOOM",
+      "canonical_parts": [
+        "cutting_tool"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BLOOM"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:caster:CAST-BILLET",
+      "canonical_parts": [
+        "mold_oscillation",
+        "withdrawal_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "arc_roll_0_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.8669392738756696,
+            4.954138531436498,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_0_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.227432690681607,
+            4.979264813522302,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.7603085839787758,
+            4.183221905492056,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_1_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.1379918349242626,
+            4.3326269383598355,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.5053284000855722,
+            3.4479208419764107,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_2_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.9241167688375205,
+            3.715863074000365,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.1117974676685414,
+            2.776492548398882,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_3_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.594026591268575,
+            3.152675109866065,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.5948389597657786,
+            2.194739637540329,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_4_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.1604064826246963,
+            2.6647060435791676,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.974319301922317,
+            1.7250185475142548,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_5_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.63992022050411,
+            2.2707082527008735,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.2740847165976472,
+            1.3853803963877385,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_6_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0525698000680515,
+            1.9858228513781284,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_-1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5210448262097168,
+            1.1888772878373033,
+            0
+          ]
+        },
+        {
+          "node_id": "arc_roll_7_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.420926768583969,
+            1.8209978258181916,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_0",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_1",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_2",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.8,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "output_roll_3",
+          "driver": "withdrawal_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.8,
+            1.14,
+            0
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:shear:CUT-BILLET",
+      "canonical_parts": [
+        "cutting_tool"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "BILLET"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    }
+  ]
+}

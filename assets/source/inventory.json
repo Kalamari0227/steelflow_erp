@@ -1,0 +1,59 @@
+{
+  "external_asset_count": 0,
+  "license": {
+    "status": "built",
+    "path": "assets/source/LICENSE.txt",
+    "sha256": "5e13d6afc82cfa1660a53318dd0931fc0844f321835d626b2c7139ed8efb2409"
+  },
+  "inputs": [
+    {
+      "status": "built",
+      "path": "assets/source/recipe.json",
+      "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/build.py",
+      "sha256": "ac504bc6d4136f56c05f264f48ebc9f7a3ae383895bb49c062d04e6c26262276"
+    },
+    {
+      "status": "built",
+      "path": "assets/toolchain.json",
+      "sha256": "c47db358bdf53ea856e10573f9db8766fea30ea1660cedaa86467781b5d0aa90"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/contracts/asset-manifest-valid.json",
+      "sha256": "94f7d7c31625a9f258b529f52557eb522954dab3bed9c29b7c3640bb47ffd978"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/contracts/asset-manifest-fixed-state-valid.json",
+      "sha256": "607ff156eae6d3638352b9a59d5531fb0899bab29d5abf4e910ff317a7678593"
+    }
+  ],
+  "authored_assets": [
+    {
+      "status": "built",
+      "path": "assets/source/shear.blend",
+      "sha256": "655d4dc6061413c29d6455847f9904ae345dbc8c961132aefbabe79bef497a02"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/galvanizing.blend",
+      "sha256": "22bd152ec0febcb79a6a13cdec15d49066a9c47e5bb7cac748b956217e531191"
+    }
+  ],
+  "textures": [
+    {
+      "status": "built",
+      "path": "assets/source/paint.png",
+      "sha256": "2d5646f90dde7673ceea22c21604ca9a9d896bf2317d2406f05ff93d19316642"
+    }
+  ],
+  "tool_license": {
+    "path": "/Users/ethanlee/Library/Application Support/SteelFlow/tools/blender/4.5.15-macos-arm64/Blender.app/Contents/Resources/text/license/license.md",
+    "sha256": "bbbae8a955a571bbd30e91c579f6f1633ec921f6317cfac9074338dfba33a7b8"
+  },
+  "limitations": "Actual GLB clips and fixed-state metadata only; T6 operational runtime and T13 loader integration are separate uncompleted work."
+}

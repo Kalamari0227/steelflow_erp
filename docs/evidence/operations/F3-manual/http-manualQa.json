@@ -1,0 +1,93 @@
+{
+  "scope": "Read-only HTTP facts supporting root actual manual browser. No browser control or API mutation by this executor. Notification timing limitation recorded separately.",
+  "manualQa": {
+    "surfaceEvidence": [
+      {
+        "scenarioId": "HTTP-GA-INITIAL",
+        "criterionReference": "G004.C001",
+        "surface": "Retained manual backend127.0.0.1:8002, run383d0a45fed64693859f71d200a74b1a",
+        "exactInvocation": "curl -sS -i --max-time 5 http://127.0.0.1:8002/api/v1/world (1second polling)",
+        "verdict": "PASS",
+        "artifactRefs": [
+          "HTTPA1",
+          "HTTPA2"
+        ]
+      },
+      {
+        "scenarioId": "HTTP-GA-PARTIAL",
+        "criterionReference": "G004.C001",
+        "surface": "Retained manual backend127.0.0.1:8002, run383d0a45fed64693859f71d200a74b1a",
+        "exactInvocation": "curl -sS -i --max-time 5 http://127.0.0.1:8002/api/v1/world (1second polling)",
+        "verdict": "PASS",
+        "artifactRefs": [
+          "HTTPA3",
+          "HTTPA4"
+        ]
+      },
+      {
+        "scenarioId": "HTTP-GA-FULL",
+        "criterionReference": "G004.C001",
+        "surface": "Retained manual backend127.0.0.1:8002, run383d0a45fed64693859f71d200a74b1a",
+        "exactInvocation": "curl -sS -i --max-time 5 http://127.0.0.1:8002/api/v1/world (1second polling)",
+        "verdict": "PASS",
+        "artifactRefs": [
+          "HTTPA5",
+          "HTTPA6"
+        ]
+      }
+    ],
+    "adversarialCases": [
+      {
+        "scenarioId": "HTTP-GA-PARTIAL",
+        "criterionReference": "G004.C001",
+        "adversarialClass": "Partial delivery must not mark order complete",
+        "expectedBehavior": "40200 delivered /20100 remaining, PARTIALLY_DELIVERED; only after additional20100 orderDELIVERED60300",
+        "verdict": "PASS",
+        "artifactRefs": [
+          "HTTPA3",
+          "HTTPA4",
+          "HTTPA5",
+          "HTTPA6"
+        ]
+      }
+    ],
+    "artifactRefs": [
+      {
+        "id": "HTTPA1",
+        "kind": "http",
+        "description": "initial actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-initial.txt"
+      },
+      {
+        "id": "HTTPA2",
+        "kind": "world-json",
+        "description": "initial actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-initial-world.json"
+      },
+      {
+        "id": "HTTPA3",
+        "kind": "http",
+        "description": "partial actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial.txt"
+      },
+      {
+        "id": "HTTPA4",
+        "kind": "world-json",
+        "description": "partial actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial-world.json"
+      },
+      {
+        "id": "HTTPA5",
+        "kind": "http",
+        "description": "full actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full.txt"
+      },
+      {
+        "id": "HTTPA6",
+        "kind": "world-json",
+        "description": "full actual readonly world",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full-world.json"
+      }
+    ]
+  }
+}

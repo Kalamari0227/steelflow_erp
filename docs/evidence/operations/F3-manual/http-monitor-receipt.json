@@ -1,0 +1,81 @@
+{
+  "invocation": "curl -sS -i --max-time 5 http://127.0.0.1:8002/api/v1/world",
+  "readOnly": true,
+  "pollIntervalSeconds": 1,
+  "polls": 139,
+  "milestones": [
+    "full",
+    "partial",
+    "playing"
+  ],
+  "files": {
+    "http-partial-world.json": {
+      "size": 4011574,
+      "sha256": "2230fda82f657cd06e7f4ce5210168932dc2cc96138abcc8ec263e09cf1adc07"
+    },
+    "http-partial-facts.json": {
+      "size": 56329,
+      "sha256": "ceeadfbfc66849c3e8c420fdc5b454bf50c0e24e8826a3f67100d89a3d0b07d5"
+    },
+    "http-full.txt": {
+      "size": 3040554,
+      "sha256": "e64629cb6d4cf01d6ca734c3f5f747e91620fa77dd8fdafd10f846e608f7625b"
+    },
+    "http-full-events.json": {
+      "size": 388683,
+      "sha256": "65ee64d548bcbccfdbd790bb4501ad3e3e342e5cbc3067bdbf5e0bf1e5236023"
+    },
+    "http-partial-events.json": {
+      "size": 383004,
+      "sha256": "050a1b3bd2a88bcbc04ce0767b1469517dad9900b3a5acae4cafaaa6ce468514"
+    },
+    "http-full-world.json": {
+      "size": 4026485,
+      "sha256": "0a94af036fb1077739b8ee9bb0ee5a2c58dec078c2680bea2d16dd90409927b2"
+    },
+    "http-full-facts.json": {
+      "size": 56891,
+      "sha256": "77f85509c2d1c02d2238e50ab89e364892bb3777682f8e75b3e4c667701599ad"
+    },
+    "http-initial-world.json": {
+      "size": 1125944,
+      "sha256": "ab902201940b904e5241e557c5cf1b6fd94a77e434b574126d1f96b9bbbbd456"
+    },
+    "http-playing.txt": {
+      "size": 820978,
+      "sha256": "e71ff54da6508d433fac264e02d9f542bd35f66042208db277fb340f32dd09d9"
+    },
+    "http-monitor.py": {
+      "size": 2620,
+      "sha256": "15c40f1dd6c7fce2474d3e9b71dd4e590886b7a0ad267d771a0c4d01c8533528"
+    },
+    "http-observed-summary.json": {
+      "size": 2726,
+      "sha256": "5fe7bd256117613b15a17bc9d0515db7dcef9739008a942471c0844d506494e1"
+    },
+    "http-partial.txt": {
+      "size": 3029153,
+      "sha256": "188eab87eeff5600571443fae1e30a1117550fa693aa93dbb0324c9057af4c0f"
+    },
+    "http-polls.jsonl": {
+      "size": 24736,
+      "sha256": "19f11de010c8a5aa6d69723cf911639c19b419b3895d2779c79d6a393fd5ecfc"
+    },
+    "http-playing-world.json": {
+      "size": 1192878,
+      "sha256": "eee3eaa9c918e498d89d495adeaade6acb4a83fe80e75f8e1509455dacefcd7d"
+    },
+    "http-playing-facts.json": {
+      "size": 4676,
+      "sha256": "5fdb0f86a71a56195e2889ad9c59dc30918cb43debab8fa81549f6237b106d2d"
+    },
+    "http-initial.txt": {
+      "size": 768974,
+      "sha256": "b8723ed784b414c4b5ddd281b40c101a5da5b39b3dda0aea4aa9b03d4cc07c9b"
+    },
+    "http-manualQa.json": {
+      "size": 3547,
+      "sha256": "0d00bb433ca02055ac541929a48238ff285496299ae75566a3aa19d7485398fa"
+    }
+  }
+}

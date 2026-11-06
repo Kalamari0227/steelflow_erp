@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "purpose": "contract_example",
+  "assets": [
+    {
+      "id": "example:shear:CUT-SLAB",
+      "family": "steelmaking",
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:equipment:CUT-SLAB",
+        "qa:variant:shear:CUT-SLAB"
+      ],
+      "placement_ids": [
+        "equipment:CUT-SLAB"
+      ],
+      "source_refs": [
+        {
+          "id": "scope:carbon-upstream",
+          "uri": ".omo/plans/steelflow-uniform-fidelity-factory.md",
+          "note": "Contract example only. Synthetic dimensions; no source/export files or model completion asserted."
+        }
+      ],
+      "coordinate_system": {
+        "length": "m",
+        "up": "+Y",
+        "forward": "+X",
+        "handedness": "right",
+        "angle": "rad"
+      },
+      "root_node_id": "root",
+      "nodes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "locator": "root",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "cutting_tool",
+          "parent_id": "root",
+          "locator": "root/cutting_tool",
+          "transform": {
+            "position_m": [
+              0,
+              1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "support_bed",
+          "parent_id": "root",
+          "locator": "root/support_bed",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "sockets": [
+        {
+          "id": "support",
+          "node_id": "support_bed",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.5,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "entry",
+          "node_id": "support_bed",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              -1,
+              0.5,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "work",
+          "node_id": "support_bed",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.5,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "exit",
+          "node_id": "support_bed",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              1,
+              0.5,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        }
+      ],
+      "moving_parts": [
+        {
+          "id": "cutting_tool",
+          "node_id": "cutting_tool",
+          "function": "cutting_tool",
+          "role": "operational",
+          "motion": "translation",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "pivot_m": [
+            0,
+            0,
+            0
+          ],
+          "range": {
+            "min": 0,
+            "max": 0.5,
+            "rest": 0,
+            "unit": "m"
+          },
+          "binding": {
+            "type": "procedural",
+            "clock": "server_sim",
+            "phase": "work",
+            "progress_source": "server_phase_progress",
+            "pause": "hold",
+            "fault": "hold",
+            "rest": "range_rest",
+            "procedure_id": "shear.stroke"
+          }
+        }
+      ],
+      "fixed_parts": [],
+      "cutaway": {
+        "roof_node_ids": [],
+        "interior_node_ids": [],
+        "retained_socket_ids": []
+      },
+      "materials": [
+        {
+          "id": "paint",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.2,
+            0.4,
+            0.6,
+            1
+          ],
+          "metallic": 0.4,
+          "roughness": 0.6,
+          "textures": [
+            {
+              "slot": "baseColor",
+              "texture_id": "paint_color"
+            }
+          ],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow contract-example author",
+            "title": "Example paint recipe, not a produced material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "unbuilt",
+              "path": "contract-examples/shear/recipe.py"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "textures": [
+        {
+          "id": "paint_color",
+          "artifact": {
+            "status": "unbuilt",
+            "path": "contract-examples/shear/paint.png"
+          },
+          "color_space": "srgb",
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow contract-example author",
+            "title": "Example procedural paint texture, not a produced texture",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "unbuilt",
+              "path": "contract-examples/shear/recipe.py"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "collision_proxies": [
+        {
+          "id": "body",
+          "node_id": "support_bed",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            2,
+            0.5,
+            1
+          ],
+          "purpose": "body",
+          "part_id": null,
+          "contact_socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit"
+          ]
+        },
+        {
+          "id": "tool_sweep",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              0.75,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            0.1,
+            0.6,
+            1
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "cutting_tool",
+          "contact_socket_ids": [
+            "work"
+          ]
+        }
+      ],
+      "lods": [
+        {
+          "level": 0,
+          "artifact": {
+            "status": "unbuilt",
+            "path": "contract-examples/shear/shear-lod0.glb"
+          },
+          "semantic_geometry_sha256": null,
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "cutting_tool",
+              "parent_id": "root",
+              "locator": "root/cutting_tool",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit"
+          ],
+          "part_ids": [
+            "cutting_tool"
+          ],
+          "material_ids": [
+            "paint"
+          ]
+        },
+        {
+          "level": 1,
+          "artifact": {
+            "status": "unbuilt",
+            "path": "contract-examples/shear/shear-lod1.glb"
+          },
+          "semantic_geometry_sha256": null,
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "cutting_tool",
+              "parent_id": "root",
+              "locator": "root/cutting_tool",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit"
+          ],
+          "part_ids": [
+            "cutting_tool"
+          ],
+          "material_ids": [
+            "paint"
+          ]
+        }
+      ],
+      "source": {
+        "artifact": {
+          "status": "unbuilt",
+          "path": "contract-examples/shear/shear.blend"
+        },
+        "provenance": {
+          "origin": "self_created",
+          "creator": "SteelFlow contract-example author",
+          "title": "Example shear source declaration, not a produced Blender source",
+          "license": "project-owned",
+          "distribution_permission": "project-local",
+          "recipe": {
+            "status": "unbuilt",
+            "path": "contract-examples/shear/recipe.py"
+          },
+          "third_party_inputs": []
+        }
+      },
+      "export": {
+        "tool": "Blender",
+        "version": "4.5.15",
+        "tool_artifact": {
+          "status": "unbuilt",
+          "path": "contract-examples/toolchain/blender-4.5.15"
+        },
+        "recipe": {
+          "status": "unbuilt",
+          "path": "contract-examples/shear/export.py"
+        },
+        "settings": {
+          "format": "GLB",
+          "y_up": true,
+          "apply_transforms": true,
+          "animations": true
+        },
+        "authoring_axes": {
+          "up": "+Z",
+          "forward": "+X"
+        },
+        "conversion_rotation_xyzw": [
+          -0.7071067811865476,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "world_boundary": "yaw_root_full_quaternion_internal"
+      }
+    }
+  ]
+}

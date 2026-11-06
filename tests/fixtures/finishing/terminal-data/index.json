@@ -1,0 +1,149 @@
+{
+  "manifest_sha256": "cbea1c5bd57cc1e222302dbade3099ac92556c526ae0fe17d39fa49e0772b095",
+  "cases": [
+    {
+      "owner": "CS-CR-02",
+      "operation": "weld",
+      "file": "CS-CR-02-weld.json",
+      "sha256": "6fff36062a151425aeb22a837cc2a1741e83a76404ed519d31f21bbb97973d0f",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-CR-04",
+      "operation": "cut",
+      "file": "CS-CR-04-cut.json",
+      "sha256": "36f19dc0d3fe9ab4af8b216a8d4859832a33efc4fd7f8776cc786fd8113ca9f0",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-CR-09",
+      "operation": "cut",
+      "file": "CS-CR-09-cut.json",
+      "sha256": "b08a4c8f99857285407f23438af102a224c7170c75e1159ee63c39c88bd0eb69",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-GI-02",
+      "operation": "weld",
+      "file": "CS-GI-02-weld.json",
+      "sha256": "61d6703ad60346b50ea0d65dfabb289dec8c9d18315f4d33ff9da95087e27957",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-GI-09",
+      "operation": "cut",
+      "file": "CS-GI-09-cut.json",
+      "sha256": "4201d1e66d57cce10bfac423223f02e7978146d344085870b67527967ac707cc",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-GA-02",
+      "operation": "weld",
+      "file": "CS-GA-02-weld.json",
+      "sha256": "319cf42b28d1cb65cd2f8abdf9d90410b27f19bf88590b40c5f978d356da4115",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-GA-10",
+      "operation": "cut",
+      "file": "CS-GA-10-cut.json",
+      "sha256": "c25584eabca8bf2685d6b2a0b432af4d0e96f5e0ac36a772830db48440ad5f98",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-HGI-02",
+      "operation": "weld",
+      "file": "CS-HGI-02-weld.json",
+      "sha256": "b8727a1ed9a40288fdc251460d3929399d26b565f4bab0565aeb2b1436602bc4",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-HGI-09",
+      "operation": "cut",
+      "file": "CS-HGI-09-cut.json",
+      "sha256": "bf51ad1404028fd02a0bf2d16476b9749f70934222f88ebf48b86ef882dd3bea",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-EG-02",
+      "operation": "weld",
+      "file": "CS-EG-02-weld.json",
+      "sha256": "3e89cca302e3660330b2e622acc5b61d1cef55e80985fa9a0c0c96c874001b2a",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-EG-09",
+      "operation": "cut",
+      "file": "CS-EG-09-cut.json",
+      "sha256": "4319216b0ed2e0e5aa238269537234474e71ad7868a12d51349688b4f34d6a0e",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-GO-02",
+      "operation": "weld",
+      "file": "CS-GO-02-weld.json",
+      "sha256": "34356169b7fc3838fc94307ed17db468825c3573664f08441dfed7dfec604ed1",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-GO-04",
+      "operation": "cut",
+      "file": "CS-GO-04-cut.json",
+      "sha256": "68ebbdbcce451cca3a0eb0aa56115eef43f488ba140c367d9e75d6d22c2cea69",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-GO-06",
+      "operation": "cut",
+      "file": "CS-GO-06-cut.json",
+      "sha256": "f1a4bb4f5ff2f715132a51a8ed07c44ca59730123f406ba8d0648c7a54b636dd",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-GO-11",
+      "operation": "cut",
+      "file": "CS-GO-11-cut.json",
+      "sha256": "7dedaa3074756424816f4b81999a2c69ab39fee66795eb489f1aa65df567833f",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-NGO-02",
+      "operation": "weld",
+      "file": "CS-NGO-02-weld.json",
+      "sha256": "1397815f7f9a7e141715fcb7e6702e7af60872374fe90dd65db4c866679e16c2",
+      "inputs": 2,
+      "outputs": 1
+    },
+    {
+      "owner": "CS-NGO-04",
+      "operation": "cut",
+      "file": "CS-NGO-04-cut.json",
+      "sha256": "320f0cd7737dc83983334a2912805c53f97b55ed0fb8008515a5b7a3cb22ee90",
+      "inputs": 1,
+      "outputs": 2
+    },
+    {
+      "owner": "CS-NGO-08",
+      "operation": "cut",
+      "file": "CS-NGO-08-cut.json",
+      "sha256": "645fa3f88e8da1c857f54641b47d3cb0881cb6ad0b616be16cf9edf18ef4bb62",
+      "inputs": 1,
+      "outputs": 2
+    }
+  ]
+}

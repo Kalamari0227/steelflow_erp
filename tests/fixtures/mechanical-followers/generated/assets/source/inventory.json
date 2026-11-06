@@ -1,0 +1,39 @@
+{
+  "external_asset_count": 0,
+  "license": {
+    "status": "built",
+    "path": "assets/source/LICENSE.txt",
+    "sha256": "5e13d6afc82cfa1660a53318dd0931fc0844f321835d626b2c7139ed8efb2409"
+  },
+  "inputs": [
+    {
+      "status": "built",
+      "path": "assets/source/recipe.json",
+      "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/build.py",
+      "sha256": "2c1d9dcc014d7c83ba307ff72001833a830c591814aae3bede591477c9b85200"
+    },
+    {
+      "status": "built",
+      "path": "assets/toolchain.json",
+      "sha256": "c47db358bdf53ea856e10573f9db8766fea30ea1660cedaa86467781b5d0aa90"
+    }
+  ],
+  "authored_assets": [
+    {
+      "status": "built",
+      "path": "assets/source/miniature.blend",
+      "sha256": "ef0546087fb09570c9be339c337459e58a3836b0444611845ec827d140f0645a"
+    }
+  ],
+  "textures": [
+    {
+      "status": "built",
+      "path": "assets/source/paint.png",
+      "sha256": "ee1212b9b847b6775fb21c26e872dd6c9a06cb82bcb6e5f30404487e26cf8123"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "tool": "Blender",
+  "version": "4.5.15",
+  "architecture": "arm64",
+  "official_download_url": "https://download.blender.org/release/Blender4.5/blender-4.5.15-macos-arm64.dmg",
+  "official_checksum_url": "https://download.blender.org/release/Blender4.5/blender-4.5.15.sha256",
+  "archive_sha256": "bfbc0bda099d1ab7aef0992a584f872f58bed9bb491210ad45f9ca071aa2e688",
+  "archive_size_bytes": 311921946,
+  "executable_path": "/Users/ethanlee/Library/Application Support/SteelFlow/tools/blender/4.5.15-macos-arm64/Blender.app/Contents/MacOS/Blender",
+  "executable_sha256": "d85bac46c9cc9ae7e64ecdc5a647db28af60959eb7df65e030657ff9e0ed8299",
+  "license": "GPL-3.0-or-later",
+  "installed_at": "2026-10-25T13:29:30.490808+00:00",
+  "version_output": "Blender 4.5.15 LTS\n\tbuild date: 2026-10-22\n\tbuild time: 01:31:45\n\tbuild commit date: 2026-10-21\n\tbuild commit time: 09:15\n\tbuild hash: 5afeabba6097\n\tbuild branch: blender-v4.5-release\n\tbuild platform: Darwin\n\tbuild type: Release\n\tbuild c flags:  -Wall -Werror=implicit-function-declaration -Werror=return-type -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wstrict-prototypes -Wmissing-prototypes -Wunused-parameter -Wundef -Wundef-prefix -Werror=unguarded-availability-new  -mmacosx-version-min=11.2 -std=gnu11  -pipe -funsigned-char -fno-strict-aliasing -ffp-contract=off  \n\tbuild c++ flags:  -Wall -Wc++20-designator -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wno-overloaded-virtual -Wno-sign-compare -Wno-invalid-offsetof -Wno-suggest-override -Wundef -Wundef-prefix -Wunused-parameter -Wmismatched-tags -Werror=unguarded-availability-new  -mmacosx-version-min=11.2 -ftemplate-depth=1024  -pipe -funsigned-char -fno-strict-aliasing -ffp-contract=off  \n\tbuild link flags: -fexceptions -framework CoreServices -framework Foundation -framework IOKit -framework AppKit -framework Cocoa -framework Carbon -framework AudioUnit -framework AudioToolbox -framework CoreAudio -framework Metal -framework QuartzCore -framework Accelerate -liconv -Wl,-unexported_symbols_list,'/Users/blender/git/blender-v450/blender.git/source/creator/symbols_apple.map' -Wl,-ld_classic\n\tbuild system: CMake\n",
+  "tool_license_path": "/Users/ethanlee/Library/Application Support/SteelFlow/tools/blender/4.5.15-macos-arm64/Blender.app/Contents/Resources/text/license/license.md",
+  "tool_license_sha256": "bbbae8a955a571bbd30e91c579f6f1633ec921f6317cfac9074338dfba33a7b8"
+}

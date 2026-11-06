@@ -1,0 +1,9 @@
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/scenarios/NORMAL/activate
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/step
+curl -i -sS -X POST http://127.0.0.1:8001/api/v1/simulation/reset

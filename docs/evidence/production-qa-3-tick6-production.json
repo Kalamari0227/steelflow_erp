@@ -1,0 +1,1822 @@
+{
+  "tick": 6,
+  "scenario_id": "NORMAL",
+  "data_scope": "synthetic_production_only",
+  "total_mass_kg": 198000,
+  "completed_mass_kg": 26000,
+  "batches": [
+    {
+      "id": "PROD-SLAB",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-SLAB",
+      "product": "SLAB",
+      "mass_kg": 18000,
+      "material_id": "MAT-PROD-SLAB:03",
+      "parent_material_id": "MAT-PROD-SLAB:02",
+      "material_form": "SLAB",
+      "material_role": "sale_product",
+      "current_stage": "finishing",
+      "current_step": "형상·표면 검사",
+      "equipment_id": "QC-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.6667,
+      "steps": [
+        {
+          "id": "PROD-SLAB:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-SLAB:STEP-07",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-SLAB:STEP-08",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-SLAB:STEP-09",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 8,
+          "end_tick": 9,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-SLAB:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": 0
+        },
+        {
+          "id": "MAT-PROD-SLAB:01",
+          "parent_id": "MAT-PROD-SLAB:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": 2
+        },
+        {
+          "id": "MAT-PROD-SLAB:02",
+          "parent_id": "MAT-PROD-SLAB:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": 3
+        },
+        {
+          "id": "MAT-PROD-SLAB:03",
+          "parent_id": "MAT-PROD-SLAB:02",
+          "form": "SLAB",
+          "role": "sale_product",
+          "stage_id": "casting",
+          "created_tick": 5
+        }
+      ]
+    },
+    {
+      "id": "PROD-BLOOM",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-BLOOM",
+      "product": "BLOOM",
+      "mass_kg": 19000,
+      "material_id": "MAT-PROD-BLOOM:03",
+      "parent_material_id": "MAT-PROD-BLOOM:02",
+      "material_form": "BLOOM",
+      "material_role": "sale_product",
+      "current_stage": "finishing",
+      "current_step": "포장·라벨",
+      "equipment_id": "PACK-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.7778,
+      "steps": [
+        {
+          "id": "PROD-BLOOM:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-05",
+          "stage_id": "casting",
+          "name": "BLOOM 연속주조",
+          "equipment_id": "CASTER-BLOOM",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-BLOOM",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-07",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-08",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-BLOOM:STEP-09",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-BLOOM:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -1
+        },
+        {
+          "id": "MAT-PROD-BLOOM:01",
+          "parent_id": "MAT-PROD-BLOOM:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": 1
+        },
+        {
+          "id": "MAT-PROD-BLOOM:02",
+          "parent_id": "MAT-PROD-BLOOM:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": 2
+        },
+        {
+          "id": "MAT-PROD-BLOOM:03",
+          "parent_id": "MAT-PROD-BLOOM:02",
+          "form": "BLOOM",
+          "role": "sale_product",
+          "stage_id": "casting",
+          "created_tick": 4
+        }
+      ]
+    },
+    {
+      "id": "PROD-BILLET",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-BILLET",
+      "product": "BILLET",
+      "mass_kg": 20000,
+      "material_id": "MAT-PROD-BILLET:03",
+      "parent_material_id": "MAT-PROD-BILLET:02",
+      "material_form": "BILLET",
+      "material_role": "sale_product",
+      "current_stage": "stock",
+      "current_step": "제품 입고",
+      "equipment_id": "PRODUCTION-STOCK",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.8889,
+      "steps": [
+        {
+          "id": "PROD-BILLET:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-05",
+          "stage_id": "casting",
+          "name": "BILLET 연속주조",
+          "equipment_id": "CASTER-BILLET",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-BILLET",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-07",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-08",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-BILLET:STEP-09",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-BILLET:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -2
+        },
+        {
+          "id": "MAT-PROD-BILLET:01",
+          "parent_id": "MAT-PROD-BILLET:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": 0
+        },
+        {
+          "id": "MAT-PROD-BILLET:02",
+          "parent_id": "MAT-PROD-BILLET:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": 1
+        },
+        {
+          "id": "MAT-PROD-BILLET:03",
+          "parent_id": "MAT-PROD-BILLET:02",
+          "form": "BILLET",
+          "role": "sale_product",
+          "stage_id": "casting",
+          "created_tick": 3
+        }
+      ]
+    },
+    {
+      "id": "PROD-HR",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-HR",
+      "product": "HR",
+      "mass_kg": 21000,
+      "material_id": "MAT-PROD-HR:04",
+      "parent_material_id": "MAT-PROD-HR:03",
+      "material_form": "HR",
+      "material_role": "sale_product",
+      "current_stage": "finishing",
+      "current_step": "포장·라벨",
+      "equipment_id": "PACK-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.8182,
+      "steps": [
+        {
+          "id": "PROD-HR:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-09",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HR:STEP-10",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-HR:STEP-11",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-HR:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -3
+        },
+        {
+          "id": "MAT-PROD-HR:01",
+          "parent_id": "MAT-PROD-HR:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -1
+        },
+        {
+          "id": "MAT-PROD-HR:02",
+          "parent_id": "MAT-PROD-HR:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": 0
+        },
+        {
+          "id": "MAT-PROD-HR:03",
+          "parent_id": "MAT-PROD-HR:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": 2
+        },
+        {
+          "id": "MAT-PROD-HR:04",
+          "parent_id": "MAT-PROD-HR:03",
+          "form": "HR",
+          "role": "sale_product",
+          "stage_id": "hot_rolling",
+          "created_tick": 5
+        }
+      ]
+    },
+    {
+      "id": "PROD-CR",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-CR",
+      "product": "CR",
+      "mass_kg": 22000,
+      "material_id": "MAT-PROD-CR:05",
+      "parent_material_id": "MAT-PROD-CR:04",
+      "material_form": "CR",
+      "material_role": "sale_product",
+      "current_stage": "cold_rolling",
+      "current_step": "소둔",
+      "equipment_id": "ANNEAL-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "cold_rolling",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.7143,
+      "steps": [
+        {
+          "id": "PROD-CR:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -4,
+          "end_tick": -3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-09",
+          "stage_id": "cold_rolling",
+          "name": "산세",
+          "equipment_id": "PICKLE-01",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-10",
+          "stage_id": "cold_rolling",
+          "name": "냉간압연",
+          "equipment_id": "CRM-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-CR:STEP-11",
+          "stage_id": "cold_rolling",
+          "name": "소둔",
+          "equipment_id": "ANNEAL-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-CR:STEP-12",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-CR:STEP-13",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 8,
+          "end_tick": 9,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-CR:STEP-14",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 9,
+          "end_tick": 10,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-CR:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -4
+        },
+        {
+          "id": "MAT-PROD-CR:01",
+          "parent_id": "MAT-PROD-CR:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -2
+        },
+        {
+          "id": "MAT-PROD-CR:02",
+          "parent_id": "MAT-PROD-CR:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": -1
+        },
+        {
+          "id": "MAT-PROD-CR:03",
+          "parent_id": "MAT-PROD-CR:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": 1
+        },
+        {
+          "id": "MAT-PROD-CR:04",
+          "parent_id": "MAT-PROD-CR:03",
+          "form": "HR",
+          "role": "feedstock",
+          "stage_id": "hot_rolling",
+          "created_tick": 4
+        },
+        {
+          "id": "MAT-PROD-CR:05",
+          "parent_id": "MAT-PROD-CR:04",
+          "form": "CR",
+          "role": "sale_product",
+          "stage_id": "cold_rolling",
+          "created_tick": 6
+        }
+      ]
+    },
+    {
+      "id": "PROD-GI",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-GI",
+      "product": "GI",
+      "mass_kg": 23000,
+      "material_id": "MAT-PROD-GI:05",
+      "parent_material_id": "MAT-PROD-GI:04",
+      "material_form": "CR",
+      "material_role": "feedstock",
+      "current_stage": "coating",
+      "current_step": "용융아연 도금",
+      "equipment_id": "HDG-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "cold_rolling",
+        "coating",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.7333,
+      "steps": [
+        {
+          "id": "PROD-GI:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -5,
+          "end_tick": -4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -4,
+          "end_tick": -3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-09",
+          "stage_id": "cold_rolling",
+          "name": "산세",
+          "equipment_id": "PICKLE-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-10",
+          "stage_id": "cold_rolling",
+          "name": "냉간압연",
+          "equipment_id": "CRM-01",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-11",
+          "stage_id": "cold_rolling",
+          "name": "소둔",
+          "equipment_id": "ANNEAL-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GI:STEP-12",
+          "stage_id": "coating",
+          "name": "용융아연 도금",
+          "equipment_id": "HDG-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-GI:STEP-13",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-GI:STEP-14",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 8,
+          "end_tick": 9,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-GI:STEP-15",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 9,
+          "end_tick": 10,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-GI:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -5
+        },
+        {
+          "id": "MAT-PROD-GI:01",
+          "parent_id": "MAT-PROD-GI:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -3
+        },
+        {
+          "id": "MAT-PROD-GI:02",
+          "parent_id": "MAT-PROD-GI:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": -2
+        },
+        {
+          "id": "MAT-PROD-GI:03",
+          "parent_id": "MAT-PROD-GI:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": 0
+        },
+        {
+          "id": "MAT-PROD-GI:04",
+          "parent_id": "MAT-PROD-GI:03",
+          "form": "HR",
+          "role": "feedstock",
+          "stage_id": "hot_rolling",
+          "created_tick": 3
+        },
+        {
+          "id": "MAT-PROD-GI:05",
+          "parent_id": "MAT-PROD-GI:04",
+          "form": "CR",
+          "role": "feedstock",
+          "stage_id": "cold_rolling",
+          "created_tick": 5
+        }
+      ]
+    },
+    {
+      "id": "PROD-GA",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-GA",
+      "product": "GA",
+      "mass_kg": 24000,
+      "material_id": "MAT-PROD-GA:06",
+      "parent_material_id": "MAT-PROD-GA:05",
+      "material_form": "GI",
+      "material_role": "feedstock",
+      "current_stage": "coating",
+      "current_step": "합금화 열처리",
+      "equipment_id": "ALLOY-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "cold_rolling",
+        "coating",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.75,
+      "steps": [
+        {
+          "id": "PROD-GA:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -6,
+          "end_tick": -5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -5,
+          "end_tick": -4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -4,
+          "end_tick": -3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-09",
+          "stage_id": "cold_rolling",
+          "name": "산세",
+          "equipment_id": "PICKLE-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-10",
+          "stage_id": "cold_rolling",
+          "name": "냉간압연",
+          "equipment_id": "CRM-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-11",
+          "stage_id": "cold_rolling",
+          "name": "소둔",
+          "equipment_id": "ANNEAL-01",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-12",
+          "stage_id": "coating",
+          "name": "용융아연 도금",
+          "equipment_id": "HDG-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-GA:STEP-13",
+          "stage_id": "coating",
+          "name": "합금화 열처리",
+          "equipment_id": "ALLOY-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-GA:STEP-14",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-GA:STEP-15",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 8,
+          "end_tick": 9,
+          "status": "queued"
+        },
+        {
+          "id": "PROD-GA:STEP-16",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 9,
+          "end_tick": 10,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-GA:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -6
+        },
+        {
+          "id": "MAT-PROD-GA:01",
+          "parent_id": "MAT-PROD-GA:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -4
+        },
+        {
+          "id": "MAT-PROD-GA:02",
+          "parent_id": "MAT-PROD-GA:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": -3
+        },
+        {
+          "id": "MAT-PROD-GA:03",
+          "parent_id": "MAT-PROD-GA:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": -1
+        },
+        {
+          "id": "MAT-PROD-GA:04",
+          "parent_id": "MAT-PROD-GA:03",
+          "form": "HR",
+          "role": "feedstock",
+          "stage_id": "hot_rolling",
+          "created_tick": 2
+        },
+        {
+          "id": "MAT-PROD-GA:05",
+          "parent_id": "MAT-PROD-GA:04",
+          "form": "CR",
+          "role": "feedstock",
+          "stage_id": "cold_rolling",
+          "created_tick": 4
+        },
+        {
+          "id": "MAT-PROD-GA:06",
+          "parent_id": "MAT-PROD-GA:05",
+          "form": "GI",
+          "role": "feedstock",
+          "stage_id": "coating",
+          "created_tick": 6
+        }
+      ]
+    },
+    {
+      "id": "PROD-EG",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-EG",
+      "product": "EG",
+      "mass_kg": 25000,
+      "material_id": "MAT-PROD-EG:06",
+      "parent_material_id": "MAT-PROD-EG:05",
+      "material_form": "EG",
+      "material_role": "sale_product",
+      "current_stage": "finishing",
+      "current_step": "포장·라벨",
+      "equipment_id": "PACK-01",
+      "status": "running",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "cold_rolling",
+        "coating",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 0.8667,
+      "steps": [
+        {
+          "id": "PROD-EG:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -7,
+          "end_tick": -6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -6,
+          "end_tick": -5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -5,
+          "end_tick": -4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": -4,
+          "end_tick": -3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-09",
+          "stage_id": "cold_rolling",
+          "name": "산세",
+          "equipment_id": "PICKLE-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-10",
+          "stage_id": "cold_rolling",
+          "name": "냉간압연",
+          "equipment_id": "CRM-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-11",
+          "stage_id": "cold_rolling",
+          "name": "소둔",
+          "equipment_id": "ANNEAL-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-12",
+          "stage_id": "coating",
+          "name": "전해 아연 도금",
+          "equipment_id": "EGL-01",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-13",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 5,
+          "end_tick": 6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-EG:STEP-14",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 6,
+          "end_tick": 7,
+          "status": "running"
+        },
+        {
+          "id": "PROD-EG:STEP-15",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 7,
+          "end_tick": 8,
+          "status": "queued"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-EG:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -7
+        },
+        {
+          "id": "MAT-PROD-EG:01",
+          "parent_id": "MAT-PROD-EG:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -5
+        },
+        {
+          "id": "MAT-PROD-EG:02",
+          "parent_id": "MAT-PROD-EG:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": -4
+        },
+        {
+          "id": "MAT-PROD-EG:03",
+          "parent_id": "MAT-PROD-EG:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": -2
+        },
+        {
+          "id": "MAT-PROD-EG:04",
+          "parent_id": "MAT-PROD-EG:03",
+          "form": "HR",
+          "role": "feedstock",
+          "stage_id": "hot_rolling",
+          "created_tick": 1
+        },
+        {
+          "id": "MAT-PROD-EG:05",
+          "parent_id": "MAT-PROD-EG:04",
+          "form": "CR",
+          "role": "feedstock",
+          "stage_id": "cold_rolling",
+          "created_tick": 3
+        },
+        {
+          "id": "MAT-PROD-EG:06",
+          "parent_id": "MAT-PROD-EG:05",
+          "form": "EG",
+          "role": "sale_product",
+          "stage_id": "coating",
+          "created_tick": 5
+        }
+      ]
+    },
+    {
+      "id": "PROD-HGI",
+      "source_fixture_id": "SYNTH-PRODUCTION-20261030-HGI",
+      "product": "HGI",
+      "mass_kg": 26000,
+      "material_id": "MAT-PROD-HGI:05",
+      "parent_material_id": "MAT-PROD-HGI:04",
+      "material_form": "HGI",
+      "material_role": "sale_product",
+      "current_stage": "stock",
+      "current_step": "제품 입고",
+      "equipment_id": "PRODUCTION-STOCK",
+      "status": "completed",
+      "route": [
+        "ironmaking",
+        "steelmaking",
+        "casting",
+        "hot_rolling",
+        "coating",
+        "finishing",
+        "stock"
+      ],
+      "route_progress": 1,
+      "steps": [
+        {
+          "id": "PROD-HGI:STEP-01",
+          "stage_id": "ironmaking",
+          "name": "원료 장입",
+          "equipment_id": "BF-01",
+          "start_tick": -8,
+          "end_tick": -7,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-02",
+          "stage_id": "ironmaking",
+          "name": "고로 환원·출선",
+          "equipment_id": "BF-01",
+          "start_tick": -7,
+          "end_tick": -6,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-03",
+          "stage_id": "steelmaking",
+          "name": "전로 취련·출강",
+          "equipment_id": "BOF-01",
+          "start_tick": -6,
+          "end_tick": -5,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-04",
+          "stage_id": "steelmaking",
+          "name": "2차 정련",
+          "equipment_id": "LF-01",
+          "start_tick": -5,
+          "end_tick": -4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-05",
+          "stage_id": "casting",
+          "name": "SLAB 연속주조",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -4,
+          "end_tick": -3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-06",
+          "stage_id": "casting",
+          "name": "절단·냉각",
+          "equipment_id": "CASTER-SLAB",
+          "start_tick": -3,
+          "end_tick": -2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-07",
+          "stage_id": "hot_rolling",
+          "name": "가열로 재가열",
+          "equipment_id": "REHEAT-01",
+          "start_tick": -2,
+          "end_tick": -1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-08",
+          "stage_id": "hot_rolling",
+          "name": "조압연·사상압연",
+          "equipment_id": "HSM-A",
+          "start_tick": -1,
+          "end_tick": 0,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-09",
+          "stage_id": "coating",
+          "name": "산세·표면준비",
+          "equipment_id": "HGI-PICKLE-01",
+          "start_tick": 0,
+          "end_tick": 1,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-10",
+          "stage_id": "coating",
+          "name": "용융아연 도금",
+          "equipment_id": "HDG-01",
+          "start_tick": 1,
+          "end_tick": 2,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-11",
+          "stage_id": "finishing",
+          "name": "형상·표면 검사",
+          "equipment_id": "QC-01",
+          "start_tick": 2,
+          "end_tick": 3,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-12",
+          "stage_id": "finishing",
+          "name": "포장·라벨",
+          "equipment_id": "PACK-01",
+          "start_tick": 3,
+          "end_tick": 4,
+          "status": "completed"
+        },
+        {
+          "id": "PROD-HGI:STEP-13",
+          "stage_id": "stock",
+          "name": "제품 입고",
+          "equipment_id": "PRODUCTION-STOCK",
+          "start_tick": 4,
+          "end_tick": 5,
+          "status": "completed"
+        }
+      ],
+      "material_history": [
+        {
+          "id": "MAT-PROD-HGI:00",
+          "parent_id": null,
+          "form": "ORE",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -8
+        },
+        {
+          "id": "MAT-PROD-HGI:01",
+          "parent_id": "MAT-PROD-HGI:00",
+          "form": "HOT_METAL",
+          "role": "feedstock",
+          "stage_id": "ironmaking",
+          "created_tick": -6
+        },
+        {
+          "id": "MAT-PROD-HGI:02",
+          "parent_id": "MAT-PROD-HGI:01",
+          "form": "LIQUID_STEEL",
+          "role": "feedstock",
+          "stage_id": "steelmaking",
+          "created_tick": -5
+        },
+        {
+          "id": "MAT-PROD-HGI:03",
+          "parent_id": "MAT-PROD-HGI:02",
+          "form": "SLAB",
+          "role": "feedstock",
+          "stage_id": "casting",
+          "created_tick": -3
+        },
+        {
+          "id": "MAT-PROD-HGI:04",
+          "parent_id": "MAT-PROD-HGI:03",
+          "form": "HR",
+          "role": "feedstock",
+          "stage_id": "hot_rolling",
+          "created_tick": 0
+        },
+        {
+          "id": "MAT-PROD-HGI:05",
+          "parent_id": "MAT-PROD-HGI:04",
+          "form": "HGI",
+          "role": "sale_product",
+          "stage_id": "coating",
+          "created_tick": 2
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "ironmaking",
+      "name": "제선",
+      "equipment_ids": [
+        "BF-01"
+      ],
+      "substeps": [
+        "원료 장입",
+        "고로 환원·출선"
+      ],
+      "queued_count": 0,
+      "running_count": 0,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 0,
+      "completed_mass_kg": 0,
+      "batch_ids": []
+    },
+    {
+      "id": "steelmaking",
+      "name": "제강",
+      "equipment_ids": [
+        "BOF-01",
+        "LF-01"
+      ],
+      "substeps": [
+        "전로 취련·출강",
+        "2차 정련"
+      ],
+      "queued_count": 0,
+      "running_count": 0,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 0,
+      "completed_mass_kg": 0,
+      "batch_ids": []
+    },
+    {
+      "id": "casting",
+      "name": "연속주조",
+      "equipment_ids": [
+        "CASTER-SLAB",
+        "CASTER-BLOOM",
+        "CASTER-BILLET"
+      ],
+      "substeps": [
+        "SLAB 연속주조",
+        "절단·냉각",
+        "BLOOM 연속주조",
+        "BILLET 연속주조"
+      ],
+      "queued_count": 0,
+      "running_count": 0,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 0,
+      "completed_mass_kg": 0,
+      "batch_ids": []
+    },
+    {
+      "id": "hot_rolling",
+      "name": "열간압연",
+      "equipment_ids": [
+        "REHEAT-01",
+        "HSM-A",
+        "HSM-B"
+      ],
+      "substeps": [
+        "가열로 재가열",
+        "조압연·사상압연"
+      ],
+      "queued_count": 0,
+      "running_count": 0,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 0,
+      "completed_mass_kg": 0,
+      "batch_ids": []
+    },
+    {
+      "id": "cold_rolling",
+      "name": "냉간압연",
+      "equipment_ids": [
+        "PICKLE-01",
+        "CRM-01",
+        "ANNEAL-01"
+      ],
+      "substeps": [
+        "산세",
+        "냉간압연",
+        "소둔"
+      ],
+      "queued_count": 0,
+      "running_count": 1,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 22000,
+      "completed_mass_kg": 0,
+      "batch_ids": [
+        "PROD-CR"
+      ]
+    },
+    {
+      "id": "coating",
+      "name": "도금",
+      "equipment_ids": [
+        "HDG-01",
+        "ALLOY-01",
+        "EGL-01",
+        "HGI-PICKLE-01"
+      ],
+      "substeps": [
+        "용융아연 도금",
+        "합금화 열처리",
+        "전해 아연 도금",
+        "산세·표면준비"
+      ],
+      "queued_count": 0,
+      "running_count": 2,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 47000,
+      "completed_mass_kg": 0,
+      "batch_ids": [
+        "PROD-GI",
+        "PROD-GA"
+      ]
+    },
+    {
+      "id": "finishing",
+      "name": "정정·검사",
+      "equipment_ids": [
+        "QC-01",
+        "PACK-01"
+      ],
+      "substeps": [
+        "형상·표면 검사",
+        "포장·라벨"
+      ],
+      "queued_count": 0,
+      "running_count": 4,
+      "completed_count": 0,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 83000,
+      "completed_mass_kg": 0,
+      "batch_ids": [
+        "PROD-SLAB",
+        "PROD-BLOOM",
+        "PROD-HR",
+        "PROD-EG"
+      ]
+    },
+    {
+      "id": "stock",
+      "name": "제품 재고",
+      "equipment_ids": [
+        "PRODUCTION-STOCK"
+      ],
+      "substeps": [
+        "제품 입고"
+      ],
+      "queued_count": 0,
+      "running_count": 1,
+      "completed_count": 1,
+      "queued_mass_kg": 0,
+      "running_mass_kg": 20000,
+      "completed_mass_kg": 26000,
+      "batch_ids": [
+        "PROD-BILLET",
+        "PROD-HGI"
+      ]
+    }
+  ]
+}

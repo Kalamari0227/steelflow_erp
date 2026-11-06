@@ -1,0 +1,32 @@
+{
+  "movingDiff": {
+    "count": 2929,
+    "bounds": {
+      "x0": 392,
+      "y0": 224,
+      "x1": 498,
+      "y1": 288
+    },
+    "width": 962,
+    "height": 481
+  },
+  "pausedDiff": {
+    "count": 0,
+    "bounds": null,
+    "width": 962,
+    "height": 481
+  },
+  "resetDiff": {
+    "count": 0,
+    "bounds": null,
+    "width": 962,
+    "height": 481
+  },
+  "beforeTick": 0,
+  "pausedTick": 0,
+  "resumedTick": 1,
+  "selectionClick": {
+    "x": -0.10854855164034823,
+    "y": -0.01665952274130671
+  }
+}

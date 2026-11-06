@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "qualification": "Exact metadata rejection cases; not material/runtime or geometry certification.",
+  "cases": [
+    {
+      "id": "steering-axis",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            0,
+            "axis"
+          ],
+          "value": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "steering-pivot",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            0,
+            "pivot_m"
+          ],
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "rolling-axis",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            6,
+            "axis"
+          ],
+          "value": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "rolling-driver",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            6,
+            "binding",
+            "driver_part_id"
+          ],
+          "value": "steering"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "follower-ratio",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            2,
+            "binding",
+            "ratio"
+          ],
+          "value": -1
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "whole-axle-parent",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "nodes",
+            108,
+            "parent_id"
+          ],
+          "value": "steering"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "range-shrink",
+      "asset_id": "steelflow:transport:truck-dump",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            7,
+            "range",
+            "max"
+          ],
+          "value": 1
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "wrong-clip",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            0,
+            "binding",
+            "clip_id"
+          ],
+          "value": "truck-flatbed.wheel_rotation"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "follower-chain",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            7,
+            "binding",
+            "driver_part_id"
+          ],
+          "value": "steering_right"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "missing-tyre",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "nodes",
+            96,
+            "id"
+          ],
+          "value": "fake_renamed_tyre"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "index-only-rotation",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "nodes",
+            96,
+            "parent_id"
+          ],
+          "value": "root"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "grab-parent",
+      "asset_id": "steelflow:transport:unloader",
+      "patches": [
+        {
+          "path": [
+            "nodes",
+            70,
+            "parent_id"
+          ],
+          "value": "root"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "grab-driver",
+      "asset_id": "steelflow:transport:unloader",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            3,
+            "binding",
+            "driver_part_id"
+          ],
+          "value": "boom_slew"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "grab-ratio",
+      "asset_id": "steelflow:transport:unloader",
+      "patches": [
+        {
+          "path": [
+            "moving_parts",
+            3,
+            "binding",
+            "ratio"
+          ],
+          "value": 1
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "saddle-relative-parent",
+      "asset_id": "steelflow:transport:coil-carrier",
+      "patches": [
+        {
+          "path": [
+            "fixed_parts",
+            0,
+            "fixed_to_part_id"
+          ],
+          "value": "root"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "saddle-node-parent",
+      "asset_id": "steelflow:transport:coil-carrier",
+      "patches": [
+        {
+          "path": [
+            "nodes",
+            120,
+            "parent_id"
+          ],
+          "value": "root"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "vessel-relative-parent",
+      "asset_id": "steelflow:transport:torpedo",
+      "patches": [
+        {
+          "path": [
+            "fixed_parts",
+            0,
+            "fixed_to_part_id"
+          ],
+          "value": "root"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "follower-socket",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "sockets",
+            1,
+            "node_id"
+          ],
+          "value": "wheel_2_left_roll_tyre"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "identity-variant",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "variant"
+          ],
+          "value": "variant:fleet:truck:fake"
+        }
+      ],
+      "expected": "transport_mechanics"
+    },
+    {
+      "id": "policy-override",
+      "asset_id": "steelflow:transport:truck-flatbed",
+      "patches": [
+        {
+          "path": [
+            "motion_policy_id"
+          ],
+          "value": "policy:fleet:truck"
+        }
+      ],
+      "expected": "transport_mechanics"
+    }
+  ]
+}

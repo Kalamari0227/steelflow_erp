@@ -1,0 +1,72 @@
+{
+  "source_index_sha256": "3f630309276ecc2d804845001a02f0755d8efd9464259d4c325f881fba0efdae",
+  "manifest_sha256": "cbea1c5bd57cc1e222302dbade3099ac92556c526ae0fe17d39fa49e0772b095",
+  "cases": [
+    {
+      "owner": "CS-CR-04",
+      "file": "CS-CR-04.json",
+      "sha256": "5b68318a059f33776921dc700f0b9372139a7e1a5db97b1a2a53f46499e01767",
+      "source_sha256": "099a288eff49c56e36a17fbeddf1c170b1fbc46b5951056a131aa28af2b0568d"
+    },
+    {
+      "owner": "CS-CR-09",
+      "file": "CS-CR-09.json",
+      "sha256": "90bf8eebf8c571de55937555a5659c011f78682d3fa8027a1ba95e850cf11b2c",
+      "source_sha256": "0590c4fb58cefb77fb776b38eb179f3c473f158fdbfbade5f29a46ec66a0d4e1"
+    },
+    {
+      "owner": "CS-GI-09",
+      "file": "CS-GI-09.json",
+      "sha256": "5d14cf127dad79dfef81c0499fcc7973a71f84fff29e9a7217fab0375f81dc4d",
+      "source_sha256": "e9f3fd04da87c26d44f1b4ba8ddd7c63a402e0f706174050b85aac423989cfbf"
+    },
+    {
+      "owner": "CS-GA-10",
+      "file": "CS-GA-10.json",
+      "sha256": "47a8a74f526d69c1dc09117fe0a06ecf21c94b7f641f874ad92b17244a0c12ec",
+      "source_sha256": "1f624f8ebbe48803aa078341f8b2237d2af2f39905f4ba1f63e0629233351324"
+    },
+    {
+      "owner": "CS-HGI-09",
+      "file": "CS-HGI-09.json",
+      "sha256": "9786cc70555bc1ab56195ac3f61bf769e2a3349cb307490a3363d618d5f99cf1",
+      "source_sha256": "ad9b61926fe91bec80d34c1f7e7200aeafa398c6e8ac1bc342e0d31d7e1a6906"
+    },
+    {
+      "owner": "CS-EG-09",
+      "file": "CS-EG-09.json",
+      "sha256": "22c7c4d877ef985171ad536b8c0bfc9113fd0433b6a377c40c0e1d45a49e52ec",
+      "source_sha256": "a9d39ee395465202dcd14ab72e1abc011fc7d4fd47289f9ff9b226096ae51498"
+    },
+    {
+      "owner": "CS-GO-04",
+      "file": "CS-GO-04.json",
+      "sha256": "8deece1892052bd3e00d8e2493dbcebfa5c4c7e3c1ea695fde3007c3561653a6",
+      "source_sha256": "97cb54d3cec9c2be72e8770bf04cd2d059626cb766a9212a7ba77051e912ae6d"
+    },
+    {
+      "owner": "CS-GO-06",
+      "file": "CS-GO-06.json",
+      "sha256": "ba812f730c52432c586ba37a7ed949744c19869a67be4db2433b8236e1e4c1ca",
+      "source_sha256": "633300fc7da12b4974333d42064c7d53c85587ca62810ae064268eca34f78212"
+    },
+    {
+      "owner": "CS-GO-11",
+      "file": "CS-GO-11.json",
+      "sha256": "6a3aee8c4f2587b11e266d994795e46459d730bb4b0e0fd2717525a88e974d10",
+      "source_sha256": "2f2eb51a6ddd7224de3f0fea0ca1d581b0cff5bf12e8a9ede00afae949376568"
+    },
+    {
+      "owner": "CS-NGO-04",
+      "file": "CS-NGO-04.json",
+      "sha256": "ed54bef82ab7f947b81b49aa6204d9fa036b01418ae40fa22d5988c03bf154ca",
+      "source_sha256": "11e45a40f69b4a6aff5faff8901563eaa65eb1cc91cca7717e80c5c4457511de"
+    },
+    {
+      "owner": "CS-NGO-08",
+      "file": "CS-NGO-08.json",
+      "sha256": "abe1f68c9c092489ecb1bf46f74a85918b981f05fa7d1c6821671865c94cd8ad",
+      "source_sha256": "17543ae402bf5c40806a8c388940e69b1d630c61e9deb22cfd900410f5f0fedb"
+    }
+  ]
+}

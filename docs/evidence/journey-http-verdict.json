@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "routes": 17,
+  "families": 8,
+  "steps": 187,
+  "partial_elapsed_ms": 4200,
+  "partial_form": "SLAB",
+  "final_form": "HR_COIL",
+  "duration_ms": 45800,
+  "invalid_requests_unchanged": true,
+  "reset_exact_material": true
+}

@@ -1,0 +1,64 @@
+{
+  "surface": "http://127.0.0.1:4173/?workspace=journey",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "elapsed_ms": 0,
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/?workspace=journey"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/index-dfLd6D8U.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/index-C6__prbd.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/JourneyWorkspace-DAzmaOUf.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/JourneyWorkspace-BpijQzQA.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/api/v1/world"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/favicon.svg"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/api/v1/journey"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/api/v1/journey/products"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/JourneyScene-CzBIJugS.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/assets/OrbitControls-DxOu1vSo.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/api/v1/world"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/api/v1/journey"
+    }
+  ],
+  "body": "Skip to operations\nSF\nSteelFlow\n3D\nOperations twin\nSynthetic environment\nLOCAL / V0.1\n물류 오버뷰\n생산 공정\n제품 제조공정\n소재에서 제품까지\n합성 데이터 · 공정 시연\n열연\n후판\n선재\n냉연\n도금\n전기강판\n스테인리스\n티타늄\n열연 코일\n\n슬래브가 가열·압연·냉각·권취를 거쳐 열연 코일이 되는 흐름입니다.\n\n제조 경로\n열연 코일\n공정 일시정지\n소재 따라가기\n전체 보기\n3D\n2D\n드래그 회전 · 휠 확대 · 설비와 소재 선택\n01\n소재 입고\n현재 단계\n02\n가열로\n대기\n03\n조압연\n대기\n04\n사상압연\n대기\n05\n냉각\n대기\n06\n권취\n대기\n07\n정정\n대기\n08\n포장\n대기\n09\n제품 출고\n대기\n재생\n처음부터\n다음 단계\n시연 시간\n0:00 / 0:45\n1×\n2×\n4×\n현재 소재가 거치는 공정\n소재 입고\n\n선택한 합성 소재를 운반차에서 생산 라인으로 인계합니다. 공정 설명에 추가한 데모 운송 단계입니다.\n\nSLAB\nSLAB\nMy POSCO · 열연 제조공정\n하나의 소재, 이어지는 이력\n공정 소재\nSLAB\n20,000 kg\n소재 입고\n동일 소재 ID\nMATERIAL-hr\n현재 버전\nMATERIAL-hr:0\n이전 버전\n최초 투입 소재\nSLAB\nMATERIAL-hr:0\n\n공개된 제품 제조 흐름을 바탕으로 재구성한 미니어처입니다. 시간과 질량은 설명용 합성 데이터이며, 실제 생산 속도·설비 제어와 연결되지 않습니다. 소재의 이동과 변환은 로컬 서버가 결정합니다."
+}

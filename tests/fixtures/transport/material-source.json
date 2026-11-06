@@ -1,0 +1,46 @@
+{
+  "source_path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-16/implementation/qa-77fe5b08/dispatch-input0/bundle/domain.json",
+  "source_sha256": "ccadbeef2193f2bcd97f86167e13b00caeda3909e65d024477d60a99ba6b3cfa",
+  "material": {
+    "run_id": "TRAFFIC-TEMPLATE",
+    "id": "t16:material:1",
+    "grade": "SYNTHETIC",
+    "form": "HR_COIL",
+    "dimensions": {
+      "length_mm": null,
+      "width_mm": 1000.0,
+      "thickness_mm": 2.0,
+      "diameter_mm": 1200.0,
+      "inner_diameter_mm": 600.0
+    },
+    "weight_kg": 20000,
+    "current_version_id": "t16:version:1",
+    "origin_stock_lot_id": "t16:stock:1",
+    "production_lot_id": null,
+    "quality_status": "PASSED",
+    "availability_status": "AVAILABLE",
+    "active": true
+  },
+  "version": {
+    "run_id": "TRAFFIC-TEMPLATE",
+    "id": "t16:version:1",
+    "material_id": "t16:material:1",
+    "ordinal": 1,
+    "grade": "SYNTHETIC",
+    "form": "HR_COIL",
+    "dimensions": {
+      "length_mm": null,
+      "width_mm": 1000.0,
+      "thickness_mm": 2.0,
+      "diameter_mm": 1200.0,
+      "inner_diameter_mm": 600.0
+    },
+    "weight_kg": 20000,
+    "cause_event_id": null
+  },
+  "support_local_mm": [
+    0,
+    -600,
+    0
+  ]
+}

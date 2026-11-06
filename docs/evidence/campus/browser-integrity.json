@@ -1,0 +1,22 @@
+{
+  "sourceFileCount": 162,
+  "sourceDelta": [],
+  "snapshotFileCount": 43,
+  "snapshotDelta": [],
+  "defaultDistUnchanged": true,
+  "originalProcessesUnchanged": true,
+  "retainedOwnedProcesses": [
+    {
+      "pid": 75849,
+      "role": "backend",
+      "identityMatched": true,
+      "retained": true
+    },
+    {
+      "pid": 76348,
+      "role": "preview",
+      "identityMatched": true,
+      "retained": true
+    }
+  ]
+}

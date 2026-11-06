@@ -1,0 +1,84 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test
+
+[WebServer] INFO:     Started server process [51866]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:51902) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 28 tests using 1 worker
+
+(node:51905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/demo.spec.ts:44:1 › 3D factory renders, orbit and zoom respond, and no browser exception occurs (2.7s)
+  ✓   2 tests/demo.spec.ts:74:1 › search finds a customer order and empty search is explained (1.2s)
+  ✓   3 tests/demo.spec.ts:85:1 › accessible inventory selection exposes the exact coil relationships (1.6s)
+  ✘   4 tests/demo.spec.ts:106:1 › three scenarios differ at the same tick and reset reproduces each baseline (46.0s)
+(node:52452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 tests/demo.spec.ts:138:1 › play, speed and pause are owned by the backend and continue without a page (4.5s)
+  ✓   6 tests/demo.spec.ts:156:1 › mobile 2D fallback remains navigable without horizontal page overflow (1.1s)
+  ✓   7 tests/demo.spec.ts:172:1 › backend unavailable state is explicit and retry restores the live demo (1.8s)
+  ✓   8 tests/demo.spec.ts:183:1 › disabled AI requires no provider request and core recovery rules remain available (1.2s)
+  ✓   9 tests/demo.spec.ts:197:1 › WebGL context loss leaves core inventory and controls usable (1.6s)
+  ✓  10 tests/demo.spec.ts:217:1 › operator demo recording follows the complete synthetic recovery narrative (30.5s)
+  ✓  11 tests/journey.spec.ts:73:1 › all 17 routes complete their exact forms with one stable lineage and no early transformations (18.9s)
+  ✓  12 tests/journey.spec.ts:112:1 › all eight product families render distinct selectable 3D miniatures (7.1s)
+  ✓  13 tests/journey.spec.ts:126:1 › real material and equipment meshes select and motion freezes, resumes at speed and resets (18.0s)
+  ✓  14 tests/journey.spec.ts:168:1 › 390px keyboard controls and WebGL loss preserve complete 2D tracking (1.9s)
+  ✓  15 tests/journey.spec.ts:188:1 › connection failure freezes the actual scene and retry restores authoritative state (4.3s)
+  ✓  16 tests/journey.spec.ts:214:1 › reduced motion does not interpolate while real snapshot reads are delayed (2.4s)
+  ✓  17 tests/production.spec.ts:48:1 › all eight stages expose internal work and return to overview in 2D (2.7s)
+  ✓  18 tests/production.spec.ts:60:1 › all nine product routes preserve casting branches and HGI bypasses cold rolling (2.2s)
+  ✓  19 tests/production.spec.ts:86:1 › same HR and CR forms distinguish sale products from feedstock and preserve genealogy (2.7s)
+  ✓  20 tests/production.spec.ts:118:1 › scenario changes alter visible work and reset reproduces production at the same step (8.1s)
+  ✓  21 tests/production.spec.ts:150:1 › mobile 2D core actions fit 390px and backend pause and step remain authoritative (2.9s)
+  ✓  22 tests/production.spec.ts:173:1 › production WebGL context loss recovers to fully usable 2D stages and material selection (2.0s)
+  ✓  23 tests/production.spec.ts:196:1 › 3D renders and camera responds while workspace tabs remain stable and local-only (3.4s)
+  ✓  24 tests/production.spec.ts:236:1 › coating equipment clicks select only the matching GA, EG or HGI operation (2.4s)
+  ✓  25 tests/transport.spec.ts:75:1 › transport arrival gates processing and never duplicates facility inventory (4.4s)
+  ✓  26 tests/transport.spec.ts:118:1 › loaded 3D truck is selectable, moves, freezes on pause, resumes and resets (6.9s)
+  ✓  27 tests/transport.spec.ts:167:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation (1.8s)
+  ✓  28 tests/transport.spec.ts:198:1 › reduced motion holds loaded transport still between authoritative ticks (2.6s)
+
+
+  1) tests/demo.spec.ts:106:1 › three scenarios differ at the same tick and reset reproduces each baseline 
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+
+      13 |
+      14 | async function command(page: Page, label: string, path: string): Promise<World> {
+    > 15 |   const response = page.waitForResponse((item) => item.url().endsWith(path) && item.request().method() === 'POST');
+         |                         ^
+      16 |   await page.getByRole('button', { name: label, exact: true }).click();
+      17 |   const result = await response;
+      18 |   expect(result.ok()).toBe(true);
+        at command (/Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:15:25)
+        at /Users/ethanlee/Desktop/ERP/tests/demo.spec.ts:118:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/demo.spec.ts:106:1 › three scenarios differ at the same tick and reset reproduces each baseline 
+  27 passed (3.3m)

@@ -1,0 +1,1608 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "requirement_id": "src:cold-scale-breaker",
+      "owner_id": "CS-CR-03",
+      "section": "inlet",
+      "moving_functions": [
+        "scale_breaker_roll"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "scale_breaker_roll"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-03:cold-scale-breaker:inlet"
+    },
+    {
+      "requirement_id": "src:cold-welder",
+      "owner_id": "CS-CR-02",
+      "section": "outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-CR-02:cold-welder:outlet"
+    },
+    {
+      "requirement_id": "src:cold-looper",
+      "owner_id": "CS-CR-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-06:cold-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-GI-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-GA-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-HGI-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-GI-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GI-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-GA-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GA-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-HGI-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-HGI-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-EG-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-EG-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GI-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GA-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-HGI-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-EG-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GI-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GA-08",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-08:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-HGI-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-EG-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-GI-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-GA-10",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-10:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-HGI-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-EG-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:eg-oven-cooler",
+      "owner_id": "CS-EG-07",
+      "section": "after-treatment-before-oiling",
+      "moving_functions": [
+        "oven_feed"
+      ],
+      "state_functions": [
+        "curing_oven",
+        "cooling_header"
+      ],
+      "new_moving": [
+        "oven_feed"
+      ],
+      "new_state": [
+        "cooling_header",
+        "curing_oven"
+      ],
+      "stable_subassembly_id": "CS-EG-07:eg-oven-cooler:after-treatment-before-oiling"
+    },
+    {
+      "requirement_id": "src:go-domain-refinement",
+      "owner_id": "CS-GO-10",
+      "section": "after-insulation",
+      "moving_functions": [
+        "inspection_scan"
+      ],
+      "state_functions": [
+        "domain_laser"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "domain_laser"
+      ],
+      "stable_subassembly_id": "CS-GO-10:go-domain-refinement:after-insulation"
+    },
+    {
+      "requirement_id": "src:electrical-shot-blasting",
+      "owner_id": "CS-GO-04",
+      "section": "before-pickling",
+      "moving_functions": [
+        "shot_wheel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "shot_wheel"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:electrical-shot-blasting:before-pickling"
+    },
+    {
+      "requirement_id": "src:electrical-shot-blasting",
+      "owner_id": "CS-NGO-04",
+      "section": "before-pickling",
+      "moving_functions": [
+        "shot_wheel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "shot_wheel"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:electrical-shot-blasting:before-pickling"
+    },
+    {
+      "requirement_id": "src:electrical-welder",
+      "owner_id": "CS-GO-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GO-02:electrical-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:electrical-welder",
+      "owner_id": "CS-NGO-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-NGO-02:electrical-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-03",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-03:electrical-looper:entry"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-03",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-03:electrical-looper:entry"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-04",
+      "section": "exit",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:electrical-looper:exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-04",
+      "section": "exit",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:electrical-looper:exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:electrical-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-06:electrical-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:ngo-electrocleaning",
+      "owner_id": "CS-NGO-06",
+      "section": "before-final-anneal",
+      "moving_functions": [
+        "cleaning_brush",
+        "cleaning_strip_feed"
+      ],
+      "state_functions": [
+        "cleaning_electrodes"
+      ],
+      "new_moving": [
+        "cleaning_brush",
+        "cleaning_strip_feed"
+      ],
+      "new_state": [
+        "cleaning_electrodes"
+      ],
+      "stable_subassembly_id": "CS-NGO-06:ngo-electrocleaning:before-final-anneal"
+    },
+    {
+      "requirement_id": "src:ngo-drying",
+      "owner_id": "CS-NGO-07",
+      "section": "after-insulation",
+      "moving_functions": [],
+      "state_functions": [
+        "drying_header"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "drying_header"
+      ],
+      "stable_subassembly_id": "CS-NGO-07:ngo-drying:after-insulation"
+    },
+    {
+      "requirement_id": "src:hgi-hr-feed",
+      "owner_id": "CS-HGI-02",
+      "section": "HR-input-no-required-CR",
+      "moving_functions": [],
+      "state_functions": [],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-02:hgi-hr-feed:HR-input-no-required-CR"
+    },
+    {
+      "requirement_id": "src:go-base-coating",
+      "owner_id": "CS-GO-06",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "base_coating_roll"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "base_coating_roll"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:go-base-coating:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:cr-cold-mill-output-cutter",
+      "owner_id": "CS-CR-04",
+      "section": "after-reduction",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-04:cr-cold-mill-output-cutter:after-reduction"
+    },
+    {
+      "requirement_id": "src:cr-finished-output-cutter",
+      "owner_id": "CS-CR-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-09:cr-finished-output-cutter:before-final-winding"
+    },
+    {
+      "requirement_id": "src:go-pickling-output-cutter",
+      "owner_id": "CS-GO-04",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:go-pickling-output-cutter:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:go-basecoat-output-cutter",
+      "owner_id": "CS-GO-06",
+      "section": "after-base-coating",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:go-basecoat-output-cutter:after-base-coating"
+    },
+    {
+      "requirement_id": "src:go-finished-output-cutter",
+      "owner_id": "CS-GO-11",
+      "section": "after-domain-refinement",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-11:go-finished-output-cutter:after-domain-refinement"
+    },
+    {
+      "requirement_id": "src:ngo-pickling-output-cutter",
+      "owner_id": "CS-NGO-04",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:ngo-pickling-output-cutter:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:ngo-finished-output-cutter",
+      "owner_id": "CS-NGO-08",
+      "section": "after-drying",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-08:ngo-finished-output-cutter:after-drying"
+    },
+    {
+      "requirement_id": "src:hotdip-output-cutter",
+      "owner_id": "CS-GI-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-09:hotdip-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:hotdip-output-cutter",
+      "owner_id": "CS-GA-10",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-10:hotdip-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:hgi-output-cutter",
+      "owner_id": "CS-HGI-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-09:hgi-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:eg-output-cutter",
+      "owner_id": "CS-EG-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-09:eg-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:gi-coating-cooling",
+      "owner_id": "CS-GI-05",
+      "section": "after-air-knife",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-GI-05:gi-coating-cooling:after-air-knife"
+    },
+    {
+      "requirement_id": "src:ga-coating-cooling",
+      "owner_id": "CS-GA-06",
+      "section": "after-alloying",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-GA-06:ga-coating-cooling:after-alloying"
+    },
+    {
+      "requirement_id": "src:hgi-coating-cooling",
+      "owner_id": "CS-HGI-05",
+      "section": "after-air-knife",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-HGI-05:hgi-coating-cooling:after-air-knife"
+    }
+  ],
+  "source_internal_sequences": [
+    {
+      "owner_id": "CS-CR-05",
+      "source_recipe_id": "motion:source:cr-05",
+      "policy_id": "policy:equipment:finishing:CS-CR-05:v1",
+      "unwind_function_id": "line_unwinding_mandrel",
+      "feed_function_id": "strip_feed",
+      "lift_function_id": "line_feed_lift",
+      "coil_socket_id": "line_coil_support",
+      "strip_socket_id": "line_strip_support",
+      "feed_socket_id": "work",
+      "cold_entry_socket_id": null,
+      "added_moving_functions": [
+        "line_feed_lift"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "unwind_function_id": "line_unwinding_mandrel",
+      "feed_function_id": "line_strip_feed",
+      "lift_function_id": "line_feed_lift",
+      "coil_socket_id": "line_coil_support",
+      "strip_socket_id": "line_strip_support",
+      "feed_socket_id": "work",
+      "cold_entry_socket_id": "cold_entry_support",
+      "added_moving_functions": [
+        "line_strip_feed",
+        "line_feed_lift"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "unwind_function_id": "line_unwinding_mandrel",
+      "feed_function_id": "line_strip_feed",
+      "lift_function_id": "line_feed_lift",
+      "coil_socket_id": "line_coil_support",
+      "strip_socket_id": "line_strip_support",
+      "feed_socket_id": "work",
+      "cold_entry_socket_id": "cold_entry_support",
+      "added_moving_functions": [
+        "line_strip_feed",
+        "line_feed_lift"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-08",
+      "source_recipe_id": "motion:source:go-08",
+      "policy_id": "policy:equipment:finishing:CS-GO-08:v1",
+      "unwind_function_id": "line_unwinding_mandrel",
+      "feed_function_id": "anneal_feed",
+      "lift_function_id": "line_feed_lift",
+      "coil_socket_id": "line_coil_support",
+      "strip_socket_id": "line_strip_support",
+      "feed_socket_id": "work",
+      "cold_entry_socket_id": null,
+      "added_moving_functions": [
+        "line_feed_lift"
+      ]
+    }
+  ],
+  "support_socket_registrations": [
+    {
+      "owner_id": "CS-CR-05",
+      "source_recipe_id": "motion:source:cr-05",
+      "policy_id": "policy:equipment:finishing:CS-CR-05:v1",
+      "socket_id": "line_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-CR-05",
+      "source_recipe_id": "motion:source:cr-05",
+      "policy_id": "policy:equipment:finishing:CS-CR-05:v1",
+      "socket_id": "line_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "socket_id": "line_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "socket_id": "line_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "socket_id": "line_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "socket_id": "line_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-08",
+      "source_recipe_id": "motion:source:go-08",
+      "policy_id": "policy:equipment:finishing:CS-GO-08:v1",
+      "socket_id": "line_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-08",
+      "source_recipe_id": "motion:source:go-08",
+      "policy_id": "policy:equipment:finishing:CS-GO-08:v1",
+      "socket_id": "line_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "line_unwinding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "cold_entry_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "cold_bite_roll_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "cold_reduction_roll"
+      ]
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "cold_nip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "socket_id": "cold_entry_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "socket_id": "cold_bite_roll_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "cold_reduction_roll"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-05",
+      "source_recipe_id": "motion:source:go-05",
+      "policy_id": "policy:equipment:finishing:CS-GO-05:v1",
+      "socket_id": "cold_nip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "socket_id": "cold_entry_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "socket_id": "cold_bite_roll_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "cold_reduction_roll"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-05",
+      "source_recipe_id": "motion:source:ngo-05",
+      "policy_id": "policy:equipment:finishing:CS-NGO-05:v1",
+      "socket_id": "cold_nip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-02",
+      "source_recipe_id": "motion:source:cr-02",
+      "policy_id": "policy:equipment:finishing:CS-CR-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-02",
+      "source_recipe_id": "motion:source:cr-02",
+      "policy_id": "policy:equipment:finishing:CS-CR-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-06",
+      "source_recipe_id": "motion:source:cr-06",
+      "policy_id": "policy:equipment:finishing:CS-CR-06:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-06",
+      "source_recipe_id": "motion:source:cr-06",
+      "policy_id": "policy:equipment:finishing:CS-CR-06:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-09",
+      "source_recipe_id": "motion:source:cr-09",
+      "policy_id": "policy:equipment:finishing:CS-CR-09:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-09",
+      "source_recipe_id": "motion:source:cr-09",
+      "policy_id": "policy:equipment:finishing:CS-CR-09:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-02",
+      "source_recipe_id": "motion:source:gi-02",
+      "policy_id": "policy:equipment:finishing:CS-GI-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-02",
+      "source_recipe_id": "motion:source:gi-02",
+      "policy_id": "policy:equipment:finishing:CS-GI-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-04",
+      "source_recipe_id": "motion:source:gi-04",
+      "policy_id": "policy:equipment:finishing:CS-GI-04:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-07",
+      "source_recipe_id": "motion:source:gi-07",
+      "policy_id": "policy:equipment:finishing:CS-GI-07:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-09",
+      "source_recipe_id": "motion:source:gi-09",
+      "policy_id": "policy:equipment:finishing:CS-GI-09:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GI-09",
+      "source_recipe_id": "motion:source:gi-09",
+      "policy_id": "policy:equipment:finishing:CS-GI-09:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-02",
+      "source_recipe_id": "motion:source:ga-02",
+      "policy_id": "policy:equipment:finishing:CS-GA-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-02",
+      "source_recipe_id": "motion:source:ga-02",
+      "policy_id": "policy:equipment:finishing:CS-GA-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-04",
+      "source_recipe_id": "motion:source:ga-04",
+      "policy_id": "policy:equipment:finishing:CS-GA-04:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-08",
+      "source_recipe_id": "motion:source:ga-08",
+      "policy_id": "policy:equipment:finishing:CS-GA-08:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-10",
+      "source_recipe_id": "motion:source:ga-10",
+      "policy_id": "policy:equipment:finishing:CS-GA-10:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GA-10",
+      "source_recipe_id": "motion:source:ga-10",
+      "policy_id": "policy:equipment:finishing:CS-GA-10:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-02",
+      "source_recipe_id": "motion:source:hgi-02",
+      "policy_id": "policy:equipment:finishing:CS-HGI-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-02",
+      "source_recipe_id": "motion:source:hgi-02",
+      "policy_id": "policy:equipment:finishing:CS-HGI-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-04",
+      "source_recipe_id": "motion:source:hgi-04",
+      "policy_id": "policy:equipment:finishing:CS-HGI-04:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-07",
+      "source_recipe_id": "motion:source:hgi-07",
+      "policy_id": "policy:equipment:finishing:CS-HGI-07:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-09",
+      "source_recipe_id": "motion:source:hgi-09",
+      "policy_id": "policy:equipment:finishing:CS-HGI-09:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-HGI-09",
+      "source_recipe_id": "motion:source:hgi-09",
+      "policy_id": "policy:equipment:finishing:CS-HGI-09:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-02",
+      "source_recipe_id": "motion:source:eg-02",
+      "policy_id": "policy:equipment:finishing:CS-EG-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-02",
+      "source_recipe_id": "motion:source:eg-02",
+      "policy_id": "policy:equipment:finishing:CS-EG-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-04",
+      "source_recipe_id": "motion:source:eg-04",
+      "policy_id": "policy:equipment:finishing:CS-EG-04:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-07",
+      "source_recipe_id": "motion:source:eg-07",
+      "policy_id": "policy:equipment:finishing:CS-EG-07:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-09",
+      "source_recipe_id": "motion:source:eg-09",
+      "policy_id": "policy:equipment:finishing:CS-EG-09:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-EG-09",
+      "source_recipe_id": "motion:source:eg-09",
+      "policy_id": "policy:equipment:finishing:CS-EG-09:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-02",
+      "source_recipe_id": "motion:source:go-02",
+      "policy_id": "policy:equipment:finishing:CS-GO-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-02",
+      "source_recipe_id": "motion:source:go-02",
+      "policy_id": "policy:equipment:finishing:CS-GO-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-03",
+      "source_recipe_id": "motion:source:go-03",
+      "policy_id": "policy:equipment:finishing:CS-GO-03:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-11",
+      "source_recipe_id": "motion:source:go-11",
+      "policy_id": "policy:equipment:finishing:CS-GO-11:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-GO-11",
+      "source_recipe_id": "motion:source:go-11",
+      "policy_id": "policy:equipment:finishing:CS-GO-11:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-02",
+      "source_recipe_id": "motion:source:ngo-02",
+      "policy_id": "policy:equipment:finishing:CS-NGO-02:v1",
+      "socket_id": "weld_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-02",
+      "source_recipe_id": "motion:source:ngo-02",
+      "policy_id": "policy:equipment:finishing:CS-NGO-02:v1",
+      "socket_id": "weld_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-03",
+      "source_recipe_id": "motion:source:ngo-03",
+      "policy_id": "policy:equipment:finishing:CS-NGO-03:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-06",
+      "source_recipe_id": "motion:source:ngo-06",
+      "policy_id": "policy:equipment:finishing:CS-NGO-06:v1",
+      "socket_id": "entry_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-06",
+      "source_recipe_id": "motion:source:ngo-06",
+      "policy_id": "policy:equipment:finishing:CS-NGO-06:v1",
+      "socket_id": "exit_looper_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-08",
+      "source_recipe_id": "motion:source:ngo-08",
+      "policy_id": "policy:equipment:finishing:CS-NGO-08:v1",
+      "socket_id": "cutter_in_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-NGO-08",
+      "source_recipe_id": "motion:source:ngo-08",
+      "policy_id": "policy:equipment:finishing:CS-NGO-08:v1",
+      "socket_id": "cutter_out_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": []
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ]
+    }
+  ]
+}

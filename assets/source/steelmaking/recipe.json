@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "family": "steelmaking",
+  "author": "SteelFlow original procedural authorship",
+  "external_asset_count": 0,
+  "models": [
+    {
+      "key": "CHARGE-A",
+      "kind": "charge",
+      "variant": "variant:charge:CHARGE-A",
+      "forms": [
+        "ORE",
+        "ORE"
+      ],
+      "motion_recipe": "motion:source:cs-charge",
+      "source_refs": [
+        "scope:asset-family:charge",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "BF-A",
+      "kind": "blast_furnace",
+      "variant": "variant:blast_furnace:BF-A",
+      "forms": [
+        "ORE",
+        "HOT_METAL"
+      ],
+      "motion_recipe": "motion:source:cs-bf",
+      "source_refs": [
+        "scope:asset-family:blast_furnace",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "BOF-A",
+      "kind": "bof",
+      "variant": "variant:bof:BOF-A",
+      "forms": [
+        "HOT_METAL",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:cs-bof",
+      "source_refs": [
+        "scope:asset-family:bof",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "LF-A",
+      "kind": "ladle_furnace",
+      "variant": "variant:ladle_furnace:LF-A",
+      "forms": [
+        "LIQUID_STEEL",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:cs-lf",
+      "source_refs": [
+        "scope:asset-family:ladle_furnace",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CAST-SLAB",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-SLAB",
+      "forms": [
+        "LIQUID_STEEL",
+        "SLAB"
+      ],
+      "motion_recipe": "motion:source:cs-cast-slab",
+      "source_refs": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CUT-SLAB",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "forms": [
+        "SLAB",
+        "SLAB"
+      ],
+      "motion_recipe": "motion:source:cs-cut-slab",
+      "source_refs": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CAST-BLOOM",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BLOOM",
+      "forms": [
+        "LIQUID_STEEL",
+        "BLOOM"
+      ],
+      "motion_recipe": "motion:source:cs-cast-bloom",
+      "source_refs": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CUT-BLOOM",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BLOOM",
+      "forms": [
+        "BLOOM",
+        "BLOOM"
+      ],
+      "motion_recipe": "motion:source:cs-cut-bloom",
+      "source_refs": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CAST-BILLET",
+      "kind": "caster",
+      "variant": "variant:caster:CAST-BILLET",
+      "forms": [
+        "LIQUID_STEEL",
+        "BILLET"
+      ],
+      "motion_recipe": "motion:source:cs-cast-billet",
+      "source_refs": [
+        "scope:asset-family:caster",
+        "scope:carbon-upstream"
+      ]
+    },
+    {
+      "key": "CUT-BILLET",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-BILLET",
+      "forms": [
+        "BILLET",
+        "BILLET"
+      ],
+      "motion_recipe": "motion:source:cs-cut-billet",
+      "source_refs": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ]
+    }
+  ],
+  "axis_markers": {
+    "axis_origin": [
+      0,
+      0,
+      0
+    ],
+    "axis_front": [
+      1,
+      0,
+      0
+    ],
+    "axis_up": [
+      0,
+      1,
+      0
+    ],
+    "axis_side": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "mechanical_basis": {
+    "status": "original synthetic miniature; not measured plant engineering",
+    "process_refs": [
+      "docs/FACTORY_PROCESS_REFERENCES.md",
+      "https://constructalia.arcelormittal.com/en/sica-steel-academy/properties-of-steel/manufacturing-and-forming-processes",
+      "https://www.tatasteeluk.com/eshot/how-will-our-consteel-eaf-work"
+    ],
+    "eaf_sequence": [
+      "electrodes_retract",
+      "roof_swing_clear",
+      "scrap_charge",
+      "roof_close",
+      "electrodes_lower_melt",
+      "electrodes_retract",
+      "roof_swing_clear",
+      "vessel_tap"
+    ],
+    "transmissions": "Caster independently pivoted rollers use mechanical_follower ratio +1 about fixed local tangent frame; no additional server function or runtime clock."
+  },
+  "runtime_limit": [
+    "Explicit synthetic contracts, not T31/T32 production scheduler. Transport custody is a separate fixture subject; T28 remains future.",
+    "T19 creates 10 steelmaking and 4 semantic stainless EAF/AOD; remaining stainless 26 belong to T26."
+  ]
+}

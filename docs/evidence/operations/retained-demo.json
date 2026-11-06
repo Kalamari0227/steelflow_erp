@@ -1,0 +1,178 @@
+{
+  "status": "approved_ready_for_user",
+  "intentionalRetained": true,
+  "url": "http://127.0.0.1:4175",
+  "fallbackUrl": "http://127.0.0.1:4175/?view=2d",
+  "root": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified",
+  "database": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/state/steelflow.sqlite",
+  "build": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/dist",
+  "processes": [
+    {
+      "role": "backend",
+      "pid": 78616,
+      "argv": [
+        "/Users/ethanlee/Desktop/ERP/backend/.venv/bin/python",
+        "-m",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8002"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/backend",
+      "startedAt": "2026-10-24T17:41:18.253039+00:00",
+      "identity": "78616 Sun Oct 25 02:41:18 2026     /Users/ethanlee/Desktop/ERP/backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8002",
+      "listeningPorts": {
+        "8002": [
+          78616
+        ],
+        "4175": [
+          78711
+        ]
+      }
+    },
+    {
+      "role": "preview",
+      "pid": 78711,
+      "argv": [
+        "/Users/ethanlee/.local/share/mise/installs/node/lts/bin/node",
+        "--input-type=module",
+        "-e",
+        "import { preview } from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified",
+      "startedAt": "2026-10-24T17:41:38.381967+00:00",
+      "identity": "78711 Sun Oct 25 02:41:38 2026     /Users/ethanlee/.local/share/mise/installs/node/lts/bin/node --input-type=module -e import { preview } from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});",
+      "listeningPorts": {
+        "8002": [
+          78616
+        ],
+        "4175": [
+          78711
+        ]
+      }
+    }
+  ],
+  "backendHealth": {
+    "url": "http://127.0.0.1:8002/health",
+    "httpStatus": 200,
+    "body": {
+      "status": "ok",
+      "data": "synthetic"
+    },
+    "capturedAt": "2026-10-24T17:41:38.379354+00:00",
+    "waitSeconds": 20.125540167093277
+  },
+  "previewHealth": {
+    "url": "http://127.0.0.1:4175/health",
+    "httpStatus": 200,
+    "body": {
+      "status": "ok",
+      "data": "synthetic"
+    },
+    "capturedAt": "2026-10-24T17:41:39.393114+00:00",
+    "waitSeconds": 1.0107096249703318
+  },
+  "run": {
+    "id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "NORMAL",
+    "elapsed_ms": 0,
+    "duration_ms": 491000,
+    "revision": 0,
+    "event_sequence": 0,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T17:41:37.613903Z",
+    "plan_revision": 0
+  },
+  "orders": 20,
+  "activeMaterials": 22,
+  "gaQuantityKg": 60300,
+  "ai": {
+    "enabled": false,
+    "available": false,
+    "provider": "none"
+  },
+  "originalProcessesUnchanged": true,
+  "defaultDistUnchanged": true,
+  "sourceUnchanged": true,
+  "capturedAt": "2026-10-24T17:41:39.748167+00:00",
+  "manualQA": {
+    "status": "PASS",
+    "report": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual.md",
+    "reportSha256": "9de6b4f48bd4bfc839fdad1000f44c7067f2c67539ec01042f219b26e4babf1a",
+    "browser": "Codex IAB tab4, 1280x720, DPR1.5",
+    "method": "Root CUA UI plus independent read-only HTTP observation; see report for diagnostic limitations"
+  },
+  "readmeCommandVerification": "Use final preview QA receipts; this retained snapshot is an additional immutable demo",
+  "runMeaning": "Initial startup snapshot; finalReset.run is the post-manual user handoff state.",
+  "finalReset": {
+    "run": {
+      "id": "OPS-RUN-41b0c1168629413396717ff2f58c5f69",
+      "fixture_version": "erp-v1",
+      "seed": 30,
+      "scenario_id": "NORMAL",
+      "elapsed_ms": 0,
+      "duration_ms": 491000,
+      "revision": 0,
+      "event_sequence": 0,
+      "playing": false,
+      "speed": 1,
+      "epoch_at": "2026-10-30T00:00:00Z",
+      "started_at": "2026-10-24T17:52:41.832203Z",
+      "plan_revision": 0
+    },
+    "orders": 20,
+    "materials": 22,
+    "ai": {
+      "enabled": false,
+      "available": false,
+      "provider": "none"
+    },
+    "health": {
+      "status": "ok",
+      "data": "synthetic"
+    },
+    "artifacts": {
+      "22-final-reset-world.json": {
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-reset-world.json",
+        "sha256": "131464d8dc49eaaae6a90a3435044cf5450184af474453c0044e020f7fc62fd9"
+      },
+      "22-final-health.json": {
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-health.json",
+        "sha256": "84227d6f71c60368c72f322b18f81a4d2c3dd77fdf03352a6a9c97b2efbaaaad"
+      },
+      "22-final-reset.png": {
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-reset.png",
+        "sha256": "85da1bce1c478161f4aecc2353e71272a18eb41a02ddb16716a6db4d9f68be38"
+      }
+    },
+    "browserSelection": "GA order/material, 3D overview, follow off; tab4 retained"
+  },
+  "updatedAt": "2026-10-24T17:57:00.696296+00:00",
+  "finalReview": {
+    "status": "APPROVE",
+    "F3": "PASS",
+    "reports": {
+      "F1-compliance.md": {
+        "status": "APPROVE",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F1-compliance.md",
+        "sha256": "ae5c391f525a0b819f641b5d7b1a85ccf06a4aa280e3c20e9463c36c61266c26"
+      },
+      "F2-code-review.md": {
+        "status": "APPROVE",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F2-code-review.md",
+        "sha256": "cf96e82473b5d6ff295da3c7848a4ae672338333d4a78cc370ee47dc6d90b3b4"
+      },
+      "F4-fidelity.md": {
+        "status": "APPROVE",
+        "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F4-fidelity.md",
+        "sha256": "5a2a483875d522ffda9675cd6e24c1e3c998af9dd2f195692b2d7a5284520101"
+      }
+    }
+  }
+}

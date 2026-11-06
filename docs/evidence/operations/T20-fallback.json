@@ -1,0 +1,106 @@
+{
+  "initialRun": {
+    "id": "OPS-RUN-edecfdd98d6444dcbfbbea9a12d12844",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "NORMAL",
+    "elapsed_ms": 0,
+    "duration_ms": 491000,
+    "revision": 0,
+    "event_sequence": 0,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T17:37:43.168739Z",
+    "plan_revision": 0
+  },
+  "restoredRun": {
+    "id": "OPS-RUN-edecfdd98d6444dcbfbbea9a12d12844",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "NORMAL",
+    "elapsed_ms": 0,
+    "duration_ms": 491000,
+    "revision": 0,
+    "event_sequence": 0,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T17:37:43.168739Z",
+    "plan_revision": 0
+  },
+  "selectedOrder": "ORD-ga",
+  "selectedMaterial": "MAT-ga-01",
+  "view": "2d",
+  "ai": {
+    "enabled": false,
+    "available": false,
+    "provider": "none"
+  },
+  "injectedRequestCount": 3,
+  "observed": [
+    {
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "error": "net::ERR_FAILED",
+      "expected": true
+    },
+    {
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "error": "net::ERR_FAILED",
+      "expected": true
+    },
+    {
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "error": "net::ERR_FAILED",
+      "expected": true
+    }
+  ],
+  "failures": [
+    {
+      "kind": "requestfailed",
+      "message": "net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world"
+    },
+    {
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "line": 0,
+      "column": 0,
+      "lineNumber": 0,
+      "columnNumber": 0,
+      "atMs": 1792863464709
+    },
+    {
+      "kind": "requestfailed",
+      "message": "net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world"
+    },
+    {
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "line": 0,
+      "column": 0,
+      "lineNumber": 0,
+      "columnNumber": 0,
+      "atMs": 1792863465717
+    },
+    {
+      "kind": "requestfailed",
+      "message": "net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world"
+    },
+    {
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_FAILED",
+      "url": "http://127.0.0.1:4175/api/v1/world",
+      "line": 0,
+      "column": 0,
+      "lineNumber": 0,
+      "columnNumber": 0,
+      "atMs": 1792863466723
+    }
+  ],
+  "unexpected": []
+}

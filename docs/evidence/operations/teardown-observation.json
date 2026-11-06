@@ -1,0 +1,7 @@
+{
+  "observed": "SQLAlchemy Exception terminating connection and asyncio CancelledError after tests9PASS during shutdown; then application shutdown complete and process75602 finished.",
+  "runtimeBrowserFailure": false,
+  "classification": "Root F2 triage identifies teardown cancellation; original raw log preserved, not suppressed.",
+  "artifact": "browser.log",
+  "remainingOwned": 0
+}

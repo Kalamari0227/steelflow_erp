@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-demo.webm",
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration,size:stream=codec_name,width,height,r_frame_rate",
+      "-of",
+      "json",
+      "docs/evidence/operations/T20-demo.webm"
+    ],
+    "exitCode": 0,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 1440,
+          "height": 1000,
+          "r_frame_rate": "25/1"
+        }
+      ],
+      "format": {
+        "duration": "148.360000",
+        "size": "39709623"
+      }
+    }
+  },
+  {
+    "path": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback.webm",
+    "argv": [
+      "/opt/homebrew/bin/ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration,size:stream=codec_name,width,height,r_frame_rate",
+      "-of",
+      "json",
+      "docs/evidence/operations/T20-fallback.webm"
+    ],
+    "exitCode": 0,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 1440,
+          "height": 1000,
+          "r_frame_rate": "25/1"
+        }
+      ],
+      "format": {
+        "duration": "9.560000",
+        "size": "1887050"
+      }
+    }
+  }
+]

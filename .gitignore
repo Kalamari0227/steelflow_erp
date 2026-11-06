@@ -1,0 +1,41 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+test-results/
+playwright-report/
+*.tsbuildinfo
+.DS_Store
+
+# Local agent history, browser captures and rebuildable indexes.
+/.omo/
+/backend/.omo/
+/.codegraph/
+/.playwright-cli/
+/.playwright-mcp/
+/.cleanup/
+
+# Test outputs accidentally written at the repository root.
+/mutants/
+/http-*.json
+/--root
+
+# Retain original QA recordings locally; Git stores reports and reference images.
+/docs/evidence/**/*.zip
+/docs/evidence/**/*.webm
+/docs/evidence/**/*.mp4
+
+# Required historical test inputs under .omo are explicitly force-added.
+# See docs/REPOSITORY_HYGIENE.md for the exact retained set.

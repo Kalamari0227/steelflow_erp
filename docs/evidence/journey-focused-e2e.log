@@ -1,0 +1,140 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/journey.spec.ts
+
+[WebServer] INFO:     Started server process [43040]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:43104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:43106) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/journey.spec.ts:73:1 › all 17 routes complete their exact forms with one stable lineage and no early transformations (19.8s)
+  ✓  2 tests/journey.spec.ts:112:1 › all eight product families render distinct selectable 3D miniatures (7.7s)
+  ✘  3 tests/journey.spec.ts:126:1 › real material and equipment meshes select and motion freezes, resumes at speed and resets (5.1s)
+(node:43557) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 tests/journey.spec.ts:155:1 › 390px keyboard controls and WebGL loss preserve complete 2D tracking (13.1s)
+(node:43671) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests/journey.spec.ts:172:1 › connection failure freezes the actual scene and retry restores authoritative state (3.0s)
+  ✘  6 tests/journey.spec.ts:187:1 › reduced motion does not interpolate while real snapshot reads are delayed (2.4s)
+
+
+  1) tests/journey.spec.ts:126:1 › real material and equipment meshes select and motion freezes, resumes at speed and resets 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 64
+
+      149 |   const resumed = await command(page, '일시정지', 'pause'); expect(resumed.speed).toBe(4); expect(resumed.elapsed_ms - paused.elapsed_ms).toBeGreaterThanOrEqual(1600);
+      150 |   const reset = await command(page, '처음부터', 'reset'); expect(reset.material).toEqual(initial.material); expect(reset.elapsed_ms).toBe(0);
+    > 151 |   const resetImage = await capture(page, 'motion-reset'); const resetDiff = await diff(page, baseline, resetImage); expect(resetDiff.count).toBe(0);
+          |                                                                                                                                             ^
+      152 |   await save('motion', { movement, pause, resetDiff, paused, resumed });
+      153 | });
+      154 |
+        at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:151:141
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/journey.spec.ts:155:1 › 390px keyboard controls and WebGL loss preserve complete 2D tracking 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)
+    Expected: "true"
+    Received: "false"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4) with timeout 10000ms
+      - waiting for getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)
+        24 × locator resolved to <button aria-pressed="false">…</button>
+           - unexpected value "false"
+
+
+      163 |   await page.getByLabel('제조 경로', { exact: true }).selectOption('ti-sheet');
+      164 |   const stage = page.getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4);
+    > 165 |   await stage.focus(); await page.keyboard.press('Enter'); await expect(stage).toHaveAttribute('aria-pressed', 'true');
+          |                                                                                ^
+      166 |   await expect(page.getByRole('region', { name: '선택 공정 설명' })).toContainText('진공');
+      167 |   await command(page, '다음 단계', 'step'); await expect(passport(page)).toContainText('MATERIAL-ti-sheet:1');
+      168 |   const layout = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth })); expect(layout.document).toBeLessThanOrEqual(layout.viewport);
+        at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:165:80
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests/journey.spec.ts:187:1 › reduced motion does not interpolate while real snapshot reads are delayed 
+
+    Error: route.continue: Route is already handled!
+
+      189 |   await expect(page.locator('canvas')).toBeVisible();
+      190 |   let release: (() => void) | undefined; const gate = new Promise<void>(resolve => { release = resolve; });
+    > 191 |   await page.route('**/api/v1/journey', async route => { await gate; await route.continue(); });
+          |                                                                                          ^
+      192 |   try {
+      193 |     await command(page, '재생', 'play'); const first = await capture(page, 'reduced-first');
+      194 |     await page.waitForTimeout(500); const second = await capture(page, 'reduced-second'); const frozen = await diff(page, first, second); expect(frozen.count).toBe(0);
+        at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:191:90
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    tests/journey.spec.ts:126:1 › real material and equipment meshes select and motion freezes, resumes at speed and resets 
+    tests/journey.spec.ts:155:1 › 390px keyboard controls and WebGL loss preserve complete 2D tracking 
+    tests/journey.spec.ts:187:1 › reduced motion does not interpolate while real snapshot reads are delayed 
+  3 passed (57.3s)

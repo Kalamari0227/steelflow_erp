@@ -1,0 +1,95 @@
+{
+  "purpose": "Exact historical inputs required by source provenance and regression tests; these are not live databases.",
+  "files": [
+    {
+      "path": ".omo/drafts/uniform-execution-source-coverage.md",
+      "bytes": 9330,
+      "sha256": "cb934aebed559bd0875e9f658fe7eab8aae5bb10b5c078c2919d98b6ddfa9526"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261025-exec01/task-02/lane-a/repair-source/expected-input-attempt2.json",
+      "bytes": 23250,
+      "sha256": "186c147bff63a7f3a3d35d47662f5f96dcae6da6d338bbe66d70bf4c3c3a9192"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/implementation/baseline-old/old-v3.sqlite",
+      "bytes": 4923392,
+      "sha256": "b66a2c4478dd18357c93d7e5b4b8788bd006dccebf0736c15e4f2e99297a7ae6"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/bundle.json",
+      "bytes": 828,
+      "sha256": "f816f898718122cbb7f24b5c2e54d5655b211fc0c16b7c6c87df3b63347e4e36"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/collections.json",
+      "bytes": 7489,
+      "sha256": "ccc058d05d96b34f761bcf31fb13f29c1c6e4fe94248ea56514b896e5883850e"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/contract-test-world.json",
+      "bytes": 4134200,
+      "sha256": "d2b9ab5afdb064f4f22da193c806ded0af43a2110f815d2ac4b9213b6411562b"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/domain.json",
+      "bytes": 7944,
+      "sha256": "e713fd5962329c8d33e5ca547fc7e5bbb0f4af145a657db9bb6571cd90cb22f3"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/reader.json",
+      "bytes": 205,
+      "sha256": "fc6a893b3e4c84e2c9e539d8587dcd3fcaac2dbb59bbfb2ff8f1eee05de1df24"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/bundle/schema.json",
+      "bytes": 212,
+      "sha256": "6895fa9315c87cec8397e846ea16cce065d7e45a346b26c170011d6f08010a9e"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261028-resume03/task-11/preparation/persisted-snapshot.json",
+      "bytes": 12900,
+      "sha256": "b078664b4840bf16f60da56858cd583655e69ca8cf384e6613067fff2bb1fc2a"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume05/task-15/implementation/failed-derived-05-snapshot/world.json",
+      "bytes": 5170142,
+      "sha256": "5432de3e40ff18a048d2840ea33299870d9ade162146013e520f3b1b08570d95"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/preparation/base-function-probes.json",
+      "bytes": 2506,
+      "sha256": "e46b9c6f727c6f9299274c664381b39c00d164810b6864417dc65db50e110ac2"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/preparation/forming-math.json",
+      "bytes": 4139,
+      "sha256": "33e07041e760119327edd24776de82ef4bdd0c946076974342bc2122da0d820b"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/preparation/handoff.md",
+      "bytes": 36217,
+      "sha256": "9a01d26849980ba5b5f93079cc73f78d6ad633eeb6b777cd2dbbbb87cdb2a69f"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/preparation/inventory.json",
+      "bytes": 357864,
+      "sha256": "a2d6f45a7fb750dcf88139c5bad0ec8e1c30d1037ee27367a69a5c684bc693a2"
+    },
+    {
+      "path": ".omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/preparation/supplement-map.json",
+      "bytes": 26033,
+      "sha256": "5947b3c8ef064b88e6dddea571b6f2d7501f40fd4275e7f7799b5c380031a887"
+    },
+    {
+      "path": ".omo/plans/steelflow-uniform-fidelity-factory.md",
+      "bytes": 187204,
+      "sha256": "7b0352b72436adbbe7ea6f6c83cf6dae3cef6445186d6db294428fda65ad3132"
+    },
+    {
+      "path": ".omo/ulw-execute/steelflow-uniform-fidelity-factory/approved-plan.md",
+      "bytes": 153577,
+      "sha256": "db6d8fb0f0de1dd6dc998d62afcea41d9ed70858f37032ebab8e2b2575373bbc"
+    }
+  ]
+}

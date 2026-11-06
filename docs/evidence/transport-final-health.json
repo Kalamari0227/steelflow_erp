@@ -1,0 +1,215 @@
+{
+  "total": 22,
+  "passed": 22,
+  "transport_cases": [
+    {
+      "title": "transport arrival gates processing and never duplicates facility inventory",
+      "status": "passed",
+      "duration_ms": 4206,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "loaded 3D truck is selectable, moves, freezes on pause, resumes and resets",
+      "status": "passed",
+      "duration_ms": 7498,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "390px 2D transport tracking survives WebGL loss and permits arrival navigation",
+      "status": "passed",
+      "duration_ms": 7192,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "reduced motion holds loaded transport still between authoritative ticks",
+      "status": "passed",
+      "duration_ms": 2987,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    }
+  ],
+  "all_results": [
+    {
+      "title": "3D factory renders, orbit and zoom respond, and no browser exception occurs",
+      "status": "passed",
+      "duration_ms": 2354,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "search finds a customer order and empty search is explained",
+      "status": "passed",
+      "duration_ms": 1105,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "accessible inventory selection exposes the exact coil relationships",
+      "status": "passed",
+      "duration_ms": 1087,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "three scenarios differ at the same tick and reset reproduces each baseline",
+      "status": "passed",
+      "duration_ms": 5702,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "play, speed and pause are owned by the backend and continue without a page",
+      "status": "passed",
+      "duration_ms": 4981,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "mobile 2D fallback remains navigable without horizontal page overflow",
+      "status": "passed",
+      "duration_ms": 933,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "backend unavailable state is explicit and retry restores the live demo",
+      "status": "passed",
+      "duration_ms": 1370,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "disabled AI requires no provider request and core recovery rules remain available",
+      "status": "passed",
+      "duration_ms": 928,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "WebGL context loss leaves core inventory and controls usable",
+      "status": "passed",
+      "duration_ms": 1399,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "operator demo recording follows the complete synthetic recovery narrative",
+      "status": "passed",
+      "duration_ms": 30428,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "all eight stages expose internal work and return to overview in 2D",
+      "status": "passed",
+      "duration_ms": 2676,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "all nine product routes preserve casting branches and HGI bypasses cold rolling",
+      "status": "passed",
+      "duration_ms": 1823,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "same HR and CR forms distinguish sale products from feedstock and preserve genealogy",
+      "status": "passed",
+      "duration_ms": 2492,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "scenario changes alter visible work and reset reproduces production at the same step",
+      "status": "passed",
+      "duration_ms": 7391,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "mobile 2D core actions fit 390px and backend pause and step remain authoritative",
+      "status": "passed",
+      "duration_ms": 3821,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "production WebGL context loss recovers to fully usable 2D stages and material selection",
+      "status": "passed",
+      "duration_ms": 1930,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "3D renders and camera responds while workspace tabs remain stable and local-only",
+      "status": "passed",
+      "duration_ms": 3252,
+      "health": null,
+      "external-requests": [],
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "coating equipment clicks select only the matching GA, EG or HGI operation",
+      "status": "passed",
+      "duration_ms": 2326,
+      "health": null,
+      "uncaught-browser-errors": []
+    },
+    {
+      "title": "transport arrival gates processing and never duplicates facility inventory",
+      "status": "passed",
+      "duration_ms": 4206,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "loaded 3D truck is selectable, moves, freezes on pause, resumes and resets",
+      "status": "passed",
+      "duration_ms": 7498,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "390px 2D transport tracking survives WebGL loss and permits arrival navigation",
+      "status": "passed",
+      "duration_ms": 7192,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "title": "reduced motion holds loaded transport still between authoritative ticks",
+      "status": "passed",
+      "duration_ms": 2987,
+      "health": null,
+      "transport-browser-health": {
+        "errors": [],
+        "external": []
+      }
+    }
+  ]
+}

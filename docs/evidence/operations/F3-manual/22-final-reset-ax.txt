@@ -1,0 +1,544 @@
+Browser tab: 4, Title: "SteelFlow 3D — Operations twin", URL: "http://127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-8354826a1ca24dd58db6f8b61667ab83%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Afalse%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D".
+0 AXWebArea SteelFlow 3D — Operations twin, URL: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-8354826a1ca24dd58db6f8b61667ab83%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Afalse%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D
+	1 container root
+		2 link Description: 운영 화면으로 건너뛰기, Value: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-8354826a1ca24dd58db6f8b61667ab83%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Afalse%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%223d%22%2C%22issue%22%3Anull%7D#main-content
+		3 container
+			4 text SteelFlow  OPERATIONS 합성 운영 데이터 · 로컬 시뮬레이션
+		5 container main-content
+			6 text ORDER TO DELIVERY
+			7 heading 통합 운영, Value: 1
+				8 text 통합 운영
+			9 text 주문에서 배송까지, 같은 소재의 흐름을 추적합니다.
+			10 text 일시 정지
+			11 container
+				12 text 2026-10-30 00:46:54+00:00  UTC
+			13 button (collapsed) 실행 정보, Secondary Actions: Expand
+				14 text 실행 정보
+			15 container 전체 운영 지표
+				16 text 진행 주문
+				17 container
+					18 text 20 건
+				19 text 생산 완료
+				20 container
+					21 text 0 kg
+				22 text 출고 완료
+				23 container
+					24 text 0 kg
+				25 text 배송 완료
+				26 container
+					27 text 0 kg
+			28 container 공통 실행 제어
+				29 button (disabled) 재생
+					3294 image
+					31 text 재생
+				32 button (disabled) 한 단계
+					33 image
+					34 text 한 단계
+				35 button (disabled) 초기화, Help: 새 실행으로 초기화
+					36 image
+					37 text 초기화
+				38 container
+					39 text 속도
+					40 pop up button (disabled, collapsed, settable) Description: 실행 속도, Value: 1×, Secondary Actions: Expand
+						41 menu
+							42 (selected) 1×
+							43 2×
+							44 4×
+				45 container
+					46 text 시나리오
+					47 pop up button (disabled, collapsed, settable) Description: 시나리오, Value: 정상 운영, Secondary Actions: Expand
+						48 menu
+							49 (selected) 정상 운영
+							50 설비 지연
+							51 회복 운영
+				52 text 시나리오 변경·초기화는 새 실행을 시작합니다.
+				53 progress indicator Description: 전체 실행 진행률, Value: 46900
+			54 container 주문 탐색
+				55 heading 주문, Value: 2
+					56 text 주문
+				57 text 20 건
+				58 container
+					59 image
+					60 text field (settable) 주문 검색
+				3408 container
+					3409 checkbox ORD-billet 빌렛 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3410 text ORD-billet
+						3411 text 빌렛
+						3412 text Synthetic carbon customer
+						3413 container
+							3414 text 20,000  kg ·  SYNTHETIC-CS
+						3415 progress indicator Description: ORD-billet 배송 완료율, Value: 0
+						3416 container
+							3417 text 0 %
+					3418 checkbox ORD-bloom 블룸 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3419 text ORD-bloom
+						3420 text 블룸
+						3421 text Synthetic carbon customer
+						3422 container
+							3423 text 20,000  kg ·  SYNTHETIC-CS
+						3424 progress indicator Description: ORD-bloom 배송 완료율, Value: 0
+						3425 container
+							3426 text 0 %
+					3427 checkbox ORD-cr 냉연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3428 text ORD-cr
+						3429 text 냉연 코일
+						3430 text Synthetic carbon customer
+						3431 container
+							3432 text 19,900  kg ·  SYNTHETIC-CS
+						3433 progress indicator Description: ORD-cr 배송 완료율, Value: 0
+						3434 container
+							3435 text 0 %
+					3436 checkbox ORD-eg EG · 전기아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3437 text ORD-eg
+						3438 text EG · 전기아연
+						3439 text Synthetic carbon customer
+						3440 container
+							3441 text 20,100  kg ·  SYNTHETIC-CS
+						3442 progress indicator Description: ORD-eg 배송 완료율, Value: 0
+						3443 container
+							3444 text 0 %
+					3445 checkbox ORD-ga GA · 합금화아연 Synthetic carbon customer 60,300 kg · SYNTHETIC-CS 0 0%, Value: 1
+						3446 text ORD-ga
+						3447 text GA · 합금화아연
+						3448 text Synthetic carbon customer
+						3449 container
+							3450 text 60,300  kg ·  SYNTHETIC-CS
+						3451 progress indicator Description: ORD-ga 배송 완료율, Value: 0
+						3452 container
+							3453 text 0 %
+					3454 checkbox ORD-gi GI · 용융아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3455 text ORD-gi
+						3456 text GI · 용융아연
+						3457 text Synthetic carbon customer
+						3458 container
+							3459 text 20,100  kg ·  SYNTHETIC-CS
+						3460 progress indicator Description: ORD-gi 배송 완료율, Value: 0
+						3461 container
+							3462 text 0 %
+					3463 checkbox ORD-go 방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3464 text ORD-go
+						3465 text 방향성 전기강판
+						3466 text Synthetic carbon customer
+						3467 container
+							3468 text 19,900  kg ·  SYNTHETIC-CS
+						3469 progress indicator Description: ORD-go 배송 완료율, Value: 0
+						3470 container
+							3471 text 0 %
+					3472 checkbox ORD-hgi HGI · 열연도금 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3473 text ORD-hgi
+						3474 text HGI · 열연도금
+						3475 text Synthetic carbon customer
+						3476 container
+							3477 text 20,100  kg ·  SYNTHETIC-CS
+						3478 progress indicator Description: ORD-hgi 배송 완료율, Value: 0
+						3479 container
+							3480 text 0 %
+					3481 checkbox ORD-hr 열연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3482 text ORD-hr
+						3483 text 열연 코일
+						3484 text Synthetic carbon customer
+						3485 container
+							3486 text 19,900  kg ·  SYNTHETIC-CS
+						3487 progress indicator Description: ORD-hr 배송 완료율, Value: 0
+						3488 container
+							3489 text 0 %
+					3490 checkbox ORD-ngo 무방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3491 text ORD-ngo
+						3492 text 무방향성 전기강판
+						3493 text Synthetic carbon customer
+						3494 container
+							3495 text 19,900  kg ·  SYNTHETIC-CS
+						3496 progress indicator Description: ORD-ngo 배송 완료율, Value: 0
+						3497 container
+							3498 text 0 %
+					3499 checkbox ORD-plate 열처리 후판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3500 text ORD-plate
+						3501 text 열처리 후판
+						3502 text Synthetic carbon customer
+						3503 container
+							3504 text 19,900  kg ·  SYNTHETIC-CS
+						3505 progress indicator Description: ORD-plate 배송 완료율, Value: 0
+						3506 container
+							3507 text 0 %
+					3508 checkbox ORD-slab 슬래브 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3509 text ORD-slab
+						3510 text 슬래브
+						3511 text Synthetic carbon customer
+						3512 container
+							3513 text 20,000  kg ·  SYNTHETIC-CS
+						3514 progress indicator Description: ORD-slab 배송 완료율, Value: 0
+						3515 container
+							3516 text 0 %
+					3517 checkbox ORD-sts-cr 스테인리스 냉연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						3518 text ORD-sts-cr
+						3519 text 스테인리스 냉연
+						3520 text Synthetic stainless customer
+						3521 container
+							3522 text 19,900  kg ·  SYNTHETIC-STS
+						3523 progress indicator Description: ORD-sts-cr 배송 완료율, Value: 0
+						3524 container
+							3525 text 0 %
+					3526 checkbox ORD-sts-hr 스테인리스 열연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						3527 text ORD-sts-hr
+						3528 text 스테인리스 열연
+						3529 text Synthetic stainless customer
+						3530 container
+							3531 text 19,900  kg ·  SYNTHETIC-STS
+						3532 progress indicator Description: ORD-sts-hr 배송 완료율, Value: 0
+						3533 container
+							3534 text 0 %
+					3535 checkbox ORD-sts-plate 스테인리스 후판 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 0 0%, Value: 0
+						3536 text ORD-sts-plate
+						3537 text 스테인리스 후판
+						3538 text Synthetic stainless customer
+						3539 container
+							3540 text 19,900  kg ·  SYNTHETIC-STS
+						3541 progress indicator Description: ORD-sts-plate 배송 완료율, Value: 0
+						3542 container
+							3543 text 0 %
+					3544 checkbox ORD-ti-cr 티타늄 냉연 · 코일 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						3545 text ORD-ti-cr
+						3546 text 티타늄 냉연 · 코일
+						3547 text Synthetic titanium customer
+						3548 container
+							3549 text 11,900  kg ·  SYNTHETIC-TI
+						3550 progress indicator Description: ORD-ti-cr 배송 완료율, Value: 0
+						3551 container
+							3552 text 0 %
+					3553 checkbox ORD-ti-hr 티타늄 열연 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						3554 text ORD-ti-hr
+						3555 text 티타늄 열연
+						3556 text Synthetic titanium customer
+						3557 container
+							3558 text 11,900  kg ·  SYNTHETIC-TI
+						3559 progress indicator Description: ORD-ti-hr 배송 완료율, Value: 0
+						3560 container
+							3561 text 0 %
+					3562 checkbox ORD-ti-plate 티타늄 후판 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						3563 text ORD-ti-plate
+						3564 text 티타늄 후판
+						3565 text Synthetic titanium customer
+						3566 container
+							3567 text 11,900  kg ·  SYNTHETIC-TI
+						3568 progress indicator Description: ORD-ti-plate 배송 완료율, Value: 0
+						3569 container
+							3570 text 0 %
+					3571 checkbox ORD-ti-sheet 티타늄 냉연 · 시트 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 0 0%, Value: 0
+						3572 text ORD-ti-sheet
+						3573 text 티타늄 냉연 · 시트
+						3574 text Synthetic titanium customer
+						3575 container
+							3576 text 11,900  kg ·  SYNTHETIC-TI
+						3577 progress indicator Description: ORD-ti-sheet 배송 완료율, Value: 0
+						3578 container
+							3579 text 0 %
+					3580 checkbox ORD-wire 선재 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						3581 text ORD-wire
+						3582 text 선재
+						3583 text Synthetic carbon customer
+						3584 container
+							3585 text 19,900  kg ·  SYNTHETIC-CS
+						3586 progress indicator Description: ORD-wire 배송 완료율, Value: 0
+						3587 container
+							3588 text 0 %
+			242 container 공장 운영
+				243 heading 생산·물류 미니어처, Value: 2
+					244 image
+					245 text 생산·물류 미니어처
+				246 checkbox 3D, Value: 1
+					247 image
+					248 text 3D
+				249 checkbox 2D, Value: 0
+					250 image
+					251 text 2D
+				252 container 공장 탐색 경로
+					253 button 공장 전경
+					254 checkbox (settable, integer) Description: 소재 따라가기, Value: 0
+				255 container 공정 선택
+					256 checkbox 제선·제강, Value: 0
+					257 checkbox 슬래브 주조, Value: 0
+					258 checkbox 블룸 주조, Value: 0
+					259 checkbox 빌렛 주조, Value: 0
+					260 checkbox 열연, Value: 0
+					261 checkbox 후판, Value: 0
+					262 checkbox 선재, Value: 0
+					263 checkbox 냉연, Value: 0
+					264 checkbox 용융아연, Value: 0
+					265 checkbox 합금화아연, Value: 0
+					266 checkbox 열연도금, Value: 0
+					267 checkbox 전기아연, Value: 0
+					268 checkbox 방향성 전기강판, Value: 0
+					269 checkbox 무방향성 전기강판, Value: 0
+					270 checkbox 스테인리스 열연, Value: 0
+					271 checkbox 스테인리스 냉연, Value: 0
+					272 checkbox 스테인리스 후판, Value: 0
+					273 checkbox 티타늄 열연, Value: 0
+					274 checkbox 티타늄 냉연, Value: 0
+					275 checkbox 티타늄 박판, Value: 0
+					276 checkbox 티타늄 후판, Value: 0
+					277 checkbox 열연 예비 설비, Value: 0
+					278 checkbox 검사·재고·출하, Value: 0
+					279 checkbox 원료 공급, Value: 0
+				3276 image 통합 공장 3D 미니어처
+					3277 text 3D 표시를 지원하지 않는 브라우저입니다.
+				281 heading ORD-ga 소재, Value: 2
+					282 text ORD-ga  소재
+				283 text 3 개 · 소비 이력 포함
+				718 checkbox MAT-ga-01 HOT_METAL OPS-TORPEDO-A-CARGO · 20,000 kg, Value: 1
+					719 text MAT-ga-01
+					720 text HOT_METAL
+					721 container
+						722 text OPS-TORPEDO-A-CARGO  ·  20,000  kg
+				723 checkbox MAT-ga-02 HOT_METAL OPS-BF-A-BUFFER · 20,000 kg, Value: 0
+					724 text MAT-ga-02
+					725 text HOT_METAL
+					726 container
+						727 text OPS-BF-A-BUFFER  ·  20,000  kg
+				728 checkbox MAT-ga-03 ORE OPS-BF-A-WORK · 20,000 kg, Value: 0
+					729 text MAT-ga-03
+					730 text ORE
+					731 container
+						732 text OPS-BF-A-WORK  ·  20,000  kg
+			395 container 소재 상세
+				396 heading 소재 상세, Value: 2
+					397 text 소재 상세
+				733 text 현재 소재
+				734 button 소재 선택 해제
+				735 text MATERIAL PASSPORT
+				736 heading MAT-ga-01, Value: 3
+					737 text MAT-ga-01
+				738 text 용선
+				739 container
+					740 text HOT_METAL  ·  GA 주문 소재
+				741 container
+					742 text 20,000 kg
+				743 definition list
+					744 container 고객
+						745 text 고객
+					746 text Synthetic carbon customer
+					747 container 주문
+						748 text 주문
+					749 button ORD-ga
+					750 container 작업 지시
+						751 text 작업 지시
+					752 text WO-ga-01
+					753 container 생산 로트
+						754 text 생산 로트
+					755 text LOT-ga-01
+					756 container 현재 위치
+						757 text 현재 위치
+					758 container
+						759 button (collapsed) 용선 운반차 · 적재함, Secondary Actions: Expand
+						760 text OPS-TORPEDO-A-CARGO
+					761 container 품질
+						762 text 품질
+					763 container
+						764 text 검사 대기 ( PENDING )
+					765 container 재고 상태
+						766 text 재고 상태
+					767 container
+						768 text 재공 ( WIP )
+					769 container 현재 공정
+						770 text 현재 공정
+					3295 container
+						3296 text 전로 cs-bof
+					772 container 납기 · UTC
+						773 text 납기 · UTC
+					774 text 2026-10-30 07:55:00
+				3376 text 소재 도착 대기
+				3377 text awaiting_arrival
+				775 container
+					776 button (expanded) 소재 운송 · 1건 진행, Secondary Actions: Collapse
+						777 text 소재 운송 · 
+						778 text 1
+						779 text 건 진행
+					780 container 선택 소재 운송
+						3348 text 도착
+						3349 text TR-PROC-MAT-ga-01-ga:cs-bf-PATH-CHARGE-A--BF-A
+						3350 text  · 
+						3351 text ARRIVED
+						3352 text 롤러 이송
+						3353 text  · 
+						3354 text 20,000
+						3355 text  kg
+						3356 text 원료 장입 · 배출부
+						3357 text  → 
+						3358 text 고로 · 투입부
+						3359 container
+							3360 text OPS-CHARGE-A-EXIT  →  OPS-BF-A-ENTRY
+						3361 button 도착 공정 보기
+						3378 text 이동 중
+						3379 text TR-PROC-MAT-ga-01-ga:cs-bof-PATH-BF-A--BOF-A
+						3380 text  · 
+						3381 text IN_TRANSIT
+						3382 text 용선 운반차 (TORPEDO-A)
+						3383 text  · 
+						3384 text 20,000
+						3385 text  kg
+						3386 text 고로 · 대기장
+						3387 text  → 
+						3388 text 전로 · 투입부
+						3389 container
+							3390 text OPS-BF-A-BUFFER  →  OPS-BOF-A-ENTRY
+						3391 button 도착 공정 보기
+						3299 text 도착
+						3300 text TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A
+						3301 text  · 
+						3302 text ARRIVED
+						3303 text 소재 운반 트럭 (FLATBED-A)
+						3304 text  · 
+						3305 text 20,000
+						3306 text  kg
+						3307 text 철광석 원료장 · 대기장
+						3308 text  → 
+						3309 text 원료 장입 · 투입부
+						3310 container
+							3311 text OPS-ORE-SOURCE-BUFFER  →  OPS-CHARGE-A-ENTRY
+						3312 button 도착 공정 보기
+				781 container
+					782 button (expanded) 변환 이력 · 3, Secondary Actions: Collapse
+						783 text 변환 이력 · 
+						784 text 3
+					785 content list
+						3047 container
+							3048 text 철광석 ORE  ·  MAT-ga-01:V01 20,000  kg
+						3362 container
+							3363 text 철광석 ORE  ·  MAT-ga-01:V02 20,000  kg
+						3392 container
+							3393 text 용선 HOT_METAL  ·  MAT-ga-01:V03 20,000  kg
+				788 container
+					789 button (expanded) 검사 · 0, Secondary Actions: Collapse
+						790 text 검사 · 
+						791 text 0
+					3290 text 검사 기록이 아직 없습니다.
+				3291 button (expanded) 연결 출하 · 0, Secondary Actions: Collapse
+					3292 text 연결 출하 · 
+					3293 text 0
+			399 container 납기와 회복 비교
+				400 heading 납기와 회복 비교, Value: 2
+					401 text 납기와 회복 비교
+				402 text AI  미사용  · 실제 공정·물류 계산
+				403 heading 현재 실행 ETA · NORMAL, Value: 3
+					404 text 현재 실행 ETA ·  NORMAL
+				405 content list
+					414 container
+						415 text ORD-ga  ·  납기 내 ETA  2026-10-30 07:53:00 UTC 납기  2026-10-30 07:55:00 UTC
+				446 heading 동일 초기 계획의 새 실행 비교, Value: 3
+					447 text 동일 초기 계획의 새 실행 비교
+				448 text 시나리오 전환은 새 실행을 만듭니다. 납기는 모든 비교에서 동일합니다.
+				449 text HSM-B 우회: 배송 개선 이득 없음
+				450 text HSM-A 12분 중단 · 장애 1분 후 우회 검토 · 롤러 이동 5분과 실제 대기 포함 초기 계획 B 경유:  MAT-ga-01 현재 조건:  형태·강종·폭·용량·예약 조건 충족
+				451 content list
+					468 container
+						469 text ORD-ga DELAY  2026-10-30 07:52:00 UTC RECOVERY  2026-10-30 07:58:00 UTC 6분 더 늦음
+			492 container 주문 이행과 이벤트
+				493 heading 주문 이행 · ORD-ga, Value: 2
+					494 text 주문 이행 ·  ORD-ga
+				495 text 생산 → 품질 → 재고 → 출고 → 배송 주문량
+				796 container
+					797 text 60,300 kg
+				798 text 생산 완료
+				799 container
+					800 text 0 kg
+				801 text 출고 완료
+				802 container
+					803 text 0 kg
+				804 text 배송 완료
+				805 container
+					806 text 0 kg
+				807 text 출고 잔량
+				808 container
+					809 text 60,300 kg
+				810 text 배송 잔량
+				811 container
+					812 text 60,300 kg
+				496 heading 출하 연결, Value: 3
+					497 text 출하 연결
+				538 checkbox SHIP-ga-01 해상 · 계획 (PLANNED) 제품 창고 · 대기장 OPS-WAREHOUSE-BUFFER, Value: 0
+					539 text SHIP-ga-01
+					540 text 해상
+					541 text  · 
+					542 text 계획
+					543 text  (
+					544 text PLANNED
+					545 text )
+					546 text 제품 창고 · 대기장
+					547 text OPS-WAREHOUSE-BUFFER
+				548 checkbox SHIP-ga-02 해상 · 계획 (PLANNED) 제품 창고 · 대기장 OPS-WAREHOUSE-BUFFER, Value: 0
+					549 text SHIP-ga-02
+					550 text 해상
+					551 text  · 
+					552 text 계획
+					553 text  (
+					554 text PLANNED
+					555 text )
+					556 text 제품 창고 · 대기장
+					557 text OPS-WAREHOUSE-BUFFER
+				708 heading 현재 실행 이벤트, Value: 3
+					709 text 현재 실행 이벤트
+				3313 content list
+					3406 container
+						3407 text # 432 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-bof 2026-10-30 00:46:00  UTC
+					3404 container
+						3405 text # 417 운반차 출발 TRANSFER_DEPARTED TR-PROC-MAT-ga-01-ga:cs-bof-PATH-BF-A--BOF-A 2026-10-30 00:45:00  UTC
+					3400 container
+						3401 text # 412 소재 적재 TRANSFER_LOADING TR-PROC-MAT-ga-01-ga:cs-bof-PATH-BF-A--BOF-A 2026-10-30 00:44:00  UTC
+					3402 container
+						3403 text # 411 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cs-bof-PATH-BF-A--BOF-A 2026-10-30 00:44:00  UTC
+					3394 container
+						3395 text # 362 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-bof 2026-10-30 00:37:00  UTC
+					3396 container
+						3397 text # 349 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 00:37:00  UTC
+					3398 container
+						3399 text # 348 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:cs-bf 2026-10-30 00:37:00  UTC
+					3374 container
+						3375 text # 302 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:cs-bf 2026-10-30 00:31:00  UTC
+					3364 container
+						3365 text # 274 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-bf 2026-10-30 00:27:00  UTC
+					3366 container
+						3367 text # 263 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:cs-bf-PATH-CHARGE-A--BF-A 2026-10-30 00:27:00  UTC
+					3368 container
+						3369 text # 262 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cs-bf-PATH-CHARGE-A--BF-A 2026-10-30 00:27:00  UTC
+					3370 container
+						3371 text # 261 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 00:27:00  UTC
+					3372 container
+						3373 text # 260 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:27:00  UTC
+					3342 container
+						3343 text # 246 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:25:00  UTC
+					3344 container
+						3345 text # 242 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A 2026-10-30 00:25:00  UTC
+					3340 container
+						3341 text # 234 소재 하역 TRANSFER_UNLOADING TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A 2026-10-30 00:24:00  UTC
+					3338 container
+						3339 text # 219 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:22:00  UTC
+					3336 container
+						3337 text # 214 운반차 출발 TRANSFER_DEPARTED TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A 2026-10-30 00:21:00  UTC
+					3330 container
+						3331 text # 203 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:20:00  UTC
+					3332 container
+						3333 text # 201 소재 적재 TRANSFER_LOADING TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A 2026-10-30 00:20:00  UTC
+					3334 container
+						3335 text # 200 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A 2026-10-30 00:20:00  UTC
+					3328 container
+						3329 text # 177 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:17:00  UTC
+					3326 container
+						3327 text # 159 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:15:00  UTC
+					3324 container
+						3325 text # 134 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:12:00  UTC
+					3322 container
+						3323 text # 116 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:10:00  UTC
+					3320 container
+						3321 text # 97 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:07:00  UTC
+					3314 container
+						3315 text # 78 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:05:00  UTC
+					3316 container
+						3317 text # 51 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:cs-charge 2026-10-30 00:00:00  UTC
+					3318 container
+						3319 text # 27 소재 배정 MATERIAL_ALLOCATED MAT-ga-01 2026-10-30 00:00:00  UTC
+				711 heading 보관된 실행 이력, Value: 3
+					712 text 보관된 실행 이력
+				713 button 실행 이력 불러오기
+			714 container
+				715 text 하나의 실행 · 서버 기준 시간 · kg / UTC AI  미사용  · 핵심 운영 독립 실행
+
+The focused UI element is 254 checkbox (settable, integer) Description: 소재 따라가기, Value: 0

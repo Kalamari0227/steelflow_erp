@@ -1,0 +1,90 @@
+[
+  {
+    "owner_id": "CS-CR-04",
+    "source_recipe_id": "motion:source:cr-04",
+    "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+    "socket_id": "intermediate_strip_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-CR-04",
+    "source_recipe_id": "motion:source:cr-04",
+    "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+    "socket_id": "intermediate_coil_support",
+    "role": "support",
+    "family": "COIL",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-GO-04",
+    "source_recipe_id": "motion:source:go-04",
+    "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+    "socket_id": "intermediate_strip_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-GO-04",
+    "source_recipe_id": "motion:source:go-04",
+    "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+    "socket_id": "intermediate_coil_support",
+    "role": "support",
+    "family": "COIL",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "intermediate_strip_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-GO-06",
+    "source_recipe_id": "motion:source:go-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "socket_id": "intermediate_coil_support",
+    "role": "support",
+    "family": "COIL",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-NGO-04",
+    "source_recipe_id": "motion:source:ngo-04",
+    "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+    "socket_id": "intermediate_strip_support",
+    "role": "support",
+    "family": "STRIP",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  },
+  {
+    "owner_id": "CS-NGO-04",
+    "source_recipe_id": "motion:source:ngo-04",
+    "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+    "socket_id": "intermediate_coil_support",
+    "role": "support",
+    "family": "COIL",
+    "motion_function_ids": [
+      "intermediate_winding_mandrel"
+    ]
+  }
+]

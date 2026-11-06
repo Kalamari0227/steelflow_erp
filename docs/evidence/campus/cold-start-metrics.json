@@ -1,0 +1,1 @@
+{"startup_s": 31.466504291980527, "first_get_s": 0.05525129206944257, "scenario_s": 0.8715869579464197, "before_hash": "29c15ab10933f8dc0a8e26d5593af4b389340ff253b16bcd8cb23cce48854525", "after_hash": "29c15ab10933f8dc0a8e26d5593af4b389340ff253b16bcd8cb23cce48854525", "primed_result_equals_actual": true, "sql_reload_propagation": true}

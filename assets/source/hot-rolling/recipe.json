@@ -1,0 +1,2424 @@
+{
+  "schema_version": 1,
+  "seed": 2026103020,
+  "author": "SteelFlow original procedural authorship",
+  "license": "project-owned",
+  "external_asset_count": 0,
+  "dimension_basis": "Original synthetic miniature, not measured engineering specification.",
+  "lod_cylinder_segments": [
+    48,
+    32,
+    16
+  ],
+  "lod_bevel_segments": [
+    3,
+    2,
+    1
+  ],
+  "axis_markers": {
+    "axis_origin": [
+      0,
+      0,
+      0
+    ],
+    "axis_front": [
+      1,
+      0,
+      0
+    ],
+    "axis_up": [
+      0,
+      1,
+      0
+    ],
+    "axis_side": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "models": [
+    {
+      "key": "CS-HR-02",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-HR-02",
+      "stage": "hr",
+      "forms": [
+        "SLAB"
+      ],
+      "roller_centers_x_m": [
+        -6.3,
+        -5.7,
+        -5.1,
+        -4.5,
+        -3.9,
+        -3.3428571428571425,
+        -2.7857142857142856,
+        -2.2285714285714286,
+        -1.6714285714285713,
+        -1.1142857142857143,
+        -0.5571428571428574,
+        0.0,
+        0.5700000000000001,
+        1.1400000000000001,
+        1.7100000000000002,
+        2.2800000000000002,
+        2.85,
+        3.4200000000000004,
+        3.9899999999999998,
+        4.5600000000000005,
+        5.130000000000001,
+        5.7,
+        6.3
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-HR-02:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "furnace_feed",
+        "start_m": [
+          -5.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          5.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "furnace_feed",
+            "surface_node_id": "drive_roll",
+            "radius_m": 0.22,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_9",
+            "surface_node_id": "table_idler_9",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_10",
+            "surface_node_id": "table_idler_10",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_11",
+            "surface_node_id": "table_idler_11",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_12",
+            "surface_node_id": "table_idler_12",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_13",
+            "surface_node_id": "table_idler_13",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_14",
+            "surface_node_id": "table_idler_14",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_15",
+            "surface_node_id": "table_idler_15",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_16",
+            "surface_node_id": "table_idler_16",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_17",
+            "surface_node_id": "table_idler_17",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_18",
+            "surface_node_id": "table_idler_18",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_19",
+            "surface_node_id": "table_idler_19",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_20",
+            "surface_node_id": "table_idler_20",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_21",
+            "surface_node_id": "table_idler_21",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-HR-03",
+      "kind": "roughing",
+      "variant": "variant:roughing:CS-HR-03",
+      "stage": "hr",
+      "forms": [
+        "SLAB",
+        "STRIP"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-HR-03:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "roughing_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "roughing_roll",
+            "surface_node_id": "roughing_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_8",
+            "surface_node_id": "entry_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_8",
+            "surface_node_id": "exit_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "HSM-A",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:HSM-A",
+      "stage": "hr",
+      "forms": [
+        "STRIP"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:HSM-A:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "finishing_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "finishing_roll",
+            "surface_node_id": "finishing_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_1_lower_roll",
+            "surface_node_id": "stand_1_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_2_lower_roll",
+            "surface_node_id": "stand_2_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_3_lower_roll",
+            "surface_node_id": "stand_3_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "middle_table_idler_0",
+            "surface_node_id": "middle_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-HR-05",
+      "kind": "cooling",
+      "variant": "variant:cooling:CS-HR-05",
+      "stage": "hr",
+      "forms": [
+        "STRIP"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-HR-05:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "cooling_feed",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "cooling_feed",
+            "surface_node_id": "cooling_drive",
+            "radius_m": 0.22,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-HR-06",
+      "kind": "coiler",
+      "variant": "variant:coiler:CS-HR-06",
+      "stage": "hr",
+      "forms": [
+        "STRIP",
+        "COIL"
+      ]
+    },
+    {
+      "key": "CS-HR-07",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-HR-07",
+      "stage": "hr",
+      "forms": [
+        "STRIP"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-HR-07:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "leveling_roll",
+        "start_m": [
+          -2.48,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.9200000000000004,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "leveling_roll",
+            "surface_node_id": "leveling_roll_barrel",
+            "radius_m": 0.18,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "leveling_bank_2",
+            "surface_node_id": "leveling_bank_2_barrel",
+            "radius_m": 0.18,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "leveling_bank_4",
+            "surface_node_id": "leveling_bank_4_barrel",
+            "radius_m": 0.18,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "leveling_bank_6",
+            "surface_node_id": "leveling_bank_6_barrel",
+            "radius_m": 0.18,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-PLATE-02",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-PLATE-02",
+      "stage": "plate",
+      "forms": [
+        "SLAB"
+      ],
+      "roller_centers_x_m": [
+        -6.3,
+        -5.7,
+        -5.1,
+        -4.5,
+        -3.9,
+        -3.3428571428571425,
+        -2.7857142857142856,
+        -2.2285714285714286,
+        -1.6714285714285713,
+        -1.1142857142857143,
+        -0.5571428571428574,
+        0.0,
+        0.5700000000000001,
+        1.1400000000000001,
+        1.7100000000000002,
+        2.2800000000000002,
+        2.85,
+        3.4200000000000004,
+        3.9899999999999998,
+        4.5600000000000005,
+        5.130000000000001,
+        5.7,
+        6.3
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-PLATE-02:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "furnace_feed",
+        "start_m": [
+          -5.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          5.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "furnace_feed",
+            "surface_node_id": "drive_roll",
+            "radius_m": 0.22,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_9",
+            "surface_node_id": "table_idler_9",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_10",
+            "surface_node_id": "table_idler_10",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_11",
+            "surface_node_id": "table_idler_11",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_12",
+            "surface_node_id": "table_idler_12",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_13",
+            "surface_node_id": "table_idler_13",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_14",
+            "surface_node_id": "table_idler_14",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_15",
+            "surface_node_id": "table_idler_15",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_16",
+            "surface_node_id": "table_idler_16",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_17",
+            "surface_node_id": "table_idler_17",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_18",
+            "surface_node_id": "table_idler_18",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_19",
+            "surface_node_id": "table_idler_19",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_20",
+            "surface_node_id": "table_idler_20",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_21",
+            "surface_node_id": "table_idler_21",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-PLATE-03",
+      "kind": "roughing",
+      "variant": "variant:roughing:CS-PLATE-03",
+      "stage": "plate",
+      "forms": [
+        "SLAB",
+        "PLATE"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-PLATE-03:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "roughing_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "roughing_roll",
+            "surface_node_id": "roughing_roll_barrel",
+            "radius_m": 0.46,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_8",
+            "surface_node_id": "entry_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_8",
+            "surface_node_id": "exit_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-PLATE-04",
+      "kind": "cooling",
+      "variant": "variant:cooling:CS-PLATE-04",
+      "stage": "plate",
+      "forms": [
+        "PLATE"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-PLATE-04:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "cooling_feed",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "cooling_feed",
+            "surface_node_id": "cooling_drive",
+            "radius_m": 0.22,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.6
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-PLATE-05",
+      "kind": "cooling_bed",
+      "variant": "variant:cooling_bed:CS-PLATE-05",
+      "stage": "plate",
+      "forms": [
+        "PLATE"
+      ]
+    },
+    {
+      "key": "CS-PLATE-06",
+      "kind": "shear",
+      "variant": "variant:shear:CS-PLATE-06",
+      "stage": "plate",
+      "forms": [
+        "PLATE"
+      ]
+    },
+    {
+      "key": "CS-PLATE-07",
+      "kind": "heat_treatment",
+      "variant": "variant:heat_treatment:CS-PLATE-07",
+      "stage": "plate",
+      "forms": [
+        "PLATE"
+      ],
+      "roller_centers_x_m": [
+        -5.3,
+        -4.7,
+        -4.3,
+        -3.9,
+        -3.3428571428571425,
+        -2.7857142857142856,
+        -2.2285714285714286,
+        -1.6714285714285713,
+        -1.1142857142857143,
+        -0.5571428571428574,
+        0.0,
+        0.5875,
+        1.175,
+        1.7625000000000002,
+        2.35,
+        2.9375,
+        3.5250000000000004,
+        4.1125,
+        4.7,
+        5.3
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-PLATE-07:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "treatment_feed",
+        "start_m": [
+          -4.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          4.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "treatment_feed",
+            "surface_node_id": "drive_roll",
+            "radius_m": 0.22,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_9",
+            "surface_node_id": "table_idler_9",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_10",
+            "surface_node_id": "table_idler_10",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_11",
+            "surface_node_id": "table_idler_11",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_12",
+            "surface_node_id": "table_idler_12",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_13",
+            "surface_node_id": "table_idler_13",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_14",
+            "surface_node_id": "table_idler_14",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_15",
+            "surface_node_id": "table_idler_15",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_16",
+            "surface_node_id": "table_idler_16",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_17",
+            "surface_node_id": "table_idler_17",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          },
+          {
+            "part_id": "table_idler_18",
+            "surface_node_id": "table_idler_18",
+            "radius_m": 0.16,
+            "width_m": 3.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-PLATE-08",
+      "kind": "leveler",
+      "variant": "variant:leveler:CS-PLATE-08",
+      "stage": "plate",
+      "forms": [
+        "PLATE"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-PLATE-08:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "leveling_roll",
+        "start_m": [
+          -2.48,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.9200000000000004,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "leveling_roll",
+            "surface_node_id": "leveling_roll_barrel",
+            "radius_m": 0.18,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "leveling_bank_2",
+            "surface_node_id": "leveling_bank_2_barrel",
+            "radius_m": 0.18,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "leveling_bank_4",
+            "surface_node_id": "leveling_bank_4_barrel",
+            "radius_m": 0.18,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "leveling_bank_6",
+            "surface_node_id": "leveling_bank_6_barrel",
+            "radius_m": 0.18,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 4.2
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-WIRE-02",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-WIRE-02",
+      "stage": "wire",
+      "forms": [
+        "BLOOM"
+      ],
+      "roller_centers_x_m": [
+        -6.3,
+        -5.7,
+        -5.1,
+        -4.5,
+        -3.9,
+        -3.3428571428571425,
+        -2.7857142857142856,
+        -2.2285714285714286,
+        -1.6714285714285713,
+        -1.1142857142857143,
+        -0.5571428571428574,
+        0.0,
+        0.5700000000000001,
+        1.1400000000000001,
+        1.7100000000000002,
+        2.2800000000000002,
+        2.85,
+        3.4200000000000004,
+        3.9899999999999998,
+        4.5600000000000005,
+        5.130000000000001,
+        5.7,
+        6.3
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-WIRE-02:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "furnace_feed",
+        "start_m": [
+          -5.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          5.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "furnace_feed",
+            "surface_node_id": "drive_roll",
+            "radius_m": 0.22,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_9",
+            "surface_node_id": "table_idler_9",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_10",
+            "surface_node_id": "table_idler_10",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_11",
+            "surface_node_id": "table_idler_11",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_12",
+            "surface_node_id": "table_idler_12",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_13",
+            "surface_node_id": "table_idler_13",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_14",
+            "surface_node_id": "table_idler_14",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_15",
+            "surface_node_id": "table_idler_15",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_16",
+            "surface_node_id": "table_idler_16",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_17",
+            "surface_node_id": "table_idler_17",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_18",
+            "surface_node_id": "table_idler_18",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_19",
+            "surface_node_id": "table_idler_19",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_20",
+            "surface_node_id": "table_idler_20",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          },
+          {
+            "part_id": "table_idler_21",
+            "surface_node_id": "table_idler_21",
+            "radius_m": 0.16,
+            "width_m": 1.65
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-WIRE-03",
+      "kind": "bloom_mill",
+      "variant": "variant:bloom_mill:CS-WIRE-03",
+      "stage": "wire",
+      "forms": [
+        "BLOOM",
+        "BILLET"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-WIRE-03:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "bloom_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "bloom_roll",
+            "surface_node_id": "bloom_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_1_lower_roll",
+            "surface_node_id": "stand_1_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_8",
+            "surface_node_id": "entry_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_8",
+            "surface_node_id": "exit_table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "middle_table_idler_0",
+            "surface_node_id": "middle_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-WIRE-04",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:CS-WIRE-04",
+      "stage": "wire",
+      "forms": [
+        "BILLET"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-WIRE-04:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "finishing_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "finishing_roll",
+            "surface_node_id": "finishing_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_1_lower_roll",
+            "surface_node_id": "stand_1_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_2_lower_roll",
+            "surface_node_id": "stand_2_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_3_lower_roll",
+            "surface_node_id": "stand_3_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_5",
+            "surface_node_id": "entry_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_6",
+            "surface_node_id": "entry_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_7",
+            "surface_node_id": "entry_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_5",
+            "surface_node_id": "exit_table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_6",
+            "surface_node_id": "exit_table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_7",
+            "surface_node_id": "exit_table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "middle_table_idler_0",
+            "surface_node_id": "middle_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-WIRE-05",
+      "kind": "shear",
+      "variant": "variant:shear:CS-WIRE-05",
+      "stage": "wire",
+      "forms": [
+        "BILLET"
+      ]
+    },
+    {
+      "key": "CS-WIRE-06",
+      "kind": "furnace",
+      "variant": "variant:furnace:CS-WIRE-06",
+      "stage": "wire",
+      "forms": [
+        "BILLET"
+      ],
+      "roller_centers_x_m": [
+        -5.3,
+        -4.7,
+        -4.3,
+        -3.9,
+        -3.3428571428571425,
+        -2.7857142857142856,
+        -2.2285714285714286,
+        -1.6714285714285713,
+        -1.1142857142857143,
+        -0.5571428571428574,
+        0.0,
+        0.5875,
+        1.175,
+        1.7625000000000002,
+        2.35,
+        2.9375,
+        3.5250000000000004,
+        4.1125,
+        4.7,
+        5.3
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-WIRE-06:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "furnace_feed",
+        "start_m": [
+          -4.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          4.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "furnace_feed",
+            "surface_node_id": "drive_roll",
+            "radius_m": 0.22,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_0",
+            "surface_node_id": "table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_1",
+            "surface_node_id": "table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_2",
+            "surface_node_id": "table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_3",
+            "surface_node_id": "table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_4",
+            "surface_node_id": "table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_5",
+            "surface_node_id": "table_idler_5",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_6",
+            "surface_node_id": "table_idler_6",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_7",
+            "surface_node_id": "table_idler_7",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_8",
+            "surface_node_id": "table_idler_8",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_9",
+            "surface_node_id": "table_idler_9",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_10",
+            "surface_node_id": "table_idler_10",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_11",
+            "surface_node_id": "table_idler_11",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_12",
+            "surface_node_id": "table_idler_12",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_13",
+            "surface_node_id": "table_idler_13",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_14",
+            "surface_node_id": "table_idler_14",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_15",
+            "surface_node_id": "table_idler_15",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_16",
+            "surface_node_id": "table_idler_16",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_17",
+            "surface_node_id": "table_idler_17",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "table_idler_18",
+            "surface_node_id": "table_idler_18",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          }
+        ]
+      },
+      "door_assembly_x_m": -3.2
+    },
+    {
+      "key": "CS-WIRE-07",
+      "kind": "wire_mill",
+      "variant": "variant:wire_mill:CS-WIRE-07",
+      "stage": "wire",
+      "forms": [
+        "BILLET"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:CS-WIRE-07:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "wire_reduction_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "wire_reduction_roll",
+            "surface_node_id": "wire_reduction_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_1_lower_roll",
+            "surface_node_id": "stand_1_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_2_lower_roll",
+            "surface_node_id": "stand_2_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_3_lower_roll",
+            "surface_node_id": "stand_3_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_4_lower_roll",
+            "surface_node_id": "stand_4_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "stand_5_lower_roll",
+            "surface_node_id": "stand_5_lower_roll_barrel",
+            "radius_m": 0.2,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          },
+          {
+            "part_id": "middle_table_idler_0",
+            "surface_node_id": "middle_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 1.15
+          }
+        ]
+      }
+    },
+    {
+      "key": "CS-WIRE-08",
+      "kind": "laying_head",
+      "variant": "variant:laying_head:CS-WIRE-08",
+      "stage": "wire",
+      "forms": [
+        "WIRE_COIL",
+        "BILLET"
+      ]
+    },
+    {
+      "key": "HSM-B",
+      "kind": "finishing_mill",
+      "variant": "variant:finishing_mill:HSM-B",
+      "stage": "hot-rolling-reserve",
+      "forms": [
+        "STRIP"
+      ],
+      "internal_feed": {
+        "schema_version": 1,
+        "id": "internal-feed:HSM-B:v1",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "driver_part_id": "finishing_roll",
+        "start_m": [
+          -2.7,
+          1.32,
+          0
+        ],
+        "end_m": [
+          2.7,
+          1.32,
+          0
+        ],
+        "rollers": [
+          {
+            "part_id": "finishing_roll",
+            "surface_node_id": "finishing_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_1_lower_roll",
+            "surface_node_id": "stand_1_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_2_lower_roll",
+            "surface_node_id": "stand_2_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_3_lower_roll",
+            "surface_node_id": "stand_3_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "stand_4_lower_roll",
+            "surface_node_id": "stand_4_lower_roll_barrel",
+            "radius_m": 0.38,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_0",
+            "surface_node_id": "entry_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_1",
+            "surface_node_id": "entry_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_2",
+            "surface_node_id": "entry_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_3",
+            "surface_node_id": "entry_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "entry_table_idler_4",
+            "surface_node_id": "entry_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_0",
+            "surface_node_id": "exit_table_idler_0",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_1",
+            "surface_node_id": "exit_table_idler_1",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_2",
+            "surface_node_id": "exit_table_idler_2",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_3",
+            "surface_node_id": "exit_table_idler_3",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          },
+          {
+            "part_id": "exit_table_idler_4",
+            "surface_node_id": "exit_table_idler_4",
+            "radius_m": 0.16,
+            "width_m": 3.0
+          }
+        ]
+      }
+    }
+  ]
+}

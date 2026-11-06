@@ -1,0 +1,1543 @@
+{
+  "$defs": {
+    "AllowedInteriorEnvelope": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        },
+        "footprint_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Footprint Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "pose",
+        "size_m",
+        "footprint_id"
+      ],
+      "title": "AllowedInteriorEnvelope",
+      "type": "object"
+    },
+    "ConflictZone": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids"
+      ],
+      "title": "ConflictZone",
+      "type": "object"
+    },
+    "CraneReach": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "pick_port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Pick Port Ids",
+          "type": "array"
+        },
+        "drop_port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Drop Port Ids",
+          "type": "array"
+        },
+        "max_radius_m": {
+          "exclusiveMinimum": 0,
+          "title": "Max Radius M",
+          "type": "number"
+        },
+        "min_height_m": {
+          "title": "Min Height M",
+          "type": "number"
+        },
+        "max_height_m": {
+          "title": "Max Height M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "pick_port_ids",
+        "drop_port_ids",
+        "max_radius_m",
+        "min_height_m",
+        "max_height_m"
+      ],
+      "title": "CraneReach",
+      "type": "object"
+    },
+    "DesignProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "truck",
+            "slab-carrier",
+            "coil-carrier",
+            "forklift",
+            "torpedo",
+            "ladle-car",
+            "locomotive",
+            "railcar",
+            "ship",
+            "conveyor",
+            "roller"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        },
+        "load_size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Load Size M",
+          "type": "array"
+        },
+        "body_offset_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Body Offset M",
+          "type": "array"
+        },
+        "load_offset_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Load Offset M",
+          "type": "array"
+        },
+        "clearance_m": {
+          "minimum": 0,
+          "title": "Clearance M",
+          "type": "number"
+        },
+        "min_turn_radius_m": {
+          "minimum": 0,
+          "title": "Min Turn Radius M",
+          "type": "number"
+        },
+        "consist_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Consist Length M",
+          "type": "number"
+        },
+        "reverse_allowed": {
+          "title": "Reverse Allowed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "mode",
+        "size_m",
+        "load_size_m",
+        "body_offset_m",
+        "load_offset_m",
+        "clearance_m",
+        "min_turn_radius_m",
+        "consist_length_m",
+        "reverse_allowed"
+      ],
+      "title": "DesignProfile",
+      "type": "object"
+    },
+    "Footprint": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "size_m": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            }
+          ],
+          "title": "Size M",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "pose",
+        "size_m"
+      ],
+      "title": "Footprint",
+      "type": "object"
+    },
+    "InteriorAccess": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "interior_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Interior Id",
+          "type": "string"
+        },
+        "opening_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Opening Ids",
+          "type": "array"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "interior_id",
+        "opening_ids",
+        "segment_ids",
+        "profile_ids",
+        "mode"
+      ],
+      "title": "InteriorAccess",
+      "type": "object"
+    },
+    "Node": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "position": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position",
+          "type": "array"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "position",
+        "modes"
+      ],
+      "title": "Node",
+      "type": "object"
+    },
+    "Owner": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "equipment",
+            "vehicle",
+            "railcar",
+            "ship",
+            "hook",
+            "customer"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "sockets": {
+          "items": {
+            "$ref": "#/$defs/Socket"
+          },
+          "minItems": 1,
+          "title": "Sockets",
+          "type": "array"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "pose",
+        "sockets",
+        "modes"
+      ],
+      "title": "Owner",
+      "type": "object"
+    },
+    "Port": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        },
+        "modes": {
+          "items": {
+            "enum": [
+              "road",
+              "rail",
+              "hot_metal",
+              "ladle",
+              "roller",
+              "conveyor",
+              "sea"
+            ],
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Modes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "node_id",
+        "capacity_kg",
+        "modes"
+      ],
+      "title": "Port",
+      "type": "object"
+    },
+    "Pose": {
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Position",
+          "type": "array"
+        },
+        "yaw_rad": {
+          "title": "Yaw Rad",
+          "type": "number"
+        }
+      },
+      "required": [
+        "position",
+        "yaw_rad"
+      ],
+      "title": "Pose",
+      "type": "object"
+    },
+    "RailBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "usable_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Usable Length M",
+          "type": "number"
+        },
+        "clearance_m": {
+          "minimum": 0,
+          "title": "Clearance M",
+          "type": "number"
+        },
+        "reverse_allowed": {
+          "title": "Reverse Allowed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids",
+        "usable_length_m",
+        "clearance_m",
+        "reverse_allowed"
+      ],
+      "title": "RailBlock",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "from_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "maxItems": 3,
+            "minItems": 3,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "minItems": 2,
+          "title": "Points",
+          "type": "array"
+        },
+        "conflict_zone_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Conflict Zone Ids",
+          "type": "array"
+        },
+        "speed_m_per_sim_s": {
+          "exclusiveMinimum": 0,
+          "title": "Speed M Per Sim S",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "from_node_id",
+        "to_node_id",
+        "mode",
+        "points",
+        "conflict_zone_ids",
+        "speed_m_per_sim_s"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "SegmentPolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Segment Id",
+          "type": "string"
+        },
+        "width_m": {
+          "exclusiveMinimum": 0,
+          "title": "Width M",
+          "type": "number"
+        },
+        "height_m": {
+          "exclusiveMinimum": 0,
+          "title": "Height M",
+          "type": "number"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        },
+        "stop_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Stop Ids",
+          "type": "array"
+        },
+        "rail_block_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Rail Block Ids",
+          "type": "array"
+        },
+        "berth_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Berth Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "segment_id",
+        "width_m",
+        "height_m",
+        "profile_ids",
+        "stop_ids",
+        "rail_block_ids",
+        "berth_ids"
+      ],
+      "title": "SegmentPolicy",
+      "type": "object"
+    },
+    "Slot": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "capacity_kg": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Kg",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "socket_id",
+        "node_id",
+        "capacity_kg"
+      ],
+      "title": "Slot",
+      "type": "object"
+    },
+    "Socket": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "pose": {
+          "$ref": "#/$defs/Pose"
+        }
+      },
+      "required": [
+        "id",
+        "pose"
+      ],
+      "title": "Socket",
+      "type": "object"
+    },
+    "SpatialBerth": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        },
+        "port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Port Ids",
+          "type": "array"
+        },
+        "usable_length_m": {
+          "exclusiveMinimum": 0,
+          "title": "Usable Length M",
+          "type": "number"
+        },
+        "depth_m": {
+          "exclusiveMinimum": 0,
+          "title": "Depth M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "segment_ids",
+        "port_ids",
+        "usable_length_m",
+        "depth_m"
+      ],
+      "title": "SpatialBerth",
+      "type": "object"
+    },
+    "SpatialCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "equipment",
+            "stage",
+            "hall",
+            "source_function",
+            "compiled_step",
+            "connection",
+            "asset_kind"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "product_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Product Ids",
+          "type": "array"
+        },
+        "owner_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Owner Id",
+          "type": "string"
+        },
+        "socket_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Socket Id",
+          "type": "string"
+        },
+        "port_ids": {
+          "items": {
+            "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Port Ids",
+          "type": "array"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "source_id",
+        "product_ids",
+        "owner_id",
+        "socket_id",
+        "port_ids",
+        "segment_ids"
+      ],
+      "title": "SpatialCoverage",
+      "type": "object"
+    },
+    "SpatialHall": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "zone_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Zone Id",
+          "type": "string"
+        },
+        "footprint_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Footprint Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "zone_id",
+        "footprint_id"
+      ],
+      "title": "SpatialHall",
+      "type": "object"
+    },
+    "SpatialOpening": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "hall_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Hall Id",
+          "type": "string"
+        },
+        "interior_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Interior Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "width_m": {
+          "exclusiveMinimum": 0,
+          "title": "Width M",
+          "type": "number"
+        },
+        "height_m": {
+          "exclusiveMinimum": 0,
+          "title": "Height M",
+          "type": "number"
+        },
+        "mode": {
+          "enum": [
+            "road",
+            "rail",
+            "hot_metal",
+            "ladle",
+            "roller",
+            "conveyor",
+            "sea"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "hall_id",
+        "interior_id",
+        "node_id",
+        "width_m",
+        "height_m",
+        "mode",
+        "profile_ids"
+      ],
+      "title": "SpatialOpening",
+      "type": "object"
+    },
+    "SpatialParking": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "slot_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Slot Id",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "capacity_positions": {
+          "gt": 0,
+          "le": 9007199254740991,
+          "title": "Capacity Positions",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "slot_id",
+        "profile_id",
+        "capacity_positions"
+      ],
+      "title": "SpatialParking",
+      "type": "object"
+    },
+    "SpatialRecords": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "zones": {
+          "items": {
+            "$ref": "#/$defs/SpatialZone"
+          },
+          "title": "Zones",
+          "type": "array"
+        },
+        "halls": {
+          "items": {
+            "$ref": "#/$defs/SpatialHall"
+          },
+          "title": "Halls",
+          "type": "array"
+        },
+        "openings": {
+          "items": {
+            "$ref": "#/$defs/SpatialOpening"
+          },
+          "title": "Openings",
+          "type": "array"
+        },
+        "profiles": {
+          "items": {
+            "$ref": "#/$defs/DesignProfile"
+          },
+          "title": "Profiles",
+          "type": "array"
+        },
+        "segment_policies": {
+          "items": {
+            "$ref": "#/$defs/SegmentPolicy"
+          },
+          "title": "Segment Policies",
+          "type": "array"
+        },
+        "interior_access": {
+          "items": {
+            "$ref": "#/$defs/InteriorAccess"
+          },
+          "title": "Interior Access",
+          "type": "array"
+        },
+        "stops": {
+          "items": {
+            "$ref": "#/$defs/SpatialStop"
+          },
+          "title": "Stops",
+          "type": "array"
+        },
+        "rail_blocks": {
+          "items": {
+            "$ref": "#/$defs/RailBlock"
+          },
+          "title": "Rail Blocks",
+          "type": "array"
+        },
+        "berths": {
+          "items": {
+            "$ref": "#/$defs/SpatialBerth"
+          },
+          "title": "Berths",
+          "type": "array"
+        },
+        "crane_reaches": {
+          "items": {
+            "$ref": "#/$defs/CraneReach"
+          },
+          "title": "Crane Reaches",
+          "type": "array"
+        },
+        "parking": {
+          "items": {
+            "$ref": "#/$defs/SpatialParking"
+          },
+          "title": "Parking",
+          "type": "array"
+        },
+        "coverage": {
+          "items": {
+            "$ref": "#/$defs/SpatialCoverage"
+          },
+          "title": "Coverage",
+          "type": "array"
+        },
+        "routes": {
+          "items": {
+            "$ref": "#/$defs/SpatialRoute"
+          },
+          "title": "Routes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "zones",
+        "halls",
+        "openings",
+        "profiles",
+        "segment_policies",
+        "interior_access",
+        "stops",
+        "rail_blocks",
+        "berths",
+        "crane_reaches",
+        "parking",
+        "coverage",
+        "routes"
+      ],
+      "title": "SpatialRecords",
+      "type": "object"
+    },
+    "SpatialRoute": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Profile Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "loaded",
+            "empty_return",
+            "holding"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "from_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "From Node Id",
+          "type": "string"
+        },
+        "to_node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "To Node Id",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "profile_id",
+        "kind",
+        "from_node_id",
+        "to_node_id",
+        "segment_ids"
+      ],
+      "title": "SpatialRoute",
+      "type": "object"
+    },
+    "SpatialStop": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "node_id": {
+          "pattern": "^v2:[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Node Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "stop",
+            "gate",
+            "staging",
+            "holding",
+            "loading",
+            "unloading"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Profile Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "kind",
+        "profile_ids"
+      ],
+      "title": "SpatialStop",
+      "type": "object"
+    },
+    "SpatialZone": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "owner_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Owner Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "owner_ids"
+      ],
+      "title": "SpatialZone",
+      "type": "object"
+    },
+    "Artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "enum": [
+            "world",
+            "asset",
+            "motion",
+            "recipe",
+            "coverage",
+            "fixture",
+            "scenario"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "path": {
+          "pattern": "^[A-Za-z0-9_-][A-Za-z0-9_.-]*(/[A-Za-z0-9_-][A-Za-z0-9_.-]*)*$",
+          "title": "Path",
+          "type": "string"
+        },
+        "version": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Version",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "path",
+        "version",
+        "sha256"
+      ],
+      "title": "Artifact",
+      "type": "object"
+    },
+    "BundleManifest": {
+      "additionalProperties": false,
+      "properties": {
+        "format": {
+          "const": "factory-bundle-v1",
+          "title": "Format",
+          "type": "string"
+        },
+        "bundle_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Bundle Id",
+          "type": "string"
+        },
+        "world_version": {
+          "const": 2,
+          "title": "World Version",
+          "type": "integer"
+        },
+        "artifacts": {
+          "items": {
+            "$ref": "#/$defs/Artifact"
+          },
+          "minItems": 1,
+          "title": "Artifacts",
+          "type": "array"
+        },
+        "bundle_hash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Bundle Hash",
+          "type": "string"
+        }
+      },
+      "required": [
+        "format",
+        "bundle_id",
+        "world_version",
+        "artifacts",
+        "bundle_hash"
+      ],
+      "title": "BundleManifest",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 2,
+      "title": "Version",
+      "type": "integer"
+    },
+    "units": {
+      "const": "m",
+      "title": "Units",
+      "type": "string"
+    },
+    "up_axis": {
+      "const": "Y",
+      "title": "Up Axis",
+      "type": "string"
+    },
+    "forward_axis": {
+      "const": "+X",
+      "title": "Forward Axis",
+      "type": "string"
+    },
+    "yaw_unit": {
+      "const": "rad",
+      "title": "Yaw Unit",
+      "type": "string"
+    },
+    "nodes": {
+      "items": {
+        "$ref": "#/$defs/Node"
+      },
+      "minItems": 1,
+      "title": "Nodes",
+      "type": "array"
+    },
+    "segments": {
+      "items": {
+        "$ref": "#/$defs/Segment"
+      },
+      "title": "Segments",
+      "type": "array"
+    },
+    "conflict_zones": {
+      "items": {
+        "$ref": "#/$defs/ConflictZone"
+      },
+      "title": "Conflict Zones",
+      "type": "array"
+    },
+    "owners": {
+      "items": {
+        "$ref": "#/$defs/Owner"
+      },
+      "minItems": 1,
+      "title": "Owners",
+      "type": "array"
+    },
+    "slots": {
+      "items": {
+        "$ref": "#/$defs/Slot"
+      },
+      "title": "Slots",
+      "type": "array"
+    },
+    "ports": {
+      "items": {
+        "$ref": "#/$defs/Port"
+      },
+      "title": "Ports",
+      "type": "array"
+    },
+    "footprints": {
+      "items": {
+        "$ref": "#/$defs/Footprint"
+      },
+      "minItems": 1,
+      "title": "Footprints",
+      "type": "array"
+    },
+    "allowed_interiors": {
+      "items": {
+        "$ref": "#/$defs/AllowedInteriorEnvelope"
+      },
+      "title": "Allowed Interiors",
+      "type": "array"
+    },
+    "spatial": {
+      "$ref": "#/$defs/SpatialRecords",
+      "default": null
+    }
+  },
+  "required": [
+    "version",
+    "units",
+    "up_axis",
+    "forward_axis",
+    "yaw_unit",
+    "nodes",
+    "segments",
+    "conflict_zones",
+    "owners",
+    "slots",
+    "ports",
+    "footprints",
+    "allowed_interiors"
+  ],
+  "title": "FactoryWorld",
+  "type": "object",
+  "$id": "https://steelflow.local/contracts/factory-world-v2.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Factory-v2 spatial shape. Graph references, reciprocal conflicts, support contacts and oriented envelope containment require the accompanying parser. No production layout is implied."
+}

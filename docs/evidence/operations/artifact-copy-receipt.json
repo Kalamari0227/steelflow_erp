@@ -1,0 +1,687 @@
+{
+  "kind": "actual raw artifact copy; no recompression or fabricated output",
+  "files": [
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/video.webm",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-demo.webm",
+      "bytes": 39709623,
+      "sha256": "362493fa7cd0b7c9d0bc03e199f9444f398ec8bfac5659749b4bdb8b7934f0f8"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/video.webm",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback.webm",
+      "bytes": 1887050,
+      "sha256": "489b139a40341885a9ee00d2ca4b34e303f992c8dee176d7ada0fcdf354e1458"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/trace.zip",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-demo.trace.zip",
+      "bytes": 168719784,
+      "sha256": "491814f153b162b1e3079ec2e9d558134f88e91388c5d6b484a4f0495ca28803"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/trace.zip",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback.trace.zip",
+      "bytes": 4393703,
+      "sha256": "4132a03aeca9e9c56b7812cead5c182ebcc8a411902a116a06895f7ab6846cd9"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-DELAY.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-DELAY.png",
+      "bytes": 472893,
+      "sha256": "d365c294921a19e3e68b8152e99d1116c1dbc553604803af23295941f356216d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-normal-initial.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-normal-initial.png",
+      "bytes": 378095,
+      "sha256": "632327dec867ea3c735bdee909df13e4252e76ac7a44b12bb38a119cc795d27f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-RECOVERY.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-RECOVERY.png",
+      "bytes": 465020,
+      "sha256": "6ab938505b757beca8e9eedf2ac86e38ca1d009e439436ebd2b73357846ee87b"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-GA-complete.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-GA-complete.png",
+      "bytes": 490175,
+      "sha256": "b97672d07c751e635308ccba890fd87a5ecf1f1233a8ae3824cf72dbb14f9e62"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/T20-fallback-last-state.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback-last-state.png",
+      "bytes": 313948,
+      "sha256": "78da19ee3e8749d9963df38bfc42437c8b7dded998b949d1e0061fcd8fc0a829"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/T20-fallback-restored.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback-restored.png",
+      "bytes": 300868,
+      "sha256": "89dca14e205b2d5250556cb402b34e677b8853af5b2c64a13ebe8ac9d1028292"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/T18-GA-final-delivery.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T18-GA-final-delivery.png",
+      "bytes": 384166,
+      "sha256": "1d887e7f68a7c7a42d614f4728b1cf9009a78b4b57b02b11fedb1c9f00648603"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-fulfillment-GA--5adfd-ly-after-the-third-20100-kg/T18-GA-first-partial-delivery.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T18-GA-first-partial-delivery.png",
+      "bytes": 384176,
+      "sha256": "63717932f1ec439ee16d7da91a0e12ed819767a6b38c220aad88864cb28653f5"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-fulfillment-PLA-7f070--the-two-inspected-children/T18-PLATE-child-lineage.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T18-PLATE-child-lineage.png",
+      "bytes": 377527,
+      "sha256": "3e136d49cd896994f6ce9c1a4139a29de2e2d3aea49c467ff0074f8e88123ac2"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-continuous-normal.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-continuous-normal.json",
+      "bytes": 58837,
+      "sha256": "74e9f6c195fee201cdb8c385ad186f6f31d0ecbac1a3c6bfe69e73caa970cdec"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-comparison.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-comparison.json",
+      "bytes": 293527,
+      "sha256": "b11e425c0bde427acb8af1dfa9e6c51ad7fa1445bb515038d5ddd795882eb50c"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-GA-con-f6f36-ful-delay-and-recovery-demo/T20-plate-lineage.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-plate-lineage.json",
+      "bytes": 2231,
+      "sha256": "7a9c63621619eb864b2436af9f6c83c3d584e663b4198bb162ca214d455fcd80"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/T20-fallback.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-fallback.json",
+      "bytes": 2589,
+      "sha256": "749454fede8b21d996abdaadee63d33a7f6a873e7d5a0e857e72e062f7d15196"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-resilience-keyb-2204a-mobile-has-no-page-overflow/T17-mobile.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T17-mobile.png",
+      "bytes": 300266,
+      "sha256": "dba1a8a95bf4ec7f54d1dacb0de0c6858b054e2a436ad7bce9f8ae718ce1b4e9"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-resilience-real-25fd3-ty-in-2D-and-AI-is-disabled/T17-webgl-loss.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T17-webgl-loss.png",
+      "bytes": 303985,
+      "sha256": "c715ca0f57cbb5dcdb139fa10f92436a0b68db3c2faf163de58e7518caf500aa"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-resilience-HTTP-a6c84--cannot-roll-back-a-command/T17-failures.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T17-failures.json",
+      "bytes": 2312,
+      "sha256": "c32528fc0adcf5ae0f3279571f4affa31469a886d58425c62c7dfe12f4adb23d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/test-results/operations-resilience-redu-c2983-ile-business-time-continues/T17-reduced-motion.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T17-reduced-motion.json",
+      "bytes": 494,
+      "sha256": "bcd97f133a22c2e0b2f030f0f8f953945b386eba5ee109a3c3cc8392f7b7d660"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/T19-performance.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T19-performance.json",
+      "bytes": 32173,
+      "sha256": "35b0cbdb37d8266b0096f8e31251934a0fa0cc770965d5a334e896983125812d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/runtime-hardware.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/runtime-hardware.json",
+      "bytes": 710,
+      "sha256": "67286312c1838c86459713e427531f3f0996a7b01e8fd5dc63072f00aa244503"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/evidence/playwright-results.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/playwright-full59.json",
+      "bytes": 171748,
+      "sha256": "7f66b4e070907b2d094df82e95f1a73234b2f091953e58c579b0487fbc3183f5"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/evidence/playwright-results.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/playwright-preview9.json",
+      "bytes": 28630,
+      "sha256": "8fe636b24f48ed6aaa72f000c37994fc4d499eacd568b21a325dae2f04e72d4b"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/exit.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/full59-exit.json",
+      "bytes": 56,
+      "sha256": "cdd00297d5c9d5f9a66e48d913b0b0986511b7864b4572aa20de0d13b85de81e"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/exit.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/preview9-exit.json",
+      "bytes": 56,
+      "sha256": "ba46b5d96c2c3f9011f265122668698011addce7ad31ceb1804541862464533c"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/source-delta-from-full59.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/source-delta-from-full59.json",
+      "bytes": 220,
+      "sha256": "ec6dd6c4f3bf3e1a2587ebdbb810b892b08599541cc49a31fce23ce88040b8ec"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/source-integrity.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/source-integrity.json",
+      "bytes": 115,
+      "sha256": "5f45a68279eb14f6abda369223422c3e04190253129f546b549957a1a3d00f29"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/intentional-error-audit.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/intentional-error-audit.json",
+      "bytes": 6548,
+      "sha256": "a83b20d7ef241d121fd03333eee6d1272282d262c416f720f599861f2985e959"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/teardown-observation.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/teardown-observation.json",
+      "bytes": 388,
+      "sha256": "f558d0888ac5ba22951456fec0e21f941e90e019d2b1e162a55955a487609a27"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/cleanup.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/cleanup.json",
+      "bytes": 974,
+      "sha256": "5a3e0f1a4646c6772bb86693978429ebb4155cd6671ee0079402737377b8dd0d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/arrival-label-closure.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/arrival-label-closure.json",
+      "bytes": 555,
+      "sha256": "be6f5251363827e6313e114b08843546ad945d33f7763194fe050d3432a80973"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/invocation.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/invocation.json",
+      "bytes": 701,
+      "sha256": "151405643e005886a23ad9ed56aab9841a4f8491ac208afd9b9e23e457dc6a59"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/T18-root-backend.log",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/backend-389.log",
+      "bytes": 512,
+      "sha256": "153640c90159c7bf245cc3511f659c4cc4c485dca0083859922037207ee6d42d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/T18-root-unit-shipment-arrival-final.log",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/unit-193.log",
+      "bytes": 261,
+      "sha256": "79f034a6186c096c2d0d713ed5bfeb64a9a0315c4b904c5b01aa31bf6ecd58b2"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/T18-root-build-shipment-arrival.log",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/build-final.log",
+      "bytes": 2528,
+      "sha256": "1e8a14f1f7009cdcd4ccdc74fadc141cf9928d3c3a841132a12e195e8b08d718"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/T18-root-unit-shipment-arrival.log",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/unit-arrival-before-expectation-fix.log",
+      "bytes": 9102,
+      "sha256": "208fb4943f6fe66b4d1336465cc62ce1f5a8cb4ce201342a53d7c14e5898d0b7"
+    },
+    {
+      "source": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/receipts/retained-demo-initial.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/retained-demo-initial.json",
+      "bytes": 3988,
+      "sha256": "f8245da6002cee12b5ebb469a2d3a339546c5c7b9099e552aa8da9fa7562064b",
+      "note": "Initial startup receipt preserved byte-for-byte before manual/final-reset update."
+    },
+    {
+      "source": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/receipts/build.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/retained-build.json",
+      "bytes": 356,
+      "sha256": "4eeae8c4a5162ff662e35c8cc7c51cd3c54e5481538499074c8fbe86dd21abb8"
+    },
+    {
+      "source": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/receipts/runtime-source-copy.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/retained-runtime-source-copy.json",
+      "bytes": 13679,
+      "sha256": "ebbead7a5c456b1f9dcb40a453eb2d00673258ed95ea0ccb1c97f889ae1dd30b"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/evidence/test-results/operations-visual-T19-actu-9a092--scene-rests-for-60-seconds/T19-idle-60s.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T19-idle-60s.json",
+      "bytes": 42129,
+      "sha256": "6b606268857191ff340b7e402a683d4567c4562a6886b9755d62a47546f14fd6"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/final-browser-arrival-1/browser.log",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/T20-preview.log",
+      "bytes": 5810,
+      "sha256": "30e4d9d63b245e7d7730997bfd8c1778a9217d31a82eccf4c259079b59e71ea5"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/invocation.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/full59-invocation.json",
+      "bytes": 579,
+      "sha256": "bcd378cbfd95580052021a121e640b051432cf89ab3e6bfe757a562f0cb8b5f4"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/source-integrity.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/full59-source-integrity.json",
+      "bytes": 115,
+      "sha256": "5f45a68279eb14f6abda369223422c3e04190253129f546b549957a1a3d00f29"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/cleanup.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/full59-cleanup.json",
+      "bytes": 974,
+      "sha256": "088b5e1ccbb832873d6307658fb1887d9643b0bf95e25f003e46397d0872943d"
+    },
+    {
+      "source": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/receipts/retained-demo.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/retained-demo.json",
+      "bytes": 6978,
+      "sha256": "f1102dec6a7b0d5a6b0b9d8cc794579fcdc3d45c2316cd42ca6d81377ccb6dad",
+      "note": "Latest retained status includes F3 PASS, final reset and F1/F2/F4 APPROVE; initial receipt separately preserved."
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual.md",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual.md",
+      "bytes": 5156,
+      "sha256": "9de6b4f48bd4bfc839fdad1000f44c7067f2c67539ec01042f219b26e4babf1a"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/13-partial-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/13-partial-ax.txt",
+      "bytes": 48982,
+      "sha256": "74c5911def7c95003ff1a5edaf014f20d9dc527855e0da1aadc3103e51b3a39a"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial-world.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-partial-world.json",
+      "bytes": 4011574,
+      "sha256": "2230fda82f657cd06e7f4ce5210168932dc2cc96138abcc8ec263e09cf1adc07"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial-facts.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-partial-facts.json",
+      "bytes": 56329,
+      "sha256": "ceeadfbfc66849c3e8c420fdc5b454bf50c0e24e8826a3f67100d89a3d0b07d5"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/15-shipment-two.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/15-shipment-two.png",
+      "bytes": 53833,
+      "sha256": "7587d6057d86b8dc72b11f34a747dc3d7b7b6b9e478efb179b7c823d7843fbf3"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/15-shipment-two-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/15-shipment-two-ax.txt",
+      "bytes": 48653,
+      "sha256": "e1a46ebaf9b0f3bff44d6544cc5bc8f722b464879b5e85afb3e1c632d4851c7f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/05-production.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/05-production.png",
+      "bytes": 98525,
+      "sha256": "0dd88eaebeccf126025cccb1da2740ef5f6e9a939bd05e42a2ac131172250f88"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/10-coating.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/10-coating.png",
+      "bytes": 110572,
+      "sha256": "b6375a49f317caa1f54ff6fc34c30453e5f61c0aba938bc4b7447460a1674388"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/08-transport-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/08-transport-scene.json",
+      "bytes": 20946,
+      "sha256": "3409570b869814b85f993d325de67db3d19d245516c50aa125ecb21887e58101"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/16-2d.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/16-2d.png",
+      "bytes": 77197,
+      "sha256": "190ed40cc71e6b228f31c1f40ffc4ae81c5d0c4421d9533a3098e0e28a809dce"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/01-selected-ga.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/01-selected-ga.png",
+      "bytes": 90787,
+      "sha256": "618ec00f0a35f5ca000bcd2c952179315f54f231c2e1074964fa2298f7ddcae6"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-full.txt",
+      "bytes": 3040554,
+      "sha256": "e64629cb6d4cf01d6ca734c3f5f747e91620fa77dd8fdafd10f846e608f7625b"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/05-production-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/05-production-scene.json",
+      "bytes": 21280,
+      "sha256": "3ed59b7520771335a77dc3b754a45b7d4e3232f30af67eb7c18a038a70991672"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-reset-world.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/22-final-reset-world.json",
+      "bytes": 768831,
+      "sha256": "131464d8dc49eaaae6a90a3435044cf5450184af474453c0044e020f7fc62fd9"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/01-selected-ga-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/01-selected-ga-ax.txt",
+      "bytes": 18182,
+      "sha256": "593a6a70ad18c280cee4411f8bf4ab04e5b99b4ac2ca2319ee0ecc17e1d18bc5"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/14-shipment-one-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/14-shipment-one-ax.txt",
+      "bytes": 48853,
+      "sha256": "1aaf0d206dc3a084215dfe86b1b25fb9238d009ca9fe0b78a06901db9d14ccc7"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full-events.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-full-events.json",
+      "bytes": 388683,
+      "sha256": "65ee64d548bcbccfdbd790bb4501ad3e3e342e5cbc3067bdbf5e0bf1e5236023"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial-events.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-partial-events.json",
+      "bytes": 383004,
+      "sha256": "050a1b3bd2a88bcbc04ce0767b1469517dad9900b3a5acae4cafaaa6ce468514"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/20-actual-cargo-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/20-actual-cargo-scene.json",
+      "bytes": 20999,
+      "sha256": "672eefe05964bbc4b2597d82ef9fbce1eb1b66614b926f306f37dcb316689b9f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-health.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/22-final-health.json",
+      "bytes": 34,
+      "sha256": "84227d6f71c60368c72f322b18f81a4d2c3dd77fdf03352a6a9c97b2efbaaaad"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full-world.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-full-world.json",
+      "bytes": 4026485,
+      "sha256": "0a94af036fb1077739b8ee9bb0ee5a2c58dec078c2680bea2d16dd90409927b2"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-full-facts.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-full-facts.json",
+      "bytes": 56891,
+      "sha256": "77f85509c2d1c02d2238e50ab89e364892bb3777682f8e75b3e4c667701599ad"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-initial-world.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-initial-world.json",
+      "bytes": 1125944,
+      "sha256": "ab902201940b904e5241e557c5cf1b6fd94a77e434b574126d1f96b9bbbbd456"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/17-2d-ga01.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/17-2d-ga01.png",
+      "bytes": 70440,
+      "sha256": "3b1e0102f334835ac1fa11ba577d73965c5419f03b49951423325e93e3c521c4"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/06-paused.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/06-paused.png",
+      "bytes": 98915,
+      "sha256": "90f4e6bf958625c5944f0cffbfadf8190bed4c2678adb9781c76d5fea3fb7030"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/03-orbit-zoom.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/03-orbit-zoom.json",
+      "bytes": 232,
+      "sha256": "5915ee26ced146eab941f619378ee07c5aa14ef2e0d8bee6018b535363faee27"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/07-production-follow.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/07-production-follow.png",
+      "bytes": 96800,
+      "sha256": "673a1f9b27199f674464afd0cdaa72e8cbb2160854baafb91f74ef3ec185883c"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-monitor-receipt.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-monitor-receipt.json",
+      "bytes": 2631,
+      "sha256": "713e7e811c67f136cff7645e83e530a950dd288fa328016e75c134d5619d91fd"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/04-equipment-pick-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/04-equipment-pick-ax.txt",
+      "bytes": 20205,
+      "sha256": "87208b7f7f29cf491cdfedcc5622f497410c7cb240b345db6d6b3c267f883c70"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/02-native-material-pick.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/02-native-material-pick.png",
+      "bytes": 98255,
+      "sha256": "832bde18c08be3b4d2832b610135892a6c96ec71cdc27b350d27cc51e6c9abf8"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/18-completed-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/18-completed-scene.json",
+      "bytes": 21802,
+      "sha256": "0c39f3cc2317c173c843add44f6a2cc227337930b00c9ea3e7ac0b6cbdefe47e"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/09-cold-process.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/09-cold-process.png",
+      "bytes": 108850,
+      "sha256": "b788abd4ba535d093c17172aabfbca68ffc836713e159f644fa7239f2b112a0c"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/09-cold-process-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/09-cold-process-scene.json",
+      "bytes": 21053,
+      "sha256": "ef6a7013302ce1fd324831b2d5e6ade3e9da583fc52c786eef48681a38ffef8f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/06-pause-stability.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/06-pause-stability.json",
+      "bytes": 972,
+      "sha256": "5d206b3e96eb47150b2496b88f430c4117a2254482ac8c2ae81bb83ff95d3d21"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-playing.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-playing.txt",
+      "bytes": 820978,
+      "sha256": "e71ff54da6508d433fac264e02d9f542bd35f66042208db277fb340f32dd09d9"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/19-manual-transport-replay.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/19-manual-transport-replay.json",
+      "bytes": 20620,
+      "sha256": "8ef00e63a28a0380d0f9b3e2a6602f54d57c04edecbd3515104e20c33b818e47"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-monitor.py",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-monitor.py",
+      "bytes": 2620,
+      "sha256": "15c40f1dd6c7fce2474d3e9b71dd4e590886b7a0ad267d771a0c4d01c8533528"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/14-shipment-one.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/14-shipment-one.png",
+      "bytes": 36891,
+      "sha256": "dc44ce1def8ae9a110e58b19789932fbf0f3ab0d184ec41ebd262f898c8c95a4"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-reset.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/22-final-reset.png",
+      "bytes": 63697,
+      "sha256": "85da1bce1c478161f4aecc2353e71272a18eb41a02ddb16716a6db4d9f68be38"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/22-final-reset-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/22-final-reset-ax.txt",
+      "bytes": 25036,
+      "sha256": "48cc264fd60bb6954236941ea9d1f5086b8d0e99c4778e2833a29ebb7a79e9a2"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/19-manual-transport-replay.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/19-manual-transport-replay.png",
+      "bytes": 80680,
+      "sha256": "e598494eda677543dac095c379d36737fd0ba9be93e402bda3a870d1d2a763f0"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/browser-console.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/browser-console.json",
+      "bytes": 198,
+      "sha256": "e967cf5215c6c06b7ee7025781db49450a239db55ee9bcf84f5d229f5c450fe8"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/10-coating-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/10-coating-scene.json",
+      "bytes": 21508,
+      "sha256": "dae70a0587fc66d97833a36fc57c49b0b5bf7e73aa5ef864319e9206d89a2b6a"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/08-transport.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/08-transport.png",
+      "bytes": 101522,
+      "sha256": "c6ab62fc8eea726ed2e2bdfffba243fb83e178d7da3b64ecf97b49e0103cedc1"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/02-native-material-pick-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/02-native-material-pick-ax.txt",
+      "bytes": 19858,
+      "sha256": "8bbbb07af90e37d34cd4d1a00d01741b78d8277201e5d1e9ab00df78025dd187"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/06-paused-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/06-paused-scene.json",
+      "bytes": 21095,
+      "sha256": "39fcf9d2df8783a74e94bfec9ec08e60991c8d0f8d31d6266055c17557557d52"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/11-inspection-transport.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/11-inspection-transport.png",
+      "bytes": 111611,
+      "sha256": "37faded0f0732d2e21929b4aac85ffec9158380295dbfbea88085a2724f45dab"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/12-port.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/12-port.png",
+      "bytes": 94354,
+      "sha256": "1017da7f16156ed35d55e40d2b2fe17b39b293df70d8c67a86d32499949489fe"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/20-actual-cargo.png",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/20-actual-cargo.png",
+      "bytes": 80871,
+      "sha256": "d19cb48dabf4e5bfc7d8be50ca60721cd4008cb0b3f8d2b14c2e627018d7e125"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/12-port-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/12-port-scene.json",
+      "bytes": 21528,
+      "sha256": "0df607e2f0f388085d53b3f29357094575475b21bc8328edb6f546a2ac8b313f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-observed-summary.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-observed-summary.json",
+      "bytes": 2726,
+      "sha256": "5fe7bd256117613b15a17bc9d0515db7dcef9739008a942471c0844d506494e1"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/07-production-follow-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/07-production-follow-scene.json",
+      "bytes": 21208,
+      "sha256": "a5d67d5e7b0a929fe2dd06cb5d2d8c4c490027dd2b85e3e446205ad466ef8467"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/17-2d-ga01-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/17-2d-ga01-ax.txt",
+      "bytes": 57979,
+      "sha256": "8ec64f2d4d6364ecb2be6bc293696a7b1ac465132734e6292083afc5c16f977f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-manualQa.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-manualQa.json",
+      "bytes": 3547,
+      "sha256": "0d00bb433ca02055ac541929a48238ff285496299ae75566a3aa19d7485398fa"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/21-cargo-moved-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/21-cargo-moved-scene.json",
+      "bytes": 21074,
+      "sha256": "a89760832b6470d7e2dd57a1364ac01c0ef172fbfa4bcccaef9ecd8b6395adbd"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-partial.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-partial.txt",
+      "bytes": 3029153,
+      "sha256": "188eab87eeff5600571443fae1e30a1117550fa693aa93dbb0324c9057af4c0f"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-polls.jsonl",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-polls.jsonl",
+      "bytes": 24736,
+      "sha256": "19f11de010c8a5aa6d69723cf911639c19b419b3895d2779c79d6a393fd5ecfc"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-playing-world.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-playing-world.json",
+      "bytes": 1192878,
+      "sha256": "eee3eaa9c918e498d89d495adeaade6acb4a83fe80e75f8e1509455dacefcd7d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/16-2d-ax.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/16-2d-ax.txt",
+      "bytes": 58351,
+      "sha256": "216050b121c50de2cdc6871910bb61397c8105b82c4ec34fc1415782af71ee38"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-playing-facts.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-playing-facts.json",
+      "bytes": 4676,
+      "sha256": "5fdb0f86a71a56195e2889ad9c59dc30918cb43debab8fa81549f6237b106d2d"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/http-initial.txt",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/http-initial.txt",
+      "bytes": 768974,
+      "sha256": "b8723ed784b414c4b5ddd281b40c101a5da5b39b3dda0aea4aa9b03d4cc07c9b"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F3-manual/11-inspection-transport-scene.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F3-manual/11-inspection-transport-scene.json",
+      "bytes": 21466,
+      "sha256": "5c59a974f381136cf9539efef3d07364deaa2d24e389064225f78a873ea1b873"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F1-compliance.md",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F1-compliance.md",
+      "bytes": 4366,
+      "sha256": "ae5c391f525a0b819f641b5d7b1a85ccf06a4aa280e3c20e9463c36c61266c26"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F2-code-review.md",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F2-code-review.md",
+      "bytes": 2767,
+      "sha256": "cf96e82473b5d6ff295da3c7848a4ae672338333d4a78cc370ee47dc6d90b3b4"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/steelflow-visual-operations-erp/20261024-execution/F4-fidelity.md",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/F4-fidelity.md",
+      "bytes": 3104,
+      "sha256": "5a2a483875d522ffda9675cd6e24c1e3c998af9dd2f195692b2d7a5284520101"
+    },
+    {
+      "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G004-wave-4-and-final-deterministic-norma/a1/root-resource-cleanup.json",
+      "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/operations/root-resource-cleanup.json",
+      "bytes": 462510,
+      "sha256": "2a44d507f9d6d5359a99ffd91aa565be47138f4497263b60652676a81e4eb2e0"
+    }
+  ],
+  "count": 113,
+  "bytes": 241836185
+}

@@ -1,0 +1,1093 @@
+{
+  "status": "SEALED_PROPOSED_HOST_REGISTRATION_NOT_EXISTING_DELIVERY",
+  "requirements": 29,
+  "host_occurrences": 52,
+  "rows": [
+    {
+      "requirement_id": "src:cold-scale-breaker",
+      "owner_id": "CS-CR-03",
+      "section": "inlet",
+      "moving_functions": [
+        "scale_breaker_roll"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "scale_breaker_roll"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-03:cold-scale-breaker:inlet"
+    },
+    {
+      "requirement_id": "src:cold-welder",
+      "owner_id": "CS-CR-02",
+      "section": "outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-CR-02:cold-welder:outlet"
+    },
+    {
+      "requirement_id": "src:cold-looper",
+      "owner_id": "CS-CR-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-06:cold-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-GI-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-GA-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-air-knife",
+      "owner_id": "CS-HGI-05",
+      "section": "after-sink-roll",
+      "moving_functions": [],
+      "state_functions": [
+        "air_knife"
+      ],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-05:coating-air-knife:after-sink-roll"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-GI-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GI-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-GA-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GA-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-HGI-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-HGI-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-welder",
+      "owner_id": "CS-EG-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-EG-02:coating-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GI-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GA-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-HGI-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-EG-04",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-04:coating-looper:entry"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GI-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-GA-08",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-08:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-HGI-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-looper",
+      "owner_id": "CS-EG-07",
+      "section": "exit-section",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-07:coating-looper:exit-section"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-GI-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-GA-10",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-10:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-HGI-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:coating-inspection",
+      "owner_id": "CS-EG-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "surface_scan"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "surface_scan"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-09:coating-inspection:before-final-winding"
+    },
+    {
+      "requirement_id": "src:eg-oven-cooler",
+      "owner_id": "CS-EG-07",
+      "section": "after-treatment-before-oiling",
+      "moving_functions": [
+        "oven_feed"
+      ],
+      "state_functions": [
+        "curing_oven",
+        "cooling_header"
+      ],
+      "new_moving": [
+        "oven_feed"
+      ],
+      "new_state": [
+        "cooling_header",
+        "curing_oven"
+      ],
+      "stable_subassembly_id": "CS-EG-07:eg-oven-cooler:after-treatment-before-oiling"
+    },
+    {
+      "requirement_id": "src:go-domain-refinement",
+      "owner_id": "CS-GO-10",
+      "section": "after-insulation",
+      "moving_functions": [
+        "inspection_scan"
+      ],
+      "state_functions": [
+        "domain_laser"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "domain_laser"
+      ],
+      "stable_subassembly_id": "CS-GO-10:go-domain-refinement:after-insulation"
+    },
+    {
+      "requirement_id": "src:electrical-shot-blasting",
+      "owner_id": "CS-GO-04",
+      "section": "before-pickling",
+      "moving_functions": [
+        "shot_wheel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "shot_wheel"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:electrical-shot-blasting:before-pickling"
+    },
+    {
+      "requirement_id": "src:electrical-shot-blasting",
+      "owner_id": "CS-NGO-04",
+      "section": "before-pickling",
+      "moving_functions": [
+        "shot_wheel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "shot_wheel"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:electrical-shot-blasting:before-pickling"
+    },
+    {
+      "requirement_id": "src:electrical-welder",
+      "owner_id": "CS-GO-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-GO-02:electrical-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:electrical-welder",
+      "owner_id": "CS-NGO-02",
+      "section": "uncoiler-outlet",
+      "moving_functions": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state_functions": [
+        "weld_power"
+      ],
+      "new_moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "new_state": [
+        "weld_power"
+      ],
+      "stable_subassembly_id": "CS-NGO-02:electrical-welder:uncoiler-outlet"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-03",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-03:electrical-looper:entry"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-03",
+      "section": "entry",
+      "moving_functions": [
+        "entry_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-03:electrical-looper:entry"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-04",
+      "section": "exit",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:electrical-looper:exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-04",
+      "section": "exit",
+      "moving_functions": [
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:electrical-looper:exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-GO-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:electrical-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:electrical-looper",
+      "owner_id": "CS-NGO-06",
+      "section": "entry-and-exit",
+      "moving_functions": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-06:electrical-looper:entry-and-exit"
+    },
+    {
+      "requirement_id": "src:ngo-electrocleaning",
+      "owner_id": "CS-NGO-06",
+      "section": "before-final-anneal",
+      "moving_functions": [
+        "cleaning_brush",
+        "cleaning_strip_feed"
+      ],
+      "state_functions": [
+        "cleaning_electrodes"
+      ],
+      "new_moving": [
+        "cleaning_brush",
+        "cleaning_strip_feed"
+      ],
+      "new_state": [
+        "cleaning_electrodes"
+      ],
+      "stable_subassembly_id": "CS-NGO-06:ngo-electrocleaning:before-final-anneal"
+    },
+    {
+      "requirement_id": "src:ngo-drying",
+      "owner_id": "CS-NGO-07",
+      "section": "after-insulation",
+      "moving_functions": [],
+      "state_functions": [
+        "drying_header"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "drying_header"
+      ],
+      "stable_subassembly_id": "CS-NGO-07:ngo-drying:after-insulation"
+    },
+    {
+      "requirement_id": "src:hgi-hr-feed",
+      "owner_id": "CS-HGI-02",
+      "section": "HR-input-no-required-CR",
+      "moving_functions": [],
+      "state_functions": [],
+      "new_moving": [],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-02:hgi-hr-feed:HR-input-no-required-CR"
+    },
+    {
+      "requirement_id": "src:go-base-coating",
+      "owner_id": "CS-GO-06",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "base_coating_roll"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "base_coating_roll"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:go-base-coating:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:cr-cold-mill-output-cutter",
+      "owner_id": "CS-CR-04",
+      "section": "after-reduction",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-04:cr-cold-mill-output-cutter:after-reduction"
+    },
+    {
+      "requirement_id": "src:cr-finished-output-cutter",
+      "owner_id": "CS-CR-09",
+      "section": "before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-CR-09:cr-finished-output-cutter:before-final-winding"
+    },
+    {
+      "requirement_id": "src:go-pickling-output-cutter",
+      "owner_id": "CS-GO-04",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-04:go-pickling-output-cutter:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:go-basecoat-output-cutter",
+      "owner_id": "CS-GO-06",
+      "section": "after-base-coating",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-06:go-basecoat-output-cutter:after-base-coating"
+    },
+    {
+      "requirement_id": "src:go-finished-output-cutter",
+      "owner_id": "CS-GO-11",
+      "section": "after-domain-refinement",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GO-11:go-finished-output-cutter:after-domain-refinement"
+    },
+    {
+      "requirement_id": "src:ngo-pickling-output-cutter",
+      "owner_id": "CS-NGO-04",
+      "section": "after-exit-looper",
+      "moving_functions": [
+        "output_cutter",
+        "intermediate_winding_mandrel"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-04:ngo-pickling-output-cutter:after-exit-looper"
+    },
+    {
+      "requirement_id": "src:ngo-finished-output-cutter",
+      "owner_id": "CS-NGO-08",
+      "section": "after-drying",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-NGO-08:ngo-finished-output-cutter:after-drying"
+    },
+    {
+      "requirement_id": "src:hotdip-output-cutter",
+      "owner_id": "CS-GI-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GI-09:hotdip-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:hotdip-output-cutter",
+      "owner_id": "CS-GA-10",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-GA-10:hotdip-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:hgi-output-cutter",
+      "owner_id": "CS-HGI-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-HGI-09:hgi-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:eg-output-cutter",
+      "owner_id": "CS-EG-09",
+      "section": "after-oiling-before-final-winding",
+      "moving_functions": [
+        "output_cutter"
+      ],
+      "state_functions": [],
+      "new_moving": [
+        "output_cutter"
+      ],
+      "new_state": [],
+      "stable_subassembly_id": "CS-EG-09:eg-output-cutter:after-oiling-before-final-winding"
+    },
+    {
+      "requirement_id": "src:gi-coating-cooling",
+      "owner_id": "CS-GI-05",
+      "section": "after-air-knife",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-GI-05:gi-coating-cooling:after-air-knife"
+    },
+    {
+      "requirement_id": "src:ga-coating-cooling",
+      "owner_id": "CS-GA-06",
+      "section": "after-alloying",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-GA-06:ga-coating-cooling:after-alloying"
+    },
+    {
+      "requirement_id": "src:hgi-coating-cooling",
+      "owner_id": "CS-HGI-05",
+      "section": "after-air-knife",
+      "moving_functions": [],
+      "state_functions": [
+        "coating_cooling"
+      ],
+      "new_moving": [],
+      "new_state": [
+        "coating_cooling"
+      ],
+      "stable_subassembly_id": "CS-HGI-05:hgi-coating-cooling:after-air-knife"
+    }
+  ],
+  "additional_functions_by_owner": {
+    "CS-CR-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-CR-03": {
+      "moving": [
+        "scale_breaker_roll"
+      ],
+      "state": []
+    },
+    "CS-CR-04": {
+      "moving": [
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "state": []
+    },
+    "CS-CR-05": {
+      "moving": [
+        "line_unwinding_mandrel"
+      ],
+      "state": []
+    },
+    "CS-CR-06": {
+      "moving": [
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-CR-09": {
+      "moving": [
+        "output_cutter"
+      ],
+      "state": []
+    },
+    "CS-EG-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-EG-04": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-EG-07": {
+      "moving": [
+        "exit_looper_lift",
+        "oven_feed"
+      ],
+      "state": [
+        "cooling_header",
+        "curing_oven"
+      ]
+    },
+    "CS-EG-09": {
+      "moving": [
+        "output_cutter",
+        "surface_scan"
+      ],
+      "state": []
+    },
+    "CS-GA-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-GA-04": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-GA-05": {
+      "moving": [],
+      "state": []
+    },
+    "CS-GA-06": {
+      "moving": [],
+      "state": [
+        "coating_cooling"
+      ]
+    },
+    "CS-GA-08": {
+      "moving": [
+        "exit_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-GA-10": {
+      "moving": [
+        "output_cutter",
+        "surface_scan"
+      ],
+      "state": []
+    },
+    "CS-GI-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-GI-04": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-GI-05": {
+      "moving": [],
+      "state": [
+        "coating_cooling"
+      ]
+    },
+    "CS-GI-07": {
+      "moving": [
+        "exit_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-GI-09": {
+      "moving": [
+        "output_cutter",
+        "surface_scan"
+      ],
+      "state": []
+    },
+    "CS-GO-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-GO-03": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-GO-04": {
+      "moving": [
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "state": []
+    },
+    "CS-GO-05": {
+      "moving": [
+        "line_unwinding_mandrel"
+      ],
+      "state": []
+    },
+    "CS-GO-06": {
+      "moving": [
+        "base_coating_roll",
+        "entry_looper_lift",
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter"
+      ],
+      "state": []
+    },
+    "CS-GO-07": {
+      "moving": [
+        "bell_lift"
+      ],
+      "state": []
+    },
+    "CS-GO-08": {
+      "moving": [
+        "line_unwinding_mandrel"
+      ],
+      "state": []
+    },
+    "CS-GO-10": {
+      "moving": [],
+      "state": [
+        "domain_laser"
+      ]
+    },
+    "CS-GO-11": {
+      "moving": [
+        "output_cutter"
+      ],
+      "state": []
+    },
+    "CS-HGI-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-HGI-04": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-HGI-05": {
+      "moving": [],
+      "state": [
+        "coating_cooling"
+      ]
+    },
+    "CS-HGI-07": {
+      "moving": [
+        "exit_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-HGI-09": {
+      "moving": [
+        "output_cutter",
+        "surface_scan"
+      ],
+      "state": []
+    },
+    "CS-NGO-02": {
+      "moving": [
+        "strip_clamp",
+        "weld_head"
+      ],
+      "state": [
+        "weld_power"
+      ]
+    },
+    "CS-NGO-03": {
+      "moving": [
+        "entry_looper_lift"
+      ],
+      "state": []
+    },
+    "CS-NGO-04": {
+      "moving": [
+        "exit_looper_lift",
+        "intermediate_winding_mandrel",
+        "output_cutter",
+        "shot_wheel"
+      ],
+      "state": []
+    },
+    "CS-NGO-05": {
+      "moving": [
+        "line_unwinding_mandrel"
+      ],
+      "state": []
+    },
+    "CS-NGO-06": {
+      "moving": [
+        "cleaning_brush",
+        "cleaning_strip_feed",
+        "entry_looper_lift",
+        "exit_looper_lift"
+      ],
+      "state": [
+        "cleaning_electrodes"
+      ]
+    },
+    "CS-NGO-07": {
+      "moving": [],
+      "state": [
+        "drying_header"
+      ]
+    },
+    "CS-NGO-08": {
+      "moving": [
+        "output_cutter"
+      ],
+      "state": []
+    }
+  }
+}

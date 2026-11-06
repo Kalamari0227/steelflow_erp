@@ -1,0 +1,3 @@
+SteelFlow original procedural miniature assets.
+Project-owned, project-local distribution. No third-party asset inputs.
+The Blender executable and its GPL license are separate toolchain artifacts.

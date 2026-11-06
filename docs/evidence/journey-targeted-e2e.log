@@ -1,0 +1,20 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/journey.spec.ts -g real material|390px|reduced motion
+
+[WebServer] INFO:     Started server process [44448]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:44495) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:44504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/journey.spec.ts:126:1 › real material and equipment meshes select and motion freezes, resumes at speed and resets (6.5s)
+  ✓  2 tests/journey.spec.ts:155:1 › 390px keyboard controls and WebGL loss preserve complete 2D tracking (1.9s)
+  ✓  3 tests/journey.spec.ts:190:1 › reduced motion does not interpolate while real snapshot reads are delayed (2.5s)
+
+  3 passed (13.5s)

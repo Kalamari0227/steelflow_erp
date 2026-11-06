@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/ethanlee/.local/share/mise/installs/node/lts/bin/npm",
+    "run",
+    "build",
+    "--",
+    "--outDir",
+    "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified/dist"
+  ],
+  "cwd": "/Users/ethanlee/Desktop/ERP",
+  "exitCode": 0,
+  "wallSeconds": 5.65151291701477,
+  "capturedAt": "2026-10-24T17:41:18.243307+00:00"
+}

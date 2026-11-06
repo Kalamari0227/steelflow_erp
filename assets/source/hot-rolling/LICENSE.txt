@@ -1,0 +1,6 @@
+SteelFlow hot-rolling miniature assets
+Original project procedural authorship, 2026-10-30.
+Project-owned: project-local distribution permission.
+No downloaded, paid, private ERP, or third-party mesh/texture assets.
+Blender 4.5.15 is a separate GPL-3.0-or-later tool; its license does not impose a license on original authored geometry.
+Dimensions, machinery transmissions and surface details are synthetic interpretations of public functional concepts.

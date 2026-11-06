@@ -1,0 +1,11 @@
+import {defineConfig} from 'vite';
+import {resolve} from 'node:path';
+import {realpathSync,readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const source=process.env.STEELFLOW_TRANSPORT_SOURCE,run=process.env.STEELFLOW_TRANSPORT_RUN;
+if(!source||!run)throw new Error('Explicit owned transport source/run required');
+const actual=realpathSync(source),bound=realpathSync(resolve('.omo/evidence/uniform-fidelity/uf-20261030-resume06/task-28/implementation'));
+if(!actual.startsWith(bound+'/'))throw new Error('Source outside owned immutable evidence');
+const bytes=readFileSync(resolve(actual,'public/assets/steelworks/transport/manifest.json'));
+if(createHash('sha256').update(bytes).digest('hex')!==process.env.STEELFLOW_TRANSPORT_MANIFEST_SHA)throw new Error('Wrong pinned transport manifest');
+export default defineConfig({publicDir:resolve(actual,'public'),cacheDir:resolve(run,'vite-cache'),server:{host:'127.0.0.1',strictPort:true},build:{outDir:resolve(run,'dist'),rollupOptions:{input:resolve('tests/fixtures/transport/index.html')}}});

@@ -1,0 +1,86 @@
+{
+  "readOnly": true,
+  "observations": [
+    {
+      "milestone": "partial",
+      "runId": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+      "revision": 539,
+      "elapsedMs": 449600,
+      "deliveredKg": 40200,
+      "remainingKg": 20100,
+      "shipments": [
+        {
+          "run_id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+          "id": "SHIP-ga-01",
+          "order_id": "ORD-ga",
+          "mode": "SEA",
+          "status": "DELIVERED",
+          "location_id": "OPS-CUSTOMER-BUFFER",
+          "capacity_kg": 100000,
+          "etd_at": "2026-10-30T07:14:00Z",
+          "eta_at": null,
+          "phase_start_ms": 446000,
+          "phase_end_ms": null,
+          "delivered_at": "2026-10-30T07:26:00Z"
+        },
+        {
+          "run_id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+          "id": "SHIP-ga-02",
+          "order_id": "ORD-ga",
+          "mode": "SEA",
+          "status": "ALLOCATED",
+          "location_id": "OPS-WAREHOUSE-BUFFER",
+          "capacity_kg": 100000,
+          "etd_at": null,
+          "eta_at": null,
+          "phase_start_ms": 426500,
+          "phase_end_ms": null,
+          "delivered_at": null
+        }
+      ],
+      "eventsFile": "http-partial-events.json",
+      "eventCount": 659
+    },
+    {
+      "milestone": "full",
+      "runId": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+      "revision": 554,
+      "elapsedMs": 473600,
+      "deliveredKg": 60300,
+      "remainingKg": 0,
+      "shipments": [
+        {
+          "run_id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+          "id": "SHIP-ga-01",
+          "order_id": "ORD-ga",
+          "mode": "SEA",
+          "status": "DELIVERED",
+          "location_id": "OPS-CUSTOMER-BUFFER",
+          "capacity_kg": 100000,
+          "etd_at": "2026-10-30T07:14:00Z",
+          "eta_at": null,
+          "phase_start_ms": 446000,
+          "phase_end_ms": null,
+          "delivered_at": "2026-10-30T07:26:00Z"
+        },
+        {
+          "run_id": "OPS-RUN-383d0a45fed64693859f71d200a74b1a",
+          "id": "SHIP-ga-02",
+          "order_id": "ORD-ga",
+          "mode": "SEA",
+          "status": "DELIVERED",
+          "location_id": "OPS-CUSTOMER-BUFFER",
+          "capacity_kg": 100000,
+          "etd_at": "2026-10-30T07:38:00Z",
+          "eta_at": null,
+          "phase_start_ms": 473000,
+          "phase_end_ms": null,
+          "delivered_at": "2026-10-30T07:53:00Z"
+        }
+      ],
+      "eventsFile": "http-full-events.json",
+      "eventCount": 670
+    }
+  ],
+  "notificationLimitation": "Tool output delivered partial and full together; partial pause notification was not timely. Root separately captured actualUIpartial at elapsed455800. No replay or mutation performed."
+}

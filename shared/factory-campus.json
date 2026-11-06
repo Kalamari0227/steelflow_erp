@@ -1,0 +1,573 @@
+{
+  "version": 1,
+  "land": {
+    "center": [
+      -10,
+      -2,
+      20
+    ],
+    "size": [
+      680,
+      1,
+      460
+    ]
+  },
+  "water": {
+    "center": [
+      385,
+      -1.9,
+      85
+    ],
+    "size": [
+      150,
+      0.2,
+      300
+    ]
+  },
+  "halls": [
+    {
+      "id": "hall-carbon-upstream",
+      "stage_id": "carbon-upstream",
+      "center": [
+        -230,
+        0,
+        -100
+      ],
+      "size": [
+        84,
+        9,
+        14
+      ],
+      "rotation": 0,
+      "kind": "hot"
+    },
+    {
+      "id": "hall-casting-slab",
+      "stage_id": "casting-slab",
+      "center": [
+        -135,
+        0,
+        -100
+      ],
+      "size": [
+        22,
+        9,
+        14
+      ],
+      "rotation": 0,
+      "kind": "hot"
+    },
+    {
+      "id": "hall-casting-bloom",
+      "stage_id": "casting-bloom",
+      "center": [
+        -135,
+        0,
+        -130
+      ],
+      "size": [
+        22,
+        9,
+        14
+      ],
+      "rotation": 0,
+      "kind": "hot"
+    },
+    {
+      "id": "hall-casting-billet",
+      "stage_id": "casting-billet",
+      "center": [
+        -135,
+        0,
+        -70
+      ],
+      "size": [
+        22,
+        9,
+        14
+      ],
+      "rotation": 0,
+      "kind": "hot"
+    },
+    {
+      "id": "hall-hr",
+      "stage_id": "hr",
+      "center": [
+        -55,
+        0,
+        -100
+      ],
+      "size": [
+        57,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "rolling"
+    },
+    {
+      "id": "hall-plate",
+      "stage_id": "plate",
+      "center": [
+        -55,
+        0,
+        -55
+      ],
+      "size": [
+        66,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "rolling"
+    },
+    {
+      "id": "hall-wire",
+      "stage_id": "wire",
+      "center": [
+        -65,
+        0,
+        -160
+      ],
+      "size": [
+        66,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "rolling"
+    },
+    {
+      "id": "hall-cr",
+      "stage_id": "cr",
+      "center": [
+        40,
+        0,
+        -105
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "rolling"
+    },
+    {
+      "id": "hall-gi",
+      "stage_id": "gi",
+      "center": [
+        120,
+        0,
+        -115
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": -1.5707963267948966,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-ga",
+      "stage_id": "ga",
+      "center": [
+        150,
+        0,
+        -110
+      ],
+      "size": [
+        76,
+        7,
+        14
+      ],
+      "rotation": -1.5707963267948966,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-hgi",
+      "stage_id": "hgi",
+      "center": [
+        95,
+        0,
+        -170
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-eg",
+      "stage_id": "eg",
+      "center": [
+        180,
+        0,
+        -115
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": -1.5707963267948966,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-go",
+      "stage_id": "go",
+      "center": [
+        25,
+        0,
+        -20
+      ],
+      "size": [
+        84,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-ngo",
+      "stage_id": "ngo",
+      "center": [
+        130,
+        0,
+        -15
+      ],
+      "size": [
+        60,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "finishing"
+    },
+    {
+      "id": "hall-sts-hr",
+      "stage_id": "sts-hr",
+      "center": [
+        -150,
+        0,
+        55
+      ],
+      "size": [
+        100,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-sts-cr",
+      "stage_id": "sts-cr",
+      "center": [
+        -30,
+        0,
+        60
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-sts-plate",
+      "stage_id": "sts-plate",
+      "center": [
+        -150,
+        0,
+        100
+      ],
+      "size": [
+        84,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-ti-hr",
+      "stage_id": "ti-hr",
+      "center": [
+        -140,
+        0,
+        160
+      ],
+      "size": [
+        60,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-ti-cr",
+      "stage_id": "ti-cr",
+      "center": [
+        -35,
+        0,
+        160
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-ti-sheet",
+      "stage_id": "ti-sheet",
+      "center": [
+        70,
+        0,
+        160
+      ],
+      "size": [
+        68,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-ti-plate",
+      "stage_id": "ti-plate",
+      "center": [
+        -140,
+        0,
+        200
+      ],
+      "size": [
+        60,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "specialty"
+    },
+    {
+      "id": "hall-hot-rolling-reserve",
+      "stage_id": "hot-rolling-reserve",
+      "center": [
+        -50,
+        0,
+        -82
+      ],
+      "size": [
+        12,
+        7,
+        14
+      ],
+      "rotation": 0,
+      "kind": "rolling"
+    },
+    {
+      "id": "facility-final-inspection",
+      "stage_id": "logistics",
+      "center": [
+        220.0,
+        0,
+        -5.0
+      ],
+      "size": [
+        8,
+        1,
+        12
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-packaging",
+      "stage_id": "logistics",
+      "center": [
+        230.0,
+        0,
+        -5.0
+      ],
+      "size": [
+        8,
+        1,
+        12
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-warehouse",
+      "stage_id": "logistics",
+      "center": [
+        270.0,
+        0,
+        17.0
+      ],
+      "size": [
+        58,
+        6,
+        28
+      ],
+      "rotation": 0,
+      "kind": "warehouse"
+    },
+    {
+      "id": "facility-port",
+      "stage_id": "logistics",
+      "center": [
+        290.0,
+        0,
+        87.0
+      ],
+      "size": [
+        58,
+        1,
+        28
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-ship",
+      "stage_id": "logistics",
+      "center": [
+        330.0,
+        0,
+        80.0
+      ],
+      "size": [
+        8,
+        1,
+        12
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-customer",
+      "stage_id": "logistics",
+      "center": [
+        395.0,
+        0,
+        167.0
+      ],
+      "size": [
+        58,
+        1,
+        28
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-ore-source",
+      "stage_id": "sources",
+      "center": [
+        -305.0,
+        0,
+        -93.0
+      ],
+      "size": [
+        58,
+        1,
+        28
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-scrap-source",
+      "stage_id": "sources",
+      "center": [
+        -250.0,
+        0,
+        72.0
+      ],
+      "size": [
+        58,
+        1,
+        28
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    },
+    {
+      "id": "facility-ti-source",
+      "stage_id": "sources",
+      "center": [
+        -240.0,
+        0,
+        182.0
+      ],
+      "size": [
+        58,
+        1,
+        28
+      ],
+      "rotation": 0,
+      "kind": "yard"
+    }
+  ],
+  "roads": [],
+  "districts": [
+    {
+      "id": "carbon",
+      "label": "탄소강 제선·연주·압연",
+      "position": [
+        -205,
+        0,
+        -150
+      ]
+    },
+    {
+      "id": "finishing",
+      "label": "냉연·도금·전기강판",
+      "position": [
+        110,
+        0,
+        -45
+      ]
+    },
+    {
+      "id": "stainless",
+      "label": "스테인리스 제강·압연",
+      "position": [
+        -150,
+        0,
+        30
+      ]
+    },
+    {
+      "id": "titanium",
+      "label": "티타늄 압연·정정",
+      "position": [
+        -120,
+        0,
+        135
+      ]
+    },
+    {
+      "id": "logistics",
+      "label": "검사·포장·항만 출하",
+      "position": [
+        245,
+        0,
+        45
+      ]
+    }
+  ]
+}

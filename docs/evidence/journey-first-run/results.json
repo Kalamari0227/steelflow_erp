@@ -1,0 +1,541 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test",
+      "tests/journey.spec.ts"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:5174",
+          "trace": "on",
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1440,
+              "height": 1000
+            }
+          },
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journey.spec.ts",
+      "file": "journey.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all 17 routes complete their exact forms with one stable lineage and no early transformations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:40:54.897Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-all-17-routes-comp-82d8d-nd-no-early-transformations/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-all-17-routes-comp-82d8d-nd-no-early-transformations/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-e5f6187eb9b97b3d93ed",
+          "file": "journey.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "all eight product families render distinct selectable 3D miniatures",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7689,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:41:16.512Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-all-eight-product--f09d3-ct-selectable-3D-miniatures/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-all-eight-product--f09d3-ct-selectable-3D-miniatures/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-5fb9a039d53273250866",
+          "file": "journey.spec.ts",
+          "line": 112,
+          "column": 1
+        },
+        {
+          "title": "real material and equipment meshes select and motion freezes, resumes at speed and resets",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5067,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m64\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m64\u001b[39m\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:151:141",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                      "column": 141,
+                      "line": 151
+                    },
+                    "snippet": "  149 |   const resumed = await command(page, '일시정지', 'pause'); expect(resumed.speed).toBe(4); expect(resumed.elapsed_ms - paused.elapsed_ms).toBeGreaterThanOrEqual(1600);\n  150 |   const reset = await command(page, '처음부터', 'reset'); expect(reset.material).toEqual(initial.material); expect(reset.elapsed_ms).toBe(0);\n> 151 |   const resetImage = await capture(page, 'motion-reset'); const resetDiff = await diff(page, baseline, resetImage); expect(resetDiff.count).toBe(0);\n      |                                                                                                                                             ^\n  152 |   await save('motion', { movement, pause, resetDiff, paused, resumed });\n  153 | });\n  154 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                        "column": 141,
+                        "line": 151
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m64\u001b[39m\n\n  149 |   const resumed = await command(page, '일시정지', 'pause'); expect(resumed.speed).toBe(4); expect(resumed.elapsed_ms - paused.elapsed_ms).toBeGreaterThanOrEqual(1600);\n  150 |   const reset = await command(page, '처음부터', 'reset'); expect(reset.material).toEqual(initial.material); expect(reset.elapsed_ms).toBe(0);\n> 151 |   const resetImage = await capture(page, 'motion-reset'); const resetDiff = await diff(page, baseline, resetImage); expect(resetDiff.count).toBe(0);\n      |                                                                                                                                             ^\n  152 |   await save('motion', { movement, pause, resetDiff, paused, resumed });\n  153 | });\n  154 |\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:151:141"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:41:24.980Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/test-failed-1.png"
+                    },
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-real-material-and--7574e-resumes-at-speed-and-resets/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                    "column": 141,
+                    "line": 151
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-d3e1b42ea3df663fb53f",
+          "file": "journey.spec.ts",
+          "line": 126,
+          "column": 1
+        },
+        {
+          "title": "390px keyboard controls and WebGL loss preserve complete 2D tracking",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13073,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\nExpected: \u001b[32m\"\u001b[7mtru\u001b[27me\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mfals\u001b[27me\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-pressed=\"false\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"false\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\nExpected: \u001b[32m\"\u001b[7mtru\u001b[27me\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mfals\u001b[27me\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-pressed=\"false\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"false\"\u001b[22m\n\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:165:80",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                      "column": 80,
+                      "line": 165
+                    },
+                    "snippet": "  163 |   await page.getByLabel('제조 경로', { exact: true }).selectOption('ti-sheet');\n  164 |   const stage = page.getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4);\n> 165 |   await stage.focus(); await page.keyboard.press('Enter'); await expect(stage).toHaveAttribute('aria-pressed', 'true');\n      |                                                                                ^\n  166 |   await expect(page.getByRole('region', { name: '선택 공정 설명' })).toContainText('진공');\n  167 |   await command(page, '다음 단계', 'step'); await expect(passport(page)).toContainText('MATERIAL-ti-sheet:1');\n  168 |   const layout = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth })); expect(layout.document).toBeLessThanOrEqual(layout.viewport);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                        "column": 80,
+                        "line": 165
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\nExpected: \u001b[32m\"\u001b[7mtru\u001b[27me\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mfals\u001b[27me\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4)\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-pressed=\"false\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"false\"\u001b[22m\n\n\n  163 |   await page.getByLabel('제조 경로', { exact: true }).selectOption('ti-sheet');\n  164 |   const stage = page.getByRole('navigation', { name: '제품 제조 단계' }).getByRole('button').nth(4);\n> 165 |   await stage.focus(); await page.keyboard.press('Enter'); await expect(stage).toHaveAttribute('aria-pressed', 'true');\n      |                                                                                ^\n  166 |   await expect(page.getByRole('region', { name: '선택 공정 설명' })).toContainText('진공');\n  167 |   await command(page, '다음 단계', 'step'); await expect(passport(page)).toContainText('MATERIAL-ti-sheet:1');\n  168 |   const layout = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth })); expect(layout.document).toBeLessThanOrEqual(layout.viewport);\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:165:80"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:41:30.849Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/test-failed-1.png"
+                    },
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-390px-keyboard-con-9fb63-eserve-complete-2D-tracking/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                    "column": 80,
+                    "line": 165
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-935ea57b27e661bca78d",
+          "file": "journey.spec.ts",
+          "line": 155,
+          "column": 1
+        },
+        {
+          "title": "connection failure freezes the actual scene and retry restores authoritative state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:41:44.568Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-connection-failure-3bbc6-estores-authoritative-state/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-connection-failure-3bbc6-estores-authoritative-state/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-264d5797c0b291eec9bb",
+          "file": "journey.spec.ts",
+          "line": 172,
+          "column": 1
+        },
+        {
+          "title": "reduced motion does not interpolate while real snapshot reads are delayed",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2444,
+                  "error": {
+                    "message": "Error: route.continue: Route is already handled!",
+                    "stack": "Error: route.continue: Route is already handled!\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:191:90",
+                    "location": {
+                      "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                      "column": 90,
+                      "line": 191
+                    },
+                    "snippet": "  189 |   await expect(page.locator('canvas')).toBeVisible();\n  190 |   let release: (() => void) | undefined; const gate = new Promise<void>(resolve => { release = resolve; });\n> 191 |   await page.route('**/api/v1/journey', async route => { await gate; await route.continue(); });\n      |                                                                                          ^\n  192 |   try {\n  193 |     await command(page, '재생', 'play'); const first = await capture(page, 'reduced-first');\n  194 |     await page.waitForTimeout(500); const second = await capture(page, 'reduced-second'); const frozen = await diff(page, first, second); expect(frozen.count).toBe(0);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                        "column": 90,
+                        "line": 191
+                      },
+                      "message": "Error: route.continue: Route is already handled!\n\n  189 |   await expect(page.locator('canvas')).toBeVisible();\n  190 |   let release: (() => void) | undefined; const gate = new Promise<void>(resolve => { release = resolve; });\n> 191 |   await page.route('**/api/v1/journey', async route => { await gate; await route.continue(); });\n      |                                                                                          ^\n  192 |   try {\n  193 |     await command(page, '재생', 'play'); const first = await capture(page, 'reduced-first');\n  194 |     await page.waitForTimeout(500); const second = await capture(page, 'reduced-second'); const frozen = await diff(page, first, second); expect(frozen.count).toBe(0);\n    at /Users/ethanlee/Desktop/ERP/tests/journey.spec.ts:191:90"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T09:41:47.985Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/test-failed-1.png"
+                    },
+                    {
+                      "name": "journey-browser-health",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOltdLCJleHRlcm5hbCI6W119"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/journey-reduced-motion-doe-f4401--snapshot-reads-are-delayed/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ethanlee/Desktop/ERP/tests/journey.spec.ts",
+                    "column": 90,
+                    "line": 191
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bf222bad70f76648f722-00f9c5eb43c3347ce06d",
+          "file": "journey.spec.ts",
+          "line": 187,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T09:40:53.299Z",
+    "duration": 57344.121,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

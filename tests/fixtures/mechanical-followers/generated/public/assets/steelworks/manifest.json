@@ -1,0 +1,3758 @@
+{
+  "schema_version": 1,
+  "purpose": "production",
+  "assets": [
+    {
+      "id": "fixture:mechanical-followers:CS-HR-03",
+      "family": "hot-rolling",
+      "category": "equipment",
+      "kind": "roughing",
+      "variant": "variant:roughing:CS-HR-03",
+      "requirement_ids": [
+        "scope:asset-family:roughing",
+        "src:hr-03"
+      ],
+      "qa_row_ids": [
+        "qa:variant:roughing:CS-HR-03",
+        "qa:equipment:CS-HR-03"
+      ],
+      "placement_ids": [
+        "equipment:CS-HR-03"
+      ],
+      "source_refs": [
+        {
+          "id": "scope:asset-family:roughing",
+          "uri": "tests/fixtures/mechanical-followers/recipe.json",
+          "note": "Synthetic miniature shared-mechanism fixture. Not a completed manufacturing asset or scheduler."
+        }
+      ],
+      "coordinate_system": {
+        "length": "m",
+        "up": "+Y",
+        "forward": "+X",
+        "handedness": "right",
+        "angle": "rad"
+      },
+      "root_node_id": "root",
+      "nodes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "locator": "root",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roll_frame",
+          "parent_id": "root",
+          "locator": "root/roll_frame",
+          "transform": {
+            "position_m": [
+              0.2,
+              0.1,
+              -0.3
+            ],
+            "rotation_xyzw": [
+              0,
+              0.19866933079506122,
+              0,
+              0.9800665778412416
+            ]
+          }
+        },
+        {
+          "id": "support_bed",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/support_bed",
+          "transform": {
+            "position_m": [
+              0,
+              0.45,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_bearing_pedestal",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/left_bearing_pedestal",
+          "transform": {
+            "position_m": [
+              -2,
+              1.175,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_bearing_foot",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/left_bearing_foot",
+          "transform": {
+            "position_m": [
+              -2,
+              0.59,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "middle_bearing_pedestal",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/middle_bearing_pedestal",
+          "transform": {
+            "position_m": [
+              0.1,
+              0.975,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "middle_bearing_foot",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/middle_bearing_foot",
+          "transform": {
+            "position_m": [
+              0.1,
+              0.59,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_bearing_pedestal",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/right_bearing_pedestal",
+          "transform": {
+            "position_m": [
+              2.3,
+              0.975,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_bearing_foot",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/right_bearing_foot",
+          "transform": {
+            "position_m": [
+              2.3,
+              0.59,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll",
+          "transform": {
+            "position_m": [
+              -2,
+              1.8,
+              0
+            ],
+            "rotation_xyzw": [
+              0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_geometry",
+          "parent_id": "roughing_roll",
+          "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              -0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_barrel",
+          "parent_id": "roughing_roll_geometry",
+          "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_barrel",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_index",
+          "parent_id": "roughing_roll_geometry",
+          "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_index",
+          "transform": {
+            "position_m": [
+              0.15200000000000002,
+              0,
+              0.47
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_hub",
+          "parent_id": "roughing_roll_geometry",
+          "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_hub",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_bearing",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_bearing",
+          "transform": {
+            "position_m": [
+              -2,
+              1.8,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_1",
+          "transform": {
+            "position_m": [
+              -2,
+              0.95,
+              0
+            ],
+            "rotation_xyzw": [
+              0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1_geometry",
+          "parent_id": "roughing_roll_follower_1",
+          "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              -0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1_barrel",
+          "parent_id": "roughing_roll_follower_1_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_barrel",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1_index",
+          "parent_id": "roughing_roll_follower_1_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_index",
+          "transform": {
+            "position_m": [
+              0.15200000000000002,
+              0,
+              0.47
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1_hub",
+          "parent_id": "roughing_roll_follower_1_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_hub",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1_bearing",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_1_bearing",
+          "transform": {
+            "position_m": [
+              -2,
+              0.95,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_2",
+          "transform": {
+            "position_m": [
+              0.1,
+              1.4,
+              0
+            ],
+            "rotation_xyzw": [
+              0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2_geometry",
+          "parent_id": "roughing_roll_follower_2",
+          "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              -0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2_barrel",
+          "parent_id": "roughing_roll_follower_2_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_barrel",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2_index",
+          "parent_id": "roughing_roll_follower_2_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_index",
+          "transform": {
+            "position_m": [
+              0.30400000000000005,
+              0,
+              0.47
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2_hub",
+          "parent_id": "roughing_roll_follower_2_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_hub",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2_bearing",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_2_bearing",
+          "transform": {
+            "position_m": [
+              0.1,
+              1.4,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_3",
+          "transform": {
+            "position_m": [
+              2.3,
+              1.4,
+              0
+            ],
+            "rotation_xyzw": [
+              0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3_geometry",
+          "parent_id": "roughing_roll_follower_3",
+          "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              -0.15931820661424598,
+              0,
+              0,
+              0.9872272833756269
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3_barrel",
+          "parent_id": "roughing_roll_follower_3_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_barrel",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3_index",
+          "parent_id": "roughing_roll_follower_3_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_index",
+          "transform": {
+            "position_m": [
+              0.30400000000000005,
+              0,
+              0.47
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3_hub",
+          "parent_id": "roughing_roll_follower_3_geometry",
+          "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_hub",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3_bearing",
+          "parent_id": "roll_frame",
+          "locator": "root/roll_frame/roughing_roll_follower_3_bearing",
+          "transform": {
+            "position_m": [
+              2.3,
+              1.4,
+              -0.68
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pedestal",
+          "parent_id": "root",
+          "locator": "root/service_pedestal",
+          "transform": {
+            "position_m": [
+              -1.5,
+              0.775,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_bracket",
+          "parent_id": "root",
+          "locator": "root/service_bracket",
+          "transform": {
+            "position_m": [
+              -1.5,
+              1.6,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0.2246911776194415,
+              0.16472716280865693,
+              0.038569773662357726,
+              0.9596307670623286
+            ]
+          }
+        },
+        {
+          "id": "service_brace",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_brace",
+          "transform": {
+            "position_m": [
+              0,
+              -0.12,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pad",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_pad",
+          "transform": {
+            "position_m": [
+              0.12,
+              0,
+              0.08
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_origin",
+          "parent_id": "root",
+          "locator": "root/axis_origin",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_front",
+          "parent_id": "root",
+          "locator": "root/axis_front",
+          "transform": {
+            "position_m": [
+              1,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_up",
+          "parent_id": "root",
+          "locator": "root/axis_up",
+          "transform": {
+            "position_m": [
+              0,
+              1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_side",
+          "parent_id": "root",
+          "locator": "root/axis_side",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              -1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "sockets": [
+        {
+          "id": "support",
+          "node_id": "support_bed",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              -1,
+              0.1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "entry",
+          "node_id": "support_bed",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              -2.8,
+              0.1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "work",
+          "node_id": "support_bed",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0.7,
+              0.1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "exit",
+          "node_id": "support_bed",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              2.8,
+              0.1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.08,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "moving_parts": [
+        {
+          "id": "roughing_roll",
+          "node_id": "roughing_roll",
+          "function": "roughing_roll",
+          "role": "operational",
+          "motion": "rotation",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            -2,
+            1.8,
+            0
+          ],
+          "range": {
+            "min": 0,
+            "max": 12.566370614359172,
+            "rest": 0.35,
+            "unit": "rad"
+          },
+          "binding": {
+            "type": "clip",
+            "clock": "server_sim",
+            "phase": "work",
+            "progress_source": "server_phase_progress",
+            "pause": "hold",
+            "fault": "hold",
+            "rest": "range_rest",
+            "clip_id": "miniature.roughing_roll"
+          }
+        },
+        {
+          "id": "roughing_roll_follower_1",
+          "node_id": "roughing_roll_follower_1",
+          "function": "roughing_roll",
+          "role": "operational",
+          "motion": "rotation",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            -2,
+            0.95,
+            0
+          ],
+          "range": {
+            "min": -11.516370614359174,
+            "max": 1.0499999999999998,
+            "rest": 0.7,
+            "unit": "rad"
+          },
+          "binding": {
+            "type": "mechanical_follower",
+            "driver_part_id": "roughing_roll",
+            "ratio": -1
+          }
+        },
+        {
+          "id": "roughing_roll_follower_2",
+          "node_id": "roughing_roll_follower_2",
+          "function": "roughing_roll",
+          "role": "operational",
+          "motion": "rotation",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            0.1,
+            1.4,
+            0
+          ],
+          "range": {
+            "min": 0.7250000000000001,
+            "max": 7.008185307179587,
+            "rest": 0.9,
+            "unit": "rad"
+          },
+          "binding": {
+            "type": "mechanical_follower",
+            "driver_part_id": "roughing_roll",
+            "ratio": 0.5
+          }
+        },
+        {
+          "id": "roughing_roll_follower_3",
+          "node_id": "roughing_roll_follower_3",
+          "function": "roughing_roll",
+          "role": "operational",
+          "motion": "rotation",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            2.3,
+            1.4,
+            0
+          ],
+          "range": {
+            "min": -5.008185307179586,
+            "max": 1.2750000000000001,
+            "rest": 1.1,
+            "unit": "rad"
+          },
+          "binding": {
+            "type": "mechanical_follower",
+            "driver_part_id": "roughing_roll",
+            "ratio": -0.5
+          }
+        }
+      ],
+      "fixed_parts": [],
+      "cutaway": {
+        "roof_node_ids": [],
+        "interior_node_ids": [],
+        "retained_socket_ids": []
+      },
+      "materials": [
+        {
+          "id": "paint",
+          "model": "metallic-roughness",
+          "base_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0.12,
+          "roughness": 0.72,
+          "textures": [
+            {
+              "slot": "baseColor",
+              "texture_id": "paint_color"
+            }
+          ],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original paint",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "structure",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.097,
+            0.13,
+            0.15,
+            1
+          ],
+          "metallic": 0.72,
+          "roughness": 0.55,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original structure",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "exposed",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.42,
+            0.48,
+            0.5,
+            1
+          ],
+          "metallic": 0.9,
+          "roughness": 0.38,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original exposed",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "safety",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.62,
+            0.26,
+            0.045,
+            1
+          ],
+          "metallic": 0.25,
+          "roughness": 0.58,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original safety",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_red",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.65,
+            0.04,
+            0.02,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original marker_red",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_green",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.05,
+            0.4,
+            0.12,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original marker_green",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_blue",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.025,
+            0.12,
+            0.65,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Miniature original marker_blue",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "textures": [
+        {
+          "id": "paint_color",
+          "artifact": {
+            "status": "built",
+            "path": "assets/source/paint.png",
+            "sha256": "ee1212b9b847b6775fb21c26e872dd6c9a06cb82bcb6e5f30404487e26cf8123"
+          },
+          "color_space": "srgb",
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow T61 original fixture",
+            "title": "Original deterministic miniature paint",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "collision_proxies": [
+        {
+          "id": "body",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              1.3,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            9,
+            5,
+            6
+          ],
+          "purpose": "body",
+          "part_id": null,
+          "contact_socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ]
+        },
+        {
+          "id": "roughing_roll_sweep",
+          "node_id": "roll_frame",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              -2,
+              1.8,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            0.8,
+            0.8,
+            1.3
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "roughing_roll",
+          "contact_socket_ids": []
+        },
+        {
+          "id": "roughing_roll_follower_1_sweep",
+          "node_id": "roll_frame",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              -2,
+              0.95,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            0.8,
+            0.8,
+            1.3
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "roughing_roll_follower_1",
+          "contact_socket_ids": []
+        },
+        {
+          "id": "roughing_roll_follower_2_sweep",
+          "node_id": "roll_frame",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0.1,
+              1.4,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            1.56,
+            1.56,
+            1.3
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "roughing_roll_follower_2",
+          "contact_socket_ids": []
+        },
+        {
+          "id": "roughing_roll_follower_3_sweep",
+          "node_id": "roll_frame",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              2.3,
+              1.4,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            1.56,
+            1.56,
+            1.3
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "roughing_roll_follower_3",
+          "contact_socket_ids": []
+        }
+      ],
+      "lods": [
+        {
+          "level": 0,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/mechanical-followers/miniature-lod0.glb",
+            "sha256": "078ff4fffe04f5aff861f3d5ef79f22ad0ef5c485306e6ad645d72d94f064e5a"
+          },
+          "semantic_geometry_sha256": "fb03c3f922cc64691b147f66a54a1b3afd8807fe81b2f3f6bce3e98855c278fa",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_frame",
+              "parent_id": "root",
+              "locator": "root/roll_frame",
+              "transform": {
+                "position_m": [
+                  0.2,
+                  0.1,
+                  -0.3
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0.19866933079506122,
+                  0,
+                  0.9800665778412416
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.45,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.175,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_foot",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_foot",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_geometry",
+              "parent_id": "roughing_roll",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_barrel",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_index",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_hub",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_geometry",
+              "parent_id": "roughing_roll_follower_1",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_barrel",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_index",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_hub",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_geometry",
+              "parent_id": "roughing_roll_follower_2",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_barrel",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_index",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_hub",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2_bearing",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_geometry",
+              "parent_id": "roughing_roll_follower_3",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_barrel",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_index",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_hub",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3_bearing",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "roughing_roll",
+            "roughing_roll_follower_1",
+            "roughing_roll_follower_2",
+            "roughing_roll_follower_3"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 1,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/mechanical-followers/miniature-lod1.glb",
+            "sha256": "eca0a3c7d4c43b81a48337c06baa29348aa8272ee0ffbb7c4a76b09aa0347579"
+          },
+          "semantic_geometry_sha256": "d47d24322556862546e066dbf9c763041780fa31367cd11b729a3a506986c25d",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_frame",
+              "parent_id": "root",
+              "locator": "root/roll_frame",
+              "transform": {
+                "position_m": [
+                  0.2,
+                  0.1,
+                  -0.3
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0.19866933079506122,
+                  0,
+                  0.9800665778412416
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.45,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.175,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_foot",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_foot",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_geometry",
+              "parent_id": "roughing_roll",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_barrel",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_index",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_hub",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_geometry",
+              "parent_id": "roughing_roll_follower_1",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_barrel",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_index",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_hub",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_geometry",
+              "parent_id": "roughing_roll_follower_2",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_barrel",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_index",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_hub",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2_bearing",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_geometry",
+              "parent_id": "roughing_roll_follower_3",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_barrel",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_index",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_hub",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3_bearing",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "roughing_roll",
+            "roughing_roll_follower_1",
+            "roughing_roll_follower_2",
+            "roughing_roll_follower_3"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 2,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/mechanical-followers/miniature-lod2.glb",
+            "sha256": "5d4800c6940270d86921ad2b470808dcb8dbc9c3a2cb4ace2726b88310c7148a"
+          },
+          "semantic_geometry_sha256": "d908694569d4da9bb89cc885cf2fe9f286a6ca8e82f00b3c42c46c48b7fc2c1a",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_frame",
+              "parent_id": "root",
+              "locator": "root/roll_frame",
+              "transform": {
+                "position_m": [
+                  0.2,
+                  0.1,
+                  -0.3
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0.19866933079506122,
+                  0,
+                  0.9800665778412416
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.45,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.175,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/left_bearing_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "middle_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/middle_bearing_foot",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_pedestal",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_pedestal",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.975,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing_foot",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/right_bearing_foot",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  0.59,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_geometry",
+              "parent_id": "roughing_roll",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_barrel",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_index",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_hub",
+              "parent_id": "roughing_roll_geometry",
+              "locator": "root/roll_frame/roughing_roll/roughing_roll_geometry/roughing_roll_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  1.8,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_geometry",
+              "parent_id": "roughing_roll_follower_1",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_barrel",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_index",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_index",
+              "transform": {
+                "position_m": [
+                  0.15200000000000002,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_hub",
+              "parent_id": "roughing_roll_follower_1_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_1/roughing_roll_follower_1_geometry/roughing_roll_follower_1_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_1_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_1_bearing",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.95,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_geometry",
+              "parent_id": "roughing_roll_follower_2",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_barrel",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_index",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_hub",
+              "parent_id": "roughing_roll_follower_2_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_2/roughing_roll_follower_2_geometry/roughing_roll_follower_2_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_2_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_2_bearing",
+              "transform": {
+                "position_m": [
+                  0.1,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_geometry",
+              "parent_id": "roughing_roll_follower_3",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  -0.15931820661424598,
+                  0,
+                  0,
+                  0.9872272833756269
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_barrel",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_barrel",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_index",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_index",
+              "transform": {
+                "position_m": [
+                  0.30400000000000005,
+                  0,
+                  0.47
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_hub",
+              "parent_id": "roughing_roll_follower_3_geometry",
+              "locator": "root/roll_frame/roughing_roll_follower_3/roughing_roll_follower_3_geometry/roughing_roll_follower_3_hub",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roughing_roll_follower_3_bearing",
+              "parent_id": "roll_frame",
+              "locator": "root/roll_frame/roughing_roll_follower_3_bearing",
+              "transform": {
+                "position_m": [
+                  2.3,
+                  1.4,
+                  -0.68
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "roughing_roll",
+            "roughing_roll_follower_1",
+            "roughing_roll_follower_2",
+            "roughing_roll_follower_3"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        }
+      ],
+      "source": {
+        "artifact": {
+          "status": "built",
+          "path": "assets/source/miniature.blend",
+          "sha256": "ef0546087fb09570c9be339c337459e58a3836b0444611845ec827d140f0645a"
+        },
+        "provenance": {
+          "origin": "self_created",
+          "creator": "SteelFlow T61 original fixture",
+          "title": "Original editable independent miniature rolls",
+          "license": "project-owned",
+          "distribution_permission": "project-local",
+          "recipe": {
+            "status": "built",
+            "path": "assets/source/recipe.json",
+            "sha256": "830a12fa5b8a0698a4c79c86fbc533887dd57516c859015969d220c15fe115d2"
+          },
+          "third_party_inputs": []
+        }
+      },
+      "export": {
+        "tool": "Blender",
+        "version": "4.5.15",
+        "tool_artifact": {
+          "status": "built",
+          "path": "assets/toolchain.json",
+          "sha256": "c47db358bdf53ea856e10573f9db8766fea30ea1660cedaa86467781b5d0aa90"
+        },
+        "recipe": {
+          "status": "built",
+          "path": "assets/source/build.py",
+          "sha256": "2c1d9dcc014d7c83ba307ff72001833a830c591814aae3bede591477c9b85200"
+        },
+        "settings": {
+          "format": "GLB",
+          "y_up": true,
+          "apply_transforms": true,
+          "animations": true
+        },
+        "authoring_axes": {
+          "up": "+Z",
+          "forward": "+X"
+        },
+        "conversion_rotation_xyzw": [
+          -0.7071067811865476,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "world_boundary": "yaw_root_full_quaternion_internal"
+      }
+    }
+  ]
+}

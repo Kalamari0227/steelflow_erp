@@ -1,0 +1,1436 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://steelflow.local/schemas/asset-manifest-v1.json",
+  "title": "SteelFlow asset metadata contract v1",
+  "description": "Strict structural contract. The independent asset-requirements policy and runtime validator enforce cross-references, numeric normalization, immutable LOD semantics and production artifact completeness. Contract examples are not shipped assets or byte verification. T12 must inspect real artifacts.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "purpose": {
+      "enum": [
+        "contract_example",
+        "production"
+      ]
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      },
+      "minItems": 1,
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "schema_version",
+    "purpose",
+    "assets"
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+      "maxLength": 160
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}(?![\\s\\S])"
+    },
+    "localPath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9_./-]+(?![\\s\\S])",
+      "maxLength": 512
+    },
+    "httpsUrl": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+(?![\\s\\S])",
+      "maxLength": 2048
+    },
+    "artifact": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "const": "unbuilt"
+            },
+            "path": {
+              "$ref": "#/$defs/localPath"
+            }
+          },
+          "required": [
+            "status",
+            "path"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "const": "built"
+            },
+            "path": {
+              "$ref": "#/$defs/localPath"
+            },
+            "sha256": {
+              "$ref": "#/$defs/hash"
+            }
+          },
+          "required": [
+            "status",
+            "path",
+            "sha256"
+          ]
+        }
+      ]
+    },
+    "builtArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "built"
+        },
+        "path": {
+          "$ref": "#/$defs/localPath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      },
+      "required": [
+        "status",
+        "path",
+        "sha256"
+      ]
+    },
+    "provenance": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "const": "self_created"
+            },
+            "creator": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "license": {
+              "const": "project-owned"
+            },
+            "distribution_permission": {
+              "enum": [
+                "project-local",
+                "redistribution-authorized"
+              ]
+            },
+            "recipe": {
+              "$ref": "#/$defs/artifact"
+            },
+            "third_party_inputs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                "maxLength": 160
+              },
+              "minItems": 0,
+              "maxItems": 10000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "origin",
+            "creator",
+            "title",
+            "license",
+            "distribution_permission",
+            "recipe",
+            "third_party_inputs"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "const": "external"
+            },
+            "creator": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "license": {
+              "enum": [
+                "CC0-1.0",
+                "CC-BY-4.0"
+              ]
+            },
+            "source_url": {
+              "$ref": "#/$defs/httpsUrl"
+            },
+            "download_url": {
+              "$ref": "#/$defs/httpsUrl"
+            },
+            "license_url": {
+              "$ref": "#/$defs/httpsUrl"
+            },
+            "evidence": {
+              "$ref": "#/$defs/builtArtifact"
+            },
+            "original": {
+              "$ref": "#/$defs/builtArtifact"
+            },
+            "verified_at": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}(?![\\s\\S])"
+            },
+            "modification_note": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            },
+            "attribution": {
+              "$ref": "#/$defs/builtArtifact"
+            }
+          },
+          "required": [
+            "origin",
+            "creator",
+            "title",
+            "license",
+            "source_url",
+            "download_url",
+            "license_url",
+            "evidence",
+            "original",
+            "verified_at",
+            "modification_note",
+            "attribution"
+          ]
+        }
+      ]
+    },
+    "transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "position_m": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1000000000,
+            "maximum": 1000000000
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rotation_xyzw": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "position_m",
+        "rotation_xyzw"
+      ]
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "parent_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/localPath"
+        },
+        "transform": {
+          "$ref": "#/$defs/transform"
+        }
+      },
+      "required": [
+        "id",
+        "parent_id",
+        "locator",
+        "transform"
+      ]
+    },
+    "socket": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "role": {
+          "enum": [
+            "support",
+            "load",
+            "grip",
+            "entry",
+            "work",
+            "exit",
+            "coupler"
+          ]
+        },
+        "transform": {
+          "$ref": "#/$defs/transform"
+        },
+        "normal": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "forms": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "ORE",
+              "SCRAP",
+              "LIQUID_IRON",
+              "LIQUID_STEEL",
+              "SLAB",
+              "BLOOM",
+              "BILLET",
+              "INGOT",
+              "STRIP",
+              "PLATE",
+              "COIL",
+              "WIRE_COIL",
+              "PACKAGED"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "max_load_kg": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "role",
+        "transform",
+        "normal",
+        "forms",
+        "max_load_kg"
+      ]
+    },
+    "movingPart": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "function": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "role": {
+          "enum": [
+            "operational",
+            "decorative"
+          ]
+        },
+        "motion": {
+          "enum": [
+            "rotation",
+            "translation"
+          ]
+        },
+        "axis": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "pivot_m": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1000000000,
+            "maximum": 1000000000
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "range": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min": {
+              "type": "number",
+              "minimum": -1000000000,
+              "maximum": 1000000000
+            },
+            "max": {
+              "type": "number",
+              "minimum": -1000000000,
+              "maximum": 1000000000
+            },
+            "rest": {
+              "type": "number",
+              "minimum": -1000000000,
+              "maximum": 1000000000
+            },
+            "unit": {
+              "enum": [
+                "m",
+                "rad"
+              ]
+            }
+          },
+          "required": [
+            "min",
+            "max",
+            "rest",
+            "unit"
+          ]
+        },
+        "binding": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "const": "procedural"
+                },
+                "clock": {
+                  "const": "server_sim"
+                },
+                "phase": {
+                  "enum": [
+                    "entry",
+                    "work",
+                    "exit",
+                    "approach",
+                    "load",
+                    "travel",
+                    "unload",
+                    "return"
+                  ]
+                },
+                "progress_source": {
+                  "const": "server_phase_progress"
+                },
+                "pause": {
+                  "const": "hold"
+                },
+                "fault": {
+                  "const": "hold"
+                },
+                "rest": {
+                  "const": "range_rest"
+                },
+                "procedure_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                  "maxLength": 160
+                }
+              },
+              "required": [
+                "type",
+                "clock",
+                "phase",
+                "progress_source",
+                "pause",
+                "fault",
+                "rest",
+                "procedure_id"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "const": "clip"
+                },
+                "clock": {
+                  "const": "server_sim"
+                },
+                "phase": {
+                  "enum": [
+                    "entry",
+                    "work",
+                    "exit",
+                    "approach",
+                    "load",
+                    "travel",
+                    "unload",
+                    "return"
+                  ]
+                },
+                "progress_source": {
+                  "const": "server_phase_progress"
+                },
+                "pause": {
+                  "const": "hold"
+                },
+                "fault": {
+                  "const": "hold"
+                },
+                "rest": {
+                  "const": "range_rest"
+                },
+                "clip_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                  "maxLength": 160
+                }
+              },
+              "required": [
+                "type",
+                "clock",
+                "phase",
+                "progress_source",
+                "pause",
+                "fault",
+                "rest",
+                "clip_id"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "type": {
+                  "const": "mechanical_follower"
+                },
+                "driver_part_id": {
+                  "$ref": "#/$defs/id"
+                },
+                "ratio": {
+                  "type": "number",
+                  "anyOf": [
+                    {
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "exclusiveMaximum": 0
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "type",
+                "driver_part_id",
+                "ratio"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "function",
+        "role",
+        "motion",
+        "axis",
+        "pivot_m",
+        "range",
+        "binding"
+      ]
+    },
+    "fixedPart": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "function": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "binding": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/fixedBinding"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fixed_to_part_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "function",
+        "reason",
+        "binding"
+      ]
+    },
+    "material": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "model": {
+          "const": "metallic-roughness"
+        },
+        "base_color": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "metallic": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "roughness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "textures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "slot": {
+                "enum": [
+                  "baseColor",
+                  "normal",
+                  "metallicRoughness",
+                  "occlusion",
+                  "emissive"
+                ]
+              },
+              "texture_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                "maxLength": 160
+              }
+            },
+            "required": [
+              "slot",
+              "texture_id"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 10000
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "id",
+        "model",
+        "base_color",
+        "metallic",
+        "roughness",
+        "textures",
+        "provenance"
+      ]
+    },
+    "texture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "color_space": {
+          "enum": [
+            "srgb",
+            "linear"
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "id",
+        "artifact",
+        "color_space",
+        "provenance"
+      ]
+    },
+    "collision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "shape": {
+          "const": "box"
+        },
+        "transform": {
+          "$ref": "#/$defs/transform"
+        },
+        "size_m": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1000000000
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "purpose": {
+          "enum": [
+            "body",
+            "moving_sweep"
+          ]
+        },
+        "part_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contact_socket_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "maxItems": 10000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "node_id",
+        "shape",
+        "transform",
+        "size_m",
+        "purpose",
+        "part_id",
+        "contact_socket_ids"
+      ]
+    },
+    "lod": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "semantic_geometry_sha256": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "socket_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "part_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "material_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 1,
+          "maxItems": 10000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "level",
+        "artifact",
+        "semantic_geometry_sha256",
+        "nodes",
+        "socket_ids",
+        "part_ids",
+        "material_ids"
+      ]
+    },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "uri": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        }
+      },
+      "required": [
+        "id",
+        "uri",
+        "note"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "artifact",
+        "provenance"
+      ]
+    },
+    "export": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tool": {
+          "const": "Blender"
+        },
+        "version": {
+          "const": "4.5.15"
+        },
+        "tool_artifact": {
+          "$ref": "#/$defs/artifact"
+        },
+        "recipe": {
+          "$ref": "#/$defs/artifact"
+        },
+        "settings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "format": {
+              "const": "GLB"
+            },
+            "y_up": {
+              "const": true
+            },
+            "apply_transforms": {
+              "const": true
+            },
+            "animations": {
+              "const": true
+            }
+          },
+          "required": [
+            "format",
+            "y_up",
+            "apply_transforms",
+            "animations"
+          ]
+        },
+        "authoring_axes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "up": {
+              "const": "+Z"
+            },
+            "forward": {
+              "const": "+X"
+            }
+          },
+          "required": [
+            "up",
+            "forward"
+          ]
+        },
+        "conversion_rotation_xyzw": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "world_boundary": {
+          "const": "yaw_root_full_quaternion_internal"
+        }
+      },
+      "required": [
+        "tool",
+        "version",
+        "tool_artifact",
+        "recipe",
+        "settings",
+        "authoring_axes",
+        "conversion_rotation_xyzw",
+        "world_boundary"
+      ]
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "family": {
+          "enum": [
+            "steelmaking",
+            "hot-rolling",
+            "finishing",
+            "stainless",
+            "titanium",
+            "transport",
+            "campus"
+          ]
+        },
+        "category": {
+          "enum": [
+            "equipment",
+            "fleet",
+            "campus"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "variant": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 1,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "qa_row_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 1,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "placement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+            "maxLength": 160
+          },
+          "minItems": 1,
+          "maxItems": 10000,
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceRef"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "coordinate_system": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "length": {
+              "const": "m"
+            },
+            "up": {
+              "const": "+Y"
+            },
+            "forward": {
+              "const": "+X"
+            },
+            "handedness": {
+              "const": "right"
+            },
+            "angle": {
+              "const": "rad"
+            }
+          },
+          "required": [
+            "length",
+            "up",
+            "forward",
+            "handedness",
+            "angle"
+          ]
+        },
+        "root_node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+          "maxLength": 160
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "sockets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/socket"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "moving_parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/movingPart"
+          },
+          "minItems": 0,
+          "maxItems": 10000
+        },
+        "fixed_parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fixedPart"
+          },
+          "minItems": 0,
+          "maxItems": 10000
+        },
+        "cutaway": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "roof_node_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                "maxLength": 160
+              },
+              "minItems": 0,
+              "maxItems": 10000,
+              "uniqueItems": true
+            },
+            "interior_node_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                "maxLength": 160
+              },
+              "minItems": 0,
+              "maxItems": 10000,
+              "uniqueItems": true
+            },
+            "retained_socket_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*(?![\\s\\S])",
+                "maxLength": 160
+              },
+              "minItems": 0,
+              "maxItems": 10000,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "roof_node_ids",
+            "interior_node_ids",
+            "retained_socket_ids"
+          ]
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/material"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "textures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/texture"
+          },
+          "minItems": 0,
+          "maxItems": 10000
+        },
+        "collision_proxies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/collision"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "lods": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lod"
+          },
+          "minItems": 1,
+          "maxItems": 10000
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "export": {
+          "$ref": "#/$defs/export"
+        },
+        "internal_feeds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/internalFeed"
+          },
+          "minItems": 1,
+          "maxItems": 1
+        },
+        "motion_policy_id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "required": [
+        "id",
+        "family",
+        "category",
+        "kind",
+        "variant",
+        "requirement_ids",
+        "qa_row_ids",
+        "placement_ids",
+        "source_refs",
+        "coordinate_system",
+        "root_node_id",
+        "nodes",
+        "sockets",
+        "moving_parts",
+        "fixed_parts",
+        "cutaway",
+        "materials",
+        "textures",
+        "collision_proxies",
+        "lods",
+        "source",
+        "export"
+      ]
+    },
+    "fixedBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "operational_state"
+        },
+        "clock": {
+          "const": "server_sim"
+        },
+        "phase": {
+          "enum": [
+            "entry",
+            "work",
+            "exit",
+            "approach",
+            "load",
+            "travel",
+            "unload",
+            "return"
+          ]
+        },
+        "progress_source": {
+          "const": "server_phase_progress"
+        },
+        "pause": {
+          "const": "hold"
+        },
+        "fault": {
+          "const": "hold"
+        },
+        "rest": {
+          "const": "inactive"
+        },
+        "state_id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "required": [
+        "type",
+        "clock",
+        "phase",
+        "progress_source",
+        "pause",
+        "fault",
+        "rest",
+        "state_id"
+      ]
+    },
+    "internalFeed": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "const": "linear_roller_feed"
+        },
+        "custody_socket_id": {
+          "$ref": "#/$defs/id"
+        },
+        "driver_part_id": {
+          "$ref": "#/$defs/id"
+        },
+        "start_m": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "end_m": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rollers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "part_id": {
+                "$ref": "#/$defs/id"
+              },
+              "surface_node_id": {
+                "$ref": "#/$defs/id"
+              },
+              "radius_m": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "width_m": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "part_id",
+              "surface_node_id",
+              "radius_m",
+              "width_m"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 64
+        },
+        "support_lift_part_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "custody_socket_id",
+        "driver_part_id",
+        "start_m",
+        "end_m",
+        "rollers"
+      ]
+    }
+  }
+}

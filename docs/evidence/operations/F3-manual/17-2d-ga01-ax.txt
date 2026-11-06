@@ -1,0 +1,1442 @@
+Browser tab: 4, Title: "SteelFlow 3D — Operations twin", URL: "http://127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%222d%22%2C%22issue%22%3Anull%7D".
+0 AXWebArea SteelFlow 3D — Operations twin, URL: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%222d%22%2C%22issue%22%3Anull%7D
+	1 container root
+		2 link Description: 운영 화면으로 건너뛰기, Value: 127.0.0.1:4175/?nav=%7B%22selection%22%3A%7B%22run_id%22%3A%22OPS-RUN-383d0a45fed64693859f71d200a74b1a%22%2C%22order_id%22%3A%22ORD-ga%22%2C%22material_id%22%3A%22MAT-ga-01%22%7D%2C%22level%22%3A%22overview%22%2C%22followMaterial%22%3Atrue%2C%22cameraByScope%22%3A%7B%22overview%22%3A%7B%22position%22%3A%5B276.5%2C360.94%2C541%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A1.539417439416291%7D%2C%22stage%3Acarbon-upstream%22%3A%7B%22position%22%3A%5B2.261721242726864%2C58.75265260261867%2C138.88716757410333%5D%2C%22target%22%3A%5B36.5%2C0.94%2C101%5D%2C%22zoom%22%3A9.107328098632125%7D%7D%2C%22view%22%3A%222d%22%2C%22issue%22%3Anull%7D#main-content
+		3 container
+			4 text SteelFlow  OPERATIONS 합성 운영 데이터 · 로컬 시뮬레이션
+		5 container main-content
+			6 text ORDER TO DELIVERY
+			7 heading 통합 운영, Value: 1
+				8 text 통합 운영
+			9 text 주문에서 배송까지, 같은 소재의 흐름을 추적합니다.
+			10 text 일시 정지
+			11 container
+				12 text 2026-10-30 07:58:24+00:00  UTC
+			13 button (collapsed) 실행 정보, Secondary Actions: Expand
+				14 text 실행 정보
+			15 container 전체 운영 지표
+				16 text 진행 주문
+				17 container
+					18 text 2 건
+				19 text 생산 완료
+				20 container
+					21 text 407,300 kg
+				22 text 출고 완료
+				23 container
+					24 text 407,300 kg
+				25 text 배송 완료
+				26 container
+					27 text 367,300 kg
+			28 container 공통 실행 제어
+				29 button 재생
+					1581 image
+					31 text 재생
+				32 button 한 단계
+					33 image
+					34 text 한 단계
+				35 button 초기화, Help: 새 실행으로 초기화
+					36 image
+					37 text 초기화
+				38 container
+					39 text 속도
+					40 pop up button (collapsed, settable) Description: 실행 속도, Value: 4×, Secondary Actions: Expand
+						41 menu
+							42 1×
+							43 2×
+							44 (selected) 4×
+				45 container
+					46 text 시나리오
+					47 pop up button (collapsed, settable) Description: 시나리오, Value: 정상 운영, Secondary Actions: Expand
+						48 menu
+							49 (selected) 정상 운영
+							50 설비 지연
+							51 회복 운영
+				52 text 시나리오 변경·초기화는 새 실행을 시작합니다.
+				53 progress indicator Description: 전체 실행 진행률, Value: 478400
+			54 container 주문 탐색
+				55 heading 주문, Value: 2
+					56 text 주문
+				57 text 20 건
+				58 container
+					59 image
+					60 text field (settable) 주문 검색
+				61 container
+					62 checkbox ORD-billet 빌렛 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 20000 100%, Value: 0
+						63 text ORD-billet
+						64 text 빌렛
+						65 text Synthetic carbon customer
+						66 container
+							67 text 20,000  kg ·  SYNTHETIC-CS
+						68 progress indicator Description: ORD-billet 배송 완료율, Value: 20000
+						69 container
+							70 text 100 %
+					71 checkbox ORD-bloom 블룸 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 20000 100%, Value: 0
+						72 text ORD-bloom
+						73 text 블룸
+						74 text Synthetic carbon customer
+						75 container
+							76 text 20,000  kg ·  SYNTHETIC-CS
+						77 progress indicator Description: ORD-bloom 배송 완료율, Value: 20000
+						78 container
+							79 text 100 %
+					80 checkbox ORD-cr 냉연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 19900 100%, Value: 0
+						81 text ORD-cr
+						82 text 냉연 코일
+						83 text Synthetic carbon customer
+						84 container
+							85 text 19,900  kg ·  SYNTHETIC-CS
+						86 progress indicator Description: ORD-cr 배송 완료율, Value: 19900
+						87 container
+							88 text 100 %
+					89 checkbox ORD-eg EG · 전기아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 20100 100%, Value: 0
+						90 text ORD-eg
+						91 text EG · 전기아연
+						92 text Synthetic carbon customer
+						93 container
+							94 text 20,100  kg ·  SYNTHETIC-CS
+						95 progress indicator Description: ORD-eg 배송 완료율, Value: 20100
+						96 container
+							97 text 100 %
+					98 checkbox ORD-ga GA · 합금화아연 Synthetic carbon customer 60,300 kg · SYNTHETIC-CS 60300 100%, Value: 1
+						99 text ORD-ga
+						100 text GA · 합금화아연
+						101 text Synthetic carbon customer
+						102 container
+							103 text 60,300  kg ·  SYNTHETIC-CS
+						104 progress indicator Description: ORD-ga 배송 완료율, Value: 60300
+						105 container
+							106 text 100 %
+					107 checkbox ORD-gi GI · 용융아연 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 0 0%, Value: 0
+						108 text ORD-gi
+						109 text GI · 용융아연
+						110 text Synthetic carbon customer
+						111 container
+							112 text 20,100  kg ·  SYNTHETIC-CS
+						113 progress indicator Description: ORD-gi 배송 완료율, Value: 0
+						114 container
+							115 text 0 %
+					116 checkbox ORD-go 방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 19900 100%, Value: 0
+						117 text ORD-go
+						118 text 방향성 전기강판
+						119 text Synthetic carbon customer
+						120 container
+							121 text 19,900  kg ·  SYNTHETIC-CS
+						122 progress indicator Description: ORD-go 배송 완료율, Value: 19900
+						123 container
+							124 text 100 %
+					125 checkbox ORD-hgi HGI · 열연도금 Synthetic carbon customer 20,100 kg · SYNTHETIC-CS 20100 100%, Value: 0
+						126 text ORD-hgi
+						127 text HGI · 열연도금
+						128 text Synthetic carbon customer
+						129 container
+							130 text 20,100  kg ·  SYNTHETIC-CS
+						131 progress indicator Description: ORD-hgi 배송 완료율, Value: 20100
+						132 container
+							133 text 100 %
+					134 checkbox ORD-hr 열연 코일 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 19900 100%, Value: 0
+						135 text ORD-hr
+						136 text 열연 코일
+						137 text Synthetic carbon customer
+						138 container
+							139 text 19,900  kg ·  SYNTHETIC-CS
+						140 progress indicator Description: ORD-hr 배송 완료율, Value: 19900
+						141 container
+							142 text 100 %
+					143 checkbox ORD-ngo 무방향성 전기강판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 0 0%, Value: 0
+						144 text ORD-ngo
+						145 text 무방향성 전기강판
+						146 text Synthetic carbon customer
+						147 container
+							148 text 19,900  kg ·  SYNTHETIC-CS
+						149 progress indicator Description: ORD-ngo 배송 완료율, Value: 0
+						150 container
+							151 text 0 %
+					152 checkbox ORD-plate 열처리 후판 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 19900 100%, Value: 0
+						153 text ORD-plate
+						154 text 열처리 후판
+						155 text Synthetic carbon customer
+						156 container
+							157 text 19,900  kg ·  SYNTHETIC-CS
+						158 progress indicator Description: ORD-plate 배송 완료율, Value: 19900
+						159 container
+							160 text 100 %
+					161 checkbox ORD-slab 슬래브 Synthetic carbon customer 20,000 kg · SYNTHETIC-CS 20000 100%, Value: 0
+						162 text ORD-slab
+						163 text 슬래브
+						164 text Synthetic carbon customer
+						165 container
+							166 text 20,000  kg ·  SYNTHETIC-CS
+						167 progress indicator Description: ORD-slab 배송 완료율, Value: 20000
+						168 container
+							169 text 100 %
+					170 checkbox ORD-sts-cr 스테인리스 냉연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 19900 100%, Value: 0
+						171 text ORD-sts-cr
+						172 text 스테인리스 냉연
+						173 text Synthetic stainless customer
+						174 container
+							175 text 19,900  kg ·  SYNTHETIC-STS
+						176 progress indicator Description: ORD-sts-cr 배송 완료율, Value: 19900
+						177 container
+							178 text 100 %
+					179 checkbox ORD-sts-hr 스테인리스 열연 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 19900 100%, Value: 0
+						180 text ORD-sts-hr
+						181 text 스테인리스 열연
+						182 text Synthetic stainless customer
+						183 container
+							184 text 19,900  kg ·  SYNTHETIC-STS
+						185 progress indicator Description: ORD-sts-hr 배송 완료율, Value: 19900
+						186 container
+							187 text 100 %
+					188 checkbox ORD-sts-plate 스테인리스 후판 Synthetic stainless customer 19,900 kg · SYNTHETIC-STS 19900 100%, Value: 0
+						189 text ORD-sts-plate
+						190 text 스테인리스 후판
+						191 text Synthetic stainless customer
+						192 container
+							193 text 19,900  kg ·  SYNTHETIC-STS
+						194 progress indicator Description: ORD-sts-plate 배송 완료율, Value: 19900
+						195 container
+							196 text 100 %
+					197 checkbox ORD-ti-cr 티타늄 냉연 · 코일 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 11900 100%, Value: 0
+						198 text ORD-ti-cr
+						199 text 티타늄 냉연 · 코일
+						200 text Synthetic titanium customer
+						201 container
+							202 text 11,900  kg ·  SYNTHETIC-TI
+						203 progress indicator Description: ORD-ti-cr 배송 완료율, Value: 11900
+						204 container
+							205 text 100 %
+					206 checkbox ORD-ti-hr 티타늄 열연 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 11900 100%, Value: 0
+						207 text ORD-ti-hr
+						208 text 티타늄 열연
+						209 text Synthetic titanium customer
+						210 container
+							211 text 11,900  kg ·  SYNTHETIC-TI
+						212 progress indicator Description: ORD-ti-hr 배송 완료율, Value: 11900
+						213 container
+							214 text 100 %
+					215 checkbox ORD-ti-plate 티타늄 후판 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 11900 100%, Value: 0
+						216 text ORD-ti-plate
+						217 text 티타늄 후판
+						218 text Synthetic titanium customer
+						219 container
+							220 text 11,900  kg ·  SYNTHETIC-TI
+						221 progress indicator Description: ORD-ti-plate 배송 완료율, Value: 11900
+						222 container
+							223 text 100 %
+					224 checkbox ORD-ti-sheet 티타늄 냉연 · 시트 Synthetic titanium customer 11,900 kg · SYNTHETIC-TI 11900 100%, Value: 0
+						225 text ORD-ti-sheet
+						226 text 티타늄 냉연 · 시트
+						227 text Synthetic titanium customer
+						228 container
+							229 text 11,900  kg ·  SYNTHETIC-TI
+						230 progress indicator Description: ORD-ti-sheet 배송 완료율, Value: 11900
+						231 container
+							232 text 100 %
+					233 checkbox ORD-wire 선재 Synthetic carbon customer 19,900 kg · SYNTHETIC-CS 19900 100%, Value: 0
+						234 text ORD-wire
+						235 text 선재
+						236 text Synthetic carbon customer
+						237 container
+							238 text 19,900  kg ·  SYNTHETIC-CS
+						239 progress indicator Description: ORD-wire 배송 완료율, Value: 19900
+						240 container
+							241 text 100 %
+			242 container 공장 운영
+				243 heading 생산·물류 미니어처, Value: 2
+					244 image
+					245 text 생산·물류 미니어처
+				246 checkbox 3D, Value: 0
+					247 image
+					248 text 3D
+				249 checkbox 2D, Value: 1
+					250 image
+					251 text 2D
+				252 container 공장 탐색 경로
+					253 button 공장 전경
+					254 checkbox (settable, integer) Description: 소재 따라가기, Value: 1
+				255 container 공정 선택
+					256 checkbox 제선·제강, Value: 0
+					257 checkbox 슬래브 주조, Value: 0
+					258 checkbox 블룸 주조, Value: 0
+					259 checkbox 빌렛 주조, Value: 0
+					260 checkbox 열연, Value: 0
+					261 checkbox 후판, Value: 0
+					262 checkbox 선재, Value: 0
+					263 checkbox 냉연, Value: 0
+					264 checkbox 용융아연, Value: 0
+					265 checkbox 합금화아연, Value: 0
+					266 checkbox 열연도금, Value: 0
+					267 checkbox 전기아연, Value: 0
+					268 checkbox 방향성 전기강판, Value: 0
+					269 checkbox 무방향성 전기강판, Value: 0
+					270 checkbox 스테인리스 열연, Value: 0
+					271 checkbox 스테인리스 냉연, Value: 0
+					272 checkbox 스테인리스 후판, Value: 0
+					273 checkbox 티타늄 열연, Value: 0
+					274 checkbox 티타늄 냉연, Value: 0
+					275 checkbox 티타늄 박판, Value: 0
+					276 checkbox 티타늄 후판, Value: 0
+					277 checkbox 열연 예비 설비, Value: 0
+					278 checkbox 검사·재고·출하, Value: 0
+					279 checkbox 원료 공급, Value: 0
+				2267 container 2D 운영 자료
+					2268 container 운영 자료 종류
+						2269 checkbox 주문, Value: 0
+						2270 checkbox 소재, Value: 0
+						2271 checkbox 공정, Value: 1
+						2272 checkbox 운송, Value: 0
+						2273 checkbox 검사, Value: 0
+						2274 checkbox 출하, Value: 0
+					2275 text ORD-ga  · MAT-ga-01 31 건
+					2276 container 공정 표 스크롤
+						2277 table 공정 운영 현황
+							2278 container
+								2279 text 공정  운영 현황
+							2280 row
+								2281 cell
+									2282 text 대상
+								2283 cell
+									2284 text 상태
+								2285 cell
+									2286 text 위치 / 연결
+								2287 cell
+									2288 text 중량
+							2289 row
+								2290 cell
+									2291 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-02 상세, Value: 0
+								2292 cell
+									2293 text 완료
+									2294 text COMPLETED
+								2295 cell
+									2296 text 풀기 (CS-CR-02)
+								2297 cell
+									2298 text 20,100 kg
+							2299 row
+								2300 cell
+									2301 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-03 상세, Value: 0
+								2302 cell
+									2303 text 완료
+									2304 text COMPLETED
+								2305 cell
+									2306 text 산세 (CS-CR-03)
+								2307 cell
+									2308 text 20,100 kg
+							2309 row
+								2310 cell
+									2311 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-04 상세, Value: 0
+								2312 cell
+									2313 text 완료
+									2314 text COMPLETED
+								2315 cell
+									2316 text 냉간압연 (CS-CR-04)
+								2317 cell
+									2318 text 20,100 kg
+							2319 row
+								2320 cell
+									2321 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-05 상세, Value: 0
+								2322 cell
+									2323 text 완료
+									2324 text COMPLETED
+								2325 cell
+									2326 text 전해청정 (CS-CR-05)
+								2327 cell
+									2328 text 20,100 kg
+							2329 row
+								2330 cell
+									2331 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-06 상세, Value: 0
+								2332 cell
+									2333 text 완료
+									2334 text COMPLETED
+								2335 cell
+									2336 text 소둔로 (CS-CR-06)
+								2337 cell
+									2338 text 20,100 kg
+							2339 row
+								2340 cell
+									2341 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-07 상세, Value: 0
+								2342 cell
+									2343 text 완료
+									2344 text COMPLETED
+								2345 cell
+									2346 text 조질압연 (CS-CR-07)
+								2347 cell
+									2348 text 20,100 kg
+							2349 row
+								2350 cell
+									2351 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-08 상세, Value: 0
+								2352 cell
+									2353 text 완료
+									2354 text COMPLETED
+								2355 cell
+									2356 text 도유 (CS-CR-08)
+								2357 cell
+									2358 text 20,100 kg
+							2359 row
+								2360 cell
+									2361 checkbox Description: 공정 PROC-MAT-ga-01-ga:cr-09 상세, Value: 0
+								2362 cell
+									2363 text 완료
+									2364 text COMPLETED
+								2365 cell
+									2366 text 권취 (CS-CR-09)
+								2367 cell
+									2368 text 20,100 kg
+							2369 row
+								2370 cell
+									2371 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-bf 상세, Value: 0
+								2372 cell
+									2373 text 완료
+									2374 text COMPLETED
+								2375 cell
+									2376 text 고로 (BF-A)
+								2377 cell
+									2378 text 20,100 kg
+							2379 row
+								2380 cell
+									2381 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-bof 상세, Value: 0
+								2382 cell
+									2383 text 완료
+									2384 text COMPLETED
+								2385 cell
+									2386 text 전로 (BOF-A)
+								2387 cell
+									2388 text 20,100 kg
+							2389 row
+								2390 cell
+									2391 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-cast-slab 상세, Value: 0
+								2392 cell
+									2393 text 완료
+									2394 text COMPLETED
+								2395 cell
+									2396 text 연속주조 (CAST-SLAB)
+								2397 cell
+									2398 text 20,100 kg
+							2399 row
+								2400 cell
+									2401 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-charge 상세, Value: 0
+								2402 cell
+									2403 text 완료
+									2404 text COMPLETED
+								2405 cell
+									2406 text 원료 장입 (CHARGE-A)
+								2407 cell
+									2408 text 20,100 kg
+							2409 row
+								2410 cell
+									2411 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-cut-slab 상세, Value: 0
+								2412 cell
+									2413 text 완료
+									2414 text COMPLETED
+								2415 cell
+									2416 text 절단 (CUT-SLAB)
+								2417 cell
+									2418 text 20,100 kg
+							2419 row
+								2420 cell
+									2421 checkbox Description: 공정 PROC-MAT-ga-01-ga:cs-lf 상세, Value: 0
+								2422 cell
+									2423 text 완료
+									2424 text COMPLETED
+								2425 cell
+									2426 text 2차 정련 (LF-A)
+								2427 cell
+									2428 text 20,100 kg
+							2429 row
+								2430 cell
+									2431 checkbox Description: 공정 PROC-MAT-ga-01-ga:final-inspection 상세, Value: 0
+								2432 cell
+									2433 text 완료
+									2434 text COMPLETED
+								2435 cell
+									2436 text 제품 검사 (FINAL-INSPECTION)
+								2437 cell
+									2438 text 20,100 kg
+							2439 row
+								2440 cell
+									2441 checkbox Description: 공정 PROC-MAT-ga-01-ga:final-packaging 상세, Value: 0
+								2442 cell
+									2443 text 완료
+									2444 text COMPLETED
+								2445 cell
+									2446 text 제품 포장 (PACKAGING)
+								2447 cell
+									2448 text 20,100 kg
+							2449 row
+								2450 cell
+									2451 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-02 상세, Value: 0
+								2452 cell
+									2453 text 완료
+									2454 text COMPLETED
+								2455 cell
+									2456 text 풀기 (CS-GA-02)
+								2457 cell
+									2458 text 20,100 kg
+							2459 row
+								2460 cell
+									2461 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-03 상세, Value: 0
+								2462 cell
+									2463 text 완료
+									2464 text COMPLETED
+								2465 cell
+									2466 text 전처리 (CS-GA-03)
+								2467 cell
+									2468 text 20,100 kg
+							2469 row
+								2470 cell
+									2471 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-04 상세, Value: 0
+								2472 cell
+									2473 text 완료
+									2474 text COMPLETED
+								2475 cell
+									2476 text 소둔로 (CS-GA-04)
+								2477 cell
+									2478 text 20,100 kg
+							2479 row
+								2480 cell
+									2481 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-05 상세, Value: 0
+								2482 cell
+									2483 text 완료
+									2484 text COMPLETED
+								2485 cell
+									2486 text 도금욕 (CS-GA-05)
+								2487 cell
+									2488 text 20,100 kg
+							2489 row
+								2490 cell
+									2491 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-06 상세, Value: 0
+								2492 cell
+									2493 text 완료
+									2494 text COMPLETED
+								2495 cell
+									2496 text 합금화처리 (CS-GA-06)
+								2497 cell
+									2498 text 20,100 kg
+							2499 row
+								2500 cell
+									2501 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-07 상세, Value: 0
+								2502 cell
+									2503 text 완료
+									2504 text COMPLETED
+								2505 cell
+									2506 text 조질압연 (CS-GA-07)
+								2507 cell
+									2508 text 20,100 kg
+							2509 row
+								2510 cell
+									2511 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-08 상세, Value: 0
+								2512 cell
+									2513 text 완료
+									2514 text COMPLETED
+								2515 cell
+									2516 text 후처리 (CS-GA-08)
+								2517 cell
+									2518 text 20,100 kg
+							2519 row
+								2520 cell
+									2521 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-09 상세, Value: 0
+								2522 cell
+									2523 text 완료
+									2524 text COMPLETED
+								2525 cell
+									2526 text 도유 (CS-GA-09)
+								2527 cell
+									2528 text 20,100 kg
+							2529 row
+								2530 cell
+									2531 checkbox Description: 공정 PROC-MAT-ga-01-ga:ga-10 상세, Value: 0
+								2532 cell
+									2533 text 완료
+									2534 text COMPLETED
+								2535 cell
+									2536 text 권취 (CS-GA-10)
+								2537 cell
+									2538 text 20,100 kg
+							2539 row
+								2540 cell
+									2541 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-02 상세, Value: 0
+								2542 cell
+									2543 text 완료
+									2544 text COMPLETED
+								2545 cell
+									2546 text 가열로 (CS-HR-02)
+								2547 cell
+									2548 text 20,100 kg
+							2549 row
+								2550 cell
+									2551 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-03 상세, Value: 0
+								2552 cell
+									2553 text 완료
+									2554 text COMPLETED
+								2555 cell
+									2556 text 조압연 (CS-HR-03)
+								2557 cell
+									2558 text 20,100 kg
+							2559 row
+								2560 cell
+									2561 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-04 상세, Value: 0
+								2562 cell
+									2563 text 완료
+									2564 text COMPLETED
+								2565 cell
+									2566 text 열연 사상압연 A (HSM-A)
+								2567 cell
+									2568 text 20,100 kg
+							2569 row
+								2570 cell
+									2571 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-05 상세, Value: 0
+								2572 cell
+									2573 text 완료
+									2574 text COMPLETED
+								2575 cell
+									2576 text 냉각 (CS-HR-05)
+								2577 cell
+									2578 text 20,100 kg
+							2579 row
+								2580 cell
+									2581 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-06 상세, Value: 0
+								2582 cell
+									2583 text 완료
+									2584 text COMPLETED
+								2585 cell
+									2586 text 권취 (CS-HR-06)
+								2587 cell
+									2588 text 20,100 kg
+							2589 row
+								2590 cell
+									2591 checkbox Description: 공정 PROC-MAT-ga-01-ga:hr-07 상세, Value: 0
+								2592 cell
+									2593 text 완료
+									2594 text COMPLETED
+								2595 cell
+									2596 text 정정 (CS-HR-07)
+								2597 cell
+									2598 text 20,100 kg
+				281 heading ORD-ga 소재, Value: 2
+					282 text ORD-ga  소재
+				283 text 3 개 · 소비 이력 포함
+				718 checkbox MAT-ga-01 GA_COIL OPS-CUSTOMER-BUFFER · 20,100 kg, Value: 1
+					719 text MAT-ga-01
+					720 text GA_COIL
+					721 container
+						722 text OPS-CUSTOMER-BUFFER  ·  20,100  kg
+				723 checkbox MAT-ga-02 GA_COIL OPS-CUSTOMER-BUFFER · 20,100 kg, Value: 0
+					724 text MAT-ga-02
+					725 text GA_COIL
+					726 container
+						727 text OPS-CUSTOMER-BUFFER  ·  20,100  kg
+				728 checkbox MAT-ga-03 GA_COIL OPS-CUSTOMER-BUFFER · 20,100 kg, Value: 0
+					729 text MAT-ga-03
+					730 text GA_COIL
+					731 container
+						732 text OPS-CUSTOMER-BUFFER  ·  20,100  kg
+			395 container 소재 상세
+				396 heading 소재 상세, Value: 2
+					397 text 소재 상세
+				733 text 현재 소재
+				734 button 소재 선택 해제
+				735 text MATERIAL PASSPORT
+				736 heading MAT-ga-01, Value: 3
+					737 text MAT-ga-01
+				738 text 합금화아연도금 코일
+				739 container
+					740 text GA_COIL  ·  GA 주문 소재
+				741 container
+					742 text 20,100 kg
+				743 definition list
+					744 container 고객
+						745 text 고객
+					746 text Synthetic carbon customer
+					747 container 주문
+						748 text 주문
+					749 button ORD-ga
+					750 container 작업 지시
+						751 text 작업 지시
+					752 text WO-ga-01
+					753 container 생산 로트
+						754 text 생산 로트
+					755 text LOT-ga-01
+					756 container 현재 위치
+						757 text 현재 위치
+					758 container
+						759 button (collapsed) 고객 인도 · 대기장, Secondary Actions: Expand
+						760 text OPS-CUSTOMER-BUFFER
+					761 container 품질
+						762 text 품질
+					763 container
+						764 text 검사 합격 ( PASSED )
+					765 container 재고 상태
+						766 text 재고 상태
+					767 container
+						768 text 출고 ( SHIPPED )
+					769 container 현재 공정
+						770 text 현재 공정
+					1011 text 공정 대기 / 완료
+					772 container 납기 · UTC
+						773 text 납기 · UTC
+					774 text 2026-10-30 07:55:00
+				775 container
+					776 button (expanded) 소재 운송 · 0건 진행, Secondary Actions: Collapse
+						777 text 소재 운송 · 
+						778 text 0
+						779 text 건 진행
+					780 container 선택 소재 운송
+						2599 text 도착
+						2600 text TR-MAT-ga-01-PATH-PACKAGING--WAREHOUSE
+						2601 text  · 
+						2602 text ARRIVED
+						2603 text 롤러 이송
+						2604 text  · 
+						2605 text 20,100
+						2606 text  kg
+						2607 text 제품 포장 · 배출부
+						2608 text  → 
+						2609 text 제품 창고 · 투입부
+						2610 container
+							2611 text OPS-PACKAGING-EXIT  →  OPS-WAREHOUSE-ENTRY
+						2612 button 도착 공정 보기
+						2613 text 도착
+						2614 text TR-PROC-MAT-ga-01-ga:cr-02-PATH-CS-HR-07--CS-CR-02
+						2615 text  · 
+						2616 text ARRIVED
+						2617 text 소재 운반 트럭 (FLATBED-A)
+						2618 text  · 
+						2619 text 20,100
+						2620 text  kg
+						2621 text 정정 · 대기장
+						2622 text  → 
+						2623 text 풀기 · 투입부
+						2624 container
+							2625 text OPS-CS-HR-07-BUFFER  →  OPS-CS-CR-02-ENTRY
+						2626 button 도착 공정 보기
+						2627 text 도착
+						2628 text TR-PROC-MAT-ga-01-ga:cr-03-PATH-CS-CR-02--CS-CR-03
+						2629 text  · 
+						2630 text ARRIVED
+						2631 text 롤러 이송
+						2632 text  · 
+						2633 text 20,100
+						2634 text  kg
+						2635 text 풀기 · 배출부
+						2636 text  → 
+						2637 text 산세 · 투입부
+						2638 container
+							2639 text OPS-CS-CR-02-EXIT  →  OPS-CS-CR-03-ENTRY
+						2640 button 도착 공정 보기
+						2641 text 도착
+						2642 text TR-PROC-MAT-ga-01-ga:cr-04-PATH-CS-CR-03--CS-CR-04
+						2643 text  · 
+						2644 text ARRIVED
+						2645 text 롤러 이송
+						2646 text  · 
+						2647 text 20,100
+						2648 text  kg
+						2649 text 산세 · 배출부
+						2650 text  → 
+						2651 text 냉간압연 · 투입부
+						2652 container
+							2653 text OPS-CS-CR-03-EXIT  →  OPS-CS-CR-04-ENTRY
+						2654 button 도착 공정 보기
+						2655 text 도착
+						2656 text TR-PROC-MAT-ga-01-ga:cr-05-PATH-CS-CR-04--CS-CR-05
+						2657 text  · 
+						2658 text ARRIVED
+						2659 text 롤러 이송
+						2660 text  · 
+						2661 text 20,100
+						2662 text  kg
+						2663 text 냉간압연 · 배출부
+						2664 text  → 
+						2665 text 전해청정 · 투입부
+						2666 container
+							2667 text OPS-CS-CR-04-EXIT  →  OPS-CS-CR-05-ENTRY
+						2668 button 도착 공정 보기
+						2669 text 도착
+						2670 text TR-PROC-MAT-ga-01-ga:cr-06-PATH-CS-CR-05--CS-CR-06
+						2671 text  · 
+						2672 text ARRIVED
+						2673 text 롤러 이송
+						2674 text  · 
+						2675 text 20,100
+						2676 text  kg
+						2677 text 전해청정 · 배출부
+						2678 text  → 
+						2679 text 소둔로 · 투입부
+						2680 container
+							2681 text OPS-CS-CR-05-EXIT  →  OPS-CS-CR-06-ENTRY
+						2682 button 도착 공정 보기
+						2683 text 도착
+						2684 text TR-PROC-MAT-ga-01-ga:cr-07-PATH-CS-CR-06--CS-CR-07
+						2685 text  · 
+						2686 text ARRIVED
+						2687 text 롤러 이송
+						2688 text  · 
+						2689 text 20,100
+						2690 text  kg
+						2691 text 소둔로 · 배출부
+						2692 text  → 
+						2693 text 조질압연 · 투입부
+						2694 container
+							2695 text OPS-CS-CR-06-EXIT  →  OPS-CS-CR-07-ENTRY
+						2696 button 도착 공정 보기
+						2697 text 도착
+						2698 text TR-PROC-MAT-ga-01-ga:cr-08-PATH-CS-CR-07--CS-CR-08
+						2699 text  · 
+						2700 text ARRIVED
+						2701 text 롤러 이송
+						2702 text  · 
+						2703 text 20,100
+						2704 text  kg
+						2705 text 조질압연 · 배출부
+						2706 text  → 
+						2707 text 도유 · 투입부
+						2708 container
+							2709 text OPS-CS-CR-07-EXIT  →  OPS-CS-CR-08-ENTRY
+						2710 button 도착 공정 보기
+						2711 text 도착
+						2712 text TR-PROC-MAT-ga-01-ga:cr-09-PATH-CS-CR-08--CS-CR-09
+						2713 text  · 
+						2714 text ARRIVED
+						2715 text 롤러 이송
+						2716 text  · 
+						2717 text 20,100
+						2718 text  kg
+						2719 text 도유 · 배출부
+						2720 text  → 
+						2721 text 권취 · 투입부
+						2722 container
+							2723 text OPS-CS-CR-08-EXIT  →  OPS-CS-CR-09-ENTRY
+						2724 button 도착 공정 보기
+						2725 text 도착
+						2726 text TR-PROC-MAT-ga-01-ga:cs-bf-PATH-CHARGE-A--BF-A
+						2727 text  · 
+						2728 text ARRIVED
+						2729 text 롤러 이송
+						2730 text  · 
+						2731 text 20,100
+						2732 text  kg
+						2733 text 원료 장입 · 배출부
+						2734 text  → 
+						2735 text 고로 · 투입부
+						2736 container
+							2737 text OPS-CHARGE-A-EXIT  →  OPS-BF-A-ENTRY
+						2738 button 도착 공정 보기
+						2739 text 도착
+						2740 text TR-PROC-MAT-ga-01-ga:cs-bof-PATH-BF-A--BOF-A
+						2741 text  · 
+						2742 text ARRIVED
+						2743 text 용선 운반차 (TORPEDO-A)
+						2744 text  · 
+						2745 text 20,100
+						2746 text  kg
+						2747 text 고로 · 대기장
+						2748 text  → 
+						2749 text 전로 · 투입부
+						2750 container
+							2751 text OPS-BF-A-BUFFER  →  OPS-BOF-A-ENTRY
+						2752 button 도착 공정 보기
+						2753 text 도착
+						2754 text TR-PROC-MAT-ga-01-ga:cs-cast-slab-PATH-LF-A--CAST-SLAB
+						2755 text  · 
+						2756 text ARRIVED
+						2757 text 용강 운반차 (LADLE-A)
+						2758 text  · 
+						2759 text 20,100
+						2760 text  kg
+						2761 text 2차 정련 · 대기장
+						2762 text  → 
+						2763 text 연속주조 · 투입부
+						2764 container
+							2765 text OPS-LF-A-BUFFER  →  OPS-CAST-SLAB-ENTRY
+						2766 button 도착 공정 보기
+						2767 text 도착
+						2768 text TR-PROC-MAT-ga-01-ga:cs-charge-PATH-ORE-SOURCE--CHARGE-A
+						2769 text  · 
+						2770 text ARRIVED
+						2771 text 소재 운반 트럭 (FLATBED-A)
+						2772 text  · 
+						2773 text 20,100
+						2774 text  kg
+						2775 text 철광석 원료장 · 대기장
+						2776 text  → 
+						2777 text 원료 장입 · 투입부
+						2778 container
+							2779 text OPS-ORE-SOURCE-BUFFER  →  OPS-CHARGE-A-ENTRY
+						2780 button 도착 공정 보기
+						2781 text 도착
+						2782 text TR-PROC-MAT-ga-01-ga:cs-cut-slab-PATH-CAST-SLAB--CUT-SLAB
+						2783 text  · 
+						2784 text ARRIVED
+						2785 text 롤러 이송
+						2786 text  · 
+						2787 text 20,100
+						2788 text  kg
+						2789 text 연속주조 · 배출부
+						2790 text  → 
+						2791 text 절단 · 투입부
+						2792 container
+							2793 text OPS-CAST-SLAB-EXIT  →  OPS-CUT-SLAB-ENTRY
+						2794 button 도착 공정 보기
+						2795 text 도착
+						2796 text TR-PROC-MAT-ga-01-ga:cs-lf-PATH-BOF-A--LF-A
+						2797 text  · 
+						2798 text ARRIVED
+						2799 text 용강 운반차 (LADLE-A)
+						2800 text  · 
+						2801 text 20,100
+						2802 text  kg
+						2803 text 전로 · 대기장
+						2804 text  → 
+						2805 text 2차 정련 · 투입부
+						2806 container
+							2807 text OPS-BOF-A-BUFFER  →  OPS-LF-A-ENTRY
+						2808 button 도착 공정 보기
+						2809 text 도착
+						2810 text TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION
+						2811 text  · 
+						2812 text ARRIVED
+						2813 text 소재 운반 트럭 (FLATBED-A)
+						2814 text  · 
+						2815 text 20,100
+						2816 text  kg
+						2817 text 권취 · 대기장
+						2818 text  → 
+						2819 text 제품 검사 · 투입부
+						2820 container
+							2821 text OPS-CS-GA-10-BUFFER  →  OPS-FINAL-INSPECTION-ENTRY
+						2822 button 도착 공정 보기
+						2823 text 도착
+						2824 text TR-PROC-MAT-ga-01-ga:final-packaging-PATH-FINAL-INSPECTION--PACKAGING
+						2825 text  · 
+						2826 text ARRIVED
+						2827 text 롤러 이송
+						2828 text  · 
+						2829 text 20,100
+						2830 text  kg
+						2831 text 제품 검사 · 배출부
+						2832 text  → 
+						2833 text 제품 포장 · 투입부
+						2834 container
+							2835 text OPS-FINAL-INSPECTION-EXIT  →  OPS-PACKAGING-ENTRY
+						2836 button 도착 공정 보기
+						2837 text 도착
+						2838 text TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02
+						2839 text  · 
+						2840 text ARRIVED
+						2841 text 소재 운반 트럭 (FLATBED-A)
+						2842 text  · 
+						2843 text 20,100
+						2844 text  kg
+						2845 text 권취 · 대기장
+						2846 text  → 
+						2847 text 풀기 · 투입부
+						2848 container
+							2849 text OPS-CS-CR-09-BUFFER  →  OPS-CS-GA-02-ENTRY
+						2850 button 도착 공정 보기
+						2851 text 도착
+						2852 text TR-PROC-MAT-ga-01-ga:ga-03-PATH-CS-GA-02--CS-GA-03
+						2853 text  · 
+						2854 text ARRIVED
+						2855 text 롤러 이송
+						2856 text  · 
+						2857 text 20,100
+						2858 text  kg
+						2859 text 풀기 · 배출부
+						2860 text  → 
+						2861 text 전처리 · 투입부
+						2862 container
+							2863 text OPS-CS-GA-02-EXIT  →  OPS-CS-GA-03-ENTRY
+						2864 button 도착 공정 보기
+						2865 text 도착
+						2866 text TR-PROC-MAT-ga-01-ga:ga-04-PATH-CS-GA-03--CS-GA-04
+						2867 text  · 
+						2868 text ARRIVED
+						2869 text 롤러 이송
+						2870 text  · 
+						2871 text 20,100
+						2872 text  kg
+						2873 text 전처리 · 배출부
+						2874 text  → 
+						2875 text 소둔로 · 투입부
+						2876 container
+							2877 text OPS-CS-GA-03-EXIT  →  OPS-CS-GA-04-ENTRY
+						2878 button 도착 공정 보기
+						2879 text 도착
+						2880 text TR-PROC-MAT-ga-01-ga:ga-05-PATH-CS-GA-04--CS-GA-05
+						2881 text  · 
+						2882 text ARRIVED
+						2883 text 롤러 이송
+						2884 text  · 
+						2885 text 20,100
+						2886 text  kg
+						2887 text 소둔로 · 배출부
+						2888 text  → 
+						2889 text 도금욕 · 투입부
+						2890 container
+							2891 text OPS-CS-GA-04-EXIT  →  OPS-CS-GA-05-ENTRY
+						2892 button 도착 공정 보기
+						2893 text 도착
+						2894 text TR-PROC-MAT-ga-01-ga:ga-06-PATH-CS-GA-05--CS-GA-06
+						2895 text  · 
+						2896 text ARRIVED
+						2897 text 롤러 이송
+						2898 text  · 
+						2899 text 20,100
+						2900 text  kg
+						2901 text 도금욕 · 배출부
+						2902 text  → 
+						2903 text 합금화처리 · 투입부
+						2904 container
+							2905 text OPS-CS-GA-05-EXIT  →  OPS-CS-GA-06-ENTRY
+						2906 button 도착 공정 보기
+						2907 text 도착
+						2908 text TR-PROC-MAT-ga-01-ga:ga-07-PATH-CS-GA-06--CS-GA-07
+						2909 text  · 
+						2910 text ARRIVED
+						2911 text 롤러 이송
+						2912 text  · 
+						2913 text 20,100
+						2914 text  kg
+						2915 text 합금화처리 · 배출부
+						2916 text  → 
+						2917 text 조질압연 · 투입부
+						2918 container
+							2919 text OPS-CS-GA-06-EXIT  →  OPS-CS-GA-07-ENTRY
+						2920 button 도착 공정 보기
+						2921 text 도착
+						2922 text TR-PROC-MAT-ga-01-ga:ga-08-PATH-CS-GA-07--CS-GA-08
+						2923 text  · 
+						2924 text ARRIVED
+						2925 text 롤러 이송
+						2926 text  · 
+						2927 text 20,100
+						2928 text  kg
+						2929 text 조질압연 · 배출부
+						2930 text  → 
+						2931 text 후처리 · 투입부
+						2932 container
+							2933 text OPS-CS-GA-07-EXIT  →  OPS-CS-GA-08-ENTRY
+						2934 button 도착 공정 보기
+						2935 text 도착
+						2936 text TR-PROC-MAT-ga-01-ga:ga-09-PATH-CS-GA-08--CS-GA-09
+						2937 text  · 
+						2938 text ARRIVED
+						2939 text 롤러 이송
+						2940 text  · 
+						2941 text 20,100
+						2942 text  kg
+						2943 text 후처리 · 배출부
+						2944 text  → 
+						2945 text 도유 · 투입부
+						2946 container
+							2947 text OPS-CS-GA-08-EXIT  →  OPS-CS-GA-09-ENTRY
+						2948 button 도착 공정 보기
+						2949 text 도착
+						2950 text TR-PROC-MAT-ga-01-ga:ga-10-PATH-CS-GA-09--CS-GA-10
+						2951 text  · 
+						2952 text ARRIVED
+						2953 text 롤러 이송
+						2954 text  · 
+						2955 text 20,100
+						2956 text  kg
+						2957 text 도유 · 배출부
+						2958 text  → 
+						2959 text 권취 · 투입부
+						2960 container
+							2961 text OPS-CS-GA-09-EXIT  →  OPS-CS-GA-10-ENTRY
+						2962 button 도착 공정 보기
+						2963 text 도착
+						2964 text TR-PROC-MAT-ga-01-ga:hr-02-PATH-CUT-SLAB--CS-HR-02
+						2965 text  · 
+						2966 text ARRIVED
+						2967 text 소재 운반 트럭 (FLATBED-A)
+						2968 text  · 
+						2969 text 20,100
+						2970 text  kg
+						2971 text 절단 · 대기장
+						2972 text  → 
+						2973 text 가열로 · 투입부
+						2974 container
+							2975 text OPS-CUT-SLAB-BUFFER  →  OPS-CS-HR-02-ENTRY
+						2976 button 도착 공정 보기
+						2977 text 도착
+						2978 text TR-PROC-MAT-ga-01-ga:hr-03-PATH-CS-HR-02--CS-HR-03
+						2979 text  · 
+						2980 text ARRIVED
+						2981 text 롤러 이송
+						2982 text  · 
+						2983 text 20,100
+						2984 text  kg
+						2985 text 가열로 · 배출부
+						2986 text  → 
+						2987 text 조압연 · 투입부
+						2988 container
+							2989 text OPS-CS-HR-02-EXIT  →  OPS-CS-HR-03-ENTRY
+						2990 button 도착 공정 보기
+						2991 text 도착
+						2992 text TR-PROC-MAT-ga-01-ga:hr-04-PATH-CS-HR-03--HSM-A
+						2993 text  · 
+						2994 text ARRIVED
+						2995 text 롤러 이송
+						2996 text  · 
+						2997 text 20,100
+						2998 text  kg
+						2999 text 조압연 · 배출부
+						3000 text  → 
+						3001 text 열연 사상압연 A · 투입부
+						3002 container
+							3003 text OPS-CS-HR-03-EXIT  →  OPS-HSM-A-ENTRY
+						3004 button 도착 공정 보기
+						3005 text 도착
+						3006 text TR-PROC-MAT-ga-01-ga:hr-05-PATH-HSM-A--CS-HR-05
+						3007 text  · 
+						3008 text ARRIVED
+						3009 text 롤러 이송
+						3010 text  · 
+						3011 text 20,100
+						3012 text  kg
+						3013 text 열연 사상압연 A · 배출부
+						3014 text  → 
+						3015 text 냉각 · 투입부
+						3016 container
+							3017 text OPS-HSM-A-EXIT  →  OPS-CS-HR-05-ENTRY
+						3018 button 도착 공정 보기
+						3019 text 도착
+						3020 text TR-PROC-MAT-ga-01-ga:hr-06-PATH-CS-HR-05--CS-HR-06
+						3021 text  · 
+						3022 text ARRIVED
+						3023 text 롤러 이송
+						3024 text  · 
+						3025 text 20,100
+						3026 text  kg
+						3027 text 냉각 · 배출부
+						3028 text  → 
+						3029 text 권취 · 투입부
+						3030 container
+							3031 text OPS-CS-HR-05-EXIT  →  OPS-CS-HR-06-ENTRY
+						3032 button 도착 공정 보기
+						3033 text 도착
+						3034 text TR-PROC-MAT-ga-01-ga:hr-07-PATH-CS-HR-06--CS-HR-07
+						3035 text  · 
+						3036 text ARRIVED
+						3037 text 롤러 이송
+						3038 text  · 
+						3039 text 20,100
+						3040 text  kg
+						3041 text 권취 · 배출부
+						3042 text  → 
+						3043 text 정정 · 투입부
+						3044 container
+							3045 text OPS-CS-HR-06-EXIT  →  OPS-CS-HR-07-ENTRY
+						3046 button 도착 공정 보기
+				781 container
+					782 button (expanded) 변환 이력 · 30, Secondary Actions: Collapse
+						783 text 변환 이력 · 
+						784 text 30
+					785 content list
+						3047 container
+							3048 text 철광석 ORE  ·  MAT-ga-01:V01 20,000  kg
+						3049 container
+							3050 text 철광석 ORE  ·  MAT-ga-01:V02 20,000  kg
+						3051 container
+							3052 text 용선 HOT_METAL  ·  MAT-ga-01:V03 20,000  kg
+						3053 container
+							3054 text 용강 LIQUID_STEEL  ·  MAT-ga-01:V04 20,000  kg
+						3055 container
+							3056 text 용강 LIQUID_STEEL  ·  MAT-ga-01:V05 20,000  kg
+						3057 container
+							3058 text 슬래브 SLAB  ·  MAT-ga-01:V06 20,000  kg
+						3059 container
+							3060 text 슬래브 SLAB  ·  MAT-ga-01:V07 20,000  kg
+						3061 container
+							3062 text 가열 슬래브 HOT_SLAB  ·  MAT-ga-01:V08 20,000  kg
+						3063 container
+							3064 text 고온 스트립 HOT_STRIP  ·  MAT-ga-01:V09 20,000  kg
+						3065 container
+							3066 text 고온 스트립 HOT_STRIP  ·  MAT-ga-01:V10 20,000  kg
+						3067 container
+							3068 text 스트립 STRIP  ·  MAT-ga-01:V11 20,000  kg
+						3069 container
+							3070 text 열연 코일 HR_COIL  ·  MAT-ga-01:V12 20,000  kg
+						3071 container
+							3072 text 열연 코일 HR_COIL  ·  MAT-ga-01:V13 20,000  kg
+						3073 container
+							3074 text 스트립 STRIP  ·  MAT-ga-01:V14 20,000  kg
+						3075 container
+							3076 text 스트립 STRIP  ·  MAT-ga-01:V15 20,000  kg
+						3077 container
+							3078 text 박판 스트립 THIN_STRIP  ·  MAT-ga-01:V16 20,000  kg
+						3079 container
+							3080 text 박판 스트립 THIN_STRIP  ·  MAT-ga-01:V17 20,000  kg
+						3081 container
+							3082 text 박판 스트립 THIN_STRIP  ·  MAT-ga-01:V18 20,000  kg
+						3083 container
+							3084 text 박판 스트립 THIN_STRIP  ·  MAT-ga-01:V19 20,000  kg
+						3085 container
+							3086 text 박판 스트립 THIN_STRIP  ·  MAT-ga-01:V20 20,000  kg
+						3087 container
+							3088 text 냉연 코일 CR_COIL  ·  MAT-ga-01:V21 20,000  kg
+						3089 container
+							3090 text 스트립 STRIP  ·  MAT-ga-01:V22 20,000  kg
+						3091 container
+							3092 text 스트립 STRIP  ·  MAT-ga-01:V23 20,000  kg
+						3093 container
+							3094 text 스트립 STRIP  ·  MAT-ga-01:V24 20,000  kg
+						3095 container
+							3096 text 도금 스트립 COATED_STRIP  ·  MAT-ga-01:V25 20,200  kg
+						3097 container
+							3098 text 도금 스트립 COATED_STRIP  ·  MAT-ga-01:V26 20,200  kg
+						3099 container
+							3100 text 도금 스트립 COATED_STRIP  ·  MAT-ga-01:V27 20,100  kg
+						3101 container
+							3102 text 도금 스트립 COATED_STRIP  ·  MAT-ga-01:V28 20,100  kg
+						3103 container
+							3104 text 도금 스트립 COATED_STRIP  ·  MAT-ga-01:V29 20,100  kg
+						3105 container
+							3106 text 합금화아연도금 코일 GA_COIL  ·  MAT-ga-01:V30 20,100  kg
+				788 container
+					789 button (expanded) 검사 · 1, Secondary Actions: Collapse
+						790 text 검사 · 
+						791 text 1
+					3107 text 검사 합격 INSPECT-MAT-ga-01:V30  ·  PASSED 검사 대상  MAT-ga-01:V30
+				1409 container
+					1410 button (expanded) 연결 출하 · 1, Secondary Actions: Collapse
+						1411 text 연결 출하 · 
+						1412 text 1
+					3108 checkbox SHIP-ga-01 해상 · 배송 완료 (DELIVERED), Value: 0
+						3109 text SHIP-ga-01
+						3110 text 해상
+						3111 text  · 
+						3112 text 배송 완료
+						3113 text  (
+						3114 text DELIVERED
+						3115 text )
+			399 container 납기와 회복 비교
+				400 heading 납기와 회복 비교, Value: 2
+					401 text 납기와 회복 비교
+				402 text AI  미사용  · 실제 공정·물류 계산
+				403 heading 현재 실행 ETA · NORMAL, Value: 3
+					404 text 현재 실행 ETA ·  NORMAL
+				405 content list
+					414 container
+						415 text ORD-ga  ·  납기 내 ETA  2026-10-30 07:53:00 UTC 납기  2026-10-30 07:55:00 UTC
+				446 heading 동일 초기 계획의 새 실행 비교, Value: 3
+					447 text 동일 초기 계획의 새 실행 비교
+				448 text 시나리오 전환은 새 실행을 만듭니다. 납기는 모든 비교에서 동일합니다.
+				449 text HSM-B 우회: 배송 개선 이득 없음
+				450 text HSM-A 12분 중단 · 장애 1분 후 우회 검토 · 롤러 이동 5분과 실제 대기 포함 초기 계획 B 경유:  MAT-ga-01 현재 조건:  우회 또는 해당 가공 완료
+				451 content list
+					468 container
+						469 text ORD-ga DELAY  2026-10-30 07:52:00 UTC RECOVERY  2026-10-30 07:58:00 UTC 6분 더 늦음
+			492 container 주문 이행과 이벤트
+				493 heading 주문 이행 · ORD-ga, Value: 2
+					494 text 주문 이행 ·  ORD-ga
+				495 text 생산 → 품질 → 재고 → 출고 → 배송 주문량
+				796 container
+					797 text 60,300 kg
+				798 text 생산 완료
+				799 container
+					800 text 60,300 kg
+				801 text 출고 완료
+				802 container
+					803 text 60,300 kg
+				804 text 배송 완료
+				805 container
+					806 text 60,300 kg
+				807 text 출고 잔량
+				808 container
+					809 text 0 kg
+				810 text 배송 잔량
+				811 container
+					812 text 0 kg
+				496 heading 출하 연결, Value: 3
+					497 text 출하 연결
+				538 checkbox SHIP-ga-01 해상 · 배송 완료 (DELIVERED) 고객 인도 · 대기장 OPS-CUSTOMER-BUFFER, Value: 0
+					539 text SHIP-ga-01
+					540 text 해상
+					541 text  · 
+					542 text 배송 완료
+					543 text  (
+					544 text DELIVERED
+					545 text )
+					546 text 고객 인도 · 대기장
+					547 text OPS-CUSTOMER-BUFFER
+				548 checkbox SHIP-ga-02 해상 · 배송 완료 (DELIVERED) 고객 인도 · 대기장 OPS-CUSTOMER-BUFFER, Value: 0
+					549 text SHIP-ga-02
+					550 text 해상
+					551 text  · 
+					552 text 배송 완료
+					553 text  (
+					554 text DELIVERED
+					555 text )
+					556 text 고객 인도 · 대기장
+					557 text OPS-CUSTOMER-BUFFER
+				708 heading 현재 실행 이벤트, Value: 3
+					709 text 현재 실행 이벤트
+				852 content list
+					3116 container
+						3117 text # 3236 제품 적재 확인 MATERIAL_LOADED SHIP-ga-01 2026-10-30 07:18:00  UTC
+					3118 container
+						3119 text # 3214 제품 적재 확인 MATERIAL_LOADED SHIP-ga-01 2026-10-30 07:13:00  UTC
+					3120 container
+						3121 text # 3085 출하 가능 재고 등록 MATERIAL_AVAILABLE MAT-ga-01 2026-10-30 06:37:30  UTC
+					3122 container
+						3123 text # 3084 다음 공정 도착 TRANSFER_ARRIVED TR-MAT-ga-01-PATH-PACKAGING--WAREHOUSE 2026-10-30 06:37:30  UTC
+					3124 container
+						3125 text # 3083 공정 간 운송 시작 TRANSFER_STARTED TR-MAT-ga-01-PATH-PACKAGING--WAREHOUSE 2026-10-30 06:37:30  UTC
+					3126 container
+						3127 text # 3082 제품 포장 완료 PACKAGING_COMPLETED PROC-MAT-ga-01-ga:final-packaging 2026-10-30 06:37:30  UTC
+					3128 container
+						3129 text # 3080 제품 포장 시작 PACKAGING_STARTED PROC-MAT-ga-01-ga:final-packaging 2026-10-30 06:36:00  UTC
+					3130 container
+						3131 text # 3079 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:final-packaging-PATH-FINAL-INSPECTION--PACKAGING 2026-10-30 06:36:00  UTC
+					3132 container
+						3133 text # 3078 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:final-packaging-PATH-FINAL-INSPECTION--PACKAGING 2026-10-30 06:36:00  UTC
+					3134 container
+						3135 text # 3077 제품 검사 합격 INSPECTION_PASSED PROC-MAT-ga-01-ga:final-inspection 2026-10-30 06:36:00  UTC
+					3136 container
+						3137 text # 3073 제품 검사 시작 INSPECTION_STARTED PROC-MAT-ga-01-ga:final-inspection 2026-10-30 06:34:00  UTC
+					3138 container
+						3139 text # 3072 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION 2026-10-30 06:34:00  UTC
+					3140 container
+						3141 text # 3066 소재 하역 TRANSFER_UNLOADING TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION 2026-10-30 06:33:00  UTC
+					3142 container
+						3143 text # 3059 운반차 출발 TRANSFER_DEPARTED TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION 2026-10-30 06:30:00  UTC
+					3144 container
+						3145 text # 3052 소재 적재 TRANSFER_LOADING TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION 2026-10-30 06:29:00  UTC
+					3146 container
+						3147 text # 3051 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:final-inspection-PATH-CS-GA-10--FINAL-INSPECTION 2026-10-30 06:29:00  UTC
+					3148 container
+						3149 text # 2814 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:47:36  UTC
+					3150 container
+						3151 text # 2813 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-10 2026-10-30 05:47:36  UTC
+					3152 container
+						3153 text # 2790 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-10 2026-10-30 05:42:12  UTC
+					3154 container
+						3155 text # 2789 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-10-PATH-CS-GA-09--CS-GA-10 2026-10-30 05:42:12  UTC
+					3156 container
+						3157 text # 2788 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-10-PATH-CS-GA-09--CS-GA-10 2026-10-30 05:42:12  UTC
+					3158 container
+						3159 text # 2787 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:42:12  UTC
+					3160 container
+						3161 text # 2786 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-09 2026-10-30 05:42:12  UTC
+					3162 container
+						3163 text # 2756 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-09 2026-10-30 05:38:00  UTC
+					3164 container
+						3165 text # 2752 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-09-PATH-CS-GA-08--CS-GA-09 2026-10-30 05:38:00  UTC
+					3166 container
+						3167 text # 2751 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-09-PATH-CS-GA-08--CS-GA-09 2026-10-30 05:38:00  UTC
+					3168 container
+						3169 text # 2750 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:38:00  UTC
+					3170 container
+						3171 text # 2749 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-08 2026-10-30 05:38:00  UTC
+					3172 container
+						3173 text # 2732 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-08 2026-10-30 05:33:48  UTC
+					3174 container
+						3175 text # 2731 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-08-PATH-CS-GA-07--CS-GA-08 2026-10-30 05:33:48  UTC
+					3176 container
+						3177 text # 2730 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-08-PATH-CS-GA-07--CS-GA-08 2026-10-30 05:33:48  UTC
+					3178 container
+						3179 text # 2729 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:33:48  UTC
+					3180 container
+						3181 text # 2728 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-07 2026-10-30 05:33:48  UTC
+					3182 container
+						3183 text # 2705 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-07 2026-10-30 05:29:36  UTC
+					3184 container
+						3185 text # 2704 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-07-PATH-CS-GA-06--CS-GA-07 2026-10-30 05:29:36  UTC
+					3186 container
+						3187 text # 2703 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-07-PATH-CS-GA-06--CS-GA-07 2026-10-30 05:29:36  UTC
+					3188 container
+						3189 text # 2702 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:29:36  UTC
+					3190 container
+						3191 text # 2701 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-06 2026-10-30 05:29:36  UTC
+					3192 container
+						3193 text # 2668 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-06 2026-10-30 05:24:24  UTC
+					3194 container
+						3195 text # 2667 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-06-PATH-CS-GA-05--CS-GA-06 2026-10-30 05:24:24  UTC
+					3196 container
+						3197 text # 2666 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-06-PATH-CS-GA-05--CS-GA-06 2026-10-30 05:24:24  UTC
+					3198 container
+						3199 text # 2665 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:24:24  UTC
+					3200 container
+						3201 text # 2664 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-05 2026-10-30 05:24:24  UTC
+					3202 container
+						3203 text # 2635 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-05 2026-10-30 05:18:24  UTC
+					3204 container
+						3205 text # 2634 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-05-PATH-CS-GA-04--CS-GA-05 2026-10-30 05:18:24  UTC
+					3206 container
+						3207 text # 2633 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-05-PATH-CS-GA-04--CS-GA-05 2026-10-30 05:18:24  UTC
+					3208 container
+						3209 text # 2632 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:18:24  UTC
+					3210 container
+						3211 text # 2631 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-04 2026-10-30 05:18:24  UTC
+					3212 container
+						3213 text # 2592 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-04 2026-10-30 05:12:24  UTC
+					3214 container
+						3215 text # 2591 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-04-PATH-CS-GA-03--CS-GA-04 2026-10-30 05:12:24  UTC
+					3216 container
+						3217 text # 2590 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-04-PATH-CS-GA-03--CS-GA-04 2026-10-30 05:12:24  UTC
+					3218 container
+						3219 text # 2589 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:12:24  UTC
+					3220 container
+						3221 text # 2588 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-03 2026-10-30 05:12:24  UTC
+					3222 container
+						3223 text # 2572 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-03 2026-10-30 05:08:12  UTC
+					3224 container
+						3225 text # 2569 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-03-PATH-CS-GA-02--CS-GA-03 2026-10-30 05:08:12  UTC
+					3226 container
+						3227 text # 2568 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-03-PATH-CS-GA-02--CS-GA-03 2026-10-30 05:08:12  UTC
+					3228 container
+						3229 text # 2567 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 05:08:12  UTC
+					3230 container
+						3231 text # 2566 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:ga-02 2026-10-30 05:08:12  UTC
+					3232 container
+						3233 text # 2549 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:ga-02 2026-10-30 05:04:00  UTC
+					3234 container
+						3235 text # 2546 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02 2026-10-30 05:04:00  UTC
+					3236 container
+						3237 text # 2533 소재 하역 TRANSFER_UNLOADING TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02 2026-10-30 05:03:00  UTC
+					3238 container
+						3239 text # 2519 운반차 출발 TRANSFER_DEPARTED TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02 2026-10-30 05:00:00  UTC
+					3240 container
+						3241 text # 2517 소재 적재 TRANSFER_LOADING TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02 2026-10-30 04:59:00  UTC
+					3242 container
+						3243 text # 2516 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:ga-02-PATH-CS-CR-09--CS-GA-02 2026-10-30 04:59:00  UTC
+					3244 container
+						3245 text # 2189 공정 대기·중단 PROCESS_BLOCKED PROC-MAT-ga-01-ga:ga-02 2026-10-30 04:00:36  UTC
+					3246 container
+						3247 text # 2188 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 04:00:36  UTC
+					3248 container
+						3249 text # 2187 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:cr-09 2026-10-30 04:00:36  UTC
+					3250 container
+						3251 text # 2154 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:cr-09 2026-10-30 03:55:12  UTC
+					3252 container
+						3253 text # 2151 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:cr-09-PATH-CS-CR-08--CS-CR-09 2026-10-30 03:55:12  UTC
+					3254 container
+						3255 text # 2150 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cr-09-PATH-CS-CR-08--CS-CR-09 2026-10-30 03:55:12  UTC
+					3256 container
+						3257 text # 2149 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 03:55:12  UTC
+					3258 container
+						3259 text # 2148 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:cr-08 2026-10-30 03:55:12  UTC
+					3260 container
+						3261 text # 2138 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:cr-08 2026-10-30 03:51:00  UTC
+					3262 container
+						3263 text # 2131 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:cr-08-PATH-CS-CR-07--CS-CR-08 2026-10-30 03:51:00  UTC
+					3264 container
+						3265 text # 2130 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cr-08-PATH-CS-CR-07--CS-CR-08 2026-10-30 03:51:00  UTC
+					3266 container
+						3267 text # 2129 소재 형태 변환 MATERIAL_TRANSFORMED MAT-ga-01 2026-10-30 03:51:00  UTC
+					3268 container
+						3269 text # 2128 공정 완료 PROCESS_COMPLETED PROC-MAT-ga-01-ga:cr-07 2026-10-30 03:51:00  UTC
+					3270 container
+						3271 text # 2098 공정 시작 PROCESS_STARTED PROC-MAT-ga-01-ga:cr-07 2026-10-30 03:46:48  UTC
+					3272 container
+						3273 text # 2097 다음 공정 도착 TRANSFER_ARRIVED TR-PROC-MAT-ga-01-ga:cr-07-PATH-CS-CR-06--CS-CR-07 2026-10-30 03:46:48  UTC
+					3274 container
+						3275 text # 2096 공정 간 운송 시작 TRANSFER_STARTED TR-PROC-MAT-ga-01-ga:cr-07-PATH-CS-CR-06--CS-CR-07 2026-10-30 03:46:48  UTC
+				711 heading 보관된 실행 이력, Value: 3
+					712 text 보관된 실행 이력
+				713 button 실행 이력 불러오기
+			714 container
+				715 text 하나의 실행 · 서버 기준 시간 · kg / UTC AI  미사용  · 핵심 운영 독립 실행
+
+The focused UI element is 718 checkbox MAT-ga-01 GA_COIL OPS-CUSTOMER-BUFFER · 20,100 kg, Value: 1

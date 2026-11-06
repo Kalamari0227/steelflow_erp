@@ -1,0 +1,2 @@
+# This exact-byte fixture exceeds GitHub's regular Git file-size limit.
+shared/fixtures/finishing-continuity-cases.json filter=lfs diff=lfs merge=lfs -text

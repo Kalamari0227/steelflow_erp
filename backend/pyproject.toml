@@ -1,0 +1,13 @@
+[project]
+name = "steelflow-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.32,<1", "sqlalchemy[asyncio]>=2.0,<3", "aiosqlite>=0.20,<1", "alembic>=1.14,<2", "pydantic>=2.10,<3", "anyio>=4.6,<5"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx2>=0.28,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--strict-markers"

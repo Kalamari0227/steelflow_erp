@@ -1,0 +1,61 @@
+{
+  "url": "http://127.0.0.1:4175",
+  "root": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus",
+  "preservedPrevious": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-unified",
+  "copiedFrom": ".omo/evidence/20261025-factory-usability/qa/runtime-verified",
+  "health": {
+    "status": "ok",
+    "data": "synthetic"
+  },
+  "run": {
+    "id": "OPS-RUN-60a9e35f94c74b17a1917f81551c854e",
+    "fixture_version": "erp-v1",
+    "seed": 30,
+    "scenario_id": "NORMAL",
+    "elapsed_ms": 0,
+    "duration_ms": 1091800,
+    "revision": 0,
+    "event_sequence": 0,
+    "playing": false,
+    "speed": 1,
+    "epoch_at": "2026-10-30T00:00:00Z",
+    "started_at": "2026-10-24T22:49:46.206508Z",
+    "plan_revision": 0
+  },
+  "processes": [
+    {
+      "role": "backend",
+      "pid": 78583,
+      "argv": [
+        "/Users/ethanlee/Desktop/ERP/backend/.venv/bin/python",
+        "-m",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8002"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus/backend"
+    },
+    {
+      "role": "preview",
+      "pid": 78584,
+      "argv": [
+        "/Users/ethanlee/.local/share/mise/installs/node/lts/bin/node",
+        "--input-type=module",
+        "-e",
+        "import {preview} from \"file:///Users/ethanlee/Desktop/ERP/node_modules/vite/dist/node/index.js\"; await preview({\"configFile\": false, \"root\": \"/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus\", \"build\": {\"outDir\": \"dist\"}, \"preview\": {\"host\": \"127.0.0.1\", \"port\": 4175, \"strictPort\": true, \"proxy\": {\"/api\": \"http://127.0.0.1:8002\", \"/health\": \"http://127.0.0.1:8002\"}}});"
+      ],
+      "cwd": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus"
+    }
+  ],
+  "originalsPreserved": true,
+  "defaultDistPreserved": true,
+  "manualSurface": {
+    "status": "PASS",
+    "observed": ["retained overview", "carbon stage cutaway", "fit control", "GA order and material selection"],
+    "consoleWarningsAndErrors": [],
+    "screenshots": ["/Users/ethanlee/Desktop/ERP/docs/evidence/campus/retained-overview.png", "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/retained-stage.png"]
+  }
+}

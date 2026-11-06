@@ -1,0 +1,210 @@
+{
+  "standardErrorArrays": 7,
+  "standardUnexpectedCount": 0,
+  "deliberateScenarios": [
+    {
+      "path": "evidence/test-results/operations-resilience-HTTP-a6c84--cannot-roll-back-a-command/T17-failures.json",
+      "raw": {
+        "injected": [
+          "HTTP 500",
+          "timeout > 8000ms"
+        ],
+        "observedFailures": [
+          {
+            "kind": "http",
+            "message": "HTTP 500",
+            "url": "http://127.0.0.1:4175/api/v1/world"
+          },
+          {
+            "kind": "console",
+            "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0,
+            "atMs": 1792863545242
+          },
+          {
+            "kind": "requestfailed",
+            "message": "net::ERR_ABORTED",
+            "url": "http://127.0.0.1:4175/api/v1/world"
+          }
+        ],
+        "observedNetwork": [
+          {
+            "requestId": 1,
+            "kind": "http",
+            "message": "HTTP 500",
+            "expected": true,
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "atMs": 1792863545242
+          },
+          {
+            "requestId": 2,
+            "kind": "requestfailed",
+            "message": "net::ERR_ABORTED",
+            "expected": true,
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "atMs": 1792863554255
+          }
+        ],
+        "consoleErrors": [
+          {
+            "kind": "console",
+            "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0,
+            "atMs": 1792863545242
+          }
+        ],
+        "unexpectedConsole": [],
+        "original": {
+          "id": "OPS-RUN-7df65a76317e4875a9e26c432380e341",
+          "fixture_version": "erp-v1",
+          "seed": 30,
+          "scenario_id": "NORMAL",
+          "elapsed_ms": 0,
+          "duration_ms": 491000,
+          "revision": 0,
+          "event_sequence": 0,
+          "playing": false,
+          "speed": 1,
+          "epoch_at": "2026-10-30T00:00:00Z",
+          "started_at": "2026-10-24T17:39:03.713498Z",
+          "plan_revision": 0
+        },
+        "restored": {
+          "id": "OPS-RUN-7df65a76317e4875a9e26c432380e341",
+          "fixture_version": "erp-v1",
+          "seed": 30,
+          "scenario_id": "NORMAL",
+          "elapsed_ms": 1000,
+          "duration_ms": 491000,
+          "revision": 1,
+          "event_sequence": 69,
+          "playing": false,
+          "speed": 1,
+          "epoch_at": "2026-10-30T00:00:00Z",
+          "started_at": "2026-10-24T17:39:03.713498Z",
+          "plan_revision": 1
+        },
+        "retainedIdentity": "ORD-ga / MAT-ga-01",
+        "staleSnapshotTimestampVisible": true
+      }
+    },
+    {
+      "path": "evidence/test-results/operations-demo-T20-API-ou-534ac--and-reconnects-with-AI-off/T20-fallback.json",
+      "raw": {
+        "initialRun": {
+          "id": "OPS-RUN-edecfdd98d6444dcbfbbea9a12d12844",
+          "fixture_version": "erp-v1",
+          "seed": 30,
+          "scenario_id": "NORMAL",
+          "elapsed_ms": 0,
+          "duration_ms": 491000,
+          "revision": 0,
+          "event_sequence": 0,
+          "playing": false,
+          "speed": 1,
+          "epoch_at": "2026-10-30T00:00:00Z",
+          "started_at": "2026-10-24T17:37:43.168739Z",
+          "plan_revision": 0
+        },
+        "restoredRun": {
+          "id": "OPS-RUN-edecfdd98d6444dcbfbbea9a12d12844",
+          "fixture_version": "erp-v1",
+          "seed": 30,
+          "scenario_id": "NORMAL",
+          "elapsed_ms": 0,
+          "duration_ms": 491000,
+          "revision": 0,
+          "event_sequence": 0,
+          "playing": false,
+          "speed": 1,
+          "epoch_at": "2026-10-30T00:00:00Z",
+          "started_at": "2026-10-24T17:37:43.168739Z",
+          "plan_revision": 0
+        },
+        "selectedOrder": "ORD-ga",
+        "selectedMaterial": "MAT-ga-01",
+        "view": "2d",
+        "ai": {
+          "enabled": false,
+          "available": false,
+          "provider": "none"
+        },
+        "injectedRequestCount": 3,
+        "observed": [
+          {
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "error": "net::ERR_FAILED",
+            "expected": true
+          },
+          {
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "error": "net::ERR_FAILED",
+            "expected": true
+          },
+          {
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "error": "net::ERR_FAILED",
+            "expected": true
+          }
+        ],
+        "failures": [
+          {
+            "kind": "requestfailed",
+            "message": "net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world"
+          },
+          {
+            "kind": "console",
+            "message": "Failed to load resource: net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0,
+            "atMs": 1792863464709
+          },
+          {
+            "kind": "requestfailed",
+            "message": "net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world"
+          },
+          {
+            "kind": "console",
+            "message": "Failed to load resource: net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0,
+            "atMs": 1792863465717
+          },
+          {
+            "kind": "requestfailed",
+            "message": "net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world"
+          },
+          {
+            "kind": "console",
+            "message": "Failed to load resource: net::ERR_FAILED",
+            "url": "http://127.0.0.1:4175/api/v1/world",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0,
+            "atMs": 1792863466723
+          }
+        ],
+        "unexpected": []
+      }
+    }
+  ],
+  "note": "Exact injected HTTP500/timeout/outage records retained; unexpected arrays empty."
+}

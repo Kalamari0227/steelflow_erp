@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "family": "stainless",
+  "author": "SteelFlow original procedural authorship",
+  "external_asset_count": 0,
+  "models": [
+    {
+      "key": "STS-HR-02",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-HR-02",
+      "forms": [
+        "SCRAP",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:sts-hr-02",
+      "source_refs": [
+        "scope:asset-family:eaf",
+        "src:sts-hr-02"
+      ]
+    },
+    {
+      "key": "STS-HR-03",
+      "kind": "aod",
+      "variant": "variant:aod:STS-HR-03",
+      "forms": [
+        "LIQUID_STEEL",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:sts-hr-03",
+      "source_refs": [
+        "scope:asset-family:aod",
+        "src:sts-hr-03"
+      ]
+    },
+    {
+      "key": "STS-PLATE-02",
+      "kind": "eaf",
+      "variant": "variant:eaf:STS-PLATE-02",
+      "forms": [
+        "SCRAP",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:sts-plate-02",
+      "source_refs": [
+        "scope:asset-family:eaf",
+        "src:sts-plate-02"
+      ]
+    },
+    {
+      "key": "STS-PLATE-03",
+      "kind": "aod",
+      "variant": "variant:aod:STS-PLATE-03",
+      "forms": [
+        "LIQUID_STEEL",
+        "LIQUID_STEEL"
+      ],
+      "motion_recipe": "motion:source:sts-plate-03",
+      "source_refs": [
+        "scope:asset-family:aod",
+        "src:sts-plate-03"
+      ]
+    }
+  ],
+  "axis_markers": {
+    "axis_origin": [
+      0,
+      0,
+      0
+    ],
+    "axis_front": [
+      1,
+      0,
+      0
+    ],
+    "axis_up": [
+      0,
+      1,
+      0
+    ],
+    "axis_side": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "mechanical_basis": {
+    "status": "original synthetic miniature; not measured plant engineering",
+    "process_refs": [
+      "docs/FACTORY_PROCESS_REFERENCES.md",
+      "https://constructalia.arcelormittal.com/en/sica-steel-academy/properties-of-steel/manufacturing-and-forming-processes",
+      "https://www.tatasteeluk.com/eshot/how-will-our-consteel-eaf-work"
+    ],
+    "eaf_sequence": [
+      "electrodes_retract",
+      "roof_swing_clear",
+      "scrap_charge",
+      "roof_close",
+      "electrodes_lower_melt",
+      "electrodes_retract",
+      "roof_swing_clear",
+      "vessel_tap"
+    ],
+    "transmissions": "Caster independently pivoted rollers use mechanical_follower ratio +1 about fixed local tangent frame; no additional server function or runtime clock."
+  },
+  "runtime_limit": [
+    "Explicit synthetic contracts, not T31/T32 production scheduler. Transport custody is a separate fixture subject; T28 remains future.",
+    "T19 creates 10 steelmaking and 4 semantic stainless EAF/AOD; remaining stainless 26 belong to T26."
+  ]
+}

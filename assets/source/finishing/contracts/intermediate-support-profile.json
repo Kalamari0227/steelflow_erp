@@ -1,0 +1,758 @@
+{
+  "basis_root": "/Users/ethanlee/Desktop/ERP/.omo/evidence/uniform-fidelity/uf-20261030-resume06/task-21/continuation-01/family-candidate-02/root",
+  "manifest_sha256": "684f2623afe1fb520adfac65167bcff270e110274b6bd0d675741d8eb42a9b5f",
+  "rows": [
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 9.037865009051153,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-CR-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod0.glb",
+          "sha256": "1ca4cf342870f38ceee40d0b0d032ee5775177aeea7bf00458c5f0cfe339579d"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod1.glb",
+          "sha256": "d5006905de02e3ddec504a09ebadc7403d557358a42041be504940f75a2e3f88"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod2.glb",
+          "sha256": "2071abc34335c46b2ddf12363c01fa22e2214d19088b5412b6ed65997e97dfe3"
+        }
+      ],
+      "thickness_m": 0.002,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-CR-04",
+      "source_recipe_id": "motion:source:cr-04",
+      "policy_id": "policy:equipment:finishing:CS-CR-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 9.037865009051153,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-CR-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod0.glb",
+          "sha256": "1ca4cf342870f38ceee40d0b0d032ee5775177aeea7bf00458c5f0cfe339579d"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod1.glb",
+          "sha256": "d5006905de02e3ddec504a09ebadc7403d557358a42041be504940f75a2e3f88"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-CR-04-lod2.glb",
+          "sha256": "2071abc34335c46b2ddf12363c01fa22e2214d19088b5412b6ed65997e97dfe3"
+        }
+      ],
+      "thickness_m": 0.002,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 8.98866823752605,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-GO-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod0.glb",
+          "sha256": "80974ee0f6dd7b9b6b359d0c43a8a3b3914a81f71cb674afcf61d4c0d3435406"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod1.glb",
+          "sha256": "00232dc4cdd58e239829fadb6aca64a87870b99e67282c5279ff0de30cc8617d"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod2.glb",
+          "sha256": "05ac8d0a76835e33ddd5a2a3d16905987d595dd5b71373aa36a1e8b4d09b84ae"
+        }
+      ],
+      "thickness_m": 0.004,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-GO-04",
+      "source_recipe_id": "motion:source:go-04",
+      "policy_id": "policy:equipment:finishing:CS-GO-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 8.98866823752605,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-GO-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod0.glb",
+          "sha256": "80974ee0f6dd7b9b6b359d0c43a8a3b3914a81f71cb674afcf61d4c0d3435406"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod1.glb",
+          "sha256": "00232dc4cdd58e239829fadb6aca64a87870b99e67282c5279ff0de30cc8617d"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-04-lod2.glb",
+          "sha256": "05ac8d0a76835e33ddd5a2a3d16905987d595dd5b71373aa36a1e8b4d09b84ae"
+        }
+      ],
+      "thickness_m": 0.004,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 9.037865009051153,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-GO-06.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod0.glb",
+          "sha256": "833524f06e536db7b4bf8fa29470bb4f97bd9649ed899a6e1266082b73175b9f"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod1.glb",
+          "sha256": "b4c7266a2264143f0633c179a8981a4edaafd8e0690c6a6c0fc4f662e4f38aae"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod2.glb",
+          "sha256": "747459469f5dd2fa4a3fa81ce7adc7f6807d1a77895266fdf014a6234b0aa669"
+        }
+      ],
+      "thickness_m": 0.002,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-GO-06",
+      "source_recipe_id": "motion:source:go-06",
+      "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 9.037865009051153,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-GO-06.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod0.glb",
+          "sha256": "833524f06e536db7b4bf8fa29470bb4f97bd9649ed899a6e1266082b73175b9f"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod1.glb",
+          "sha256": "b4c7266a2264143f0633c179a8981a4edaafd8e0690c6a6c0fc4f662e4f38aae"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-GO-06-lod2.glb",
+          "sha256": "747459469f5dd2fa4a3fa81ce7adc7f6807d1a77895266fdf014a6234b0aa669"
+        }
+      ],
+      "thickness_m": 0.002,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "intermediate_strip_support",
+      "role": "support",
+      "family": "STRIP",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 8.98866823752605,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-NGO-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod0.glb",
+          "sha256": "22d76c30bc49bc40e85167d229cfb33219411c5719dae6ffb6d417b708d0d0fb"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod1.glb",
+          "sha256": "af6673c1704104e83822d1d9d477cbcebfd6cff481d507ce9374bdbd67b33fa7"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod2.glb",
+          "sha256": "e6d90b246af254323f16210a91de54d79cb17a48b092422cda1ad46553e500c8"
+        }
+      ],
+      "thickness_m": 0.004,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    },
+    {
+      "owner_id": "CS-NGO-04",
+      "source_recipe_id": "motion:source:ngo-04",
+      "policy_id": "policy:equipment:finishing:CS-NGO-04:v1",
+      "socket_id": "intermediate_coil_support",
+      "role": "support",
+      "family": "COIL",
+      "motion_function_ids": [
+        "intermediate_winding_mandrel"
+      ],
+      "actual_node_id": "intermediate_winding_mandrel",
+      "actual_surface_node_id": "intermediate_winding_mandrel_clamp_jaw",
+      "local_position_m": [
+        0,
+        0.44,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "actual_part": {
+        "id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "function": "intermediate_winding_mandrel",
+        "role": "operational",
+        "motion": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          7,
+          1.56,
+          0
+        ],
+        "range": {
+          "min": 0,
+          "max": 8.98866823752605,
+          "rest": 0,
+          "unit": "rad"
+        },
+        "binding": {
+          "type": "clip",
+          "clock": "server_sim",
+          "phase": "work",
+          "progress_source": "server_phase_progress",
+          "pause": "hold",
+          "fault": "hold",
+          "rest": "range_rest",
+          "clip_id": "CS-NGO-04.intermediate_winding_mandrel"
+        }
+      },
+      "rest_node": {
+        "id": "intermediate_winding_mandrel",
+        "parent_id": "root",
+        "locator": "root/intermediate_winding_mandrel",
+        "transform": {
+          "position_m": [
+            7,
+            1.56,
+            0
+          ],
+          "rotation_xyzw": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "actual_lods": [
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod0.glb",
+          "sha256": "22d76c30bc49bc40e85167d229cfb33219411c5719dae6ffb6d417b708d0d0fb"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod1.glb",
+          "sha256": "af6673c1704104e83822d1d9d477cbcebfd6cff481d507ce9374bdbd67b33fa7"
+        },
+        {
+          "status": "built",
+          "path": "public/assets/steelworks/finishing/CS-NGO-04-lod2.glb",
+          "sha256": "e6d90b246af254323f16210a91de54d79cb17a48b092422cda1ad46553e500c8"
+        }
+      ],
+      "thickness_m": 0.004,
+      "stock_neutral_length_m": 4,
+      "forming_law": "same finite spiral integral S(theta)=4 and rotating actual inner clamp as primary coiler; no new channel"
+    }
+  ]
+}

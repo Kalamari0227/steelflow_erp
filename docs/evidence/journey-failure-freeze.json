@@ -1,0 +1,15 @@
+{
+  "errorFreeze": {
+    "count": 0,
+    "bounds": null,
+    "width": 1122,
+    "height": 561
+  },
+  "hungFreeze": {
+    "count": 0,
+    "bounds": null,
+    "width": 1122,
+    "height": 561
+  },
+  "independentElapsed": 1400
+}

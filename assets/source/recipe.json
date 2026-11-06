@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "seed": 1204515,
+  "author": "SteelFlow project original procedural authorship",
+  "license": "project-owned",
+  "external_asset_count": 0,
+  "coordinate_system": "meters; project +Y up +X forward; Blender conversion (x,y,z)->(x,z,-y)",
+  "dimension_basis": "Synthetic demonstrator design, not measured engineering specification.",
+  "models": [
+    {"key":"shear", "variant":"variant:shear:CUT-SLAB", "fixture":"shared/fixtures/asset-manifest-valid.json", "kind":"shear"},
+    {"key":"galvanizing", "variant":"variant:galvanizing:CS-GI-05", "fixture":"shared/fixtures/asset-manifest-fixed-state-valid.json", "kind":"galvanizing"}
+  ],
+  "lod_cylinder_segments": [48,24,12],
+  "lod_bevel_segments": [3,2,1],
+  "axis_markers": {"axis_origin":[0,0,0],"axis_front":[1,0,0],"axis_up":[0,1,0],"axis_side":[0,0,-1]},
+  "runtime_limit": "Actual GLB clips and fixed-state metadata only; T6 operational runtime and T13 loader integration are separate uncompleted work."
+}

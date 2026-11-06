@@ -1,0 +1,654 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:5174",
+          "trace": "on",
+          "video": "on",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo.spec.ts",
+      "file": "demo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "3D factory renders, orbit and zoom respond, and no browser exception occurs",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 489,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:35.873Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-3D-factory-renders-or-58e54-no-browser-exception-occurs/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-3D-factory-renders-or-58e54-no-browser-exception-occurs/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-4fa1bb6a62e394ad8942",
+          "file": "demo.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "search finds a customer order and empty search is explained",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 201,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:40.709Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-search-finds-a-custom-d163c-d-empty-search-is-explained/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-search-finds-a-custom-d163c-d-empty-search-is-explained/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-d93cbce29179adf9b148",
+          "file": "demo.spec.ts",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "accessible inventory selection exposes the exact coil relationships",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 192,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:41.546Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-accessible-inventory--be32b-he-exact-coil-relationships/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-accessible-inventory--be32b-he-exact-coil-relationships/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-7455872989cf0db6338e",
+          "file": "demo.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "three scenarios differ at the same tick and reset reproduces each baseline",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 150,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:43.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-three-scenarios-diffe-5c16d-et-reproduces-each-baseline/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-509828ee2e2aea13d480",
+          "file": "demo.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "play, speed and pause are owned by the backend and continue without a page",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 169,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:47.296Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-play-speed-and-pause--09334-and-continue-without-a-page/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-play-speed-and-pause--09334-and-continue-without-a-page/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-9dc8858dd2109f831b7c",
+          "file": "demo.spec.ts",
+          "line": 129,
+          "column": 1
+        },
+        {
+          "title": "mobile 2D fallback remains navigable without horizontal page overflow",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 197,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:50.846Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-mobile-2D-fallback-re-1517d-ut-horizontal-page-overflow/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-9864fa4fc791fd3c5dbf",
+          "file": "demo.spec.ts",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "backend unavailable state is explicit and retry restores the live demo",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 174,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:51.550Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-backend-unavailable-s-65fd4-etry-restores-the-live-demo/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-backend-unavailable-s-65fd4-etry-restores-the-live-demo/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-7b1be11e8b6336fe1c67",
+          "file": "demo.spec.ts",
+          "line": 157,
+          "column": 1
+        },
+        {
+          "title": "disabled AI requires no provider request and core recovery rules remain available",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 172,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:52.240Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-disabled-AI-requires--9e709-very-rules-remain-available/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-disabled-AI-requires--9e709-very-rules-remain-available/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-8759ce6c0eb1dddb5bc6",
+          "file": "demo.spec.ts",
+          "line": 168,
+          "column": 1
+        },
+        {
+          "title": "WebGL context loss leaves core inventory and controls usable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 151,
+                  "error": {
+                    "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝",
+                    "stack": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.newPage: Executable doesn't exist at /Users/ethanlee/Library/Caches/ms-playwright/ffmpeg-1013/ffmpeg-mac\n╔═════════════════════════════════════════════════════════════════╗\n║ Video rendering requires ffmpeg binary.                         ║\n║ Downloading it will not affect any of the system-wide settings. ║\n║ Please run the following command:                               ║\n║                                                                 ║\n║     npx playwright install ffmpeg                               ║\n║                                                                 ║\n║ <3 Playwright Team                                              ║\n╚═════════════════════════════════════════════════════════════════╝"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T05:45:52.938Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "uncaught-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/test-results/demo-WebGL-context-loss-le-389ae-ventory-and-controls-usable/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05384557491ebd602dd7-383705d441f5c29bf788",
+          "file": "demo.spec.ts",
+          "line": 182,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T05:45:34.812Z",
+    "duration": 18530.897999999997,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}

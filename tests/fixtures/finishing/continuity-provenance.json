@@ -1,0 +1,6 @@
+{
+  "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/uniform-fidelity/uf-20261030-resume06/task-65/implementation/runs/115712-derive-actual-binding-full-ranges-31d4f072/actual-binding-cases.json",
+  "sha256": "9cf0890d99743a9cebf9fad97135f1b512a995a0343b542accda6943a14483f6",
+  "copied_sha256": "9cf0890d99743a9cebf9fad97135f1b512a995a0343b542accda6943a14483f6",
+  "status": "corrected actual bindings/fullranges; Python18 pass reported; independent TS receipt pending"
+}

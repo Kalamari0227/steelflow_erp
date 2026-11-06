@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-28T13:16:28.897212+00:00",
+  "codegraph_version": "1.6.2 (pre-existing CLI reused)",
+  "indexed_files": 328,
+  "nodes": 5554,
+  "edges": 17569,
+  "excluded_path_violations": [],
+  "parser_error_rows": [],
+  "query_smoke": "ResourceReservation: Python contract, ORM and TypeScript schema found",
+  "initial_index_attempt": "index refused uninitialized workspace; init --yes then succeeded",
+  "scope": "Tool installation/smoke only; no product tests run or completion claims",
+  "protected_hashes": {
+    "AGENTS.md": "2106279dc94107c802751bfdd8926860b31f256be7ccd4b17beca299ebbd4ba9",
+    ".gitignore": "fe5bb3a5b9b70e326feaf42cefb2290f76ec9146c8b60dfc19afae5a7d8115d0"
+  },
+  "ponytail_commit": "09c434ab73ca43761c5d8b0c5d341926c2fba710",
+  "watcher": false,
+  "telemetry": "disabled via project wrapper environment",
+  "global_agent_config_changed": false
+}

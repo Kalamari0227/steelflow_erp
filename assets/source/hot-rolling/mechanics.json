@@ -1,0 +1,5139 @@
+{
+  "schema_version": 1,
+  "authority": "T61 mechanical_follower: original synthetic rotation ratio, independently pivoted authored tracks; no additional server function channels.",
+  "models": [
+    {
+      "variant": "variant:furnace:CS-HR-02",
+      "canonical_parts": [
+        "furnace_feed",
+        "furnace_door"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -6.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.1,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.5,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.3428571428571425,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7857142857142856,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2285714285714286,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6714285714285713,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1142857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_9",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5571428571428574,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_10",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_11",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5700000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_12",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.1400000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_13",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7100000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_14",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.2800000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_15",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_16",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4200000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_17",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.9899999999999998,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_18",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.5600000000000005,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_19",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.130000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_20",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_21",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            6.3,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:roughing:CS-HR-03",
+      "canonical_parts": [
+        "roughing_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "roughing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.88,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.13125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.6624999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.1937499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7249999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.25625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.7875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.31875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_8",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.8500000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.3187499999999999,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7874999999999999,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.2562499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7249999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.1937499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.6624999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.13125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_8",
+          "driver": "roughing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.6,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:finishing_mill:HSM-A",
+      "canonical_parts": [
+        "finishing_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.1625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.725,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.2875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.2875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.725,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.1625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "middle_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:cooling:CS-HR-05",
+      "canonical_parts": [
+        "cooling_feed",
+        "coolant_valve"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.5,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.75,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.75,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.5,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:coiler:CS-HR-06",
+      "canonical_parts": [
+        "winding_mandrel"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.2375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.5125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.15,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.7874999999999999,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.4249999999999998,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.0624999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.6999999999999997,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "feed_roller_idler_0",
+          "driver": "winding_mandrel",
+          "ratio": 2.75,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "wrapper_roll_0",
+          "driver": "winding_mandrel",
+          "ratio": -2.4444444444444446,
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            1.2660407524192903,
+            1.4627705276002891,
+            0.35
+          ]
+        },
+        {
+          "node_id": "wrapper_roll_1",
+          "driver": "winding_mandrel",
+          "ratio": -2.4444444444444446,
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            1.2660407524192903,
+            2.081229472399711,
+            0.35
+          ]
+        },
+        {
+          "node_id": "wrapper_roll_2",
+          "driver": "winding_mandrel",
+          "ratio": -2.4444444444444446,
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            0.3743742625330918,
+            2.3287700414885237,
+            0.35
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:leveler:CS-HR-07",
+      "canonical_parts": [
+        "leveling_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "leveling_bank_1",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1,
+            1.512,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_2",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.66,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_3",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.22,
+            1.512,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_4",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.22,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_5",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.66,
+            1.512,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_6",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.1,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_7",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.54,
+            1.512,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.228571428571429,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.8571428571428568,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.4857142857142858,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.114285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.742857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.3714285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0000000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.3714285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.742857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.114285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4857142857142858,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.8571428571428568,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.228571428571428,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.6,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:furnace:CS-PLATE-02",
+      "canonical_parts": [
+        "furnace_feed",
+        "furnace_door"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -6.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.1,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.5,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.3428571428571425,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7857142857142856,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2285714285714286,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6714285714285713,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1142857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_9",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5571428571428574,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_10",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_11",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5700000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_12",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.1400000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_13",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7100000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_14",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.2800000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_15",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_16",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4200000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_17",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.9899999999999998,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_18",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.5600000000000005,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_19",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.130000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_20",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_21",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            6.3,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:roughing:CS-PLATE-03",
+      "canonical_parts": [
+        "roughing_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "roughing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.96,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.13125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.6624999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.1937499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7249999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.25625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.7875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.31875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_8",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.8500000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.3187499999999999,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7874999999999999,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.2562499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7249999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.1937499999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.6624999999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.13125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_8",
+          "driver": "roughing_roll",
+          "ratio": 2.875,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.6,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:cooling:CS-PLATE-04",
+      "canonical_parts": [
+        "cooling_feed",
+        "coolant_valve"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.5,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.75,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.75,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "cooling_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.5,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:cooling_bed:CS-PLATE-05",
+      "canonical_parts": [
+        "bed_transfer"
+      ],
+      "followers": [],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:shear:CS-PLATE-06",
+      "canonical_parts": [
+        "cutting_tool"
+      ],
+      "followers": [],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:heat_treatment:CS-PLATE-07",
+      "canonical_parts": [
+        "treatment_feed"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.3428571428571425,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7857142857142856,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2285714285714286,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6714285714285713,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1142857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5571428571428574,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_9",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_10",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_11",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.175,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_12",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7625000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_13",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.35,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_14",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.9375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_15",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.5250000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_16",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.1125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_17",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_18",
+          "driver": "treatment_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.3,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:leveler:CS-PLATE-08",
+      "canonical_parts": [
+        "leveling_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "leveling_bank_1",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1,
+            1.68,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_2",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.66,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_3",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.22,
+            1.68,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_4",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.22,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_5",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.66,
+            1.68,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_6",
+          "driver": "leveling_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.1,
+            1.14,
+            0
+          ]
+        },
+        {
+          "node_id": "leveling_bank_7",
+          "driver": "leveling_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.54,
+            1.68,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.228571428571429,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.8571428571428568,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.4857142857142858,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.114285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.742857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.3714285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0000000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.3714285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.742857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.114285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4857142857142858,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.8571428571428568,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.228571428571428,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "leveling_roll",
+          "ratio": 1.125,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.6,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:furnace:CS-WIRE-02",
+      "canonical_parts": [
+        "furnace_feed",
+        "furnace_door"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -6.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.1,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.5,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.3428571428571425,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7857142857142856,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2285714285714286,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6714285714285713,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1142857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_9",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5571428571428574,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_10",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_11",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5700000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_12",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.1400000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_13",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7100000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_14",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.2800000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_15",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_16",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4200000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_17",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.9899999999999998,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_18",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.5600000000000005,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_19",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.130000000000001,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_20",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_21",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            6.3,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:bloom_mill:CS-WIRE-03",
+      "canonical_parts": [
+        "bloom_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "bloom_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.725,
+            1.8699999999999999,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_lower_roll",
+          "driver": "bloom_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_upper_roll",
+          "driver": "bloom_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.8699999999999999,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.221875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.84375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.4656249999999997,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.0875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.709375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.33125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.953125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_8",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.5750000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.575,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.953125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.33125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.7093749999999996,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.0874999999999995,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.4656249999999993,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.84375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.221875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_8",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "middle_table_idler_0",
+          "driver": "bloom_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:finishing_mill:CS-WIRE-04",
+      "canonical_parts": [
+        "finishing_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.175,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.725,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.725,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.175,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.175,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.232142857142857,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.864285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.496428571428571,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.128571428571428,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_5",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.7607142857142857,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_6",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.392857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_7",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.025,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.025,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.392857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.7607142857142857,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.128571428571428,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.496428571428571,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_5",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.864285714285714,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_6",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.232142857142857,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_7",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "middle_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:shear:CS-WIRE-05",
+      "canonical_parts": [
+        "cutting_tool"
+      ],
+      "followers": [],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:furnace:CS-WIRE-06",
+      "canonical_parts": [
+        "furnace_feed",
+        "furnace_door"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.3,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.3428571428571425,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.7857142857142856,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2285714285714286,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_6",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.6714285714285713,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_7",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.1142857142857143,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_8",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.5571428571428574,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_9",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_10",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.5875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_11",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.175,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_12",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            1.7625000000000002,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_13",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.35,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_14",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.9375,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_15",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.5250000000000004,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_16",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.1125,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_17",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.7,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_18",
+          "driver": "furnace_feed",
+          "ratio": 1.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.3,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:wire_mill:CS-WIRE-07",
+      "canonical_parts": [
+        "wire_reduction_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.625,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_lower_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.175,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.175,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_lower_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.725,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -0.725,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_lower_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.725,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_4_lower_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.175,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_4_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.175,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_5_lower_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.625,
+            1.12,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_5_upper_roll",
+          "driver": "wire_reduction_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            3.625,
+            1.74,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.225,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.475,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.475,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.225,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "middle_table_idler_0",
+          "driver": "wire_reduction_roll",
+          "ratio": 1.25,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:laying_head:CS-WIRE-08",
+      "canonical_parts": [
+        "laying_rotation"
+      ],
+      "followers": [
+        {
+          "node_id": "table_idler_0",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.8,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_1",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.4,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_2",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -3.0,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_3",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_4",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.2,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "table_idler_5",
+          "driver": "laying_rotation",
+          "ratio": 5.625,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -1.8000000000000003,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    },
+    {
+      "variant": "variant:finishing_mill:HSM-B",
+      "canonical_parts": [
+        "finishing_roll"
+      ],
+      "followers": [
+        {
+          "node_id": "stand_0_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_1_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -2.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_2_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            0.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_3_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            2.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_4_lower_roll",
+          "driver": "finishing_roll",
+          "ratio": 1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.0,
+            0.9400000000000001,
+            0
+          ]
+        },
+        {
+          "node_id": "stand_4_upper_roll",
+          "driver": "finishing_roll",
+          "ratio": -1,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.0,
+            1.7120000000000002,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -6.6,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -6.1625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.725,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -5.2875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "entry_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            -4.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_0",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            4.85,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_1",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.2875,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_2",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            5.725,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_3",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            6.1625,
+            1.16,
+            0
+          ]
+        },
+        {
+          "node_id": "exit_table_idler_4",
+          "driver": "finishing_roll",
+          "ratio": 2.375,
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "pivot_m": [
+            6.6,
+            1.16,
+            0
+          ]
+        }
+      ],
+      "support_height_m": 1.32,
+      "dimension_basis": "original synthetic miniature; functional concept only"
+    }
+  ]
+}

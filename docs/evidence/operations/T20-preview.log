@@ -1,0 +1,69 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/operations-demo.spec.ts tests/operations-fulfillment.spec.ts tests/operations-resilience.spec.ts --headed --workers=1 --retries=0
+
+[WebServer] INFO:     Started server process [75602]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8002 (Press CTRL+C to quit)
+[WebServer] (node:75717) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] node_modules/zod/v4/core/regexes.js (74:0): A comment
+[WebServer] 
+[WebServer] "/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+[WebServer]  * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+[WebServer]  * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] node_modules/zod/v4/core/util.js (400:0): A comment
+[WebServer] 
+[WebServer] "// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+[WebServer] 
+[WebServer] in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+[WebServer] 
+[WebServer] (!) outDir /private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/steelflow-final-browser-arrival-z87gwqp0/run/dist is not inside project root and will not be emptied.
+[WebServer] Use --emptyOutDir to override.
+[WebServer] 
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Running 9 tests using 1 worker
+
+(node:75743) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/operations-demo.spec.ts:36:1 › T20 GA continuous 4x manufacturing to two deliveries, then truthful delay and recovery demo (2.5m)
+  ✓  2 tests/operations-demo.spec.ts:115:1 › T20 API outage preserves the last GA snapshot in 2D and reconnects with AI off (8.5s)
+  ✓  3 tests/operations-fulfillment.spec.ts:18:1 › GA first two coils deliver 40200 kg and the order finishes only after the third 20100 kg (31.6s)
+  ✓  4 tests/operations-fulfillment.spec.ts:63:1 › PLATE split keeps a consumed parent traceable and sends only the two inspected children (15.8s)
+  ✓  5 tests/operations-resilience.spec.ts:13:1 › keyboard follows order material inspection shipment with no mutation and mobile has no page overflow (16.2s)
+  ✓  6 tests/operations-resilience.spec.ts:45:1 › real WebGL context loss automatically preserves identity in 2D and AI is disabled (4.0s)
+  ✓  7 tests/operations-resilience.spec.ts:70:1 › actual WebGL2 capability denial automatically selects 2D without losing the requested material (2.5s)
+  ✓  8 tests/operations-resilience.spec.ts:91:1 › HTTP 500 and real timeout retain last snapshot then reconnect; old reply cannot roll back a command (13.5s)
+  ✓  9 tests/operations-resilience.spec.ts:162:1 › reduced motion uses confirmed positions while business time continues (3.4s)
+[WebServer] INFO:     Shutting down
+[WebServer] INFO:     Waiting for application shutdown.
+[WebServer] Exception terminating connection <AdaptedConnection <aiosqlite.core.Connection object at 0x10af14830>>
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "/Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/sqlalchemy/pool/base.py", line 370, in _close_connection
+[WebServer]     self._dialect.do_terminate(connection)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+[WebServer]   File "/Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 372, in do_terminate
+[WebServer]     dbapi_connection.terminate()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/sqlalchemy/connectors/asyncio.py", line 440, in terminate
+[WebServer]     await_(asyncio.shield(self._terminate_graceful_close()))
+[WebServer]     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/sqlalchemy/util/concurrency.py", line 167, in await_
+[WebServer]     return current.parent.switch(awaitable)  # type: ignore[no-any-return]
+[WebServer]            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+[WebServer]   File "/Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/sqlalchemy/util/concurrency.py", line 205, in greenlet_spawn
+[WebServer]     value = await result
+[WebServer]             ^^^^^^^^^^^^
+[WebServer] asyncio.exceptions.CancelledError: Cancelled via cancel scope 10add2b70 by <Task pending name='Task-2' coro=<LifespanOn.main() running at /Users/ethanlee/Desktop/ERP/backend/.venv/lib/python3.13/site-packages/uvicorn/lifespan/on.py:86>>
+[WebServer] INFO:     Application shutdown complete.
+[WebServer] INFO:     Finished server process [75602]
+
+  9 passed (4.7m)

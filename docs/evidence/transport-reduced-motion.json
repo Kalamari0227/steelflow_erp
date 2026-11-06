@@ -1,0 +1,20 @@
+{
+  "reducedDiff": {
+    "count": 0,
+    "bounds": null,
+    "width": 962,
+    "height": 481
+  },
+  "arrivalDiff": {
+    "count": 1595,
+    "bounds": {
+      "x0": 343,
+      "y0": 148,
+      "x1": 676,
+      "y1": 293
+    },
+    "width": 962,
+    "height": 481
+  },
+  "tick": 0
+}

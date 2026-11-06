@@ -1,0 +1,35 @@
+{
+  "exclude": [
+    ".omo/",
+    ".agents/",
+    ".codex/",
+    ".codegraph/",
+    ".playwright-cli/",
+    ".playwright-mcp/",
+    ".ruff_cache/",
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/__pycache__/**",
+    "**/.pytest_cache/**",
+    "dist/",
+    "playwright-report/",
+    "test-results/",
+    "assets/",
+    "public/",
+    "design/",
+    "docs/evidence/",
+    "**/*.glb",
+    "**/*.gltf",
+    "**/*.blend",
+    "**/*.sqlite*",
+    "**/*.db",
+    "**/*.tsbuildinfo"
+  ],
+  "deprioritize": [
+    "tests/fixtures/",
+    "backend/tests/",
+    "tests/",
+    "scripts/",
+    "tools/"
+  ]
+}

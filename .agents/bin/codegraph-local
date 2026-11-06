@@ -1,0 +1,7 @@
+#!/bin/sh
+# Project-only CLI: no watcher or telemetry; OMO retains workflow ownership.
+export CODEGRAPH_TELEMETRY=0
+export DO_NOT_TRACK=1
+export CODEGRAPH_NO_DAEMON=1
+cd /Users/ethanlee/Desktop/ERP || exit 1
+exec codegraph "$@"

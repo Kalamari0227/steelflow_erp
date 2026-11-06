@@ -1,0 +1,191 @@
+{
+  "external_asset_count": 0,
+  "license": {
+    "status": "built",
+    "path": "assets/source/hot-rolling/LICENSE.txt",
+    "sha256": "2d3f119872c8682827746687f791a2590b2a0524a8f6806f9fa22cd2271cd4bb"
+  },
+  "inputs": [
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/build.py",
+      "sha256": "b4073a432c54299d467bfe2b21462f633d5a2286a84eeb0323c21c3c3607594d"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/mills.py",
+      "sha256": "e9f960a36a17929d13ec912bd3ce7066d02f7bbce4d0c9d1686ed616d34051a3"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/thermal.py",
+      "sha256": "4a783569a7bff4c3eff3d970f14506dbfb1e9771d0ba92809ac0d9602bbe416d"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/manifest.py",
+      "sha256": "0aeb786b3cb971bf5724bb4ded013639d6800731cfb311a704f43a6d17a0c349"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/render.py",
+      "sha256": "8b50c5e2c4b30e80e308c5a567b41187f69a276bdc0fde57f2927b3b6e59164a"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/cutters.py",
+      "sha256": "beb96d12c42880066bf1ad2f017bdece4a62d42b1d7eed04af28c1ccd90b1201"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/recipe.json",
+      "sha256": "45d31f021cea62e052fb8c2bd441393a1b3dfe579f5ffbe1e8810879bb8f1f18"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/verify.mjs",
+      "sha256": "e67c67d030677be16e106a6a93bc3d3e88050ac772d1b9a1941eda19b9d83195"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/README.md",
+      "sha256": "a01a9ff626b9f7848c6b0c4ee94854231683860de399327b85ca3df9c39c4b96"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/details.py",
+      "sha256": "b05ab018adb361bb1a1ac2257975cb1cdc1e29ff003c545bbbcbb5e0046ba8d0"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/transmission.py",
+      "sha256": "d251d9c7bada91baccc05ae9ddde789a55a03a8ab7463d3b9bf5447e8dc87fdf"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/geometry.py",
+      "sha256": "8e51bada52fbb03e60270417d15284cfdca4fceb201e531865ce6546734eb752"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/LICENSE.txt",
+      "sha256": "2d3f119872c8682827746687f791a2590b2a0524a8f6806f9fa22cd2271cd4bb"
+    }
+  ],
+  "authored_assets": [
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-HR-02.blend",
+      "sha256": "ba1635dc2a1d78b675b506730461b6695dc56fa61c30a58fe047dbcfdb2d9d35"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-HR-03.blend",
+      "sha256": "0e498e4a86cdbc41b2384d89fa378cba1b96a30e56671bbccd8e0a9edfd0e2d9"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/HSM-A.blend",
+      "sha256": "28d8972caff794c69525b68990dfbb7c74a834383d0371045cb711bbf98258aa"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-HR-05.blend",
+      "sha256": "3a277cc4a75a2d3adff7e03ce9cf41f815fee3420d13d215bdf85309d2f2e739"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-HR-06.blend",
+      "sha256": "38102d4d8d09fcf27593110e1c24d8b15a4f5a532844946df8efd6a38d0e28ba"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-HR-07.blend",
+      "sha256": "768bf5ed923148ee186e17d1c8bbd5eae8daf56b61c3b821eb48b5e7bc9d5f84"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-02.blend",
+      "sha256": "ea2693d9e456bf7bd9e5dcd6b79ebda1a6f67bcbaf9156edd3892376341fbd6b"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-03.blend",
+      "sha256": "eff5b29c1c6a3f054e49046382c56c4b955e74a9df0be30d3bb865c41b47ff64"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-04.blend",
+      "sha256": "635c4fae58bcbb5fc4fe3740afe956cc7721ccaccfa0b46f47ec5c6c66aad9e3"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-05.blend",
+      "sha256": "771011f4229c3d5ce67fcaa5b1aa392be1547c02eac3bfdbd9e23a892084053d"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-06.blend",
+      "sha256": "e0e69ac4c6e2670fd45c5dd1e12e3bb4ef7b6007434a23e2c579f592562a0f5a"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-07.blend",
+      "sha256": "d6be68ed8c60858c9bf186308f2409c1c7e1e47b6db7f1a37c97220205a1e2a7"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-PLATE-08.blend",
+      "sha256": "df7602b0fc512a811216b3bac6cf471418dd87c254d1732646e0ccaa1dba838d"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-02.blend",
+      "sha256": "d2600d6263b9a5788be598dfed9bc1e3aa5035da140a3c4a8c59bdf112918893"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-03.blend",
+      "sha256": "a439d852c2322375e2bd2daaaa8b299b8fbd72e0a671e5b40b287efefff88147"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-04.blend",
+      "sha256": "752c6c8b49ce2e5de4bb55fb6c099766ba097a112bf2527aeda5d36ee7939b84"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-05.blend",
+      "sha256": "720648d3de6486bcfa15108232a9af15dc59cc3d2cfd103ec5e484634577a0f6"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-06.blend",
+      "sha256": "439fbc0e5e214dc8c0969a2093ef0106be6de33b562481b2a645d2f79e513f0a"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-07.blend",
+      "sha256": "61fe3e8238ffb50b600c6965f85d5fc13f2aec0c011664cea59c9a528678457f"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/CS-WIRE-08.blend",
+      "sha256": "c591deab23d7ecb795f2cdb7f9c4e8ea8d888a9982822ec1e0caff306495e956"
+    },
+    {
+      "status": "built",
+      "path": "assets/source/hot-rolling/HSM-B.blend",
+      "sha256": "1203089033efb7ddf8c9eaa443fb4a36f061942bb511fe13bfa9b86f8174f7a0"
+    }
+  ],
+  "textures": [],
+  "tool_license": {
+    "path": "/Users/ethanlee/Library/Application Support/SteelFlow/tools/blender/4.5.15-macos-arm64/Blender.app/Contents/Resources/text/license/license.md",
+    "sha256": "bbbae8a955a571bbd30e91c579f6f1633ec921f6317cfac9074338dfba33a7b8"
+  },
+  "limits": [
+    "Explicit synthetic family fixtures; no live business scheduler integration asserted.",
+    "Composite lineage E16/K2/N3: exact retained editable blend and GLB bytes are pinned individually; current N exporter independently reproduces all63runtimeGLBs, not all21 raw editable blend save bytes."
+  ]
+}

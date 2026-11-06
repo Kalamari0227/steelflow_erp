@@ -1,0 +1,68 @@
+
+> steelflow-3d@0.1.0 test:e2e
+> playwright test tests/production.spec.ts tests/transport.spec.ts
+
+[WebServer] INFO:     Started server process [35939]
+[WebServer] INFO:     Waiting for application startup.
+[WebServer] INFO:     Application startup complete.
+[WebServer] INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+[WebServer] (node:35979) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 1 worker
+
+(node:35985) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/production.spec.ts:48:1 › all eight stages expose internal work and return to overview in 2D (2.5s)
+  ✓   2 tests/production.spec.ts:60:1 › all nine product routes preserve casting branches and HGI bypasses cold rolling (1.9s)
+  ✓   3 tests/production.spec.ts:86:1 › same HR and CR forms distinguish sale products from feedstock and preserve genealogy (2.5s)
+  ✓   4 tests/production.spec.ts:118:1 › scenario changes alter visible work and reset reproduces production at the same step (7.3s)
+  ✓   5 tests/production.spec.ts:150:1 › mobile 2D core actions fit 390px and backend pause and step remain authoritative (2.3s)
+  ✓   6 tests/production.spec.ts:173:1 › production WebGL context loss recovers to fully usable 2D stages and material selection (2.0s)
+  ✓   7 tests/production.spec.ts:196:1 › 3D renders and camera responds while workspace tabs remain stable and local-only (3.3s)
+  ✓   8 tests/production.spec.ts:236:1 › coating equipment clicks select only the matching GA, EG or HGI operation (2.3s)
+  ✓   9 tests/transport.spec.ts:67:1 › transport arrival gates processing and never duplicates facility inventory (4.6s)
+  ✓  10 tests/transport.spec.ts:110:1 › loaded 3D truck is selectable, moves, freezes on pause, resumes and resets (6.7s)
+  ✘  11 tests/transport.spec.ts:149:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation (45.3s)
+(node:37317) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 tests/transport.spec.ts:178:1 › reduced motion holds loaded transport still between authoritative ticks (2.3s)
+
+
+  1) tests/transport.spec.ts:149:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation 
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+
+      13 | }
+      14 | async function clickCommand(page: Page, label: string, endpoint: string) {
+    > 15 |   const pending = page.waitForResponse(response => response.url().endsWith(`/simulation/${endpoint}`) && response.request().method() === 'POST');
+         |                        ^
+      16 |   await page.getByRole('button', { name: label, exact: true }).click();
+      17 |   const response = await pending;
+      18 |   expect(response.ok()).toBe(true);
+        at clickCommand (/Users/ethanlee/Desktop/ERP/tests/transport.spec.ts:15:24)
+        at /Users/ethanlee/Desktop/ERP/tests/transport.spec.ts:171:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/transport-390px-2D-transpo-940de--permits-arrival-navigation/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/transport.spec.ts:149:1 › 390px 2D transport tracking survives WebGL loss and permits arrival navigation 
+  11 passed (1.5m)

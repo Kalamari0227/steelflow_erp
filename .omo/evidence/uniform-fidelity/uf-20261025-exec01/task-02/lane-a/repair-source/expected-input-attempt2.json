@@ -1,0 +1,439 @@
+{
+  "authoring_basis": "Hand-authored from all 15 public-source PNGs viewed 2026-10-25 and approved plan scope; not computed from runtime catalog or layout. Ordinal keys retain legacy demo identities only; synthetic handling and source branches are explicitly separated.",
+  "core_functions": {
+    "hr": {
+      "02": "Heat slab before rolling",
+      "03": "Reduce heated slab in roughing stands",
+      "04": "Finish hot strip through successive rolling stands",
+      "05": "Cool strip on supported runout rollers",
+      "06": "Wind strip into hot rolled coil",
+      "07": "Finish and level hot rolled product"
+    },
+    "plate": {
+      "02": "Heat slab for plate rolling",
+      "03": "Roll slab into plate",
+      "04": "Accelerate plate cooling",
+      "05": "Support and cool plate on cooling bed",
+      "06": "Cut plate to specified dimensions",
+      "07": "Heat treat plate",
+      "08": "Cold level plate"
+    },
+    "wire": {
+      "02": "Heat bloom for billet reduction",
+      "03": "Rough roll bloom toward billet",
+      "04": "Finish billet rolling",
+      "05": "Condition billet before wire rolling",
+      "06": "Reheat billet for wire rod",
+      "07": "Roll billet into wire rod",
+      "08": "Lay wire rings and cool on supported conveyor"
+    },
+    "cr": {
+      "02": "Unwind hot rolled coil",
+      "03": "Pickle strip to remove scale",
+      "04": "Cold reduce strip thickness",
+      "05": "Electrolytically clean cold strip",
+      "06": "Anneal cold reduced strip",
+      "07": "Temper roll annealed strip",
+      "08": "Apply oil to strip surface",
+      "09": "Rewind finished cold rolled strip"
+    },
+    "gi": {
+      "02": "Unwind cold rolled feed coil",
+      "03": "Clean strip before galvanizing",
+      "04": "Anneal strip before zinc bath",
+      "05": "Hot dip coat cold rolled strip with zinc",
+      "06": "Temper galvanized strip",
+      "07": "Post treat galvanized surface",
+      "08": "Oil galvanized strip",
+      "09": "Rewind galvanized strip"
+    },
+    "ga": {
+      "10": "Rewind galvannealed strip",
+      "02": "Unwind cold rolled feed coil",
+      "03": "Clean strip before galvannealing",
+      "04": "Anneal strip before zinc bath",
+      "05": "Apply hot dip zinc coating",
+      "06": "Heat coated strip to form zinc iron alloy",
+      "07": "Temper galvannealed strip",
+      "08": "Post treat alloy coated surface",
+      "09": "Oil galvannealed strip"
+    },
+    "hgi": {
+      "02": "Unwind hot rolled feed without mandatory cold reduction",
+      "03": "Clean hot rolled feed for coating",
+      "04": "Heat treat hot rolled coating feed with synthetic detailed line arrangement",
+      "05": "Hot dip zinc coat hot rolled feed",
+      "06": "Condition coated hot rolled strip",
+      "07": "Post treat coated hot rolled surface",
+      "08": "Oil coated hot rolled strip",
+      "09": "Rewind hot rolled galvanized strip"
+    },
+    "eg": {
+      "02": "Unwind cold rolled feed",
+      "03": "Tension level strip",
+      "04": "Prepare strip surface for electroplating",
+      "05": "Electrochemically deposit zinc",
+      "06": "Phosphate treat plated surface",
+      "07": "Apply anti fingerprint coating",
+      "08": "Oil electrogalvanized strip",
+      "09": "Rewind electrogalvanized strip"
+    },
+    "go": {
+      "10": "Refine magnetic domains as a manufacturing treatment",
+      "11": "Rewind finished grain oriented strip",
+      "02": "Unwind electrical steel feed",
+      "03": "Anneal hot band",
+      "04": "Pickle electrical steel strip",
+      "05": "Cold reduce grain oriented strip",
+      "06": "Decarburization anneal",
+      "07": "High temperature batch anneal",
+      "08": "Flattening anneal",
+      "09": "Apply electrical insulation coating"
+    },
+    "ngo": {
+      "02": "Unwind non oriented feed",
+      "03": "Pre anneal hot band",
+      "04": "Pickle non oriented strip",
+      "05": "Cold roll non oriented strip",
+      "06": "Final anneal non oriented strip",
+      "07": "Apply electrical insulation coating",
+      "08": "Rewind finished non oriented strip"
+    },
+    "sts-hr": {
+      "10": "Unwind stainless hot coil for HAPL",
+      "11": "Anneal strip in HAPL",
+      "12": "Pickle strip in HAPL",
+      "13": "Rewind cleaned stainless hot strip",
+      "02": "Melt stainless scrap in electric arc furnace",
+      "03": "Refine stainless melt",
+      "04": "Continuously cast stainless slab",
+      "05": "Heat stainless slab",
+      "06": "Rough roll stainless slab",
+      "07": "Finish hot rolling stainless strip",
+      "08": "Coil hot rolled stainless strip",
+      "09": "Coil anneal in CAF"
+    },
+    "sts-cr": {
+      "02": "Unwind stainless hot rolled feed",
+      "03": "Cold roll stainless strip",
+      "04": "Anneal in CAPL",
+      "05": "Pickle in CAPL",
+      "06": "Temper roll stainless strip",
+      "07": "Tension level stainless strip in TLL",
+      "08": "Slit stainless strip in STL",
+      "09": "Rewind finished stainless strip"
+    },
+    "sts-plate": {
+      "10": "Cold level stainless plate",
+      "11": "Heat treat stainless plate",
+      "02": "Melt stainless scrap",
+      "03": "Refine stainless melt",
+      "04": "Cast stainless slab",
+      "05": "Heat stainless slab for plate",
+      "06": "Roll stainless plate",
+      "07": "Hot level stainless plate",
+      "08": "Cool stainless plate on bed",
+      "09": "Cut stainless plate"
+    },
+    "ti-hr": {
+      "02": "Forge purchased titanium ingot to slab",
+      "03": "Heat titanium slab",
+      "04": "Rough roll titanium slab",
+      "05": "Finish hot rolling titanium strip",
+      "06": "Anneal titanium strip in HAPL",
+      "07": "Pickle titanium strip in HAPL",
+      "08": "Coil titanium hot rolled strip"
+    },
+    "ti-cr": {
+      "02": "Unwind titanium hot coil",
+      "03": "Cold roll titanium strip",
+      "04": "Recoil for vacuum annealing handling; synthetic handling segmentation",
+      "05": "Vacuum anneal titanium coil in VAF",
+      "06": "Reintroduce annealed coil into finishing; synthetic handling segmentation",
+      "07": "Tension level titanium strip in TLL",
+      "08": "Optional STL slit output to skelp; must not be compulsory for cold coil",
+      "09": "Cold coil output from TLL branch; route correction required"
+    },
+    "ti-sheet": {
+      "02": "Unwind titanium hot coil",
+      "03": "Cold roll titanium strip",
+      "04": "Recoil for VAF handling; synthetic handling segmentation",
+      "05": "Vacuum anneal titanium coil",
+      "06": "Feed annealed material back to finishing; synthetic handling segmentation",
+      "07": "Tension level titanium strip",
+      "08": "STL is alternate skelp branch; sheet route must not require STL",
+      "09": "Shear sheet in SHL after TLL branch"
+    },
+    "ti-plate": {
+      "02": "Forge purchased titanium ingot",
+      "03": "Heat titanium slab",
+      "04": "Roll titanium plate",
+      "05": "Anneal titanium plate",
+      "06": "Pickle titanium plate",
+      "07": "Level titanium plate shape",
+      "08": "Gas cut titanium plate"
+    }
+  },
+  "product_functions": {
+    "slab": "Carbon upstream to slab casting, cut/cool, sale or downstream feed",
+    "bloom": "Carbon upstream to bloom casting, cut/cool, sale or wire feed",
+    "billet": "Carbon upstream to billet casting, cut/cool, sale or downstream feed",
+    "hr": "Slab heating, roughing, finishing, cooling, coiling, conditioning; sale or downstream feed",
+    "plate": "Slab to rolled/cooled/cut/heat-treated/leveled plate with ultrasonic inspection",
+    "wire": "Bloom through billet rolling/conditioning, wire reheating/rolling/laying/cooling",
+    "cr": "HR feed through pickling/cold rolling/cleaning/annealing/temper/oiling/coiling; sale or downstream feed",
+    "gi": "CR feed through cleaning/annealing/zinc hot dip coating/post treatment/coiling",
+    "ga": "CR feed through zinc coating and zinc iron alloying heat treatment/post treatment/coiling",
+    "hgi": "HR feed through hot rolled galvanizing without compulsory cold rolling",
+    "eg": "CR feed through tension leveling/electroplating/phosphate/anti fingerprint/oven-cooler/coiling",
+    "go": "Electrical hot band through cold reduction/decarburization/high temperature anneal/flattening/insulation/domain refinement",
+    "ngo": "Non oriented electrical steel through cold reduction/annealing/insulation",
+    "sts-hr": "Scrap EAF/refining/casting/hot rolling/CAF/HAPL/coiling; sale or downstream feed",
+    "sts-cr": "Stainless hot rolled feed through cold rolling/CAPL/temper/TLL/STL/coiling",
+    "sts-plate": "Scrap EAF/refining/casting/plate rolling/hot leveling/cooling/cutting/cold leveling/heat treatment",
+    "ti-hr": "Purchased Ti ingot forging/heating/hot rolling/HAPL/coiling; no in-plant sponge/VAR/EBM",
+    "ti-cr": "Ti hot coil cold rolling/VAF/TLL to cold coil OR STL-skelp, with explicit alternative branches",
+    "ti-sheet": "Ti hot coil cold rolling/VAF/TLL to SHL-sheet without forcing the STL skelp branch",
+    "ti-plate": "Purchased Ti ingot forging/heating/rolling/annealing/pickling/leveling/gas cutting"
+  },
+  "kind_functions": {
+    "charge": "Meter and charge tracked raw material",
+    "blast_furnace": "Receive burden and tap hot metal",
+    "bof": "Charge oxygen converter and tap steel",
+    "ladle_furnace": "Refine steel with ladle support and electrodes",
+    "caster": "Mold, guide and withdraw strand with section-specific support",
+    "shear": "Cut supported material with the process-specific blade or torch",
+    "furnace": "Charge, heat and discharge supported stock",
+    "roughing": "Reduce stock in roughing roll stands",
+    "finishing_mill": "Finish strip or plate through active roll stands",
+    "cooling": "Cool material on supported runout",
+    "coiler": "Grip and wind strip on rotating mandrel",
+    "leveler": "Straighten or tension level supported material",
+    "cooling_bed": "Support and move material while cooling",
+    "heat_treatment": "Load, heat treat and unload material",
+    "bloom_mill": "Roll bloom into billet",
+    "wire_mill": "Reduce billet into wire rod",
+    "laying_head": "Form wire rings on cooling conveyor",
+    "uncoiler": "Support and pay off coil",
+    "pickling": "Pass strip or plate through pickling treatment",
+    "cold_mill": "Cold reduce strip with loaded rotating work rolls",
+    "electrocleaning": "Electrolytically clean strip",
+    "annealing": "Anneal with process-specific continuous or batch handling",
+    "temper": "Temper roll finished strip",
+    "oiling": "Meter protective oil to moving material",
+    "galvanizing": "Immerse strip in molten zinc coating bath",
+    "coating": "Apply specified surface or insulation coating",
+    "alloying": "Heat zinc coated strip for zinc iron alloy formation",
+    "electroplating": "Deposit zinc using electrode cell interaction",
+    "decarburizing": "Decarburize during controlled annealing",
+    "inspection": "Execute specified quality inspection; never replace domain refinement",
+    "eaf": "Melt charged scrap using electrodes",
+    "aod": "Refine stainless melt in converter",
+    "slitter": "Slit strip longitudinally into skelp",
+    "forging": "Forge supported ingot into slab",
+    "vacuum_annealing": "Load coil, close vessel, vacuum anneal, unload",
+    "packaging": "Bind, protect and identify finished material",
+    "stock": "Store material with exclusive supported custody",
+    "port": "Stage and transfer cargo at operational berth",
+    "ship": "Persist as vessel through berth, load, voyage and unload",
+    "delivery": "Unload and transfer material into customer custody"
+  },
+  "source_review_corrections": {
+    "basis": "Independent source findings S1/S2/S3, confirmed by direct original-resolution viewing of all seven affected local images on 2026-10-25. Exact positions below are visual process requirements, not existing implementation observations.",
+    "requirements": [
+      {
+        "id": "src:go-base-coating",
+        "products": [
+          "go"
+        ],
+        "source": "M14",
+        "image": "electrical.png",
+        "section": "middle row, right-to-left; yellow base-coating applicator after decarburization exit looper",
+        "function": "Apply GO base coating after decarburization annealing and before high-temperature annealing; distinct from final electrical insulation coating after flattening anneal. Coating chemistry is unspecified.",
+        "branch": "GO: src:go-06 decarburization -> exit looper -> base coating -> src:go-basecoat-output-cutter -> intermediate coil -> src:go-07 high-temperature annealing; not src:go-09 insulation coating",
+        "motion": "Strip moves through active base-coating applicator with supported rolls; coating application state and downstream coil handoff remain observable."
+      },
+      {
+        "id": "src:cr-cold-mill-output-cutter",
+        "products": [
+          "cr"
+        ],
+        "source": "M12",
+        "image": "cold-rolled.png",
+        "section": "upper row right end, after cold rolling stands and before intermediate coiling",
+        "function": "Cut/separate cold-rolled strip at the cold-mill section output before intermediate coil handling; distinct from final finishing output cut.",
+        "branch": "CR: src:cr-04 cold rolling -> section-output cutter -> intermediate coil -> electrocleaning/annealing section",
+        "motion": "Supported strip feed stops or synchronizes with blade cut/separate stroke, then separated strip end transfers to coiling support."
+      },
+      {
+        "id": "src:cr-finished-output-cutter",
+        "products": [
+          "cr"
+        ],
+        "source": "M12",
+        "image": "cold-rolled.png",
+        "section": "bottom row, after oiling and before finished coiling/packaging",
+        "function": "Cut/separate finished cold-rolled strip after oiling and before final coil formation/packaging.",
+        "branch": "CR: src:cr-08 oiling -> finished-output cutter -> src:cr-09 finished coil -> packaging",
+        "motion": "Supported finished strip passes controlled feed and blade cut/separate stroke before coil handoff."
+      },
+      {
+        "id": "src:go-pickling-output-cutter",
+        "products": [
+          "go"
+        ],
+        "source": "M14",
+        "image": "electrical.png",
+        "section": "upper row right end, after pickling exit looper and before intermediate coil/cold rolling",
+        "function": "Cut/separate GO strip at the annealing/pickling continuous-section output before cold rolling feed.",
+        "branch": "GO: src:go-04 pickling -> exit looper -> pickling-output cutter -> intermediate coil -> src:go-05 cold rolling",
+        "motion": "Looper-fed strip remains supported during cutter stroke and separated-end transfer to intermediate coiling."
+      },
+      {
+        "id": "src:go-basecoat-output-cutter",
+        "products": [
+          "go"
+        ],
+        "source": "M14",
+        "image": "electrical.png",
+        "section": "middle row left end, after base coating and before intermediate coils/high-temperature annealing",
+        "function": "Cut/separate base-coated GO strip at the decarburization/base-coating section output before batch coil annealing.",
+        "branch": "GO: src:go-base-coating -> basecoat-output cutter -> intermediate coil -> src:go-07 high-temperature annealing",
+        "motion": "Base-coated supported strip receives a distinct cutter stroke and coil handoff before batch annealing loading."
+      },
+      {
+        "id": "src:go-finished-output-cutter",
+        "products": [
+          "go"
+        ],
+        "source": "M14",
+        "image": "electrical.png",
+        "section": "bottom row right, after insulation and domain refinement and before finished coil",
+        "function": "Cut/separate finished GO strip after domain refinement before final coiling; do not substitute magnetic-domain treatment for cutting.",
+        "branch": "GO: src:go-08 flattening anneal -> src:go-09 insulation coating -> src:go-domain-refinement -> finished-output cutter -> src:go-11 coil",
+        "motion": "Supported finished strip is cut by a controlled blade stroke and handed to final coiling support."
+      },
+      {
+        "id": "src:ngo-pickling-output-cutter",
+        "products": [
+          "ngo"
+        ],
+        "source": "M14",
+        "image": "electrical-non-oriented.png",
+        "section": "upper row right, after pickling exit looper and before intermediate coil/cold rolling",
+        "function": "Cut/separate NGO strip at the pre-anneal/pickling section output before cold rolling feed.",
+        "branch": "NGO: src:ngo-04 pickling -> exit looper -> pickling-output cutter -> intermediate coil -> src:ngo-05 cold rolling",
+        "motion": "Looper-fed supported strip receives a cutter stroke with explicit separated-end transfer to intermediate coiling."
+      },
+      {
+        "id": "src:ngo-finished-output-cutter",
+        "products": [
+          "ngo"
+        ],
+        "source": "M14",
+        "image": "electrical-non-oriented.png",
+        "section": "bottom row left, after final anneal/insulation/drying return and before finished coils",
+        "function": "Cut/separate finished NGO strip after insulation-coating drying and before final coiling.",
+        "branch": "NGO: src:ngo-06 final anneal -> src:ngo-07 insulation coating -> src:ngo-drying -> finished-output cutter -> src:ngo-08 coil",
+        "motion": "Dried coated strip stays supported through feed, blade cut/separate stroke and final coil handoff."
+      },
+      {
+        "id": "src:sts-hapl-output-cutter",
+        "products": [
+          "sts-hr"
+        ],
+        "source": "M15",
+        "image": "stainless.png",
+        "section": "bottom row left, after HAPL pickling exit looper and before product coiler",
+        "function": "Cut/separate stainless hot strip at the HAPL continuous-section output before coiling; preserve this end cut separately from cold-line STL longitudinal slitting.",
+        "branch": "STS-HR: src:sts-hr-12 HAPL pickling -> exit looper -> HAPL output cutter -> src:sts-hr-13 product coil",
+        "motion": "HAPL exit strip advances on support through cutter stroke and separated-end coiler handoff."
+      },
+      {
+        "id": "src:sts-capl-output-cutter",
+        "products": [
+          "sts-cr"
+        ],
+        "source": "M15",
+        "image": "stainless-cold.png",
+        "section": "middle row right, after CAPL pickling exit looper and before coil handling/next temper section",
+        "function": "Cut/separate stainless cold strip at the CAPL section output; this transverse end cut is distinct from downstream STL longitudinal skelp slitting.",
+        "branch": "STS-CR: src:sts-cr-05 CAPL pickling -> exit looper -> CAPL output cutter -> intermediate coil -> src:sts-cr-06 temper -> TLL -> STL",
+        "motion": "CAPL exit strip is supported during cutter stroke and coil handoff; separate later STL knives and slitting motion remain required."
+      },
+      {
+        "id": "src:hotdip-output-cutter",
+        "products": [
+          "gi",
+          "ga"
+        ],
+        "source": "M13",
+        "image": "coated.png",
+        "section": "bottom row, after oiling and before finished coil/packaging",
+        "function": "Cut/separate finished hot-dip coated strip at the GI and GA line outputs after oiling and before final coiling.",
+        "branch": "GI: src:gi-08 oiling -> output cutter -> src:gi-09 coil; GA: src:ga-09 oiling -> output cutter -> src:ga-10 coil",
+        "motion": "Coated strip remains supported while a controlled blade stroke separates the strip end for coiler transfer; verify GI and GA placements individually."
+      },
+      {
+        "id": "src:hgi-output-cutter",
+        "products": [
+          "hgi"
+        ],
+        "source": "M13",
+        "image": "coated.png",
+        "section": "shared hot-dip bottom-row output cutter; HGI arrangement is an explicit adaptation",
+        "function": "For the HGI shared-line design, cut/separate hot-rolled coated strip after oiling and before final coiling without mandatory cold rolling.",
+        "branch": "HGI synthetic shared-diagram adaptation: HR feed -> src:hgi-08 oiling -> output cutter -> src:hgi-09 coil",
+        "motion": "Supported HGI strip receives cutter stroke and coiler transfer; HGI geometry/arrangement remains unverified."
+      },
+      {
+        "id": "src:eg-output-cutter",
+        "products": [
+          "eg"
+        ],
+        "source": "M13",
+        "image": "electrogalvanized.png",
+        "section": "bottom row, after oiling and before finished coil/packaging",
+        "function": "Cut/separate finished electrogalvanized strip at the EG output after oiling and before final coiling; separate from oven/cooler function.",
+        "branch": "EG: src:eg-08 oiling -> output cutter -> src:eg-09 coil -> packaging",
+        "motion": "Supported electrogalvanized strip is fed through a blade cut/separate stroke and transferred to final coiling."
+      },
+      {
+        "id": "src:gi-coating-cooling",
+        "products": [
+          "gi"
+        ],
+        "source": "M13",
+        "image": "coated.png",
+        "section": "right turn upright cooling section after bath/Air Knife and before temper rolling",
+        "function": "Cool hot-dip galvanized strip after the zinc bath and Air Knife before temper rolling; no compulsory GA alloying and no substitution by EG oven/cooler.",
+        "branch": "GI: src:gi-05 zinc bath -> src:coating-air-knife -> coating cooling -> src:gi-06 temper rolling",
+        "motion": "Strip advances through the dedicated cooling section on continuous support; cooling state and upstream/downstream handoffs are visible without invented coolant chemistry."
+      },
+      {
+        "id": "src:ga-coating-cooling",
+        "products": [
+          "ga"
+        ],
+        "source": "M13",
+        "image": "coated.png",
+        "section": "right turn upright cooling section after alloying treatment and before temper rolling",
+        "function": "Cool galvannealed strip after zinc bath/Air Knife and alloying heat treatment, before temper rolling; preserve GA alloying-before-cooling order.",
+        "branch": "GA: src:ga-05 zinc bath -> src:coating-air-knife -> src:ga-06 alloying -> coating cooling -> src:ga-07 temper rolling",
+        "motion": "Supported strip progresses from alloying into the distinct cooling section and onward to temper; cooling activity and custody remain observable."
+      },
+      {
+        "id": "src:hgi-coating-cooling",
+        "products": [
+          "hgi"
+        ],
+        "source": "M13",
+        "image": "coated.png",
+        "section": "shared hot-dip right-turn cooling section; HGI-specific diagram not verified",
+        "function": "Include post-bath/Air-Knife cooling before temper in the synthetic HGI shared-line arrangement while retaining HR feed and dedicated-diagram uncertainty.",
+        "branch": "HGI synthetic shared-diagram adaptation: HR feed -> src:hgi-05 zinc bath -> src:coating-air-knife -> coating cooling -> src:hgi-06 temper",
+        "motion": "Supported HGI strip traverses a stateful cooling section before temper; precise geometry, cooling mechanics and speed are synthetic pending design."
+      }
+    ]
+  }
+}

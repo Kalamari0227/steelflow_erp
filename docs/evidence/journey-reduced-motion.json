@@ -1,0 +1,19 @@
+{
+  "frozen": {
+    "count": 0,
+    "bounds": null,
+    "width": 1122,
+    "height": 561
+  },
+  "changed": {
+    "count": 10119,
+    "bounds": {
+      "x0": 151,
+      "y0": 2,
+      "x1": 358,
+      "y1": 162
+    },
+    "width": 1122,
+    "height": 561
+  }
+}

@@ -1,0 +1,36 @@
+Invocation: npm run build
+Exit code: 0
+vite v7.3.7 building client environment for production...
+transforming...
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+✓ 2290 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.64 kB │ gzip:   0.39 kB
+dist/assets/JourneyWorkspace-BpijQzQA.css    9.72 kB │ gzip:   2.18 kB
+dist/assets/index-C6__prbd.css              52.15 kB │ gzip:  11.12 kB
+dist/assets/primitives-CJVTpt2C.js           8.93 kB │ gzip:   3.65 kB
+dist/assets/JourneyWorkspace-DAzmaOUf.js    12.41 kB │ gzip:   4.44 kB
+dist/assets/WorldScene-JRNTfV1d.js          15.47 kB │ gzip:   4.96 kB
+dist/assets/ProductionScene-D3wOCfsM.js     18.35 kB │ gzip:   6.53 kB
+dist/assets/JourneyScene-CzBIJugS.js        26.25 kB │ gzip:   8.15 kB
+dist/assets/index-dfLd6D8U.js              397.68 kB │ gzip: 120.37 kB
+dist/assets/OrbitControls-DxOu1vSo.js      897.87 kB │ gzip: 242.34 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.50s
+

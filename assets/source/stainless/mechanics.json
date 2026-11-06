@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "variant": "variant:eaf:STS-HR-02",
+      "canonical_parts": [
+        "vessel_tilt",
+        "electrode_lift",
+        "roof_swing"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:aod:STS-HR-03",
+      "canonical_parts": [
+        "vessel_tilt"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:eaf:STS-PLATE-02",
+      "canonical_parts": [
+        "vessel_tilt",
+        "electrode_lift",
+        "roof_swing"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SCRAP",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    },
+    {
+      "variant": "variant:aod:STS-PLATE-03",
+      "canonical_parts": [
+        "vessel_tilt"
+      ],
+      "followers": [],
+      "contacts": [
+        {
+          "id": "support",
+          "node_id": "support_contact",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_contact",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "work",
+          "node_id": "work_contact",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_IRON",
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_contact",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.03,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "LIQUID_STEEL"
+          ],
+          "max_load_kg": 60000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "dimension_basis": "Original synthetic miniature; public functional concept only."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format": "factory-contract-test-bundle-v1",
+  "bundle_id": "factory-contract-test-v3",
+  "profile": "v3_contract_test",
+  "schema_version": 3,
+  "fixture_version": "factory-v2",
+  "artifacts": [
+    {
+      "role": "domain",
+      "path": "collections.json",
+      "format": "factory-contract-test-collections-v1",
+      "sha256": "9c3c29fb75c22758c651643ea980ce14205ef806c9833fd038a2912402b479f8"
+    },
+    {
+      "role": "reader",
+      "path": "reader.json",
+      "format": "factory-contract-test-reader-v1",
+      "sha256": "fc6a893b3e4c84e2c9e539d8587dcd3fcaac2dbb59bbfb2ff8f1eee05de1df24"
+    },
+    {
+      "role": "schema",
+      "path": "schema.json",
+      "format": "factory-contract-test-schema-v1",
+      "sha256": "6895fa9315c87cec8397e846ea16cce065d7e45a346b26c170011d6f08010a9e"
+    },
+    {
+      "role": "world",
+      "path": "contract-test-world.json",
+      "format": "factory-world-v2",
+      "sha256": "46a5c97cab1efb1588528cde6c460ec2b6c959b72c0f864185b18a055070b061"
+    }
+  ]
+}

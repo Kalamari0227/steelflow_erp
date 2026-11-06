@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+date: Sat, 24 Oct 2026 09:47:15 GMT
+server: uvicorn
+content-length: 911
+content-type: application/json
+vary: Origin
+
+{"data_scope":"synthetic_product_journey","run_id":"b247bd59-d0d0-4b61-8d02-41c8cf6b2f4f","revision":8,"product_id":"hr","playing":false,"speed":1,"elapsed_ms":16000,"duration_ms":45800,"active_step_id":"hr-04","step_elapsed_ms":0,"step_duration_ms":7200,"completed":false,"material":{"lineage_id":"MATERIAL-hr","version_id":"MATERIAL-hr:3","parent_version_id":"MATERIAL-hr:2","form":"HOT_STRIP","role":"feedstock","location_id":"hr-04","mass_kg":20000},"history":[{"version_id":"MATERIAL-hr:0","parent_version_id":null,"form":"SLAB","step_id":"hr-01","at_ms":0},{"version_id":"MATERIAL-hr:1","parent_version_id":"MATERIAL-hr:0","form":"SLAB","step_id":"hr-01","at_ms":4000},{"version_id":"MATERIAL-hr:2","parent_version_id":"MATERIAL-hr:1","form":"HOT_SLAB","step_id":"hr-02","at_ms":10000},{"version_id":"MATERIAL-hr:3","parent_version_id":"MATERIAL-hr:2","form":"HOT_STRIP","step_id":"hr-03","at_ms":16000}]}

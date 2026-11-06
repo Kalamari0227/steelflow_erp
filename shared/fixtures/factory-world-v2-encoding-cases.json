@@ -1,0 +1,257 @@
+{
+  "policy": "Strict UTF-8 bytes; optional one leading UTF-8 BOM. Reject UTF-16/32, invalid UTF-8, double BOM. Decoded JSON strings allow no leading BOM.",
+  "cases": [
+    {
+      "name": "utf8",
+      "file": "factory-world-v2-encoding/utf8.bin",
+      "accepted": true,
+      "sha256": "46a5c97cab1efb1588528cde6c460ec2b6c959b72c0f864185b18a055070b061",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf8\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t46a5c97cab1efb1588528cde6c460ec2b6c959b72c0f864185b18a055070b061\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf8",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "46a5c97cab1efb1588528cde6c460ec2b6c959b72c0f864185b18a055070b061"
+          }
+        ],
+        "bundle_hash": "63740b1799df620682943c57129a69b83698e6fa8fe2d0c02d19586340557f3e"
+      }
+    },
+    {
+      "name": "utf8-bom",
+      "file": "factory-world-v2-encoding/utf8-bom.bin",
+      "accepted": true,
+      "sha256": "f1c10ccf8de8a119e29bcb3a1ff957ba234ac11189888d1b0b4a41d4f3143f6f",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf8-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\tf1c10ccf8de8a119e29bcb3a1ff957ba234ac11189888d1b0b4a41d4f3143f6f\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf8-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "f1c10ccf8de8a119e29bcb3a1ff957ba234ac11189888d1b0b4a41d4f3143f6f"
+          }
+        ],
+        "bundle_hash": "09b911147d1988d832060c080a3397503318936e9990ba320845961db254975b"
+      }
+    },
+    {
+      "name": "utf8-double-bom",
+      "file": "factory-world-v2-encoding/utf8-double-bom.bin",
+      "accepted": false,
+      "sha256": "d200f5b17394386c87b792d983a041d734468a8b1a1f54832cd184250f172353",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf8-double-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\td200f5b17394386c87b792d983a041d734468a8b1a1f54832cd184250f172353\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf8-double-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "d200f5b17394386c87b792d983a041d734468a8b1a1f54832cd184250f172353"
+          }
+        ],
+        "bundle_hash": "42ca0c4442f8f17f38fdb3be336d3263b1a4df984f3e8bb3828831aef700f13c"
+      }
+    },
+    {
+      "name": "invalid-utf8",
+      "file": "factory-world-v2-encoding/invalid-utf8.bin",
+      "accepted": false,
+      "sha256": "a3c86a777a50f230e68238b293752f8994e5eda7966f0e40283d345c0edbb4d5",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-invalid-utf8\n2\nworld\tfixtures/factory-world-v2-example.json\t2\ta3c86a777a50f230e68238b293752f8994e5eda7966f0e40283d345c0edbb4d5\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-invalid-utf8",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "a3c86a777a50f230e68238b293752f8994e5eda7966f0e40283d345c0edbb4d5"
+          }
+        ],
+        "bundle_hash": "f1a0651b3e124685a7fa9ab66339b85a2f800bcfa19ce28e7c2567113f593201"
+      }
+    },
+    {
+      "name": "utf16le",
+      "file": "factory-world-v2-encoding/utf16le.bin",
+      "accepted": false,
+      "sha256": "248b83c48af7add436e1aeb2a28e13dfabba9ac17e1effab2cefdfbc6b41f8a9",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf16le\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t248b83c48af7add436e1aeb2a28e13dfabba9ac17e1effab2cefdfbc6b41f8a9\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf16le",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "248b83c48af7add436e1aeb2a28e13dfabba9ac17e1effab2cefdfbc6b41f8a9"
+          }
+        ],
+        "bundle_hash": "293da09702436e61c205c49d9efa06f8084aec345d9b12bdb50d8321b7128935"
+      }
+    },
+    {
+      "name": "utf16le-bom",
+      "file": "factory-world-v2-encoding/utf16le-bom.bin",
+      "accepted": false,
+      "sha256": "6627f0ae54f82bce58df7a3d04f80b8d5306086c57f557b3d068973d267ef3b4",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf16le-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t6627f0ae54f82bce58df7a3d04f80b8d5306086c57f557b3d068973d267ef3b4\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf16le-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "6627f0ae54f82bce58df7a3d04f80b8d5306086c57f557b3d068973d267ef3b4"
+          }
+        ],
+        "bundle_hash": "06f0eaae5c7433ab7e9a8e8d138ba85da2663db4d9ea01dd48a23c2ddce97413"
+      }
+    },
+    {
+      "name": "utf16be",
+      "file": "factory-world-v2-encoding/utf16be.bin",
+      "accepted": false,
+      "sha256": "0484e3f4c2c7e04f6b06ba5ec9620f196b6bec7bd5d6b2b61b23396c24aac23b",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf16be\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t0484e3f4c2c7e04f6b06ba5ec9620f196b6bec7bd5d6b2b61b23396c24aac23b\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf16be",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "0484e3f4c2c7e04f6b06ba5ec9620f196b6bec7bd5d6b2b61b23396c24aac23b"
+          }
+        ],
+        "bundle_hash": "d0de9d303095b0bd5884f2308a37a25072986246d954b67b9473cc183f1d52ad"
+      }
+    },
+    {
+      "name": "utf16be-bom",
+      "file": "factory-world-v2-encoding/utf16be-bom.bin",
+      "accepted": false,
+      "sha256": "ca721683677b94d6094ae6288446c9e02748b3ee990aa53387c756d01fa5deca",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf16be-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\tca721683677b94d6094ae6288446c9e02748b3ee990aa53387c756d01fa5deca\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf16be-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "ca721683677b94d6094ae6288446c9e02748b3ee990aa53387c756d01fa5deca"
+          }
+        ],
+        "bundle_hash": "f96f6c12a485e44522e0943fad25a3f1ee4563e08663b545c448be9338b7b982"
+      }
+    },
+    {
+      "name": "utf32le",
+      "file": "factory-world-v2-encoding/utf32le.bin",
+      "accepted": false,
+      "sha256": "6f2e273d5affdd878d0414b98adb52d72aeb16a6113166bf4c0129ca4f402cf9",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf32le\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t6f2e273d5affdd878d0414b98adb52d72aeb16a6113166bf4c0129ca4f402cf9\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf32le",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "6f2e273d5affdd878d0414b98adb52d72aeb16a6113166bf4c0129ca4f402cf9"
+          }
+        ],
+        "bundle_hash": "4995fe3492d6c3ac4563b754193e9adb42e9b6cec324a3fa94b5267eda2983e8"
+      }
+    },
+    {
+      "name": "utf32le-bom",
+      "file": "factory-world-v2-encoding/utf32le-bom.bin",
+      "accepted": false,
+      "sha256": "cc30729640410ed10f69ab37a43cb25ff05cab6f5d655a61bc7820f00f350626",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf32le-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\tcc30729640410ed10f69ab37a43cb25ff05cab6f5d655a61bc7820f00f350626\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf32le-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "cc30729640410ed10f69ab37a43cb25ff05cab6f5d655a61bc7820f00f350626"
+          }
+        ],
+        "bundle_hash": "050717f2916e95181ab1fac851bab028154d5835338e483257c61edeed05eac1"
+      }
+    },
+    {
+      "name": "utf32be",
+      "file": "factory-world-v2-encoding/utf32be.bin",
+      "accepted": false,
+      "sha256": "710f23637193cc6c0c97f618afad55b1c4b9e83d84eab8639c1a438869f9cc15",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf32be\n2\nworld\tfixtures/factory-world-v2-example.json\t2\t710f23637193cc6c0c97f618afad55b1c4b9e83d84eab8639c1a438869f9cc15\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf32be",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "710f23637193cc6c0c97f618afad55b1c4b9e83d84eab8639c1a438869f9cc15"
+          }
+        ],
+        "bundle_hash": "9047e979c93ff839560df5ea69cad6df686d054ee2d95a5a9fd2c418b61eb0e8"
+      }
+    },
+    {
+      "name": "utf32be-bom",
+      "file": "factory-world-v2-encoding/utf32be-bom.bin",
+      "accepted": false,
+      "sha256": "ae8cead4a1d8dfea975d13fbccd29bcf89af14b102ed24134b7003ba29eb00f9",
+      "canonical_utf8": "factory-bundle-v1\nsynthetic-encoding-utf32be-bom\n2\nworld\tfixtures/factory-world-v2-example.json\t2\tae8cead4a1d8dfea975d13fbccd29bcf89af14b102ed24134b7003ba29eb00f9\n",
+      "manifest": {
+        "format": "factory-bundle-v1",
+        "bundle_id": "synthetic-encoding-utf32be-bom",
+        "world_version": 2,
+        "artifacts": [
+          {
+            "role": "world",
+            "path": "fixtures/factory-world-v2-example.json",
+            "version": "2",
+            "sha256": "ae8cead4a1d8dfea975d13fbccd29bcf89af14b102ed24134b7003ba29eb00f9"
+          }
+        ],
+        "bundle_hash": "e916822c7d4edf0af8d938645ef1c3f6292ca440496d02b2fea96fc0d72dd70e"
+      }
+    }
+  ]
+}

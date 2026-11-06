@@ -1,0 +1,6400 @@
+{
+  "schema_version": 1,
+  "purpose": "production",
+  "assets": [
+    {
+      "id": "steelflow:shear:CUT-SLAB",
+      "family": "steelmaking",
+      "category": "equipment",
+      "kind": "shear",
+      "variant": "variant:shear:CUT-SLAB",
+      "requirement_ids": [
+        "scope:asset-family:shear",
+        "scope:carbon-upstream"
+      ],
+      "qa_row_ids": [
+        "qa:equipment:CUT-SLAB",
+        "qa:variant:shear:CUT-SLAB"
+      ],
+      "placement_ids": [
+        "equipment:CUT-SLAB"
+      ],
+      "source_refs": [
+        {
+          "id": "scope:carbon-upstream",
+          "uri": ".omo/plans/steelflow-uniform-fidelity-factory.md",
+          "note": "Original synthetic demonstrator dimensions; source supports function concept only. Actual GLB clips verified by T12; operational runtime integration pending T6/T13."
+        }
+      ],
+      "coordinate_system": {
+        "length": "m",
+        "up": "+Y",
+        "forward": "+X",
+        "handedness": "right",
+        "angle": "rad"
+      },
+      "root_node_id": "root",
+      "nodes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "locator": "root",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "support_bed",
+          "parent_id": "root",
+          "locator": "root/support_bed",
+          "transform": {
+            "position_m": [
+              0,
+              0.94,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_table",
+          "parent_id": "support_bed",
+          "locator": "root/support_bed/entry_table",
+          "transform": {
+            "position_m": [
+              -1.3,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_table",
+          "parent_id": "support_bed",
+          "locator": "root/support_bed/exit_table",
+          "transform": {
+            "position_m": [
+              1.3,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_left_leg",
+          "parent_id": "root",
+          "locator": "root/entry_left_leg",
+          "transform": {
+            "position_m": [
+              -2,
+              0.415,
+              -0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_left_foot",
+          "parent_id": "root",
+          "locator": "root/entry_left_foot",
+          "transform": {
+            "position_m": [
+              -2,
+              0.04,
+              -0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_right_leg",
+          "parent_id": "root",
+          "locator": "root/entry_right_leg",
+          "transform": {
+            "position_m": [
+              -2,
+              0.415,
+              0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_right_foot",
+          "parent_id": "root",
+          "locator": "root/entry_right_foot",
+          "transform": {
+            "position_m": [
+              -2,
+              0.04,
+              0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_left_leg",
+          "parent_id": "root",
+          "locator": "root/exit_left_leg",
+          "transform": {
+            "position_m": [
+              2,
+              0.415,
+              -0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_left_foot",
+          "parent_id": "root",
+          "locator": "root/exit_left_foot",
+          "transform": {
+            "position_m": [
+              2,
+              0.04,
+              -0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_right_leg",
+          "parent_id": "root",
+          "locator": "root/exit_right_leg",
+          "transform": {
+            "position_m": [
+              2,
+              0.415,
+              0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_right_foot",
+          "parent_id": "root",
+          "locator": "root/exit_right_foot",
+          "transform": {
+            "position_m": [
+              2,
+              0.04,
+              0.65
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_column",
+          "parent_id": "root",
+          "locator": "root/left_column",
+          "transform": {
+            "position_m": [
+              0,
+              1.45,
+              -1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_guide",
+          "parent_id": "root",
+          "locator": "root/left_guide",
+          "transform": {
+            "position_m": [
+              0.34,
+              1.9,
+              -1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_column",
+          "parent_id": "root",
+          "locator": "root/right_column",
+          "transform": {
+            "position_m": [
+              0,
+              1.45,
+              1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_guide",
+          "parent_id": "root",
+          "locator": "root/right_guide",
+          "transform": {
+            "position_m": [
+              0.34,
+              1.9,
+              1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "head_beam",
+          "parent_id": "root",
+          "locator": "root/head_beam",
+          "transform": {
+            "position_m": [
+              0,
+              2.8,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "cutting_tool",
+          "parent_id": "root",
+          "locator": "root/cutting_tool",
+          "transform": {
+            "position_m": [
+              0,
+              1.8,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "blade_carriage",
+          "parent_id": "cutting_tool",
+          "locator": "root/cutting_tool/blade_carriage",
+          "transform": {
+            "position_m": [
+              0,
+              0.28,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "blade_edge",
+          "parent_id": "cutting_tool",
+          "locator": "root/cutting_tool/blade_edge",
+          "transform": {
+            "position_m": [
+              0.045,
+              -0.29,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "hydraulic_body",
+          "parent_id": "root",
+          "locator": "root/hydraulic_body",
+          "transform": {
+            "position_m": [
+              0,
+              2.42,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "rod",
+          "parent_id": "cutting_tool",
+          "locator": "root/cutting_tool/rod",
+          "transform": {
+            "position_m": [
+              0,
+              0.73,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "front_control",
+          "parent_id": "root",
+          "locator": "root/front_control",
+          "transform": {
+            "position_m": [
+              0.5,
+              1.3,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pedestal",
+          "parent_id": "root",
+          "locator": "root/service_pedestal",
+          "transform": {
+            "position_m": [
+              -1.5,
+              0.775,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_bracket",
+          "parent_id": "root",
+          "locator": "root/service_bracket",
+          "transform": {
+            "position_m": [
+              -1.5,
+              1.6,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0.2246911776194415,
+              0.16472716280865693,
+              0.038569773662357726,
+              0.9596307670623286
+            ]
+          }
+        },
+        {
+          "id": "service_brace",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_brace",
+          "transform": {
+            "position_m": [
+              0,
+              -0.12,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pad",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_pad",
+          "transform": {
+            "position_m": [
+              0.12,
+              0,
+              0.08
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_origin",
+          "parent_id": "root",
+          "locator": "root/axis_origin",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_front",
+          "parent_id": "root",
+          "locator": "root/axis_front",
+          "transform": {
+            "position_m": [
+              1,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_up",
+          "parent_id": "root",
+          "locator": "root/axis_up",
+          "transform": {
+            "position_m": [
+              0,
+              1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_side",
+          "parent_id": "root",
+          "locator": "root/axis_side",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              -1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "sockets": [
+        {
+          "id": "support",
+          "node_id": "support_bed",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              -1.3,
+              0.11,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "entry",
+          "node_id": "support_bed",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              -1.4,
+              0.11,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "work",
+          "node_id": "support_bed",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0.3,
+              0.11,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "exit",
+          "node_id": "support_bed",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              1.4,
+              0.11,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "SLAB"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.08,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "moving_parts": [
+        {
+          "id": "cutting_tool",
+          "node_id": "cutting_tool",
+          "function": "cutting_tool",
+          "role": "operational",
+          "motion": "translation",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "pivot_m": [
+            0,
+            1.8,
+            0
+          ],
+          "range": {
+            "min": 0,
+            "max": 0.48,
+            "rest": 0,
+            "unit": "m"
+          },
+          "binding": {
+            "type": "clip",
+            "clock": "server_sim",
+            "phase": "work",
+            "progress_source": "server_phase_progress",
+            "pause": "hold",
+            "fault": "hold",
+            "rest": "range_rest",
+            "clip_id": "shear.cutting_tool"
+          }
+        }
+      ],
+      "fixed_parts": [],
+      "cutaway": {
+        "roof_node_ids": [],
+        "interior_node_ids": [],
+        "retained_socket_ids": []
+      },
+      "materials": [
+        {
+          "id": "paint",
+          "model": "metallic-roughness",
+          "base_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0.12,
+          "roughness": 0.72,
+          "textures": [
+            {
+              "slot": "baseColor",
+              "texture_id": "paint_color"
+            }
+          ],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original paint PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "structure",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.097,
+            0.13,
+            0.15,
+            1
+          ],
+          "metallic": 0.72,
+          "roughness": 0.55,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original structure PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "exposed",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.42,
+            0.48,
+            0.5,
+            1
+          ],
+          "metallic": 0.9,
+          "roughness": 0.38,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original exposed PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "safety",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.62,
+            0.26,
+            0.045,
+            1
+          ],
+          "metallic": 0.25,
+          "roughness": 0.58,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original safety PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_red",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.65,
+            0.04,
+            0.02,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_red PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_green",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.05,
+            0.4,
+            0.12,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_green PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_blue",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.025,
+            0.12,
+            0.65,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_blue PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "textures": [
+        {
+          "id": "paint_color",
+          "artifact": {
+            "status": "built",
+            "path": "assets/source/paint.png",
+            "sha256": "2d5646f90dde7673ceea22c21604ca9a9d896bf2317d2406f05ff93d19316642"
+          },
+          "color_space": "srgb",
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original deterministic procedural coating texture",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "collision_proxies": [
+        {
+          "id": "body",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              1.49,
+              -0.091255
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            5.02,
+            3.06,
+            2.70251
+          ],
+          "purpose": "body",
+          "part_id": null,
+          "contact_socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ]
+        },
+        {
+          "id": "tool_sweep",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              1.9925,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            0.52,
+            2.045,
+            1.87
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "cutting_tool",
+          "contact_socket_ids": [
+            "work"
+          ]
+        }
+      ],
+      "lods": [
+        {
+          "level": 0,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/shear-lod0.glb",
+            "sha256": "4c64ce81e492752276e8a08f16ef1a8b23ca0d33598d28e281bee7b9903ad32b"
+          },
+          "semantic_geometry_sha256": "4f1ddebf21e109192879cd4a235681f98834debe434bfcecd6c0bb17fd87b2df",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.94,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/entry_table",
+              "transform": {
+                "position_m": [
+                  -1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/exit_table",
+              "transform": {
+                "position_m": [
+                  1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_leg",
+              "parent_id": "root",
+              "locator": "root/entry_left_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_foot",
+              "parent_id": "root",
+              "locator": "root/entry_left_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_leg",
+              "parent_id": "root",
+              "locator": "root/entry_right_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_foot",
+              "parent_id": "root",
+              "locator": "root/entry_right_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_leg",
+              "parent_id": "root",
+              "locator": "root/exit_left_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_foot",
+              "parent_id": "root",
+              "locator": "root/exit_left_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_leg",
+              "parent_id": "root",
+              "locator": "root/exit_right_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_foot",
+              "parent_id": "root",
+              "locator": "root/exit_right_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_column",
+              "parent_id": "root",
+              "locator": "root/left_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_guide",
+              "parent_id": "root",
+              "locator": "root/left_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_column",
+              "parent_id": "root",
+              "locator": "root/right_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_guide",
+              "parent_id": "root",
+              "locator": "root/right_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "head_beam",
+              "parent_id": "root",
+              "locator": "root/head_beam",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "cutting_tool",
+              "parent_id": "root",
+              "locator": "root/cutting_tool",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_carriage",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_carriage",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.28,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_edge",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_edge",
+              "transform": {
+                "position_m": [
+                  0.045,
+                  -0.29,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "hydraulic_body",
+              "parent_id": "root",
+              "locator": "root/hydraulic_body",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.42,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "rod",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/rod",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.73,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "front_control",
+              "parent_id": "root",
+              "locator": "root/front_control",
+              "transform": {
+                "position_m": [
+                  0.5,
+                  1.3,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "cutting_tool"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 1,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/shear-lod1.glb",
+            "sha256": "596d233c7b6500b88a61d25401ffa5771e66ebea95f3d2c3fdb23cdd309b0cf6"
+          },
+          "semantic_geometry_sha256": "00e81f76e23b53b8e9695a44612a8c8ab676448bd439de770eff255d0aa10872",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.94,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/entry_table",
+              "transform": {
+                "position_m": [
+                  -1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/exit_table",
+              "transform": {
+                "position_m": [
+                  1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_leg",
+              "parent_id": "root",
+              "locator": "root/entry_left_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_foot",
+              "parent_id": "root",
+              "locator": "root/entry_left_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_leg",
+              "parent_id": "root",
+              "locator": "root/entry_right_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_foot",
+              "parent_id": "root",
+              "locator": "root/entry_right_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_leg",
+              "parent_id": "root",
+              "locator": "root/exit_left_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_foot",
+              "parent_id": "root",
+              "locator": "root/exit_left_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_leg",
+              "parent_id": "root",
+              "locator": "root/exit_right_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_foot",
+              "parent_id": "root",
+              "locator": "root/exit_right_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_column",
+              "parent_id": "root",
+              "locator": "root/left_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_guide",
+              "parent_id": "root",
+              "locator": "root/left_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_column",
+              "parent_id": "root",
+              "locator": "root/right_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_guide",
+              "parent_id": "root",
+              "locator": "root/right_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "head_beam",
+              "parent_id": "root",
+              "locator": "root/head_beam",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "cutting_tool",
+              "parent_id": "root",
+              "locator": "root/cutting_tool",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_carriage",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_carriage",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.28,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_edge",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_edge",
+              "transform": {
+                "position_m": [
+                  0.045,
+                  -0.29,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "hydraulic_body",
+              "parent_id": "root",
+              "locator": "root/hydraulic_body",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.42,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "rod",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/rod",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.73,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "front_control",
+              "parent_id": "root",
+              "locator": "root/front_control",
+              "transform": {
+                "position_m": [
+                  0.5,
+                  1.3,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "cutting_tool"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 2,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/shear-lod2.glb",
+            "sha256": "a3bf14056dcc70a07e29401fc7189e2a8ee06f31a320549e100a83e306c7117a"
+          },
+          "semantic_geometry_sha256": "0835cd9eced7f8ac442fd77ce9e1e612a5a86a518ee0139ca15181c1c252c318",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.94,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/entry_table",
+              "transform": {
+                "position_m": [
+                  -1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_table",
+              "parent_id": "support_bed",
+              "locator": "root/support_bed/exit_table",
+              "transform": {
+                "position_m": [
+                  1.3,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_leg",
+              "parent_id": "root",
+              "locator": "root/entry_left_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_left_foot",
+              "parent_id": "root",
+              "locator": "root/entry_left_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_leg",
+              "parent_id": "root",
+              "locator": "root/entry_right_leg",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_right_foot",
+              "parent_id": "root",
+              "locator": "root/entry_right_foot",
+              "transform": {
+                "position_m": [
+                  -2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_leg",
+              "parent_id": "root",
+              "locator": "root/exit_left_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_left_foot",
+              "parent_id": "root",
+              "locator": "root/exit_left_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  -0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_leg",
+              "parent_id": "root",
+              "locator": "root/exit_right_leg",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.415,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_right_foot",
+              "parent_id": "root",
+              "locator": "root/exit_right_foot",
+              "transform": {
+                "position_m": [
+                  2,
+                  0.04,
+                  0.65
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_column",
+              "parent_id": "root",
+              "locator": "root/left_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_guide",
+              "parent_id": "root",
+              "locator": "root/left_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_column",
+              "parent_id": "root",
+              "locator": "root/right_column",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.45,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_guide",
+              "parent_id": "root",
+              "locator": "root/right_guide",
+              "transform": {
+                "position_m": [
+                  0.34,
+                  1.9,
+                  1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "head_beam",
+              "parent_id": "root",
+              "locator": "root/head_beam",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "cutting_tool",
+              "parent_id": "root",
+              "locator": "root/cutting_tool",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_carriage",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_carriage",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.28,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "blade_edge",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/blade_edge",
+              "transform": {
+                "position_m": [
+                  0.045,
+                  -0.29,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "hydraulic_body",
+              "parent_id": "root",
+              "locator": "root/hydraulic_body",
+              "transform": {
+                "position_m": [
+                  0,
+                  2.42,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "rod",
+              "parent_id": "cutting_tool",
+              "locator": "root/cutting_tool/rod",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.73,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "front_control",
+              "parent_id": "root",
+              "locator": "root/front_control",
+              "transform": {
+                "position_m": [
+                  0.5,
+                  1.3,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "cutting_tool"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        }
+      ],
+      "source": {
+        "artifact": {
+          "status": "built",
+          "path": "assets/source/shear.blend",
+          "sha256": "655d4dc6061413c29d6455847f9904ae345dbc8c961132aefbabe79bef497a02"
+        },
+        "provenance": {
+          "origin": "self_created",
+          "creator": "SteelFlow project original procedural authorship",
+          "title": "Original editable shear source",
+          "license": "project-owned",
+          "distribution_permission": "project-local",
+          "recipe": {
+            "status": "built",
+            "path": "assets/source/recipe.json",
+            "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+          },
+          "third_party_inputs": []
+        }
+      },
+      "export": {
+        "tool": "Blender",
+        "version": "4.5.15",
+        "tool_artifact": {
+          "status": "built",
+          "path": "assets/toolchain.json",
+          "sha256": "c47db358bdf53ea856e10573f9db8766fea30ea1660cedaa86467781b5d0aa90"
+        },
+        "recipe": {
+          "status": "built",
+          "path": "assets/source/build.py",
+          "sha256": "ac504bc6d4136f56c05f264f48ebc9f7a3ae383895bb49c062d04e6c26262276"
+        },
+        "settings": {
+          "format": "GLB",
+          "y_up": true,
+          "apply_transforms": true,
+          "animations": true
+        },
+        "authoring_axes": {
+          "up": "+Z",
+          "forward": "+X"
+        },
+        "conversion_rotation_xyzw": [
+          -0.7071067811865476,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "world_boundary": "yaw_root_full_quaternion_internal"
+      }
+    },
+    {
+      "id": "steelflow:galvanizing:CS-GI-05",
+      "family": "finishing",
+      "category": "equipment",
+      "kind": "galvanizing",
+      "variant": "variant:galvanizing:CS-GI-05",
+      "requirement_ids": [
+        "scope:asset-family:galvanizing",
+        "src:gi-05"
+      ],
+      "qa_row_ids": [
+        "qa:equipment:CS-GI-05",
+        "qa:variant:galvanizing:CS-GI-05"
+      ],
+      "placement_ids": [
+        "equipment:CS-GI-05"
+      ],
+      "source_refs": [
+        {
+          "id": "scope:asset-family:galvanizing",
+          "uri": "https://www.jstage.jst.go.jp/article/isijinternational/60/5/60_ISIJINT-2019-548/_html/-char/ja",
+          "note": "Original synthetic demonstrator dimensions; source supports function concept only. Actual GLB clips verified by T12; operational runtime integration pending T6/T13."
+        }
+      ],
+      "coordinate_system": {
+        "length": "m",
+        "up": "+Y",
+        "forward": "+X",
+        "handedness": "right",
+        "angle": "rad"
+      },
+      "root_node_id": "root",
+      "nodes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "locator": "root",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "support_bed",
+          "parent_id": "root",
+          "locator": "root/support_bed",
+          "transform": {
+            "position_m": [
+              0,
+              0.125,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_bath_wall",
+          "parent_id": "root",
+          "locator": "root/left_bath_wall",
+          "transform": {
+            "position_m": [
+              0,
+              0.86,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_rim",
+          "parent_id": "root",
+          "locator": "root/left_rim",
+          "transform": {
+            "position_m": [
+              0,
+              1.53,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_bath_wall",
+          "parent_id": "root",
+          "locator": "root/right_bath_wall",
+          "transform": {
+            "position_m": [
+              0,
+              0.86,
+              1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_rim",
+          "parent_id": "root",
+          "locator": "root/right_rim",
+          "transform": {
+            "position_m": [
+              0,
+              1.53,
+              1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_bath_wall",
+          "parent_id": "root",
+          "locator": "root/entry_bath_wall",
+          "transform": {
+            "position_m": [
+              -1.85,
+              0.86,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_bath_wall",
+          "parent_id": "root",
+          "locator": "root/exit_bath_wall",
+          "transform": {
+            "position_m": [
+              1.85,
+              0.86,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "bath_lining",
+          "parent_id": "root",
+          "locator": "root/bath_lining",
+          "transform": {
+            "position_m": [
+              0,
+              0.31,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sink_roll",
+          "parent_id": "root",
+          "locator": "root/sink_roll",
+          "transform": {
+            "position_m": [
+              0,
+              0.85,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "sink_roll_surface",
+          "parent_id": "sink_roll",
+          "locator": "root/sink_roll/sink_roll_surface",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "roll_index",
+          "parent_id": "sink_roll",
+          "locator": "root/sink_roll/roll_index",
+          "transform": {
+            "position_m": [
+              0.45,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "shaft",
+          "parent_id": "sink_roll",
+          "locator": "root/sink_roll/shaft",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_bearing",
+          "parent_id": "root",
+          "locator": "root/left_bearing",
+          "transform": {
+            "position_m": [
+              0,
+              0.85,
+              -1.35
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_bearing",
+          "parent_id": "root",
+          "locator": "root/right_bearing",
+          "transform": {
+            "position_m": [
+              0,
+              0.85,
+              1.35
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "air_knife",
+          "parent_id": "root",
+          "locator": "root/air_knife",
+          "transform": {
+            "position_m": [
+              0.7,
+              2.05,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "inlet_nozzle",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/inlet_nozzle",
+          "transform": {
+            "position_m": [
+              -0.17,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "inlet_nozzle_slot",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/inlet_nozzle_slot",
+          "transform": {
+            "position_m": [
+              -0.085,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "outlet_nozzle",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/outlet_nozzle",
+          "transform": {
+            "position_m": [
+              0.17,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "outlet_nozzle_slot",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/outlet_nozzle_slot",
+          "transform": {
+            "position_m": [
+              0.085,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_knife_stand",
+          "parent_id": "root",
+          "locator": "root/left_knife_stand",
+          "transform": {
+            "position_m": [
+              0.7,
+              1.175,
+              -1.1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_gas_manifold",
+          "parent_id": "root",
+          "locator": "root/left_gas_manifold",
+          "transform": {
+            "position_m": [
+              0.7,
+              1.8,
+              -1.1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_knife_stand",
+          "parent_id": "root",
+          "locator": "root/right_knife_stand",
+          "transform": {
+            "position_m": [
+              0.7,
+              1.175,
+              1.1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_gas_manifold",
+          "parent_id": "root",
+          "locator": "root/right_gas_manifold",
+          "transform": {
+            "position_m": [
+              0.7,
+              1.8,
+              1.1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_crossbar",
+          "parent_id": "root",
+          "locator": "root/entry_crossbar",
+          "transform": {
+            "position_m": [
+              -1.4,
+              1.585,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "entry_support",
+          "parent_id": "root",
+          "locator": "root/entry_support",
+          "transform": {
+            "position_m": [
+              -1.4,
+              1.7,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "work_crossbar",
+          "parent_id": "root",
+          "locator": "root/work_crossbar",
+          "transform": {
+            "position_m": [
+              0,
+              1.585,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "work_support",
+          "parent_id": "root",
+          "locator": "root/work_support",
+          "transform": {
+            "position_m": [
+              0,
+              1.7,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_crossbar",
+          "parent_id": "root",
+          "locator": "root/exit_crossbar",
+          "transform": {
+            "position_m": [
+              1.4,
+              1.585,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "exit_support",
+          "parent_id": "root",
+          "locator": "root/exit_support",
+          "transform": {
+            "position_m": [
+              1.4,
+              1.7,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "left_knife_mount",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/left_knife_mount",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              -1.02
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "right_knife_mount",
+          "parent_id": "air_knife",
+          "locator": "root/air_knife/right_knife_mount",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              1.02
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pedestal",
+          "parent_id": "root",
+          "locator": "root/service_pedestal",
+          "transform": {
+            "position_m": [
+              -1.5,
+              0.775,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_bracket",
+          "parent_id": "root",
+          "locator": "root/service_bracket",
+          "transform": {
+            "position_m": [
+              -1.5,
+              1.6,
+              -1.2
+            ],
+            "rotation_xyzw": [
+              0.2246911776194415,
+              0.16472716280865693,
+              0.038569773662357726,
+              0.9596307670623286
+            ]
+          }
+        },
+        {
+          "id": "service_brace",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_brace",
+          "transform": {
+            "position_m": [
+              0,
+              -0.12,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "service_pad",
+          "parent_id": "service_bracket",
+          "locator": "root/service_bracket/service_pad",
+          "transform": {
+            "position_m": [
+              0.12,
+              0,
+              0.08
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_origin",
+          "parent_id": "root",
+          "locator": "root/axis_origin",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_front",
+          "parent_id": "root",
+          "locator": "root/axis_front",
+          "transform": {
+            "position_m": [
+              1,
+              0,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_up",
+          "parent_id": "root",
+          "locator": "root/axis_up",
+          "transform": {
+            "position_m": [
+              0,
+              1,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "id": "axis_side",
+          "parent_id": "root",
+          "locator": "root/axis_side",
+          "transform": {
+            "position_m": [
+              0,
+              0,
+              -1
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "sockets": [
+        {
+          "id": "support",
+          "node_id": "work_support",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "STRIP"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "entry",
+          "node_id": "entry_support",
+          "role": "entry",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "STRIP"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "work",
+          "node_id": "work_support",
+          "role": "work",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "STRIP"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "exit",
+          "node_id": "exit_support",
+          "role": "exit",
+          "transform": {
+            "position_m": [
+              0,
+              0.06,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "STRIP"
+          ],
+          "max_load_kg": 50000
+        },
+        {
+          "id": "service_support",
+          "node_id": "service_pad",
+          "role": "support",
+          "transform": {
+            "position_m": [
+              0,
+              0.08,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "forms": [
+            "PACKAGED"
+          ],
+          "max_load_kg": 50
+        }
+      ],
+      "moving_parts": [
+        {
+          "id": "sink_roll",
+          "node_id": "sink_roll",
+          "function": "sink_roll",
+          "role": "operational",
+          "motion": "rotation",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "pivot_m": [
+            0,
+            0.85,
+            0
+          ],
+          "range": {
+            "min": 0,
+            "max": 6.283185307179586,
+            "rest": 0,
+            "unit": "rad"
+          },
+          "binding": {
+            "type": "clip",
+            "clock": "server_sim",
+            "phase": "work",
+            "progress_source": "server_phase_progress",
+            "pause": "hold",
+            "fault": "hold",
+            "rest": "range_rest",
+            "clip_id": "galvanizing.sink_roll"
+          }
+        }
+      ],
+      "fixed_parts": [
+        {
+          "id": "air_knife",
+          "node_id": "air_knife",
+          "function": "air_knife",
+          "reason": "Gas jets wipe the strip; no mandatory nozzle translation or rotation.",
+          "binding": {
+            "type": "operational_state",
+            "clock": "server_sim",
+            "phase": "work",
+            "progress_source": "server_phase_progress",
+            "pause": "hold",
+            "fault": "hold",
+            "rest": "inactive",
+            "state_id": "galvanizing.gas_wiping"
+          }
+        }
+      ],
+      "cutaway": {
+        "roof_node_ids": [],
+        "interior_node_ids": [],
+        "retained_socket_ids": []
+      },
+      "materials": [
+        {
+          "id": "paint",
+          "model": "metallic-roughness",
+          "base_color": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallic": 0.12,
+          "roughness": 0.72,
+          "textures": [
+            {
+              "slot": "baseColor",
+              "texture_id": "paint_color"
+            }
+          ],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original paint PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "structure",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.097,
+            0.13,
+            0.15,
+            1
+          ],
+          "metallic": 0.72,
+          "roughness": 0.55,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original structure PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "exposed",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.42,
+            0.48,
+            0.5,
+            1
+          ],
+          "metallic": 0.9,
+          "roughness": 0.38,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original exposed PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "safety",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.62,
+            0.26,
+            0.045,
+            1
+          ],
+          "metallic": 0.25,
+          "roughness": 0.58,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original safety PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_red",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.65,
+            0.04,
+            0.02,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_red PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_green",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.05,
+            0.4,
+            0.12,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_green PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        },
+        {
+          "id": "marker_blue",
+          "model": "metallic-roughness",
+          "base_color": [
+            0.025,
+            0.12,
+            0.65,
+            1
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "textures": [],
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original marker_blue PBR material",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "textures": [
+        {
+          "id": "paint_color",
+          "artifact": {
+            "status": "built",
+            "path": "assets/source/paint.png",
+            "sha256": "2d5646f90dde7673ceea22c21604ca9a9d896bf2317d2406f05ff93d19316642"
+          },
+          "color_space": "srgb",
+          "provenance": {
+            "origin": "self_created",
+            "creator": "SteelFlow project original procedural authorship",
+            "title": "Original deterministic procedural coating texture",
+            "license": "project-owned",
+            "distribution_permission": "project-local",
+            "recipe": {
+              "status": "built",
+              "path": "assets/source/recipe.json",
+              "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+            },
+            "third_party_inputs": []
+          }
+        }
+      ],
+      "collision_proxies": [
+        {
+          "id": "body",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              1.16,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            4.02,
+            2.4,
+            2.97
+          ],
+          "purpose": "body",
+          "part_id": null,
+          "contact_socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ]
+        },
+        {
+          "id": "tool_sweep",
+          "node_id": "root",
+          "shape": "box",
+          "transform": {
+            "position_m": [
+              0,
+              0.85,
+              0
+            ],
+            "rotation_xyzw": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "size_m": [
+            1.292792,
+            1.292792,
+            2.72
+          ],
+          "purpose": "moving_sweep",
+          "part_id": "sink_roll",
+          "contact_socket_ids": [
+            "work"
+          ]
+        }
+      ],
+      "lods": [
+        {
+          "level": 0,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/galvanizing-lod0.glb",
+            "sha256": "30ab272ef759f41622abf4b9a11d6b79309c81e2014d6381862c69d04d44ee91"
+          },
+          "semantic_geometry_sha256": "5b0b5c798cbfb02e52f78910796a34a4568b174c0b9a6e94ff7ce8c6546ddb33",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.125,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bath_wall",
+              "parent_id": "root",
+              "locator": "root/left_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_rim",
+              "parent_id": "root",
+              "locator": "root/left_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bath_wall",
+              "parent_id": "root",
+              "locator": "root/right_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_rim",
+              "parent_id": "root",
+              "locator": "root/right_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_bath_wall",
+              "parent_id": "root",
+              "locator": "root/entry_bath_wall",
+              "transform": {
+                "position_m": [
+                  -1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_bath_wall",
+              "parent_id": "root",
+              "locator": "root/exit_bath_wall",
+              "transform": {
+                "position_m": [
+                  1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "bath_lining",
+              "parent_id": "root",
+              "locator": "root/bath_lining",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.31,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll",
+              "parent_id": "root",
+              "locator": "root/sink_roll",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll_surface",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/sink_roll_surface",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_index",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/roll_index",
+              "transform": {
+                "position_m": [
+                  0.45,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "shaft",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/shaft",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing",
+              "parent_id": "root",
+              "locator": "root/left_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  -1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing",
+              "parent_id": "root",
+              "locator": "root/right_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "air_knife",
+              "parent_id": "root",
+              "locator": "root/air_knife",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  2.05,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle",
+              "transform": {
+                "position_m": [
+                  -0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  -0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle",
+              "transform": {
+                "position_m": [
+                  0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_stand",
+              "parent_id": "root",
+              "locator": "root/left_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/left_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_stand",
+              "parent_id": "root",
+              "locator": "root/right_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/right_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_crossbar",
+              "parent_id": "root",
+              "locator": "root/entry_crossbar",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_support",
+              "parent_id": "root",
+              "locator": "root/entry_support",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_crossbar",
+              "parent_id": "root",
+              "locator": "root/work_crossbar",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_support",
+              "parent_id": "root",
+              "locator": "root/work_support",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_crossbar",
+              "parent_id": "root",
+              "locator": "root/exit_crossbar",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_support",
+              "parent_id": "root",
+              "locator": "root/exit_support",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/left_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/right_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "sink_roll",
+            "air_knife"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 1,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/galvanizing-lod1.glb",
+            "sha256": "1ed24a790cab21669a687aeb84fcd7a3370e9d14c497d810317219918c8849b2"
+          },
+          "semantic_geometry_sha256": "0a5d676d5646f54681ed83ccb6158eb711b5d510d2caff15b46c4ebae748782c",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.125,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bath_wall",
+              "parent_id": "root",
+              "locator": "root/left_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_rim",
+              "parent_id": "root",
+              "locator": "root/left_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bath_wall",
+              "parent_id": "root",
+              "locator": "root/right_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_rim",
+              "parent_id": "root",
+              "locator": "root/right_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_bath_wall",
+              "parent_id": "root",
+              "locator": "root/entry_bath_wall",
+              "transform": {
+                "position_m": [
+                  -1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_bath_wall",
+              "parent_id": "root",
+              "locator": "root/exit_bath_wall",
+              "transform": {
+                "position_m": [
+                  1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "bath_lining",
+              "parent_id": "root",
+              "locator": "root/bath_lining",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.31,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll",
+              "parent_id": "root",
+              "locator": "root/sink_roll",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll_surface",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/sink_roll_surface",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_index",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/roll_index",
+              "transform": {
+                "position_m": [
+                  0.45,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "shaft",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/shaft",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing",
+              "parent_id": "root",
+              "locator": "root/left_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  -1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing",
+              "parent_id": "root",
+              "locator": "root/right_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "air_knife",
+              "parent_id": "root",
+              "locator": "root/air_knife",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  2.05,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle",
+              "transform": {
+                "position_m": [
+                  -0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  -0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle",
+              "transform": {
+                "position_m": [
+                  0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_stand",
+              "parent_id": "root",
+              "locator": "root/left_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/left_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_stand",
+              "parent_id": "root",
+              "locator": "root/right_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/right_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_crossbar",
+              "parent_id": "root",
+              "locator": "root/entry_crossbar",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_support",
+              "parent_id": "root",
+              "locator": "root/entry_support",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_crossbar",
+              "parent_id": "root",
+              "locator": "root/work_crossbar",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_support",
+              "parent_id": "root",
+              "locator": "root/work_support",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_crossbar",
+              "parent_id": "root",
+              "locator": "root/exit_crossbar",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_support",
+              "parent_id": "root",
+              "locator": "root/exit_support",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/left_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/right_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "sink_roll",
+            "air_knife"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        },
+        {
+          "level": 2,
+          "artifact": {
+            "status": "built",
+            "path": "public/assets/steelworks/galvanizing-lod2.glb",
+            "sha256": "8c3ec9f1af04db35c6c6f33d955a90d9da4337aa62a9e2959e94cbd53b8365a6"
+          },
+          "semantic_geometry_sha256": "b2250eb319dce5e0ae318637b8bae296c8efc9f7041d7b7a1a99eca5bb06f8af",
+          "nodes": [
+            {
+              "id": "root",
+              "parent_id": null,
+              "locator": "root",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "support_bed",
+              "parent_id": "root",
+              "locator": "root/support_bed",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.125,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bath_wall",
+              "parent_id": "root",
+              "locator": "root/left_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_rim",
+              "parent_id": "root",
+              "locator": "root/left_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bath_wall",
+              "parent_id": "root",
+              "locator": "root/right_bath_wall",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.86,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_rim",
+              "parent_id": "root",
+              "locator": "root/right_rim",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.53,
+                  1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_bath_wall",
+              "parent_id": "root",
+              "locator": "root/entry_bath_wall",
+              "transform": {
+                "position_m": [
+                  -1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_bath_wall",
+              "parent_id": "root",
+              "locator": "root/exit_bath_wall",
+              "transform": {
+                "position_m": [
+                  1.85,
+                  0.86,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "bath_lining",
+              "parent_id": "root",
+              "locator": "root/bath_lining",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.31,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll",
+              "parent_id": "root",
+              "locator": "root/sink_roll",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "sink_roll_surface",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/sink_roll_surface",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "roll_index",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/roll_index",
+              "transform": {
+                "position_m": [
+                  0.45,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "shaft",
+              "parent_id": "sink_roll",
+              "locator": "root/sink_roll/shaft",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_bearing",
+              "parent_id": "root",
+              "locator": "root/left_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  -1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_bearing",
+              "parent_id": "root",
+              "locator": "root/right_bearing",
+              "transform": {
+                "position_m": [
+                  0,
+                  0.85,
+                  1.35
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "air_knife",
+              "parent_id": "root",
+              "locator": "root/air_knife",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  2.05,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle",
+              "transform": {
+                "position_m": [
+                  -0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "inlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/inlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  -0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle",
+              "transform": {
+                "position_m": [
+                  0.17,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "outlet_nozzle_slot",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/outlet_nozzle_slot",
+              "transform": {
+                "position_m": [
+                  0.085,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_stand",
+              "parent_id": "root",
+              "locator": "root/left_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/left_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  -1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_stand",
+              "parent_id": "root",
+              "locator": "root/right_knife_stand",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.175,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_gas_manifold",
+              "parent_id": "root",
+              "locator": "root/right_gas_manifold",
+              "transform": {
+                "position_m": [
+                  0.7,
+                  1.8,
+                  1.1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_crossbar",
+              "parent_id": "root",
+              "locator": "root/entry_crossbar",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "entry_support",
+              "parent_id": "root",
+              "locator": "root/entry_support",
+              "transform": {
+                "position_m": [
+                  -1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_crossbar",
+              "parent_id": "root",
+              "locator": "root/work_crossbar",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "work_support",
+              "parent_id": "root",
+              "locator": "root/work_support",
+              "transform": {
+                "position_m": [
+                  0,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_crossbar",
+              "parent_id": "root",
+              "locator": "root/exit_crossbar",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.585,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "exit_support",
+              "parent_id": "root",
+              "locator": "root/exit_support",
+              "transform": {
+                "position_m": [
+                  1.4,
+                  1.7,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "left_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/left_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "right_knife_mount",
+              "parent_id": "air_knife",
+              "locator": "root/air_knife/right_knife_mount",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  1.02
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pedestal",
+              "parent_id": "root",
+              "locator": "root/service_pedestal",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  0.775,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_bracket",
+              "parent_id": "root",
+              "locator": "root/service_bracket",
+              "transform": {
+                "position_m": [
+                  -1.5,
+                  1.6,
+                  -1.2
+                ],
+                "rotation_xyzw": [
+                  0.2246911776194415,
+                  0.16472716280865693,
+                  0.038569773662357726,
+                  0.9596307670623286
+                ]
+              }
+            },
+            {
+              "id": "service_brace",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_brace",
+              "transform": {
+                "position_m": [
+                  0,
+                  -0.12,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "service_pad",
+              "parent_id": "service_bracket",
+              "locator": "root/service_bracket/service_pad",
+              "transform": {
+                "position_m": [
+                  0.12,
+                  0,
+                  0.08
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_origin",
+              "parent_id": "root",
+              "locator": "root/axis_origin",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_front",
+              "parent_id": "root",
+              "locator": "root/axis_front",
+              "transform": {
+                "position_m": [
+                  1,
+                  0,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_up",
+              "parent_id": "root",
+              "locator": "root/axis_up",
+              "transform": {
+                "position_m": [
+                  0,
+                  1,
+                  0
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "axis_side",
+              "parent_id": "root",
+              "locator": "root/axis_side",
+              "transform": {
+                "position_m": [
+                  0,
+                  0,
+                  -1
+                ],
+                "rotation_xyzw": [
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "socket_ids": [
+            "support",
+            "entry",
+            "work",
+            "exit",
+            "service_support"
+          ],
+          "part_ids": [
+            "sink_roll",
+            "air_knife"
+          ],
+          "material_ids": [
+            "paint",
+            "structure",
+            "exposed",
+            "safety",
+            "marker_red",
+            "marker_green",
+            "marker_blue"
+          ]
+        }
+      ],
+      "source": {
+        "artifact": {
+          "status": "built",
+          "path": "assets/source/galvanizing.blend",
+          "sha256": "22bd152ec0febcb79a6a13cdec15d49066a9c47e5bb7cac748b956217e531191"
+        },
+        "provenance": {
+          "origin": "self_created",
+          "creator": "SteelFlow project original procedural authorship",
+          "title": "Original editable galvanizing source",
+          "license": "project-owned",
+          "distribution_permission": "project-local",
+          "recipe": {
+            "status": "built",
+            "path": "assets/source/recipe.json",
+            "sha256": "5264ad185157058c1be0a75471daeec70e383f39210e430b418d1e22bf715b0b"
+          },
+          "third_party_inputs": []
+        }
+      },
+      "export": {
+        "tool": "Blender",
+        "version": "4.5.15",
+        "tool_artifact": {
+          "status": "built",
+          "path": "assets/toolchain.json",
+          "sha256": "c47db358bdf53ea856e10573f9db8766fea30ea1660cedaa86467781b5d0aa90"
+        },
+        "recipe": {
+          "status": "built",
+          "path": "assets/source/build.py",
+          "sha256": "ac504bc6d4136f56c05f264f48ebc9f7a3ae383895bb49c062d04e6c26262276"
+        },
+        "settings": {
+          "format": "GLB",
+          "y_up": true,
+          "apply_transforms": true,
+          "animations": true
+        },
+        "authoring_axes": {
+          "up": "+Z",
+          "forward": "+X"
+        },
+        "conversion_rotation_xyzw": [
+          -0.7071067811865476,
+          0,
+          0,
+          0.7071067811865476
+        ],
+        "world_boundary": "yaw_root_full_quaternion_internal"
+      }
+    }
+  ]
+}

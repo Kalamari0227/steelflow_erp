@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "source_owner_id": "CS-GO-06",
+  "source_step_id": "go-06",
+  "form": "THIN_STRIP",
+  "thickness_m": 0.002,
+  "binding": {
+    "owner_id": "CS-GO-06",
+    "policy_id": "policy:equipment:finishing:CS-GO-06:v1",
+    "sockets": [
+      {
+        "socket_id": "work",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          0,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "support",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          0,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "entry",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          -10.6,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "exit",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          10.6,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "cutter_in_support",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          5.6499999999999995,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "cutter_out_support",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          5.95,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "entry_looper_support",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          -5.3999999999999995,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "exit_looper_support",
+        "family": "STRIP",
+        "motion_function_ids": [],
+        "position_m": [
+          4.2,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "socket_id": "intermediate_strip_support",
+        "family": "STRIP",
+        "motion_function_ids": [
+          "intermediate_winding_mandrel"
+        ],
+        "position_m": [
+          9.8,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0.0003969850249777544,
+          0.9999999212014419
+        ]
+      },
+      {
+        "socket_id": "intermediate_coil_support",
+        "family": "COIL",
+        "motion_function_ids": [
+          "intermediate_winding_mandrel"
+        ],
+        "position_m": [
+          9.8,
+          2,
+          0
+        ],
+        "orientation_xyzw": [
+          0,
+          0,
+          0.0003969850249777544,
+          0.9999999212014419
+        ]
+      },
+      {
+        "socket_id": "service_support",
+        "family": "PACKAGED",
+        "motion_function_ids": [],
+        "position_m": [
+          -10.5,
+          0.8137631498515315,
+          2.2266368864179316
+        ],
+        "orientation_xyzw": [
+          0.2279775235351884,
+          0,
+          0,
+          0.9736663950053749
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "function_id": "decarb_feed",
+        "node_id": "decarb_feed",
+        "kind": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          0,
+          1.78,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 18.181818181818183
+      },
+      {
+        "function_id": "entry_looper_lift",
+        "node_id": "entry_looper_lift",
+        "kind": "translation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot_m": [
+          -4.8,
+          1.35,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 0.6
+      },
+      {
+        "function_id": "exit_looper_lift",
+        "node_id": "exit_looper_lift",
+        "kind": "translation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot_m": [
+          4.8,
+          1.35,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 0.6
+      },
+      {
+        "function_id": "base_coating_roll",
+        "node_id": "base_coating_roll",
+        "kind": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          3.4,
+          1.82,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 22.22222222222222
+      },
+      {
+        "function_id": "intermediate_winding_mandrel",
+        "node_id": "intermediate_winding_mandrel",
+        "kind": "rotation",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot_m": [
+          9.800349346794453,
+          1.560000138685457,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 9.037865009051153
+      },
+      {
+        "function_id": "output_cutter",
+        "node_id": "output_cutter",
+        "kind": "translation",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot_m": [
+          5.8,
+          2.45,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 0.45
+      },
+      {
+        "function_id": "thermal_chamber",
+        "node_id": "thermal_chamber",
+        "kind": "state",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot_m": [
+          0,
+          0,
+          0
+        ],
+        "min_value": 0,
+        "max_value": 1
+      }
+    ],
+    "internal_feeds": [
+      {
+        "schema_version": 1,
+        "id": "finishing_strip_feed",
+        "kind": "linear_roller_feed",
+        "custody_socket_id": "work",
+        "start_m": [
+          -2,
+          2,
+          0
+        ],
+        "end_m": [
+          2,
+          2,
+          0
+        ],
+        "driver_function_id": "decarb_feed",
+        "rollers": [
+          {
+            "part_id": "decarb_feed",
+            "surface_node_id": "decarb_feed_barrel",
+            "radius_m": 0.22,
+            "width_m": 1.6,
+            "center_m": [
+              0,
+              1.78,
+              0
+            ],
+            "ratio": 1
+          },
+          {
+            "part_id": "furnace_entry_idler_0",
+            "surface_node_id": "furnace_entry_idler_0_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -3.5,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "furnace_entry_idler_1",
+            "surface_node_id": "furnace_entry_idler_1_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -2.85,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "cooling_exit_idler_0",
+            "surface_node_id": "cooling_exit_idler_0_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              2.85,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "cooling_exit_idler_1",
+            "surface_node_id": "cooling_exit_idler_1_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              3.5,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "entry_looper_lift_fixed_roll_0",
+            "surface_node_id": "entry_looper_lift_fixed_roll_0_barrel",
+            "radius_m": 0.22,
+            "width_m": 1.6,
+            "center_m": [
+              -5.3999999999999995,
+              1.78,
+              0
+            ],
+            "ratio": 1
+          },
+          {
+            "part_id": "entry_looper_lift_fixed_roll_1",
+            "surface_node_id": "entry_looper_lift_fixed_roll_1_barrel",
+            "radius_m": 0.22,
+            "width_m": 1.6,
+            "center_m": [
+              -4.2,
+              1.78,
+              0
+            ],
+            "ratio": 1
+          },
+          {
+            "part_id": "exit_looper_lift_fixed_roll_0",
+            "surface_node_id": "exit_looper_lift_fixed_roll_0_barrel",
+            "radius_m": 0.22,
+            "width_m": 1.6,
+            "center_m": [
+              4.2,
+              1.78,
+              0
+            ],
+            "ratio": 1
+          },
+          {
+            "part_id": "exit_looper_lift_fixed_roll_1",
+            "surface_node_id": "exit_looper_lift_fixed_roll_1_barrel",
+            "radius_m": 0.22,
+            "width_m": 1.6,
+            "center_m": [
+              5.3999999999999995,
+              1.78,
+              0
+            ],
+            "ratio": 1
+          },
+          {
+            "part_id": "entry_socket_roll",
+            "surface_node_id": "entry_socket_roll_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -10.6,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "exit_socket_roll",
+            "surface_node_id": "exit_socket_roll_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              10.6,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_2",
+            "surface_node_id": "bridge_feed_2_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -2.2,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_3",
+            "surface_node_id": "bridge_feed_3_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -1.5,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_4",
+            "surface_node_id": "bridge_feed_4_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              -0.8,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_6",
+            "surface_node_id": "bridge_feed_6_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              0.8,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_7",
+            "surface_node_id": "bridge_feed_7_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              1.5,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          },
+          {
+            "part_id": "bridge_feed_8",
+            "surface_node_id": "bridge_feed_8_barrel",
+            "radius_m": 0.16,
+            "width_m": 1.6,
+            "center_m": [
+              2.2,
+              1.84,
+              0
+            ],
+            "ratio": 1.375
+          }
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "source_manifest_sha256": "e0c3bce83ba4a671e4349320b0f8046539c6953da093d69efff31381adbeca73",
+    "binding_canonical_json_sha256": "47ef2525505351d60dd05e55241faf2ff3adf64e8583e387227878aa02f9ae99",
+    "purpose": "Versioned exact GO06 binding with synthetic8m/800kg stock. Historical hashes are provenance only; tests require no generated assets or external evidence."
+  }
+}

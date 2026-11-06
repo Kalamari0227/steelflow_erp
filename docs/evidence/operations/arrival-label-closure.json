@@ -1,0 +1,11 @@
+{
+  "id": "ARRIVAL-LABEL-MEDIUM",
+  "status": "CLOSED by current target9 screenshot and3focused unit cases within root193PASS",
+  "observed": "Direct view_image of current GA completed screenshot shows SHIP-ga-01 actual arrival 2026-10-30T07:26:00Z UTC; no arrival-unknown label.",
+  "artifactRefs": [
+    "POSTX434",
+    "POSTX435",
+    "POSTX436"
+  ],
+  "previousEvidence": "/Users/ethanlee/Desktop/ERP/.omo/evidence/ulw/01a16c69-07a2-71a2-b3dd-d8cf9daa88cd/G003-wave-3-all-api-and-frontend-state-en/a1/final-browser-preview-2/known-visual-issue.json"
+}

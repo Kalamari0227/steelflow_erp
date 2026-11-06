@@ -1,0 +1,742 @@
+{
+  "config": {
+    "argv": [
+      "/Users/ethanlee/.local/share/mise/installs/node/24.18.0/bin/node",
+      "/Users/ethanlee/Desktop/ERP/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      ".omo/evidence/20261025-factory-usability/qa/playwright.config.ts",
+      "--headed",
+      "--workers=1",
+      "--retries=0",
+      "--grep",
+      "order and material survive|eight real processing|campus and functional|loaded carrier moves|transport arrival gates|factory usability"
+    ],
+    "configFile": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/playwright.config.ts",
+    "rootDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "relevant",
+        "name": "relevant",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "operations-process.spec.ts",
+          "operations-navigation.spec.ts",
+          "operations-visual.spec.ts",
+          "production.spec.ts",
+          "transport.spec.ts"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "camera",
+        "name": "camera",
+        "testDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa",
+        "testIgnore": [],
+        "testMatch": [
+          "camera.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "relevant",
+        "testDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "operations-process.spec.ts",
+          "operations-navigation.spec.ts",
+          "operations-visual.spec.ts",
+          "production.spec.ts",
+          "transport.spec.ts"
+        ],
+        "timeout": 120000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:4176",
+          "trace": "on",
+          "video": "on",
+          "screenshot": "only-on-failure",
+          "headless": false
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "relevant"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "camera",
+        "testDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa",
+        "snapshotDir": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa",
+        "testIgnore": [],
+        "testMatch": "camera.spec.ts",
+        "timeout": 120000,
+        "use": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome",
+          "baseURL": "http://127.0.0.1:4176",
+          "trace": "on",
+          "video": "on",
+          "screenshot": "only-on-failure",
+          "headless": false
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "camera"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "../../../../tests/operations-navigation.spec.ts",
+      "file": "../../../../tests/operations-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "order and material survive equipment, overview and 2D navigation without server mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "relevant",
+              "projectName": "relevant",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8872,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:45:42.947Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T13-real-pick-setup",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/attachments/T13-real-pick-setup-42d1bc87a823387d52682ad556e7a0d3ac92da43.json"
+                    },
+                    {
+                      "name": "T13-real-material-pick",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/attachments/T13-real-material-pick-fc1617b1a1a68e8d8f2d9dfb637c29792b2b90a3.json"
+                    },
+                    {
+                      "name": "T13-navigation-identity",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/attachments/T13-navigation-identity-64b89e0272f71ac3a5ab630ff2f45d69f4bc2f75.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/attachments/browser-failures-db376d6a69212932b582906c037d8ed1dda78a8a.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-navigation-orde-4375d-ion-without-server-mutation-relevant/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "50bedb1fa36cd586274e-425251fdd4707d38e7e0",
+          "file": "../../../../tests/operations-navigation.spec.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "../../../../tests/operations-process.spec.ts",
+      "file": "../../../../tests/operations-process.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "eight real processing contacts retain mesh identity and confirmed form",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "relevant",
+              "projectName": "relevant",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 69505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:45:52.828Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T14-real-schedule-discovery",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T14-real-schedule-discovery-166e408020f8d3705f82b0d7ad236c8c108811cd.json"
+                    },
+                    {
+                      "name": "T14-camera-continuity",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T14-camera-continuity-a30465a73eb3ad18ab06bb7c94c838c4a14463bf.json"
+                    },
+                    {
+                      "name": "T19-coiler-entry",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-coiler-entry-5f7a43affec9e8c0042cd17ed2b9c6df0e67052f.json"
+                    },
+                    {
+                      "name": "T19-coiler-exit",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-coiler-exit-d8d2c7577ff3dc12df5bcad76c5303f79964cea3.json"
+                    },
+                    {
+                      "name": "T19-uncoiler-entry",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-uncoiler-entry-add4b7c14d30263b55f6f326d4ade141a2090950.json"
+                    },
+                    {
+                      "name": "T19-uncoiler-exit",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-uncoiler-exit-4956cbf6292acd579bb477b45311933e3e1fc492.json"
+                    },
+                    {
+                      "name": "T19-annealing-entry",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-annealing-entry-e509db19de8795fa2c22292c8940bc257ca36133.json"
+                    },
+                    {
+                      "name": "T19-annealing-exit",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T19-annealing-exit-cf1e239da7320e5bf4ffad7491f0af5f88f9ed5b.json"
+                    },
+                    {
+                      "name": "T14-process-contact",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/T14-process-contact-5d2be2a73280fbe9a47ec2cda1a3311a24a58544.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/attachments/browser-failures-fd1316e6cf5bd83b1c9e3c932aba21c63e5e6168.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-process-eight-r-c26fc-identity-and-confirmed-form-relevant/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c421a7494389f7f10bd5-6bb4be0c500312449756",
+          "file": "../../../../tests/operations-process.spec.ts",
+          "line": 52,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "../../../../tests/operations-visual.spec.ts",
+      "file": "../../../../tests/operations-visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T19 campus and functional districts fit desktop and mobile viewports",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "relevant",
+              "projectName": "relevant",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:47:03.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "T19-viewports",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports-relevant/attachments/T19-viewports-f02c69eccb2c9d7934678072ef2822bce0675c7d.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports-relevant/attachments/browser-failures-bb2df70de35c7b80003a3dcb437ba5f15976ad65.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports-relevant/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/operations-visual-T19-camp-984c7-esktop-and-mobile-viewports-relevant/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b33fc35cb30489bfd436-171cf31443484023ff6d",
+          "file": "../../../../tests/operations-visual.spec.ts",
+          "line": 75,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "../../../../tests/transport.spec.ts",
+      "file": "../../../../tests/transport.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "transport arrival gates processing with one material location and deterministic replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "relevant",
+              "projectName": "relevant",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27464,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:47:18.155Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "transport-custody-replay",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-transport-arriva-df21c-on-and-deterministic-replay-relevant/attachments/transport-custody-replay-9ca4829bbc385fc3b0dcd0135255acc0a867aa6f.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-transport-arriva-df21c-on-and-deterministic-replay-relevant/attachments/browser-failures-9d28c4b8af176b0dee4bdf4554b4baa9dcf054a0.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-transport-arriva-df21c-on-and-deterministic-replay-relevant/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-transport-arriva-df21c-on-and-deterministic-replay-relevant/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-09a0f3d5e115f70b4dc1",
+          "file": "../../../../tests/transport.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "loaded carrier moves, freezes on pause, resumes and resets the same authoritative flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "relevant",
+              "projectName": "relevant",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:47:47.192Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "transport-motion",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow-relevant/attachments/transport-motion-8c37409ab91a1f399906d93dcbe383695189073a.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow-relevant/attachments/browser-failures-8fad40863ca50cd8cfda8ef251d0d7f3342ec0d3.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow-relevant/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/transport-loaded-carrier-m-e295b-the-same-authoritative-flow-relevant/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7f29b49d46ac09564ca8-29301e9956ed60599049",
+          "file": "../../../../tests/transport.spec.ts",
+          "line": 42,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "camera.spec.ts",
+      "file": "camera.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "factory usability paused pan four directions zoom fit disables follow without business mutation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "camera",
+              "projectName": "camera",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:47:54.571Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "paused-camera-controls",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-p-e1021-w-without-business-mutation-camera/attachments/paused-camera-controls-25dfe7c3e22281f3a9d9576d797033086b28c52e.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-p-e1021-w-without-business-mutation-camera/attachments/browser-failures-3cfd23fa5b4addaae8eccf202584b65b3be469c4.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-p-e1021-w-without-business-mutation-camera/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-p-e1021-w-without-business-mutation-camera/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46b3768d175a3aa7b8eb-6359f81e5d0d5060d0a2",
+          "file": "camera.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "factory usability actual road rail and roller positions remain on their rendered paths",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "camera",
+              "projectName": "camera",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:47:57.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-network-paths-progress",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/actual-network-paths-progress-6fe8fbb7667df8cfc86c27331b72569789c8c981.json"
+                    },
+                    {
+                      "name": "actual-network-paths-progress",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/actual-network-paths-progress-6fe8fbb7667df8cfc86c27331b72569789c8c981.json"
+                    },
+                    {
+                      "name": "actual-network-paths-progress",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/actual-network-paths-progress-6fe8fbb7667df8cfc86c27331b72569789c8c981.json"
+                    },
+                    {
+                      "name": "actual-network-paths-progress",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/actual-network-paths-progress-6fe8fbb7667df8cfc86c27331b72569789c8c981.json"
+                    },
+                    {
+                      "name": "actual-network-paths",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/actual-network-paths-8990593f7e52df9ddedc02fd8851cf918466128f.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/attachments/browser-failures-c5b1fa258a173bf168e6e617f3a656bf7106aaa0.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46b3768d175a3aa7b8eb-cd61a5de3cb414edb3bf",
+          "file": "camera.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "factory usability ten seconds actual frames and paused frame counter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "camera",
+              "projectName": "camera",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-24T22:48:24.044Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "brief-performance",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-t-ab0ad-es-and-paused-frame-counter-camera/attachments/brief-performance-0048a64477952e0cdef6d33f9011700872f3b10c.json"
+                    },
+                    {
+                      "name": "browser-failures",
+                      "contentType": "application/json",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-t-ab0ad-es-and-paused-frame-counter-camera/attachments/browser-failures-378fbc1b3eb0f706c0fe074e5282dcb3f7cab463.json"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-t-ab0ad-es-and-paused-frame-counter-camera/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-t-ab0ad-es-and-paused-frame-counter-camera/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46b3768d175a3aa7b8eb-d54a5d91c1b113a66157",
+          "file": "camera.spec.ts",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-24T22:45:42.639Z",
+    "duration": 178214.83800000002,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

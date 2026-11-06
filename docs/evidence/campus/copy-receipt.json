@@ -1,0 +1,82 @@
+[
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/frontend-tests-final.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/frontend-204.log",
+    "sha256": "f0bd944a9b5d9b025a65625e38b1b36cd2aef0c9ed5cc95be9515a1def0f17d9"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/typecheck-final.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/typecheck.log",
+    "sha256": "53e0899bc495c7a33436474d0ae7f18b1332ce249c3eb3b5169fb65a8616f60c"
+  },
+  {
+    "source": ".omo/evidence/20261025-factory-usability/travel/final-unique-tests.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/backend-tests.log",
+    "sha256": "14548fb5e893fa1fd722dabaea631e97a2b3665655f0e075adaeada5739a2007"
+  },
+  {
+    "source": ".omo/evidence/20261025-factory-usability/qa/verified-playwright-results.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/browser-report.json",
+    "sha256": "e2b7ebab027da72fc843a88a8f84ac15bc48ba6470dfc144e32dbc92bf83a9c4"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/travel/cold-startup.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/cold-start-before.log",
+    "sha256": "8b3df42126f4e706758a202e8ee2a7e1b69fe4a8b3546f4030d11dd119ddc1cf"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/travel/cold-startup-after.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/cold-start-after.log",
+    "sha256": "02196f11a9459d7d9d8d69f779c1ddb23c70174d1146ddc2110c99ba60774b66"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/travel/scenarios-perf/T16-sql-http.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/cold-start-metrics.json",
+    "sha256": "a39f159bf2e5fd52e3857eeee2b6b34067220e7b37f6d00b1343dd220707a768"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/travel/roller-road-actual-scenarios.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/actual-scenarios.json",
+    "sha256": "906fcddbc5ad519d4b90823e568d09f81dac4742c0866e63cba1cccfd5a36cd1"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/travel/diff-equivalence.jsonl",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/optimization-equivalence.jsonl",
+    "sha256": "03c32b3922d5d483d7af63ab662b0e940c355140703f82354d69fb68de972240"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/boundary-generation.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/boundary-generation.json",
+    "sha256": "0c1e6146b378a98df5ac5132c28227bbbd1bba62b1c887f716933f30fc6a5b2b"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/runtime-verified/logs/build.log",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/build.log",
+    "sha256": "46e634fefb601ee4829e4dbdab51864efacd3193a12b49712ad7b9fcb8ec8641"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-integrity.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/browser-integrity.json",
+    "sha256": "33c812d36b294c709abdb31d11ea08c02b70c34b9ce536fa3a22745d2b1e0d4c"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-cleanup.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/qa-cleanup.json",
+    "sha256": "fb4ea64650557f45204cdf1012812c8349b5ce7c4adc814c2d796a10acbf0b02"
+  },
+  {
+    "source": "/Users/ethanlee/.local/share/steelflow/demos/2026-10-30-campus/receipts/retained-demo.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/retained-demo.json",
+    "sha256": "2e48add283ba1d1c03606256fe97d93a3bf5b88cc38c8f86e1577a851805df02"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-t-ab0ad-es-and-paused-frame-counter-camera/brief-performance.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/performance.json",
+    "sha256": "e93c0ab36bb0602a5f1f30f7bd53b396cd1efed9a761ff9816c8a668fcab764d"
+  },
+  {
+    "source": "/Users/ethanlee/Desktop/ERP/.omo/evidence/20261025-factory-usability/qa/verified-browser-results/camera-factory-usability-a-c57ee-ain-on-their-rendered-paths-camera/actual-network-paths.json",
+    "destination": "/Users/ethanlee/Desktop/ERP/docs/evidence/campus/network-motion.json",
+    "sha256": "6370eade91e8255c797dfb01d2ddfd6fdee79d659a44c0cbc788e88319a1125a"
+  }
+]

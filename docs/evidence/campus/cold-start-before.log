@@ -1,0 +1,48 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_world_when_initialized_and_reset_reuses_exact_results_without_writes ___
+
+tmp_path = PosixPath('/private/var/folders/h8/0gmz_l9n0l3bdjb3tkk5k8sh0000gn/T/pytest-of-ethanlee/pytest-26/test_world_when_initialized_an0')
+
+    def test_world_when_initialized_and_reset_reuses_exact_results_without_writes(tmp_path: Path) -> None:
+        path = tmp_path / 'proof.sqlite'
+        start = perf_counter()
+        with TestClient(create_app(f'sqlite+aiosqlite:///{path}', clock_enabled=False)) as client:
+            startup = perf_counter()-start
+            with closing(sqlite3.connect(path)) as connection:
+                before = sha256('\n'.join(connection.iterdump()).encode()).hexdigest()
+            start = perf_counter()
+            response = client.get('/api/v1/world')
+            first_get = perf_counter()-start
+            assert response.status_code == 200
+            with closing(sqlite3.connect(path)) as connection:
+                after = sha256('\n'.join(connection.iterdump()).encode()).hexdigest()
+            assert before == after
+            state = response.json()
+            assert len(state['forecast']) == 20 and not state['ai']['enabled']
+            start = perf_counter()
+            response = client.post('/api/v1/scenarios/RECOVERY/activate')
+            reset = perf_counter()-start
+            assert response.status_code == 200
+            engine = create_engine(f'sqlite:///{path}')
+            try:
+                with Session(engine) as session:
+                    model = service.load_model(session)
+                    cached = forecast.completion(model)
+                    actual = advance_model(model, forecast.HORIZON, service.CALLBACKS).model
+                    assert dict(cached.deliveries) == {row.entity_id: row.at_ms for row in actual.events.values() if row.event_type == 'ORDER_DELIVERED'}
+                for steps in (7, 23, 37):
+                    assert client.post('/api/v1/simulation/step', json={'steps': steps}).status_code == 200
+                    with Session(engine) as session:
+                        current = service.load_model(session)
+                        assert forecast.fingerprint(current) in forecast._CACHE
+                        assert forecast.completion(current) == cached
+            finally:
+                engine.dispose()
+>           assert startup < 60 and first_get < 2 and reset < 2
+E           assert (109.35883920802735 < 60)
+
+backend/tests/operations/test_scenarios.py:184: AssertionError
+=========================== short test summary info ============================
+FAILED backend/tests/operations/test_scenarios.py::test_world_when_initialized_and_reset_reuses_exact_results_without_writes
+1 failed, 10 deselected in 147.51s (0:02:27)
